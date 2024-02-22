@@ -1,0 +1,25 @@
+state=
+{
+	id=312
+	name="STATE_312"
+	manpower=859761
+	resources={
+		chromium=1 # was: 1
+	}
+	
+	state_category = town
+	history=
+	{
+		owner = LIB # HON
+		#add_core_of = HON
+		victory_points = {
+			12865 3 
+		}
+
+	}
+	provinces={
+		2031 8017 12865
+	}
+
+	local_supplies=0.0 
+}

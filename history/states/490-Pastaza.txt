@@ -1,0 +1,19 @@
+
+state={
+	id=490
+	name="STATE_490"
+	manpower = 70020
+	
+	state_category = pastoral
+
+	history={
+		owner = LIB # PRU
+		#add_core_of = PRU
+	}
+
+	provinces={
+		8149 10942 
+	}
+
+	local_supplies=6.0 
+}
