@@ -1,0 +1,16 @@
+characters = {
+	XOH_lajos_kossuth = {
+		name = "Lajos Kossuth"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/XOH/XOH_lajos_kossuth.png"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+}

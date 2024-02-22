@@ -10,8 +10,10 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 25
-	democratic = 25
-	communism = 25
-	fascism = 25
+	neutrality = 0
+	democratic = 74
+	communism = 26
+	fascism = 0
 }
+
+recruit_character = XOH_lajos_kossuth
