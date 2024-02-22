@@ -1,5 +1,21 @@
 ﻿l_english:
  XVA: "Virginia"
  XVA_DEF: "Virginia"
- XVA_ADJ: "Virginia"
+ XVA_ADJ: "Virginian"
+ 
+ XVA_democratic: "Commonwealth of Virginia"
+ XVA_democratic_DEF: "the Commonwealth of Virginia"
+ XVA_democratic_ADJ: "Virginian"
+ 
+ XVA_neutrality: "Colony of Virginia"
+ XVA_neutrality_DEF: "the Colony of Virginia"
+ XVA_neutrality_ADJ: "Virginian"
+ 
+ XVA_fascism: "State of Virginia"
+ XVA_fascism_DEF: "the State of Virginia"
+ XVA_fascism_ADJ: "Virginian"
+ 
+ XVA_communism: "Virginian Revolutionary Administration"
+ XVA_communism_DEF: "the Virginian Revolutionary Administration"
+ XVA_communism_ADJ: "Virginian"
  

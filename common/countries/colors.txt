@@ -1020,8 +1020,8 @@ XUT = {
 	color_ui = rgb { 155 162 62 }
 }
 XVA = {
-	color = rgb { 180 40 170 }
-	color_ui = rgb { 180 40 170 }
+	color = rgb { 0 41 123 }
+	color_ui = rgb { 0 41 123 }
 }
 XWA = {
 	color = rgb { 185 141 77 }
