@@ -2,25 +2,25 @@
 
 Apart of the Modding Jam. All commits are due by April 1st, at 08:00 EST.
 
-Rules:
-1 - Every file for your nation(s) must start with their TAG
-2 - All majorly OP content will be removed
-3 - Any files that cause many errors will be removed
-4 - No teams
-5 - The area you choose must be part of the contiguous 48 states
+Rules: <br />
+1 - Every file for your nation(s) must start with their TAG <br />
+2 - All majorly OP content will be removed <br />
+3 - Any files that cause many errors will be removed <br />
+4 - No teams <br />
+5 - The area you choose must be part of the contiguous 48 states <br />
+<br />
+You are allowed to modify provinces and states.<br /><br />
 
-You are allowed to modify provinces and states.
+## Current tag list:
 
-Current tag list:
-
-XWY - Playerandplayer
-XAL - Kasastul 
-XTX - Nikolafun
-XOH - TheWalrusMann
-XNN - Knighticus
-XNE - tombricks
-XWA - Potanicc
-XCA - sprinkleskid
-XNY - Albanianandproud
-XMN - WingedMolotov
-XFL - smeagolfied
+XWY - Playerandplayer <br />
+XAL - Kasastul <br />
+XTX - Nikolafun <br />
+XOH - TheWalrusMann <br />
+XNN - Knighticus <br />
+XNE - tombricks <br />
+XWA - Potanicc <br />
+XCA - sprinkleskid <br />
+XNY - Albanianandproud <br />
+XMN - WingedMolotov <br />
+XFL - smeagolfied <br />
