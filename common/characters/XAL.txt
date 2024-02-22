@@ -1,0 +1,16 @@
+characters = {
+	XAL_gerges_al_waahid = {
+		name = XAL_gerges_al_waahid
+		portraits = {
+			civilian = {
+				large = gfx/XAL_stuff/gerges_al_waahid.dds
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { XAL_king_gerges_i }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+}

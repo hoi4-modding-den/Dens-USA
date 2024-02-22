@@ -1,5 +1,9 @@
 ﻿l_english:
- XAL: "Alabama"
- XAL_DEF: "Alabama"
- XAL_ADJ: "Alabama"
- 
+ XAL: "Al-Abama"
+ XAL_DEF: "Al-Abama"
+ XAL_ADJ: "Al-Abamian"
+ XAL_neutrality:0 "Arab Kingdom of Al-Abama"
+ XAL_neutrality_DEF:0 "the Arab Kingdom of Al-Abama"
+ XAL_neutrality_party:0 "House of Al-Waahid"
+ XAL_gerges_al_waahid:0 "Gerges Al-Waahid"
+ XAL_king_gerges_i:0 "King Gerges I"
