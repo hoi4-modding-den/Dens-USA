@@ -13,14 +13,14 @@ You are allowed to modify provinces and states.<br /><br />
 
 ## Current tag list:
 
-XWY - Playerandplayer <br />
-XAL - Kasastul <br />
-XTX - Nikolafun <br />
-XOH - TheWalrusMann <br />
-XNN - Knighticus <br />
-XNE - tombricks <br />
-XWA - Potanicc <br />
-XCA - sprinkleskid <br />
-XNY - Albanianandproud <br />
-XMN - WingedMolotov <br />
-XFL - smeagolfied <br />
+XWY - Playerandplayer (Wyoming)<br />
+XAL - Kasastul (Alabama)<br />
+XTX - Nikolafun (Texas)<br />
+XOH - TheWalrusMann (Ohio)<br />
+XNN - Knighticus (New England)<br />
+XVA - tombricks (Virginia)<br />
+XWA - Potanicc (Washington)<br />
+XCA - sprinkleskid (California)<br />
+XNY - Albanianandproud (New York)<br />
+XMN - WingedMolotov (Minnesota)<br />
+XFL - smeagolfied (Florida)<br />
