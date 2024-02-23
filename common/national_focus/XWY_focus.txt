@@ -23,7 +23,7 @@
 		y = 0
 		#relative_position_id = 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -67,7 +67,7 @@ set_variable = {
 		y = 1
 		#relative_position_id = 
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -89,6 +89,142 @@ set_variable = {
 		completion_reward = {
 		custom_effect_tooltip = current_status_wyoming_tt
 		custom_effect_tooltip = current_status_small_wyoming_tt
+add_to_variable = {
+    var = small_ranches_power
+    value = 1
+    tooltip = srp_1
+}
+		}
+	}
+	
+	focus = {
+		id = XWY_aid_big_cattle
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = XWY_the_great_west}
+		# mutually_exclusive = { focus = XNN_outlaw_burning_heart }
+		x = 8
+		y = 1
+		#relative_position_id = 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		custom_effect_tooltip = current_status_wyoming_tt
+		custom_effect_tooltip = current_status_small_wyoming_tt
+		add_to_variable = {
+    var = cattle_baron_power
+    value = 1
+    tooltip = set_var_to_100_tt
+}
+
+add_to_variable = {
+    var = small_ranches_power
+    value = -1
+    tooltip = srp_2
+}
+		}
+	}
+	
+	focus = {
+		id = XWY_hand_land
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = XWY_fund_the_ranches}
+		# mutually_exclusive = { focus = XNN_outlaw_burning_heart }
+		x = 11
+		y = 2
+		#relative_position_id = 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		custom_effect_tooltip = current_status_wyoming_tt
+		custom_effect_tooltip = current_status_small_wyoming_tt
+
+
+add_to_variable = {
+    var = small_ranches_power
+    value = 1
+    tooltip = srp_1
+}
+		}
+	}
+	
+	focus = {
+		id = XWY_cattle_grants
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = XWY_fund_the_ranches}
+		# mutually_exclusive = { focus = XNN_outlaw_burning_heart }
+		x = 13
+		y = 2
+		#relative_position_id = 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		add_timed_idea = {
+    idea = XWY_cattle_grantsidea
+    days = 100
+}
+		custom_effect_tooltip = current_status_wyoming_tt
+		custom_effect_tooltip = current_status_small_wyoming_tt
+		add_to_variable = {
+    var = cattle_baron_power
+    value = 1
+    tooltip = set_var_to_100_tt
+}
+
+
 add_to_variable = {
     var = small_ranches_power
     value = 1

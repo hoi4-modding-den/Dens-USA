@@ -10,6 +10,17 @@ bookmarks = {
 		"---"={
 			history = ":O"
 		}
+		
+		"XWY"={
+			history = "does anyone even live in this state"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
