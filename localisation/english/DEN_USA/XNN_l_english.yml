@@ -1,5 +1,19 @@
 ﻿l_english:
- XNN: "New England"
- XNN_DEF: "New England"
- XNN_ADJ: "New England"
+ XNN_fascism:0 "New England"
+ XNN_fascism_DEF:0 "New England"
+ XNN_democratic:0 "New England"
+ XNN_democratic_DEF:0 "New England"
+ XNN_neutrality:0 "New England"
+ XNN_neutrality_DEF:0 "New England"
+ XNN_communism:0 "Soviet Republic Of New England"
+ XNN_communism_DEF:0 "The Soviet Republic Of New England"
+ XNN_ADJ:0 "New English"
  
+ NXX_great_depression:0 "Great Depression"
+ NXX_great_depression_desc:0 "The state of the new english economy is bad."
+ 
+ NXX_new_english_spirit:0 "New English Spirit"
+ NXX_new_english_spirit_desc:0 "The new english have never been one to be easily subjugated and as such they are ready to defend their homeland."
+ 
+ NXX_sacred_heart_movement:0 "Sacred Heart Movement"
+ NXX_sacred_heart_movement_desc:0 "The Sacred Heart Movement is a catholic movement seeking to establish a fascist theocracy in new england."

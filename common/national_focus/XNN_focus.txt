@@ -1,0 +1,253 @@
+﻿focus_tree = {
+	id = XNN_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = XNN
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 6000 }
+
+	focus = {
+		id = XNN_cooperate_with_burning_heart
+		icon = GFX_goal_generic_construction
+		#prerequisite = { focus = }
+		mutually_exclusive = { focus = XNN_outlaw_burning_heart }
+		x = 4
+		y = 0
+		#relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = XNN_outlaw_burning_heart
+		icon = GFX_goal_generic_construction
+		#prerequisite = { focus = }
+		mutually_exclusive = { focus = XNN_cooperate_with_burning_heart }
+		x = 16
+		y = 0
+		#relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = XNN_commit_to_anti_fascism
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = XNN_outlaw_burning_heart }
+		mutually_exclusive = { focus = XNN_invite_exiled_fascists }
+		x = -2
+		y = 1
+		relative_position_id = XNN_outlaw_burning_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = XNN_invite_exiled_fascists
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = XNN_outlaw_burning_heart }
+		mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = 2
+		y = 1
+		relative_position_id = XNN_outlaw_burning_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = XNN_promote_protestantism
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = XNN_invite_exiled_fascists }
+		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = -1
+		y = 1
+		relative_position_id = XNN_invite_exiled_fascists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = XNN_fight_catholicism
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = XNN_invite_exiled_fascists }
+		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = 1
+		y = 1
+		relative_position_id = XNN_invite_exiled_fascists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = XNN_empower_mosley
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = XNN_promote_protestantism }
+		prerequisite = { focus = XNN_fight_catholicism }
+		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = 0
+		y = 2
+		relative_position_id = XNN_invite_exiled_fascists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+
+
+
+
+
+}		

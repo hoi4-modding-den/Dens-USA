@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_XNN_charles_hurley"
+		texturefile = "gfx/leaders/XNN/XNN_portrait_charles_hurley.dds"
+	}
+
+	
+}
