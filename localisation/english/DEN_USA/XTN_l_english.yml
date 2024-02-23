@@ -2,4 +2,16 @@
  XTN: "Tennessee"
  XTN_DEF: "Tennessee"
  XTN_ADJ: "Tennessee"
+
+
+ XTN_council: "Council"
+
+ XTN_communism_party:0 "I-L"
+ XTN_communism_party_long:0 "Intelligentsia - Left"
+
+ XTN_neutrality_party:0 "I-R"
+ XTN_neutrality_party_long:0 "Intelligentsia - Right"
+
+ XTN_democratic_party:0 "CoN"
+ XTN_democratic_party_long:0 "Council of Nashville"
  
