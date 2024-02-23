@@ -8,8 +8,24 @@ state={
 	history={
 		owner = XWY
 		add_core_of = XWY
+		victory_points = {
+			4723 20
+		}
+		victory_points = {
+			12651 10
+		}
+		victory_points = {
+			4610 5
+		}
+		victory_points = {
+			12633 5
+		}
+		victory_points = {
+			4820 5
+		}
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
 		}
 		#add_core_of = USA
 	}

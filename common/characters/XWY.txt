@@ -1,0 +1,16 @@
+characters = {
+	XWY_lester_hunt = {
+		name = "Lester Hunt"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XWY_lester_hunt"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,45 @@
+ideas = {
+
+	country = {
+		XWY_great_depression = {
+			picture = usa_great_depression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industry_repair_factor = -0.3
+				political_power_cost = 2.5
+				consumer_goods_factor = 0.75
+				production_speed_buildings_factor = -0.5
+				local_resources_factor = -0.33
+			}
+		}
+		
+		XWY_the_cowboy_state = {
+			picture = LIT_invested_in_farms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+	}
+}

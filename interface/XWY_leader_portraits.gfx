@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_XWY_lester_hunt"
+		texturefile = "gfx/leaders/XWY/XWY_lester_hunt.dds"
+	}
+
+	
+}
