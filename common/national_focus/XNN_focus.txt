@@ -16,7 +16,7 @@
 
 	focus = {
 		id = XNN_cooperate_with_burning_heart
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
 		#prerequisite = { focus = }
 		mutually_exclusive = { focus = XNN_outlaw_burning_heart }
 		x = 4
@@ -49,7 +49,7 @@
 	
 	focus = {
 		id = XNN_outlaw_burning_heart
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_spa_eliminate_the_carlists
 		#prerequisite = { focus = }
 		mutually_exclusive = { focus = XNN_cooperate_with_burning_heart }
 		x = 16
@@ -82,7 +82,7 @@
 	
 	focus = {
 		id = XNN_commit_to_anti_fascism
-		icon = GFX_goal_generic_construction
+		icon = GFX_focus_generic_anti_fascist_diplomacy
 		prerequisite = { focus = XNN_outlaw_burning_heart }
 		mutually_exclusive = { focus = XNN_invite_exiled_fascists }
 		x = -2
@@ -115,7 +115,7 @@
 	
 	focus = {
 		id = XNN_invite_exiled_fascists
-		icon = GFX_goal_generic_construction
+		icon = GFX_goal_support_fascism
 		prerequisite = { focus = XNN_outlaw_burning_heart }
 		mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
 		x = 2
@@ -147,7 +147,7 @@
 	}
 	
 	focus = {
-		id = XNN_promote_protestantism
+		id = XNN_protect_protestants
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = XNN_invite_exiled_fascists }
 		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
@@ -180,7 +180,7 @@
 	}
 	
 	focus = {
-		id = XNN_fight_catholicism
+		id = XNN_arm_protestant_militants
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = XNN_invite_exiled_fascists }
 		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
@@ -213,10 +213,10 @@
 	}
 	
 	focus = {
-		id = XNN_empower_mosley
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = XNN_promote_protestantism }
-		prerequisite = { focus = XNN_fight_catholicism }
+		id = XNN_send_our_ultimatum
+		icon = GFX_focus_eng_organise_the_blackshirts
+		prerequisite = { focus = XNN_protect_protestants }
+		prerequisite = { focus = XNN_arm_protestant_militants }
 		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
 		x = 0
 		y = 2
@@ -246,8 +246,204 @@
 		}
 	}
 
+	focus = {
+		id = XNN_lord_protector
+		icon = GFX_focus_eng_organise_the_blackshirts
+		prerequisite = { focus = XNN_send_our_ultimatum }
+		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = 0
+		y = 3
+		relative_position_id = XNN_invite_exiled_fascists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
 
 
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = XNN_invade_new_york
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = XNN_lord_protector }
+		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = 0
+		y = 4
+		relative_position_id = XNN_invite_exiled_fascists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = XNN_corporatism
+		icon = GFX_focus_ICE_state_corporatism
+		prerequisite = { focus = XNN_send_our_ultimatum }
+		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = 4
+		y = 3
+		relative_position_id = XNN_invite_exiled_fascists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = XNN_expand_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = XNN_corporatism }
+		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = 3
+		y = 4
+		relative_position_id = XNN_invite_exiled_fascists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = XNN_expand_civilian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = XNN_corporatism }
+		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = 5
+		y = 4
+		relative_position_id = XNN_invite_exiled_fascists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = XNN_ne_economic_miracle
+		icon = GFX_focus_spa_the_spanish_miracle
+		prerequisite = { focus = XNN_expand_civilian_industry }
+		prerequisite = { focus = XNN_expand_military_industry }
+		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = 4
+		y = 5
+		relative_position_id = XNN_invite_exiled_fascists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
 
 
 }		
