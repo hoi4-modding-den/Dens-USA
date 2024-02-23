@@ -87,6 +87,13 @@ set_variable = {
 
 
 		completion_reward = {
+		381 = {
+			add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+}
+		}
 		custom_effect_tooltip = current_status_wyoming_tt
 		custom_effect_tooltip = current_status_small_wyoming_tt
 add_to_variable = {
@@ -134,9 +141,9 @@ add_to_variable = {
     tooltip = set_var_to_100_tt
 }
 
-add_to_variable = {
+subtract_from_variable = {
     var = small_ranches_power
-    value = -1
+    value = 1
     tooltip = srp_2
 }
 		}
@@ -230,6 +237,172 @@ add_to_variable = {
     value = 1
     tooltip = srp_1
 }
+		}
+	}
+	
+	focus = {
+		id = XWY_beef_bonanza
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = XWY_hand_land}
+		prerequisite = { focus = XWY_cattle_grants}
+		# mutually_exclusive = { focus = XNN_outlaw_burning_heart }
+		x = 12
+		y = 3
+		#relative_position_id = 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		add_timed_idea = {
+    idea = XWY_cattle_grantsidea
+    days = 100
+}
+		custom_effect_tooltip = current_status_wyoming_tt
+		custom_effect_tooltip = current_status_small_wyoming_tt
+		add_to_variable = {
+    var = cattle_baron_power
+    value = 1
+    tooltip = set_var_to_100_tt
+}
+
+
+add_to_variable = {
+    var = small_ranches_power
+    value = 2
+    tooltip = srp_3
+}
+		}
+	}
+	
+	focus = {
+		id = XWY_reintroduce_buffalo
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = XWY_beef_bonanza}
+		# mutually_exclusive = { focus = XNN_outlaw_burning_heart }
+		x = 12
+		y = 4
+		#relative_position_id = 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		custom_effect_tooltip = current_status_wyoming_tt
+		custom_effect_tooltip = current_status_small_wyoming_tt
+
+
+add_to_variable = {
+    var = small_ranches_power
+    value = 1
+    tooltip = srp_1
+}
+		}
+	}
+	
+	focus = {
+		id = XWY_corporatism
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = XWY_aid_big_cattle}
+		# mutually_exclusive = { focus = XNN_outlaw_burning_heart }
+		x = 8
+		y = 2
+		#relative_position_id = 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		custom_effect_tooltip = current_status_wyoming_tt
+		custom_effect_tooltip = current_status_small_wyoming_tt
+
+
+add_to_variable = {
+    var = cattle_baron_power
+    value = 1
+    tooltip = set_var_to_100_tt
+}
+		}
+	}
+	
+	focus = {
+		id = XWY_the_wyoming_political_scene
+		icon = GFX_focus_generic_farmland
+		# prerequisite = { focus = XWY_aid_big_cattle}
+		# mutually_exclusive = { focus = XNN_outlaw_burning_heart }
+		x = 20
+		y = 0
+		#relative_position_id = 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
 		}
 	}
 }		
