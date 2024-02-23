@@ -1,0 +1,60 @@
+﻿focus_tree = {
+	id = XWY_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = XWY
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 6000 }
+
+	focus = {
+		id = XWY_the_cowboy_state
+		icon = GFX_focus_generic_farmland
+		#prerequisite = { focus = }
+		# mutually_exclusive = { focus = XNN_outlaw_burning_heart }
+		x = 4
+		y = 0
+		#relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		custom_effect_tooltip = current_status_wyoming_tt
+		custom_effect_tooltip = current_status_small_wyoming_tt
+		set_variable = {
+    var = cattle_baron_power
+    value = 1
+    tooltip = set_var_to_100_tt
+}
+set_variable = {
+    var = small_ranches_power
+    value = 1
+    tooltip = srp_1
+}
+		}
+	}
+}		

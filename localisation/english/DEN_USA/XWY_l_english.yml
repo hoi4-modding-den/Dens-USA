@@ -9,4 +9,8 @@
  VICTORY_POINTS_4820:0 "Devils Tower"
  XWY_great_depression:0 "The Great Depression"
  XWY_the_cowboy_state:0 "The Cowboy State"
+ set_var_to_100_tt:0 "§GCattle Barons Influence Increases by 1§!"
+ srp_1:0 "§GSmall Ranches Influence Increases by 1§!"
+ current_status_wyoming_tt:0 "§YCattle Baron Influence: [?cattle_baron_power]§!"
+ current_status_small_wyoming_tt:0 "§YSmall Ranches Influence: [?small_ranches_power]§!"
  
