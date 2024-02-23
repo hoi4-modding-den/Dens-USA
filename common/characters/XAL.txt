@@ -13,4 +13,18 @@ characters = {
 			id = -1
 		}
 	}
+	XAL_yahya_odeh_al_pirani = {
+		name = XAL_yahya_odeh_al_pirani
+		portraits = {
+			civilian = {
+				large = gfx/XAL_stuff/yahya_odeh_al_pirani.dds
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { XAL_islamic_warrior }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
 }

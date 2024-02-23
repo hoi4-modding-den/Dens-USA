@@ -3,6 +3,8 @@ capital = 367
 #oob="XAL"
 
 recruit_character = XAL_gerges_al_waahid
+recruit_character = XAL_yahya_odeh_al_pirani
+
 
 set_politics = {
 	ruling_party = neutrality
@@ -12,5 +14,6 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 85
+	fascism = 15
 }

@@ -8,5 +8,15 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	XAL_islamic_warrior = {
+		random = no
+		war_support_factor = 0.1
+		stability_factor = -0.05
+		enemy_justify_war_goal_time = 0.25
+		conscription = 0.02
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 }
