@@ -1,0 +1,15 @@
+leader_traits = {
+
+	XTN_council = {
+		random = no
+		political_power_factor = -1
+        stability_factor = -1
+        
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+}
