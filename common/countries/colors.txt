@@ -1044,6 +1044,6 @@ XID = {
 	color_ui = rgb { 197 76 103 }
 }
 XNN = {
-	color = rgb { 165 99 173 }
-	color_ui = rgb { 165 99 173 }
+	color = rgb { 0 127 14 }
+	color_ui = rgb { 0 127 14 }
 }
