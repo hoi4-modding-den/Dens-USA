@@ -1,0 +1,15 @@
+characters={
+	XNN_charles_hurley={
+		name="Charles Hurley"
+		portraits={
+			civilian={
+				large=GFX_portrait_XNN_charles_hurley
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}
