@@ -1,8 +1,9 @@
 ﻿l_english:
  XWY: "Wyoming"
- XWY_DEF: "Wyoming"
- XWY_ADJ: "Wyoming"
+ XWY_DEF: "the Republic of Wyoming"
+ XWY_ADJ: "Wyomingian"
  VICTORY_POINTS_4723:0 "Cheyenne"
+ VICTORY_POINTS_10711:0 "Casper"
  VICTORY_POINTS_12651:0 "Jackson"
  VICTORY_POINTS_4610:0 "Buffalo"
  VICTORY_POINTS_12633:0 "Rock Springs"

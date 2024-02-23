@@ -1,6 +1,6 @@
 capital = 381
 
-#oob="XWY"
+oob="XWY"
 
 recruit_character = XWY_lester_hunt
 
