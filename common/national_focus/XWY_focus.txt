@@ -402,7 +402,154 @@ add_to_variable = {
 
 
 		completion_reward = {
+				add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = XWY_commitee_for_industrilization
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = XWY_the_wyoming_political_scene}
+		# mutually_exclusive = { focus = XNN_outlaw_burning_heart }
+		x = 20
+		y = 1
+		#relative_position_id = 
 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			# check_variable = { cattle_baron_power > 10 }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		381 = {
+	add_building_construction = {
+    type = industrial_complex
+    level = 1
+    instant_build = yes
+}
+		}
+		}
+	}
+	
+		focus = {
+		id = XWY_collective_ranches
+		icon = GFX_focus_generic_communist_industry
+		prerequisite = { focus = XWY_commitee_for_industrilization}
+		mutually_exclusive = { focus = XWY_social_change }
+		mutually_exclusive = { focus = XWY_king_and_state }
+		x = 18
+		y = 3
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			check_variable = { cattle_baron_power < 5 }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+focus = {
+		id = XWY_social_change
+		icon = GFX_focus_generic_fascist_propaganda
+		prerequisite = { focus = XWY_commitee_for_industrilization}
+		mutually_exclusive = { focus = XWY_collective_ranches }
+		mutually_exclusive = { focus = XWY_king_and_state }
+		x = 20
+		y = 3
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			check_variable = { cattle_baron_power < 5 }
+			check_variable = { small_ranches_power > 5 }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+	focus = {
+		id = XWY_king_and_state
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = XWY_commitee_for_industrilization}
+		mutually_exclusive = { focus = XWY_collective_ranches }
+		mutually_exclusive = { focus = XWY_social_change }
+		x = 22
+		y = 3
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			check_variable = { cattle_baron_power < 5 }
+			check_variable = { small_ranches_power > 5 }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
 		}
 	}
 }		
