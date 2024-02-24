@@ -9,7 +9,7 @@ characters = {
         country_leader = {
             ideology = liberalism
             traits = {}
-            expire = {1939.1.2.1}
+            expire = "1939.1.2.1"
             id = -1
         }
     }
