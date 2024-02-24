@@ -2,16 +2,21 @@ capital = 379
 
 #oob="XNV"
 
+
+
+#Govenors
+recruit_character = XNV_Richard_Kirman_SR
+
 set_politics = {
 	ruling_party = democratic
-	last_election = "1936.1.1"
+	last_election = "1935.1.7"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
-	neutrality = 25
-	democratic = 25
-	communism = 25
-	fascism = 25
+	neutrality = 0
+	democratic = 100
+	communism = 0
+	fascism = 0
 }

@@ -960,8 +960,8 @@ XNE = {
 	color_ui = rgb { 199 177 191 }
 }
 XNV = {
-	color = rgb { 83 185 188 }
-	color_ui = rgb { 83 185 188 }
+	color = rgb { 240 210 121 }
+	color_ui = rgb { 240 210 121 }
 }
 XNJ = {
 	color = rgb { 89 127 197 }
