@@ -52,7 +52,7 @@ logistics_skill = 1
 	
 		
 			traits = {
-				red_army_organizer
+				communist_theorist communist_revolutionary
 			}
 		}
 
@@ -65,5 +65,65 @@ logistics_skill = 1
 			id = -1
 		}
 	}
+
+
+
+
+	XTN_benjamin_tucker = {
+		name = "Benjamin Tucker"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Thorvald_Stauning"
+			}
+		}
+		country_leader = {
+			ideology = anarchism
+			traits = {  XTN_anarchist }
+			expire = "1939.6.17.9"
+			id = -1
+		}
+	
+	
+	advisor = {
+			slot = political_advisor
+			idea_token = DEN_thorvald_stauning
+			allowed = {
+				original_tag = XTN
+			}
+
+			available  = {
+
+				date < 1939.6.17
+
+			}
+
+
+
+	
+		
+			traits = {
+				 XTN_anarchist_theorist
+			}
+		}
+
+field_marshal = {
+
+
+traits = { politically_connected }
+skill = 1
+attack_skill = 2
+defense_skill = 3
+planning_skill = 2
+logistics_skill = 4
+
+
+}
+	
+	
+	}
+
+
+
+
 
 }

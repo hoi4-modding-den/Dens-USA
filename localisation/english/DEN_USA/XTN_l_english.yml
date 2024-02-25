@@ -2,9 +2,12 @@
  XTN: "Tennessee"
  XTN_DEF: "Tennessee"
  XTN_ADJ: "Tennessee"
-
+ XTN_communism: "Union of Socialist States of America"
 
  XTN_council: "Council"
+ XTN_anarchist: "Anarcho-Individualist"
+ XTN_anarchist_theorist: "Anarchist Theorist"
+
 
  XTN_communism_party:0 "I-L"
  XTN_communism_party_long:0 "Intelligentsia - Left"
@@ -14,4 +17,14 @@
 
  XTN_democratic_party:0 "CoN"
  XTN_democratic_party_long:0 "Council of Nashville"
- 
+
+
+
+ XTN_immigration:0 "High Immigration"
+ XTN_immigration_desc:0 "Lands of Tennessee are mostly rual bringing oportunity to newcomers."
+
+ XTN_inteligensia_influence:0 "Intelligentsia influence"
+ XTN_inteligensia_influence_desc:0 "For long time Tennessee had no existing parties until Intelligentsia started to become unhappy with state of nation and deciaded to create one. As they are only political party they hold a lot of influence over politics."
+
+ XTN_no_army:0 "Disbanded Army"
+ XTN_no_army_desc:0 "Army was never needed for our beautiful republic thus no standing army exists."

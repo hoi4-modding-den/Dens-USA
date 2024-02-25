@@ -32,6 +32,14 @@ bookmarks = {
 				XNN_unite_usa
 			}
 		}
+
+		"XTN" ={
+
+			history = ""
+			ideology = democratic
+			
+
+		}
 		
 		"---"={
 			history = ":O"

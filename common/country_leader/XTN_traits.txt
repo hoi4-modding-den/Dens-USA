@@ -9,7 +9,25 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	XTN_anarchist = {
+		random = no
+		neutrality_drift = 0.05
+		stability_factor = -0.1
+		compliance_growth_on_our_occupied_states = -0.25
+	}
+
+	XTN_anarchist_theorist = {
+		random = no
+		sprite = 12
+		neutrality_drift = 0.05
+		fascism_acceptance = -100
+		communism_acceptance = -100
+		send_volunteer_divisions_required = -1
+		send_volunteer_size = 3
+		license_purchase_cost = 1
+	}
 
 
 
 }
+
