@@ -76,7 +76,10 @@
 
 
 		completion_reward = {
-
+			swap_ideas = {
+				remove_idea = NXX_sacred_heart_movement
+				add_idea = NXX_sacred_heart_in_opposition
+			}
 		}
 	}
 	
@@ -153,6 +156,14 @@
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.05
+			}
+			add_country_leader_role = {
+				character = XNN_oswald_mosley
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+					expire = "1965.1.1.1"
+				}
 			}
 		}
 	}
@@ -250,7 +261,6 @@
 		}
 
 		available = {
-			neutrality > 0.6
 		}
 		
 		bypass = {
@@ -263,7 +273,7 @@
 
 
 		completion_reward = {
-
+			add_ideas = NXX_popular_resistance
 		}
 	}
 
@@ -296,7 +306,7 @@
 
 
 		completion_reward = {
-
+			add_country_leader_trait = XNN_lord_protector_trait
 		}
 	}
 	
@@ -329,12 +339,12 @@
 
 
 		completion_reward = {
-
+			add_ideas = XNN_republicanism
 		}
 	}
 	
 	focus = {
-		id = XNN_expand_the_blackshirts
+		id = XNN_create_the_blackshirts
 		icon = GFX_focus_ITA_blackshirts
 		prerequisite = { focus = XNN_republicanism }
 		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
@@ -396,9 +406,15 @@
 		
 
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = XNY
+			358 = {
+				owner = {
+					ROOT = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+						}
+					}
+				}
 			}
 			358 = { add_core_of = XNN }
 		}
@@ -499,7 +515,7 @@
 
 
 		completion_reward = {
-
+			add_ideas = NXX_corporatism_idea
 		}
 	}
 	
@@ -532,7 +548,7 @@
 
 
 		completion_reward = {
-
+			add_offsite_building = { type = arms_factory level = 3 }
 		}
 	}
 	
@@ -565,7 +581,7 @@
 
 
 		completion_reward = {
-
+			add_offsite_building = { type = industrial_complex level = 3 }
 		}
 	}
 	
@@ -586,7 +602,7 @@
 		}
 
 		available = {
-
+			NOT = { has_idea = NXX_great_depression }
 		}
 		
 		bypass = {
@@ -599,7 +615,7 @@
 
 
 		completion_reward = {
-
+			add_ideas = NXX_new_english_economic_miracle
 		}
 	}
 
@@ -607,7 +623,7 @@
 		id = XNN_squash_popular_resistance
 		icon = GFX_focus_spr_crush_the_revolution
 		prerequisite = { focus = XNN_ne_economic_miracle }
-		prerequisite = { focus = XNN_expand_the_blackshirts }
+		prerequisite = { focus = XNN_create_the_blackshirts }
 		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
 		x = 2
 		y = 6
@@ -633,7 +649,7 @@
 
 
 		completion_reward = {
-
+			remove_ideas = NXX_popular_resistance
 		}
 	}
 

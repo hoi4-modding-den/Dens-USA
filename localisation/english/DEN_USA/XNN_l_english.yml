@@ -18,6 +18,9 @@
  NXX_sacred_heart_movement:0 "Sacred Heart Movement"
  NXX_sacred_heart_movement_desc:0 "The Sacred Heart Movement is a catholic movement seeking to establish a fascist theocracy in new england."
  
+ NXX_sacred_heart_in_opposition:0 "Sacred Heart Movement In Opposition"
+ NXX_sacred_heart_in_opposition_desc:0 "The Sacred Heart Movement is a catholic movement seeking to establish a fascist theocracy in new england."
+ 
  XNN_cooperate_with_sacred_heart:0 "Cooperate With Sacred Heart"
  XNN_outlaw_sacred_heart:0 "Outlaw Sacred Heart"
  XNN_commit_to_anti_fascism:0 "Commit To Anti-Fascism"
@@ -27,7 +30,7 @@
  XNN_march_on_boston:0 "March On Boston"
  XNN_lord_protector:0 "Create The Office Of Lord Protector"
  XNN_republicanism:0 "Republicanism"
- XNN_expand_the_blackshirts:0 "Expand The Blackshirts"
+ XNN_create_the_blackshirts:0 "Create The Blackshirts"
  XNN_invade_new_york:0 "Invade New York"
  XNN_secure_east_coast:0 "Secure The East Coast"
  XNN_corporatism:0 "Corporatism"
@@ -37,8 +40,17 @@
  XNN_unite_usa:0 "Unite The USA"
  XNN_squash_popular_resistance:0 "Squash Popular Resistance"
  
+ XNN_description:0 "WIP"
+ 
  XNN_fascism_party:0 "Sacred Heart"
  XNN_fascism_party_long:0 "Sacred Heart Movement"
  XNN_democratic_party:0 "New English Democrats"
  XNN_mosley_party:0 "NEUF"
  XNN_mosley_party_long:0 "New English Union Of Fascists"
+ 
+ XNN_lord_protector_trait:0 "Lord Protector"
+ 
+ NXX_corporatism_idea:0 "Corporatism"
+ NXX_new_english_economic_miracle:0 "New English Economic Miracle"
+ 
+ NXX_popular_resistance:0 "Popular Resistance"

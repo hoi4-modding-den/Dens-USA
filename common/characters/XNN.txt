@@ -12,4 +12,13 @@ characters={
 			id=-1
 		}
 	}
+	
+	XNN_oswald_mosley={
+		name="Oswald Mosley"
+		portraits={
+			civilian={
+				large=GFX_portrait_ENG_oswald_mosley
+			}
+		}
+	}
 }
