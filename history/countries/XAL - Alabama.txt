@@ -13,6 +13,11 @@ set_technology = {
 }
 
 
+add_ideas = {
+	XAL_muslim_bastion
+	XAL_alabama_division
+}
+
 
 #leaders
 recruit_character = XAL_gerges_al_waahid
