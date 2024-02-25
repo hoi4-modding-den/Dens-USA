@@ -105,6 +105,8 @@ set_convoys = 700
 
 recruit_character = XNN_charles_hurley
 recruit_character = XNN_oswald_mosley
+recruit_character = XNN_liberation_council
+recruit_character = XNN_vladimir_lenin
 
 set_politics = {
 	ruling_party = democratic

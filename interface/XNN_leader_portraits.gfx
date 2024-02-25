@@ -4,6 +4,15 @@ spriteTypes = {
 		name = "GFX_portrait_XNN_charles_hurley"
 		texturefile = "gfx/leaders/XNN/XNN_portrait_charles_hurley.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_portrait_XNN_liberation_council"
+		texturefile = "gfx/leaders/XNN/XNN_portrait_liberation_council.dds"
+	}
 
+	spriteType = {
+		name = "GFX_portrait_XNN_vladimir_lenin"
+		texturefile = "gfx/leaders/XNN/XNN_Portrait_vladimir_lenin.dds"
+	}
 	
 }
