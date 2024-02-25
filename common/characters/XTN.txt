@@ -79,7 +79,7 @@ logistics_skill = 1
 		country_leader = {
 			ideology = anarchism
 			traits = {  XTN_anarchist }
-			expire = "1939.6.17.9"
+			expire = "1945.6.17.9"
 			id = -1
 		}
 	
@@ -92,9 +92,7 @@ logistics_skill = 1
 			}
 
 			available  = {
-
-				date < 1939.6.17
-
+			
 			}
 
 

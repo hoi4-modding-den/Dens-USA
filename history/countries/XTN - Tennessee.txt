@@ -12,6 +12,7 @@ closed_economy
 disarmed_nation
 XTN_inteligensia_influence
 XTN_no_army
+XTN_minor_depression
 }
 
 set_politics = {
