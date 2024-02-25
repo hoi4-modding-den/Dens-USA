@@ -20,10 +20,12 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				conscription_factor = -0.15
+				conscription_factor = -0.10
 				political_power_cost = 0.15
 				army_org_factor = -0.1
 				army_morale_factor = -0.1
+				custom_modifier_tooltip = loyalist_influence_tt
+				custom_modifier_tooltip = salafist_influence_tt
 			}
 			allowed = {
 				tag = XAL

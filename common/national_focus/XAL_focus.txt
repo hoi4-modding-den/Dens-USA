@@ -1,0 +1,38 @@
+focus_tree = {
+	id = xal_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XAL
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+	
+	focus = {
+		id = XAL_sweet_home_al_abama
+		icon = GFX_goal_XAL_sweet_home_al_abama
+		x = 12
+		y = 1
+        cost = 2
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#country_event = XAL_events.1
+			add_political_power = 5
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+}
