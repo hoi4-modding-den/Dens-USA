@@ -1,0 +1,15 @@
+﻿XNN_state_militia_01 = {
+	name = "State Militia"
+	for_countries = { XNN }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "%d State Militia"
+}
+
+XNN_state_cavalry_militia_01 = {
+	name = "State Cavalry Militia"
+	for_countries = { XNN }
+	can_use = { always = yes }
+	division_types = { "cavalry" }
+	fallback_name = "%d State Cavalry Militia"
+}
