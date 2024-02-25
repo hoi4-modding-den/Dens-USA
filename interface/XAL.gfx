@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_XAL_alabama_division"
+		texturefile = "gfx/XAL_stuff/XAL_alabama_division.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAL_muslim_bastion"
+		texturefile = "gfx/XAL_stuff/XAL_muslim_bastion.dds"
+	}
+}

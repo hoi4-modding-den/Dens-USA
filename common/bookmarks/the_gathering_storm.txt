@@ -7,9 +7,6 @@ bookmarks = {
 		default_country = "---"
 		default = yes
 		
-		"---"={
-			history = ":O"
-		}
 		
 		"XWY"={
 			history = "does anyone even live in this state"
@@ -34,6 +31,10 @@ bookmarks = {
 				XNN_march_on_boston
 				XNN_unite_usa
 			}
+		}
+		
+		"---"={
+			history = ":O"
 		}
 
 		effect = {
