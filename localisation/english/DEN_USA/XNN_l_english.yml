@@ -30,7 +30,7 @@
  XNN_march_on_boston:0 "March On Boston"
  XNN_lord_protector:0 "Create The Office Of Lord Protector"
  XNN_republicanism:0 "Republicanism"
- XNN_create_the_blackshirts:0 "Create The Blackshirts"
+ XNN_integrate_the_blackshirts:0 "Integrate The Blackshirts"
  XNN_invade_new_york:0 "Invade New York"
  XNN_secure_east_coast:0 "Secure The East Coast"
  XNN_corporatism:0 "Corporatism"
@@ -54,3 +54,5 @@
  NXX_new_english_economic_miracle:0 "New English Economic Miracle"
  
  NXX_popular_resistance:0 "Popular Resistance"
+ 
+ create_blackshirts:0 "Creates 10 Elite Blackshirt Divisions"

@@ -13,3 +13,10 @@ XNN_state_cavalry_militia_01 = {
 	division_types = { "cavalry" }
 	fallback_name = "%d State Cavalry Militia"
 }
+XNN_blackshirt_names_group = {
+	name = "Blackshirt"
+	for_countries = { XNN }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "%d Blackshirt Division"
+}
