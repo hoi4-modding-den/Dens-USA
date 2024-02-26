@@ -33,7 +33,11 @@
  XTN_minor_depression_desc:0 "Isolationist policy of Tennessee saved them from wall street market crash making Great Depression a small note in our history."
 
  
+XTN_inteligensia_manifesto:0 "Intelligentsia Manifesto"
+XTN_inteligensia_manifesto_desc:0 "Written by Trotsky, Intelligentsia Manifesto is a document in which main goals of Intelligentsia are listed which party must fulfill. These points are 1. Creation of Standing Army 2. Opening up economy 3. Economic reforms which will counter Great Depression 4. Urbanization of Tennessee."
  
+XTN_rapid_urbanization:0 "Rapid Urbanization"
+XTN_rapid_urbanization_desc:0 "Fast progress can cause some temporary downturn."
  
  
  XTN_abolish_council:0 "Abolish Council"
@@ -53,3 +57,12 @@
 
  XTN_breakup_with_isolation:0 "Breakup with Isolationism"
  XTN_breakup_with_isolation_desc:0 "Right Intelligensia strongly wishes to open up Tennessee to free trade."
+
+ XTN_recover_from_minor_depression:0 "Recover from Minor Depression"
+ XTN_recover_from_minor_depression_desc:0 "3rd point of trotsky's manifesto wants Tennessee to recover from Wall Street crash."
+
+ XTN_urbanization:0 "Urbanization"
+ XTN_urbanization_desc:0 "Last point in Intelligentsia manifesto was rapid urbanization of Tennessee."
+
+ XTN_finallize_manifesto:0 "Finallize Manifesto"
+ XTN_finallize_manifesto_desc:0 "All points of Intelligentsia manifesto were fulfilled! Tennesseeians can now calm down."

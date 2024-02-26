@@ -40,5 +40,29 @@ ideas = {
             }
 
         }
+    XTN_inteligensia_manifesto = {
+           removal_cost = -1
+            picture = EST_democratic_opposition
+            modifier = {
+                political_power_cost = 0.25
+                political_advisor_cost_factor = 0.5
+                disabled_ideas = 1
+
+
+            }
+
+        }
+    XTN_rapid_urbanization = {
+           removal_cost = -1
+            picture = citizen_militia_1
+            modifier = {
+                
+                monthly_population = 0.02
+                consumer_goods_factor = 0.1
+
+
+            }
+
+        }
     }
 }
