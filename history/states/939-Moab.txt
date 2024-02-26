@@ -1,0 +1,19 @@
+state={
+	id=939
+	name="STATE_939"
+	provinces={
+		1756 7764 7818 
+	}
+	history = {
+		owner = XUT
+		add_core_of = XUT
+		victory_points = {
+			1756 1 
+		}
+	}
+	
+	state_category=pastoral
+	manpower=5698
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

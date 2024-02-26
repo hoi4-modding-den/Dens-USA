@@ -3,6 +3,9 @@
  XUT_DEF: "Utah"
  XUT_ADJ: "Utah"
  
+ STATE_939:0 "Moab"
+ STATE_940:0 "Lower Colorado"
+ 
  VICTORY_POINTS_10582:0 "Logan"
  VICTORY_POINTS_12699:0 "St. George"
  VICTORY_POINTS_1756:0 "Moab"
