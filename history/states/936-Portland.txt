@@ -1,0 +1,29 @@
+state={
+	id=936
+	name="STATE_936"
+
+	history={
+		owner = XOR
+		add_core_of = XOR
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+
+		}
+		victory_points = {
+			12689 5 
+		}
+		victory_points = {
+			12674 2
+		}
+
+	}
+
+	provinces={
+		12674 12689 
+	}
+	manpower=400590
+	state_category = city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,31 @@
+state={
+	id=937
+	name="STATE_937"
+
+	history={
+		owner = XOR
+		add_core_of = XOR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			air_base = 6
+			12211 = {
+				naval_base = 3
+
+			}
+
+		}
+		victory_points = {
+			4328 1 
+		}
+
+	}
+	
+	provinces={
+		528 3513 4328 4380 10183 11495 12211 12281 
+	}
+	manpower=429203
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}
