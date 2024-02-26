@@ -1,4 +1,6 @@
 spriteTypes = {
+
+	#national spirits
 	spriteType = {
 		name = "GFX_idea_XAL_alabama_division"
 		texturefile = "gfx/XAL_stuff/XAL_alabama_division.dds"
@@ -8,7 +10,38 @@ spriteTypes = {
 		texturefile = "gfx/XAL_stuff/XAL_muslim_bastion.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_XAL_mujahideen_icon"
+		texturefile = "gfx/XAL_stuff/XAL_mujahideen.dds"
+	}
+	
+	#focus icons
+	spriteType = {
 		name = "GFX_goal_XAL_sweet_home_al_abama"
 		texturefile = "gfx/XAL_stuff/XAL_sweet_home_al_abama.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_XAL_our_king"
+		texturefile = "gfx/XAL_stuff/XAL_our_king.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_our_religion"
+		texturefile = "gfx/XAL_stuff/XAL_our_religion.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_anti_christian_rhetoric"
+		texturefile = "gfx/XAL_stuff/XAL_anti_christian_rhetoric.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_callout_to_our_muslim_brothers"
+		texturefile = "gfx/XAL_stuff/XAL_callout_to_our_muslim_brothers.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_a_generous_king"
+		texturefile = "gfx/XAL_stuff/XAL_a_generous_king.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_a_strong_king"
+		texturefile = "gfx/XAL_stuff/XAL_a_strong_king.dds"
+	}
+	
 }

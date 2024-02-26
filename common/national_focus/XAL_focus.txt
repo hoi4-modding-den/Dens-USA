@@ -34,5 +34,158 @@ focus_tree = {
 			factor = 1
 		}
 	}
+	focus = {
+		id = XAL_our_king
+		icon = GFX_goal_XAL_our_king
+		x = -2
+		y = 1
+		relative_position_id = XAL_sweet_home_al_abama
+		prerequisite = { focus = XAL_sweet_home_al_abama }
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = { loyalist_influence = 1 }
+			custom_effect_tooltip = XAL_loyalist_influence_increase_1_tt
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XAL_a_strong_king
+		icon = GFX_goal_XAL_a_strong_king
+		x = 0
+		y = 1
+		relative_position_id = XAL_our_king
+		prerequisite = { focus = XAL_our_king }
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = { loyalist_influence = 1 }
+			custom_effect_tooltip = XAL_loyalist_influence_increase_1_tt
+			add_war_support = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XAL_a_generous_king
+		icon = GFX_goal_XAL_a_generous_king
+		x = 0
+		y = 1
+		relative_position_id = XAL_a_strong_king
+		prerequisite = { focus = XAL_a_strong_king }
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = { loyalist_influence = 2 }
+			custom_effect_tooltip = XAL_loyalist_influence_increase_2_tt
+			add_timed_idea = {
+				idea = XAL_public_sector_investments
+				days = 180
+			}
+			367 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}	
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XAL_our_religion
+		icon = GFX_goal_XAL_our_religion
+		x = 2
+		y = 1
+		relative_position_id = XAL_sweet_home_al_abama
+		prerequisite = { focus = XAL_sweet_home_al_abama }
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = { salafist_influence = 1 }
+			custom_effect_tooltip = XAL_salafist_influence_increase_1_tt
+			add_political_power = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XAL_anti_christian_rhetoric
+		icon = GFX_goal_XAL_anti_christian_rhetoric
+		x = 0
+		y = 1
+		relative_position_id = XAL_our_religion
+		prerequisite = { focus = XAL_our_religion }
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = { salafist_influence = 2 }
+			custom_effect_tooltip = XAL_salafist_influence_increase_2_tt
+			add_to_variable = { loyalist_influence = 1 }
+			custom_effect_tooltip = XAL_loyalist_influence_increase_1_tt
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XAL_callout_to_our_muslim_brothers
+		icon = GFX_goal_XAL_callout_to_our_muslim_brothers
+		x = 0
+		y = 1
+		relative_position_id = XAL_anti_christian_rhetoric
+		prerequisite = { focus = XAL_anti_christian_rhetoric }
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_to_variable = { salafist_influence = 2 }
+			custom_effect_tooltip = XAL_salafist_influence_increase_2_tt
+			#custom_effect_tooltip = XAL_mujahideen_callout
+			add_ideas = {
+				XAL_mujahideen
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
 
 }
