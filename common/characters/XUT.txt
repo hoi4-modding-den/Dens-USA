@@ -1,0 +1,58 @@
+characters = {
+	XUT_henry_blood = {
+		name = "Henry Hooper Blood"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XUT_henry_blood"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	XUT_eugene_debs = {
+		name = "Eugene Debs"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XUT_eugene_debs"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	XUT_herber_grant = {
+		name = "Herber J. Grant"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XUT_herber_grant"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	XUT_tom_cruise = {
+		name = "Thomas Cruise Mapother IV"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XUT_tom_cruise"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+}

@@ -199,7 +199,7 @@
 		completion_reward = {
 			add_popularity = {
 				ideology = neutrality
-				popularity = 0.05
+				popularity = 0.15
 			}
 			add_popularity = {
 				ideology = fascism
@@ -239,7 +239,7 @@
 		completion_reward = {
 			add_popularity = {
 				ideology = neutrality
-				popularity = 0.05
+				popularity = 0.25
 			}
 		}
 	}
@@ -274,6 +274,30 @@
 
 		completion_reward = {
 			add_ideas = NXX_popular_resistance
+			remove_ideas = NXX_sacred_heart_in_opposition
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					long_name = XNN_mosley_party_long
+					name = XNN_mosley_party
+				}
+				add_ruling_to_fas = yes
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+				long_name = XNN_mosley_party_long
+				name = XNN_mosley_party
+			}
+			add_country_leader_role = {
+				character = XNN_oswald_mosley
+				promote_leader = yes
+				country_leader = {
+					ideology = gen_nazism
+					expire = "1965.1.1.1"
+				}
+			}
 		}
 	}
 
@@ -344,7 +368,7 @@
 	}
 	
 	focus = {
-		id = XNN_create_the_blackshirts
+		id = XNN_integrate_the_blackshirts
 		icon = GFX_focus_ITA_blackshirts
 		prerequisite = { focus = XNN_republicanism }
 		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
@@ -372,7 +396,78 @@
 
 
 		completion_reward = {
-
+			custom_effect_tooltip = ITA_battaglioni_d_assalto_tt
+			hidden_effect = {
+				set_technology = { blackshirt_assault_battalion_tech = 1 popup = no }
+			}
+			division_template = {
+				name = "Blackshirt Division"
+				is_locked = yes
+				division_cap = 10 
+				division_names_group = XNN_blackshirt_names_group
+				priority = 2
+				template_counter = 2
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					blackshirt_assault_battalion = { x = 0 y = 1 }
+				}
+			}
+			custom_effect_tooltip = create_blackshirts
+			hidden_effect = {
+				357 = {
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+				}
+			}
 		}
 	}
 
@@ -623,7 +718,7 @@
 		id = XNN_squash_popular_resistance
 		icon = GFX_focus_spr_crush_the_revolution
 		prerequisite = { focus = XNN_ne_economic_miracle }
-		prerequisite = { focus = XNN_create_the_blackshirts }
+		prerequisite = { focus = XNN_integrate_the_blackshirts }
 		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
 		x = 2
 		y = 6

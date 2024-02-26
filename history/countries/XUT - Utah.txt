@@ -2,6 +2,14 @@ capital = 380
 
 #oob="XUT"
 
+#leaders
+recruit_character = XUT_henry_blood
+recruit_character = XUT_eugene_debs
+recruit_character = XUT_herber_grant
+recruit_character = XUT_tom_cruise
+
+#characters
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
@@ -10,8 +18,8 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 25
-	democratic = 25
-	communism = 25
-	fascism = 25
+	neutrality = 45
+	democratic = 53
+	communism = 2
+	fascism = 0
 }

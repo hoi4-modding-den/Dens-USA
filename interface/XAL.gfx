@@ -7,4 +7,8 @@ spriteTypes = {
 		name = "GFX_idea_XAL_muslim_bastion"
 		texturefile = "gfx/XAL_stuff/XAL_muslim_bastion.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_XAL_sweet_home_al_abama"
+		texturefile = "gfx/XAL_stuff/XAL_sweet_home_al_abama.dds"
+	}
 }

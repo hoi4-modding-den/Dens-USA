@@ -2,4 +2,12 @@
  XOR: "Oregon"
  XOR_DEF: "Oregon"
  XOR_ADJ: "Oregon"
+
+ STATE_936: "Portland"
+ STATE_937: "Willamette"
+ VICTORY_POINTS_12689: "Portland"
+ VICTORY_POINTS_4328: "Salem"
+ VICTORY_POINTS_4274: "Bend"
+ VICTORY_POINTS_12674: "Gresham"
+
  

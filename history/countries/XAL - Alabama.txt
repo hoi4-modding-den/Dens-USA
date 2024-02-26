@@ -13,9 +13,26 @@ set_technology = {
 }
 
 
+
+#variables
+
+set_variable = {
+    var = loyalist_influence
+    value = 3
+}
+
+set_variable = {
+    var = salafist_influence
+    value = 1
+}
+
+
+
+
 add_ideas = {
 	XAL_muslim_bastion
 	XAL_alabama_division
+	limited_conscription
 }
 
 

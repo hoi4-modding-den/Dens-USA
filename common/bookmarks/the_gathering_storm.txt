@@ -32,6 +32,23 @@ bookmarks = {
 				XNN_unite_usa
 			}
 		}
+
+		"XTN" ={
+
+			history = ""
+			ideology = democratic
+			focuses = {
+				XTN_inteligensia_right
+				XTN_inteligensia_left
+			}
+			ideas = {
+				XTN_inteligensia_influence
+				XTN_no_army
+				XTN_minor_depression
+			}
+			
+
+		}
 		
 		"---"={
 			history = ":O"

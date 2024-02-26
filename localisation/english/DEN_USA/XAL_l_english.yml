@@ -18,5 +18,10 @@
  XAL_tariq_abd_hassan:0 "Tariq Abd Hassan"
  XAL_wafiq_miftah:0 "Wafiq Miftah"
  XAL_chawki_al_akhtam:0 "Chawki al-Akhtam"
- XAL_alabama_division:0 "Islamist-Loyalist Split"
+ XAL_alabama_division:0 "§LLoyalist§!-§7Salafist§! Split"
  XAL_muslim_bastion:0 "American Bastion of Islam"
+ XAL_sweet_home_al_abama:0 "Sweet Home Al-Abama"
+ loyalist_influence_tt:0 "§LLoyalist§! Influence: §R[?loyalist_influence]§!"
+ salafist_influence_tt:0 "-------------------------\n§7Salafist§! Influence: §R[?salafist_influence]§!"
+
+ 

@@ -1,0 +1,1375 @@
+﻿focus_tree = {
+	id = XWY_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = XUT
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 6000 }
+
+	focus = {
+		id = XUT_general_conference
+		icon = GFX_focus_generic_population_growth
+		#prerequisite = { focus = }
+		# mutually_exclusive = { focus =  }
+		x = 24
+		y = 0
+		#relative_position_id = 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_state_of_emergency
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_general_conference }
+		mutually_exclusive = { focus = XUT_dreams_of_deseret }
+		mutually_exclusive = { focus = XUT_evil_in_chaos }
+		x = -10
+		y = 1
+		relative_position_id = XUT_general_conference
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_dreams_of_deseret
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_general_conference }
+		mutually_exclusive = { focus = XUT_state_of_emergency }
+		mutually_exclusive = { focus = XUT_evil_in_chaos }
+		x = 0
+		y = 1
+		relative_position_id = XUT_general_conference
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_evil_in_chaos
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_general_conference }
+		mutually_exclusive = { focus = XUT_dreams_of_deseret }
+		mutually_exclusive = { focus = XUT_state_of_emergency }
+		x = 6
+		y = 1
+		relative_position_id = XUT_general_conference
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	### STATE OF EMERGENCY ###
+	focus = {
+		id = XUT_state_atheism
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_state_of_emergency }
+		mutually_exclusive = { focus = XUT_pacify_mormons }
+		x = -3
+		y = 1
+		relative_position_id = XUT_state_of_emergency
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_pacify_mormons
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_state_of_emergency }
+		mutually_exclusive = { focus = XUT_state_atheism }
+		x = 3
+		y = 1
+		relative_position_id = XUT_state_of_emergency
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_constitution_convention
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_state_atheism focus = XUT_pacify_mormons}
+		x = -3
+		y = 1
+		relative_position_id = XUT_pacify_mormons
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_new_constitution
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_constitution_convention }
+		x = 0
+		y = 1
+		relative_position_id = XUT_constitution_convention
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_guaruntee_rights
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_pacify_mormons }
+		x = 0
+		y = 1
+		relative_position_id = XUT_pacify_mormons
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_gender_equality
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_guaruntee_rights }
+		x = 0
+		y = 1
+		relative_position_id = XUT_guaruntee_rights
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_ban_parties
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_state_atheism }
+		x = 0
+		y = 1
+		relative_position_id = XUT_state_atheism
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_purge_religious_leaders
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_ban_parties }
+		x = 0
+		y = 1
+		relative_position_id = XUT_ban_parties
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_red_state_in_the_west
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_purge_religious_leaders }
+		prerequisite = { focus = XUT_new_constitution }
+		x = 2
+		y = 1
+		relative_position_id = XUT_purge_religious_leaders
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_propaganda_across_borders
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_red_state_in_the_west }
+		x = -1
+		y = 1
+		relative_position_id = XUT_red_state_in_the_west
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_local_contacts
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_red_state_in_the_west }
+		x = 1
+		y = 1
+		relative_position_id = XUT_red_state_in_the_west
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_launch_uprisings
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_propaganda_across_borders }
+		prerequisite = { focus = XUT_local_contacts }
+		
+		x = 1
+		y = 1
+		relative_position_id = XUT_propaganda_across_borders
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_integrate_union
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_launch_uprisings }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_launch_uprisings
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_sweep_the_rest
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_launch_uprisings }
+		
+		x = 2
+		y = 1
+		relative_position_id = XUT_launch_uprisings
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_mobilize_the_loyalists
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_purge_religious_leaders }
+		
+		x = -2
+		y = 1
+		relative_position_id = XUT_purge_religious_leaders
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_raid_old_stockpiles
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_mobilize_the_loyalists }
+		
+		x = -1
+		y = 1
+		relative_position_id = XUT_mobilize_the_loyalists
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_dig_trenches
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_mobilize_the_loyalists }
+		
+		x = 1
+		y = 1
+		relative_position_id = XUT_mobilize_the_loyalists
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_sniff_out_traitors
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_dig_trenches }
+		prerequisite = { focus = XUT_raid_old_stockpiles }
+		
+		x = 1
+		y = 1
+		relative_position_id = XUT_dig_trenches
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_open_up_abandoned_factories
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_dig_trenches }
+		prerequisite = { focus = XUT_raid_old_stockpiles }
+		
+		x = -1
+		y = 1
+		relative_position_id = XUT_dig_trenches
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_civil_war_victory
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_open_up_abandoned_factories }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_open_up_abandoned_factories
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_looking_inward
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_civil_war_victory }
+		prerequisite = { focus = XUT_integrate_union }
+		
+		x = 2
+		y = 1
+		relative_position_id = XUT_civil_war_victory
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_war_hero_statues
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_looking_inward }
+		
+		x = -1
+		y = 1
+		relative_position_id = XUT_looking_inward
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_deface_mormon_churches
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_war_hero_statues }
+		
+		x = -1
+		y = 1
+		relative_position_id = XUT_war_hero_statues
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_parades_down_main_street
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_war_hero_statues }
+		
+		x = 1
+		y = 1
+		relative_position_id = XUT_war_hero_statues
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_new_identity
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_parades_down_main_street }
+		prerequisite = { focus = XUT_deface_mormon_churches }
+		
+		x = -1
+		y = 1
+		relative_position_id = XUT_parades_down_main_street
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_root_out_dissent
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_looking_inward }
+		
+		x = 1
+		y = 1
+		relative_position_id = XUT_looking_inward
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_workers_camps
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_root_out_dissent }
+		
+		x = 0
+		y = 2
+		relative_position_id = XUT_root_out_dissent
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XUT_first_communist_convention
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_new_identity }
+		prerequisite = { focus = XUT_workers_camps }
+		
+		x = 0
+		y = 4
+		relative_position_id = XUT_looking_inward
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	### DESERET PATH ###
+	focus = {
+		id = XUT_march_on_capital
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_dreams_of_deseret }
+		x = 0
+		y = 1
+		relative_position_id = XUT_dreams_of_deseret
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_religious_decree
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_march_on_capital }
+		x = 0
+		y = 1
+		relative_position_id = XUT_march_on_capital
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	### GREAT AWAKENING ###
+	focus = {
+		id = XUT_fourth_great_awakening
+		icon = GFX_focus_generic_population_growth
+		#prerequisite = { focus = XUT_march_on_capital }
+		x = 3
+		y = 0
+		#relative_position_id = XUT_march_on_capital
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_traditional_roles
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_fourth_great_awakening }
+		x = -2
+		y = 1
+		relative_position_id = XUT_fourth_great_awakening
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_religious_programs
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_fourth_great_awakening }
+		x = 0
+		y = 1
+		relative_position_id = XUT_fourth_great_awakening
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_radio_propaganda
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_fourth_great_awakening }
+		x = 2
+		y = 1
+		relative_position_id = XUT_fourth_great_awakening
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_family_credit
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_traditional_roles }
+		x = 0
+		y = 1
+		relative_position_id = XUT_traditional_roles
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_renovate_salt_lake_tabernacle
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_religious_programs }
+		x = 0
+		y = 1
+		relative_position_id = XUT_religious_programs
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_expand_missionary_program
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_radio_propaganda }
+		x = 0
+		y = 1
+		relative_position_id = XUT_radio_propaganda
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	### FOUR YEAR PLAN ###
+	focus = {
+		id = XUT_four_year_plan
+		icon = GFX_focus_generic_population_growth
+		#prerequisite = { focus = XUT_march_on_capital }
+		x = 3
+		y = 4
+		#relative_position_id = XUT_march_on_capital
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_infrastructure_act
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_four_year_plan }
+		x = -2
+		y = 1
+		relative_position_id = XUT_four_year_plan
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_a_new_generation
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_four_year_plan }
+		x = 2
+		y = 1
+		relative_position_id = XUT_four_year_plan
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+}	
