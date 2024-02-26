@@ -22,7 +22,8 @@ state={
 	provinces={
 		12674 12689 
 	}
-	manpower=400590
+	#manpower=400590 <- actual 1936 value
+	manpower=4 
 	state_category = city
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
