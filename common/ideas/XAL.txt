@@ -44,7 +44,7 @@ ideas = {
 			}
 		}
 		XAL_public_sector_investments = {
-			picture = TUR_varlik_vergisi
+			picture = tur_varlik_vergisi
 			allowed_civil_war = {
 				always = yes
 			}
