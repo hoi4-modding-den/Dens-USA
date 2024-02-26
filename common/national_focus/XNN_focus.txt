@@ -120,6 +120,317 @@
 	}
 	
 	focus = {
+		id = XNN_organise_the_people
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { focus = XNN_commit_to_anti_fascism }
+		mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -5
+		y = 2
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+		}
+	}
+	
+	focus = {
+		id = XNN_create_the_redshirts
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = XNN_organise_the_people }
+		#mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -5
+		y = 3
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+		}
+	}
+	
+	focus = {
+		id = XNN_start_the_revolution
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		prerequisite = { focus = XNN_create_the_redshirts }
+		#mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -5
+		y = 4
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+	
+	focus = {
+		id = XNN_delegation_to_moscow
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = XNN_create_the_redshirts }
+		#mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -5
+		y = 5
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XNN_lenin_lives
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = XNN_delegation_to_moscow }
+		#mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -5
+		y = 6
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XNN_liberate_the_usa
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = XNN_lenin_lives }
+		#mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -5
+		y = 7
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XNN_nationalize_industry
+		icon = GFX_focus_generic_communist_industry
+		prerequisite = { focus = XNN_start_the_revolution }
+		#mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -7
+		y = 5
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XNN_collectivise_agriculture
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = XNN_nationalize_industry }
+		#mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -7
+		y = 6
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XNN_crack_down_on_communism
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = XNN_commit_to_anti_fascism }
+		mutually_exclusive = { focus = XNN_organise_the_people }
+		x = -1
+		y = 2
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.15
+			}
+		}
+	}
+	
+	focus = {
 		id = XNN_invite_exiled_fascists
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = XNN_outlaw_sacred_heart }
