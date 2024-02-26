@@ -50,6 +50,17 @@ bookmarks = {
 
 		}
 		
+		"XUT"={
+			history = "mormons, guns, and desert. what else do you need?"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
 		"---"={
 			history = ":O"
 		}
