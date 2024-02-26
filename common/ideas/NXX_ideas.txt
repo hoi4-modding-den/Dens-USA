@@ -59,5 +59,105 @@ ideas = {
 				mobilization_laws_cost_factor = 0.25
 			}
 		}
+		
+		NXX_sacred_heart_in_opposition = {
+			picture = SPA_carlism
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = -0.05
+				fascism_drift = 0.02
+				mobilization_laws_cost_factor = 0.10
+			}
+		}
+		
+		NXX_corporatism_idea = {
+			picture = SOV_second_five_year_plan
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		NXX_new_english_economic_miracle = {
+			picture = generic_economic_increase
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.3
+				production_speed_buildings_factor = 0.25
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		NXX_popular_resistance = {
+			picture = generic_oppression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.05
+				stability_factor = -0.15
+			}
+		}
+		
+		XNN_republicanism = {
+			picture = generic_economic_increase
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.15
+			}
+		}
 	}
 }

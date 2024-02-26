@@ -1,0 +1,20 @@
+﻿XAL_INF_01 = {
+	name = "Infantry Divisions" 
+	for_countries = { XAL } 
+	can_use = { always = yes } 
+	division_types = { "infantry" } 
+	fallback_name = "%d. Infantry Division"
+	ordered = {
+		1 = { "%d. Infantry Division" } 
+	}
+}
+XAL_INF_02 = {
+	name = "Infantry Divisions2" 
+	for_countries = { XAL } 
+	can_use = { always = yes } 
+	division_types = { "infantry" } 
+	fallback_name = "%d. Royal Guard"
+	ordered = {
+		1 = { "%d. Royal Guard" } 
+	}
+}

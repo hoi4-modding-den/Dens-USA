@@ -1,0 +1,23 @@
+focus_tree = {
+	id = XTX_focus
+	country = {
+		modifier = {
+			add = 100
+			tag = XTX
+		}
+	 }
+	 default = no
+	 
+	 continuous_focus_position = { x = 0 y = 1600 }
+	 default = no
+	 focus = {
+		id = XTX_start
+		icon = GFX_portrait_XWY_lester_hunt
+		cost = 10
+		x = 10
+		y = 1
+		completion_reward = {
+			add_stability = 0.05 add_political_power = 50
+		 }
+	 }
+}

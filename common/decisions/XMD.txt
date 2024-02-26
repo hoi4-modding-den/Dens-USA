@@ -1,0 +1,188 @@
+#Category allowed for JAP
+XMD_war_on_poverty = {
+
+	XMD_defending_americas_production_lines = {
+
+		icon = generic_welfare
+
+		available = {
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 201
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+
+		days_remove = 50
+
+		cost = 50
+
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = XMD_great_depression
+				add_idea = XMD_great_depression_1
+			}
+			set_country_flag = XMD_defending_americas_production_lines_flag
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+		}
+	}
+
+	XMD_empower_the_workers = {
+
+		icon = generic_welfare
+
+		available = {
+			has_country_flag = XMD_defending_americas_production_lines_flag
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 201
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+
+		days_remove = 50
+
+		cost = 50
+
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = XMD_great_depression_1
+				add_idea = XMD_great_depression_2
+			}
+			set_country_flag = XMD_empower_the_workers_flag
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+		}
+	}
+
+	XMD_increase_the_minimum_wage = {
+
+		icon = generic_welfare
+
+		available = {
+			has_country_flag = XMD_empower_the_workers_flag
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 201
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+
+		days_remove = 50
+
+		cost = 50
+
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = XMD_great_depression_2
+				add_idea = XMD_great_depression_3
+			}
+			set_country_flag = XMD_increase_the_minimum_wage_flag
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+		}
+	}
+
+	XMD_inflation_reduction_act = {
+
+		icon = generic_welfare
+
+		available = {
+			has_country_flag = XMD_increase_the_minimum_wage_flag
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 201
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+
+		days_remove = 50
+
+		cost = 50
+
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = XMD_great_depression_3
+				add_idea = XMD_great_depression_4
+			}
+			set_country_flag = XMD_inflation_reduction_act_flag
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+		}
+	}
+
+	XMD_balancing_the_budget = {
+
+		icon = generic_welfare
+
+		available = {
+			has_country_flag = XMD_inflation_reduction_act_flag
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 201
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+
+		days_remove = 50
+
+		cost = 50
+
+		remove_effect = {
+			remove_ideas = XMD_great_depression_4
+			set_country_flag = XMD_balancing_the_budget_flag
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+		}
+	}
+}
+
+XMD_mend_the_political_divide_cat = {
+
+}

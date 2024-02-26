@@ -7,9 +7,6 @@ bookmarks = {
 		default_country = "---"
 		default = yes
 		
-		"---"={
-			history = ":O"
-		}
 		
 		"XWY"={
 			history = "does anyone even live in this state"
@@ -20,6 +17,66 @@ bookmarks = {
 			focuses = {
 
 			}
+		}
+		
+		"XNN"={
+			history = XNN_description
+			ideology = democratic
+			ideas = {
+				NXX_great_depression
+				NXX_new_english_spirit
+				NXX_sacred_heart_movement
+			}
+			focuses = {
+				XNN_march_on_boston
+				XNN_unite_usa
+			}
+		}
+
+		"XTN" ={
+
+			history = ""
+			ideology = democratic
+			focuses = {
+				XTN_inteligensia_right
+				XTN_inteligensia_left
+			}
+			ideas = {
+				XTN_inteligensia_influence
+				XTN_no_army
+				XTN_minor_depression
+			}
+			
+
+		}
+
+		"XOR" ={
+
+			history = "XOR_BOOKMARK_DESC"
+			ideology = neutrality
+			focuses = {
+			}
+			ideas = {
+				XOR_emptyidea
+				XOR_where_is_everybody
+			}
+			
+
+		}
+		
+		"XUT"={
+			history = "mormons, guns, and desert. what else do you need?"
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
+		"---"={
+			history = ":O"
 		}
 
 		effect = {

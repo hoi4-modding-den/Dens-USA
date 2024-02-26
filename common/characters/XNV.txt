@@ -1,0 +1,16 @@
+characters = {
+    XNV_Richard_Kirman_SR = {
+        name = "Richard Kirman Sr."
+        portraits = {
+            civilian = {
+                large = gfx/leaders/XNV/XNV_RichardKirmanSR.dds
+            }
+        }
+        country_leader = {
+            ideology = liberalism
+            traits = {}
+            expire = "1939.1.2.1"
+            id = -1
+        }
+    }
+}

@@ -1,0 +1,14 @@
+XMD = {
+	male = {
+		names = { 
+			Joe Joeseph Joseph Yosef Josef Jozë Yūsuf Josef Jozef Jozefo Joey José Iōsēph Józef Iosif Seòsaidh Ioseff Giuseppe
+		  }
+	}
+	female = {
+		names = { Jozefina Joséphine Josefina Josepa Josipa Josephine Jo Joette Giuseppina }
+	}
+	surnames = { 
+		Goebbels Abercrombie Ankrah Kennedy Stalin Lieberman McCarthy Macdonald Jackson Whedon Howland Grant Roosevelt Obama Trump Clinton Shapiro Carlson Ramaswamy Haley DeSantis Pence
+	}
+	callsigns = {}
+}

@@ -1,0 +1,33 @@
+
+state={
+	id=935
+	name="STATE_935"
+
+	history={
+		owner = XMD
+		add_core_of = XMD
+		add_core_of = XVA
+		buildings = {
+			infrastructure = 2 #was: 6
+			3917 = {
+				naval_base = 1
+
+			}
+
+		}
+		#add_core_of = USA
+		victory_points = {
+			3917 2 #Exmore
+		}
+
+	}
+
+	provinces={
+		3917
+	}
+
+	local_supplies=11.0
+	manpower=55000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,15 @@
+leader_traits = {
+
+	XNN_lord_protector_trait = {
+		random = no
+		political_power_factor = 0.1
+        stability_factor = 0.1
+        
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+}

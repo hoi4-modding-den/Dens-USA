@@ -1,0 +1,19 @@
+state={
+	id=940
+	name="STATE_940"
+	provinces={
+		1740 4742 10662 12573 12699 
+	}
+	history = {
+		owner = XUT
+		add_core_of = XUT
+		victory_points = {
+			12699 5 
+		}
+	}
+	
+	state_category=rural
+	manpower=47271
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

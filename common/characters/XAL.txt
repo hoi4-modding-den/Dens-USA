@@ -27,4 +27,90 @@ characters = {
 			id = -1
 		}
 	}
+	XAL_saud_asghar={	
+		name=XAL_saud_asghar
+		portraits={
+			army={
+				large=gfx\XAL_stuff\saud_asghar.dds
+				small=gfx\XAL_stuff\saud_asghar_small.dds
+			}
+		}
+		field_marshal={
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+		advisor = {
+			allowed = {
+				original_tag = XAL
+			}
+			slot = high_command
+			idea_token = XAL_saud_asghar
+			ledger = army
+			traits = { army_logistics_2 }
+		}
+	}
+	XAL_tariq_abd_hassan={	
+		name=XAL_tariq_abd_hassan
+		portraits={
+			army={
+				large=gfx\XAL_stuff\tariq_abd_hassan.dds
+				small=gfx\XAL_stuff\tariq_abd_hassan_small.dds
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+		advisor={
+			slot = army_chief
+			idea_token = XAL_tariq_abd_hassan
+			allowed = {
+				original_tag = XAL
+			}
+			traits = { army_chief_drill_2 }
+			cost = 100
+		}		
+	}
+	XAL_wafiq_miftah={	
+		name=XAL_wafiq_miftah
+		portraits={
+			army={
+				large=gfx\XAL_stuff\wafiq_miftah.dds
+				small=gfx\XAL_stuff\wafiq_miftah_small.dds
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	XAL_chawki_al_akhtam={	
+		name=XAL_chawki_al_akhtam
+		portraits={
+			army={
+				large=gfx\XAL_stuff\chawki_al_akhtam.dds
+				small=gfx\XAL_stuff\chawki_al_akhtam_small.dds
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
 }

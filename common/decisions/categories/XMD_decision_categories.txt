@@ -1,0 +1,23 @@
+XMD_war_on_poverty = {
+	icon = GFX_decision_category_eng_concessions_to_the_trade_unions
+	allowed = {
+		original_tag = XMD
+	}
+	
+	priority = 100
+	visible = {
+		has_completed_focus = XMD_the_war_on_poverty
+	}
+}
+
+XMD_mend_the_political_divide_cat = {
+	icon = GFX_decision_category_usa_congress
+	allowed = {
+		original_tag = XMD
+	}
+	
+	priority = 100
+	visible = {
+		has_completed_focus = XMD_mend_the_political_divide
+	}
+}

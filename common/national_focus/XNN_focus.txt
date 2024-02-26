@@ -15,10 +15,10 @@
 	continuous_focus_position = { x = 50 y = 6000 }
 
 	focus = {
-		id = XNN_cooperate_with_burning_heart
+		id = XNN_cooperate_with_sacred_heart
 		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
 		#prerequisite = { focus = }
-		mutually_exclusive = { focus = XNN_outlaw_burning_heart }
+		mutually_exclusive = { focus = XNN_outlaw_sacred_heart }
 		x = 4
 		y = 0
 		#relative_position_id = 
@@ -48,10 +48,10 @@
 	}
 	
 	focus = {
-		id = XNN_outlaw_burning_heart
+		id = XNN_outlaw_sacred_heart
 		icon = GFX_focus_spa_eliminate_the_carlists
 		#prerequisite = { focus = }
-		mutually_exclusive = { focus = XNN_cooperate_with_burning_heart }
+		mutually_exclusive = { focus = XNN_cooperate_with_sacred_heart }
 		x = 16
 		y = 0
 		#relative_position_id = 
@@ -76,18 +76,21 @@
 
 
 		completion_reward = {
-
+			swap_ideas = {
+				remove_idea = NXX_sacred_heart_movement
+				add_idea = NXX_sacred_heart_in_opposition
+			}
 		}
 	}
 	
 	focus = {
 		id = XNN_commit_to_anti_fascism
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		prerequisite = { focus = XNN_outlaw_burning_heart }
+		prerequisite = { focus = XNN_outlaw_sacred_heart }
 		mutually_exclusive = { focus = XNN_invite_exiled_fascists }
 		x = -2
 		y = 1
-		relative_position_id = XNN_outlaw_burning_heart
+		relative_position_id = XNN_outlaw_sacred_heart
 
 		cost = 10
 
@@ -109,18 +112,332 @@
 
 
 		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.15
+			}
+		}
+	}
+	
+	focus = {
+		id = XNN_organise_the_people
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { focus = XNN_commit_to_anti_fascism }
+		mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -5
+		y = 2
+		relative_position_id = XNN_outlaw_sacred_heart
 
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+		}
+	}
+	
+	focus = {
+		id = XNN_create_the_redshirts
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = XNN_organise_the_people }
+		#mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -5
+		y = 3
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+		}
+	}
+	
+	focus = {
+		id = XNN_start_the_revolution
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		prerequisite = { focus = XNN_create_the_redshirts }
+		#mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -5
+		y = 4
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+		}
+	}
+	
+	focus = {
+		id = XNN_delegation_to_moscow
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = XNN_create_the_redshirts }
+		#mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -5
+		y = 5
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XNN_lenin_lives
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = XNN_delegation_to_moscow }
+		#mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -5
+		y = 6
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XNN_liberate_the_usa
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = XNN_lenin_lives }
+		#mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -5
+		y = 7
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XNN_nationalize_industry
+		icon = GFX_focus_generic_communist_industry
+		prerequisite = { focus = XNN_start_the_revolution }
+		#mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -7
+		y = 5
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XNN_collectivise_agriculture
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = XNN_nationalize_industry }
+		#mutually_exclusive = { focus = XNN_crack_down_on_communism }
+		x = -7
+		y = 6
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XNN_crack_down_on_communism
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = XNN_commit_to_anti_fascism }
+		mutually_exclusive = { focus = XNN_organise_the_people }
+		x = -1
+		y = 2
+		relative_position_id = XNN_outlaw_sacred_heart
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -0.15
+			}
 		}
 	}
 	
 	focus = {
 		id = XNN_invite_exiled_fascists
 		icon = GFX_goal_support_fascism
-		prerequisite = { focus = XNN_outlaw_burning_heart }
+		prerequisite = { focus = XNN_outlaw_sacred_heart }
 		mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
 		x = 2
 		y = 1
-		relative_position_id = XNN_outlaw_burning_heart
+		relative_position_id = XNN_outlaw_sacred_heart
 
 		cost = 10
 
@@ -142,13 +459,29 @@
 
 
 		completion_reward = {
-
+			set_party_name = {
+				ideology = neutrality
+				long_name = XNN_mosley_party_long
+				name = XNN_mosley_party
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_country_leader_role = {
+				character = XNN_oswald_mosley
+				promote_leader = yes
+				country_leader = {
+					ideology = despotism
+					expire = "1965.1.1.1"
+				}
+			}
 		}
 	}
 	
 	focus = {
-		id = XNN_protect_protestants
-		icon = GFX_goal_generic_construction
+		id = XNN_attack_catholics
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = XNN_invite_exiled_fascists }
 		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
 		x = -1
@@ -175,13 +508,20 @@
 
 
 		completion_reward = {
-
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.1
+			}
 		}
 	}
 	
 	focus = {
 		id = XNN_arm_protestant_militants
-		icon = GFX_goal_generic_construction
+		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = XNN_invite_exiled_fascists }
 		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
 		x = 1
@@ -208,14 +548,17 @@
 
 
 		completion_reward = {
-
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.25
+			}
 		}
 	}
 	
 	focus = {
-		id = XNN_send_our_ultimatum
+		id = XNN_march_on_boston
 		icon = GFX_focus_eng_organise_the_blackshirts
-		prerequisite = { focus = XNN_protect_protestants }
+		prerequisite = { focus = XNN_attack_catholics }
 		prerequisite = { focus = XNN_arm_protestant_militants }
 		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
 		x = 0
@@ -229,7 +572,6 @@
 		}
 
 		available = {
-
 		}
 		
 		bypass = {
@@ -242,16 +584,40 @@
 
 
 		completion_reward = {
-
+			add_ideas = NXX_popular_resistance
+			remove_ideas = NXX_sacred_heart_in_opposition
+			hidden_effect = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					long_name = XNN_mosley_party_long
+					name = XNN_mosley_party
+				}
+				add_ruling_to_fas = yes
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+				long_name = XNN_mosley_party_long
+				name = XNN_mosley_party
+			}
+			add_country_leader_role = {
+				character = XNN_oswald_mosley
+				promote_leader = yes
+				country_leader = {
+					ideology = gen_nazism
+					expire = "1965.1.1.1"
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = XNN_lord_protector
-		icon = GFX_focus_eng_organise_the_blackshirts
-		prerequisite = { focus = XNN_send_our_ultimatum }
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = XNN_march_on_boston }
 		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
-		x = 0
+		x = 1
 		y = 3
 		relative_position_id = XNN_invite_exiled_fascists
 
@@ -275,20 +641,234 @@
 
 
 		completion_reward = {
+			add_country_leader_trait = XNN_lord_protector_trait
+		}
+	}
+	
+	focus = {
+		id = XNN_republicanism
+		icon = GFX_focus_rom_abdicate
+		prerequisite = { focus = XNN_lord_protector }
+		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = 1
+		y = 4
+		relative_position_id = XNN_invite_exiled_fascists
 
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = XNN_republicanism
+		}
+	}
+	
+	focus = {
+		id = XNN_integrate_the_blackshirts
+		icon = GFX_focus_ITA_blackshirts
+		prerequisite = { focus = XNN_republicanism }
+		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = 1
+		y = 5
+		relative_position_id = XNN_invite_exiled_fascists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			custom_effect_tooltip = ITA_battaglioni_d_assalto_tt
+			hidden_effect = {
+				set_technology = { blackshirt_assault_battalion_tech = 1 popup = no }
+			}
+			division_template = {
+				name = "Blackshirt Division"
+				is_locked = yes
+				division_cap = 10 
+				division_names_group = XNN_blackshirt_names_group
+				priority = 2
+				template_counter = 2
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+					blackshirt_assault_battalion = { x = 0 y = 1 }
+				}
+			}
+			custom_effect_tooltip = create_blackshirts
+			hidden_effect = {
+				357 = {
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+					create_unit = {
+						division = "name = \"Blackshirt Division\" division_template = \"Blackshirt Division\" start_experience_factor = 1" 
+						owner = XNN
+					}
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = XNN_invade_new_york
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = XNN_lord_protector }
+		prerequisite = { focus = XNN_march_on_boston }
+		will_lead_to_war_with = XNY
 		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
-		x = 0
-		y = 4
+		x = -1
+		y = 3
 		relative_position_id = XNN_invite_exiled_fascists
 
 		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+
+		completion_reward = {
+			358 = {
+				owner = {
+					ROOT = {
+						create_wargoal = {
+							type = annex_everything
+							target = PREV
+						}
+					}
+				}
+			}
+			358 = { add_core_of = XNN }
+		}
+	}
+	
+	focus = {
+		id = XNN_secure_east_coast
+		icon = GFX_focus_generic_invade_sweden
+		prerequisite = { focus = XNN_invade_new_york }
+		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = -1
+		y = 4
+		relative_position_id = XNN_invite_exiled_fascists
+
+		cost = 14
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = XNN_unite_usa
+		icon = GFX_focus_usa_recruit_the_free_corps
+		prerequisite = { focus = XNN_secure_east_coast }
+		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = -1
+		y = 5
+		relative_position_id = XNN_invite_exiled_fascists
+
+		cost = 20
 
 		ai_will_do = {
 			factor = 1
@@ -315,7 +895,7 @@
 	focus = {
 		id = XNN_corporatism
 		icon = GFX_focus_ICE_state_corporatism
-		prerequisite = { focus = XNN_send_our_ultimatum }
+		prerequisite = { focus = XNN_march_on_boston }
 		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
 		x = 4
 		y = 3
@@ -341,7 +921,7 @@
 
 
 		completion_reward = {
-
+			add_ideas = NXX_corporatism_idea
 		}
 	}
 	
@@ -374,7 +954,7 @@
 
 
 		completion_reward = {
-
+			add_offsite_building = { type = arms_factory level = 3 }
 		}
 	}
 	
@@ -407,7 +987,7 @@
 
 
 		completion_reward = {
-
+			add_offsite_building = { type = industrial_complex level = 3 }
 		}
 	}
 	
@@ -419,6 +999,40 @@
 		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
 		x = 4
 		y = 5
+		relative_position_id = XNN_invite_exiled_fascists
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = { has_idea = NXX_great_depression }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = NXX_new_english_economic_miracle
+		}
+	}
+
+	focus = {
+		id = XNN_squash_popular_resistance
+		icon = GFX_focus_spr_crush_the_revolution
+		prerequisite = { focus = XNN_ne_economic_miracle }
+		prerequisite = { focus = XNN_integrate_the_blackshirts }
+		#mutually_exclusive = { focus = XNN_commit_to_anti_fascism }
+		x = 2
+		y = 6
 		relative_position_id = XNN_invite_exiled_fascists
 
 		cost = 10
@@ -441,9 +1055,8 @@
 
 
 		completion_reward = {
-
+			remove_ideas = NXX_popular_resistance
 		}
 	}
-
 
 }		
