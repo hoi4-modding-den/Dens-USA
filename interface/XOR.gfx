@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_XOR_emptyidea"
+		texturefile = "gfx/XOR_gfx/XOR_emptyidea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XOR_missingpeople"
+		texturefile = "gfx/XOR_gfx/XOR_missingpeople.dds"
+	}
+}

@@ -31,4 +31,31 @@ ideas = {
 				tag = XAL
 			}
 		}
+		XAL_mujahideen = {
+			picture = XAL_mujahideen_icon
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				weekly_manpower = 500
+			}
+			allowed = {
+				tag = XAL
+			}
+		}
+		XAL_public_sector_investments = {
+			picture = tur_varlik_vergisi
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_weekly  = 0.03
+				
+			}
+			allowed = {
+				tag = XAL
+			}
+		}
+	}
 }

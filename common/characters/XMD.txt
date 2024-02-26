@@ -1,0 +1,34 @@
+characters = {
+	XMD_joe_biden = {
+		name = XMD_joe_biden
+		portraits = {
+			civilian = {
+				large = GFX_portrait_XMD_joe_biden
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { XMD_the_president_from_the_future }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = stalinism #this is joe bidens america
+			traits = { XMD_the_president_from_the_future }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = gen_nazism #hail dark brandon
+			traits = { XMD_the_president_from_the_future }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = despotism #
+			traits = { XMD_the_president_from_the_future }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+}

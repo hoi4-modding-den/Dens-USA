@@ -1,0 +1,317 @@
+add_namespace = XMD_political_events
+
+country_event = { #The president form the future
+	id = XMD_political_events.1
+	title = XMD_political_events.1.t
+	desc = XMD_political_events.1.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #the president from the futuer
+		name = XMD_political_events.1.a
+		add_stability = 0.05
+		add_political_power = 50
+	}
+}
+
+country_event = { #with knowledge from the future
+	id = XMD_political_events.2
+	title = XMD_political_events.2.t
+	desc = XMD_political_events.2.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #there is much to be done
+		name = XMD_political_events.2.a
+		add_political_power = 100
+		add_popularity = {
+			popularity = 0.1
+			ideology = ROOT
+		}
+	}
+}
+
+country_event = { #Political Restructuring
+	id = XMD_political_events.3
+	title = XMD_political_events.3.t
+	desc = XMD_political_events.3.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Add minor reforms
+		name = XMD_political_events.3.a
+		custom_effect_tooltip = XMD_will_pass
+		custom_effect_tooltip = XMD_if_pass
+
+		set_country_flag = XMD_minor_reforms_vote
+		
+		event_option_tooltip = XMD_political_events.4.a
+
+		hidden_effect = {
+			country_event = {
+				id = XMD_political_events.4
+				days = 5
+			}
+		}
+	}
+
+	option = { #Overhaul the political process
+		name = XMD_political_events.3.b
+
+		custom_effect_tooltip = XMD_might_pass
+		custom_effect_tooltip = XMD_if_pass
+
+		set_country_flag = XMD_overhaul_vote
+		
+		event_option_tooltip = XMD_political_events.4.b
+
+		hidden_effect = {
+			country_event = {
+				id = XMD_political_events.4
+				days = 5
+			}
+		}
+	}
+
+	option = { #Establish dictatorial control
+		name = XMD_political_events.3.c
+
+		custom_effect_tooltip = XMD_unlikely_to_pass
+		custom_effect_tooltip = XMD_if_pass
+
+		set_country_flag = XMD_dictatorial_control_vote
+		
+		event_option_tooltip = XMD_political_events.4.c
+
+		hidden_effect = {
+			country_event = {
+				id = XMD_political_events.4
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = { #Vote for previous law
+	id = XMD_political_events.4
+	title = XMD_political_events.4.t
+	desc = XMD_political_events.4.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	immediate = {
+		clr_country_flag = XMD_pol_vote_passed
+		clr_country_flag = XMD_pol_vote_failed
+		if = {
+			limit = {
+				has_country_flag = XMD_minor_reforms_vote
+			}
+			set_country_flag = XMD_pol_vote_passed
+		}
+		else_if = {
+			limit = {
+				has_country_flag = XMD_overhaul_vote
+			}
+			random_list = {
+				50 = {
+					set_country_flag = XMD_pol_vote_passed
+				}
+				50 = {
+					set_country_flag = XMD_pol_vote_failed
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = XMD_dictatorial_control_vote
+			}
+			set_country_flag = XMD_pol_vote_failed
+		}
+		else = {
+			set_country_flag = XMD_pol_vote_failed
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = { #Minor reforms - Pass
+		name = XMD_political_events.4.a
+
+		trigger = {
+			has_country_flag = XMD_minor_reforms_vote
+			has_country_flag = XMD_pol_vote_passed
+		}
+
+		add_political_power = 50
+		add_stability = -0.1
+		add_popularity = {
+			popularity = 0.1
+			ideology = ROOT
+		}
+		swap_ideas = {
+			remove_idea = XMD_deadlocked_politics
+			add_idea = XMD_the_two_party_system
+		}
+	}
+
+	option = { #Overhaul the political process - Pass
+		name = XMD_political_events.4.b
+
+		trigger = {
+			has_country_flag = XMD_overhaul_vote
+			has_country_flag = XMD_pol_vote_passed
+		}
+
+		add_political_power = 100
+		add_stability = 0.15
+		add_popularity = {
+			popularity = 0.05
+			ideology = communism
+		}
+		add_popularity = {
+			popularity = 0.05
+			ideology = neutrality
+		}
+		add_popularity = {
+			popularity = 0.05
+			ideology = fascism
+		}
+		remove_ideas = XMD_deadlocked_politics
+
+	}
+
+	option = { #Establish dictatorial control - Passs
+		name = XMD_political_events.4.c
+
+		trigger = {
+			has_country_flag = XMD_dictatorial_control_vote
+			has_country_flag = XMD_pol_vote_passed
+		}
+
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		add_political_power = 500
+		add_stability = -0.3
+		swap_ideas = {
+			remove_idea = XMD_deadlocked_politics
+			add_idea = XMD_bidens_reign
+		}
+
+	}
+
+	option = { #fail
+		name = XMD_political_events.4.c
+		add_political_power = -100
+
+		trigger = {
+			has_country_flag = XMD_pol_vote_failed
+		}
+	}
+}
+
+country_event = { #Biden's coup
+	id = XMD_political_events.5
+	title = XMD_political_events.5.t
+	desc = XMD_political_events.5.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Gain support from the leftist MAGA supporters
+		name = XMD_political_events.5.a
+
+		add_stability = -0.05
+
+		add_popularity = {
+			popularity = 0.1
+			ideology = communism
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = XMD_political_events.6
+				days = 5
+			}
+		}
+	}
+
+	option = { #Dark Brandon does not need any help
+		name = XMD_political_events.5.b
+
+		add_stability = -0.05
+
+		add_popularity = {
+			popularity = 0.1
+			ideology = fascism
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = XMD_political_events.7
+				days = 5
+			}
+		}
+
+	}
+}
+
+country_event = { #Biden's coup - communism
+	id = XMD_political_events.6
+	title = XMD_political_events.6.t
+	desc = XMD_political_events.6.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #This is Biden's america
+		name = XMD_political_events.6.a
+
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+
+	}
+}
+
+country_event = { #Biden's coup - fascism
+	id = XMD_political_events.7
+	title = XMD_political_events.7.t
+	desc = XMD_political_events.7.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #This is Biden's america
+		name = XMD_political_events.6.a
+
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+
+	}
+}
+
+country_event = { #Biden's coup - fascism
+	id = XMD_political_events.8
+	title = XMD_political_events.8.t
+	desc = XMD_political_events.8.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #This is Biden's america
+		name = XMD_political_events.8.a
+
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+
+	}
+}
