@@ -1,0 +1,29 @@
+
+state={
+	id=938
+	name="STATE_938"
+	manpower = 35648
+	
+	state_category = rural
+	
+	resources={
+		steel=53
+		tungsten=12 
+		aluminium=15
+	}
+
+	history={
+		owner = XNV
+		add_core_of = XNV
+		buildings = {
+			infrastructure = 1
+		}
+    victory_points = { 4799 5 }
+	}
+
+	provinces={
+        4799 7879 12425 4816 10591 12399 4521
+	}
+
+	local_supplies=0.0 
+}
