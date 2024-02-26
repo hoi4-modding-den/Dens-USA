@@ -932,8 +932,8 @@ XLA = {
 	color_ui = rgb { 197 76 103 }
 }
 XMD = {
-	color = rgb { 151 64 60 }
-	color_ui = rgb { 151 64 60 }
+	color = rgb { 30 84 183 }
+	color_ui = rgb { 30 84 183 }
 }
 XMI = {
 	color = rgb { 142 102 169 }

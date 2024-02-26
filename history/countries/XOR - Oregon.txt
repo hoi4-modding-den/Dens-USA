@@ -1,4 +1,4 @@
-capital = 385
+capital = 936
 
 #oob="XOR"
 
@@ -10,8 +10,11 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 25
-	democratic = 25
-	communism = 25
-	fascism = 25
+	neutrality = 8
+	democratic = 71
+	communism = 20
+	fascism = 1
 }
+
+recruit_character = XOR_charlesmcnary
+#recruit_character = XOR_charlesmcnary
