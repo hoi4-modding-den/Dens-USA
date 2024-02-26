@@ -1,13 +1,21 @@
 ﻿l_english:
  XOR: "Oregon"
+ XOR_neutrality:0 "Oregonian Junta"
+ XOR_neutrality_DEF:0 "the Oregonian Junta"
  XOR_DEF: "Oregon"
- XOR_ADJ: "Oregon"
+ XOR_ADJ: "Oregonian"
 
  STATE_936: "Portland"
  STATE_937: "Willamette"
  VICTORY_POINTS_12689: "Portland"
  VICTORY_POINTS_4328: "Salem"
  VICTORY_POINTS_4274: "Bend"
- VICTORY_POINTS_12674: "Gresham"
+
+ XOR_missing_leadership:0 "Missing Leadership"
+ XOR_missing_leadership_desc:0 "The Military Junta that should be in control of Oregon doesn't seem to exist. To some, it may have never existed."
+ XOR_where_is_everybody:0 "Where is Everybody?"
+ XOR_where_is_everybody_desc:0 "No, seriously, where did everybody go?"
+ 
+ XOR_BOOKMARK_DESC:0 "With the fall of the state government in Salem, the military stepped in to preserve order. At least, that is what should have happened.\nTo this day no messages, no signals, and no word have left the Beaver State, almost as if everyone had vanished. But that can't be the case, how can an entire population vanish without anybody knowing or investigating?\n\nRight?\n\nRight??"
 
  

@@ -1,0 +1,8 @@
+leader_traits = {
+	
+	XOR_missing_leadership = {
+		random = no
+		political_power_factor = -1.0
+	}
+
+}

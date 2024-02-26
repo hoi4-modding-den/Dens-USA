@@ -4,5 +4,10 @@ spriteTypes = {
 		name = "GFX_portrait_charlesmcnary"
 		texturefile = "gfx/leaders/XOR/XOR_portrait_charlesmcnary.dds"
 	}
+
+	spriteType = {
+		name = "GFX_XOR_portrait_missingstate"
+		texturefile = "gfx/leaders/XOR/XOR_portrait_missingstate.dds"
+	}
 	
 }

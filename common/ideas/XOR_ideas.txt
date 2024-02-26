@@ -1,0 +1,29 @@
+ideas = {
+	country = {
+		XOR_where_is_everybody = {
+			picture = XOR_missingpeople
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				enemy_justify_war_goal_time = 1
+				political_advisor_cost_factor = 1
+			}
+			allowed = {
+				tag = XOR
+			}
+		}
+		XOR_emptyidea = {
+			picture = GFX_idea_XOR_emptyidea
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			}
+			allowed = {
+				tag = XOR
+			}
+		}
+		
+	}
+}

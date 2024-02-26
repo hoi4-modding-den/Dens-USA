@@ -49,6 +49,20 @@ bookmarks = {
 			
 
 		}
+
+		"XOR" ={
+
+			history = "XOR_BOOKMARK_DESC"
+			ideology = neutrality
+			focuses = {
+			}
+			ideas = {
+				XOR_emptyidea
+				XOR_where_is_everybody
+			}
+			
+
+		}
 		
 		"XUT"={
 			history = "mormons, guns, and desert. what else do you need?"
