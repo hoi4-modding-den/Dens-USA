@@ -17,15 +17,14 @@ set_technology = {
 #variables
 
 set_variable = {
-    var = loyalist_influence
-    value = 3
+	var = loyalist_influence
+	value = 3
 }
 
 set_variable = {
-    var = salafist_influence
-    value = 1
+	var = salafist_influence
+	value = 1
 }
-
 
 
 

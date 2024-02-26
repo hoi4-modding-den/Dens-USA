@@ -22,6 +22,24 @@
  XAL_muslim_bastion:0 "American Bastion of Islam"
  XAL_sweet_home_al_abama:0 "Sweet Home Al-Abama"
  loyalist_influence_tt:0 "§LLoyalist§! Influence: §R[?loyalist_influence]§!"
- salafist_influence_tt:0 "-------------------------\n§7Salafist§! Influence: §R[?salafist_influence]§!"
+ salafist_influence_tt:0 "--------------\n§7Salafist§! Influence: §R[?salafist_influence]§!"
+ XAL_muslim_bastion_desc:0 "Ever since the collapse of the Washington D.C. regime and the Great Islamic Revolution, Al-Abama has stood as the sole muslim nation in the Americas. Being led by Gerges al-Waahid, or George Wallace as he was known before the Islamic Revolution, Al-Abama has grown to become one of the most properous nations in the fromer Deep South region."
+ XAL_alabama_division_desc:0 "After the success of the Islamic Revolution, Al-Abamans soon found themselves divided between two rivalring cliques. There is the loyalist faction, which is loyal to Gerges I, the king of Al-Abama. The salafist faction on the other hand is led by Yahya Odeh al-Pirani (John M. Patterson pre-revolution), a radical muslim leader seeking to establish an Islamic state that would follow the Sharia Law as closely as possible."
+ XAL_sweet_home_al_abama_desc:0 "King Gerges’ lands are truly the most divine in the Deep South, and its people the most faithful of them all. The values of Islam and the monarchist regime are the two things which unite the lone Muslim nation in the ruins of the former United States. The values that the nation stands for have created prosperity and strength, if one were to believe the propaganda created by the House of al-Waahid."
+ XAL_our_religion:0 "Our Religion"
+ XAL_our_king:0 "Our King"
+ XAL_loyalist_influence_increase_1_tt:0 "§LLoyalist Influence Will Grow By 1§!"
+ XAL_loyalist_influence_increase_2_tt:0 "§LLoyalist Influence Will Grow By 2§!"
+ XAL_salafist_influence_increase_1_tt:0 "§7Salafist Influence Will Grow By 1§!"
+ XAL_salafist_influence_increase_2_tt:0 "§7Salafist Influence Will Grow By 2§!"
+ XAL_anti_christian_rhetoric:0 "Popularize An Anti-Christian Rhetoric"
+ XAL_callout_to_our_muslim_brothers:0 "A Callout To Our Muslim Brothers"
+ XAL_mujahideen_callout:0 "§GForeign Mujahid Will Start To Join Our Ranks§!"
+ XAL_mujahideen:0 "Foreign Mujahideen"
+ XAL_a_strong_king:0 "A §RStrong§! King"
+ XAL_a_generous_king:0 "A §GGenerous§! King"
+ XAL_public_sector_investments:0 "Public Sector Investments"
+
+
 
  
