@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_XUT_henry_blood"
+		texturefile = "gfx/leaders/XUT/XUT_henry_blood.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XUT_eugene_debs"
+		texturefile = "gfx/leaders/XUT/XUT_eugene_debs.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XUT_herber_grant"
+		texturefile = "gfx/leaders/XUT/XUT_herber_grant.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_XUT_tom_cruise"
+		texturefile = "gfx/leaders/XUT/XUT_tom_cruise.dds"
+	}
+	
+}
