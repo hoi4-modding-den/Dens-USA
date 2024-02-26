@@ -1,0 +1,40 @@
+﻿XMD_INF_01 = {
+	name = "People's Militia" 
+	for_countries = { XMD } 
+	can_use = { NOT = { has_government = neutrality has_government = communism}} 
+	division_types = { "infantry" } 
+	fallback_name = "%d. People's Militia"
+	ordered = {
+		1 = { "People's Militia of Washington" } 
+		2 = { "People's Most Loyal Bidenian Miltia" } 
+	}
+}
+XMD_INF_01_antifa = {
+	name = "Antifa" 
+	for_countries = { XMD } 
+	can_use = { OR = { has_government = neutrality has_government = communism}} 
+	division_types = { "infantry" } 
+	fallback_name = "%d. Anti-Fascist Brigade"
+	ordered = {
+		1 = { "Anti-Trump Brigade" } 
+		2 = { "Anti-Long Brigade" } 
+		3 = { "Anti-Ford Brigade" } 
+		4 = { "Anti-KKK Brigade" } 
+		5 = { "Anti-Duke Brigade" } 
+		6 = { "Anti-Pelly Brigade" } 
+		7 = { "Anti-Shapiro Brigade" } 
+		8 = { "Anti-QAnon Brigade" } 
+		9 = { "Anti-Prager Brigade" } 
+		10 = { "Anti-Maga Brigade" } 
+	}
+}
+XMD_INF_02 = {
+	name = "Infantry Division" 
+	for_countries = { XMD } 
+	can_use = { always = yes } 
+	division_types = { "infantry" } 
+	fallback_name = "%d. Infantry Division"
+	ordered = {
+		1 = { "%d. Infantry Division" } 
+	}
+}

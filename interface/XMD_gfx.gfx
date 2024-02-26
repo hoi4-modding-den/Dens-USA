@@ -1,0 +1,11 @@
+spriteTypes = {
+ 
+	#leader portraits
+	spriteType = {
+		name = "GFX_portrait_XMD_joe_biden"
+		texturefile = "gfx/leaders/XMD/XMD_joe.dds"
+	}
+
+	
+}
+ 
