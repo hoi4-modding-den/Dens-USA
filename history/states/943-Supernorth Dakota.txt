@@ -1,0 +1,25 @@
+
+state={
+	id=943
+	name="STATE_943"
+	manpower = 154786
+	state_category = rural
+	resources={
+		oil=2 # was: 10
+	}
+
+	history={
+		owner = XSD
+		add_core_of = XSD
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		12685 1870
+	}
+
+	local_supplies=9.0 
+}

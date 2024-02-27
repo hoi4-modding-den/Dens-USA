@@ -1,0 +1,66 @@
+ideas = {
+	country = {
+		BKH_DAK_decl_indp = {
+			picture = generic_constitutional_guarantees
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.05
+				resistance_decay_on_our_occupied_states = 0.1
+				army_core_defence_factor = 0.1
+			}
+			allowed = {
+				tag = SMS
+			}
+		}
+		BKH_martial_law = {
+			picture = chi_army_corruption3
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.25
+				stability_weekly = -0.01
+				resistance_decay_on_our_occupied_states = -0.15
+				conscription_factor = -0.1
+			}
+			allowed = {
+				tag = SMS
+			}
+		}
+		BKH_16_up_forced_conscription = {
+			picture = scraping_the_barrel
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				conscription_factor = 0.2
+				army_strength_factor = -0.1
+				army_morale_factor = -0.1
+			}
+			allowed = {
+				tag = WS2
+			}
+		}
+		BKH_kuilix_spirit = {
+			picture = BKH_kuilix
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				out_of_supply_factor = -0.1
+				female_random_army_leader_chance = 0.25
+				female_divisional_commander_chance = 0.25
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.05
+			}
+			allowed = {
+				tag = WS5
+			}
+		}
+	}
+}

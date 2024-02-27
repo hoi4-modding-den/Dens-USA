@@ -1,0 +1,29 @@
+
+state={
+	id=941
+	name="STATE_941"
+	manpower = 309629
+	state_category = rural
+	resources={
+		steel=20 # was: 24
+		oil=7 # was: 10
+	}
+
+	history={
+		owner = SMS
+		add_core_of = SMS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			1747 1 
+		}
+	}
+
+	provinces={
+		4759 7877 6722 12566 4839 1747
+	}
+
+	local_supplies=9.0 
+}

@@ -2,6 +2,8 @@ capital = 390
 
 #oob="XSD"
 
+recruit_character = BKH_Tom_Berry
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"

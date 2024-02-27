@@ -1,0 +1,47 @@
+leader_traits = {
+	
+	BKH_unpopular_dictator = {
+		random = no
+		political_power_factor = -0.15
+		stability_factor = -0.2
+		communism_drift = 0.05
+	}
+	BKH_nationalist_sympathizer = {
+		random = no
+		fascism_drift = 0.02
+		fascism_acceptance = 50
+	}
+	BKH_populist_pretender = {
+		random = no
+		targeted_modifier = {
+			tag = PWS
+			attack_bonus_against = 0.1
+		}
+	}
+	BKH_old_republican = {
+		random = no
+		political_power_gain = 0.1
+		drift_defence_factor = 0.25
+		fascism_acceptance = 50
+		generate_wargoal_tension = 1
+		join_faction_tension = 0.7
+	}
+	BKH_military_leader = {
+		random = no
+		command_power_gain = 0.5
+		experience_gain_army = 0.5
+		army_strength_factor = 0.1
+	}
+	BKH_aspiring_pilot = {
+		random = no
+		ai_focus_aviation_factor = 0.5
+		experience_gain_air = 0.25
+		air_ace_bonuses_factor = 0.25
+	}
+	BKH_local_celebrity = {
+		random = no
+		political_power_factor = 0.1
+		stability_factor = 0.05
+	}
+
+}

@@ -1,0 +1,23 @@
+
+state={
+	id=944
+	name="STATE_944"
+	manpower = 50871
+	state_category = rural
+
+	history={
+		owner = PWS
+		add_core_of = PWS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		4772 10685
+	}
+
+	local_supplies=9.0 
+}
