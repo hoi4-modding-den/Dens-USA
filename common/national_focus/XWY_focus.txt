@@ -518,6 +518,146 @@ focus = {
 	}
 	
 	focus = {
+		id = XWY_rally_the_populace
+		icon = GFX_focus_generic_fascist_propaganda
+		prerequisite = { focus = XWY_social_change}
+		#mutually_exclusive = { focus = XWY_collective_ranches }
+		#mutually_exclusive = { focus = XWY_king_and_state }
+		x = 21
+		y = 4
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+		focus = {
+		id = XWY_conspire_with_the_military
+		icon = GFX_focus_generic_fascist_propaganda
+		prerequisite = { focus = XWY_social_change}
+		#mutually_exclusive = { focus = XWY_collective_ranches }
+		#mutually_exclusive = { focus = XWY_king_and_state }
+		x = 19
+		y = 4
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+	focus = {
+		id = XWY_cheyenne_rally
+		icon = GFX_focus_generic_fascist_propaganda
+		prerequisite = { focus = XWY_rally_the_populace	focus = XWY_conspire_with_the_military}
+		#mutually_exclusive = { focus = XWY_collective_ranches }
+		#mutually_exclusive = { focus = XWY_king_and_state }
+		x = 20
+		y = 5
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+	focus = {
+		id = XWY_the_new_state
+		icon = GFX_focus_generic_fascist_propaganda
+		prerequisite = { focus = XWY_cheyenne_rally}
+		#mutually_exclusive = { focus = XWY_collective_ranches }
+		#mutually_exclusive = { focus = XWY_king_and_state }
+		x = 20
+		y = 6
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+	focus = {
 		id = XWY_king_and_state
 		icon = GFX_focus_generic_monarchy_1
 		prerequisite = { focus = XWY_commitee_for_industrilization}
@@ -555,7 +695,7 @@ focus = {
 	
 	focus = {
 		id = XWY_assemble_a_regency
-		icon = GFX_focus_generic_monarchy_1
+		icon = GFX_focus_generic_monarchy_2
 		prerequisite = { focus = XWY_king_and_state}
 		# mutually_exclusive = { focus = XWY_collective_ranches }
 		x = 23
@@ -590,7 +730,7 @@ focus = {
 	focus = {
 		id = XWY_a_king
 		icon = GFX_focus_generic_monarchy_1
-		prerequisite = { focus = XWY_king_and_state}
+		prerequisite = { focus = XWY_assemble_a_regency}
 		# mutually_exclusive = { focus = XWY_assemble_a_regency }
 		x = 23
 		y = 5
@@ -690,11 +830,11 @@ focus = {
 	}
 	
 	focus = {
-		id = XWY_consolidatepower
+		id = XWY_consolidate_power
 		icon = GFX_focus_generic_monarchy_1
-		prerequisite = { focus = XWY_our_own_king}
-		mutually_exclusive = { focus = XWY_a_alabaman_king }
-		x = 24
+		prerequisite = { focus = XWY_our_own_king	focus = XWY_a_alabaman_king}
+		# mutually_exclusive = { focus = XWY_a_alabaman_king }
+		x = 23
 		y = 7
 		#relative_position_id = 
 
@@ -703,6 +843,40 @@ focus = {
 
 		ai_will_do = {
 			factor = 1
+		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+	focus = {
+		id = XWY_claim_the_kingdom_title
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = XWY_consolidate_power}
+		# mutually_exclusive = { focus = XWY_a_alabaman_king }
+		x = 23
+		y = 8
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
 		}
 
 		available = {
