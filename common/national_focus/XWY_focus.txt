@@ -690,6 +690,40 @@ focus = {
 	}
 	
 	focus = {
+		id = XWY_consolidatepower
+		icon = GFX_focus_generic_monarchy_1
+		prerequisite = { focus = XWY_our_own_king}
+		mutually_exclusive = { focus = XWY_a_alabaman_king }
+		x = 24
+		y = 7
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+	focus = {
 		id = XWY_expand_the_ranch_wars
 		icon = GFX_focus_generic_horse_studs
 		# prerequisite = { focus = XWY_commitee_for_industrilization}

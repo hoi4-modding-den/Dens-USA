@@ -1,0 +1,55 @@
+﻿l_english:
+ XTN: "Tennessee"
+ XTN_DEF: "Tennessee"
+ XTN_ADJ: "Tennessee"
+ XTN_communism: "Union of Socialist States of America"
+
+ XTN_council: "Council"
+ XTN_anarchist: "Anarcho-Individualist"
+ XTN_anarchist_theorist: "Anarchist Theorist"
+
+
+ XTN_communism_party:0 "I-L"
+ XTN_communism_party_long:0 "Intelligentsia - Left"
+
+ XTN_neutrality_party:0 "I-R"
+ XTN_neutrality_party_long:0 "Intelligentsia - Right"
+
+ XTN_democratic_party:0 "CoN"
+ XTN_democratic_party_long:0 "Council of Nashville"
+
+
+
+ XTN_immigration:0 "High Immigration"
+ XTN_immigration_desc:0 "Lands of Tennessee are mostly rual bringing oportunity to newcomers."
+
+ XTN_inteligensia_influence:0 "Intelligentsia influence"
+ XTN_inteligensia_influence_desc:0 "For long time Tennessee had no existing parties until Intelligentsia started to become unhappy with state of nation and deciaded to create one. As they are only political party they hold a lot of influence over politics."
+
+ XTN_no_army:0 "Disbanded Army"
+ XTN_no_army_desc:0 "Army was never needed for our beautiful republic thus no standing army exists."
+
+ XTN_minor_depression:0 "Minor Depression"
+ XTN_minor_depression_desc:0 "Isolationist policy of Tennessee saved them from wall street market crash making Great Depression a small note in our history."
+
+ 
+ 
+ 
+ 
+ XTN_abolish_council:0 "Abolish Council"
+ XTN_abolish_council_desc:0 "Non existing leader proves to be a disadvantage rather than solution."
+
+ XTN_inteligensia_right:0 "Intelligentsia - Right"
+ XTN_inteligensia_right_desc:0 "We must empower free thinkers from right branch of Intelligentsia."
+
+ XTN_inteligensia_left:0 "Intelligentsia - Left"
+ XTN_inteligensia_left_desc:0 "We must empower free thinkers from left branch of Intelligentsia."
+
+ XTN_inteligensia_common_reforms:0 "Common Reforms"
+ XTN_inteligensia_common_reforms_desc:0 "We might have differnet outlook on society but we are united in some cases."
+
+ XTN_standing_army:0 "Standing Army"
+ XTN_standing_army_desc:0 "1st point in Trotsky's manifesto was formation of standing army for Tennessee."
+
+ XTN_breakup_with_isolation:0 "Breakup with Isolationism"
+ XTN_breakup_with_isolation_desc:0 "Right Intelligensia strongly wishes to open up Tennessee to free trade."
