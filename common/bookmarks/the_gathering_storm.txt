@@ -75,6 +75,29 @@ bookmarks = {
 			}
 		}
 		
+		"XNV"={
+			history = "Lowest starting population besides Oregon! Wonder what happened there."
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+				XNVAFOC
+			}
+		}	
+		"XAL"={
+			history = "XAL_boomark_desc"
+			ideology = neutrality
+			ideas = {
+				XAL_muslim_bastion
+				XAL_alabama_division
+			}
+			focuses = {
+				XAL_sweet_home_al_abama
+				XAL_a_generous_king
+				XAL_our_religion
+			}
+		}		
 		"---"={
 			history = ":O"
 		}
