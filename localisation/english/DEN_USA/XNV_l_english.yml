@@ -7,3 +7,9 @@
 
  VICTORY_POINTS_4607:0 "Carson City"
  VICTORY_POINTS_4799:0 "Las Vegas"
+
+ XNV_democratic_party:0 "Democrats"
+ XNV_democratic_party_long:0 "Democratic Party"
+ XNV_democratic_party_desc:0 "Two-Party System"
+
+ XNVAFOC:0 "§YAll for Our Country§"
