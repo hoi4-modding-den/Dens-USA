@@ -481,6 +481,142 @@ add_to_variable = {
 		}
 	}
 	
+	focus = {
+		id = XWY_fuel_the_propaganda_machine
+		icon = GFX_focus_generic_communist_industry
+		prerequisite = { focus = XWY_collective_ranches}
+		#mutually_exclusive = { focus = XWY_king_and_state }
+		x = 17
+		y = 4
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			check_variable = { cattle_baron_power < 5 }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+	focus = {
+		id = XWY_our_red_army
+		icon = GFX_focus_generic_communist_industry
+		prerequisite = { focus = XWY_fuel_the_propaganda_machine}
+		#mutually_exclusive = { focus = XWY_king_and_state }
+		x = 17
+		y = 5
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			check_variable = { cattle_baron_power < 5 }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+	focus = {
+		id = XWY_the_united_revolution
+		icon = GFX_focus_generic_communist_industry
+		prerequisite = { focus = XWY_our_red_army}
+		mutually_exclusive = { focus = XWY_a_local_revolution }
+		x = 16
+		y = 6
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			check_variable = { cattle_baron_power < 5 }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+	focus = {
+		id = XWY_a_local_revolution
+		icon = GFX_focus_generic_communist_industry
+		prerequisite = { focus = XWY_our_red_army}
+		mutually_exclusive = { focus = XWY_the_united_revolution }
+		x = 18
+		y = 6
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			check_variable = { cattle_baron_power < 5 }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
 focus = {
 		id = XWY_social_change
 		icon = GFX_focus_generic_fascist_propaganda
@@ -630,6 +766,183 @@ focus = {
 		#mutually_exclusive = { focus = XWY_king_and_state }
 		x = 20
 		y = 6
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+	focus = {
+		id = XWY_state_owned_industry
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = XWY_the_new_state	focus = XWY_a_local_revolution focus = XWY_the_united_revolution}
+		#mutually_exclusive = { focus = XWY_collective_ranches }
+		#mutually_exclusive = { focus = XWY_king_and_state }
+		x = 18
+		y = 8
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+	
+	
+	focus = {
+		id = XWY_soldiers_wyoming
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = XWY_the_new_state	focus = XWY_a_local_revolution focus = XWY_the_united_revolution}
+		#mutually_exclusive = { focus = XWY_collective_ranches }
+		#mutually_exclusive = { focus = XWY_king_and_state }
+		x = 19
+		y = 7
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+		focus = {
+		id = XWY_ban_other_parties
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = XWY_the_new_state	focus = XWY_a_local_revolution focus = XWY_the_united_revolution}
+		#mutually_exclusive = { focus = XWY_collective_ranches }
+		#mutually_exclusive = { focus = XWY_king_and_state }
+		x = 17
+		y = 7
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+	focus = {
+		id = XWY_the_new_age
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = XWY_state_owned_industry	focus = XWY_claim_the_kingdom_title}
+		#mutually_exclusive = { focus = XWY focus = XWY_claim_the_kingdom_title}
+		#mutually_exclusive = { focus = XWY_king_and_state }
+		x = 19
+		y = 9
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+	focus = {
+		id = XWY_look_outwards
+		icon = GFX_focus_TUR_reconfigure_turkish_foreign_policy
+		prerequisite = { focus = XWY_state_owned_industry	focus = XWY_claim_the_kingdom_title}
+		#mutually_exclusive = { focus = XWY focus = XWY_claim_the_kingdom_title}
+		#mutually_exclusive = { focus = XWY_king_and_state }
+		x = 22
+		y = 9
 		#relative_position_id = 
 
 
