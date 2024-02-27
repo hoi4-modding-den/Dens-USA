@@ -75,6 +75,16 @@ bookmarks = {
 			}
 		}
 		
+		"XNV"={
+			history = "Lowest starting population besides Oregon! Wonder what happened there."
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+				XNVAFOC
+			}
+		}		
 		"---"={
 			history = ":O"
 		}
