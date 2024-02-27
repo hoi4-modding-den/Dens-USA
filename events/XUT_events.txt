@@ -1,0 +1,63 @@
+add_namespace = XUT
+
+country_event = { #General Conference
+	id = XUT.1
+	title = XUT.1.t
+	desc = XUT.1.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #State of Emergency
+		name = XUT.1.a
+		complete_national_focus = XUT_state_of_emergency
+	}
+	option = { #Let the Mormons do Their Thing
+		name = XUT.1.b
+		complete_national_focus = XUT_dreams_of_deseret
+	}
+	option = { #Stalemate, leads to Tom Cruise
+		name = XUT.1.c
+		country_event = {
+			id = XUT.2
+		}
+	}
+}
+country_event = { #Tom Cruise
+	id = XUT.2
+	title = XUT.2.t
+	desc = XUT.2.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #State of Emergency
+		name = XUT.2.a
+		complete_national_focus = XUT_evil_in_chaos
+	}
+}
+country_event = { #Civil War Begins
+	id = XUT.3
+	title = XUT.3.t
+	desc = XUT.3.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = {
+		name = XUT.3.a
+	}
+}
+country_event = { #Civil War Ends
+	id = XUT.4
+	title = XUT.4.t
+	desc = XUT.4.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = {
+		name = XUT.4.a
+		complete_national_focus = XUT_civil_war_victory
+	}
+}

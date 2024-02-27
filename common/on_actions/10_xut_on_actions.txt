@@ -1,0 +1,12 @@
+on_actions = {
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = XUT
+				}
+				country_event = XUT.4
+			}
+		}
+	}
+}

@@ -10,6 +10,10 @@ recruit_character = XUT_tom_cruise
 
 #characters
 
+#ideas
+add_ideas = XUT_great_depression
+add_ideas = XUT_influential_church
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"

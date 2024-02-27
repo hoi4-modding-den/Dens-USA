@@ -1,0 +1,186 @@
+ideas = {
+
+	country = {
+		XUT_great_depression = {
+			picture = usa_great_depression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 2.5
+				consumer_goods_factor = 0.8
+				conscription_factor = -0.5
+				join_faction_tension = 1
+				local_resources_factor = -0.5
+			}
+		}
+		XUT_great_depression_2 = {
+			picture = usa_great_depression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 2.0
+				consumer_goods_factor = 0.64
+				conscription_factor = -0.4
+				join_faction_tension = 0.8
+				local_resources_factor = -0.4
+			}
+		}
+		XUT_great_depression_3 = {
+			picture = usa_great_depression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.5
+				consumer_goods_factor = 0.48
+				conscription_factor = -0.3
+				join_faction_tension = 0.6
+				local_resources_factor = -0.3
+			}
+		}
+		XUT_great_depression_4 = {
+			picture = usa_great_depression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 1.0
+				consumer_goods_factor = 0.32
+				conscription_factor = -0.2
+				join_faction_tension = 0.4
+				local_resources_factor = -0.2
+			}
+		}
+		XUT_great_depression_5 = {
+			picture = usa_great_depression
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.5
+				consumer_goods_factor = 0.16
+				conscription_factor = -0.1
+				join_faction_tension = 0.2
+				local_resources_factor = -0.1
+			}
+		}
+		XUT_influential_church = {
+			picture = MEX_church_power_5
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.05
+				consumer_goods_factor = 0.1
+				stability_factor = 0.25
+				war_support_factor = 0.1
+			}
+		}
+		XUT_pacified_church = {
+			picture = MEX_church_power_5
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.1
+			}
+		}
+		XUT_angered_church = {
+			picture = MEX_church_power_5
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.1
+				consumer_goods_factor = 0.2
+				stability_factor = -0.25
+				war_support_factor = -0.1
+			}
+		}
+		XUT_new_constitution = {
+			picture = HUN_treaty_of_triannon
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.1
+			}
+		}
+	}
+}
