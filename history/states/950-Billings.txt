@@ -1,0 +1,37 @@
+
+state={
+	id=950
+	name="STATE_950"
+	manpower = 132134
+	state_category = rural
+	resources={
+		oil=2 # was: 10
+		tungsten = 5
+		steel = 3
+	}
+
+	history={
+		owner = WS1
+		add_core_of = WS1
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			4860 2
+		}
+		victory_points = {
+			4857 8
+		}
+		victory_points = {
+			4741 4
+		}
+
+	}
+
+	provinces={
+		4741 12585 4857 12572 4860 7880 10706
+	}
+
+	local_supplies=9.0 
+}

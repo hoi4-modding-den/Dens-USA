@@ -1,0 +1,13 @@
+#Oregon Investigative Force
+XOR_oregon_investigation_decisions = {
+	icon = eng_move_to_secure_the_dominions
+
+	allowed = {
+		original_tag = XOR
+	}
+	priority = 100
+	visible = {
+		has_completed_focus = XOR_oregon_investigation_dept
+	}
+	visible_when_empty = yes
+}

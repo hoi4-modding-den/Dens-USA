@@ -1,0 +1,156 @@
+characters = {
+	BKH_Roy_Ayers = {
+		name = "Roy Ayers"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_BKH_Roy_Ayers"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	BKH_Tom_Berry = {
+		name = "Tom Berry"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_BKH_Tom_Berry"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	BKH_Sam_Ford = {
+		name = "Sam Ford"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_BKH_Sam_Ford"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	BKH_Fred_Aandahl = {
+		name = "Fred Aandahl"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_BKH_Fred_Aandahl"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	BKH_William_Langer = {
+		name = "William Langer"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_BKH_William_Langer"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits = { BKH_unpopular_dictator }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	BKH_William_Lemke = {
+		name = "William Lemke"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_BKH_William_Lemke"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	BKH_Burton_Wheeler = {
+		name = "Burton Wheeler"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_BKH_Burton_Wheeler"
+			}
+		}
+		country_leader = {
+			ideology = moderatism
+			traits = { BKH_nationalist_sympathizer }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	BKH_Mike_Mansfield = {
+		name = "Mike Mansfield"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_BKH_Mike_Mansfield"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	BKH_Darcy_McNickle = {
+		name = "D'Arcy McNickle"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_BKH_Darcy_McNickle"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	BKH_Gerald_Smith = {
+		name = "Gerald L. K. Smith"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_BKH_Gerald_Smith"
+			}
+		}
+		country_leader = {
+			ideology = gen_nazism 
+			traits = { BKH_populist_pretender }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	BKH_RobertWood = {
+		name = "Robert E. Wood"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_BKH_Robert_Wood"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { BKH_old_republican BKH_military_leader }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+}

@@ -1,0 +1,22 @@
+state={
+	id=953
+	name="STATE_953"
+	provinces={
+		3834 7920 10783 
+	}
+	history={
+		owner = XAZ
+		add_core_of = XAZ
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			3834 10 
+		}
+
+	}
+	manpower=93623
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

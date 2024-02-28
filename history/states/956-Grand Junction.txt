@@ -1,0 +1,23 @@
+state={
+	id=956
+	name="STATE_956"
+	provinces={
+		3869 6887 10535 
+	}
+	history={
+		owner = XCO
+		add_core_of = XCO
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			6887 3 
+		}
+
+	}
+	manpower=59163
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

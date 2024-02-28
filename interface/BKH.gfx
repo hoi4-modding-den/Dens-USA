@@ -1,0 +1,63 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_BKH_Roy_Ayers"
+		texturefile = "gfx/leaders/BKH/RoyAyers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_BKH_Tom_Berry"
+		texturefile = "gfx/leaders/BKH/TomBerry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_BKH_Sam_Ford"
+		texturefile = "gfx/leaders/BKH/SamFord.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_BKH_Fred_Aandahl"
+		texturefile = "gfx/leaders/BKH/fredaandahl.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_BKH_William_Langer"
+		texturefile = "gfx/leaders/BKH/WilliamLanger.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_BKH_William_Lemke"
+		texturefile = "gfx/leaders/BKH/williamlemke.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_BKH_Burton_Wheeler"
+		texturefile = "gfx/leaders/BKH/burtonwheeler.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_BKH_Mike_Mansfield"
+		texturefile = "gfx/leaders/BKH/MikeMansfield.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_BKH_Darcy_McNickle"
+		texturefile = "gfx/leaders/BKH/darcymcnickle.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_BKH_Gerald_Smith"
+		texturefile = "gfx/leaders/BKH/GeraldLKSmith.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_BKH_Robert_Wood"
+		texturefile = "gfx/leaders/BKH/RobertWood.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BKH_kuilix"
+		texturefile = "gfx/BKH/Kuilix.dds"
+	}
+	
+}

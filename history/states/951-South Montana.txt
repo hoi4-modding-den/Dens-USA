@@ -1,0 +1,29 @@
+
+state={
+	id=951
+	name="STATE_951"
+	manpower = 88021
+	state_category = rural
+	resources={
+		oil=1 # was: 10
+	}
+
+	history={
+		owner = MFS
+		add_core_of = MFS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			1767 1
+		}
+
+	}
+
+	provinces={
+		1851 7760 1767 10587
+	}
+
+	local_supplies=9.0 
+}

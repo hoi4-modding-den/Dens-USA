@@ -275,6 +275,29 @@ country_event = { #Biden's coup - communism
 			elections_allowed = no
 		}
 
+		set_party_name = {
+			ideology = communism
+			long_name = XMD_dem_rep_party
+			name = XMD_dem_rep_party
+		}
+
+		add_country_leader_role = {
+			character = XMD_joe_biden
+			promote_leader = yes
+			country_leader = {
+				ideology = stalinism
+				expire = "1965.1.1.1"
+				traits = { XMD_the_president_from_the_future }
+			}
+		}
+
+		if = {
+			limit = {
+				has_idea = XMD_deadlocked_politics
+			}
+			remove_ideas = XMD_deadlocked_politics
+		}
+
 	}
 }
 
@@ -294,10 +317,33 @@ country_event = { #Biden's coup - fascism
 			elections_allowed = no
 		}
 
+		set_party_name = {
+			ideology = fascism
+			long_name = XMD_dem_rep_party
+			name = XMD_dem_rep_party
+		}
+
+		add_country_leader_role = {
+			character = XMD_joe_biden
+			promote_leader = yes
+			country_leader = {
+				ideology = nazism
+				expire = "1965.1.1.1"
+				traits = { XMD_the_president_from_the_future }
+			}
+		}
+
+		if = {
+			limit = {
+				has_idea = XMD_deadlocked_politics
+			}
+			remove_ideas = XMD_deadlocked_politics
+		}
+
 	}
 }
 
-country_event = { #Biden's coup - fascism
+country_event = { #Conservatives upset over the shift in the democratic party
 	id = XMD_political_events.8
 	title = XMD_political_events.8.t
 	desc = XMD_political_events.8.desc
@@ -305,12 +351,66 @@ country_event = { #Biden's coup - fascism
 
 	is_triggered_only = yes
 
-	option = { #This is Biden's america
+	option = { #Good riddance
 		name = XMD_political_events.8.a
 
-		set_politics = {
-			ruling_party = fascism
-			elections_allowed = no
+		set_party_name = {
+			ideology = neutrality
+			long_name = XMD_republican_party
+			name = XMD_republican_party
+		}
+
+		set_party_name = {
+			ideology = democratic
+			long_name = XMD_democratic_party
+			name = XMD_democratic_party
+		}
+
+		add_political_power = -50
+		add_stability = -0.05
+
+		if = {
+			limit = {
+				has_idea  = XMD_deadlocked_politics
+			}
+			swap_ideas = {
+				remove_idea = XMD_deadlocked_politics
+				add_idea = XMD_the_two_party_system
+			}
+		}
+
+		set_country_flag = XMD_conservative_backlash_start_flag
+
+		unlock_decision_category_tooltip = XMD_building_a_great_society
+
+		set_variable = {
+			var = XMD_conservative_contentness
+			value = 50
+		}
+		
+		random_list = {
+			1 = {
+				set_variable = {
+					var = XMD_conservative_contentness_decrease
+					value = 1
+				}
+				if = {
+					limit = {
+						is_debug = yes
+					}
+					custom_effect_tooltip = fuck_you_debug_person
+				}
+			}
+			1 = {
+				set_variable = {
+					var = XMD_conservative_contentness_decrease
+					value = 0
+				}
+				modifier = {
+					factor = 0
+					is_ai = no
+				}
+			}
 		}
 
 	}

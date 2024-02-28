@@ -1,0 +1,43 @@
+focus_tree = {
+	id = XNV_focus
+
+	country = {
+
+        factor = 0
+		modifier = {
+			add = 100
+			tag = XNV
+		}
+
+	 }
+	 default = no
+	 continuous_focus_position = { x = 55 y = 1000 }
+
+	 focus = {
+		id = XNVAFOC #AllForOurCountry
+
+		prerequisite = {}
+		mutually_exclusive = {}
+		
+		icon = GFX_goal_XNV_AFOC
+		available = {
+			XNV = {
+				is_subject = no
+			}
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 8
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+    }
+} #endbracketlol

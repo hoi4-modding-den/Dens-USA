@@ -1,0 +1,20 @@
+capital = 948
+
+#oob="XND"
+
+recruit_character = BKH_Darcy_McNickle
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+	BKH_kuilix_spirit
+}
+
+set_popularities = {
+	neutrality = 100
+}

@@ -1,5 +1,4 @@
-#Category allowed for JAP
-XMD_war_on_poverty = {
+XMD_the_great_depression_cat = {
 
 	XMD_defending_americas_production_lines = {
 
@@ -9,6 +8,12 @@ XMD_war_on_poverty = {
 		}
 
 		visible = {
+			OR = {
+				has_idea = XMD_great_depression
+				NOT = {
+					has_country_flag = XMD_defending_americas_production_lines_flag
+				}
+			}
 		}
 
 		fire_only_once = yes
@@ -46,6 +51,12 @@ XMD_war_on_poverty = {
 		}
 
 		visible = {
+			OR = {
+				has_idea = XMD_great_depression_1
+				NOT = {
+					has_country_flag = XMD_empower_the_workers_flag
+				}
+			}
 		}
 
 		fire_only_once = yes
@@ -83,6 +94,12 @@ XMD_war_on_poverty = {
 		}
 
 		visible = {
+			OR = {
+				has_idea = XMD_great_depression_2
+				NOT = {
+					has_country_flag = XMD_increase_the_minimum_wage_flag
+				}
+			}
 		}
 
 		fire_only_once = yes
@@ -120,6 +137,12 @@ XMD_war_on_poverty = {
 		}
 
 		visible = {
+			OR = {
+				has_idea = XMD_great_depression_3
+				NOT = {
+					has_country_flag = XMD_inflation_reduction_act_flag
+				}
+			}
 		}
 
 		fire_only_once = yes
@@ -157,6 +180,12 @@ XMD_war_on_poverty = {
 		}
 
 		visible = {
+			OR = {
+				has_idea = XMD_great_depression_4
+				NOT = {
+					has_country_flag = XMD_balancing_the_budget_flag
+				}
+			}
 		}
 
 		fire_only_once = yes
@@ -173,7 +202,26 @@ XMD_war_on_poverty = {
 		cost = 50
 
 		remove_effect = {
-			remove_ideas = XMD_great_depression_4
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = XMD_great_depression_4
+					}
+					swap_ideas = {
+						remove_idea = XMD_great_depression_4
+						add_idea = XMD_stagnating_economy
+					}
+				}
+				else = {
+					add_ideas = XMD_stagnating_economy
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = XMD_great_depression_4
+					add_idea = XMD_stagnating_economy
+				}
+			}
 			set_country_flag = XMD_balancing_the_budget_flag
 			add_popularity = {
 				ideology = communism
@@ -183,6 +231,712 @@ XMD_war_on_poverty = {
 	}
 }
 
-XMD_mend_the_political_divide_cat = {
+XMD_building_a_great_society = {
+	XMD_debug_kill_all_conservatives = {
 
+		icon = generic_welfare
+
+		available = {
+		}
+
+		visible = {
+			is_debug = yes
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		cost = 0 
+
+		complete_effect = {
+			add_to_variable = {
+				var = XMD_conservative_contentness
+				value = -100
+				tooltip =XMD_cc_var_change_tt
+			}
+			clamp_variable = {
+				var = XMD_conservative_contentness
+				max = 100
+				min = 0
+			}
+		}
+	}
+	XMD_debug_cc_civil_war= {
+
+		icon = generic_welfare
+
+		available = {
+		}
+
+		visible = {
+			is_debug = yes
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		cost = 0 
+
+		complete_effect = {
+			XMD_cc_civil_war = yes
+		}
+	}
+	XMD_placate_conservative_fears = {
+
+		icon = eng_trade_unions_support
+
+		available = {
+		}
+
+		visible = {
+		}
+
+		days_re_enable = 90
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		cost = 0 
+
+		complete_effect = {
+			XMD_cc_increase_10 = yes
+		}
+
+	}
+	XMD_hold_off_on_any_legislation = {
+
+		icon = eng_trade_unions_support
+
+		available = {
+		}
+
+		visible = {
+		}
+
+		days_remove = 70
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		cost = 0 
+
+		remove_effect = {
+			clr_country_flag = XMD_cannot_sign_any_new_legislation
+			XMD_cc_increase_10 = yes
+		}
+
+		complete_effect = {
+			set_country_flag = XMD_cannot_sign_any_new_legislation
+			custom_effect_tooltip = XMD_cannot_sign_any_new_legislation_tt
+		}
+
+	}
+
+	XMD_invest_in_the_south = {
+
+		icon = eng_trade_unions_support
+
+		available = {
+			any_owned_state = {
+				hidden_trigger = {
+					OR = {
+						state = 362
+						state = 363
+						state = 364
+						state = 365
+						state = 366
+						state = 367
+						state = 368
+						state = 370
+						state = 371
+						state = 372
+						state = 374
+						state = 375
+						state = 376
+						state = 954
+						state = 955
+					}
+				}
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = no
+				}
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = no
+				}
+				free_building_slots = {
+					building = dockyard
+					size > 0
+					include_locked = no
+				}
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+					include_locked = no
+				}
+			}
+		}
+
+		visible = {
+			all_owned_state = {
+				NOT = {
+					has_state_flag = USA_congress_build_factory
+					has_state_flag = USA_congress_build_arms_factory
+					has_state_flag = USA_congress_build_dockyard
+					has_state_flag = USA_congress_build_infrastructure
+				}
+			}
+			any_owned_state = {
+				is_controlled_by = ROOT
+				all_neighbor_state = {
+					is_controlled_by = ROOT
+				}
+				OR = {
+					state = 362
+					state = 363
+					state = 364
+					state = 365
+					state = 366
+					state = 367
+					state = 368
+					state = 370
+					state = 371
+					state = 372
+					state = 374
+					state = 375
+					state = 376
+					state = 954
+					state = 955
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		cost = 0 
+
+		complete_effect = {
+			effect_tooltip = {
+				custom_effect_tooltip = XMD_random_owned_state_tt 
+				random_list = {
+					1 = {
+						unlock_decision_tooltip = XMD_invest_in_state_factory
+					}
+					1 = {
+						unlock_decision_tooltip = XMD_invest_in_state_arms_factory
+					}
+					1 = {
+						unlock_decision_tooltip = XMD_invest_in_state_dockyard
+					}
+					1 = {
+						unlock_decision_tooltip = { decision = XMD_invest_in_state_infrastructure show_effect_tooltip = yes }
+					}
+				}
+			}
+			hidden_effect = {
+				random_list = {
+					25 = {
+						modifier = {
+							NOT = {
+								any_owned_state = {
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = no
+									}
+									OR = {
+										state = 362
+										state = 363
+										state = 364
+										state = 365
+										state = 366
+										state = 367
+										state = 368
+										state = 370
+										state = 371
+										state = 372
+										state = 374
+										state = 375
+										state = 376
+										state = 954
+										state = 955
+									}
+								}
+							}
+							factor = 0
+						}
+						random_owned_state = {
+							limit = {
+								is_controlled_by = ROOT
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = no
+								}
+								OR = {
+									state = 362
+									state = 363
+									state = 364
+									state = 365
+									state = 366
+									state = 367
+									state = 368
+									state = 370
+									state = 371
+									state = 372
+									state = 374
+									state = 375
+									state = 376
+									state = 954
+									state = 955
+								}
+							}
+							
+							save_global_event_target_as = USA_congress_investment_state
+							set_state_flag = USA_congress_build_factory
+							set_variable = { factory_goal = industrial_complex_level }
+							add_to_variable = { factory_goal = 1 }
+						}
+					}
+					25 = {
+						modifier = {
+							NOT = {
+								any_owned_state = {
+									is_controlled_by = ROOT
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = no
+									}
+									OR = {
+										state = 362
+										state = 363
+										state = 364
+										state = 365
+										state = 366
+										state = 367
+										state = 368
+										state = 370
+										state = 371
+										state = 372
+										state = 374
+										state = 375
+										state = 376
+										state = 954
+										state = 955
+									}
+								}
+							}
+							factor = 0
+						}
+						random_owned_state = {
+							limit = {
+								is_controlled_by = ROOT
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = no
+								}
+								OR = {
+									state = 362
+									state = 363
+									state = 364
+									state = 365
+									state = 366
+									state = 367
+									state = 368
+									state = 370
+									state = 371
+									state = 372
+									state = 374
+									state = 375
+									state = 376
+									state = 954
+									state = 955
+								}
+							}
+							save_global_event_target_as = USA_congress_investment_state
+							set_state_flag = USA_congress_build_arms_factory
+							set_variable = { arms_factory_goal = arms_factory_level }
+							add_to_variable = { arms_factory_goal = 1 }
+						}
+					}
+					25 = { 
+						modifier = {
+							NOT = {
+								any_owned_state = {
+									is_controlled_by = ROOT
+									is_coastal = yes
+									free_building_slots = {
+										building = dockyard
+										size > 0
+										include_locked = no
+									}
+									OR = {
+										state = 362
+										state = 363
+										state = 364
+										state = 365
+										state = 366
+										state = 367
+										state = 368
+										state = 370
+										state = 371
+										state = 372
+										state = 374
+										state = 375
+										state = 376
+										state = 954
+										state = 955
+									}
+								}
+							}
+							factor = 0
+						}
+						random_owned_state = {
+							limit = {
+								is_controlled_by = ROOT
+								free_building_slots = {
+									building = dockyard
+									size > 0
+									include_locked = no
+								}
+								OR = {
+									state = 362
+									state = 363
+									state = 364
+									state = 365
+									state = 366
+									state = 367
+									state = 368
+									state = 370
+									state = 371
+									state = 372
+									state = 374
+									state = 375
+									state = 376
+									state = 954
+									state = 955
+								}
+							}
+							save_global_event_target_as = USA_congress_investment_state
+							set_state_flag = USA_congress_build_dockyard
+							set_variable = { dockyard_goal = building_level@dockyard }
+							add_to_variable = { dockyard_goal = 1 }
+						}
+					}
+					25 = {
+						modifier = {
+							NOT = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+										include_locked = no
+									}
+									OR = {
+										state = 362
+										state = 363
+										state = 364
+										state = 365
+										state = 366
+										state = 367
+										state = 368
+										state = 370
+										state = 371
+										state = 372
+										state = 374
+										state = 375
+										state = 376
+										state = 954
+										state = 955
+									}
+								}
+							}
+							factor = 0
+						}
+						random_owned_state = {
+							limit = {
+								is_controlled_by = ROOT
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+									include_locked = no
+								}
+								OR = {
+									state = 362
+									state = 363
+									state = 364
+									state = 365
+									state = 366
+									state = 367
+									state = 368
+									state = 370
+									state = 371
+									state = 372
+									state = 374
+									state = 375
+									state = 376
+									state = 954
+									state = 955
+								}
+							}
+							save_global_event_target_as = USA_congress_investment_state
+							set_state_flag = USA_congress_build_infrastructure
+							set_variable = { infrastructure_goal = infrastructure_level }
+							add_to_variable = { infrastructure_goal = 1 }
+						}
+					}
+				}
+			}
+			
+			
+		}
+
+	}
+
+	XMD_invest_in_state_factory = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_congress_invest_in_state_factory_tt
+				any_owned_state = {
+					has_state_flag = USA_congress_build_factory
+					check_variable = { factory_goal = industrial_complex_level }
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = USA_congress_build_factory
+			}
+		}
+
+		days_mission_timeout = 360
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = USA_congress_build_factory
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_factory
+				}
+				clr_state_flag = USA_congress_build_factory
+				clear_variable = factory_goal
+			}
+			if = {
+				limit = { has_event_target = USA_congress_investment_state }
+				clear_global_event_target = USA_congress_investment_state
+			}
+			XMD_cc_decrease_very_5 = yes
+			clr_country_flag = USA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_factory
+				}
+				clr_state_flag = USA_congress_build_factory
+				clear_variable = factory_goal
+			}
+			if = {
+				limit = { has_event_target = USA_congress_investment_state }
+				clear_global_event_target = USA_congress_investment_state
+			}
+			ROOT = {
+				XMD_cc_increase_15 = yes
+				clr_country_flag = USA_congress_investment
+			}
+			
+		}
+	}
+	XMD_invest_in_state_arms_factory = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_congress_invest_in_state_arms_factory_tt
+				any_owned_state = {
+					has_state_flag = USA_congress_build_arms_factory
+					check_variable = { arms_factory_goal = arms_factory_level }
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = USA_congress_build_arms_factory
+			}
+		}
+
+
+		days_mission_timeout = 360
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = USA_congress_build_arms_factory
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_arms_factory
+				}
+				clr_state_flag = USA_congress_build_arms_factory
+				clear_variable = arms_factory_goal
+			}
+			if = {
+				limit = { has_event_target = USA_congress_investment_state }
+				clear_global_event_target = USA_congress_investment_state
+			}
+			XMD_cc_decrease_very_5 = yes
+			clr_country_flag = USA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_arms_factory
+				}
+				clr_state_flag = USA_congress_build_arms_factory
+				clear_variable = arms_factory_goal
+			}
+			if = {
+				limit = { has_event_target = USA_congress_investment_state }
+				clear_global_event_target = USA_congress_investment_state
+			}
+			ROOT = {
+				XMD_cc_increase_15 = yes
+				clr_country_flag = USA_congress_investment
+			}
+			
+		}
+	}
+	XMD_invest_in_state_dockyard = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_congress_invest_in_dockyard_tooltip
+				any_owned_state = {
+					has_state_flag = USA_congress_build_dockyard
+					check_variable = { dockyard_goal = building_level@dockyard }
+				}
+			}
+		}
+
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = USA_congress_build_dockyard
+			}
+		}
+
+		days_mission_timeout = 360
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = USA_congress_build_dockyard
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_dockyard
+				}
+				clr_state_flag = USA_congress_build_dockyard
+				clear_variable = dockyard_goal
+			}
+			if = {
+				limit = { has_event_target = USA_congress_investment_state }
+				clear_global_event_target = USA_congress_investment_state
+			}
+			XMD_cc_decrease_very_5 = yes
+			clr_country_flag = USA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_dockyard
+				}
+				clr_state_flag = USA_congress_build_dockyard
+				clear_variable = dockyard_goal
+			}
+			if = {
+				limit = { has_event_target = USA_congress_investment_state }
+				clear_global_event_target = USA_congress_investment_state
+			}
+			ROOT = {
+				XMD_cc_increase_15 = yes
+				clr_country_flag = USA_congress_investment
+			}
+		}
+	}
+	XMD_invest_in_state_infrastructure = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = USA_congress_invest_in_state_infrastructure_tt
+				any_owned_state = {
+					has_state_flag = USA_congress_build_infrastructure
+					check_variable = { infrastructure_goal = infrastructure_level }
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = USA_congress_build_infrastructure
+			}
+		}
+		days_mission_timeout = 360
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = USA_congress_build_infrastructure
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_infrastructure
+				}
+				clr_state_flag = USA_congress_build_infrastructure
+				clear_variable = infrastructure_goal
+			}
+			if = {
+				limit = { has_event_target = USA_congress_investment_state }
+				clear_global_event_target = USA_congress_investment_state
+			}
+			XMD_cc_decrease_very_5 = yes
+			clr_country_flag = USA_congress_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = USA_congress_build_infrastructure
+				}
+				clr_state_flag = USA_congress_build_infrastructure
+				clear_variable = infrastructure_goal
+			}
+			if = {
+				limit = { has_event_target = USA_congress_investment_state }
+				clear_global_event_target = USA_congress_investment_state
+			}
+			ROOT = {
+				XMD_cc_increase_15 = yes
+				clr_country_flag = USA_congress_investment
+			}
+			
+		}
+	}
 }

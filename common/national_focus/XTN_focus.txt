@@ -47,12 +47,6 @@ country = {
     election_frequency = 48
 
 }
-XTN = {
-
-    add_ideas = {XTN_inteligensia_manifesto }
-}
-
-
 
 add_popularity = {
     ideology = neutrality
@@ -227,11 +221,6 @@ add_popularity = {
 
 }
 
-XTN = {
-
-    add_ideas = {XTN_inteligensia_manifesto }
-}
-
 add_popularity = {
     ideology = communism
     popularity = 0.15
@@ -326,94 +315,8 @@ focus = {
         }
     }
 
-focus = {
-    id = XTN_recover_from_minor_depression
-    x = 20
-    y = 6
-    icon = GFX_goal_generic_construction
-
-    prerequisite = { focus = XTN_breakup_with_isolation}
-    
-
-    cost = 10
-    
-
-    completion_reward = {
-  
-
-  368 = { set_building_level = {
-        type = infrastructure
-        level = 4
-        instant_build = yes
-            }}
-
-    
-    remove_ideas = {XTN_minor_depression }
-   
 
 
-        }
-    }
 
 
-focus = {
-    id = XTN_urbanization
-    x = 20
-    y = 7
-    icon = GFX_goal_generic_consumer_goods
-
-    prerequisite = { focus = XTN_recover_from_minor_depression}
-    
-
-    cost = 10
-    
-
-    completion_reward = {
-  
-
-  368 = { set_building_level = {
-        type = infrastructure
-        level = 5
-        instant_build = yes
-            }}
-
-    XTN = {
-
-        add_timed_idea = {
-    idea = XTN_rapid_urbanization 
-    days = 180
-} 
-        }   }
-
-   
-
-
-        }
-    
-    focus = {
-    id = XTN_finallize_manifesto
-    x = 20
-    y = 8
-    icon = GFX_focus_renounce_the_treaty_of_trianon
-
-    prerequisite = { focus = XTN_urbanization}
-    
-
-    cost = 4
-    
-
-    completion_reward = {
-
-        remove_ideas = {XTN_inteligensia_manifesto}
-  
-   }
-
-   
-
-
-    }
-    
-    
-    }
-
-
+}

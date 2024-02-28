@@ -5,17 +5,89 @@
  XOR_DEF: "Oregon"
  XOR_ADJ: "Oregonian"
 
+ XOR_OIDCOSMETIC_neutrality:0 "O.I.D. Mandate"
+ XOR_OIDCOSMETIC_neutrality_DEF:0 "The O.I.D. Mandate"
+ XOR_OIDCOSMETIC_neutrality_ADJ:0 "Oregonian"
+
  STATE_936: "Portland"
  STATE_937: "Willamette"
  VICTORY_POINTS_12689: "Portland"
  VICTORY_POINTS_4328: "Salem"
  VICTORY_POINTS_4274: "Bend"
+ VICTORY_POINTS_7865: "Umatilla"
 
+ #Focus Tree
+ XOR_ghost_state:0 "Ghost State"
+ XOR_ghost_state_desc:0 ""
+ XOR_oregon_investigation_dept:0 "Open the O.I.D."
+ XOR_oregon_investigation_dept_desc:0 ""
+ XOR_tt_explore_east_trigger:0 "Has formed the §YO.I.D.§!"
+ XOR_tt_explore_east:0 "Unlocks §YInvestigative Decisions§! for the §YOregon East§!."
+ XOR_expand_the_OID:0 "Expand the O.I.D"
+ XOR_expand_the_OID_desc:0 ""
+ XOR_infrastructure_project:0 "Infrastructure Projects"
+ XOR_infrastructure_project_desc:0 ""
+ XOR_build_up_OID_base:0 "Expand the O.I.D Home Base"
+ XOR_build_up_OID_base_desc:0 ""
+
+ #Ideas, Traits, bookmarks
  XOR_missing_leadership:0 "Missing Leadership"
  XOR_missing_leadership_desc:0 "The Military Junta that should be in control of Oregon doesn't seem to exist. To some, it may have never existed."
+ XOR_OID_idea:0 "Oregon Investigative Department"
+ XOR_OID_idea_desc:0 "The O.I.D has only one goal: Investigate the supernatural and unusual reports found in the state of Oregon, and restore order whenever possible."
+ XOR_running_investigation:0 "Active Investigation"
+ XOR_running_investigation_desc:0 "The O.I.D has sent a team to investigate a point of interest. They cannot do another until the team returns with news."
+
+ XOR_oregon_investigation_department:0 "Investigative Leader"
+ XOR_oregon_investigation_department_desc:0 "As the last Oregonian Senator, McNary is determined to figure out what happened, at any cost."
  XOR_where_is_everybody:0 "Where is Everybody?"
  XOR_where_is_everybody_desc:0 "No, seriously, where did everybody go?"
  
  XOR_BOOKMARK_DESC:0 "With the fall of the state government in Salem, the military stepped in to preserve order. At least, that is what should have happened.\nTo this day no messages, no signals, and no word have left the Beaver State, almost as if everyone had vanished. But that can't be the case, how can an entire population vanish without anybody knowing or investigating?\n\nRight?\n\nRight??"
 
+
+ #Decisions
+ XOR_oregon_investigation_decisions:0 "The Oregon Investigation Department"
+ XOR_oregon_investigation_decisions_desc:0 "The O.I.D. has only one goal: Investigate the supernatural and unusual reports found in the state of Oregon, and restore order whenever possible.\n\nThe O.I.D. has run [?XOR_num_inv|Y] Investigations.\n\nThe O.I.D. has amassed [?XOR_inv_points|Y] Investigation Experience."
+ XOR_enter_oregon:0 "Enter Oregon"
+ XOR_enter_oregon_desc:0 "There is a first step for everything, right?"
+ XOR_tt_enter_oregon:0 "We will attempt to set a base of operations in Umatilla, Oregon."
+ XOR_tt_core_situation:0 "We will §Rlose cores on the Oregon West§! until we have completed our investigations."
+ XOR_OID_bend:0 "Investigate Bend"
+ XOR_OID_bend_desc:0 ""
+ XOR_OID_pendleton:0 "Investigate Pendleton"
+ XOR_OID_pendleton_desc:0 ""
+ XOR_OID_highdesert:0 "Investigate the High Desert"
+ XOR_OID_highdesert_desc:0 ""
+ XOR_tt_OID_bend:0 "We will send a team to §YBend§!, which will relay back with results in a few days.\n"
+ XOR_tt_OID_pendleton:0 "We will send a team to §YPendleton§!, which will relay back with results in a few weeks.\n"
+ XOR_tt_OID_highdesert:0 "We will send a team to explore the §YHigh Desert§!, which will relay back with results in a few weeks.\n"
+
+
+ #Events
+ XOR_events.0.t:0 "The Oregonian Silence"
+ XOR_events.0.desc:0 "The last letter came on December 19th, 1935. In it contained a report stating the dissolution of the Oregon Government, and the assumption of power by the armed forces. The paper assured us that democracy would return, one day. After order had been restored. I remember reading that letter, shaking my head, and throwing it away. There hasn't been any more letters after that.\n\nBeing a part of the now defunct Oregon Government, I never returned home in fear of arrest at the arms of the Junta. I mearly prayed for my fellow men, and hoped for the best. But things have changed, and the longer I wait the more concerned I am for the safety of my state. Even though the letters have stopped, that doesn't mean I have to give up. I must know what is going on.\n\n     -Senator Charles McNary"
+ XOR_events.0.a:0 "Alis Volat Propriis"
+
+ XOR_events.1.t:0 "The First Step"
+ XOR_events.1.desc:0 "McNary may have had idea for what to expect, but this wasn't it. He nearly bankrupted himself gathering enough people for his cause of restoring democracy to Oregon, never mind the bribes it took for him to enter and stay in Washington. He at least expected the citizens of Oregon to recognize and maybe even cheer him on on his quest.\n\nBut there were no people.\n\nNot a person could be seen in Umatilla, no matter how hard he and his followers tried. It was empty.\nHowever, McNary couldn't shake the feeling that something was wrong. Even though everybody had seemingly vanished, the town remained in perfect condition. Electricity was still on, there was no evidence of looting or rioting. Someone even ran across a bakery, still stocked with warm pastries. Its like the citizens of Umatilla had been turned into ghosts."
+ XOR_events.1.t.a:0 "Well, at least this will make a good base."
+
+ XOR_events.2.t:0 "Investigative team returns from Pendleton"
+ XOR_events.2.desc:0 ""
+ XOR_events.2.a:0 "Intriguing"
+ XOR_events.3.t:0 "Investigative team returns from Bend"
+ XOR_events.3.desc:0 ""
+ XOR_events.3.a:0 "This is unusual."
+ XOR_events.4.t:0 "Investigative team returns from the High Desert"
+ XOR_events.4.desc:0 ""
+ XOR_events.4.a:0 "Investigate no further, we have greater concerns."
+ XOR_events.4.b:0 "Maybe this is worth digging deeper..."
+
+ #Investigation Requirements custom tooltips
+ XOR_tt_inf_add_points_5:0 "Adds §Y5§! Investigative Experience"
+ XOR_tt_inf_add_points_25:0 "Adds §Y25§! Investigative Experience"
+ XOR_tt_inf_add_points_35:0 "Adds §Y35§! Investigative Experience"
  
+ XOR_tt_inv_point_req_30:0 "Has §Y30§! Investigative Experience"
+ XOR_tt_inv_point_req_40:0 "Has §Y40§! Investigative Experience"

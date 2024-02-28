@@ -1,0 +1,18 @@
+#Democrats
+#XMT = "countries/DEN_USA/XND.txt" #Democratic Republic of Montana (Roy E. Ayers)
+#XSD = "countries/DEN_USA/XND.txt" #Democratic Republic of Dakota (Tom Berry)
+
+#Republicans
+MFS = "countries/DEN_USA/XND.txt" #Montana Free State (Sam C. Ford)
+#XND = "countries/DEN_USA/XND.txt" #Dakota Free State (Fred G. Aandahl)
+
+#Other
+SMS = "countries/DEN_USA/XND.txt" #Socialist Midwestern States (William "Wild Bill" Langer) (Arthur LeSueur)
+PWS = "countries/DEN_USA/XND.txt" #Midwestern Union (Populist) (William Lemke)
+
+#Warlords (led by nationalists or military)
+WS1 = "countries/DEN_USA/XND.txt" #Montana (Burton Wheeler) (Non Aligned democracy easy to flip fascist)
+WS2 = "countries/DEN_USA/XND.txt" #Montana Junta (Mike Mansfield) (Forced Military Service National Spirit)
+WS5 = "countries/DEN_USA/XND.txt" #Flathead Confederacy (D'Arcy McNickle) (Spirit of Kuilix National Spirit)
+WS3 = "countries/DEN_USA/XND.txt" #American Union (Gerald L. K. Smith) (Wants to take over populists but leads christian fascist country)
+WS4 = "countries/DEN_USA/XND.txt" #Dakotan Junta (Robert E. Wood) (Joe Foss path in 1940)

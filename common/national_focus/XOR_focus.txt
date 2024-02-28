@@ -1,0 +1,297 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = xor_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XOR
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+	
+	focus = {
+		id = XOR_ghost_state
+		icon = GFX_goal_continuous_naval_production
+		x = 5
+		y = 1
+        		cost = 2
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			country_event = XOR_events.0
+			add_political_power = 5
+		}
+		ai_will_do = { 
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = XOR_oregon_investigation_dept
+		icon = GFX_goal_continuous_naval_production
+		x = 0
+		y = 1
+        		cost = 5
+
+		relative_position_id = XOR_ghost_state
+		prerequisite = { focus = XOR_ghost_state }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			unlock_decision_category_tooltip = XOR_oregon_investigation_decisions
+		}
+		ai_will_do = { 
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = XOR_explore_east
+		icon = GFX_goal_continuous_naval_production
+		x = -2
+		y = 1
+        		cost = 5
+
+		relative_position_id = XOR_oregon_investigation_dept
+		prerequisite = { focus = XOR_oregon_investigation_dept }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = {
+			hidden_trigger = {
+				has_country_flag = XOR_has_created_OID
+			}
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_explore_east_trigger
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = XOR_tt_explore_east
+		}
+		ai_will_do = { 
+			factor = 100
+		}
+	}
+
+	focus = {
+		id = XOR_explore_west
+		icon = GFX_goal_continuous_naval_production
+		x = 0
+		y = 1
+        		cost = 5
+
+		relative_position_id = XOR_oregon_investigation_dept
+		prerequisite = { focus = XOR_oregon_investigation_dept }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = {
+			hidden_trigger = {
+				has_country_flag = XOR_has_created_OID
+			}
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_explore_east_trigger
+				has_country_flag = XOR_has_created_OID
+			}
+			
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = XOR_tt_explore_east
+		}
+		ai_will_do = { 
+			factor = 100
+		}
+	}
+
+	focus = {
+		id = XOR_explore_south
+		icon = GFX_goal_continuous_naval_production
+		x = 2
+		y = 1
+        		cost = 5
+
+		relative_position_id = XOR_oregon_investigation_dept
+		prerequisite = { focus = XOR_oregon_investigation_dept }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_explore_east_trigger
+				has_country_flag = XOR_has_created_OID
+			}
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_inv_point_req_40
+				check_variable = {
+					var = XOR_inv_points
+					value = 40
+					compare = greater_than_or_equals
+				}
+			}
+			
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = XOR_tt_explore_east
+		}
+		ai_will_do = { 
+			factor = 100
+		}
+	}
+
+
+	focus = {
+		id = XOR_expand_the_OID
+		icon = GFX_goal_continuous_naval_production
+		x = 6
+		y = 1
+        		cost = 10
+
+		relative_position_id = XOR_oregon_investigation_dept
+		prerequisite = { focus = XOR_oregon_investigation_dept }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = {
+			hidden_trigger = {
+				has_country_flag = XOR_has_created_OID
+			}
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_explore_east_trigger
+				has_country_flag = XOR_has_created_OID
+			}
+		}
+
+		completion_reward = {
+			add_political_power = 200
+			swap_ideas = {
+				remove_idea = XOR_OID_idea_0
+				add_idea = XOR_OID_idea_1
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				has_political_power < 20
+				factor = 10
+			}
+		}
+	}
+	
+	focus = {
+		id = XOR_infrastructure_project
+		icon = GFX_goal_continuous_naval_production
+		x = -1
+		y = 1
+        		cost = 5
+
+		relative_position_id = XOR_expand_the_OID
+		prerequisite = { focus = XOR_expand_the_OID }
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available = {
+			hidden_trigger = {
+				has_country_flag = XOR_has_created_OID
+			}
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_explore_east_trigger
+				has_country_flag = XOR_has_created_OID
+			}
+		}
+		bypass = {
+			capital_scope = {
+				infrastructure > 4
+			}
+				
+		}
+	
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_owned_by = XOR
+					is_capital = yes	
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_ideas = XOR_inprove_infra
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				has_political_power < 20
+				factor = 10
+			}
+		}
+	}
+
+	focus = {
+		id = XOR_build_up_OID_base
+		icon = GFX_goal_continuous_naval_production
+		x = 1
+		y = 1
+        		cost = 5
+
+		relative_position_id = XOR_expand_the_OID
+		prerequisite = { focus = XOR_expand_the_OID }
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available = {
+			hidden_trigger = {
+				has_country_flag = XOR_has_created_OID
+			}
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_explore_east_trigger
+			}
+		}
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_owned_by = XOR
+					is_capital = yes	
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = { 
+			factor = 1
+			modifier = {
+				has_political_power < 20
+				factor = 10
+			}
+		}
+	}
+
+
+
+}

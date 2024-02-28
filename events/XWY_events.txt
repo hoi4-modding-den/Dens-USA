@@ -1,0 +1,23 @@
+add_namespace = XWY
+
+country_event = { #
+	id = XWY.1
+	title = "The United Revolution"
+	desc = "placeholder"
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #
+		name = "The United Communes of America"
+		set_cosmetic_tag = XWY_COM_1
+	}
+	option = {
+		name = "Unified Peoples Republics"
+		set_cosmetic_tag = XWY_COM_2
+	}
+	option = { #
+		name = "The Peoples Republic of America"
+		set_cosmetic_tag = XWY_COM_3
+	}
+}

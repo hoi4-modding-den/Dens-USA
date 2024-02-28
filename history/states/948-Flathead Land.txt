@@ -1,0 +1,26 @@
+
+state={
+	id=948
+	name="STATE_948"
+	manpower = 24271
+	state_category = rural
+
+	history={
+		owner = WS5
+		add_core_of = WS5
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			13273 2
+		}
+
+	}
+
+	provinces={
+		13273
+	}
+
+	local_supplies=9.0 
+}

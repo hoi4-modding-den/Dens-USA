@@ -1,0 +1,29 @@
+
+state={
+	id=952
+	name="STATE_952"
+	manpower = 91918
+	state_category = rural
+	resources={
+		oil=4 # was: 10
+	}
+
+	history={
+		owner = XMT
+		add_core_of = XMT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			10593 1
+		}
+
+	}
+
+	provinces={
+		10593 10624 4863 7883
+	}
+
+	local_supplies=9.0 
+}

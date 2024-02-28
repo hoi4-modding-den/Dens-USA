@@ -5,4 +5,10 @@ leader_traits = {
 		political_power_factor = -1.0
 	}
 
+	XOR_oregon_investigation_department = {
+		random = no
+		political_power_factor = 0.15
+		stability_factor = 0.1
+	}
+
 }

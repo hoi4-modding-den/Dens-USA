@@ -1,0 +1,33 @@
+
+state={
+	id=949
+	name="STATE_949"
+	manpower = 120956
+	state_category = rural
+	resources={
+		tungsten = 11
+		steel = 1
+	}
+
+	history={
+		owner = WS2
+		add_core_of = WS2
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			6742 4
+		}
+		victory_points = {
+			7779 5
+		}
+
+	}
+
+	provinces={
+		7779 6742 1736
+	}
+
+	local_supplies=9.0 
+}

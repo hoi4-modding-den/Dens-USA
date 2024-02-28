@@ -4,6 +4,16 @@ spriteTypes = {
 		name = "GFX_portrait_XWY_lester_hunt"
 		texturefile = "gfx/leaders/XWY/XWY_lester_hunt.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_portrait_XWY_frank_alo"
+		texturefile = "gfx/leaders/XWY/XWY_frank_aloysius.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_XWY_herbert_brees"
+		texturefile = "gfx/leaders/XWY/XWY_herbert_brees.dds"
+	}
 
 	
 }

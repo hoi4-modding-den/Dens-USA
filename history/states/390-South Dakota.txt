@@ -1,8 +1,8 @@
 
-state={
+state={ 
 	id=390
 	name="STATE_390"
-	manpower = 692849
+	manpower = 152828
 	state_category = rural
 
 	history={
@@ -12,15 +12,21 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		#add_core_of = USA
 		victory_points = {
-			1747 1 
+			7862 4
 		}
+		victory_points = {
+			12667 4
+		}
+		victory_points = {
+			12620 5
+		}
+
 
 	}
 
 	provinces={
-		1747 1875 3750 4839 4880 7745 7771 7862 10569 10595 12620 12667 
+		4880 7862 12620 12667 
 	}
 
 	local_supplies=0.0 

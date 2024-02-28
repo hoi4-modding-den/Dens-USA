@@ -68,15 +68,57 @@ bookmarks = {
 			history = "mormons, guns, and desert. what else do you need?"
 			ideology = democratic
 			ideas = {
-
+				XUT_great_depression
+				XUT_influential_church
+				XUT_new_constitution
 			}
 			focuses = {
-
+				XUT_state_of_emergency
+				XUT_dreams_of_deseret
+				XUT_evil_in_chaos
 			}
 		}
 		
+		"XNV"={
+			history = "Lowest starting population besides Oregon! Wonder what happened there."
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+				XNVAFOC
+			}
+		}	
+		"XAL"={
+			history = "XAL_boomark_desc"
+			ideology = neutrality
+			ideas = {
+				XAL_muslim_bastion
+				XAL_alabama_division
+			}
+			focuses = {
+				XAL_sweet_home_al_abama
+				XAL_a_generous_king
+				XAL_our_religion
+			}
+		}		
 		"---"={
 			history = ":O"
+		}
+
+		"XMD"={
+			minor = yes
+			history = "XMD_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				XMD_great_depression
+				XMD_militia_based_army
+				XMD_deadlocked_politics
+			}
+			focuses = {
+				XMD_establish_a_great_society
+				XMD_end_the_experiment
+			}
 		}
 
 		effect = {

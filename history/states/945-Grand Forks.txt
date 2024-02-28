@@ -1,0 +1,26 @@
+
+state={
+	id=945
+	name="STATE_945"
+	manpower = 46773
+	state_category = rural
+
+	history={
+		owner = XND
+		add_core_of = XND
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			3719 5
+		}
+
+	}
+
+	provinces={
+		3719 1752
+	}
+
+	local_supplies=9.0 
+}

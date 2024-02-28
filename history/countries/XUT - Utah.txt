@@ -4,11 +4,18 @@ capital = 380
 
 #leaders
 recruit_character = XUT_henry_blood
-recruit_character = XUT_eugene_debs
+recruit_character = XUT_council
 recruit_character = XUT_herber_grant
 recruit_character = XUT_tom_cruise
 
 #characters
+recruit_character = XUT_eugene_debs
+
+#ideas
+add_ideas = XUT_great_depression
+add_ideas = XUT_influential_church
+
+set_stability = 0.2
 
 set_politics = {
 	ruling_party = democratic

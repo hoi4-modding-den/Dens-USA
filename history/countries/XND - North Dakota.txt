@@ -1,6 +1,8 @@
-capital = 389
+capital = 945
 
 #oob="XND"
+
+recruit_character = BKH_Fred_Aandahl
 
 set_politics = {
 	ruling_party = democratic

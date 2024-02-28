@@ -1,0 +1,29 @@
+
+state={
+	id=942
+	name="STATE_942"
+	manpower = 87224
+	state_category = rural
+	resources={
+		oil=3 # was: 10
+	}
+
+	history={
+		owner = WS3
+		add_core_of = WS3
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			7745 1
+		}
+
+	}
+
+	provinces={
+		7745 1875 7771
+	}
+
+	local_supplies=9.0 
+}

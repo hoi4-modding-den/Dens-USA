@@ -185,6 +185,70 @@ focus_tree = {
 			factor = 1
 		}
 	}
+	focus = {
+		id = XAL_the_burning_question
+		icon = GFX_goal_XAL_the_burning_question
+		x = -2
+		y = 2
+		relative_position_id = XAL_callout_to_our_muslim_brothers
+		prerequisite = { 
+			focus = XAL_callout_to_our_muslim_brothers
+			focus = XAL_a_generous_king
+		}
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XAL_overthrow_the_king
+		icon = GFX_goal_XAL_coup_the_king
+		x = 3
+		y = 2
+		relative_position_id = XAL_the_burning_question
+		prerequisite = { focus = XAL_the_burning_question }
+		mutually_exclusive = { focus = XAL_crush_the_salafists }	
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XAL_crush_the_salafists
+		icon = GFX_goal_XAL_crush_the_salafists
+		x = -3
+		y = 2
+		relative_position_id = XAL_the_burning_question
+		prerequisite = { focus = XAL_the_burning_question }
+		cost = 10
+		mutually_exclusive = { focus = XAL_overthrow_the_king }	
+		
+		
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 
 

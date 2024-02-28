@@ -1,4 +1,6 @@
-capital = 388
+capital = 952
+
+recruit_character = BKH_Roy_Ayers
 
 #oob="XMT"
 
