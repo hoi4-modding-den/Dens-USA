@@ -64,5 +64,29 @@ ideas = {
             }
 
         }
+    XTN_legalized_drugs = {
+           removal_cost = -1
+            picture = prc_permit_opium_trade
+            modifier = {
+                
+               stability_factor = -0.02
+                
+
+
+            }
+
+        }
+    XTN_drug_trade = {
+           removal_cost = -1
+            picture = prc_permit_opium_trade
+            modifier = {
+                
+               
+                consumer_goods_factor = -0.1
+
+
+            }
+
+        }
     }
 }

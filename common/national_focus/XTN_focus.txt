@@ -63,6 +63,147 @@ add_popularity = {
     }
 
 
+    focus = {
+    id = XTN_prepare_ground
+    x = 12
+    y = 2
+    icon = GFX_focus_ETH_freedom_at_gunpoint
+
+    prerequisite = { focus = XTN_inteligensia_right }
+
+    
+
+    cost = 10
+    
+
+    completion_reward = {
+
+
+add_war_support = 0.15
+add_threat = 2
+
+add_popularity = {
+    ideology = neutrality
+    popularity = 0.05
+}
+
+        }
+    }
+
+
+    focus = {
+    id = XTN_legalize_drugs
+    x = 10
+    y = 3
+    icon = GFX_focus_generic_coffee
+
+    prerequisite = { focus = XTN_prepare_ground }
+
+    
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        
+        add_ideas = {XTN_legalized_drugs}
+
+       
+
+    }
+}
+
+    focus = {
+    id = XTN_drug_trade
+    x = 10
+    y = 4
+    icon = GFX_goal_generic_trade
+
+    prerequisite = { focus = XTN_legalize_drugs }
+    available = { has_idea = free_trade }
+    
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        
+        add_ideas = {XTN_drug_trade}
+
+       
+
+    }
+}
+
+
+
+    focus = {
+    id = XTN_stirner
+    x = 14
+    y = 3
+    icon = GFX_focus_renounce_the_treaty_of_trianon
+
+    prerequisite = { focus =  XTN_prepare_ground}
+
+    
+
+    cost = 10
+    
+
+        completion_reward = {
+
+            add_political_power = 150
+
+            add_popularity = {
+            ideology = neutrality
+            popularity = 0.05
+                }
+            }
+    }
+
+    focus = {
+    id = XTN_arm_people
+    x = 14
+    y = 4
+    icon = GFX_focus_ITA_corpo_volontari_della_liberta
+
+    prerequisite = { focus =  XTN_stirner }
+
+    
+
+    cost = 10
+    
+
+        completion_reward = {
+
+            add_manpower = 10000
+                    }
+            }
+
+    focus = {
+    id = XTN_egoist_revolution
+    x = 12
+    y = 5
+    icon = GFX_focus_spr_torchbearers_of_tomorrow
+
+    prerequisite = { focus =  XTN_arm_people }
+    prerequisite = { focus =  XTN_drug_trade }
+
+    
+
+    cost = 10
+    
+
+        completion_reward = {
+
+            #### TODO ######
+                    }
+            }
+    
+
+
 ##### Left #####
 
   focus = {
