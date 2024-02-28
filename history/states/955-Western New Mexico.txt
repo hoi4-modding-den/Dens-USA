@@ -1,0 +1,21 @@
+state={
+	id=955
+	name="STATE_955"
+	provinces={
+		1972 5044 10645 10914 12552 
+	}
+	history={
+		owner = XNM
+		add_core_of = XNM
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			10914 1 
+		}
+	}
+	manpower=86635
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
