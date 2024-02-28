@@ -7,4 +7,10 @@ spriteTypes = {
 		name = "GFX_idea_XOR_missingpeople"
 		texturefile = "gfx/XOR_gfx/XOR_missingpeople.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_XOR_OIR_idea"
+		texturefile = "gfx/XOR_gfx/XOR_OIR_idea_g.dds"
+	}
+
+	
 }

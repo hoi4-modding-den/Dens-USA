@@ -16,6 +16,9 @@ set_popularities = {
 	fascism = 0
 }
 
-recruit_character = XOR_charlesmcnary
+set_stability = 0
+set_war_support = 0
+
 recruit_character = XOR_leader_missingstate
+recruit_character = XOR_charlesmcnary
 #recruit_character = XOR_charlesmcnary

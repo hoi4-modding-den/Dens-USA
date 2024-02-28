@@ -7,8 +7,8 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = liberalism
-			traits = {  }
+			ideology = centrism
+			traits = { XOR_oregon_investigation_department }
 			expire = "2050.3.1.1"
 			id = -1
 		}
@@ -22,7 +22,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = despotism
+			ideology = anarchism
 			traits = { XOR_missing_leadership }
 			expire = "2050.3.1.1"
 			id = -1

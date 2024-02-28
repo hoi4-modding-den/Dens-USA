@@ -1,0 +1,4 @@
+XOR_OIDCOSMETIC = {
+	color = rgb { 204 192 60 }
+	color_ui = rgb { 204 192 60 }
+}

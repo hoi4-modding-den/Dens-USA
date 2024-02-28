@@ -1,0 +1,61 @@
+add_namespace = XOR_events
+
+country_event = { #Letters about the Oregon Coup
+	id = XOR_events.0
+	title = XOR_events.0.t
+	desc = XOR_events.0.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #well fuck
+		name = XOR_events.0.a
+		add_political_power = 5
+	}
+}
+
+country_event = { #Entering Umatilla
+	id = XOR_events.1
+	title = XOR_events.1.t
+	desc = XOR_events.1.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Set Up base
+		name = XOR_events.1.a
+		add_ideas = XOR_OID_idea
+		set_cosmetic_tag = XOR_OIDCOSMETIC
+		hidden_effect = {
+			retire_country_leader = yes	
+			XOR = {
+				remove_state_core = 936
+				remove_state_core = 937
+			}
+		}
+		add_country_leader_role = { #Charles McNary becomes Leader
+			character = XOR_charlesmcnary  
+      			promote_leader = yes
+			country_leader = {
+				ideology = despotism
+				traits = { XOR_oregon_investigation_department }
+				expire = "2050.3.1.1"
+				id = -1
+			}
+		}
+		add_victory_points = {
+			province = 7865
+			value = 3
+		}
+		set_capital = {
+			state = 385
+		}
+		385 = {
+			add_manpower = 3500
+		}
+		custom_effect_tooltip = XOR_tt_core_situation
+		
+		
+	}
+}
+

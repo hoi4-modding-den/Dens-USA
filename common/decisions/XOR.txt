@@ -1,0 +1,91 @@
+
+XOR_oregon_investigation_decisions = {
+	
+	XOR_enter_oregon = {
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 1000
+		}
+	
+		allowed = {
+			tag = XOR
+		}
+		
+		available = {
+			has_completed_focus = XOR_oregon_investigation_dept
+		}
+
+		cost = 1
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = XOR_events.1
+			custom_effect_tooltip = XOR_tt_enter_oregon
+		}
+	}
+
+	#Investigate Pendleton
+	XOR_OID_pendleton = {
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 1000
+		}
+	
+		allowed = {
+			tag = XOR
+		}
+		
+		visible = {
+			has_completed_focus = XOR_explore_east
+		}
+		available = {
+			has_completed_focus = XOR_explore_east
+		}
+
+		cost = 15
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = XOR_events.2
+			custom_effect_tooltip = XOR_tt_OID_pendleton
+			set_country_flag = XOR_has_completed_pendleton
+		}
+	}
+
+	#Investigate Bend
+	XOR_OID_bend = {
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 0
+			modifier = {
+				has_country_flag = XOR_has_completed_pendleton
+				factor = 1000
+			}
+		}
+	
+		allowed = {
+			tag = XOR
+		}
+		
+		visible = {
+			has_completed_focus = XOR_explore_east
+		}
+		available = {
+			has_completed_focus = XOR_explore_east
+		}
+
+		cost = 40
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = XOR_events.3
+			custom_effect_tooltip = XOR_tt_OID_bend
+		}
+	}
+}
