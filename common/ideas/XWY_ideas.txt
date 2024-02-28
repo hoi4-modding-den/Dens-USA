@@ -59,5 +59,43 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
+		
+		XWY_communism = {
+			picture = LIT_invested_in_farms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		
+		XWY_the_red_army = {
+			picture = LIT_invested_in_farms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.01
+				army_attack_factor = 0.02
+				army_morale_factor = 0.05
+			}
+		}
 	}
 }

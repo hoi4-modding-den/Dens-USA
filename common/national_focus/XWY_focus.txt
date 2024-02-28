@@ -477,13 +477,13 @@ add_to_variable = {
 
 
 		completion_reward = {
-	
+			add_ideas = XWY_communism
 		}
 	}
 	
 	focus = {
 		id = XWY_fuel_the_propaganda_machine
-		icon = GFX_focus_generic_communist_industry
+		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = XWY_collective_ranches}
 		#mutually_exclusive = { focus = XWY_king_and_state }
 		x = 17
@@ -498,7 +498,7 @@ add_to_variable = {
 		}
 
 		available = {
-			check_variable = { cattle_baron_power < 5 }
+			communism > 0.35
 		}
 		
 		bypass = {
@@ -511,13 +511,14 @@ add_to_variable = {
 
 
 		completion_reward = {
-	
+			add_manpower = 15000
+			add_stability = 0.05
 		}
 	}
 	
 	focus = {
 		id = XWY_our_red_army
-		icon = GFX_focus_generic_communist_industry
+		icon = GFX_focus_SOV_builder_of_the_red_army
 		prerequisite = { focus = XWY_fuel_the_propaganda_machine}
 		#mutually_exclusive = { focus = XWY_king_and_state }
 		x = 17
@@ -532,7 +533,7 @@ add_to_variable = {
 		}
 
 		available = {
-			check_variable = { cattle_baron_power < 5 }
+			has_government = communism
 		}
 		
 		bypass = {
@@ -545,13 +546,15 @@ add_to_variable = {
 
 
 		completion_reward = {
-	
+			add_manpower = 10000
+			army_experience = 10
+			add_ideas = XWY_the_red_army
 		}
 	}
 	
 	focus = {
 		id = XWY_the_united_revolution
-		icon = GFX_focus_generic_communist_industry
+		icon = GFX_focus_generic_befriend_usa
 		prerequisite = { focus = XWY_our_red_army}
 		mutually_exclusive = { focus = XWY_a_local_revolution }
 		x = 16
@@ -579,13 +582,13 @@ add_to_variable = {
 
 
 		completion_reward = {
-	
+			country_event = XWY.1
 		}
 	}
 	
 	focus = {
 		id = XWY_a_local_revolution
-		icon = GFX_focus_generic_communist_industry
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		prerequisite = { focus = XWY_our_red_army}
 		mutually_exclusive = { focus = XWY_the_united_revolution }
 		x = 18
@@ -613,7 +616,11 @@ add_to_variable = {
 
 
 		completion_reward = {
-	
+			set_party_name = {
+    ideology = communism
+    long_name = "National Peoples Democratic Socialist Party"
+    name = "NPDS"
+}
 		}
 	}
 	
@@ -655,7 +662,7 @@ focus = {
 	
 	focus = {
 		id = XWY_rally_the_populace
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = XWY_social_change}
 		#mutually_exclusive = { focus = XWY_collective_ranches }
 		#mutually_exclusive = { focus = XWY_king_and_state }
@@ -690,7 +697,7 @@ focus = {
 	
 		focus = {
 		id = XWY_conspire_with_the_military
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_focus_SWE_revoke_militia_law
 		prerequisite = { focus = XWY_social_change}
 		#mutually_exclusive = { focus = XWY_collective_ranches }
 		#mutually_exclusive = { focus = XWY_king_and_state }
@@ -725,7 +732,7 @@ focus = {
 	
 	focus = {
 		id = XWY_cheyenne_rally
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_focus_RAJ_lions_of_the_great_war
 		prerequisite = { focus = XWY_rally_the_populace	focus = XWY_conspire_with_the_military}
 		#mutually_exclusive = { focus = XWY_collective_ranches }
 		#mutually_exclusive = { focus = XWY_king_and_state }
@@ -760,7 +767,7 @@ focus = {
 	
 	focus = {
 		id = XWY_the_new_state
-		icon = GFX_focus_generic_fascist_propaganda
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = XWY_cheyenne_rally}
 		#mutually_exclusive = { focus = XWY_collective_ranches }
 		#mutually_exclusive = { focus = XWY_king_and_state }
@@ -832,7 +839,7 @@ focus = {
 	
 	focus = {
 		id = XWY_soldiers_wyoming
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_focus_generic_little_entente
 		prerequisite = { focus = XWY_the_new_state	focus = XWY_a_local_revolution focus = XWY_the_united_revolution}
 		#mutually_exclusive = { focus = XWY_collective_ranches }
 		#mutually_exclusive = { focus = XWY_king_and_state }
@@ -867,7 +874,7 @@ focus = {
 	
 		focus = {
 		id = XWY_ban_other_parties
-		icon = GFX_focus_generic_industry_3
+		icon = GFX_focus_POL_ban_nazi_party
 		prerequisite = { focus = XWY_the_new_state	focus = XWY_a_local_revolution focus = XWY_the_united_revolution}
 		#mutually_exclusive = { focus = XWY_collective_ranches }
 		#mutually_exclusive = { focus = XWY_king_and_state }
@@ -937,7 +944,7 @@ focus = {
 	
 	focus = {
 		id = XWY_intervene_in_montana
-		icon = GFX_focus_generic_self_management
+		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = XWY_the_new_age}
 		prerequisite = { focus = XWY_look_outwards}
 		mutually_exclusive = { focus = XWY_the_southeren_problem}
@@ -972,7 +979,7 @@ focus = {
 	
 		focus = {
 		id = XWY_the_southeren_problem
-		icon = GFX_focus_generic_self_management
+		icon = GFX_focus_SOV_military_purge
 		prerequisite = { focus = XWY_the_new_age}
 		prerequisite = { focus = XWY_look_outwards}
 		mutually_exclusive = { focus = XWY_intervene_in_montana}
@@ -1146,7 +1153,7 @@ focus = {
 	
 	focus = {
 		id = XWY_a_alabaman_king
-		icon = GFX_focus_generic_monarchy_1
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		prerequisite = { focus = XWY_a_king}
 		mutually_exclusive = { focus = XWY_our_own_king }
 		x = 22
@@ -1180,7 +1187,7 @@ focus = {
 	
 	focus = {
 		id = XWY_our_own_king
-		icon = GFX_focus_generic_monarchy_1
+		icon = GFX_focus_generic_home_defense
 		prerequisite = { focus = XWY_a_king}
 		mutually_exclusive = { focus = XWY_a_alabaman_king }
 		x = 24
@@ -1214,7 +1221,7 @@ focus = {
 	
 	focus = {
 		id = XWY_consolidate_power
-		icon = GFX_focus_generic_monarchy_1
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = XWY_our_own_king	focus = XWY_a_alabaman_king}
 		# mutually_exclusive = { focus = XWY_a_alabaman_king }
 		x = 23
@@ -1248,7 +1255,7 @@ focus = {
 	
 	focus = {
 		id = XWY_claim_the_kingdom_title
-		icon = GFX_focus_generic_monarchy_1
+		icon = GFX_focus_NORDIC_mon_institution_1
 		prerequisite = { focus = XWY_consolidate_power}
 		# mutually_exclusive = { focus = XWY_a_alabaman_king }
 		x = 23
