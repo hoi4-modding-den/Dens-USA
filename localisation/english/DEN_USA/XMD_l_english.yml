@@ -2,5 +2,61 @@
  XMD: "United States"
  XMD_DEF: "the United States of America Reclamation Committee"
  XMD_ADJ: "Bidenian"
+
+ XMD_joe_biden: "Joe Biden"
+
+ XMD_communism_party: "People's Democratic Party"
+ XMD_dem_rep_party: "Democratic-Republican Party"
+ XMD_democratic_party: "Democratic Party"
+ XMD_republican_party: "Republican Party"
+ XMD_neutrality_party: "America First Party"
+ XMD_fascism_party: "MAGAP"
+ XMD_fascism_party_long: "Make America Great Again Party"
+
+ #IDEAS
+
+ XMD_great_depression: "The Great Depression"
+ XMD_stagnating_economy: "Stagnating Economy"
+ XMD_build_back_better_act_idea: "Build Back Better Act"
+ XMD_the_new_deal_idea: "The New Deal"
+ XMD_a_great_society: "The Great Society"
+ XMD_militia_based_army: "Militia-Based Army"
+ XMD_deadlocked_politics: "Deadlocked Politics"
+ XMD_the_two_party_system: "The Two Party Sytem"
+
+ #DECISIONS
+
+ XMD_the_great_depression_cat: "The Great Depression"
+ XMD_the_great_depression_cat_desc: "The Great Depression is currently wrecking the lives of our citizens, robbing them of their money, and impoverishing all. We must combat it and free our people of this blight caused by Republican meddling."
+ XMD_defending_americas_production_lines: "Defending America's Production Lines"
+ XMD_empower_the_workers: "Empower the Workers"
+ XMD_increase_the_minimum_wage: "Increase the Minimum Wage"
+ XMD_inflation_reduction_act: "Sign the Inflation Reduction Act"
+ XMD_balancing_the_budget: "Balance the Budget"
+
+ XMD_building_a_great_society: "Building A Great Society"
+ XMD_building_a_great_society_desc: "President [XMD_joe_biden.GetName] has announced a wide reaching program to lift our citizens out of poverty, end racial discrimination, and ensure the welfare of our citizens. It is up to us now to implement it in a way that achieves most of our goals, without angering the conservatives too much.\n\nConservative Contentness is a value meant to represent the opinion of the average conservative to your plans. §RIf Conservative Contentness falls below 0% then they will start a civil war.§!\n\nConservative Content decreases by §R[?XMD_conservative_contentness_decrease|%%]§! weekly.\n\nCurrent Conservative Contentness: §Y[?XMD_conservative_contentness|%%]§!"
+
+ XMD_placate_conservative_fears: "Placate the Conservatives"
+ XMD_hold_off_on_any_legislation: "Hold Off on Signing Legislation"
+ XMD_invest_in_the_south: "Invest in the South"
+
+ XMD_cannot_sign_any_new_legislation_tt: "We cannot sign any new legislation in the Great Society branch of the focus tree.\n"
+
+ XMD_cc_civil_war_tt: "§RConservatives will start a civil war!§!"
+ XMD_cc_var_change_tt: "Conservative Contentness: $RIGHT|%%+=$"
+ 
+ XMD_invest_in_state_factory: "Invest in the Economy of [USA_congress_investment_state.GetName]"
+ XMD_invest_in_state_arms_factory: "Build new Munitions Plant in [USA_congress_investment_state.GetName]"
+ XMD_invest_in_state_dockyard: "Invest in shipbuilding industry in [USA_congress_investment_state.GetName]"
+ XMD_invest_in_state_infrastructure: "Invest in the infrastructure of [USA_congress_investment_state.GetName]"
+
+ XMD_random_owned_state_tt: "(§YRandom Owned State§!):"
+ XMD_random_owned_state_tt: "(§YRandom Owned State§!):"
+
  STATE_935: "Northampton"
+ STATE_958: "Delmarva"
  VICTORY_POINTS_3917: "Exmore"
+ VICTORY_POINTS_9786: "Dover"
+ VICTORY_POINTS_9758: "Wilmington"
+ VICTORY_POINTS_6823: "Cumberland"

@@ -87,7 +87,7 @@
 	}
 	
 	focus = {
-		id = XMD_the_war_on_poverty
+		id = XMD_recover_the_economy
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_fix_the_present_problems }
 		x = -2
@@ -114,7 +114,7 @@
 
 
 		completion_reward = {
-			unlock_decision_category_tooltip = XMD_war_on_poverty
+			unlock_decision_category_tooltip = XMD_the_great_depression_cat
 		}
 	}
 	
@@ -154,11 +154,11 @@
 		id = XMD_build_back_better_act
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_mend_the_political_divide }
-		prerequisite = { focus = XMD_the_war_on_poverty }
+		prerequisite = { focus = XMD_recover_the_economy }
 		mutually_exclusive = { focus = XMD_end_the_experiment }
 		x = 1
 		y = 1
-		relative_position_id = XMD_the_war_on_poverty
+		relative_position_id = XMD_recover_the_economy
 
 		cost = 5
 
@@ -168,6 +168,7 @@
 
 		available = {
 			has_country_flag = XMD_pol_vote_passed
+			has_country_flag = XMD_balancing_the_budget_flag
 		}
 		
 		bypass = {
@@ -190,7 +191,26 @@
 
 
 		completion_reward = {
-			add_ideas = XMD_build_back_better_act_idea
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = XMD_stagnating_economy
+					add_idea = XMD_build_back_better_act_idea
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = XMD_stagnating_economy
+					}
+					swap_ideas = {
+						remove_idea = XMD_stagnating_economy
+						add_idea = XMD_build_back_better_act_idea
+					}
+				}
+				else = {
+					add_ideas = XMD_build_back_better_act_idea
+				}
+			}
 			if = {
 				limit = {
 					any_owned_state = {
@@ -310,7 +330,7 @@
 		id = XMD_further_the_progressive_reforms
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_the_new_deal}
-		x = -6
+		x = -4
 		y = 1
 		relative_position_id = XMD_the_new_deal
 
@@ -321,6 +341,59 @@
 		}
 
 		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = XMD_the_new_deal_idea
+					add_idea = XMD_the_new_deal_idea_1
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = XMD_the_new_deal_idea
+					}
+					swap_ideas = {
+						remove_idea = XMD_the_new_deal_idea
+						add_idea = XMD_the_new_deal_idea_1
+					}
+				}
+				else = {
+					add_ideas = XMD_the_new_deal_idea_1
+				}
+			}
+
+		}
+	}
+	
+	focus = {
+		id = XMD_establish_a_great_society
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_further_the_progressive_reforms}
+		x = 0
+		y = 1
+		relative_position_id = XMD_further_the_progressive_reforms
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
 		}
 		
 		bypass = {

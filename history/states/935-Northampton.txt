@@ -9,11 +9,6 @@ state={
 		add_core_of = XVA
 		buildings = {
 			infrastructure = 2 #was: 6
-			3917 = {
-				naval_base = 1
-
-			}
-
 		}
 		#add_core_of = USA
 		victory_points = {

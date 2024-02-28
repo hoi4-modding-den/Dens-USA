@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		XMD_great_depression = {
-			picture = XAL_muslim_bastion
+			picture = usa_great_depression_3
 			allowed_civil_war = {
 				always = yes
 			}
@@ -12,6 +12,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.25
 				line_change_production_efficiency_factor = -0.3
 				production_lack_of_resource_penalty_factor = 0.5    
+				stability_factor = -0.5
 			}
 			allowed = {
 				always = no
@@ -20,7 +21,7 @@ ideas = {
 		XMD_great_depression_1 = {
 			name = XMD_great_depression
 
-			picture = XAL_muslim_bastion
+			picture = usa_great_depression_3
 			allowed_civil_war = {
 				always = yes
 			}
@@ -31,6 +32,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.2
 				line_change_production_efficiency_factor = -0.1
 				production_lack_of_resource_penalty_factor = 0.15  
+				stability_factor = -0.4
 			}
 			allowed = {
 				always = no
@@ -39,7 +41,7 @@ ideas = {
 		XMD_great_depression_2 = {
 			name = XMD_great_depression
 
-			picture = XAL_muslim_bastion
+			picture = usa_great_depression_2
 			allowed_civil_war = {
 				always = yes
 			}
@@ -50,6 +52,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.1
 				line_change_production_efficiency_factor = -0.1
 				production_lack_of_resource_penalty_factor = 0.1
+				stability_factor = -0.3
 			}
 			allowed = {
 				always = no
@@ -58,7 +61,7 @@ ideas = {
 		XMD_great_depression_3 = {
 			name = XMD_great_depression
 
-			picture = XAL_muslim_bastion
+			picture = usa_great_depression_2
 			allowed_civil_war = {
 				always = yes
 			}
@@ -67,6 +70,7 @@ ideas = {
 				production_speed_buildings_factor = -0.2
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.05
+				stability_factor = -0.2
 			}
 			allowed = {
 				always = no
@@ -75,13 +79,29 @@ ideas = {
 		XMD_great_depression_4 = {
 			name = XMD_great_depression
 
-			picture = XAL_muslim_bastion
+			picture = usa_great_depression
 			allowed_civil_war = {
 				always = yes
 			}
 			modifier = {
 				consumer_goods_factor = 0.2
 				production_speed_buildings_factor = -0.1
+				stability_factor = -0.1
+			}
+			allowed = {
+				always = no
+			}
+		}
+		XMD_stagnating_economy = {
+
+			picture = usa_great_depression
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.05
+				stability_factor = -0.05
 			}
 			allowed = {
 				always = no
@@ -89,12 +109,12 @@ ideas = {
 		}
 		XMD_build_back_better_act_idea = {
 
-			picture = XAL_muslim_bastion
+			picture = can_wartime_prices_and_trade_board
 			allowed_civil_war = {
 				always = yes
 			}
 			modifier = {
-				production_speed_infrastructure_factor = 0.25
+				production_speed_infrastructure_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
 			}
 			allowed = {
@@ -103,17 +123,17 @@ ideas = {
 		}
 		XMD_the_new_deal_idea = {
 
-			picture = XAL_muslim_bastion
+			picture = new_deal
 			allowed_civil_war = {
 				always = yes
 			}
 			modifier = {
-				production_speed_infrastructure_factor = 0.25
+				production_speed_infrastructure_factor = 0.3
 				production_factory_efficiency_gain_factor = 0.15
-				production_speed_buildings_factor = 0.15
+				production_speed_buildings_factor = 0.1
 				consumer_goods_factor = 0.05
 				stability_factor = 0.05
-				economy_cost_factor = -0.15
+				economy_cost_factor = -0.1
 			}
 			allowed = {
 				always = no
@@ -122,7 +142,26 @@ ideas = {
 		XMD_the_new_deal_idea_1 = {
 			name = XMD_the_new_deal_idea
 
-			picture = XAL_muslim_bastion
+			picture = new_deal
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.3
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = 0.05
+				stability_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				economy_cost_factor = -0.15
+			}
+			allowed = {
+				always = no
+			}
+		}
+		XMD_a_great_society= {
+
+			picture = SWE_folkhemmet	
 			allowed_civil_war = {
 				always = yes
 			}
@@ -140,7 +179,7 @@ ideas = {
 			}
 		}
 		XMD_militia_based_army = {
-			picture = XAL_alabama_division
+			picture = MEX_revolutionary_army
 			allowed_civil_war = {
 				always = yes
 			}
@@ -156,7 +195,7 @@ ideas = {
 			}
 		}
 		XMD_deadlocked_politics= {
-			picture = XAL_alabama_division
+			picture = generic_disjointed_gov
 			allowed_civil_war = {
 				always = yes
 			}
