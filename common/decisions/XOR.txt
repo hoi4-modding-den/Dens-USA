@@ -43,6 +43,9 @@ XOR_oregon_investigation_decisions = {
 		}
 		available = {
 			has_completed_focus = XOR_explore_east
+			NOT = {
+				has_idea = XOR_running_investigation
+			}
 		}
 
 		cost = 15
@@ -50,9 +53,12 @@ XOR_oregon_investigation_decisions = {
 		fire_only_once = yes
 		
 		complete_effect = {
-			country_event = XOR_events.2
+			hidden_effect = {
+				country_event = XOR_events.2
+			}
 			custom_effect_tooltip = XOR_tt_OID_pendleton
-			set_country_flag = XOR_has_completed_pendleton
+			set_country_flag = XOR_has_started_pendleton
+			add_ideas = XOR_running_investigation
 		}
 	}
 
@@ -77,15 +83,71 @@ XOR_oregon_investigation_decisions = {
 		}
 		available = {
 			has_completed_focus = XOR_explore_east
+			NOT = {
+				has_idea = XOR_running_investigation
+			}
 		}
 
-		cost = 40
+		cost = 50
 
 		fire_only_once = yes
 		
 		complete_effect = {
-			country_event = XOR_events.3
+			hidden_effect = {
+				country_event = XOR_events.3
+			}
 			custom_effect_tooltip = XOR_tt_OID_bend
+			set_country_flag = XOR_has_started_bend
+			add_ideas = XOR_running_investigation
+		}
+	}
+
+	#Investigate Burns
+	XOR_OID_high_desert = {
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 0
+			modifier = {
+				has_country_flag = XOR_has_completed_bend
+				factor = 1000
+			}
+		}
+	
+		allowed = {
+			tag = XOR
+		}
+		
+		visible = {
+			has_completed_focus = XOR_explore_east
+		}
+		available = {
+			has_completed_focus = XOR_explore_east
+			NOT = {
+				has_idea = XOR_running_investigation
+			}
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_inv_point_req_30
+				check_variable = {
+					var = XOR_inv_points
+					value = 30
+					compare = greater_than_or_equals
+				}
+			}
+			
+		}
+
+		cost = 75
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			hidden_effect = {
+				country_event = XOR_events.4
+			}
+			custom_effect_tooltip = XOR_tt_OID_highdesert
+			set_country_flag = XOR_has_started_highdesert
+			add_ideas = XOR_running_investigation
 		}
 	}
 }

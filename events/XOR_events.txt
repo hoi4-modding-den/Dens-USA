@@ -24,8 +24,9 @@ country_event = { #Entering Umatilla
 
 	option = { #Set Up base
 		name = XOR_events.1.a
-		add_ideas = XOR_OID_idea
+		add_ideas = XOR_OID_idea_0
 		set_cosmetic_tag = XOR_OIDCOSMETIC
+		set_country_flag = XOR_has_created_OID #This is for future focus's
 		hidden_effect = {
 			retire_country_leader = yes	
 			XOR = {
@@ -56,6 +57,95 @@ country_event = { #Entering Umatilla
 		custom_effect_tooltip = XOR_tt_core_situation
 		
 		
+	}
+}
+
+country_event = { #Pendleton
+	id = XOR_events.2
+	title = XOR_events.2.t
+	desc = XOR_events.2.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	trigger = {
+		has_country_flag = XOR_has_started_pendleton
+		country_exists = XOR
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	fire_only_once = yes
+
+	option = { 
+		name = XOR_events.2.a
+		set_country_flag = XOR_has_completed_pendleton
+		add_to_variable = { XOR_inv_points = 5 }
+		add_to_variable = { XOR_num_inv = 1 }
+		custom_effect_tooltip = XOR_tt_inf_add_points_5
+		remove_ideas = XOR_running_investigation
+		
+	}
+}
+
+country_event = { #Bend
+	id = XOR_events.3
+	title = XOR_events.3.t
+	desc = XOR_events.3.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	trigger = {
+		has_country_flag = XOR_has_started_bend
+		country_exists = XOR
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}
+
+	fire_only_once = yes
+
+	option = { 
+		name = XOR_events.3.a
+		set_country_flag = XOR_has_completed_bend
+		add_to_variable = { XOR_inv_points = 35 }
+		add_to_variable = { XOR_num_inv = 1 }
+		custom_effect_tooltip = XOR_tt_inf_add_points_35
+		remove_ideas = XOR_running_investigation
+	}
+}
+
+country_event = { #High Desert
+	id = XOR_events.4
+	title = XOR_events.4.t
+	desc = XOR_events.4.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	trigger = {
+		has_country_flag = XOR_has_started_highdesert
+		country_exists = XOR
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	fire_only_once = yes
+
+	option = { 
+		name = XOR_events.2.a
+		set_country_flag = XOR_has_completed_highdesert
+		add_to_variable = { XOR_inv_points = 25 }
+		add_to_variable = { XOR_num_inv = 1 }
+		custom_effect_tooltip = XOR_tt_inf_add_points_25
+		remove_ideas = XOR_running_investigation
+	}
+
+	option = { 
+		name = XOR_events.4.b
+		set_country_flag = XOR_has_completed_highdesert
+		remove_ideas = XOR_running_investigation
+		add_to_variable = { XOR_num_inv = 1 }
 	}
 }
 

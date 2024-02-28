@@ -9,4 +9,5 @@ XOR_oregon_investigation_decisions = {
 	visible = {
 		has_completed_focus = XOR_oregon_investigation_dept
 	}
+	visible_when_empty = yes
 }

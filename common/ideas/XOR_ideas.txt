@@ -26,7 +26,7 @@ ideas = {
 		}
 
 		XOR_OID_idea_0 = {
-			picture = GFX_idea_XOR_OIR_idea
+			picture = idea_cze_planning_bonus
 			name = XOR_OID_idea
 			allowed_civil_war = {
 				always = yes
@@ -40,14 +40,39 @@ ideas = {
 			}
 		}
 		XOR_OID_idea_1 = {
-			picture = GFX_idea_XOR_OIR_idea
+			picture = GFX_idea_CZE_planning_bonus
 			name = XOR_OID_idea
 			allowed_civil_war = {
 				always = yes
 			}
 			modifier = {
-				political_power_gain = 0.15
+				stability_factor = 0.40
 				weekly_manpower = 1100
+			}
+			allowed = {
+				tag = XOR
+			}
+		}
+		XOR_inprove_infra = {
+			picture = FRA_motorized_focus
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.075
+				consumer_goods_factor = -0.05
+			}
+			allowed = {
+				tag = XOR
+			}
+		}
+		XOR_running_investigation = {
+			picture = FRA_motorized_focus
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = -0.35
 			}
 			allowed = {
 				tag = XOR
