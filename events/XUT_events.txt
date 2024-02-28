@@ -161,3 +161,52 @@ country_event = { #Arizona Uprising
 		}
 	}
 }
+country_event = { #Invite to Western Alliance
+	id = XUT.8
+	title = XUT.8.t
+	desc = XUT.8.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #yea
+		name = XUT.8.a
+		XUT = {
+			add_to_faction = ROOT
+		}
+	}
+	option = { #nay
+		name = XUT.8.b
+	}
+}
+country_event = { #Become Biden's Bitch
+	id = XUT.9
+	title = XUT.9.t
+	desc = XUT.9.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = {
+		name = XUT.9.a
+		puppet = XUT
+	}
+}
+country_event = { #Puppet Alliance
+	id = XUT.10
+	title = XUT.10.t
+	desc = XUT.10.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #yea
+		name = XUT.10.a
+		XUT = {
+			puppet = ROOT
+		}
+	}
+	option = { #nay
+		name = XUT.10.b
+	}
+}

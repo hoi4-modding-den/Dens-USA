@@ -247,6 +247,7 @@
 
 
 		completion_reward = {
+			add_political_power = 100
 		}
 	}
 	focus = {
@@ -312,6 +313,8 @@
 
 
 		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.15
 		}
 	}
 	focus = {
@@ -342,6 +345,612 @@
 
 
 		completion_reward = {
+			add_ideas = USA_womens_armed_service_integration_act
+		}
+	}
+	focus = {
+		id = XUT_western_alliance
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_gender_equality }
+		prerequisite = { focus = XUT_new_constitution }
+		mutually_exclusive = { focus = XUT_picking_up_the_pieces }
+		x = 0
+		y = 1
+		relative_position_id = XUT_gender_equality
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_faction = "Western Democratic Alliance"
+		}
+	}
+	focus = {
+		id = XUT_ensure_neighbor_stability
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_western_alliance }
+		x = 0
+		y = 1
+		relative_position_id = XUT_western_alliance
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XCO = {
+				add_ideas = XUT_democratic_influence
+			}
+			XNM = {
+				add_ideas = XUT_democratic_influence
+			}
+			XAZ = {
+				add_ideas = XUT_democratic_influence
+			}
+		}
+	}
+	focus = {
+		id = XUT_invite_neighbors
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_ensure_neighbor_stability }
+		x = 0
+		y = 1
+		relative_position_id = XUT_ensure_neighbor_stability
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XCO = {
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					country_event = XUT.8
+				}
+			}
+			XNM = {
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					country_event = XUT.8
+				}
+			}
+			XAZ = {
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					country_event = XUT.8
+				}
+			}
+		}
+	}
+	focus = {
+		id = XUT_north_influence
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_western_alliance }
+		x = 2
+		y = 1
+		relative_position_id = XUT_western_alliance
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XWY = {
+				add_ideas = XUT_democratic_influence
+			}
+			XID = {
+				add_ideas = XUT_democratic_influence
+			}
+		}
+	}
+	focus = {
+		id = XUT_invite_north
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_north_influence }
+		x = 0
+		y = 1
+		relative_position_id = XUT_north_influence
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XWY = {
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					country_event = XUT.8
+				}
+			}
+			XID = {
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					country_event = XUT.8
+				}
+			}
+		}
+	}
+	focus = {
+		id = XUT_western_influence
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_invite_neighbors }
+		prerequisite = { focus = XUT_western_alliance }
+		x = 0
+		y = 1
+		relative_position_id = XUT_invite_neighbors
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XNV = {
+				add_ideas = XUT_democratic_influence
+			}
+			XCA = {
+				add_ideas = XUT_democratic_influence
+			}
+		}
+	}
+	focus = {
+		id = XUT_invite_west
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_western_influence }
+		x = 0
+		y = 1
+		relative_position_id = XUT_western_influence
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XNV = {
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					country_event = XUT.8
+				}
+			}
+			XCA = {
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					country_event = XUT.8
+				}
+			}
+		}
+	}
+	focus = {
+		id = XUT_cascadia_influence
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_invite_neighbors }
+		prerequisite = { focus = XUT_western_alliance }
+		x = 2
+		y = 1
+		relative_position_id = XUT_invite_neighbors
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XWA = {
+				add_ideas = XUT_democratic_influence
+			}
+			XOR = {
+				add_ideas = XUT_democratic_influence
+			}
+		}
+	}
+	focus = {
+		id = XUT_invite_cascadia
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_cascadia_influence }
+		x = 0
+		y = 1
+		relative_position_id = XUT_cascadia_influence
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XWA = {
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					country_event = XUT.8
+				}
+			}
+			XOR = {
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					country_event = XUT.8
+				}
+			}
+		}
+	}
+	focus = {
+		id = XUT_integrated_alliance
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_invite_cascadia }
+		prerequisite = { focus = XUT_invite_west }
+		x = 1
+		y = 1
+		relative_position_id = XUT_invite_west
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_in_faction_with = XUT
+				}
+				country_event = XUT.10
+			}
+		}
+	}
+	focus = {
+		id = XUT_picking_up_the_pieces
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_gender_equality }
+		prerequisite = { focus = XUT_new_constitution }
+		mutually_exclusive = { focus = XUT_western_alliance }
+		x = 4
+		y = 1
+		relative_position_id = XUT_gender_equality
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			XMD = {
+				has_government = democratic
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XMD = {
+				country_event = XUT.9
+			}
+		}
+	}
+	focus = {
+		id = XUT_old_west
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_picking_up_the_pieces }
+		x = 0
+		y = 1
+		relative_position_id = XUT_picking_up_the_pieces
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_state_claim = 379
+			add_state_claim = 938
+			add_state_claim = 956
+			add_state_claim = 382
+			add_state_claim = 957
+		}
+	}
+	focus = {
+		id = XUT_stage_incidents
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_old_west }
+		x = 0
+		y = 1
+		relative_position_id = XUT_old_west
+		mutually_exclusive = { focus = XUT_pull_strings }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XNV
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XCO
+			}
+		}
+	}
+	focus = {
+		id = XUT_secure_west_holdings
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_stage_incidents focus = XUT_pull_strings }
+		x = 0
+		y = 1
+		relative_position_id = XUT_stage_incidents
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			controls_state = 379
+			controls_state = 938
+			controls_state = 956
+			controls_state = 382
+			controls_state = 957
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_state_core = 379
+			add_state_core = 938
+			add_state_core = 956
+			add_state_core = 382
+			add_state_core = 957
+		}
+	}
+	focus = {
+		id = XUT_pull_strings
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_old_west }
+		x = 2
+		y = 1
+		relative_position_id = XUT_old_west
+		mutually_exclusive = { focus = XUT_stage_incidents }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			XCO = {
+				is_puppet_of = XMD
+			}
+			XNV = {
+				is_puppet_of = XMD
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			annex_country = {
+				target = XCO
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = XNV
+				transfer_troops = yes
+			}
 		}
 	}
 	focus = {
@@ -415,7 +1024,8 @@
 
 
 		completion_reward = {
-			#hidden_effect = {
+			custom_effect_tooltip = purge_mormons_tooltip
+			hidden_effect = {
 				start_civil_war = {
 					ideology = neutrality
 					size = 0.1
@@ -428,7 +1038,7 @@
 						940 939
 					}
 				}
-			#}
+			}
 		}
 	}
 	focus = {
