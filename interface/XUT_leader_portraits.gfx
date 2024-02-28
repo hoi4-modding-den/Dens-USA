@@ -16,5 +16,9 @@ spriteTypes = {
 		name = "GFX_portrait_XUT_tom_cruise"
 		texturefile = "gfx/leaders/XUT/XUT_tom_cruise.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_XUT_council"
+		texturefile = "gfx/leaders/XUT/XUT_council.dds"
+	}
 	
 }

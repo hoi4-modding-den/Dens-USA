@@ -13,6 +13,20 @@ characters = {
 			id = -1
 		}
 	}
+	XUT_council = {
+		name = "The Utah People's Council"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XUT_council"
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
 	XUT_eugene_debs = {
 		name = "Eugene Debs"
 		portraits = {
