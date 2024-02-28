@@ -43,5 +43,17 @@ spriteTypes = {
 		name = "GFX_goal_XAL_a_strong_king"
 		texturefile = "gfx/XAL_stuff/XAL_a_strong_king.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_XAL_the_burning_question"
+		texturefile = "gfx/XAL_stuff/XAL_the_burning_question.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_crush_the_salafists"
+		texturefile = "gfx/XAL_stuff/XAL_crush_the_salafists.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_coup_the_king"
+		texturefile = "gfx/XAL_stuff/XAL_coup_the_king.dds"
+	}
 	
 }
