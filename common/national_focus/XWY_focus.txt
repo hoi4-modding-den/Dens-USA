@@ -419,7 +419,7 @@ add_to_variable = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 1
+			factor = 2
 		}
 
 		available = {
@@ -908,6 +908,76 @@ focus = {
 		#mutually_exclusive = { focus = XWY_king_and_state }
 		x = 19
 		y = 9
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+	focus = {
+		id = XWY_intervene_in_montana
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = XWY_the_new_age}
+		prerequisite = { focus = XWY_look_outwards}
+		mutually_exclusive = { focus = XWY_the_southeren_problem}
+		x = 14
+		y = 11
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+	
+		}
+	}
+	
+		focus = {
+		id = XWY_the_southeren_problem
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = XWY_the_new_age}
+		prerequisite = { focus = XWY_look_outwards}
+		mutually_exclusive = { focus = XWY_intervene_in_montana}
+		x = 27
+		y = 11
 		#relative_position_id = 
 
 
