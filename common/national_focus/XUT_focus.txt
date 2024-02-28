@@ -30,7 +30,7 @@
 		}
 
 		available = {
-
+			
 		}
 		
 		bypass = {
@@ -43,6 +43,9 @@
 
 
 		completion_reward = {
+			country_event = {
+				id = XUT.1
+			}
 		}
 	}
 	focus = {
@@ -55,14 +58,14 @@
 		y = 1
 		relative_position_id = XUT_general_conference
 
-		cost = 5
+		cost = 0
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-
+			always = no
 		}
 		
 		bypass = {
@@ -87,14 +90,14 @@
 		y = 1
 		relative_position_id = XUT_general_conference
 
-		cost = 5
+		cost = 0
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-
+			always = no
 		}
 		
 		bypass = {
@@ -119,14 +122,14 @@
 		y = 1
 		relative_position_id = XUT_general_conference
 
-		cost = 5
+		cost = 0
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-
+			always = no
 		}
 		
 		bypass = {
@@ -171,6 +174,14 @@
 
 
 		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			swap_ideas = {
+				remove_idea = XUT_influential_church
+				add_idea = XUT_angered_church
+			}
 		}
 	}
 	focus = {
@@ -202,6 +213,10 @@
 
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = XUT_influential_church
+				add_idea = XUT_pacified_church
+			}
 		}
 	}
 	focus = {
@@ -262,6 +277,11 @@
 
 
 		completion_reward = {
+			add_ideas = XUT_new_constitution
+			hidden_effect = {
+				complete_national_focus = XUT_four_year_plan
+			}
+			custom_effect_tooltip = four_year_plan_tooltip
 		}
 	}
 	focus = {
@@ -352,6 +372,19 @@
 
 
 		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -1
+			}
+
 		}
 	}
 	focus = {
@@ -382,6 +415,20 @@
 
 
 		completion_reward = {
+			#hidden_effect = {
+				start_civil_war = {
+					ideology = neutrality
+					size = 0.1
+					army_ratio = 0.3
+					navy_ratio = 0
+					air_ratio = 0.5
+					keep_all_characters = yes
+					capital = 940
+					states = {
+						940 939
+					}
+				}
+			#}
 		}
 	}
 	focus = {
@@ -505,6 +552,15 @@
 
 
 		completion_reward = {
+			XCO = {
+				country_event = XUT.5
+			}
+			XNM = {
+				country_event = XUT.6
+			}
+			XAZ = {
+				country_event = XUT.7
+			}
 		}
 	}
 	focus = {
@@ -523,7 +579,15 @@
 		}
 
 		available = {
-
+			XCO = {
+				has_war = no
+			}
+			XNM = {
+				has_war = no
+			}
+			XAZ = {
+				has_war = no
+			}
 		}
 		
 		bypass = {
@@ -536,6 +600,39 @@
 
 
 		completion_reward = {
+			if = {
+				limit = {
+					XCO = {
+						has_government = communism
+					}
+				}
+				annex_country = {
+					target = XCO
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = {
+					XNM = {
+						has_government = communism
+					}
+				}
+				annex_country = {
+					target = XNM
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = {
+					XAZ = {
+						has_government = communism
+					}
+				}
+				annex_country = {
+					target = XAZ
+					transfer_troops = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -554,7 +651,15 @@
 		}
 
 		available = {
-
+			XCO = {
+				has_war = no
+			}
+			XNM = {
+				has_war = no
+			}
+			XAZ = {
+				has_war = no
+			}
 		}
 		
 		bypass = {
@@ -567,6 +672,45 @@
 
 
 		completion_reward = {
+			if = {
+				limit = {
+					XCO = {
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				create_wargoal = {
+					target = XCO
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					XNM = {
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				create_wargoal = {
+					target = XNM
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					XAZ = {
+						NOT = {
+							has_government = communism
+						}
+					}
+				}
+				create_wargoal = {
+					target = XAZ
+					type = annex_everything
+				}
+			}
 		}
 	}
 	focus = {
@@ -742,7 +886,7 @@
 		}
 
 		available = {
-
+			always = no
 		}
 		
 		bypass = {
@@ -774,7 +918,17 @@
 		}
 
 		available = {
-
+			controls_state = 380
+			controls_state = 940
+			controls_state = 939
+			controls_state = 956
+			controls_state = 382
+			controls_state = 957
+			controls_state = 955
+			controls_state = 376
+			controls_state = 954
+			controls_state = 377
+			controls_state = 953
 		}
 		
 		bypass = {
@@ -794,7 +948,7 @@
 		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = XUT_looking_inward }
 		
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = XUT_looking_inward
 
@@ -919,7 +1073,7 @@
 		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = XUT_looking_inward }
 		
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = XUT_looking_inward
 
@@ -976,12 +1130,105 @@
 		completion_reward = {
 		}
 	}
-	
+	focus = {
+		id = XUT_core_co
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_looking_inward }
+		
+		x = 2
+		y = 1
+		relative_position_id = XUT_looking_inward
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_core_az
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_core_co }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_core_co
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_core_nm
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_core_az }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_core_az
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}	
 	focus = {
 		id = XUT_first_communist_convention
 		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = XUT_new_identity }
 		prerequisite = { focus = XUT_workers_camps }
+		prerequisite = { focus = XUT_core_nm }
 		
 		x = 0
 		y = 4
@@ -1086,7 +1333,7 @@
 		}
 
 		available = {
-
+			always = no
 		}
 		
 		bypass = {
@@ -1297,7 +1544,7 @@
 		}
 
 		available = {
-
+			always = no
 		}
 		
 		bypass = {
@@ -1343,12 +1590,132 @@
 		}
 	}
 	focus = {
+		id = XUT_national_highways
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_infrastructure_act }
+		x = -1
+		y = 1
+		relative_position_id = XUT_infrastructure_act
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_fix_old_roads
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_infrastructure_act }
+		x = 1
+		y = 1
+		relative_position_id = XUT_infrastructure_act
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
 		id = XUT_a_new_generation
 		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = XUT_four_year_plan }
 		x = 2
 		y = 1
 		relative_position_id = XUT_four_year_plan
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_change_curriculum
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_a_new_generation }
+		x = -1
+		y = 1
+		relative_position_id = XUT_a_new_generation
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_fund_new_schools
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_a_new_generation }
+		x = 1
+		y = 1
+		relative_position_id = XUT_a_new_generation
 
 		cost = 5
 

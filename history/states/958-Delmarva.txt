@@ -1,0 +1,32 @@
+
+state={
+	id=958
+	name="STATE_958"
+	manpower = 238380
+	
+	state_category = town
+
+	history={
+		owner = XMD
+		add_core_of = XMD
+		victory_points = {
+			9786 6#Dover
+		}
+		victory_points = {
+			9758 5 #Wilmington
+		}
+		buildings = {
+			infrastructure = 3#was: 7
+			industrial_complex = 1
+			dockyard = 1
+		}
+		#add_core_of = USA
+
+	}
+
+	provinces={
+		6892 9758 9786  
+	}
+
+	local_supplies=0.0 
+}

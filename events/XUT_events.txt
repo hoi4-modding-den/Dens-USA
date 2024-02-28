@@ -1,0 +1,163 @@
+add_namespace = XUT
+
+country_event = { #General Conference
+	id = XUT.1
+	title = XUT.1.t
+	desc = XUT.1.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #State of Emergency
+		name = XUT.1.a
+		complete_national_focus = XUT_state_of_emergency
+	}
+	option = { #Let the Mormons do Their Thing
+		name = XUT.1.b
+		complete_national_focus = XUT_dreams_of_deseret
+	}
+	option = { #Stalemate, leads to Tom Cruise
+		name = XUT.1.c
+		country_event = {
+			id = XUT.2
+		}
+	}
+}
+country_event = { #Tom Cruise
+	id = XUT.2
+	title = XUT.2.t
+	desc = XUT.2.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #State of Emergency
+		name = XUT.2.a
+		complete_national_focus = XUT_evil_in_chaos
+	}
+}
+country_event = { #Civil War Begins
+	id = XUT.3
+	title = XUT.3.t
+	desc = XUT.3.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = {
+		name = XUT.3.a
+	}
+}
+country_event = { #Civil War Ends
+	id = XUT.4
+	title = XUT.4.t
+	desc = XUT.4.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = {
+		name = XUT.4.a
+		complete_national_focus = XUT_civil_war_victory
+	}
+}
+country_event = { #Colorado Uprising
+	id = XUT.5
+	title = XUT.5.t
+	desc = XUT.5.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #yipee!
+		name = XUT.5.a
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.5
+		}
+	}
+	option = { #wuh oh!
+		name = XUT.5.b
+		start_civil_war = {
+			ideology = communism
+			size = 0.8
+			capital = 956
+			states = {
+				956 957
+			}
+			keep_political_leader = yes
+			keep_political_party_members = yes
+		}
+		
+	}
+}
+country_event = { #New Mexico Uprising
+	id = XUT.6
+	title = XUT.6.t
+	desc = XUT.6.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #yipee!
+		name = XUT.6.a
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.5
+		}
+	}
+	option = { #wuh oh!
+		name = XUT.6.b
+		start_civil_war = {
+			ideology = communism
+			size = 0.8
+			capital = 955
+			states = {
+				955
+			}
+			keep_political_leader = yes
+			keep_political_party_members = yes
+		}
+	}
+}
+country_event = { #Arizona Uprising
+	id = XUT.7
+	title = XUT.7.t
+	desc = XUT.7.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #yipee!
+		name = XUT.7.a
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.5
+		}
+	}
+	option = { #wuh oh!
+		name = XUT.7.b
+		start_civil_war = {
+			ideology = communism
+			size = 0.8
+			capital = 953
+			states = {
+				953
+			}
+			keep_political_leader = yes
+			keep_political_party_members = yes
+		}
+	}
+}

@@ -1,5 +1,5 @@
 
-state={
+state={ 
 	id=941
 	name="STATE_941"
 	manpower = 309629
@@ -17,7 +17,10 @@ state={
 			industrial_complex = 1
 		}
 		victory_points = {
-			1747 1 
+			1747 7 
+		}
+		victory_points = {
+			4759 4 
 		}
 	}
 

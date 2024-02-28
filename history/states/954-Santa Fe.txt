@@ -1,0 +1,21 @@
+state={
+	id=954
+	name="STATE_954"
+	provinces={
+		2102 10642 10867 12684 
+	}
+	history={
+		owner = XNM
+		add_core_of = XNM
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			12684 10 
+		}
+	}
+	manpower=53193
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

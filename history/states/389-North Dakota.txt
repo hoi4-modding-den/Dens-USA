@@ -1,5 +1,5 @@
 
-state={ 
+state={  
 	id=389
 	name="STATE_389"
 	manpower = 253149
@@ -17,7 +17,10 @@ state={
 		}
 		#add_core_of = USA
 		victory_points = {
-			1836 1 
+			1836 7
+		}
+		victory_points = {
+			10709 5
 		}
 
 	}
