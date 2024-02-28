@@ -16,7 +16,7 @@ XOR_oregon_investigation_decisions = {
 			has_completed_focus = XOR_oregon_investigation_dept
 		}
 
-		cost = 1
+		cost = 0
 
 		fire_only_once = yes
 		
