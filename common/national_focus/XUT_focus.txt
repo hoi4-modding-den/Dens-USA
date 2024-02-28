@@ -754,6 +754,9 @@
 			every_country = {
 				limit = {
 					is_in_faction_with = XUT
+					NOT = {
+						tag = XUT
+					}
 				}
 				country_event = XUT.10
 			}

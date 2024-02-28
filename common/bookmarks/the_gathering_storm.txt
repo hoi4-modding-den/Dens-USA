@@ -68,10 +68,14 @@ bookmarks = {
 			history = "mormons, guns, and desert. what else do you need?"
 			ideology = democratic
 			ideas = {
-
+				XUT_great_depression
+				XUT_influential_church
+				XUT_new_constitution
 			}
 			focuses = {
-
+				XUT_state_of_emergency
+				XUT_dreams_of_deseret
+				XUT_evil_in_chaos
 			}
 		}
 		
