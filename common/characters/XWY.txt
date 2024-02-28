@@ -34,7 +34,7 @@ characters = {
 		name= "Herbert J. Brees"
 		portraits={
 			army={
-				large = "GFX_portrait_XWY_lester_hunt"
+				large = "GFX_portrait_XWY_herbert_brees"
 			}
 		}
 		field_marshal={
@@ -44,6 +44,31 @@ characters = {
 			planning_skill=2
 			logistics_skill=1
 			legacy_id=-1
+		}
+	}
+	
+	XWY_millard_simpson={
+	
+		advisor={
+			slot = political_advisor
+			idea_token = XWY_millard_simpson
+			allowed  = {
+					original_tag = XWY
+				}
+				traits  = {
+					resolute_social_democrat 
+				}
+				do_effect  = {
+					
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_african_4"
+			}
 		}
 	}
 }

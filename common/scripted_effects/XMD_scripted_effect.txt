@@ -1,0 +1,169 @@
+XMD_cc_change = {
+    clamp_variable = {
+        var = XMD_conservative_contentness
+        max = 100
+        min = 0
+    }
+    if = {
+        limit = {
+            check_variable = { XMD_conservative_contentness < 1}
+        }
+        XMD_cc_civil_war = yes
+    }
+}
+
+XMD_cc_civil_war = {
+    custom_effect_tooltip = XMD_cc_civil_war_tt
+    hidden_effect = {
+        add_popularity = {
+            ideology = fascism 
+            popularity = -1
+        }
+        add_popularity = {
+            ideology = neutrality 
+            popularity = -1
+        }
+        start_civil_war = {
+            ideology = fascism
+            size = 0.5
+            states = {
+                261 357 358 359 360 362 363 364 365 366 367 368 370 371 372 373 374 
+                375 376 381 382 383 384 389 390 391 392 393 394 395 396 396 935 941 
+                942 943 944 945 946 947 950 951 952 954 955 956 957 958
+            }
+            states_filter = {
+                is_capital = no
+                if = {
+                    limit = {
+                        XMD = {
+                            num_of_controlled_states > 5
+                        }
+                    }
+                    NOT = {
+                        state = 958
+                        state = 935
+                    }
+                }
+                if = {
+                    limit = {
+                        XMD = {
+                            has_country_flag = XMD_civil_rights_bill_passed
+                        }
+                    }
+                    NOT = {
+                        state = 261
+                        state = 357
+                        state = 358
+                        state = 359
+                        state = 360
+                        state = 393
+                        state = 394
+                        state = 395
+                        state = 396
+                    }
+                }
+                else = {
+                    NOT = {
+                        state = 362
+                        state = 363
+                        state = 364
+                        state = 365
+                        state = 366
+                        state = 367
+                        state = 368
+                        state = 370
+                        state = 371
+                        state = 372
+                        state = 374
+                        state = 375
+                        state = 376
+                        state = 954
+                        state = 955
+                    }
+                }
+            }
+            set_popularities = {
+                democratic = 30
+                neutrality = 35
+                fascism = 35
+            }
+            set_party_name = {
+                ideology = democratic
+                long_name = XMD_republican_party
+                name = XMD_republican_party
+            }
+            # Sets a country flag that gets used in a country tag alias.
+        }
+    }
+}
+XMD_cc_increase_very_5 = {
+    add_to_variable = {
+        var = XMD_conservative_contentness
+        value = 5
+        tooltip =XMD_cc_var_change_tt
+    }
+    XMD_cc_change = yes
+}
+
+XMD_cc_increase_10 = {
+    add_to_variable = {
+        var = XMD_conservative_contentness
+        value = 10
+        tooltip =XMD_cc_var_change_tt
+    }
+    XMD_cc_change = yes
+}
+
+XMD_cc_increase_15 = {
+    add_to_variable = {
+        var = XMD_conservative_contentness
+        value = 15
+        tooltip =XMD_cc_var_change_tt
+    }
+    XMD_cc_change = yes
+}
+
+XMD_cc_increase_20 = {
+    add_to_variable = {
+        var = XMD_conservative_contentness
+        value = 20
+        tooltip =XMD_cc_var_change_tt
+    }
+    XMD_cc_change = yes
+}
+
+XMD_cc_decrease_very_5 = {
+    add_to_variable = {
+        var = XMD_conservative_contentness
+        value = -5
+        tooltip =XMD_cc_var_change_tt
+    }
+    XMD_cc_change = yes
+}
+
+XMD_cc_decrease_10 = {
+    add_to_variable = {
+        var = XMD_conservative_contentness
+        value = -10
+        tooltip =XMD_cc_var_change_tt
+    }
+    XMD_cc_change = yes
+}
+
+XMD_cc_decrease_15 = {
+    add_to_variable = {
+        var = XMD_conservative_contentness
+        value = -15
+        tooltip =XMD_cc_var_change_tt
+    }
+    XMD_cc_change = yes
+}
+
+XMD_cc_decrease_20 = {
+    add_to_variable = {
+        var = XMD_conservative_contentness
+        value = -20
+        tooltip =XMD_cc_var_change_tt
+    }
+    XMD_cc_change = yes
+}
