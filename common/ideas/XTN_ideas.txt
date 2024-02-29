@@ -120,5 +120,30 @@ ideas = {
             }
 
         }
+    XTN_spirit_of_freedom = {
+           removal_cost = -1
+            picture = ICE_general_strike
+            modifier = {
+                
+            generate_wargoal_tension = -1
+            justify_war_goal_time = -0.5
+            neutrality_drift = 0.03           
+
+
+            }
+ 
     }
+   XTN_spirit_of_victory = {
+           removal_cost = -1
+            picture = ICE_general_strike
+            modifier = {
+                
+            generate_wargoal_tension = -1
+            justify_war_goal_time = -1
+            neutrality_drift = 0.1           
+
+
+            }
+
+        }
 }

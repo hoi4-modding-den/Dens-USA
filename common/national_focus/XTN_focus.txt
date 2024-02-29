@@ -452,7 +452,204 @@ add_popularity = {
 
                     }
             }
+
+  focus = {
+    id = XTN_war_on_cental_gov
+    x = 16
+    y = 9
+    icon = GFX_goal_generic_territory_or_war
+
+    prerequisite = { focus = XTN_lessons_of_war }
+    cost = 5
     
+
+        completion_reward = {
+
+            army_experience = 25
+
+
+
+                    }
+        }
+
+  focus = {
+    id = XTN_push_on_richmond
+    x = 16
+    y = 10
+    icon = GFX_goal_anti_comintern_pact
+
+    prerequisite = { focus = XTN_war_on_cental_gov }
+    cost = 5
+    
+
+        completion_reward = {
+
+            army_experience = 5
+            declare_war_on = {
+            target = XVA
+            type = annex_everything
+                }
+
+
+                    }
+        }
+
+  focus = {
+    id = XTN_unite_virginia
+    x = 15
+    y = 11
+    icon = GFX_goal_demand_sudetenland
+
+    prerequisite = { focus = XTN_push_on_richmond }
+    mutually_exclusive = { focus = XTN_fortify_corridor }
+    cost = 5
+    
+
+        completion_reward = {
+
+            army_experience = 5
+            declare_war_on = {
+            target = XWV
+            type = annex_everything
+                }
+
+
+                    }
+        }
+  focus = {
+    id = XTN_fortify_corridor
+    x = 17
+    y = 11
+    icon = GFX_goal_generic_fortify_city
+
+    prerequisite = { focus = XTN_push_on_richmond }
+    mutually_exclusive = { focus = XTN_unite_virginia }
+    available = { XTN = {has_war = no controls_state = 362}}
+    cost = 5
+    
+
+        completion_reward = {
+
+            army_experience = 5
+            
+           362 = {
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 951
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 873
+                    }
+           }
+            
+
+
+                }
+        }
+
+
+  focus = {
+    id = XTN_to_washington
+    x = 16
+    y = 12
+    icon = GFX_focus_generic_strike_at_democracy3
+
+    prerequisite = { focus = XTN_fortify_corridor focus = XTN_unite_virginia}
+
+    available = { XTN = {controls_state = 362}}
+    cost = 1
+    
+
+        completion_reward = {
+
+            army_experience = 5
+            declare_war_on = {
+            target = XMD
+            type = annex_everything
+                }
+
+
+
+                }
+        }
+
+###### Anarchist Finale ######
+
+  focus = {
+    id = XTN_american_revolution
+    x = 14
+    y = 13
+    icon = GFX_focus_spr_anarchism_knows_no_borders
+
+    prerequisite = { focus = XTN_to_washington }
+    prerequisite = { focus = XTN_cotton }
+
+    available = { XTN = {controls_state = 361}}
+    cost = 10
+    
+
+        completion_reward = {
+
+            add_ideas = { XTN_spirit_of_freedom }
+
+
+
+                }
+        }
+
+  focus = {
+    id = XTN_colonize_bahamas
+    x = 14
+    y = 14
+    icon = GFX_focus_generic_annex_country_2
+
+    prerequisite = { focus = XTN_american_revolution }
+    available = {LIB = {controls_state = 690 controls_state = 693}}
+    bypass = { NOT = {LIB = {controls_state = 690 controls_state = 693}}}
+
+    cost = 10
+    
+
+        completion_reward = {
+
+           690 = { transfer_state_to = XTN }
+           693 = { transfer_state_to = XTN }
+           XTN = {add_state_core = 690 add_state_core = 693}
+
+
+                }
+        }
+
+  focus = {
+    id = XTN_victory
+    x = 14
+    y = 15
+    icon = GFX_focus_rom_abdicate
+
+    prerequisite = { focus = XTN_colonize_bahamas}
+    available = {XTN = {controls_state = 361 controls_state = 368 controls_state = 375 controls_state = 378 controls_state = 936 controls_state = 368 controls_state = 386 controls_state = 389 controls_state = 381 controls_state = 380 controls_state = 358 controls_state = 357 }}
+
+
+    cost = 1
+    
+
+        completion_reward = {
+
+         
+           swap_ideas = {
+           remove_idea = XTN_spirit_of_freedom
+           add_idea = XTN_spirit_of_victory 
+            }
+
+
+                }
+        }
+
 
 
 ##### Left #####

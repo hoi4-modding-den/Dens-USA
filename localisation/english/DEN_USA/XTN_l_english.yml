@@ -55,6 +55,12 @@ XTN_spirit_of_stirner_desc:0 "We have abandoned all morals that blocked us from 
 XTN_free_from_oppressors:0 "Free from oppressors"
 XTN_free_from_oppressors_desc:0 "Our oppressors must fear as we are comming to free all of americans"
 
+XTN_spirit_of_freedom:0 "Spirit of Freedom"
+XTN_spirit_of_freedom_desc:0 "We have toppled central government now we will spread ideas of freedom in americas."
+
+XTN_spirit_of_victory:0 "Spirit of Victory"
+XTN_spirit_of_victory_desc:0 "We have killed most of oppressors. Now it's time to eliminate the rest so we can finally rest."
+
 
 
  
@@ -134,3 +140,27 @@ XTN_free_from_oppressors_desc:0 "Our oppressors must fear as we are comming to f
 
  XTN_cotton:0 "Southern Cotton"
  XTN_cotton_desc:0 "Fertile lands of south are very beneficial for cotton groth."
+
+ XTN_war_on_cental_gov:0 "War on Central Government"
+ XTN_war_on_cental_gov_desc:0 "Central government is our main enemy and we must abolish it!"
+
+ XTN_push_on_richmond:0 "Push on Richmond"
+ XTN_push_on_richmond_desc:0 "Richmond is gate on a road to Washington. We will take it!"
+
+ XTN_fortify_corridor:0 "Fortify Corridor"
+ XTN_fortify_corridor_desc:0 "Potomak river is the only stop between us and Washington we will fortify it to prepare for potencial invasion of oppressors"
+
+ XTN_unite_virginia:0 "Unite Virginia"
+ XTN_unite_virginia_desc:0 "Why waste people fighting trough small corridor if we can go around it?"
+
+ XTN_to_washington:0 "To Washington"
+ XTN_to_washington_desc:0 "The time is now we will abolish central government!"
+
+ XTN_american_revolution:0 "American Revolution"
+ XTN_american_revolution_desc:0 "Washington is down! we will continue to spread freedom allover america."
+
+ XTN_colonize_bahamas:0 "Colonize Bahamas"
+ XTN_colonize_bahamas_desc:0 "We need some beautiful places for our artists who will spread our history, and bahamas seem pretty cool."
+
+ XTN_victory:0 "Victory of Revolution"
+ XTN_victory_desc:0 "We did it! We took most important states in america and now our revolutionaries can rest. There are still some counter-revolutionaries but we will stomp them!"
