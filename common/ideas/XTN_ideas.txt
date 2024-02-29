@@ -146,4 +146,50 @@ ideas = {
             }
 
         }
+
+
+##################### Left ####################################
+
+   XTN_spirit_of_lenin = {
+           removal_cost = -1
+            picture = socialist_science_focus
+            modifier = {
+            
+            communism_drift = 0.1
+            drift_defence_factor = 0.15
+       
+            }
+            rule = {
+				can_create_factions = yes
+			}
+
+        }
+
+   XTN_anarchist_threat = {
+           removal_cost = -1
+            picture = SPR_anarchist_society
+            modifier = {
+            
+            neutrality_drift = 0.05
+            stability_factor = -0.05
+       
+            }
+            
+
+        }
+
+   XTN_socialist_education = {
+           removal_cost = -1
+            picture = generic_research_bonus
+            modifier = {
+            
+            research_speed_factor = 0.04
+            communism_drift = 0.05
+       
+            }
+            
+
+        }
+
+
 }

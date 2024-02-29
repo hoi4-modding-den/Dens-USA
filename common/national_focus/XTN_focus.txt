@@ -684,6 +684,247 @@ add_popularity = {
         }
     }
 
+  focus = {
+    id = XTN_path_of_leninism
+    x = 28
+    y = 2
+    icon = GFX_focus_SOV_the_path_of_marxism_leninism
+
+    prerequisite = { focus = XTN_inteligensia_left }
+
+    cost = 10
+    
+
+    completion_reward = {
+
+
+    add_popularity = {
+        ideology = communism
+        popularity = 0.15
+            }
+    add_ideas = { XTN_spirit_of_lenin }
+
+
+        }
+    }
+#################### anti anarchism ############################
+  focus = {
+    id = XTN_fight_anarchism
+    x = 24
+    y = 3
+    icon = GFX_focus_SOV_the_last_purge
+
+    prerequisite = { focus = XTN_path_of_leninism }
+    available = { NOT= {has_idea = XTN_inteligensia_manifesto }}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+
+    add_popularity = {
+        ideology = neutrality
+        popularity = -0.15
+            }
+
+
+
+        }
+    }
+
+  focus = {
+    id = XTN_kill_benjamin
+    x = 23
+    y = 4
+    icon = GFX_focus_SOV_the_last_purge
+
+    prerequisite = { focus = XTN_fight_anarchism }
+    mutually_exclusive = { focus = XTN_split_the_party }
+
+    cost = 10
+    
+
+    completion_reward = {
+
+
+    add_popularity = {
+        ideology = neutrality
+        popularity = -0.3
+            }
+
+    recruit_character = XTN_union_of_egoists
+    retire_character = XTN_benjamin_tucker
+    add_stability = -0.1
+    remove_ideas = {XTN_inteligensia_influence}
+
+    add_trait = {
+     character = XTN_union_of_egoists
+     ideology = anarchism
+     trait = XTN_chaos
+        }
+
+
+        }
+    }
+
+  focus = {
+    id = XTN_split_the_party
+    x = 25
+    y = 4
+    icon = GFX_focus_spr_crush_the_revolution
+
+    prerequisite = { focus = XTN_fight_anarchism }
+    mutually_exclusive = { focus = XTN_kill_benjamin }
+
+    cost = 10
+    
+
+    completion_reward = {
+
+
+    add_popularity = {
+        ideology = neutrality
+        popularity = -0.15
+            }
+    set_party_name = {
+        ideology = neutrality
+        long_name = XTN_split_intelligentsia_right_long
+        name = XTN_split_intelligentsia_right
+            }
+    set_party_name = {
+        ideology = communism
+        long_name = XTN_split_intelligentsia_left_long
+        name = XTN_split_intelligentsia_left
+            }
+
+
+
+                 
+           swap_ideas = {
+           remove_idea = XTN_inteligensia_influence
+           add_idea = XTN_anarchist_threat 
+            }
+
+
+        }
+    }
+
+  focus = {
+    id = XTN_crush_individualism
+    x = 24
+    y = 5
+    icon = GFX_focus_spr_class_war
+
+    prerequisite = { focus = XTN_split_the_party focus = XTN_kill_benjamin}
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        remove_ideas = {XTN_anarchist_threat}
+        add_popularity = {
+        ideology = neutrality
+        popularity = -0.5
+            }
+
+        }
+    }
+############################ Socialist Education ###########################
+
+  focus = {
+    id = XTN_socialist_education
+    x = 26
+    y = 3
+    icon = GFX_focus_NOR_moscows_education_centers
+
+    prerequisite = { focus = XTN_path_of_leninism }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_popularity = {
+        ideology = communism
+        popularity = 0.15
+            }
+        add_political_power = 50
+
+        }
+    }
+
+
+  focus = {
+    id = XTN_socialist_education_2
+    x = 26
+    y = 6
+    icon = GFX_focus_generic_socialist_science
+
+    prerequisite = { focus = XTN_socialist_education }
+    prerequisite = { focus = XTN_crush_individualism }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_popularity = {
+        ideology = communism
+        popularity = 0.15
+            }
+    add_ideas = { XTN_socialist_education }
+
+        }
+    }
+
+  focus = {
+    id = XTN_expand_nashville_uni
+    x = 25
+    y = 7
+    icon = GFX_focus_generic_soviet_politics
+
+    prerequisite = { focus = XTN_socialist_education_2 }
+    mutually_exclusive = { focus = XTN_army_academy_kx }
+ 
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_political_power = 50
+        add_research_slot = 1
+        
+
+        }
+    }
+
+  focus = {
+    id = XTN_army_academy_kx
+    x = 27
+    y = 7
+    icon = GFX_focus_generic_military_mission
+
+    prerequisite = { focus = XTN_socialist_education_2 }
+    mutually_exclusive = { focus = XTN_expand_nashville_uni }
+ 
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        army_experience = 25
+        add_research_slot = 1
+        }
+    }
 
 ##### Shared ######
 

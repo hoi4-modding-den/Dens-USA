@@ -5,10 +5,16 @@
  XTN_communism: "Union of Socialist States of America"
  XTN_Egoist: "Union of Egoists"
 
+VICTORY_POINTS_7797:0 "Memphis"
+VICTORY_POINTS_1758:0 "Knoxville"
+VICTORY_POINTS_7791:0 "Pigeon Forge"
+
  XTN_council: "Council"
  XTN_anarchist: "Anarcho-Individualist"
  XTN_anarchist_theorist: "Anarchist Theorist"
  XTN_union_of_egoists_trait: "Union of Egoists"
+ XTN_sick:0 "Sick"
+ XTN_chaos:0 "Chaos"
 
 
 
@@ -21,6 +27,12 @@
 
  XTN_democratic_party:0 "CoN"
  XTN_democratic_party_long:0 "Council of Nashville"
+
+ XTN_split_intelligentsia_right_long:0 "Union of Egoists"
+ XTN_split_intelligentsia_right:0 "Egoists"
+
+ XTN_split_intelligentsia_left_long:0 "Soviet party of free workers of America"
+  XTN_split_intelligentsia_left:0 "SPoFWoA"
 
 
 
@@ -60,6 +72,16 @@ XTN_spirit_of_freedom_desc:0 "We have toppled central government now we will spr
 
 XTN_spirit_of_victory:0 "Spirit of Victory"
 XTN_spirit_of_victory_desc:0 "We have killed most of oppressors. Now it's time to eliminate the rest so we can finally rest."
+
+
+XTN_spirit_of_lenin:0 "Spirit of Lenin"
+XTN_spirit_of_lenin_desc:0 "Father of revolution will help us free proletarians of the world."
+
+XTN_anarchist_threat:0 "Anarchist Threat"
+XTN_anarchist_threat_desc:0 "After splitting the party anarchists became our enemies."
+
+XTN_socialist_education:0 "Socialist Education"
+XTN_socialist_education_desc:0 "The youth is the future they must be educated in socialist enviroment."
 
 
 
@@ -164,3 +186,32 @@ XTN_spirit_of_victory_desc:0 "We have killed most of oppressors. Now it's time t
 
  XTN_victory:0 "Victory of Revolution"
  XTN_victory_desc:0 "We did it! We took most important states in america and now our revolutionaries can rest. There are still some counter-revolutionaries but we will stomp them!"
+
+
+
+ XTN_path_of_leninism:0 "Path of Leninism"
+ XTN_path_of_leninism_desc:0 "Lenin, The father of revolution. We will spread his word in americas."
+
+ XTN_fight_anarchism:0 "Fight Anarchism"
+ XTN_fight_anarchism_desc:0 "Anarchist influence has been a burden for us. Pehraps a purge is needed?"
+
+ XTN_kill_benjamin:0 "Kill Benjamin"
+ XTN_kill_benjamin_desc:0 "Leader of right wing Intelligentsia can cause some trouble in our path to global revolution, but killing him will cause internal infighting."
+
+ XTN_split_the_party:0 "Split the Party"
+ XTN_split_the_party_desc:0 "It's time for a divorce with the right. Less brutal option that could backfire."
+
+ XTN_crush_individualism:0 "Crush Individualism"
+ XTN_crush_individualism_desc:0 "We must hang all egoists as they are threat to our collectivist society!"
+
+ XTN_socialist_education:0 "Socialist Education"
+ XTN_socialist_education_desc:0 "Young people are future of our revolution. If we want to bring socialism to america we need to educate the youth."
+
+ XTN_socialist_education_2:0 "Finalize Education Reform"
+ XTN_socialist_education_2_desc:0 "The revolution will last many years and will be lead by educated socialists."
+
+ XTN_expand_nashville_uni:0 "Expand Nashville University"
+ XTN_expand_nashville_uni_desc:0 "A home of education will benefit our state."
+
+ XTN_army_academy_kx:0 "Army Academy of Knoxville"
+ XTN_army_academy_kx_desc:0 "Our soldiers must gain knowledge on how to fight before being sent to die."
