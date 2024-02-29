@@ -14,6 +14,11 @@ spriteTypes = {
 		name = "GFX_portrait_XWY_herbert_brees"
 		texturefile = "gfx/leaders/XWY/XWY_herbert_brees.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_portrait_XWY_royal_council"
+		texturefile = "gfx/leaders/XWY/XWY_royal_council.dds"
+	}
 
 	
 }

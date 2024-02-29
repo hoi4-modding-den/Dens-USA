@@ -97,5 +97,23 @@ ideas = {
 				army_morale_factor = 0.05
 			}
 		}
+		
+		XWY_royalist_sentiment = {
+			picture = LIT_invested_in_farms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.03
+			}
+		}
 	}
 }

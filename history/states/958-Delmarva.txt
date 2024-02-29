@@ -21,7 +21,9 @@ state={
 			dockyard = 1
 		}
 		#add_core_of = USA
-
+		add_dynamic_modifier = {
+			modifier = XMD_under_developed_state_delaware
+		}
 	}
 
 	provinces={

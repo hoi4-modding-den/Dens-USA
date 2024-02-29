@@ -6,6 +6,7 @@ recruit_character = XWY_lester_hunt
 recruit_character = XWY_frank_aloysius
 recruit_character = XWY_herbert_brees
 recruit_character = XWY_millard_simpson
+recruit_character = XWY_royal_council
 
 add_ideas = XWY_great_depression
 add_ideas = XWY_the_cowboy_state

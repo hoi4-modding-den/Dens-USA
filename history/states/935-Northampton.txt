@@ -14,6 +14,9 @@ state={
 		victory_points = {
 			3917 2 #Exmore
 		}
+		add_dynamic_modifier = {
+			modifier = XMD_under_developed_state_delaware
+		}
 
 	}
 

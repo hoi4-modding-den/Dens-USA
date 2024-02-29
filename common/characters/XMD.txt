@@ -13,4 +13,29 @@ characters = {
 			id = -1
 		}
 	}
+	XMD_george_santos = {
+		name = XMD_george_santos
+		portraits = {
+			civilian = {
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = { XMD_gay }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { XMD_gay }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = nazism
+			traits = { XMD_gay }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
 }

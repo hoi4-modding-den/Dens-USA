@@ -6,7 +6,9 @@ XMD_cc_change = {
     }
     if = {
         limit = {
+            has_variable = XMD_conservative_contentness
             check_variable = { XMD_conservative_contentness < 1}
+			has_country_flag = XMD_conservative_backlash_start_flag
         }
         XMD_cc_civil_war = yes
     }
@@ -23,6 +25,7 @@ XMD_cc_civil_war = {
             ideology = neutrality 
             popularity = -1
         }
+        clr_country_flag = XMD_conservative_backlash_start_flag
         start_civil_war = {
             ideology = fascism
             size = 0.5
@@ -93,6 +96,14 @@ XMD_cc_civil_war = {
                 name = XMD_republican_party
             }
             # Sets a country flag that gets used in a country tag alias.
+        }
+        set_politics = {
+            ruling_party = democratic
+            last_election = "1936.1.1"
+            election_frequency = 48
+            elections_allowed = yes
+            long_name = XMD_democratic_party
+            name = XMD_democratic_party
         }
     }
 }
@@ -166,4 +177,84 @@ XMD_cc_decrease_20 = {
         tooltip =XMD_cc_var_change_tt
     }
     XMD_cc_change = yes
+}
+
+XMD_cra_success_rate_change = {
+    clamp_variable = {
+        var = XMD_cra_success_rate
+        max = 100
+        min = 0
+    }
+}
+
+XMD_cra_success_rate_increase_very_5 = {
+    add_to_variable = {
+        var = XMD_cra_success_rate
+        value = 5
+        tooltip =XMD_cra_success_rate_var_tt
+    }
+    XMD_cra_success_rate_change = yes
+}
+
+XMD_cra_success_rate_increase_10 = {
+    add_to_variable = {
+        var = XMD_cra_success_rate
+        value = 10
+        tooltip =XMD_cra_success_rate_var_tt
+    }
+    XMD_cra_success_rate_change = yes
+}
+
+XMD_cra_success_rate_increase_15 = {
+    add_to_variable = {
+        var = XMD_cra_success_rate
+        value = 15
+        tooltip =XMD_cra_success_rate_var_tt
+    }
+    XMD_cra_success_rate_change = yes
+}
+
+XMD_cra_success_rate_increase_20 = {
+    add_to_variable = {
+        var = XMD_cra_success_rate
+        value = 20
+        tooltip =XMD_cra_success_rate_var_tt
+    }
+    XMD_cra_success_rate_change = yes
+}
+
+XMD_cra_success_rate_decrease_very_5 = {
+    add_to_variable = {
+        var = XMD_cra_success_rate
+        value = -5
+        tooltip =XMD_cra_success_rate_var_tt
+    }
+    XMD_cra_success_rate_change = yes
+}
+
+XMD_cra_success_rate_decrease_10 = {
+    add_to_variable = {
+        var = XMD_cra_success_rate
+        value = -10
+        tooltip =XMD_cra_success_rate_var_tt
+    }
+    XMD_cra_success_rate_change = yes
+}
+
+XMD_cra_success_rate_decrease_15 = {
+    add_to_variable = {
+        var = XMD_cra_success_rate
+        value = -15
+        tooltip =XMD_cra_success_rate_var_tt
+    }
+    XMD_cra_success_rate_change = yes
+}
+
+XMD_cra_success_rate_decrease_20 = {
+    add_to_variable = {
+        var = XMD_cra_success_rate
+        value = -20
+        tooltip =XMD_cra_success_rate_var_tt
+    }
+    XMD_cra_success_rate_change = yes
 }

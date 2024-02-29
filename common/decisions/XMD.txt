@@ -326,7 +326,7 @@ XMD_building_a_great_society = {
 
 		remove_effect = {
 			clr_country_flag = XMD_cannot_sign_any_new_legislation
-			XMD_cc_increase_10 = yes
+			XMD_cc_increase_15 = yes
 		}
 
 		complete_effect = {

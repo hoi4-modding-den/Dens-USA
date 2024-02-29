@@ -1,0 +1,21 @@
+on_actions = {
+	on_weekly_XMD = {
+		effect = {
+			if = {
+				limit = {
+					has_variable = XMD_conservative_contentness_decrease
+					has_variable = XMD_conservative_contentness
+					has_country_flag = XMD_conservative_backlash_start_flag
+					OR = {
+						has_government = democratic
+						has_government = fascism
+						has_government = neutrality
+					}
+				}
+				subtract_from_variable = { XMD_conservative_contentness = XMD_conservative_contentness_decrease }
+				XMD_cc_change = yes
+			}
+		}
+		
+	}
+}

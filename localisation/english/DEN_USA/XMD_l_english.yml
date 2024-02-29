@@ -4,6 +4,10 @@
  XMD_ADJ: "Bidenian"
 
  XMD_joe_biden: "Joe Biden"
+ XMD_the_president_from_the_future: "The President From the Future"
+ XMD_the_president_from_the_future_1: "$XMD_the_president_from_the_future$"
+ XMD_george_santos: "George Santos"
+ XMD_gay: "Light-Hearted and Carefree"
 
  XMD_communism_party: "People's Democratic Party"
  XMD_dem_rep_party: "Democratic-Republican Party"
@@ -13,29 +17,70 @@
  XMD_fascism_party: "MAGAP"
  XMD_fascism_party_long: "Make America Great Again Party"
 
+ #Event
+ XMD_the_south_will_join_the_conservatives_in_the_civil_war_tt: "§YThe South and the North will flip allegience in a potential civil war.§!"
+ XMD_will_pass: "§GIt will certainly pass.§!"
+ XMD_likely_to_pass: "§7It is likely to pass.§!"
+ XMD_might_pass: "§YIt might pass.§!"
+ XMD_unlikely_to_pass: "§OIt is unlikely to pass.§!"
+ XMD_wont_pass: "§RIt will not pass.§!"
+
+ XMD_if_pass: "If it does pass:"
+
+ XMD_the_people_wait: "Minorities wait, with bated breath, to know whether or not they are humans..."
+
+ #Focus 
+ XMD_cra_success_rate_var_tt: "Civil Rights Act Success Rate: $RIGHT|+=%%0$"
+ XMD_current_cra_success_rate_tt: "The current Civil Rights Act Success Rate is: [?XMD_cra_success_rate|Y%%1]."
+
+ XMD_militias_will_gain_power_tt: "§RAntifa and the Black Panthers will gain power.§!"
+
  #IDEAS
 
  XMD_great_depression: "The Great Depression"
  XMD_stagnating_economy: "Stagnating Economy"
  XMD_build_back_better_act_idea: "Build Back Better Act"
  XMD_the_new_deal_idea: "The New Deal"
- XMD_a_great_society: "The Great Society"
+ XMD_a_great_society_tooltip: "$XMD_the_great_society_idea$"
  XMD_militia_based_army: "Militia-Based Army"
  XMD_deadlocked_politics: "Deadlocked Politics"
  XMD_the_two_party_system: "The Two Party Sytem"
+
+ #Dynamic modifiers
+ XMD_the_great_society_idea: "The Great Society"
+ XMD_gs_modify_header_tt: "Modify §Y$XMD_the_great_society_idea$§! by"
+ XMD_great_society_production_speed_infrastructure_factor_tt: "$production_speed_infrastructure_factor_tt$"
+ XMD_great_society_production_factory_efficiency_gain_factor_tt: "$production_factory_efficiency_gain_factor_tt$"
+ XMD_great_society_production_speed_buildings_factor_tt: "$production_speed_buildings_factor_tt$"
+ XMD_great_society_consumer_goods_factor_tt: "$consumer_goods_factor_tt$"
+ XMD_great_society_political_power_factor_tt: "$MODIFIER_POLITICAL_POWER_FACTOR$: $RIGHT|+=%0$"
+ XMD_great_society_stability_factor_tt: "$stability_factor_tt$"
+ XMD_great_society_production_factory_max_efficiency_factor_tt: "$production_factory_max_efficiency_factor_tt$"
+ XMD_great_society_economy_cost_factor_tt: "$economy_cost_factor$: $RIGHT|-=%1$"
+ XMD_great_society_monthly_population_tt: "$MODIFIER_GLOBAL_MONTHLY_POPULATION$: $RIGHT|+=%1$"
+ XMD_great_society_conscription_factor_tt: "$conscription_factor_tt$"
+ XMD_great_society_production_speed_supply_node_factor_tt: "$production_speed_supply_node_factor_tt$"
+ XMD_great_society_production_speed_rail_way_factor_tt: "$modifier_production_speed_rail_way_factor$: $RIGHT|+=%1$"
+ XMD_great_society_research_speed_factor_tt: "$research_speed_factor_tt$"
+ XMD_great_society_industrial_capacity_factory_tt: "$industrial_capacity_factory_tt$"
 
  #DECISIONS
 
  XMD_the_great_depression_cat: "The Great Depression"
  XMD_the_great_depression_cat_desc: "The Great Depression is currently wrecking the lives of our citizens, robbing them of their money, and impoverishing all. We must combat it and free our people of this blight caused by Republican meddling."
  XMD_defending_americas_production_lines: "Defending America's Production Lines"
+ XMD_defending_americas_production_lines_flag: "Has completed: $XMD_defending_americas_production_lines$"
  XMD_empower_the_workers: "Empower the Workers"
+ XMD_empower_the_workers_flag: "Has completed: $XMD_empower_the_workers$"
  XMD_increase_the_minimum_wage: "Increase the Minimum Wage"
+ XMD_increase_the_minimum_wage_flag: "Has completed: $XMD_increase_the_minimum_wage$"
  XMD_inflation_reduction_act: "Sign the Inflation Reduction Act"
+ XMD_inflation_reduction_act_flag: "Has completed: $XMD_inflation_reduction_act$"
  XMD_balancing_the_budget: "Balance the Budget"
+ XMD_balancing_the_budget_flag: "Has completed: $XMD_balancing_the_budget$"
 
  XMD_building_a_great_society: "Building A Great Society"
- XMD_building_a_great_society_desc: "President [XMD_joe_biden.GetName] has announced a wide reaching program to lift our citizens out of poverty, end racial discrimination, and ensure the welfare of our citizens. It is up to us now to implement it in a way that achieves most of our goals, without angering the conservatives too much.\n\nConservative Contentness is a value meant to represent the opinion of the average conservative to your plans. §RIf Conservative Contentness falls below 0% then they will start a civil war.§!\n\nConservative Content decreases by §R[?XMD_conservative_contentness_decrease|%%]§! weekly.\n\nCurrent Conservative Contentness: §Y[?XMD_conservative_contentness|%%]§!"
+ XMD_building_a_great_society_desc: "President [XMD_joe_biden.GetName] has announced a wide reaching program to lift our citizens out of poverty, end racial discrimination, and ensure the welfare of our citizens. It is up to us now to implement it in a way that achieves most of our goals, without angering the conservatives too much.\n\nConservative Contentness is a value meant to represent the opinion of the average conservative to your plans. §RIf Conservative Contentness falls below 0% then they will start a civil war.§!\n\nConservative Content decreases by §R[?XMD_conservative_contentness_decrease|%%1]§! weekly.\n\nCurrent Conservative Contentness: §Y[?XMD_conservative_contentness|%%1]§!"
 
  XMD_placate_conservative_fears: "Placate the Conservatives"
  XMD_hold_off_on_any_legislation: "Hold Off on Signing Legislation"
@@ -44,7 +89,7 @@
  XMD_cannot_sign_any_new_legislation_tt: "We cannot sign any new legislation in the Great Society branch of the focus tree.\n"
 
  XMD_cc_civil_war_tt: "§RConservatives will start a civil war!§!"
- XMD_cc_var_change_tt: "Conservative Contentness: $RIGHT|%%+=$"
+ XMD_cc_var_change_tt: "Conservative Contentness: $RIGHT|%%+=1$"
  
  XMD_invest_in_state_factory: "Invest in the Economy of [USA_congress_investment_state.GetName]"
  XMD_invest_in_state_arms_factory: "Build new Munitions Plant in [USA_congress_investment_state.GetName]"
@@ -52,8 +97,9 @@
  XMD_invest_in_state_infrastructure: "Invest in the infrastructure of [USA_congress_investment_state.GetName]"
 
  XMD_random_owned_state_tt: "(§YRandom Owned State§!):"
- XMD_random_owned_state_tt: "(§YRandom Owned State§!):"
 
+
+ #Others
  STATE_935: "Northampton"
  STATE_958: "Delmarva"
  VICTORY_POINTS_3917: "Exmore"
