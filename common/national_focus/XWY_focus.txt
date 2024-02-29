@@ -1079,7 +1079,7 @@ focus = {
 
 
 		completion_reward = {
-	
+			add_ideas = XWY_royalist_sentiment
 		}
 	}
 	
@@ -1100,7 +1100,7 @@ focus = {
 		}
 
 		available = {
-		
+			neutrality > 0.25
 		}
 		
 		bypass = {
@@ -1113,7 +1113,14 @@ focus = {
 
 
 		completion_reward = {
-	
+				set_politics = {
+    ruling_party = neutrality
+    elections_allowed = no
+    last_election = "1935.12.17"
+    election_frequency = 48
+    long_name = "Royalists"
+    name = "Royalists"
+}
 		}
 	}
 	
@@ -1147,7 +1154,12 @@ focus = {
 
 
 		completion_reward = {
-	
+	add_popularity = {
+    ideology = neutrality
+    popularity = 0.1
+}
+country_event = XWY.2
+
 		}
 	}
 	
@@ -1181,7 +1193,8 @@ focus = {
 
 
 		completion_reward = {
-	
+				
+kill_country_leader = yes
 		}
 	}
 	

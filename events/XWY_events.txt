@@ -21,3 +21,21 @@ country_event = { #
 		set_cosmetic_tag = XWY_COM_3
 	}
 }
+
+country_event = { #
+	id = XWY.2
+	title = "The Question of a King"
+	desc = "placeholder"
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #
+		name = "A Alabaman King!"
+		complete_national_focus = XWY_a_alabaman_king
+	}
+	option = {
+		name = "A King of Our Own!"
+		complete_national_focus = XWY_our_own_king
+	}
+}
