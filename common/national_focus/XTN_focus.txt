@@ -53,6 +53,9 @@ add_popularity = {
     popularity = 0.15
 }
 
+
+add_ideas = { XTN_inteligensia_manifesto }
+
         }
     }
 
@@ -680,7 +683,7 @@ add_popularity = {
     popularity = 0.15
 }
 
-
+add_ideas = { XTN_inteligensia_manifesto }
         }
     }
 
@@ -926,6 +929,481 @@ add_popularity = {
         }
     }
 
+###############Industry#####################
+
+  focus = {
+    id = XTN_industrial_expansion
+    x = 30
+    y = 3
+    icon = GFX_goal_generic_construct_civ_factory
+
+    prerequisite = { focus = XTN_path_of_leninism }
+ 
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+    set_victory_points = {
+	province = 8014
+	value = 5
+        }
+    368 = {
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+            }
+    }
+
+
+        }
+    }
+
+  focus = {
+    id = XTN_expand_trotskygrad
+    x = 30
+    y = 4
+    icon = GFX_goal_generic_fortify_city
+
+    prerequisite = { focus = XTN_industrial_expansion }
+ 
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+
+    368 = {
+    add_building_construction = {
+    type = bunker
+    level = 4
+    instant_build = yes
+    province =  8014 
+        }
+    }
+    
+
+        }
+    }
+
+  focus = {
+    id = XTN_civilian_economy_focus
+    x = 30
+    y = 5
+    icon = GFX_goal_generic_construct_civ_factory
+
+    prerequisite = { focus = XTN_expand_trotskygrad }
+    mutually_exclusive = { focus = XTN_millitary_economy_focus }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+    368 = {
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+            }
+    }
+   
+
+        }
+    }
+
+  focus = {
+    id = XTN_millitary_economy_focus
+    x = 32
+    y = 5
+    icon = GFX_goal_generic_construct_mil_factory
+
+    prerequisite = { focus = XTN_expand_trotskygrad }
+    mutually_exclusive = { focus = XTN_civilian_economy_focus}
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+    368 = {
+    add_building_construction = {
+        type = arms_factory
+        level = 1
+        instant_build = yes
+            }
+    }
+   
+
+        }
+    }
+
+  focus = {
+    id = XTN_chemical_labs
+    x = 30
+    y = 6
+    icon = GFX_focus_generic_university_2
+
+    prerequisite = { focus = XTN_civilian_economy_focus focus = XTN_millitary_economy_focus}
+    mutually_exclusive = { focus = XTN_expand_steel_mines }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+    368 = {
+    add_building_construction = {
+        type = synthetic_refinery
+        level = 1
+        instant_build = yes
+            }
+    }
+
+    add_research_slot = 1
+   
+
+        }
+    }
+
+  focus = {
+    id = XTN_expand_steel_mines
+    x = 32
+    y = 6
+    icon = GFX_focus_generic_steel
+
+    prerequisite = { focus = XTN_civilian_economy_focus focus = XTN_millitary_economy_focus}
+    mutually_exclusive = { focus = XTN_chemical_labs }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+    
+        add_resource = {
+            type = steel
+            amount = 50
+            state = 368
+            }   
+    
+   
+
+        }
+    }
+
+  focus = {
+    id = XTN_workers_council
+    x = 31
+    y = 7
+    icon = GFX_focus_SWE_socialist_reforms
+
+    prerequisite = { focus = XTN_expand_steel_mines focus = XTN_chemical_labs }
+
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+    
+        add_ideas = { XTN_workers_council }
+    
+   
+
+        }
+    }
+
+################## Main questline ###############################################################################
+
+  focus = {
+    id = XTN_cult_of_trotsky
+    x = 28
+    y = 9
+    icon = GFX_focus_fra_loyalty_trotzky
+
+    prerequisite = { focus = XTN_path_of_leninism }
+    available = { NOT= {has_idea = XTN_inteligensia_manifesto }}
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+
+    add_popularity = {
+        ideology = communism
+        popularity = 0.3
+            }
+    add_ideas = {XTN_cult_of_trotsky_idea}
+
+
+        }
+    }
+
+  focus = {
+    id = XTN_prepare_for_washington_road
+    x = 28
+    y = 10
+    icon = GFX_focus_spa_the_war_of_vengeance
+
+    prerequisite = { focus = XTN_cult_of_trotsky }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_war_support = 0.05
+
+        }
+    }
+
+  focus = {
+    id = XTN_strike_nc
+    x = 28
+    y = 11
+    icon = GFX_goal_demand_sudetenland
+
+    prerequisite = { focus = XTN_prepare_for_washington_road }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XNC
+            type = annex_everything
+                }
+
+        }
+    }
+
+  focus = {
+    id = XTN_strike_ky
+    x = 26
+    y = 11
+    icon = GFX_goal_demand_sudetenland
+
+    prerequisite = { focus = XTN_prepare_for_washington_road }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XKY
+            type = annex_everything
+                }
+
+        }
+    }
+
+  focus = {
+    id = XTN_strike_va
+    x = 30
+    y = 11
+    icon = GFX_goal_demand_sudetenland
+
+    prerequisite = { focus = XTN_prepare_for_washington_road }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XVA
+            type = annex_everything
+                }
+
+        }
+    }
+
+
+  focus = {
+    id = XTN_strike_wv
+    x = 28
+    y = 12
+    icon = GFX_goal_demand_sudetenland
+
+    prerequisite = { focus = XTN_strike_va }
+    prerequisite = { focus = XTN_strike_ky }
+    prerequisite = { focus = XTN_strike_nc }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XWV
+            type = annex_everything
+                }
+
+        }
+    }
+
+  focus = {
+    id = XTN_grant_statehood_richmond
+    x = 29
+    y = 13
+    icon = GFX_focus_SWE_socialist_reforms
+
+    prerequisite = { focus = XTN_strike_wv }
+
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        363 = {
+
+            add_core_of = XTN
+
+        }
+
+        362 = {
+
+            add_core_of = XTN
+
+        }
+
+        369 = {
+
+            add_core_of = XTN
+
+        }
+
+        816 = {
+
+            add_core_of = XTN
+
+        }
+
+        add_stability = 0.05
+
+
+        }
+    }
+
+  focus = {
+    id = XTN_cross_potomak
+    x = 28
+    y = 14
+    icon = GFX_focus_generic_strike_at_democracy3
+
+    prerequisite = { focus = XTN_strike_wv }
+
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XMD
+            type = annex_everything
+                }
+
+
+        }
+    }
+
+############################# Central Government #######################
+
+  focus = {
+    id = XTN_claim_usa
+    x = 28
+    y = 15
+    icon = GFX_focus_SOV_the_supreme_soviet
+
+    prerequisite = { focus = XTN_cross_potomak }
+    available = {361 = {is_owned_by = XTN} XMD = {exists = no}}
+
+
+    cost = 2
+    
+
+    completion_reward = {
+
+            add_stability = 0.15
+        361 = {
+
+            add_core_of = XTN
+
+        }
+        958 = {
+
+            add_core_of = XTN
+
+        }
+        935 = {
+
+            add_core_of = XTN
+
+        }
+        set_capital = {
+        state = 361
+        remember_old_capital = no
+            }
+
+        set_cosmetic_tag = XTN_USA
+
+        add_ideas = { XTN_usa_claim}
+
+        }
+    }
+
+#################################### Migration Policy #######################################
+
+  focus = {
+    id = XTN_immigation_focus
+    x = 22
+    y = 10
+    icon = GFX_focus_ETH_callout_to_the_world
+
+    prerequisite = { focus = XTN_cult_of_trotsky }
+    available = { XTN = {has_idea = XTN_immigration }}
+
+
+    cost = 2
+    
+
+    completion_reward = {
+
+        swap_ideas = {
+           remove_idea = XTN_immigration
+           add_idea = XTN_immigration_2 
+            }
+
+        }
+    }
+
+
+
+
 ##### Shared ######
 
  focus = {
@@ -980,6 +1458,8 @@ focus = {
     ideology = communism
     popularity = 0.05
 }
+
+    
 
         }
     }

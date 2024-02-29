@@ -8,6 +8,7 @@
 VICTORY_POINTS_7797:0 "Memphis"
 VICTORY_POINTS_1758:0 "Knoxville"
 VICTORY_POINTS_7791:0 "Pigeon Forge"
+VICTORY_POINTS_8014:0 "Trotskygrad"
 
  XTN_council: "Council"
  XTN_anarchist: "Anarcho-Individualist"
@@ -15,6 +16,7 @@ VICTORY_POINTS_7791:0 "Pigeon Forge"
  XTN_union_of_egoists_trait: "Union of Egoists"
  XTN_sick:0 "Sick"
  XTN_chaos:0 "Chaos"
+ XTN_reform:0 "Standing Army"
 
 
 
@@ -82,6 +84,18 @@ XTN_anarchist_threat_desc:0 "After splitting the party anarchists became our ene
 
 XTN_socialist_education:0 "Socialist Education"
 XTN_socialist_education_desc:0 "The youth is the future they must be educated in socialist enviroment."
+
+XTN_workers_council:0 "Workers Council"
+XTN_workers_council_desc:0 "Workers are organized into councils which improve how our factories work."
+
+XTN_cult_of_trotsky_idea:0 "Cult of Trotsky"
+XTN_cult_of_trotsky_idea_desc:0 "Hail the supreme leader!"
+
+XTN_usa_claim:0 "Head of USA"
+XTN_usa_claim_desc:0 "We are in charge now!"
+
+XTN_immigration_2:0 "High Immigration"
+XTN_immigration_2_desc:0 "Lands of Tennessee are mostly rual bringing oportunity to newcomers."
 
 
 
@@ -215,3 +229,45 @@ XTN_socialist_education_desc:0 "The youth is the future they must be educated in
 
  XTN_army_academy_kx:0 "Army Academy of Knoxville"
  XTN_army_academy_kx_desc:0 "Our soldiers must gain knowledge on how to fight before being sent to die."
+
+ XTN_industrial_expansion:0 "Industrial Expansion"
+ XTN_industrial_expansion_desc:0 "We must build a new city for our workers."
+
+ XTN_expand_trotskygrad:0 "Expand Trotskygrad"
+ XTN_expand_trotskygrad_desc:0 "Our industrial heart is undefended and we must change that."
+
+ XTN_civilian_economy_focus:0 "Civilian economy Focus"
+ XTN_civilian_economy_focus_desc:0 "We must provide to our people before supporting millitary."
+ 
+ XTN_millitary_economy_focus:0 "Millitary economy Focus"
+ XTN_millitary_economy_focus_desc:0 "We must provide to our millitary before supporting people."
+
+ XTN_expand_steel_mines:0 "Expand Steel mines"
+ XTN_expand_steel_mines_desc:0 "Steel is our main resource in Tennessee we must dig deeper."
+
+ XTN_chemical_labs:0 "Chemical Labs"
+ XTN_chemical_labs_desc:0 "We can improve our scientific discoveries by creating chemical labs trough our nation."
+
+ XTN_cult_of_trotsky:0 "Cult of Trotsky"
+ XTN_cult_of_trotsky_desc:0 "After finishing all points of the manifesto it is finally time for Trotsky to begin his rule."
+
+ XTN_prepare_for_washington_road:0 "Prepare for Washington Road"
+ XTN_prepare_for_washington_road_desc:0 "Washington road is a millitary operation written by Trotsky. It aims to take the seed of USA."
+
+ XTN_strike_va:0 "Strike Virginia"
+ XTN_strike_va_desc:0 " " 
+ XTN_strike_ky:0 "Strike Kentucky"
+ XTN_strike_ky_desc:0 " "
+ XTN_strike_nc:0 "Strike North Carolina"
+ XTN_strike_nc_desc:0 " "
+ XTN_strike_wv:0 "Strike West Virginia"
+ XTN_strike_wv_desc:0 " "
+
+ XTN_grant_statehood_richmond:0 "Grant statehood to Richmond"
+ XTN_grant_statehood_richmond_desc:0 "We will integrate new states in order to ensure stability of Union."
+
+ XTN_cross_potomak:0 "Cross Potomak"
+ XTN_cross_potomak_desc:0 "It's time. We will pass potomak river and install Trotsky as first commissar of USA."
+
+XTN_claim_usa:0 "Claim USA"
+XTN_claim_usa_desc:0 "After Capturing Washington we hold the head of US government and we are planning to use it."
