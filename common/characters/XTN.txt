@@ -78,7 +78,7 @@ logistics_skill = 1
 		}
 		country_leader = {
 			ideology = anarchism
-			traits = {  XTN_anarchist }
+			traits = {  XTN_anarchist XTN_sick }
 			expire = "1945.6.17.9"
 			id = -1
 		}

@@ -36,6 +36,24 @@ leader_traits = {
 		democratic_acceptance = -100
 		stability_weekly = -0.05
 	}
+		XTN_sick= {
+		random = no
+		
+		political_power_factor = -0.5
+
+	}
+		XTN_chaos = {
+		random = no
+		
+		political_power_factor = -0.5
+		stability_weekly = -1
+		production_factory_efficiency_gain_factor = -1
+		local_resources_factor = -1
+		surrender_limit = -1
+
+ 
+		
+	}
 
 
 
