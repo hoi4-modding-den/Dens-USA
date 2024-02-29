@@ -16,6 +16,7 @@ add_ideas = XUT_great_depression
 add_ideas = XUT_influential_church
 
 set_stability = 0.2
+set_war_support = 0.1
 
 set_politics = {
 	ruling_party = democratic
