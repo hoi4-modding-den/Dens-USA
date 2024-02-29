@@ -40,6 +40,7 @@ bookmarks = {
 			focuses = {
 				XTN_inteligensia_right
 				XTN_inteligensia_left
+				XTN_american_revolution
 			}
 			ideas = {
 				XTN_inteligensia_influence
