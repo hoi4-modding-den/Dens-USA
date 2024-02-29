@@ -13,6 +13,7 @@ ideas = {
 				line_change_production_efficiency_factor = -0.3
 				production_lack_of_resource_penalty_factor = 0.5    
 				stability_factor = -0.5
+				economy_cost_factor = 1
 			}
 			allowed = {
 				always = no
@@ -33,6 +34,7 @@ ideas = {
 				line_change_production_efficiency_factor = -0.1
 				production_lack_of_resource_penalty_factor = 0.15  
 				stability_factor = -0.4
+				economy_cost_factor = 0.5
 			}
 			allowed = {
 				always = no
@@ -53,6 +55,7 @@ ideas = {
 				line_change_production_efficiency_factor = -0.1
 				production_lack_of_resource_penalty_factor = 0.1
 				stability_factor = -0.3
+				economy_cost_factor = 0.25
 			}
 			allowed = {
 				always = no
@@ -71,6 +74,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = -0.05
 				stability_factor = -0.2
+				economy_cost_factor = 0.2
 			}
 			allowed = {
 				always = no
@@ -87,6 +91,7 @@ ideas = {
 				consumer_goods_factor = 0.2
 				production_speed_buildings_factor = -0.1
 				stability_factor = -0.1
+				economy_cost_factor = 0.1
 			}
 			allowed = {
 				always = no
@@ -129,11 +134,10 @@ ideas = {
 			}
 			modifier = {
 				production_speed_infrastructure_factor = 0.3
-				production_factory_efficiency_gain_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
 				production_speed_buildings_factor = 0.1
 				consumer_goods_factor = 0.05
 				stability_factor = 0.05
-				economy_cost_factor = -0.1
 			}
 			allowed = {
 				always = no
@@ -149,30 +153,29 @@ ideas = {
 			modifier = {
 				production_speed_infrastructure_factor = 0.3
 				production_factory_efficiency_gain_factor = 0.15
-				production_speed_buildings_factor = 0.15
+				production_speed_buildings_factor = 0.05
 				consumer_goods_factor = 0.05
 				stability_factor = 0.1
-				production_factory_max_efficiency_factor = 0.1
 				economy_cost_factor = -0.15
 			}
 			allowed = {
 				always = no
 			}
 		}
-		XMD_a_great_society= {
+		XMD_a_great_society_tooltip = {
 
 			picture = SWE_folkhemmet	
 			allowed_civil_war = {
 				always = yes
 			}
 			modifier = {
-				production_speed_infrastructure_factor = 0.25
+				production_speed_infrastructure_factor = 0.3
 				production_factory_efficiency_gain_factor = 0.15
-				production_speed_buildings_factor = 0.15
-				consumer_goods_factor = 0.05
-				stability_factor = 0.1
-				production_factory_max_efficiency_factor = 0.1
-				economy_cost_factor = -0.15
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = 0.1
+				political_power_factor = 0.1
+				stability_factor = 0.2
+				economy_cost_factor = -0.25
 			}
 			allowed = {
 				always = no
@@ -214,8 +217,51 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				stability_factor = -0.1
+				stability_factor = -0.05
 				political_power_factor = -0.15
+				democratic_drift = 0.02
+			}
+			allowed = {
+				always = no
+			}
+		}
+		XMD_the_two_party_system_majority = {
+			name = XMD_the_two_party_system
+			picture = XAL_alabama_division
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.05
+				democratic_drift = 0.02
+			}
+			allowed = {
+				always = no
+			}
+		}
+		XMD_enforced_majority = {
+			picture = XAL_alabama_division
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = 0.1
+			}
+			allowed = {
+				always = no
+			}
+		}
+		XMD_the_black_scare_idea = {
+			picture = XAL_alabama_division
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_advisor_cost_factor = 0.15
+				fascism_drift = -0.05
 			}
 			allowed = {
 				always = no

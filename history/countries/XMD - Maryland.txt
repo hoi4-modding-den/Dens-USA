@@ -3,6 +3,7 @@ capital = 361
 oob="XMD"
 
 recruit_character = XMD_joe_biden
+recruit_character = XMD_george_santos
 
 add_ideas = {
 	XMD_great_depression
@@ -15,8 +16,8 @@ set_politics = {
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
-    long_name = USA_dem_rep_party
-    name = USA_dem_rep_party
+    long_name = XMD_dem_rep_party
+    name = XMD_dem_rep_party
 }
 
 

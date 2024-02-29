@@ -147,6 +147,7 @@
 
 		completion_reward = {
 			country_event = XMD_political_events.3
+			event_option_tooltip = XMD_political_events.3.a
 		}
 	}
 	
@@ -330,7 +331,8 @@
 		id = XMD_further_the_progressive_reforms
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_the_new_deal}
-		x = -4
+		mutually_exclusive = { focus = XMD_walk_the_fine_line}
+		x = -6
 		y = 1
 		relative_position_id = XMD_the_new_deal
 
@@ -407,6 +409,1235 @@
 		completion_reward = {
 			effect_tooltip = {
 				swap_ideas = {
+					remove_idea = XMD_the_new_deal_idea_1
+					add_idea = XMD_a_great_society_tooltip
+				}
+			}
+			hidden_effect = {
+				remove_ideas = {
+					XMD_great_depression
+					XMD_great_depression_1
+					XMD_great_depression_2
+					XMD_great_depression_3
+					XMD_great_depression_4
+					XMD_the_new_deal_idea
+					XMD_the_new_deal_idea_1
+				}
+				set_variable = { XMD_great_society_production_speed_infrastructure_factor = 0.3}
+				set_variable = { XMD_great_society_production_factory_efficiency_gain_factor = 0.15}
+				set_variable = { XMD_great_society_production_speed_buildings_factor = 0.1}
+				set_variable = { XMD_great_society_consumer_goods_factor = 0.1}
+				set_variable = { XMD_great_society_political_power_factor = 0.1}
+				set_variable = { XMD_great_society_stability_factor = 0.2}
+				set_variable = { XMD_great_society_production_factory_max_efficiency_factor = 0.1}
+				set_variable = { XMD_great_society_economy_cost_factor = -0.25}
+				add_dynamic_modifier = {
+					modifier = XMD_the_great_society_idea
+				}
+				
+			}
+			country_event =  XMD_political_events.8
+			set_country_leader_ideology = socialism
+		}
+	}
+	
+	focus = {
+		id = XMD_war_on_poverty
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_establish_a_great_society}
+		x = -3
+		y = 1
+		relative_position_id = XMD_establish_a_great_society
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			custom_effect_tooltip = XMD_gs_modify_header_tt
+			add_to_variable = {
+				var = XMD_great_society_production_speed_buildings_factor
+				value = 0.1
+				tooltip = XMD_great_society_production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_production_factory_max_efficiency_factor
+				value = 0.05
+				tooltip = XMD_great_society_production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_monthly_population
+				value = 0.1
+				tooltip = XMD_great_society_monthly_population_tt
+			}
+			XMD_cc_decrease_10 = yes
+		}
+	}
+	
+	focus = {
+		id = XMD_higher_education_act
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_war_on_poverty}
+		x = -2
+		y = 1
+		relative_position_id = XMD_war_on_poverty
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			custom_effect_tooltip = XMD_gs_modify_header_tt
+			add_to_variable = {
+				var = XMD_great_society_research_speed_factor
+				value = 0.1
+				tooltip = XMD_great_society_research_speed_factor_tt
+			}
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_social_security_act
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_war_on_poverty}
+		x = 0
+		y = 1
+		relative_position_id = XMD_war_on_poverty
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			custom_effect_tooltip = XMD_gs_modify_header_tt
+			add_to_variable = {
+				var = XMD_great_society_monthly_population
+				value = 0.15
+				tooltip = XMD_great_society_monthly_population_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_political_power_factor
+				value = 0.05
+				tooltip = XMD_great_society_political_power_factor_tt
+			}
+			add_to_variable = {
+				var = production_factory_max_efficiency_factor
+				value = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_champion_civil_rights
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_establish_a_great_society}
+		x = 3
+		y = 1
+		relative_position_id = XMD_establish_a_great_society
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			set_country_flag = XMD_civil_rights_debate
+			custom_effect_tooltip = XMD_gs_modify_header_tt
+			add_to_variable = {
+				var = XMD_great_society_political_power_factor
+				value = 0.05
+				tooltip = XMD_great_society_political_power_factor_tt
+			}
+			XMD_cc_decrease_10 = yes
+			set_variable = {
+				var = XMD_cra_success_rate
+				value = 5
+				tooltip = XMD_cra_success_rate_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_meet_with_civil_rights_leaders
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_champion_civil_rights}
+		x = -1
+		y = 1
+		relative_position_id = XMD_champion_civil_rights
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = XMD_civil_rights_debate
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XMD_cc_decrease_10 = yes
+			XMD_cra_success_rate_increase_10 = yes
+		}
+	}
+	
+	focus = {
+		id = XMD_bolster_progressive_militias
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_meet_with_civil_rights_leaders}
+		x = 0
+		y = 1
+		relative_position_id = XMD_meet_with_civil_rights_leaders
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = XMD_civil_rights_debate
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XMD_cc_decrease_10 = yes
+			XMD_cra_success_rate_increase_10 = yes
+			custom_effect_tooltip = XMD_militias_will_gain_power_tt
+			set_country_flag = XMD_bolstered_militias_flag
+		}
+	}
+	
+	focus = {
+		id = XMD_desegregate_the_government
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_champion_civil_rights}
+		x = 4
+		y = 1
+		relative_position_id = XMD_champion_civil_rights
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = XMD_civil_rights_debate
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XMD_cc_decrease_20 = yes
+			XMD_cra_success_rate_increase_20 = yes
+
+			custom_effect_tooltip = XMD_gs_modify_header_tt
+			add_to_variable = {
+				var = XMD_great_society_conscription_factor
+				value = 0.15
+				tooltip = XMD_great_society_conscription_factor_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_ensure_a_majority_in_congress
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_champion_civil_rights}
+		x = 2
+		y = 1
+		relative_position_id = XMD_champion_civil_rights
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = XMD_civil_rights_debate
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = XMD_the_two_party_system
+				}
+				swap_ideas = {
+					remove_idea = XMD_the_two_party_system
+					add_idea = XMD_the_two_party_system_majority
+				}
+			}
+			else = {
+				add_ideas = XMD_enforced_majority
+			}
+			XMD_cc_decrease_very_5 = yes
+			XMD_cra_success_rate_increase_very_5 = yes
+		}
+	}
+	
+	focus = {
+		id = XMD_incentives_for_support
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_ensure_a_majority_in_congress}
+		x = -1
+		y = 1
+		relative_position_id = XMD_ensure_a_majority_in_congress
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = XMD_civil_rights_debate
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_political_power = -100
+			XMD_cc_increase_10 = yes
+			XMD_cra_success_rate_increase_10 = yes
+		}
+	}
+	
+	focus = {
+		id = XMD_put_pressure_on_the_opposition
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_ensure_a_majority_in_congress}
+		x = 1
+		y = 1
+		relative_position_id = XMD_ensure_a_majority_in_congress
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = XMD_civil_rights_debate
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_political_power = -100
+			XMD_cc_decrease_10 = yes
+			XMD_cra_success_rate_increase_10= yes
+		}
+	}
+	
+	focus = {
+		id = XMD_the_black_scare
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_put_pressure_on_the_opposition}
+		x = 0
+		y = 1
+		relative_position_id = XMD_put_pressure_on_the_opposition
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = XMD_civil_rights_debate
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			country_event = XMD_political_events.10
+			event_option_tooltip = XMD_political_events.10.a
+		}
+	}
+	
+	focus = {
+		id = XMD_the_civil_rights_act_of_year
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_champion_civil_rights}
+		x = 0
+		y = 4
+		relative_position_id = XMD_champion_civil_rights
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		bypass = {
+			NOT = {
+				has_country_flag = XMD_civil_rights_debate
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		select_effect = {
+
+		}
+
+		completion_reward = {
+
+			custom_effect_tooltip = XMD_current_cra_success_rate_tt
+
+			if = {
+				limit = {
+					#100
+					check_variable = { XMD_cra_success_rate > 100}
+				}
+				custom_effect_tooltip = XMD_will_pass
+			}
+			else_if = {
+				limit = {
+					#60 - 99
+					check_variable = { XMD_cra_success_rate > 59 }
+					check_variable = { XMD_cra_success_rate < 100 }
+				}
+				custom_effect_tooltip = XMD_likely_to_pass
+			}
+			else_if = {
+				limit = {
+					#40 - 59
+					check_variable = { XMD_cra_success_rate > 39 }
+					check_variable = { XMD_cra_success_rate < 60 }
+				}
+				custom_effect_tooltip = XMD_might_pass
+			}
+			else_if = {
+				limit = {
+					#1 - 39
+					check_variable = { XMD_cra_success_rate > 0 }
+					check_variable = { XMD_cra_success_rate < 40 }
+				}
+				custom_effect_tooltip = XMD_unlikely_to_pass
+			}
+			else = {
+				custom_effect_tooltip = XMD_wont_pass
+			}
+
+			custom_effect_tooltip = XMD_if_pass
+
+			country_event = XMD_political_events.12
+
+			hidden_effect = {
+				country_event = {
+					id = XMD_political_events.9
+					days = 5
+				}
+			}
+		
+			event_option_tooltip = XMD_political_events.9.a
+
+			
+		}
+	}
+	
+	focus = {
+		id = XMD_regional_development_act
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_champion_civil_rights}
+		prerequisite = { focus = XMD_war_on_poverty}
+		x = 2
+		y = 1
+		relative_position_id = XMD_war_on_poverty
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = XMD_under_developed_state_delaware
+					}
+					
+				}
+				remove_dynamic_modifier = {
+					modifier = XMD_under_developed_state_delaware
+				}
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				if = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			XMD_cc_increase_very_5 = yes
+			XMD_cra_success_rate_increase_10 = yes
+		}
+	}
+	
+	focus = {
+		id = XMD_equal_opportunites_act
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_regional_development_act}
+		prerequisite = { focus = XMD_social_security_act}
+		prerequisite = { focus = XMD_higher_education_act}
+		x = 0
+		y = 2
+		relative_position_id = XMD_war_on_poverty
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			custom_effect_tooltip = XMD_gs_modify_header_tt
+			add_to_variable = {
+				var = XMD_great_society_production_speed_buildings_factor
+				value = 0.15
+				tooltip = XMD_great_society_production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_production_factory_efficiency_gain_factor
+				value = 0.1
+				tooltip = XMD_great_society_production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_political_power_factor
+				value = 0.1
+				tooltip = XMD_great_society_political_power_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_consumer_goods_factor
+				value = 0.05
+				tooltip = XMD_great_society_consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_research_speed_factor
+				value = 0.08
+				tooltip = XMD_great_society_research_speed_factor_tt
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			XMD_cc_decrease_10 = yes
+		}
+	}
+	
+	focus = {
+		id = XMD_ground_transportation_act
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_equal_opportunites_act}
+		x = 1
+		y = 1
+		relative_position_id = XMD_equal_opportunites_act
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			custom_effect_tooltip = XMD_gs_modify_header_tt
+			add_to_variable = {
+				var = XMD_great_society_production_speed_infrastructure_factor
+				value = 0.1
+				tooltip = XMD_great_society_production_speed_infrastructure_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_production_speed_supply_node_factor
+				value = 0.3
+				tooltip = XMD_great_society_production_speed_supply_node_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_production_speed_rail_way_factor
+				value = 0.3
+				tooltip = XMD_great_society_production_speed_rail_way_factor_tt
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			XMD_cc_increase_very_5 = yes
+		}
+	}
+	
+	focus = {
+		id = XMD_endowment_for_arts_and_humanities_act
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_equal_opportunites_act}
+		x = -1
+		y = 1
+		relative_position_id = XMD_equal_opportunites_act
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			custom_effect_tooltip = XMD_gs_modify_header_tt
+			add_to_variable = {
+				var = XMD_great_society_stability_factor
+				value = 0.15
+				tooltip = XMD_great_society_stability_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_political_power_factor
+				value = 0.1
+				tooltip = XMD_great_society_political_power_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_research_speed_factor
+				value = 0.02
+				tooltip = XMD_great_society_research_speed_factor_tt
+			}
+			XMD_cc_decrease_very_5 = yes
+		}
+	}
+	
+	focus = {
+		id = XMD_fair_labor_standards_act
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_endowment_for_arts_and_humanities_act}
+		prerequisite = { focus = XMD_ground_transportation_act}
+		x = 1
+		y = 1
+		relative_position_id = XMD_endowment_for_arts_and_humanities_act
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			custom_effect_tooltip = XMD_gs_modify_header_tt
+			add_to_variable = {
+				var = XMD_great_society_production_speed_buildings_factor
+				value = 0.1
+				tooltip = XMD_great_society_production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_production_factory_efficiency_gain_factor
+				value = 0.15
+				tooltip = XMD_great_society_production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_production_factory_max_efficiency_factor
+				value = 0.15
+				tooltip = XMD_great_society_production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_consumer_goods_factor
+				value = 0.05
+				tooltip = XMD_great_society_consumer_goods_factor_tt
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			XMD_cc_decrease_15 = yes
+		}
+	}
+	
+	focus = {
+		id = XMD_the_giant_wakes
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_the_civil_rights_act_of_year}
+		prerequisite = { focus = XMD_fair_labor_standards_act}
+		x = 3
+		y = 1
+		relative_position_id = XMD_fair_labor_standards_act
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			custom_effect_tooltip = XMD_gs_modify_header_tt
+			add_to_variable = {
+				var = XMD_great_society_industrial_capacity_factory
+				value = 0.3
+				tooltip = XMD_great_society_industrial_capacity_factory_tt
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_walk_the_fine_line
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_the_new_deal}
+		mutually_exclusive = { focus = XMD_further_the_progressive_reforms}
+		x = 6
+		y = 1
+		relative_position_id = XMD_the_new_deal
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
 					remove_idea = XMD_the_new_deal_idea
 					add_idea = XMD_the_new_deal_idea_1
 				}
@@ -433,7 +1664,7 @@
 		id = XMD_end_the_experiment
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_mend_the_political_divide }
-		prerequisite = { focus = XMD_the_war_on_poverty }
+		prerequisite = { focus = XMD_recover_the_economy }
 		mutually_exclusive = { focus = XMD_build_back_better_act }
 		x = -1
 		y = 1

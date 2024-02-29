@@ -79,7 +79,7 @@ country_event = { #Political Restructuring
 	option = { #Establish dictatorial control
 		name = XMD_political_events.3.c
 
-		custom_effect_tooltip = XMD_unlikely_to_pass
+		custom_effect_tooltip = XMD_wont_pass
 		custom_effect_tooltip = XMD_if_pass
 
 		set_country_flag = XMD_dictatorial_control_vote
@@ -387,31 +387,153 @@ country_event = { #Conservatives upset over the shift in the democratic party
 			var = XMD_conservative_contentness
 			value = 50
 		}
-		
-		random_list = {
-			1 = {
-				set_variable = {
-					var = XMD_conservative_contentness_decrease
-					value = 1
-				}
-				if = {
-					limit = {
-						is_debug = yes
+		hidden_effect = {
+			random_list = {
+				1 = {
+					set_variable = {
+						var = XMD_conservative_contentness_decrease
+						value = 1
 					}
-					custom_effect_tooltip = fuck_you_debug_person
 				}
-			}
-			1 = {
-				set_variable = {
-					var = XMD_conservative_contentness_decrease
-					value = 0
-				}
-				modifier = {
-					factor = 0
-					is_ai = no
+				1 = {
+					set_variable = {
+						var = XMD_conservative_contentness_decrease
+						value = 0
+					}
+					modifier = {
+						factor = 0
+						is_ai = no
+					}
 				}
 			}
 		}
 
+	}
+}
+
+country_event = { #Voting on the Civil Rights Act of Year
+	id = XMD_political_events.9
+	title = XMD_political_events.9.t
+	desc = XMD_political_events.9.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	immediate = {
+		set_temp_variable = { cra_inverse_temp = 100}
+		subtract_from_temp_variable = { cra_inverse_temp = XMD_cra_success_rate}
+
+		clr_country_flag = XMD_civil_rights_debate
+		
+		random_list = {
+			var:XMD_cra_success_rate = {
+				set_country_flag = XMD_civil_rights_bill_passed
+				custom_effect_tooltip = "[?XMD_cra_success_rate]"
+			}
+			var:cra_inverse_temp = {
+				clr_country_flag = XMD_civil_rights_bill_passed
+				custom_effect_tooltip = "[?cra_inverse_temp]"
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = { #Voting - Passed
+		name = XMD_political_events.9.a
+
+		add_political_power = 200
+
+		custom_effect_tooltip = XMD_gs_modify_header_tt
+		add_to_variable = {
+			var = XMD_great_society_political_power_factor
+			value = 0.1
+			tooltip = XMD_great_society_political_power_factor_tt
+		}
+		add_to_variable = {
+			var = XMD_great_society_stability_factor
+			value = 0.1
+			tooltip = XMD_great_society_stability_factor_tt
+		}
+		add_to_variable = {
+			var = XMD_great_society_monthly_population
+			value = 0.25
+			tooltip = XMD_great_society_monthly_population_tt
+		}
+		add_to_variable = {
+			var = XMD_great_society_conscription_factor
+			value = 0.3
+			tooltip = XMD_great_society_conscription_factor_tt
+		}
+		XMD_cc_decrease_20 = yes
+
+		custom_effect_tooltip = XMD_the_south_will_join_the_conservatives_in_the_civil_war_tt
+
+	}
+
+	option = { #Voting - Failed
+		name = XMD_political_events.9.b
+
+		add_stability = -0.1
+
+		add_political_power = -200
+
+		XMD_cc_increase_20 = yes
+
+		trigger = {
+			NOT = {
+				has_country_flag = XMD_civil_rights_bill_passed
+			}
+		}
+
+	}
+}
+
+country_event = { #The Black Scare
+	id = XMD_political_events.10
+	title = XMD_political_events.10.t
+	desc = XMD_political_events.10.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #remove the fascist krauts from office
+		name = XMD_political_events.10.a
+		
+		add_timed_idea = {
+			idea = XMD_the_black_scare_idea
+			days = 365
+		}
+
+		XMD_cc_decrease_10 = yes
+		XMD_cra_success_rate_increase_15= yes
+	}
+}
+
+country_event = { #Campaigning for the civil rights act begins
+	id = XMD_political_events.11
+	title = XMD_political_events.11.t
+	desc = XMD_political_events.11.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Please god let this pass
+		name = XMD_political_events.11.a
+		
+		add_political_power = 25
+	}
+}
+
+country_event = { #the vote for the CRA starts
+	id = XMD_political_events.12
+	title = XMD_political_events.12.t
+	desc = XMD_political_events.12.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #The moment of truth...
+		name = XMD_political_events.12.a
+		
+		custom_effect_tooltip = XMD_the_people_wait
 	}
 }
