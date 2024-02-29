@@ -122,6 +122,20 @@ logistics_skill = 4
 
 
 
+	XTN_union_of_egoists = {
+		name = "Union of Egoists"
+		portraits = {
+			civilian = {
+				large = "operative_unknown"
+			}
+		}
+		country_leader = {
+			ideology = anarchism
+			traits = { XTN_union_of_egoists_trait }
+			expire = "1948.9.9.9"
+			id = -1
+		}
+	}
 
 
 }

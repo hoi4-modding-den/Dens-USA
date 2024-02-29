@@ -27,6 +27,16 @@ leader_traits = {
 		license_purchase_cost = 1
 	}
 
+		XTN_union_of_egoists_trait = {
+		random = no
+		
+		neutrality_drift = 0.05
+		fascism_acceptance = -100
+		communism_acceptance = -100
+		democratic_acceptance = -100
+		stability_weekly = -0.05
+	}
+
 
 
 }

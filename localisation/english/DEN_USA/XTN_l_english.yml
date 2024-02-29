@@ -3,10 +3,14 @@
  XTN_DEF: "Tennessee"
  XTN_ADJ: "Tennessee"
  XTN_communism: "Union of Socialist States of America"
+ XTN_Egoist: "Union of Egoists"
 
  XTN_council: "Council"
  XTN_anarchist: "Anarcho-Individualist"
  XTN_anarchist_theorist: "Anarchist Theorist"
+ XTN_union_of_egoists_trait: "Union of Egoists"
+
+
 
 
  XTN_communism_party:0 "I-L"
@@ -42,8 +46,14 @@ XTN_rapid_urbanization_desc:0 "Fast progress can cause some temporary downturn."
 XTN_legalized_drugs:0 "Legalized Drugs"
 XTN_legalized_drugs_desc:0 "We have legalized all psychoactive substances that will fuel our economy!"
 
-XTN_drug_trade:0 "Drug Trade"
-XTN_drug_trade_desc:0 "Since legalization of drugs our state has started to trade all over Americas bringing us some profit."
+XTN_drug_trade_focus:0 "Drug Trade"
+XTN_drug_trade_focus_desc:0 "Since legalization of drugs our state has started to trade all over Americas bringing us some profit."
+
+XTN_spirit_of_stirner:0 "Spirit of Stirner"
+XTN_spirit_of_stirner_desc:0 "We have abandoned all morals that blocked us from our freedom."
+
+XTN_free_from_oppressors:0 "Free from oppressors"
+XTN_free_from_oppressors_desc:0 "Our oppressors must fear as we are comming to free all of americans"
 
 
 
@@ -91,3 +101,36 @@ XTN_drug_trade_desc:0 "Since legalization of drugs our state has started to trad
 
  XTN_arm_people:0 "Arm the people"
  XTN_arm_people_desc:0 "Our rights can only be protected by armed militias. We must arm the population!"
+
+ XTN_egoist_revolution:0 "Egoist Revolution"
+ XTN_egoist_revolution_desc:0 "The time is now brothers! We must break chains of oppression and abolish the state!"
+
+ XTN_support_gunsmiths:0 "Support Gunsmiths"
+ XTN_support_gunsmiths_desc:0 "To continue our revolution we must arm ourselfs."
+
+ XTN_spread_revolution_east:0 "Spread the Revolution East"
+ XTN_spread_revolution_east_desc:0 "We must spread liberty around america, but for now we are weak we must consolidate smaller neighbors to gather strenght."
+
+ XTN_spread_revolution_west:0 "Spread the Revolution West"
+ XTN_spread_revolution_west_desc:0 "Arkansas have a lot of aluminum which we need to arm revolutionaries."
+
+ XTN_lessons_of_war:0 "Lessons of War"
+ XTN_lessons_of_war_desc:0 "After 2 wars we discovered that we still need to improve our army of revolutionaries."
+
+ XTN_free_americans:0 "Free Americans"
+ XTN_free_americans_desc:0 "We must free all the americans from state based oppression."
+
+ XTN_push_south:0 "Push South"
+ XTN_push_south_desc:0 "We must spread revolution south."
+
+ XTN_crush_muslims:0 "Crush Muslims"
+ XTN_crush_muslims_desc:0 "Religion is the worst enemy of egoists let alone a fundamentalist state."
+
+ XTN_push_along_river:0 "Push along the river"
+ XTN_push_along_river_desc:0 "Fertile lands of Mississippi will benefit our farmers."
+
+ XTN_unite_south:0 "Unite The South"
+ XTN_unite_south_desc:0 "We will finallize our south warplan."
+
+ XTN_cotton:0 "Southern Cotton"
+ XTN_cotton_desc:0 "Fertile lands of south are very beneficial for cotton groth."

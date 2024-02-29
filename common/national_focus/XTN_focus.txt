@@ -109,7 +109,7 @@ add_popularity = {
 }
 
     focus = {
-    id = XTN_drug_trade
+    id = XTN_drug_trade_focus
     x = 10
     y = 4
     icon = GFX_goal_generic_trade
@@ -183,7 +183,10 @@ add_popularity = {
     icon = GFX_focus_spr_torchbearers_of_tomorrow
 
     prerequisite = { focus =  XTN_arm_people }
-    prerequisite = { focus =  XTN_drug_trade }
+    prerequisite = { focus =  XTN_drug_trade_focus }
+    available = { NOT = {has_idea = XTN_inteligensia_manifesto } }
+
+        
 
     
 
@@ -192,7 +195,261 @@ add_popularity = {
 
         completion_reward = {
 
-            #### TODO ######
+           
+
+            recruit_character = XTN_union_of_egoists
+            retire_character = XTN_benjamin_tucker
+            set_cosmetic_tag = XTN_Egoist
+            remove_ideas = {XTN_inteligensia_influence XTN_immigration}
+            add_ideas = {XTN_spirit_of_stirner}
+
+                    }
+            }
+
+  focus = {
+    id = XTN_support_gunsmiths
+    x = 10
+    y = 6
+    icon = GFX_goal_generic_construct_mil_factory
+
+    prerequisite = { focus =  XTN_egoist_revolution }         
+
+    cost = 5
+    
+
+        completion_reward = {
+
+            368 = {
+            add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+                    }
+            }
+
+           
+
+                    }
+            }
+
+  focus = {
+    id = XTN_spread_revolution_east
+    x = 12
+    y = 7
+    icon = GFX_goal_demand_sudetenland
+
+    prerequisite = { focus =  XTN_egoist_revolution }         
+
+    cost = 5
+    
+
+        completion_reward = {
+
+            declare_war_on = {
+            target = XNC
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XSC
+            type = annex_everything
+                }
+           
+
+                    }
+            }
+
+
+  focus = {
+    id = XTN_spread_revolution_west
+    x = 14
+    y = 7
+    icon = GFX_goal_demand_sudetenland
+
+    prerequisite = { focus =  XTN_egoist_revolution }         
+
+    cost = 5
+    
+
+        completion_reward = {
+
+            declare_war_on = {
+            target = XAR
+            type = annex_everything
+                }
+
+           
+
+                    }
+            }
+
+  focus = {
+    id = XTN_lessons_of_war
+    x = 13
+    y = 8
+    icon = GFX_focus_secret_rearmament
+
+    prerequisite = { focus =  XTN_spread_revolution_west }  
+    prerequisite = { focus =  XTN_spread_revolution_east }   
+     available = { XTN = {has_war = no} }        
+
+    cost = 5
+    
+
+        completion_reward = {
+
+            army_experience = 25
+
+
+
+                    }
+            }
+
+  focus = {
+    id = XTN_free_americans
+    x = 10
+    y = 9
+    icon = GFX_focus_chi_mission_to_the_us
+
+    prerequisite = { focus =  XTN_lessons_of_war}           
+
+    cost = 1
+    
+
+        completion_reward = {
+
+            add_ideas = { XTN_free_from_oppressors }
+            
+
+
+                    }
+            }
+
+  focus = {
+    id = XTN_push_south
+    x = 12
+    y = 9
+    icon = GFX_focus_generic_provoke_border_clashes
+
+    prerequisite = { focus =  XTN_lessons_of_war }
+         
+
+    cost = 5
+    
+
+        completion_reward = {
+
+            army_experience = 5
+
+
+
+                    }
+            }
+  focus = {
+    id = XTN_crush_muslims
+    x = 11
+    y = 10
+    icon = GFX_focus_spa_the_war_of_vengeance
+
+    prerequisite = { focus =  XTN_push_south }
+         
+
+    cost = 5
+    
+
+        completion_reward = {
+
+            army_experience = 5
+            declare_war_on = {
+            target = XAL
+            type = annex_everything
+                }
+
+
+                    }
+            }
+  focus = {
+    id = XTN_push_along_river
+    x = 13
+    y = 10
+    icon = GFX_focus_spa_the_war_of_vengeance
+
+    prerequisite = { focus =  XTN_push_south }
+         
+
+    cost = 5
+    
+
+        completion_reward = {
+
+            army_experience = 5
+            declare_war_on = {
+            target = XMS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XLA
+            type = annex_everything
+                }
+
+
+
+                    }
+            }
+
+  focus = {
+    id = XTN_unite_south
+    x = 12
+    y = 11
+    icon = GFX_focus_spa_the_war_of_vengeance
+
+    prerequisite = { focus =  XTN_push_along_river }
+    prerequisite = { focus =  XTN_crush_muslims }
+         
+
+    cost = 5
+    
+
+        completion_reward = {
+
+            army_experience = 5
+            declare_war_on = {
+            target = XGA
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XFL
+            type = annex_everything
+                }
+
+
+
+                    }
+            }
+
+  focus = {
+    id = XTN_cotton
+    x = 12
+    y = 12
+    icon = GFX_focus_SOV_breadbasket_of_the_union
+
+    prerequisite = { focus =  XTN_unite_south }
+    available = {XTN = {controls_state = 371}} 
+
+    cost = 5
+    
+
+        completion_reward = {
+
+           371 = {
+            add_building_construction = {
+            type = industrial_complex
+            level = 3
+            instant_build = yes
+                    }
+            }
+
+
+
                     }
             }
     
@@ -313,6 +570,68 @@ focus = {
 }
 
         }
+    }
+
+focus = {
+    id = XTN_recover_from_minor_depression
+    x = 20
+    y = 6
+    icon = GFX_goal_generic_construction
+    prerequisite = { focus = XTN_breakup_with_isolation}
+    
+    cost = 10
+    
+    completion_reward = {
+  
+  368 = { set_building_level = {
+        type = infrastructure
+        level = 4
+        instant_build = yes
+            }}
+    
+    remove_ideas = {XTN_minor_depression }
+   
+        }
+    }
+focus = {
+    id = XTN_urbanization
+    x = 20
+    y = 7
+    icon = GFX_goal_generic_consumer_goods
+    prerequisite = { focus = XTN_recover_from_minor_depression}
+    
+    cost = 10
+    
+    completion_reward = {
+  
+  368 = { set_building_level = {
+        type = infrastructure
+        level = 5
+        instant_build = yes
+            }}
+    XTN = {
+        add_timed_idea = {
+    idea = XTN_rapid_urbanization 
+    days = 180
+} 
+        }   }
+   
+        }
+    
+    focus = {
+    id = XTN_finallize_manifesto
+    x = 20
+    y = 8
+    icon = GFX_focus_renounce_the_treaty_of_trianon
+    prerequisite = { focus = XTN_urbanization}
+    
+    cost = 4
+    
+    completion_reward = {
+        remove_ideas = {XTN_inteligensia_manifesto}
+  
+   }
+   
     }
 
 

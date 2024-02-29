@@ -88,5 +88,37 @@ ideas = {
             }
 
         }
+    XTN_spirit_of_stirner = {
+           removal_cost = -1
+            picture = hol_liberation
+            modifier = {
+                
+            stability_factor = -1
+            war_support_weekly = 0.05
+            drift_defence_factor = 1
+
+            
+
+
+            }
+
+        }
+    XTN_free_from_oppressors = {
+           removal_cost = -1
+            picture = SPR_torchbearers_of_tomorrow
+            modifier = {
+                
+            no_compliance_gain = 1
+            resistance_target_on_our_occupied_states = 1
+            required_garrison_factor = -1
+
+
+
+            
+
+
+            }
+
+        }
     }
 }
