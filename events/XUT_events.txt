@@ -210,3 +210,36 @@ country_event = { #Puppet Alliance
 		name = XUT.10.b
 	}
 }
+country_event = { #Communist Convention Part 1
+	id = XUT.11
+	title = XUT.11.t
+	desc = XUT.11.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Eugene Debs
+		name = XUT.11.a
+		hidden_effect = {
+			retire_character = XUT_council
+		}
+		country_event = XUT.12
+	}
+}
+country_event = { #Communist Convention Part 2
+	id = XUT.12
+	title = XUT.12.t
+	desc = XUT.12.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Regional Power
+		name = XUT.12.a
+		complete_national_focus = XUT_regional_communism
+	}
+	option = { #USA Power
+		name = XUT.12.b
+		complete_national_focus = XUT_red_america
+	}
+}

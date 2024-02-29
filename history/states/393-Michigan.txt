@@ -9,8 +9,8 @@ state={
 	state_category = metropolis
 
 	history={
-		owner = XMI
-		add_core_of = XMI
+		owner = XIN
+		add_core_of = XIN
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 1

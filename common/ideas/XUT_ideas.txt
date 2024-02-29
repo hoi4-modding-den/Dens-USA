@@ -164,6 +164,24 @@ ideas = {
 				war_support_factor = -0.1
 			}
 		}
+		XUT_crushed_church = {
+			picture = MEX_church_power_5
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.1
+			}
+		}
 		XUT_new_constitution = {
 			picture = HUN_treaty_of_triannon
 			
@@ -199,5 +217,75 @@ ideas = {
 				democratic_drift = 0.1
 			}
 		}
+		XUT_communist_influence = {
+			picture = generic_communism_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		XUT_civil_war_victory = {
+			picture = generic_victors_of_ww1
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.2
+				stability_factor = 0.1				
+			}
+		}
+		XUT_strong_party = {
+			picture = generic_communism_drift_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				party_popularity_stability_factor = 0.25		
+			}
+		}
+		XUT_worker_camps = {
+			picture = generic_improved_industries
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.25 		
+			}
+		}
+		
 	}
 }

@@ -1073,6 +1073,7 @@
 
 
 		completion_reward = {
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -1103,6 +1104,15 @@
 
 
 		completion_reward = {
+			XCO = {
+				add_ideas = XUT_communist_influence
+			}
+			XNM = {
+				add_ideas = XUT_communist_influence
+			}
+			XAZ = {
+				add_ideas = XUT_communist_influence
+			}
 		}
 	}
 	focus = {
@@ -1133,6 +1143,24 @@
 
 
 		completion_reward = {
+			XCO = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+			}
+			XNM = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+			}
+			XAZ = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.1
+				}
+			}
 		}
 	}
 	focus = {
@@ -1152,7 +1180,17 @@
 		}
 
 		available = {
-
+			if = {
+				XCO = {
+					communism > 0.5
+				}
+				XNM = {
+					communism > 0.5
+				}
+				XAZ = {
+					communism > 0.5
+				}
+			}
 		}
 		
 		bypass = {
@@ -1355,6 +1393,7 @@
 
 
 		completion_reward = {
+			add_ideas = extensive_conscription
 		}
 	}
 	focus = {
@@ -1386,6 +1425,10 @@
 
 
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+			}
 		}
 	}
 	focus = {
@@ -1417,6 +1460,20 @@
 
 
 		completion_reward = {
+			380 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 4865
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 10582
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1448,7 +1505,10 @@
 		available_if_capitulated = no
 
 
-		completion_reward = {
+		completion_reward = {				
+			create_intelligence_agency = {
+				name = "Utah People's Protection Agency"
+			}
 		}
 	}
 	focus = {
@@ -1481,6 +1541,14 @@
 
 
 		completion_reward = {
+			380 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -1512,6 +1580,7 @@
 
 
 		completion_reward = {
+			add_ideas = XUT_civil_war_victory
 		}
 	}
 	focus = {
@@ -1554,6 +1623,7 @@
 
 
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -1585,6 +1655,7 @@
 
 
 		completion_reward = {
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -1616,6 +1687,7 @@
 
 
 		completion_reward = {
+			add_ideas = XUT_crushed_church
 		}
 	}
 	focus = {
@@ -1647,6 +1719,7 @@
 
 
 		completion_reward = {
+			add_war_support = 0.1
 		}
 	}
 	focus = {
@@ -1679,6 +1752,7 @@
 
 
 		completion_reward = {
+			add_ideas = XUT_strong_party
 		}
 	}
 	focus = {
@@ -1710,6 +1784,7 @@
 
 
 		completion_reward = {
+			remove_ideas = XUT_angered_church
 		}
 	}
 	focus = {
@@ -1741,6 +1816,7 @@
 
 
 		completion_reward = {
+			add_ideas = XUT_worker_camps
 		}
 	}
 	focus = {
@@ -1772,6 +1848,9 @@
 
 
 		completion_reward = {
+			add_state_core = 956
+			add_state_core = 382
+			add_state_core = 957
 		}
 	}
 	focus = {
@@ -1803,6 +1882,8 @@
 
 
 		completion_reward = {
+			add_state_core = 377
+			add_state_core = 953
 		}
 	}
 	focus = {
@@ -1834,6 +1915,9 @@
 
 
 		completion_reward = {
+			add_state_core = 955
+			add_state_core = 376
+			add_state_core = 954
 		}
 	}	
 	focus = {
@@ -1855,6 +1939,71 @@
 
 		available = {
 
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			country_event = XUT.11
+		}
+	}
+	focus = {
+		id = XUT_regional_communism
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_first_communist_convention }
+		mutually_exclusive = { focus = XUT_red_america }
+		
+		x = -2
+		y = 1
+		relative_position_id = XUT_first_communist_convention
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = XUT_red_america
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_first_communist_convention }
+		mutually_exclusive = { focus = XUT_regional_communism }
+		
+		x = 2
+		y = 1
+		relative_position_id = XUT_first_communist_convention
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			always = no
 		}
 		
 		bypass = {
