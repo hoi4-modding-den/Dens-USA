@@ -1,0 +1,17 @@
+XAL_al_abama_influence_decisions = {
+	icon = GFX_decision_category_generic_propaganda
+	allowed = {
+		original_tag = XAL
+	}
+	
+	priority = 100
+	visible = {
+		has_completed_focus = XAL_sweet_home_al_abama
+		NOT = {
+			has_completed_focus = XAL_overthrow_the_king
+			OR = {
+				has_completed_focus = XAL_crush_the_salafists
+			}
+		}
+	}
+}

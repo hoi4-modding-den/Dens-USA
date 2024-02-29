@@ -40,6 +40,18 @@
  XAL_a_generous_king:0 "A §GGenerous§! King"
  XAL_public_sector_investments:0 "Public Sector Investments"
  XAL_boomark_desc:0 "The Al-Abaman nation might be one of the most interesting factions that has risen to prominence after the collapse of the United States, being the only muslim nation in the entire New World as of now. The nation formed as a result of the Islamic Revolution, where disillusioned Alabamans rose up against the Federal Government, seeing Islam as their last hope."
-
-
+ XAL_the_burning_question_tt:0 "§RThe Question Of Leadership Must Be Answered Soon...§!"
+ XAL_overthrow_the_king_tt:0 "§RAl-Abama Bleeds As The Kingdom Burns, With The Islamic State Rising From The Ashes...§!"
+ XAL_crush_the_salafists_tt:0 "§RThere Is No Other Option Except To Crush The Traitors, Whatever The Price May Be...§!"
+ XAL_the_burning_question:0 "The Burning Question"
+ XAL_overthrow_the_king:0 "Overthrow The King"
+ XAL_crush_the_salafists:0 "Crush The Salafists"
+ XAL_decision_unlock_tt:0 "§GUnlocks Decisions To Influence The Future Of The Country§!"
+ XAL_al_abama_influence_decisions:0 "The Question Of Leadership"
+ XAL_boost_salafist:0 "Increase §7Salafist§! Influence In The Military"
+ XAL_boost_loyalist:0 "Increase §LLoyalist§! Influence In The Military"
+ XAL_boost_salafist_civilian:0 "Increase Popular Support For §7Salafism§!"
+ XAL_boost_loyalist_civilian:0 "Increase Popular Support For §LThe Monarchy§!"
+ XAL_salafism_available_tt:0 "§7Salafist§! Influence Must Be Higher Than §G10§!"
+ XAL_loyalism_available_tt:0 "§LLoyalist§! Influence Must Be Higher Than §G10§!"
  

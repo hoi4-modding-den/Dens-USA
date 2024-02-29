@@ -27,7 +27,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			#country_event = XAL_events.1
+			custom_effect_tooltip = XAL_decision_unlock_tt
 			add_political_power = 5
 		}
 		ai_will_do = { 
@@ -202,6 +202,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XAL_the_burning_question_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -216,12 +217,31 @@ focus_tree = {
 		prerequisite = { focus = XAL_the_burning_question }
 		mutually_exclusive = { focus = XAL_crush_the_salafists }	
 		cost = 10
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XAL_salafism_available_tt
+				check_variable = {
+					salafist_influence > 9
+				}
+			}
+		}
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XAL_overthrow_the_king_tt
+			hidden_effect = {
+				remove_ideas = { XAL_alabama_division }
+				set_politics = {
+					ruling_party = fascism
+				}	
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.5
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -232,6 +252,16 @@ focus_tree = {
 		icon = GFX_goal_XAL_crush_the_salafists
 		x = -3
 		y = 2
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XAL_loyalism_available_tt
+				check_variable = {
+					loyalist_influence > 9
+				}
+			}
+		}
+		
 		relative_position_id = XAL_the_burning_question
 		prerequisite = { focus = XAL_the_burning_question }
 		cost = 10
@@ -244,6 +274,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = XAL_crush_the_salafists_tt
+			hidden_effect = {
+				remove_ideas = { XAL_alabama_division }
+				set_popularities = {
+					neutrality = 100
+				}	
+			}
 		}
 		ai_will_do = {
 			factor = 1
