@@ -15,7 +15,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 6000 }
 	# 1st Election Branch
 	focus = {
-		id = XIN_democratic_election
+		id = XIN_first_election
 		icon = GFX_focus_usa_voter_registration_act
 		x = 10 
 		y = 0
@@ -27,6 +27,7 @@ focus_tree = {
 		}
 
 		available = {
+			always = no
 		}
 		
 		bypass = {
@@ -50,16 +51,20 @@ focus_tree = {
 	focus = {
 		id = XIN_republican_support
 		icon = GFX_focus_TUR_ratify_the_six_arrows
-		prerequisite = { focus = XIN_democratic_election}
+		prerequisite = { focus = XIN_first_election }
+		mutually_exclusive = {
+			focus = XIN_democratic_support focus = XIN_coalition
+		}
 		x = 3
 		y = 2
-		relative_position_id = XIN_democratic_election
+		relative_position_id = XIN_first_election
 
 		cost = 5
 
 		ai_will_do = 1
 
 		available = {
+			always = no
 		}
 
 		bypass = {
@@ -79,9 +84,8 @@ focus_tree = {
 	}
 	focus = {
 		id = XIN_privatize_secret_service
-		icon = smth
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = XIN_republican_support }
-		mutually_exclusive = { focus = XIN_coalition focus = XIN_democrat_socialist_coalition }
 		x = 0
 		y = 2
 		relative_position_id = XIN_republican_support
@@ -107,17 +111,21 @@ focus_tree = {
 	# Election Democratic Branch
 	focus = {
 		id = XIN_democratic_support
-		icon = smth
-		prerequisite = { focus = XIN_democratic_election}
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = XIN_first_election}
+		mutually_exclusive = {
+			focus = XIN_coalition focus = XIN_republican_support
+		}
 		x = -3
 		y = 2
-		relative_position_id = XIN_democratic_election
+		relative_position_id = XIN_first_election
 
 		cost = 5
 
 		ai_will_do = 0
 		
 		available = {
+			always = no
 		}
 
 		bypass = {
@@ -141,7 +149,6 @@ focus_tree = {
 		id = XIN_democrat_socialist_coalition
 		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { focus = XIN_democratic_support}
-		mutually_exclusive = { focus = XIN_privatize_secret_service focus = XIN_coalition }
 		x = 0
 		y = 2
 		relative_position_id = XIN_democratic_support
@@ -173,7 +180,7 @@ focus_tree = {
 		icon = GFX_focus_RAJ_seek_help_from_soviet
 		prerequisite = { focus = XIN_democrat_socialist_coalition}
 		x = -2
-		y = 1.5
+		y = 2
 		relative_position_id = XIN_democrat_socialist_coalition
 
 		cost = 5
@@ -189,23 +196,69 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.125
+			}
+			add_political_power = 85
+		}
 	}
 	
+	focus = {
+		id = XIN_fund_public_sector
+		icon = GFX_focus_RAJ_seek_help_from_soviet
+		prerequisite = { focus = XIN_democrat_socialist_coalition}
+		x = 0
+		y = 2
+		relative_position_id = XIN_democrat_socialist_coalition
+
+		cost = 5
+
+		ai_will_do = 0
+		
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.125
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+		}
+	}
 	#Election Coalition Branch
 	focus = {
 		id = XIN_coalition
 		icon = GFX_focus_TUR_ratify_the_six_arrows
 		x = 0
-		y = 4
-		relative_position_id = XIN_democratic_election
-		prerequisite = { focus = XIN_democratic_support }
-		prerequisite = {  focus = XIN_republican_support }
+		y = 2
+		relative_position_id = XIN_first_election
+		prerequisite = {
+			focus = XIN_first_election
+		}
+		mutually_exclusive = {
+			focus = XIN_democratic_support focus = XIN_republican_support
+		} 
 
 		cost = 5
 
 		ai_will_do = 1
 
 		available = {
+			always = no
 		}
 
 		bypass = {
@@ -221,45 +274,5 @@ focus_tree = {
 		
 		
 	}
-	
-	# Election End
-	focus = {
-		id = XIN_first_election_end # Focus ID
-		icon = GFX_focus_usa_voter_registration_act # Focus Icon
-		#prerequisite = { focus = }
-		# mutually_exclusive = { focus = XIN_return_of_the_raj }
-		x = 10
-		y = 8
-		#relative_position_id = 
-
-		cost = 5 # *7
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-		
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		
-		completion_reward = {
-			add_political_power = 75
-			
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.015
-			}
-		}
-	
-	}
-
-
-
 
 }
