@@ -12,7 +12,7 @@
 	
 	default = no
 	
-	continuous_focus_position = { x = 50 y = 6000 }
+	continuous_focus_position = { x = 100 y = 50 }
 
 	focus = {
 		id = XMD_the_president_from_the_future
@@ -247,7 +247,7 @@
 		id = XMD_win_the_hearts_of_the_people
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_build_back_better_act }
-		x = -6
+		x = -7
 		y = 1
 		relative_position_id = XMD_build_back_better_act
 
@@ -332,7 +332,7 @@
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_the_new_deal}
 		mutually_exclusive = { focus = XMD_walk_the_fine_line}
-		x = -6
+		x = -7
 		y = 1
 		relative_position_id = XMD_the_new_deal
 
@@ -412,6 +412,11 @@
 					remove_idea = XMD_the_new_deal_idea_1
 					add_idea = XMD_a_great_society_tooltip
 				}
+				set_variable = {
+					var = XMD_conservative_contentness_decrease
+					value = 1
+					tooltip = XMD_great_society_conservative_contentness_tt
+				}
 			}
 			hidden_effect = {
 				remove_ideas = {
@@ -437,6 +442,9 @@
 				
 			}
 			country_event =  XMD_political_events.8
+
+			event_option_tooltip = XMD_political_events.8.a
+
 			set_country_leader_ideology = socialism
 		}
 	}
@@ -445,7 +453,7 @@
 		id = XMD_war_on_poverty
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_establish_a_great_society}
-		x = -3
+		x = -4
 		y = 1
 		relative_position_id = XMD_establish_a_great_society
 
@@ -473,7 +481,7 @@
 			custom_effect_tooltip = XMD_gs_modify_header_tt
 			add_to_variable = {
 				var = XMD_great_society_production_speed_buildings_factor
-				value = 0.1
+				value = 0.05
 				tooltip = XMD_great_society_production_speed_buildings_factor_tt
 			}
 			add_to_variable = {
@@ -579,6 +587,12 @@
 				value = 0.05
 				tooltip = production_factory_max_efficiency_factor_tt
 			}
+			add_to_variable = {
+				var = XMD_great_society_consumer_goods_factor
+				value = 0.05
+				tooltip = XMD_great_society_consumer_goods_factor_tt
+			}
+			XMD_cc_decrease_very_5 = yes
 		}
 	}
 	
@@ -586,7 +600,7 @@
 		id = XMD_champion_civil_rights
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_establish_a_great_society}
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = XMD_establish_a_great_society
 
@@ -622,7 +636,14 @@
 			set_variable = {
 				var = XMD_cra_success_rate
 				value = 5
-				tooltip = XMD_cra_success_rate_tt
+				tooltip = XMD_cra_success_rate_var_tt
+			}
+
+			hidden_effect = {
+				country_event = {
+					id = XMD_political_events.13
+					days = 7
+				}
 			}
 		}
 	}
@@ -631,11 +652,11 @@
 		id = XMD_meet_with_civil_rights_leaders
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_champion_civil_rights}
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = XMD_champion_civil_rights
 
-		cost = 5
+		cost = 4
 
 		ai_will_do = {
 			factor = 1
@@ -657,8 +678,8 @@
 
 
 		completion_reward = {
-			XMD_cc_decrease_10 = yes
-			XMD_cra_success_rate_increase_10 = yes
+			country_event = XMD_political_events.14
+			event_option_tooltip = XMD_political_events.14.a
 		}
 	}
 	
@@ -693,17 +714,18 @@
 
 		completion_reward = {
 			XMD_cc_decrease_10 = yes
-			XMD_cra_success_rate_increase_10 = yes
+			XMD_cra_success_rate_increase_very_5 = yes
 			custom_effect_tooltip = XMD_militias_will_gain_power_tt
 			set_country_flag = XMD_bolstered_militias_flag
+			unlock_decision_tooltip = XMD_fund_militias
 		}
 	}
 	
 	focus = {
-		id = XMD_desegregate_the_government
+		id = XMD_break_down_jim_crow
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_champion_civil_rights}
-		x = 4
+		x = -4
 		y = 1
 		relative_position_id = XMD_champion_civil_rights
 
@@ -714,7 +736,57 @@
 		}
 
 		available = {
-			has_country_flag = XMD_civil_rights_debate
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XMD_cc_decrease_15 = yes
+			if = {
+				limit = {
+					has_country_flag = XMD_civil_rights_debate 
+				}
+				XMD_cra_success_rate_increase_10 = yes
+			}
+
+			custom_effect_tooltip = XMD_gs_modify_header_tt
+			add_to_variable = {
+				var = XMD_great_society_monthly_population
+				value = 0.15
+				tooltip = XMD_great_society_monthly_population_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_research_speed_factor
+				value = 0.05
+				tooltip = XMD_great_society_research_speed_factor_tt
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_desegregate_the_government
+		icon = GFX_focus_spa_eliminate_the_carlists
+		prerequisite = { focus = XMD_break_down_jim_crow focus = XMD_regional_development_act}
+		x = -1
+		y = 1
+		relative_position_id = XMD_break_down_jim_crow
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
 			NOT = {
 				has_country_flag = XMD_cannot_sign_any_new_legislation
 			}
@@ -730,7 +802,12 @@
 
 		completion_reward = {
 			XMD_cc_decrease_20 = yes
-			XMD_cra_success_rate_increase_20 = yes
+			if = {
+				limit = {
+					has_country_flag = XMD_civil_rights_debate 
+				}
+				XMD_cra_success_rate_increase_20 = yes
+			}
 
 			custom_effect_tooltip = XMD_gs_modify_header_tt
 			add_to_variable = {
@@ -745,7 +822,7 @@
 		id = XMD_ensure_a_majority_in_congress
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_champion_civil_rights}
-		x = 2
+		x = -2
 		y = 1
 		relative_position_id = XMD_champion_civil_rights
 
@@ -792,7 +869,7 @@
 		id = XMD_incentives_for_support
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_ensure_a_majority_in_congress}
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = XMD_ensure_a_majority_in_congress
 
@@ -828,7 +905,7 @@
 		id = XMD_put_pressure_on_the_opposition
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_ensure_a_majority_in_congress}
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = XMD_ensure_a_majority_in_congress
 
@@ -935,40 +1012,73 @@
 		completion_reward = {
 
 			custom_effect_tooltip = XMD_current_cra_success_rate_tt
-
+	
 			if = {
+
 				limit = {
+
 					#100
+
 					check_variable = { XMD_cra_success_rate > 100}
+
 				}
+
 				custom_effect_tooltip = XMD_will_pass
+
 			}
+
 			else_if = {
+
 				limit = {
+
 					#60 - 99
+
 					check_variable = { XMD_cra_success_rate > 59 }
+
 					check_variable = { XMD_cra_success_rate < 100 }
+
 				}
+
 				custom_effect_tooltip = XMD_likely_to_pass
+
 			}
+
 			else_if = {
+
 				limit = {
+
 					#40 - 59
+
 					check_variable = { XMD_cra_success_rate > 39 }
+
 					check_variable = { XMD_cra_success_rate < 60 }
+
 				}
+
 				custom_effect_tooltip = XMD_might_pass
+
 			}
+
 			else_if = {
+
 				limit = {
+
 					#1 - 39
+
 					check_variable = { XMD_cra_success_rate > 0 }
+
 					check_variable = { XMD_cra_success_rate < 40 }
+
 				}
+
 				custom_effect_tooltip = XMD_unlikely_to_pass
+
 			}
+
 			else = {
+
 				custom_effect_tooltip = XMD_wont_pass
+
 			}
 
 			custom_effect_tooltip = XMD_if_pass
@@ -983,8 +1093,15 @@
 			}
 		
 			event_option_tooltip = XMD_political_events.9.a
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
 
-			
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 		}
 	}
 	
@@ -1059,7 +1176,12 @@
 				}
 			}
 			XMD_cc_increase_very_5 = yes
-			XMD_cra_success_rate_increase_10 = yes
+			if = {
+				limit = {
+					has_country_flag = XMD_civil_rights_debate
+				}
+				XMD_cra_success_rate_increase_10 = yes
+			}
 		}
 	}
 	
@@ -1097,22 +1219,22 @@
 			custom_effect_tooltip = XMD_gs_modify_header_tt
 			add_to_variable = {
 				var = XMD_great_society_production_speed_buildings_factor
-				value = 0.15
+				value = 0.1
 				tooltip = XMD_great_society_production_speed_buildings_factor_tt
 			}
 			add_to_variable = {
 				var = XMD_great_society_production_factory_efficiency_gain_factor
-				value = 0.1
+				value = 0.05
 				tooltip = XMD_great_society_production_factory_efficiency_gain_factor_tt
 			}
 			add_to_variable = {
 				var = XMD_great_society_political_power_factor
-				value = 0.1
+				value = 0.05
 				tooltip = XMD_great_society_political_power_factor_tt
 			}
 			add_to_variable = {
 				var = XMD_great_society_consumer_goods_factor
-				value = 0.05
+				value = 0.1
 				tooltip = XMD_great_society_consumer_goods_factor_tt
 			}
 			add_to_variable = {
@@ -1174,6 +1296,15 @@
 				}
 			}
 			XMD_cc_decrease_10 = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 		}
 	}
 	
@@ -1391,17 +1522,17 @@
 			}
 			add_to_variable = {
 				var = XMD_great_society_production_factory_efficiency_gain_factor
-				value = 0.15
+				value = 0.1
 				tooltip = XMD_great_society_production_factory_efficiency_gain_factor_tt
 			}
 			add_to_variable = {
 				var = XMD_great_society_production_factory_max_efficiency_factor
-				value = 0.15
+				value = 0.1
 				tooltip = XMD_great_society_production_factory_max_efficiency_factor_tt
 			}
 			add_to_variable = {
 				var = XMD_great_society_consumer_goods_factor
-				value = 0.05
+				value = 0.1
 				tooltip = XMD_great_society_consumer_goods_factor_tt
 			}
 			if = {
@@ -1486,6 +1617,15 @@
 				}
 			}
 			XMD_cc_decrease_15 = yes
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 		}
 	}
 	
@@ -1494,7 +1634,7 @@
 		icon = GFX_focus_spa_eliminate_the_carlists
 		prerequisite = { focus = XMD_the_civil_rights_act_of_year}
 		prerequisite = { focus = XMD_fair_labor_standards_act}
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = XMD_fair_labor_standards_act
 
@@ -1522,8 +1662,13 @@
 			custom_effect_tooltip = XMD_gs_modify_header_tt
 			add_to_variable = {
 				var = XMD_great_society_industrial_capacity_factory
-				value = 0.3
+				value = 0.25
 				tooltip = XMD_great_society_industrial_capacity_factory_tt
+			}
+			set_variable = {
+				var = XMD_conservative_contentness_decrease
+				value = -0.5
+				tooltip = XMD_great_society_conservative_contentness_tt
 			}
 			if = {
 				limit = {

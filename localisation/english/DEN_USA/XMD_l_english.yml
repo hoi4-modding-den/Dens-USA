@@ -30,8 +30,10 @@
  XMD_the_people_wait: "Minorities wait, with bated breath, to know whether or not they are humans..."
 
  #Focus 
- XMD_cra_success_rate_var_tt: "Civil Rights Act Success Rate: $RIGHT|+=%%0$"
- XMD_current_cra_success_rate_tt: "The current Civil Rights Act Success Rate is: [?XMD_cra_success_rate|Y%%1]."
+ XMD_cra_tt: "Civil Rights Act Success Rate"
+ XMD_cc_tt: "Conservative Contentness"
+ XMD_cra_success_rate_var_tt: "$XMD_cra_tt$: $RIGHT|+=%%0$"
+ XMD_current_cra_success_rate_tt: "The current $XMD_cra_tt$ is: [?XMD_cra_success_rate|Y%%1]."
 
  XMD_militias_will_gain_power_tt: "§RAntifa and the Black Panthers will gain power.§!"
 
@@ -63,6 +65,10 @@
  XMD_great_society_production_speed_rail_way_factor_tt: "$modifier_production_speed_rail_way_factor$: $RIGHT|+=%1$"
  XMD_great_society_research_speed_factor_tt: "$research_speed_factor_tt$"
  XMD_great_society_industrial_capacity_factory_tt: "$industrial_capacity_factory_tt$"
+ XMD_great_society_conservative_contentness_tt: "$XMD_cc_tt$ Decrease Weekly: $RIGHT|-=%%1$"
+
+ 
+ XMD_great_society_conservative_contentness_modifier: "$XMD_cc_tt$ Decrease Weekly: [?XMD_conservative_contentness_decrease|R%%1]"
 
  #DECISIONS
 
@@ -80,7 +86,7 @@
  XMD_balancing_the_budget_flag: "Has completed: $XMD_balancing_the_budget$"
 
  XMD_building_a_great_society: "Building A Great Society"
- XMD_building_a_great_society_desc: "President [XMD_joe_biden.GetName] has announced a wide reaching program to lift our citizens out of poverty, end racial discrimination, and ensure the welfare of our citizens. It is up to us now to implement it in a way that achieves most of our goals, without angering the conservatives too much.\n\nConservative Contentness is a value meant to represent the opinion of the average conservative to your plans. §RIf Conservative Contentness falls below 0% then they will start a civil war.§!\n\nConservative Content decreases by §R[?XMD_conservative_contentness_decrease|%%1]§! weekly.\n\nCurrent Conservative Contentness: §Y[?XMD_conservative_contentness|%%1]§!"
+ XMD_building_a_great_society_desc: "President [XMD_joe_biden.GetName] has announced a wide reaching program to lift our citizens out of poverty, end racial discrimination, and ensure the welfare of our citizens. It is up to us now to implement it in a way that achieves most of our goals, without angering the conservatives too much.\n\n$XMD_cc_tt$ is a value meant to represent the opinion of the average conservative to your plans. §RIf $XMD_cc_tt$ falls below 0% then they will start a civil war.§!\n\n$XMD_cc_tt$ decreases by §R[?XMD_conservative_contentness_decrease|%%1]§! weekly.\n\nCurrent $XMD_cc_tt$: §Y[?XMD_conservative_contentness|%%1]§!"
 
  XMD_placate_conservative_fears: "Placate the Conservatives"
  XMD_hold_off_on_any_legislation: "Hold Off on Signing Legislation"
@@ -89,7 +95,7 @@
  XMD_cannot_sign_any_new_legislation_tt: "We cannot sign any new legislation in the Great Society branch of the focus tree.\n"
 
  XMD_cc_civil_war_tt: "§RConservatives will start a civil war!§!"
- XMD_cc_var_change_tt: "Conservative Contentness: $RIGHT|%%+=1$"
+ XMD_cc_var_change_tt: "$XMD_cc_tt$: $RIGHT|%%+=1$"
  
  XMD_invest_in_state_factory: "Invest in the Economy of [USA_congress_investment_state.GetName]"
  XMD_invest_in_state_arms_factory: "Build new Munitions Plant in [USA_congress_investment_state.GetName]"

@@ -18,4 +18,17 @@ on_actions = {
 		}
 		
 	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { original_tag = XMD }
+				}
+				FROM = {
+					country_event = XMD_political_events.17
+				}
+			}
+		}
+	}
 }

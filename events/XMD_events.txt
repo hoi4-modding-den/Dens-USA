@@ -246,7 +246,7 @@ country_event = { #Biden's coup
 
 		add_popularity = {
 			popularity = 0.1
-			ideology = fascism
+			ideology = neutrality
 		}
 
 		hidden_effect = {
@@ -313,12 +313,12 @@ country_event = { #Biden's coup - fascism
 		name = XMD_political_events.6.a
 
 		set_politics = {
-			ruling_party = fascism
+			ruling_party = neutrality
 			elections_allowed = no
 		}
 
 		set_party_name = {
-			ideology = fascism
+			ideology = neutrality
 			long_name = XMD_dem_rep_party
 			name = XMD_dem_rep_party
 		}
@@ -327,7 +327,7 @@ country_event = { #Biden's coup - fascism
 			character = XMD_joe_biden
 			promote_leader = yes
 			country_leader = {
-				ideology = nazism
+				ideology = despotism
 				expire = "1965.1.1.1"
 				traits = { XMD_the_president_from_the_future }
 			}
@@ -359,6 +359,11 @@ country_event = { #Conservatives upset over the shift in the democratic party
 			long_name = XMD_republican_party
 			name = XMD_republican_party
 		}
+		
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
 
 		set_party_name = {
 			ideology = democratic
@@ -375,7 +380,17 @@ country_event = { #Conservatives upset over the shift in the democratic party
 			}
 			swap_ideas = {
 				remove_idea = XMD_deadlocked_politics
-				add_idea = XMD_the_two_party_system
+				add_idea = XMD_the_two_party_system_neutrality
+			}
+		}
+
+		if = {
+			limit = {
+				has_idea = XMD_the_two_party_system
+			}
+			swap_ideas = {
+				remove_idea = XMD_the_two_party_system
+				add_idea = XMD_the_two_party_system_neutrality
 			}
 		}
 
@@ -535,5 +550,161 @@ country_event = { #the vote for the CRA starts
 		name = XMD_political_events.12.a
 		
 		custom_effect_tooltip = XMD_the_people_wait
+	}
+}
+
+country_event = { #the march on washington
+	id = XMD_political_events.13
+	title = XMD_political_events.13.t
+	desc = XMD_political_events.13.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #The fight for freedom starts
+		name = XMD_political_events.13.a
+		add_stability = -0.05
+		add_political_power = -50
+		if = {
+			limit = {
+				has_country_flag = XMD_civil_rights_debate
+			}
+			XMD_cra_success_rate_increase_very_5 = yes
+		}
+		if = {
+			limit = {
+				has_country_flag = XMD_conservative_backlash_start_flag
+			}
+			XMD_cc_decrease_very_5 = yes
+		}
+		hidden_effect = {
+			country_event = {
+				id = XMD_political_events.15
+				days = 55
+				random = 20
+			}
+		}
+	}
+}
+
+country_event = { #meeting with randolph
+	id = XMD_political_events.14
+	title = XMD_political_events.14.t
+	desc = XMD_political_events.14.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #These are the men that will shape the future of america	
+		name = XMD_political_events.14.a
+		add_political_power = 25
+		XMD_cc_decrease_10 = yes
+		XMD_cra_success_rate_increase_10 = yes
+	}
+}
+
+country_event = { #kkk membership rises
+	id = XMD_political_events.15
+	title = XMD_political_events.15.t
+	desc = XMD_political_events.15.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	immediate = {
+		country_event = {
+			id = XMD_political_events.16
+			days = 200
+			random = 50
+		}
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Turn a blind eye
+		name = XMD_political_events.15.a
+		add_timed_idea = {
+			idea = XMD_rise_of_the_klan
+			days = 730
+		}
+		if = {
+			limit = {
+				has_country_flag = XMD_civil_rights_debate
+			}
+			XMD_cra_success_rate_decrease_very_5 = yes
+		}
+		XMD_cc_increase_15 = yes
+	}
+
+	option = { #crack down on the klan
+		name = XMD_political_events.15.b
+		add_political_power = 20
+		add_timed_idea = {
+			idea = XMD_the_shadow_organisation
+			days = 365
+		}
+		if = {
+			limit = {
+				has_country_flag = XMD_civil_rights_debate
+			}
+			XMD_cra_success_rate_decrease_very_5 = yes
+		}
+		XMD_cc_decrease_very_5 = yes
+	}
+}
+
+country_event = { #racial violence increases
+	id = XMD_political_events.16
+	title = XMD_political_events.16.t
+	desc = XMD_political_events.16.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	trigger = {
+		has_country_flag = XMD_civil_rights_debate
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Time is running out
+		name = XMD_political_events.16.a
+		add_stability = -0.1
+		add_political_power = -100
+		XMD_cc_decrease_10 = yes
+		XMD_cra_success_rate_decrease_very_5 = yes
+		hidden_effect = {
+			country_event = {
+				id = XMD_political_events.16
+				days = 125
+				random = 50
+			}
+		}
+	}
+}
+
+country_event = { #defensive war, conservatives like us more
+	id = XMD_political_events.17
+	title = XMD_political_events.17.t
+	desc = XMD_political_events.17.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Time is running out
+		name = XMD_political_events.17.a
+		add_war_support = 0.1
+		if = {
+			limit = {
+				has_country_flag = XMD_conservative_backlash_start_flag
+			}
+			XMD_cc_increase_20 = yes
+		}
 	}
 }

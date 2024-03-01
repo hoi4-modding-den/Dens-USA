@@ -283,6 +283,77 @@ XMD_building_a_great_society = {
 			XMD_cc_civil_war = yes
 		}
 	}
+	XMD_fund_militias = {
+
+		icon = eng_trade_unions_support
+
+		available = {
+		}
+
+		visible = {
+			has_country_flag = XMD_bolstered_militias_flag
+		}
+
+		days_remove = 90
+
+		modifier = {
+			political_power_cost = 0.25
+			industrial_capacity_factory = -0.2
+			communism_drift = 0.05
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		cost = 50
+
+		complete_effect = {
+			XMD_cc_decrease_very_5 = yes
+			if = {
+				limit = {
+					has_country_flag = XMD_civil_rights_debate
+				}
+				XMD_cra_success_rate_increase_very_5 = yes
+			}
+		}
+
+	}
+	XMD_deradicalisation_programs = {
+
+		icon = eng_trade_unions_support
+
+		available = {
+		}
+
+		visible = {
+		}
+
+		days_remove = 90
+
+		modifier = {
+			political_power_cost = 0.3
+			communism_drift = -0.02
+			fascism_drift = -0.02
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		cost = 50
+
+		complete_effect = {
+			XMD_cc_increase_10 = yes
+			if = {
+				limit = {
+					has_country_flag = XMD_civil_rights_debate
+				}
+				XMD_cra_success_rate_decrease_very_5 = yes
+			}
+		}
+
+	}
 	XMD_placate_conservative_fears = {
 
 		icon = eng_trade_unions_support
@@ -299,7 +370,7 @@ XMD_building_a_great_society = {
 			factor = 0
 		}
 
-		cost = 0 
+		cost = 25
 
 		complete_effect = {
 			XMD_cc_increase_10 = yes
