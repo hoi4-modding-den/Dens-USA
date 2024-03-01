@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "GFX_goal_XNV_AFOC"
 		texturefile = "gfx/XNV_focuses/XNV_AFOC.dds"
 	}
+		spriteType = {
+		name = "GFX_goal_XNV_Election"
+		texturefile = "gfx/XNV_focuses/XNV_Election.dds"
+	}
 }

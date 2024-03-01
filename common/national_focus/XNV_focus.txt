@@ -11,7 +11,7 @@ focus_tree = {
 
 	 }
 	 default = no
-	 continuous_focus_position = { x = 55 y = 1000 }
+	 continuous_focus_position = { x = 100 y = 1000 }
 
 	 focus = {
 		id = XNVAFOC #AllForOurCountry
@@ -30,9 +30,75 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 
-		x = 8
-		y = 2
-		cost = 10
+		x = 10
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+    }
+
+	 focus = {
+		id = XNVElection #AllForOurCountry
+
+		prerequisite = { focus = XNVAFOC }
+		mutually_exclusive = { focus = XNVCivilWar }
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+			XNV = {
+				if = {
+						has_country_leader = {
+						character = XNV_Richard_Kirman_SR
+						ruling_only = yes
+						}
+					}
+			}
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 3
+		y = 4
+		cost = 0
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+    }
+	 focus = {
+		id = XNVCivilWar #AllForOurCountry
+
+		prerequisite = { focus = XNVAFOC }
+		mutually_exclusive = { focus = XNVElection }
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+			XNV = {
+				if = {
+						has_country_leader = {
+						character = XNV_Richard_Kirman_SR
+						ruling_only = yes
+						}
+					}
+			}
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 17
+		y = 4
+		cost = 0
 		ai_will_do = {
 			factor = 2
 		}	
