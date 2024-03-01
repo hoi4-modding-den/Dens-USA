@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		XIN_purging_the_fringe = {
+			picture = usa_great_depression
+			modifier = {
+				political_power_cost = +1.25
+				communism_drift = -0.02
+				fascism_drift = -0.02
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+
+XIN_election_decisions = {
+	icon = eng_move_to_secure_the_dominions
+	allowed = {
+		original_tag = XIN
+	}
+	priority = 10
+	visible = {
+		NOT = {
+			Or = {
+				has_completed_focus = XIN_communist_revolution1
+				has_completed_focus = XIN_unify_the_parties
+			}
+		}
+	}
+	visible_when_empty = yes
+}

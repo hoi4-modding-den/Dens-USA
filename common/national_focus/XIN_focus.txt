@@ -364,4 +364,39 @@ focus_tree = {
 			}
 		}	
 	}
+	focus = {
+		id = XIN_unify_the_parties
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		x = 0
+		y = 2
+		relative_position_id = XIN_absorb_the_opposition
+		prerequisite = {
+			focus = XIN_purge_the_fringe
+		}
+		prerequisite = {
+			focus = XIN_absorb_the_opposition
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_stability = 0.075
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.05
+			}
+		}	
+	}
 }
