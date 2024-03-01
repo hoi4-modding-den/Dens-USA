@@ -1,0 +1,36 @@
+add_namespace = XIN
+
+country_event = { # 1st Election Starts
+	id = XIN.1
+	title = XIN.1.t
+	desc = XIN.1.desc
+
+	is_triggered_only = yes
+
+	option = { # election starts
+	name = XIN.1.a
+		complete_national_focus = XIN_first_election
+	}
+}
+
+country_event = { # 1st Election Results
+	id = XIN.2
+	title = XIN.2.t
+	desc = XIN.2.desc
+
+	is_triggered_only = yes
+
+
+	option = { # Democratic
+		name = XIN.2.a
+		complete_national_focus = XIN_democratic_support
+	}
+	option = { # Coalition
+		name = XIN.2.b
+		complete_national_focus = XIN_coalition
+	}
+	option = { # Republican
+		name = XIN.2.c
+		complete_national_focus = XIN_republican_support
+	}
+}

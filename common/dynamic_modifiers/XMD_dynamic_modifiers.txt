@@ -45,6 +45,7 @@ XMD_the_great_society_idea = {
 	conscription_factor = XMD_great_society_conscription_factor #0
 	research_speed_factor = XMD_great_society_research_speed_factor #0
 	industrial_capacity_factory = XMD_great_society_industrial_capacity_factory #0
+	custom_modifier_tooltip = XMD_great_society_conservative_contentness_modifier 
 }
 
 XMD_under_developed_state_delaware = {

@@ -1,0 +1,5 @@
+XIN_election_decisions = {
+	election_begins = {
+		
+	}
+}

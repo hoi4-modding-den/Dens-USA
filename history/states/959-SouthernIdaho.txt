@@ -1,0 +1,29 @@
+
+state={
+	id=959
+	name="STATE_959"
+	manpower = 89006
+	
+	state_category = rural
+	
+	resources={
+		steel=2
+		tungsten=3
+	}
+
+	history={
+		owner = XNV
+		add_core_of = XNV
+		add_core_of = XID
+		buildings = {
+			infrastructure = 2
+		}
+    #victory_points = { 4799 5 }
+	}
+
+	provinces={
+        12607 9695 12535
+	}
+
+	local_supplies=0.0 
+}
