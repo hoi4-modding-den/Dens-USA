@@ -1473,6 +1473,175 @@ recruit_character = XTN_maurice_thorez
         }
     }
 
+################# 4th internationale ###########################
+ focus = {
+    id = XTN_fourth_internationale
+    x = 36
+    y = 10
+    icon = GFX_goal_support_fourth_int
+
+    prerequisite = { focus = XTN_cult_of_trotsky }
+
+
+    cost = 7
+    
+
+    completion_reward = {
+
+        add_political_power = 150
+
+        }
+    }
+
+ focus = {
+    id = XTN_formalize_internationale
+    x = 34
+    y = 11
+    icon = GFX_goal_support_fourth_int
+
+    prerequisite = { focus = XTN_fourth_internationale }
+    mutually_exclusive = { focus = XTN_unformalize_internationale}
+
+
+    cost = 2
+    
+
+    completion_reward = {
+        XTN = {
+        create_faction = "4th Internationale"
+        }
+
+
+        }
+    }
+
+ focus = {
+    id = XTN_united_research
+    x = 34
+    y = 12
+    icon = GFX_focus_generic_military_mission
+
+    prerequisite = { focus = XTN_formalize_internationale }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+        
+        add_doctrine_cost_reduction = {
+	    cost_reduction = 0.5
+	    uses = 2
+	    category = land_doctrine
+                }
+
+
+        }
+    }
+
+ focus = {
+    id = XTN_international_funding
+    x = 34
+    y = 13
+    icon = GFX_focus_SOV_the_path_of_marxism_leninism
+
+    prerequisite = { focus = XTN_united_research }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+        
+add_offsite_building = { type = arms_factory level = 3 }
+
+
+        }
+    }
+
+ focus = {
+    id = XTN_invite_tukhachevsky
+    x = 34
+    y = 14
+    icon = GFX_focus_SOV_approach_tukahchevsky
+
+    prerequisite = { focus = XTN_international_funding }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+        
+        recruit_character = XTN_mikhail_tukhachevsky
+
+
+        }
+    }
+
+
+ focus = {
+    id = XTN_unformalize_internationale
+    x = 38
+    y = 11
+    icon = GFX_goal_support_communism
+
+    prerequisite = { focus = XTN_fourth_internationale }
+    mutually_exclusive = { focus = XTN_formalize_internationale}
+
+
+    cost = 2
+    
+
+    completion_reward = {
+        
+        add_political_power = 50
+
+
+        }
+    }
+
+ focus = {
+    id = XTN_call_for_socialists
+    x = 38
+    y = 13
+    icon = GFX_goal_support_communism
+
+    prerequisite = { focus = XTN_unformalize_internationale }
+
+
+
+    cost = 2
+    
+
+    completion_reward = {
+        
+        add_manpower = 10000
+
+
+        }
+    }
+
+ focus = {
+    id = XTN_finallize_internationale
+    x = 36
+    y = 15
+    icon = GFX_goal_support_fourth_int
+
+    prerequisite = { focus = XTN_call_for_socialists focus = XTN_invite_tukhachevsky}
+
+
+
+    cost = 2
+    
+
+    completion_reward = {
+        
+        add_ideas = {XTN_fourth_internationale_idea}
+
+
+        }
+    }
 
 
 

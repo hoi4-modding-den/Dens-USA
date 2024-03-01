@@ -297,5 +297,44 @@ logistics_skill = 4
 		}
 	}
 
+	XTN_mikhail_tukhachevsky = {
+		name = "Mikhail Tukhachevsky"
+		portraits = {
+			army = {
+				small = "GFX_idea_mikhail_tukhachevsky"
+				large = GFX_portrait_SOV_mikhail_tukhachevsky
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = mikhail_tukhachevsky
+			ledger = army
+			allowed = {
+				original_tag = XTN
+			}
+
+			traits = {
+				mass_assault_expert
+			}
+		}
+
+		field_marshal = {
+			traits = { brilliant_strategist career_officer trait_reckless infantry_officer offensive_doctrine }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2
+
+
+		}
+		country_leader={
+			ideology = socialism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 
 }

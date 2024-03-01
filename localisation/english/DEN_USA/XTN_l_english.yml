@@ -102,6 +102,9 @@ XTN_usa_claim_desc:0 "We are in charge now!"
 XTN_immigration_2:0 "High Immigration"
 XTN_immigration_2_desc:0 "Lands of Tennessee are mostly rual bringing oportunity to newcomers."
 
+XTN_fourth_internationale_idea:0 "4th Internationale"
+XTN_fourth_internationale_idea_desc:0 "All the meetings have ended and we will recive support of communists around the world."
+
 
 
  
@@ -288,3 +291,27 @@ XTN_invite_exiled_germans_desc:0 "Many nazi purges cause germans to wander aroun
 
 XTN_invite_exiled_french:0 "Invite exiled French"
 XTN_invite_exiled_french_desc:0 "Democracy is storng in france and communists flee to our country."
+
+XTN_fourth_internationale:0 "4th Internationale"
+XTN_fourth_internationale_desc:0 "We must rally all the communists of the world to support the revolution."
+
+XTN_formalize_internationale:0 "Formalize 4th Internationale"
+XTN_formalize_internationale_desc:0 "After congress we have decided to unite all communists in one faction."
+
+XTN_unformalize_internationale:0 "Unformalized 4th Internationale"
+XTN_unformalize_internationale_desc:0 "The congress is over. We have came to conclusion that we cannot enforce our demands and the best way is to stay separated."
+
+XTN_united_research:0 "United Research"
+XTN_united_research_desc:0 "We have used the knowledge of socialists allover the world to improve our combat ability."
+
+XTN_international_funding:0 "International Funding"
+XTN_international_funding_desc:0 "To support our revolutionaries we must use common funds to produce more guns."
+
+XTN_invite_tukhachevsky:0 "Invite Tukhachevsky"
+XTN_invite_tukhachevsky_desc:0 "A great marshal has came to 4th Internationale. He will be a good addition to our cause."
+
+XTN_call_for_socialists:0 "Call for Socialists"
+XTN_call_for_socialists_desc:0 "Even tho 4th Internationale wasn't that sucessful we will try to invite some people to join us in fight against capitalism."
+
+XTN_finallize_internationale:0 "Finallize Internationale"
+XTN_finallize_internationale_desc:0 "Dust has settled and we have finally can agree on how to bring socialism to america."
