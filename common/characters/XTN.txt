@@ -138,4 +138,164 @@ logistics_skill = 4
 	}
 
 
+
+	XTN_ivan_smirnov = {
+		name = "Ivan Smirnov"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_ivan_smirnov"
+			}
+			army = {
+				small = "GFX_idea_SOV_ivan_smirnov_imprisoned"
+			}
+		}
+
+			
+		country_leader={
+			ideology = leninism
+			expire="1965.1.1.1"
+			id=-1
+			traits = { the_siberian_lenin }
+		}
+
+	corps_commander = {
+    skill = 1
+    attack_skill = 1
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 2
+	}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_ivan_smirnov
+			allowed = {
+				original_tag = XTN
+			}
+
+
+			traits = {
+				head_directorate_of_new_buildings 
+			}
+		}
+	}
+
+
+
+
+
+	XTN_karl_radek = {
+		name = "Karl Radek"
+
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_karl_radek"
+			}
+		}
+
+
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_karl_radek
+			allowed = {
+				original_tag = XTN
+			}
+
+
+			traits = {
+				international_revolutionary 
+			}
+		}
+	}
+
+	XTN_nikolay_bukharin = {
+		name = "Nikoaly Bukharin"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_SOV_nikolay_bukharin"
+			}
+			army = {
+				small = "GFX_idea_SOV_nikolay_bukharin"
+			}
+		}
+
+
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_nikolay_bukharin
+			allowed = {
+				original_tag = XTN
+			}
+
+			traits = {
+				economy_reformer 
+			}
+		}
+	}
+
+
+	XTN_ernst_thalmann = {
+		name = "Ernst Thalmann" 
+		portraits={
+			army={
+				small="GFX_idea_ernst_thalmann"
+			}
+		}
+
+
+		advisor={
+			slot = political_advisor
+			idea_token = ernst_thalmann
+			allowed = {
+				original_tag = XTN
+			}
+
+			traits = {
+				socialist_journalist 
+			}
+
+		}
+	}
+
+
+	XTN_maurice_thorez ={ 
+		name= "Maurice Thorez"
+		portraits={
+			army={
+				small="GFX_idea_maurice_thorez"
+			}
+			civilian={
+				large="GFX_portrait_fra_maurice_thorez"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = maurice_thorez
+			allowed  = {
+				original_tag  = XTN
+			}
+
+			traits  = {
+				soviet_economist 
+			}
+
+		}
+	corps_commander = {
+    skill = 1
+    attack_skill = 1
+    defense_skill = 3
+    planning_skill = 1
+    logistics_skill = 1
+	}
+		
+		country_leader={
+			ideology = stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
 }

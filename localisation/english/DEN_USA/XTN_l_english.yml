@@ -19,6 +19,11 @@ VICTORY_POINTS_8014:0 "Trotskygrad"
  XTN_reform:0 "Standing Army"
 
 
+XTN_trotskists:0 "Trotskists will be invited"
+XTN_germans:0 "Germans will be invited"
+XTN_french:0 "French will be invited"
+
+
 
 
  XTN_communism_party:0 "I-L"
@@ -271,3 +276,15 @@ XTN_immigration_2_desc:0 "Lands of Tennessee are mostly rual bringing oportunity
 
 XTN_claim_usa:0 "Claim USA"
 XTN_claim_usa_desc:0 "After Capturing Washington we hold the head of US government and we are planning to use it."
+
+XTN_immigation_focus:0 "Immigration Focus"
+XTN_immigation_focus_desc:0 "We need to bring new revolutionaries for the state."
+
+XTN_invite_exiled_trotskists:0 "Invite exiled Trotskists"
+XTN_invite_exiled_trotskists_desc:0 "Our brothers are still lost in the world. We will invite them."
+
+XTN_invite_exiled_germans:0 "Invite exiled Germans"
+XTN_invite_exiled_germans_desc:0 "Many nazi purges cause germans to wander around world. We must give them home."
+
+XTN_invite_exiled_french:0 "Invite exiled French"
+XTN_invite_exiled_french_desc:0 "Democracy is storng in france and communists flee to our country."

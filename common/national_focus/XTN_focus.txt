@@ -1401,6 +1401,78 @@ add_ideas = { XTN_inteligensia_manifesto }
         }
     }
 
+  focus = {
+    id = XTN_invite_exiled_trotskists
+    x = 20
+    y = 11
+    icon = GFX_focus_chi_mission_to_the_soviet_union
+
+    prerequisite = { focus = XTN_immigation_focus }
+
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+custom_effect_tooltip = XTN_trotskists
+recruit_character = XTN_ivan_smirnov
+recruit_character = XTN_karl_radek
+recruit_character = XTN_nikolay_bukharin
+
+
+        }
+    }
+
+  focus = {
+    id = XTN_invite_exiled_germans
+    x = 22
+    y = 11
+    icon = GFX_focus_chi_mission_to_germany
+
+    prerequisite = { focus = XTN_immigation_focus }
+
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+
+
+custom_effect_tooltip = XTN_germans
+recruit_character = XTN_ernst_thalmann
+
+
+        }
+    }
+
+  focus = {
+    id = XTN_invite_exiled_french
+    x = 24
+    y = 11
+    icon = GFX_focus_chi_reach_out_to_france
+
+    prerequisite = { focus = XTN_immigation_focus }
+
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+
+
+custom_effect_tooltip = XTN_french
+recruit_character = XTN_maurice_thorez
+
+
+        }
+    }
+
 
 
 
