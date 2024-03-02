@@ -9,5 +9,11 @@ ideas = {
 				
 			}
 		}
+		XIN_kickstarting_economy = {
+			picture = usa_great_depression
+			modifier = {
+				consumer_goods_factor = -0.25
+			}
+		}
 	}
 }
