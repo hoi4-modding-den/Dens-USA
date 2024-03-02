@@ -6,6 +6,7 @@ capital = 379
 
 #Govenors
 recruit_character = XNV_Richard_Kirman_SR
+recruit_character = XNV_Morley_Griswold
 
 set_politics = {
 	ruling_party = democratic

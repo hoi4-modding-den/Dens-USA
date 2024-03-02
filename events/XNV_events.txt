@@ -1,0 +1,36 @@
+add_namespace = XNV
+
+country_event = {
+	id = XNV.1
+	title = "Nevada Election"
+	desc = XNV.1.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Democratic Party Victory"
+		ai_chance = { factor = 10 }
+		add_stability = 0.1
+	}
+	option = {
+		name = "Republican Party Victory"
+		ai_chance = { factor = 0 }
+		add_stability = -0.1 #will be variable for the actual support
+
+        hidden_effect = {
+            set_party_name = {
+			ideology = democratic
+			name = "Republicans"
+			long_name = "Republican Party"
+		    }       
+        }
+
+        
+        retire_country_leader = yes
+
+        promote_character = XNV_Morley_Griswold
+
+
+	}
+}

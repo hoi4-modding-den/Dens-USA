@@ -72,6 +72,7 @@ focus_tree = {
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			XNV = {country_event = XNV.1 }
 		}
     }
 	 focus = {
