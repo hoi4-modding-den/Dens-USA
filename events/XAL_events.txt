@@ -1,0 +1,25 @@
+﻿add_namespace = al_abama_news
+add_namespace = al_abama_other
+
+news_event = {
+    id = al_abama_news.1
+    title = al_abama_news.1.t
+    desc = al_abama_news.1.desc
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+    
+	picture = GFX_al_abama_news_event_1
+	
+    is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+    
+    option = {
+		ai_chance = {
+			base = 1
+		}
+        name = al_abama_news.1.a
+    }
+}
