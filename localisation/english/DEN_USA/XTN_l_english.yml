@@ -5,6 +5,10 @@
  XTN_communism: "Union of Socialist States of America"
  XTN_Egoist: "Union of Egoists"
 
+XTN_USA_communism:0 "United Socialist States of America"
+XTN_USA_democratic:0 "United States"
+XTN_USA:0 "United States"
+
 VICTORY_POINTS_7797:0 "Memphis"
 VICTORY_POINTS_1758:0 "Knoxville"
 VICTORY_POINTS_7791:0 "Pigeon Forge"
@@ -17,6 +21,7 @@ VICTORY_POINTS_8014:0 "Trotskygrad"
  XTN_sick:0 "Sick"
  XTN_chaos:0 "Chaos"
  XTN_reform:0 "Standing Army"
+ XTN_marshal_president:0 "Marshal President"
 
 
 XTN_trotskists:0 "Trotskists will be invited"
@@ -105,6 +110,11 @@ XTN_immigration_2_desc:0 "Lands of Tennessee are mostly rual bringing oportunity
 XTN_fourth_internationale_idea:0 "4th Internationale"
 XTN_fourth_internationale_idea_desc:0 "All the meetings have ended and we will recive support of communists around the world."
 
+XTN_new_democracy:0 "Spirit of Democracy"
+XTN_new_democracy_desc:0 "We have reinstated elections and became a protector of democracy."
+
+XTN_state_atheism_idea:0 "State Atheism"
+XTN_state_atheism_idea_desc:0 "Religion is opium for the masses - Karl Marx"
 
 
  
@@ -315,3 +325,53 @@ XTN_call_for_socialists_desc:0 "Even tho 4th Internationale wasn't that sucessfu
 
 XTN_finallize_internationale:0 "Finallize Internationale"
 XTN_finallize_internationale_desc:0 "Dust has settled and we have finally can agree on how to bring socialism to america."
+
+XTN_maintain_trotsky:0 "Maintain Trotsky"
+XTN_maintain_trotsky_desc:0 "The supreme leader has been doing great and he will stay as head of government."
+
+XTN_democratic_socialism:0 "Democratic Socialism"
+XTN_democratic_socialism_desc:0 "Leader trotsky is tired and he needs a succesor. Marshal Tukhachevsky will be appointed president of new democratic socialist nation."
+
+XTN_ivan_smirnov_rule:0 "Rule of Smirnov"
+XTN_ivan_smirnov_rule_desc:0 "Smirnov is the right successor to trotsky. Together with Bukharin, Smirnov will take power and lead USA to a new dawn."
+
+XTN_french_stalinism:0 "French Stalinism"
+XTN_french_stalinism_desc:0 "Commrade trotsky and his friends are threat to communism. Only by iron fist we can spread socialism."
+
+XTN_supreme_soviet:0 "Supreme Soviet"
+XTN_supreme_soviet_desc:0 "Unity is strenght, No man should control all the power in the country."
+
+XTN_northern_wars:0 "Northern Wars"
+XTN_northern_wars_desc:0 "Northern territories are highly urbanized and filled with oppressed workers. We will free them."
+
+XTN_push_xpa:0 "Push Pennsylvania"
+XTN_push_xpa_desc:0 " "
+XTN_push_nj:0 "Push New Jersey"
+XTN_push_nj_desc:0 " "
+
+XTN_last_offensive:0 "Last Offensive"
+XTN_last_offensive_desc:0 "Time is now we will take New York and Boston before leaves start falling from the trees."
+
+XTN_detroid_road:0 "Detroid Road"
+XTN_detroid_road_desc:0 "After Detroid will fall we will have full authority over north."
+
+XTN_expand_agriculture:0 "Expand Agriculture"
+XTN_expand_agriculture_desc:0 "Feritle lands of america are great for mass production of goods."
+
+XTN_strenghten_administration:0 "Strenghten Administration"
+XTN_strenghten_administration_desc:0 "We will conquer a lot of lands and our administration may not be big enough."
+
+XTN_nashville_railway:0 "Nashville Railway"
+XTN_nashville_railway_desc:0 "A railway from nashville to richmond will help us connect workers from agricultural regions."
+
+XTN_state_atheism:0 "State Atheism"
+XTN_state_atheism_desc:0 "Religion is opium for the masses - Karl Marx"
+
+XTN_millitary_focus_washington:0 "Washington Millitary Complex"
+XTN_millitary_focus_washington_desc:0 "We must expand our millitary potential by sponsoring arms production."
+
+XTN_northern_statehood:0 "Northern Statehood"
+XTN_northern_statehood_desc:0 "After conquest of the north it is finally time to invite new states to the union."
+
+XTN_river_warplan:0 "River Wars"
+XTN_river_warplan_desc:0 "River warplan requires us to conquer remaining nothern states before Mississippi river."

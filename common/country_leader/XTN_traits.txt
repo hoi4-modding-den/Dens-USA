@@ -49,9 +49,17 @@ leader_traits = {
 		stability_weekly = -1
 		production_factory_efficiency_gain_factor = -1
 		local_resources_factor = -1
-		surrender_limit = -1
+		surrender_limit = -1 
+		
+	}
 
- 
+		XTN_marshal_president = {
+		random = no
+		
+		political_power_factor = -0.02
+		experience_gain_army = 0.15
+		
+
 		
 	}
 

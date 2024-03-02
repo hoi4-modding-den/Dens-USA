@@ -20,7 +20,10 @@ country = {
 
     completion_reward = {
         add_political_power = 150
+
         }
+        
+
     }
 
 #### Right #######
@@ -1375,6 +1378,535 @@ add_ideas = { XTN_inteligensia_manifesto }
 
         }
     }
+
+############################### Trotsky ###################################################
+  focus = {
+    id = XTN_maintain_trotsky
+    x = 28
+    y = 17
+    icon = GFX_focus_fra_loyalty_trotzky
+
+    prerequisite = { focus = XTN_claim_usa }
+    mutually_exclusive = {focus = XTN_supreme_soviet focus = XTN_french_stalinism focus = XTN_ivan_smirnov_rule focus = XTN_democratic_socialism}
+
+    cost = 2
+    
+
+    completion_reward = {
+
+        add_stability = 0.05
+
+    }
+  }
+
+
+  focus = {
+    id = XTN_northern_wars
+    x = 25
+    y = 18
+    icon = GFX_focus_SOV_builder_of_the_red_army
+
+    prerequisite = { focus = XTN_maintain_trotsky }
+   
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_war_support = 0.05
+        army_experience = 5
+
+    }
+  }
+
+  focus = {
+    id = XTN_push_xpa
+    x = 25
+    y = 19
+    icon = GFX_goal_generic_major_war
+
+    prerequisite = { focus = XTN_northern_wars }
+   
+
+    cost = 5
+    
+
+    completion_reward = {
+
+
+        army_experience = 5
+            declare_war_on = {
+            target = XPA
+            type = annex_everything
+                }
+
+    }
+  }
+
+  focus = {
+    id = XTN_push_nj
+    x = 25
+    y = 20
+    icon = GFX_goal_generic_major_war
+
+    prerequisite = { focus = XTN_push_xpa }
+   
+
+    cost = 1
+    
+
+    completion_reward = {
+
+
+        army_experience = 5
+            declare_war_on = {
+            target = XNJ
+            type = annex_everything
+                }
+
+    }
+  }
+
+  focus = {
+    id = XTN_last_offensive
+    x = 25
+    y = 21
+    icon = GFX_focus_SOV_organization_centralization_discipline
+
+    prerequisite = { focus = XTN_push_nj }
+   
+
+    cost = 10
+    
+
+    completion_reward = {
+
+
+        army_experience = 5
+            declare_war_on = {
+            target = XNY
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XNN
+            type = annex_everything
+                }
+
+    }
+  }
+
+  focus = {
+    id = XTN_detroid_road
+    x = 25
+    y = 22
+    icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+
+    prerequisite = { focus = XTN_last_offensive }
+   
+
+    cost = 10
+    
+
+    completion_reward = {
+
+
+        army_experience = 5
+            declare_war_on = {
+            target = XOH
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XIN
+            type = annex_everything
+                }
+
+    }
+  }
+
+  focus = {
+    id = XTN_strenghten_administration
+    x = 31
+    y = 18
+    icon = GFX_focus_generic_soviet_politics
+
+    prerequisite = { focus = XTN_maintain_trotsky }
+    
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_stability = 0.05
+        add_political_power = 50
+
+    }
+  }
+
+  focus = {
+    id = XTN_expand_agriculture
+    x = 31
+    y = 19
+    icon = GFX_focus_SOV_breadbasket_of_the_union
+
+    prerequisite = { focus = XTN_strenghten_administration }
+    available = {361 = {is_owned_by = XTN} 362 = {is_owned_by = XTN} 363 = {is_owned_by = XTN}}
+    
+
+    cost = 10
+    
+
+    completion_reward = {
+
+    361 = {
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+            }
+    }
+    362 = {
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+            }
+    }
+    363 = {
+    add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+            }
+    }
+
+    }
+  }
+
+  focus = {
+    id = XTN_nashville_railway
+    x = 31
+    y = 20
+    icon = GFX_goal_generic_construct_infrastructure
+
+    prerequisite = { focus = XTN_expand_agriculture }
+    available = {361 = {is_owned_by = XTN} 362 = {is_owned_by = XTN} 363 = {is_owned_by = XTN} 368 = { is_owned_by = XTN }}
+    
+
+    cost = 10
+    
+
+    completion_reward = {
+        XTN = {
+
+            build_railway = {
+            level = 2
+            build_only_on_allied = yes
+            controller_priority = {
+            base = 1
+            modifier = {
+            tag = XTN
+            add = 2
+        }
+    }
+    fallback = yes
+    path = { 12501 10281 1758 10657 913 8014 10468 10439 10412}
+    start_province = 12501
+    target_province = 10412
+}
+
+
+
+        }
+
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_state_atheism
+    x = 31
+    y = 21
+    icon = GFX_focus_mex_triumph_over_the_cristeros
+
+    prerequisite = { focus = XTN_nashville_railway }
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_state_atheism_idea}
+
+    }
+  }
+
+  focus = {
+    id = XTN_millitary_focus_washington
+    x = 31
+    y = 22
+    icon = GFX_goal_generic_construct_mil_factory
+
+    prerequisite = { focus = XTN_state_atheism }
+    available = {361 = {is_owned_by = XTN}}
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+
+    361 = {
+    add_building_construction = {
+        type = arms_factory
+        level = 1
+        instant_build = yes
+            }
+    }
+
+    }
+  }
+
+  focus = {
+    id = XTN_northern_statehood
+    x = 28
+    y = 23
+    icon = GFX_focus_SWE_socialist_reforms
+
+    prerequisite = { focus = XTN_millitary_focus_washington }
+    prerequisite = { focus = XTN_detroid_road }
+    available = {359 = {is_owned_by = XTN} 261 = {is_owned_by = XTN} 360 = {is_owned_by = XTN} 359 = {is_owned_by = XTN} 358 = {is_owned_by = XTN} 357 = {is_owned_by = XTN} 361 = {is_owned_by = XTN} 396 = {is_owned_by = XTN} 393 = {is_owned_by = XTN} }
+    
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        360 = {
+
+            add_core_of = XTN
+
+        }
+        359 = {
+
+            add_core_of = XTN
+
+        }
+        358 = {
+
+            add_core_of = XTN
+
+        }
+        261 = {
+
+            add_core_of = XTN
+
+        }
+        357 = {
+
+            add_core_of = XTN
+
+        }
+
+        396 = {
+
+            add_core_of = XTN
+
+        }
+        393 = {
+
+            add_core_of = XTN
+
+        }
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_river_warplan
+    x = 28
+    y = 24
+    icon = GFX_focus_generic_join_comintern
+
+    prerequisite = { focus = XTN_northern_statehood }
+   
+
+    cost = 10
+    
+
+    completion_reward = {
+
+
+        army_experience = 5
+            declare_war_on = {
+            target = XIL
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XWI
+            type = annex_everything
+                }
+        395 = {
+
+            add_core_of = XTN
+
+        }
+        394 = {
+
+            add_core_of = XTN
+
+        }
+
+    }
+  }
+
+
+###################################### SocDem ######################################################################
+  focus = {
+    id = XTN_democratic_socialism
+    x = 36
+    y = 17
+    icon = GFX_focus_SOV_approach_tukahchevsky
+
+    prerequisite = { focus = XTN_claim_usa }
+    available = {XTN = { has_completed_focus = XTN_invite_tukhachevsky }}
+    mutually_exclusive = {focus = XTN_supreme_soviet focus = XTN_french_stalinism focus = XTN_ivan_smirnov_rule focus = XTN_maintain_trotsky}
+
+    cost = 2
+    
+
+    completion_reward = {
+
+    add_popularity = {
+        ideology = democratic
+        popularity = 0.3
+            }
+
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = yes
+            last_election = "1936.1.1"
+            election_frequency = 48
+            long_name = "Socialist Party of America"
+            name = "SPA"
+
+            }
+            
+           swap_ideas = {
+           remove_idea = XTN_spirit_of_lenin
+           add_idea = XTN_new_democracy 
+            }
+        remove_ideas = {XTN_cult_of_trotsky_idea}
+        
+            retire_character = XTN_tennessee_council
+
+    }
+  }
+################################################ Smirnov ##############################################################################################
+  focus = {
+    id = XTN_ivan_smirnov_rule
+    x = 20
+    y = 17
+    icon = GFX_focus_SOV_bukharinists
+
+    prerequisite = { focus = XTN_claim_usa }
+    available = {XTN = { has_completed_focus = XTN_invite_exiled_trotskists }}
+    mutually_exclusive = {focus = XTN_supreme_soviet focus = XTN_french_stalinism focus = XTN_democratic_socialism focus = XTN_maintain_trotsky}
+
+
+    cost = 2
+    
+
+    completion_reward = {
+
+        retire_character = XTN_lev_trotsky
+        retire_character = XTN_maurice_thorez
+        remove_ideas = {XTN_cult_of_trotsky_idea}
+
+        set_party_name = {
+        ideology = communism
+        long_name = "Smirnov Blok"
+        name = "Smirnov Blok"
+                }
+
+    }
+  }
+######################################################### Stalin ###############################################################
+  focus = {
+    id = XTN_french_stalinism
+    x = 44
+    y = 17
+    icon = GFX_focus_chi_reach_out_to_france
+
+    prerequisite = { focus = XTN_claim_usa }
+    available = {XTN = { has_completed_focus = XTN_invite_exiled_french }}
+    mutually_exclusive = {focus = XTN_supreme_soviet focus = XTN_ivan_smirnov_rule focus = XTN_democratic_socialism focus = XTN_maintain_trotsky}
+
+    cost = 2
+    
+
+    completion_reward = {
+
+        retire_character = XTN_lev_trotsky
+        retire_character = XTN_ivan_smirnov
+        retire_character = XTN_nikolay_bukharin
+        remove_ideas = {XTN_cult_of_trotsky_idea}
+
+        set_party_name = {
+        ideology = communism
+        long_name = "Vanguard Union Party"
+        name = "VUP"
+                }
+
+    }
+  }
+############################################## Supreme Soviet #####################################################################
+  focus = {
+    id = XTN_supreme_soviet
+    x = 52
+    y = 17
+    icon = GFX_focus_SOV_the_supreme_soviet
+
+    prerequisite = { focus = XTN_claim_usa }
+    available = {XTN = { has_completed_focus = XTN_invite_exiled_french  as_completed_focus = XTN_invite_exiled_trotskists  as_completed_focus = XTN_invite_tukhachevsky }}
+    mutually_exclusive = {focus = XTN_french_stalinism focus = XTN_ivan_smirnov_rule focus = XTN_democratic_socialism focus = XTN_maintain_trotsky}
+
+    cost = 2
+    
+
+    completion_reward = {
+        recruit_character = XTN_supreme_soviet
+        retire_character = XTN_lev_trotsky
+        retire_character = XTN_ivan_smirnov
+        retire_character = XTN_nikolay_bukharin
+        retire_character = XTN_maurice_thorez
+
+        recruit_character = XTN_lev_trotsky
+        recruit_character = XTN_ivan_smirnov
+        recruit_character = XTN_nikolay_bukharin
+        recruit_character = XTN_maurice_thorez
+        
+        
+        remove_ideas = {XTN_cult_of_trotsky_idea}
+
+        set_party_name = {
+        ideology = communism
+        long_name = "I-L/SB/VUP/SPA"
+        name = "Supreme Soviet"
+                }
+
+    }
+    
+    }
+    
+  
 
 #################################### Migration Policy #######################################
 

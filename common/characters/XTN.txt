@@ -333,8 +333,27 @@ logistics_skill = 4
 			ideology = socialism
 			expire="1965.1.1.1"
 			id=-1
+			traits = {XTN_marshal_president}
 		}
 	}
+
+	XTN_supreme_soviet = { 
+		name = "Supreme Soviet"
+
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SOV_supreme_soviet
+			}
+		}
+			country_leader={
+			ideology = marxism
+			expire="1965.1.1.1"
+			id=-1
+			traits = { }
+		}
+	}
+
+
 
 
 }
