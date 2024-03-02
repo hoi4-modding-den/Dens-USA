@@ -1,3 +1,11 @@
+
+############## TODO Naprawić te jebane character file ##################################
+############## Path do SocDema Francuzów i Supreme Sovieta #############################
+############## Agrarian Path i Fascist path ############################################
+
+
+
+
 focus_tree = {
 id = 420
 
@@ -2294,7 +2302,7 @@ add_ideas = { XTN_inteligensia_manifesto }
     id = XTN_to_victory
     x = 28
     y = 34
-    icon = GFX_focus_generic_join_comintern
+    icon = GFX_focus_SOV_international_union_of_soviet_republics
 
     prerequisite = { focus = XTN_operation_omaha }
 
@@ -2449,7 +2457,7 @@ add_ideas = { XTN_inteligensia_manifesto }
     id = XTN_southern_campaign
     x = 23
     y = 18
-    icon = GFX_focus_SOV_bukharinists
+    icon = GFX_focus_ITA_peasants_rise
 
     prerequisite = { focus = XTN_ivan_smirnov_rule }
 
@@ -2459,11 +2467,35 @@ add_ideas = { XTN_inteligensia_manifesto }
 
     completion_reward = {
 
+        army_experience = 25
 
+    }
+
+    }
+
+  focus = {
+    id = XTN_unite_carolina
+    x = 23
+    y = 19
+    icon = GFX_goal_generic_territory_or_war
+
+    prerequisite = { focus = XTN_southern_campaign }
+
+
+    cost = 2
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XSC
+            type = annex_everything
                 }
 
     }
-  }
+
+    }
+  
 ######################################################### Stalin ###############################################################
   focus = {
     id = XTN_french_stalinism
