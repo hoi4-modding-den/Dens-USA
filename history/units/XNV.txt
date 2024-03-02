@@ -1,0 +1,59 @@
+division_template = {
+	name = "Nevada Troopers"
+	division_names_group = XNV_Troopers_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		artillery_brigade = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+	}
+	support = {
+      engineer = { x = 0 y = 0 }  
+      recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Nevada Defence"
+	division_names_group = XNV_Defense_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+	support = {
+      engineer = { x = 0 y = 0 }  
+      artillery = {x = 0 y = 1 }
+	}
+}
+units = {
+	division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 4799
+		division_template = "Nevada Troopers"
+		start_experience_factor = 0.1
+	}
+    division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 2
+		}
+		location = 12607
+		division_template = "Nevada Troopers"
+		start_experience_factor = 0.1
+	}
+    division = { 
+		division_name = {
+            is_name_ordered = yes
+            name_order = 1
+		}
+		location = 4607
+		division_template = "Nevada Defence"
+		start_experience_factor = 0.1
+	}
+}

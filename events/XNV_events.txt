@@ -10,7 +10,7 @@ country_event = {
 	
 	option = {
 		name = "Democratic Party Victory"
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 5 }
 		add_stability = 0.1
         hidden_effect = {
             complete_national_focus = XNVElectionDem     
@@ -18,7 +18,7 @@ country_event = {
 	}
 	option = {
 		name = "Republican Party Victory"
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 5 }
 		add_stability = -0.1 #will be variable for the actual support
 
         hidden_effect = {
