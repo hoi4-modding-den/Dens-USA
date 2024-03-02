@@ -13,6 +13,14 @@ spriteTypes = {
 		name = "GFX_idea_XAL_mujahideen_icon"
 		texturefile = "gfx/XAL_stuff/XAL_mujahideen.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_XAL_sharia_law"
+		texturefile = "gfx/XAL_stuff/XAL_sharia_law.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAL_jihad"
+		texturefile = "gfx/XAL_stuff/XAL_jihad.dds"
+	}
 	
 	#focus icons
 	spriteType = {
@@ -55,5 +63,34 @@ spriteTypes = {
 		name = "GFX_goal_XAL_coup_the_king"
 		texturefile = "gfx/XAL_stuff/XAL_coup_the_king.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_XAL_militarize_the_people"
+		texturefile = "gfx/XAL_stuff/XAL_militarize_the_people.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_reshape_society"
+		texturefile = "gfx/XAL_stuff/XAL_reshape_society.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_enact_sharia"
+		texturefile = "gfx/XAL_stuff/XAL_enact_sharia.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_mujahid_icon_2"
+		texturefile = "gfx/XAL_stuff/XAL_mujahid_2.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_control_the_population"
+		texturefile = "gfx/XAL_stuff/XAL_control_the_population.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_north_american_jihad"
+		texturefile = "gfx/XAL_stuff/XAL_north_american_jihad.dds"
+	}
 	
+	#events
+	spriteType = {
+		name = "GFX_al_abama_news_event_1"
+		texturefile = "gfx/XAL_stuff/XAL_news_event_1.dds"
+	}
 }

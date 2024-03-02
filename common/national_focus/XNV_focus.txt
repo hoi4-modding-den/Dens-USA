@@ -11,7 +11,7 @@ focus_tree = {
 
 	 }
 	 default = no
-	 continuous_focus_position = { x = 100 y = 1000 }
+	 continuous_focus_position = { x = 100 y = 3000 }
 
 	 focus = {
 		id = XNVAFOC #AllForOurCountry
@@ -40,13 +40,14 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 		}
-    }
+     }
 
+	#ElectionPath
 	 focus = {
-		id = XNVElection #AllForOurCountry
+		id = XNVElection #ElectionMain
 
 		prerequisite = { focus = XNVAFOC }
-		mutually_exclusive = { focus = XNVCivilWar }
+		mutually_exclusive = {} #focus = XNVCivilWar 
 		
 		icon = GFX_goal_XNV_Election
 		available = {
@@ -68,19 +69,72 @@ focus_tree = {
 		y = 4
 		cost = 0
 		ai_will_do = {
+			factor = 3
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			XNV = {country_event = XNV.1 }
+		}
+     }
+	 focus = {
+		id = XNVElectionDem #RichardKirmanSR
+
+		prerequisite = { focus = XNVElection }
+		mutually_exclusive = {}
+		
+		icon = GFX_goal_XNV_ElectionDem
+		available = {
+				always = no
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 1
+		y = 6
+		cost = 0
+		ai_will_do = {
 			factor = 2
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 		}
-    }
+     }
+	 focus = {
+		id = XNVElectionRep #MorleyGriswold
+
+		prerequisite = { focus = XNVElection }
+		mutually_exclusive = {}
+		
+		icon = GFX_goal_XNV_ElectionRep
+		available = {
+				always = no
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 5
+		y = 6
+		cost = 0
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+
+	#CivilWarPath
 	 focus = {
 		id = XNVCivilWar #AllForOurCountry
 
 		prerequisite = { focus = XNVAFOC }
-		mutually_exclusive = { focus = XNVElection }
+		mutually_exclusive = {} #focus = XNVElection 
 		
-		icon = GFX_goal_XNV_Election
+		icon = GFX_goal_XNV_CivilWar
 		available = {
 			XNV = {
 				if = {
@@ -94,16 +148,119 @@ focus_tree = {
 		bypass = {
 		}
 
-		cancel_if_invalid = yes
+		cancel_if_invalid = no
 
 		x = 17
 		y = 4
-		cost = 0
+		cost = 4
 		ai_will_do = {
-			factor = 2
+			factor = 1
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 		}
-    }
+     }
+
+	#LasVegasProjects
+	 focus = {
+		id = XNVDevelopment #CreateFirstFactories
+
+		prerequisite = { focus = XNVAFOC }
+		mutually_exclusive = { }
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 10
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			379 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+     }
+	 focus = {
+		id = XNVGunProduction #ArmsFactories
+
+		prerequisite = { focus = XNVDevelopment }
+		mutually_exclusive = { }
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 8
+		y = 6
+		cost = 7
+		ai_will_do = {
+			factor = 5
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			938 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+     }
+	 focus = {
+		id = XNVGunProduction2 #ArmsFactories
+
+		prerequisite = { focus = XNVDevelopment }
+		mutually_exclusive = { }
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 12
+		y = 6
+		cost = 7
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			959 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+     }
 } #endbracketlol

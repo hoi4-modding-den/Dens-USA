@@ -41,7 +41,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XAL_sweet_home_al_abama
 		prerequisite = { focus = XAL_sweet_home_al_abama }
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -63,7 +63,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XAL_our_king
 		prerequisite = { focus = XAL_our_king }
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -118,7 +118,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XAL_sweet_home_al_abama
 		prerequisite = { focus = XAL_sweet_home_al_abama }
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -140,7 +140,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = XAL_our_religion
 		prerequisite = { focus = XAL_our_religion }
-		cost = 10
+		cost = 5
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -195,7 +195,7 @@ focus_tree = {
 			focus = XAL_callout_to_our_muslim_brothers
 			focus = XAL_a_generous_king
 		}
-		cost = 10
+		cost = 1
 	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -208,15 +208,17 @@ focus_tree = {
 			factor = 1
 		}
 	}
+	
+	#salafist tree proper
 	focus = {
 		id = XAL_overthrow_the_king
 		icon = GFX_goal_XAL_coup_the_king
-		x = 3
-		y = 2
+		x = 4
+		y = 1
 		relative_position_id = XAL_the_burning_question
 		prerequisite = { focus = XAL_the_burning_question }
 		mutually_exclusive = { focus = XAL_crush_the_salafists }	
-		cost = 10
+		cost = 2
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = XAL_salafism_available_tt
@@ -241,6 +243,10 @@ focus_tree = {
 					ideology = fascism
 					popularity = 0.5
 				}
+				news_event = {
+					id = al_abama_news.1
+					days = 3
+				}
 			}
 		}
 		ai_will_do = {
@@ -248,10 +254,181 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = XAL_purge_them_all
+		icon = GFX_goal_XAL_reshape_society
+		x = -2
+		y = 1
+		relative_position_id = XAL_overthrow_the_king
+		prerequisite = { focus = XAL_overthrow_the_king }
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_manpower = -3912
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.3
+			}
+			delete_unit_template_and_units = {
+				division_template = "Royal Guard"
+				disband = yes 
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XAL_enact_sharia
+		icon = GFX_goal_XAL_enact_sharia
+		x = 0
+		y = 1
+		relative_position_id = XAL_overthrow_the_king
+		prerequisite = { focus = XAL_overthrow_the_king }
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.3
+			add_ideas = {
+				XAL_sharia_law
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XAL_restrict_constitutional_rights
+		icon = GFX_goal_XAL_control_the_population
+		x = -1
+		y = 1
+		relative_position_id = XAL_enact_sharia
+		prerequisite = { focus = XAL_enact_sharia }
+		prerequisite = { focus = XAL_purge_them_all }
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = 150
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XAL_militarize_society
+		icon = GFX_goal_XAL_militarize_the_people
+		x = 2
+		y = 1
+		relative_position_id = XAL_overthrow_the_king
+		prerequisite = { focus = XAL_overthrow_the_king }
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.15
+			367 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}	
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XAL_increase_foreign_mujahid_support
+		icon = GFX_goal_XAL_mujahid_icon_2
+		x = -1
+		y = 1
+		relative_position_id = XAL_militarize_society
+		prerequisite = { 
+			focus = XAL_enact_sharia
+		}
+		prerequisite = { 
+			focus = XAL_militarize_society 
+		}
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = XAL_mujahideen }
+				
+				swap_ideas = {
+					remove_idea = XAL_mujahideen
+					add_idea = XAL_mujahideen_2
+				}
+				
+			}
+			else = {
+				add_ideas = { 
+					XAL_mujahideen 
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XAL_north_american_jihad
+		icon = GFX_goal_XAL_north_american_jihad
+		x = -1
+		y = 1
+		relative_position_id = XAL_increase_foreign_mujahid_support
+		prerequisite = { 
+			focus = XAL_restrict_constitutional_rights
+		}
+		prerequisite = { 
+			focus = XAL_increase_foreign_mujahid_support
+		}
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				XAL_jihad
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	
+	#loyalist tree proper
+	focus = {
 		id = XAL_crush_the_salafists
 		icon = GFX_goal_XAL_crush_the_salafists
-		x = -3
-		y = 2
+		x = -4
+		y = 1
 		
 		available = {
 			custom_trigger_tooltip = {
@@ -264,7 +441,7 @@ focus_tree = {
 		
 		relative_position_id = XAL_the_burning_question
 		prerequisite = { focus = XAL_the_burning_question }
-		cost = 10
+		cost = 2
 		mutually_exclusive = { focus = XAL_overthrow_the_king }	
 		
 		

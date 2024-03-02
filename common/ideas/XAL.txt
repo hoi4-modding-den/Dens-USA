@@ -43,6 +43,34 @@ ideas = {
 				tag = XAL
 			}
 		}
+		XAL_mujahideen_2 = {
+			picture = XAL_mujahideen_icon
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				weekly_manpower = 1000
+			}
+			allowed = {
+				tag = XAL
+			}
+		}
+		XAL_jihad = {
+			picture = XAL_jihad
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support = 0.3
+				army_attack_factor = 0.15
+				army_morale_factor = 0.15
+				training_time_factor = -0.3
+				minimum_training_level = -0.3
+			}
+			allowed = {
+				tag = XAL
+			}
+		}
 		XAL_public_sector_investments = {
 			picture = tur_varlik_vergisi
 			allowed_civil_war = {
@@ -52,6 +80,23 @@ ideas = {
 				consumer_goods_factor = 0.05
 				stability_weekly  = 0.03
 				
+			}
+			allowed = {
+				tag = XAL
+			}
+		}
+		XAL_sharia_law = {
+			picture = XAL_sharia_law
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_acceptance = -100
+				democratic_acceptance = -100
+				stability_weekly = -0.03
+				resistance_activity = -0.25
+				resistance_growth_on_our_occupied_states = 0.25
+				compliance_growth_on_our_occupied_states = -0.25
 			}
 			allowed = {
 				tag = XAL

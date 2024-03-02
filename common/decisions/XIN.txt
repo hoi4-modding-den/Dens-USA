@@ -1,5 +1,102 @@
 XIN_election_decisions = {
 	election_begins = {
-		
+		priority = 10
+		is_good = yes
+		selectable_mission = no
+		fire_only_once = yes
+
+		days_mission_timeout = 70
+		available = { always = no }
+		activation = {
+			NOT = {
+				has_completed_focus = XIN_first_election
+			}
+		}
+		timeout_effect = {
+			country_event = XIN.1
+		}
 	}
+	boost_democratic_support = {
+		
+		cost = 50
+		visible = {
+			has_completed_focus = XIN_first_election
+			NOT = {
+				OR = {
+					has_completed_focus = XIN_coalition
+					has_completed_focus = XIN_democratic_support
+					has_completed_focus = XIN_republican_support
+				}
+			}
+		}
+		available = {
+			NOT = {
+				has_decision = boost_republican_support
+			}
+			has_political_power > 50
+		}
+		days_remove = 15
+		remove_effect = {
+			add_to_variable = {
+				var = XIN_election_dem_leaning
+				value = 1
+			}
+		}
+	}
+	boost_republican_support = {
+		cost = 50
+		visible = {
+			has_completed_focus = XIN_first_election
+			NOT = {
+				OR = {
+					has_completed_focus = XIN_coalition
+					has_completed_focus = XIN_democratic_support
+					has_completed_focus = XIN_republican_support
+				}
+			}
+		}
+		available = {
+			NOT = {
+				has_decision = boost_democratic_support
+			}
+			has_political_power > 50
+		}
+		days_remove = 15
+		remove_effect = {
+			add_to_variable = {
+				var = XIN_election_rep_leaning
+				value = 1
+			}
+		}
+	}
+	election_ends = {
+		priority = 10
+		is_good = yes
+		selectable_mission = no
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = XIN_first_election
+		}
+
+		days_mission_timeout = 70
+		available = {
+			always = no
+		}
+		activation = {
+			has_completed_focus = XIN_first_election
+		}
+		timeout_effect = {
+			if = {
+				limit = { check_variable = { var:XIN_election_rep_leaning < var:XIN_election_dem_leaning} }
+				complete_national_focus = XIN_democratic_support
+			}
+			else_if = {
+				limit = { check_variable = { var:XIN_election_rep_leaning > var:XIN_election_dem_leaning}  }
+				complete_national_focus = XIN_republican_support
+			}
+			else = {
+				complete_national_focus = XIN_coalition
+			}
+	}
+}
 }

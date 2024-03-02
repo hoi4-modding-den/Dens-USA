@@ -2,4 +2,5 @@
  XIN: "Indiana"
  XIN_DEF: "Indiana"
  XIN_ADJ: "Indiana"
- 
+XIN_boost_democratic_support: "Increase Democratic Support | Currently at: [?election_dem_leaning|B0.]"
+XIN_boost_republican_support: "Increase Republican Support | Currently at: [?election_rep_leaning|R0.]"

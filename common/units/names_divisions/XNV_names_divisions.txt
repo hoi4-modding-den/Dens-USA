@@ -1,0 +1,15 @@
+XNV_Troopers_01 = {
+	name = "Nevada Trooper"
+	for_countries = { XNV }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "%d Nevada Trooper"
+}
+
+XNV_Defense_01 = {
+	name = "Nevada Defence"
+	for_countries = { XNV }
+	can_use = { always = yes }
+	division_types = { "cavalry" }
+	fallback_name = "%d Nevada Defence Unit"
+}

@@ -3,8 +3,20 @@ spriteTypes = {
 		name = "GFX_goal_XNV_AFOC"
 		texturefile = "gfx/XNV_focuses/XNV_AFOC.dds"
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_goal_XNV_Election"
 		texturefile = "gfx/XNV_focuses/XNV_Election.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XNV_ElectionDem"
+		texturefile = "gfx/XNV_focuses/XNV_ElectionDem.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XNV_ElectionRep"
+		texturefile = "gfx/XNV_focuses/XNV_ElectionRep.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XNV_CivilWar"
+		texturefile = "gfx/XNV_focuses/XNV_CivilWar.dds"
 	}
 }

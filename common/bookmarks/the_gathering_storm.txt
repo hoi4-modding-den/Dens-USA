@@ -88,6 +88,8 @@ bookmarks = {
 			}
 			focuses = {
 				XNVAFOC
+				XNVElectionDem
+				XNVElectionRep
 			}
 		}	
 		"XAL"={
