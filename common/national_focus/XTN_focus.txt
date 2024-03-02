@@ -1767,6 +1767,612 @@ add_ideas = { XTN_inteligensia_manifesto }
     }
   }
 
+  focus = {
+    id = XTN_warplan_south
+    x = 28
+    y = 25
+    icon = GFX_goal_generic_territory_or_war
+
+    prerequisite = { focus = XTN_river_warplan }
+   
+
+    cost = 2
+    
+
+    completion_reward = {
+
+        army_experience = 25
+
+    }
+  }
+
+  focus = {
+    id = XTN_strike_towards_fl
+    x = 28
+    y = 26
+    icon = GFX_goal_generic_territory_or_war
+
+    prerequisite = { focus = XTN_warplan_south }
+   
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XSC
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XGA
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XFL
+            type = annex_everything
+                }
+
+    }
+  }
+
+  focus = {
+    id = XTN_remove_islamic_threat
+    x = 28
+    y = 27
+    icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+
+    prerequisite = { focus = XTN_strike_towards_fl }
+   
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XAL
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XMS
+            type = annex_everything
+                }
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_grant_statehood_csa
+    x = 28
+    y = 28
+    icon = GFX_focus_SWE_socialist_reforms
+
+    prerequisite = { focus = XTN_remove_islamic_threat }
+    available = {364 = {is_owned_by = XTN} 365 = {is_owned_by = XTN} 366 = {is_owned_by = XTN} 367 = {is_owned_by = XTN} 370 = {is_owned_by = XTN} }
+   
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        364 = {
+
+            add_core_of = XTN
+
+        }
+        365 = {
+
+            add_core_of = XTN
+
+        }
+        366 = {
+
+            add_core_of = XTN
+
+        }
+        367 = {
+
+            add_core_of = XTN
+
+        }
+        370 = {
+
+            add_core_of = XTN
+
+        }
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_southern_wars
+    x = 28
+    y = 29
+    icon = GFX_focus_spa_the_war_of_vengeance
+
+    prerequisite = { focus = XTN_grant_statehood_csa }
+    available = {364 = {is_owned_by = XTN} 365 = {is_owned_by = XTN} 366 = {is_owned_by = XTN} 367 = {is_owned_by = XTN} 370 = {is_owned_by = XTN} }
+   
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        371 = {
+
+            add_core_of = XTN
+
+        }
+        372 = {
+
+            add_core_of = XTN
+
+        }
+        374 = {
+
+            add_core_of = XTN
+
+        }
+        375 = {
+
+            add_core_of = XTN
+
+        }
+    
+            declare_war_on = {
+            target = XLA
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XAR
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XOK
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XTX
+            type = annex_everything
+                }
+
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_push_coast
+    x = 28
+    y = 30
+    icon = GFX_focus_SOV_builder_of_the_red_army
+
+    prerequisite = { focus = XTN_southern_wars }
+ 
+   
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        378 = {
+
+            add_core_of = XTN
+
+        }
+        376 = {
+
+            add_core_of = XTN
+
+        }
+        954 = {
+
+            add_core_of = XTN
+
+        }
+        955 = {
+
+            add_core_of = XTN
+
+        }
+        377 = {
+
+            add_core_of = XTN
+
+        }
+        953 = {
+
+            add_core_of = XTN
+
+        }
+        938 = {
+
+            add_core_of = XTN
+
+        }
+        379 = {
+
+            add_core_of = XTN
+
+        }
+        959 = {
+
+            add_core_of = XTN
+
+        }
+        985 = {
+
+            add_core_of = XTN
+
+        }
+        937 = {
+
+            add_core_of = XTN
+
+        }
+        936 = {
+
+            add_core_of = XTN
+
+        }
+
+            declare_war_on = {
+            target = XNM
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XAZ
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XCA
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XNV
+            type = annex_everything
+                }
+
+
+
+    }
+  }
+
+
+  focus = {
+    id = XTN_draw_state_borders
+    x = 29
+    y = 31
+    icon = GFX_focus_generic_befriend_usa
+
+    prerequisite = { focus = XTN_push_coast }
+    available = { 378 = {is_owned_by = XTN} 361 = {is_owned_by = XTN} }
+ 
+   
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        373 = {
+
+            add_core_of = XTN
+
+        }
+        392 = {
+
+            add_core_of = XTN
+
+        }
+        383 = {
+
+            add_core_of = XTN
+
+        }
+        391 = {
+
+            add_core_of = XTN
+
+        }
+        377 = {
+
+            add_core_of = XTN
+
+        }
+        957 = {
+
+            add_core_of = XTN
+
+        }
+        956 = {
+
+            add_core_of = XTN
+
+        }
+        382 = {
+
+            add_core_of = XTN
+
+        }
+        939 = {
+
+            add_core_of = XTN
+
+        }
+        940 = {
+
+            add_core_of = XTN
+
+        }
+        380 = {
+
+            add_core_of = XTN
+
+        }
+        381 = {
+
+            add_core_of = XTN
+
+        }
+        386 = {
+
+            add_core_of = XTN
+
+        }
+        387 = {
+
+            add_core_of = XTN
+
+        }
+        947 = {
+
+            add_core_of = XTN
+
+        }
+        942 = {
+
+            add_core_of = XTN
+
+        }
+        390 = {
+
+            add_core_of = XTN
+
+        }
+        946 = {
+
+            add_core_of = XTN
+
+        }
+        941 = {
+
+            add_core_of = XTN
+
+        }
+        944 = {
+
+            add_core_of = XTN
+
+        }
+        389 = {
+
+            add_core_of = XTN
+
+        }
+        945 = {
+
+            add_core_of = XTN
+
+        }
+        943 = {
+
+            add_core_of = XTN
+
+        }
+        951 = {
+
+            add_core_of = XTN
+
+        }
+        950 = {
+
+            add_core_of = XTN
+
+        }
+        949 = {
+
+            add_core_of = XTN
+
+        }
+        952 = {
+
+            add_core_of = XTN
+
+        }
+        388 = {
+
+            add_core_of = XTN
+
+        }
+        948 = {
+
+            add_core_of = XTN
+
+        }
+
+
+
+
+    }
+  }
+
+
+  focus = {
+    id = XTN_2nd_river_wars
+    x = 28
+    y = 32
+    icon = GFX_focus_generic_join_comintern
+
+    prerequisite = { focus = XTN_push_coast }
+
+ 
+   
+
+    cost = 1
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XMN
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XIA
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XMO
+            type = annex_everything
+                }
+
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_operation_omaha
+    x = 28
+    y = 33
+    icon = GFX_focus_generic_join_comintern
+
+    prerequisite = { focus = XTN_2nd_river_wars }
+
+ 
+   
+
+    cost = 1
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XNE
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XKS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XCO
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XUT
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XWY
+            type = annex_everything
+                }
+
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_to_victory
+    x = 28
+    y = 34
+    icon = GFX_focus_generic_join_comintern
+
+    prerequisite = { focus = XTN_operation_omaha }
+
+ 
+   
+
+    cost = 1
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = PWS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS3
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XSD
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XUT
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XND
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS4
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = SMS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XID
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS2
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS1
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = MFS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XMT
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS5
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XOR
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XWA
+            type = annex_everything
+                }
+
+
+
+
+    }
+  }
+
 
 ###################################### SocDem ######################################################################
   focus = {
@@ -1834,6 +2440,26 @@ add_ideas = { XTN_inteligensia_manifesto }
         ideology = communism
         long_name = "Smirnov Blok"
         name = "Smirnov Blok"
+                }
+
+    }
+  }
+
+  focus = {
+    id = XTN_southern_campaign
+    x = 23
+    y = 18
+    icon = GFX_focus_SOV_bukharinists
+
+    prerequisite = { focus = XTN_ivan_smirnov_rule }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+
                 }
 
     }
