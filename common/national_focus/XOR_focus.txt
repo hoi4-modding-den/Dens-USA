@@ -74,11 +74,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
-			hidden_trigger = {
-				has_country_flag = XOR_has_created_OID
-			}
 			custom_trigger_tooltip = {
 				tooltip = XOR_tt_explore_east_trigger
+				has_country_flag = XOR_has_created_OID
 			}
 		}
 
@@ -103,18 +101,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
-			hidden_trigger = {
-				has_country_flag = XOR_has_created_OID
-			}
 			custom_trigger_tooltip = {
 				tooltip = XOR_tt_explore_east_trigger
 				has_country_flag = XOR_has_created_OID
+			}
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_inv_point_req_125
+				check_variable = {
+					var = XOR_inv_points
+					value = 125
+					compare = greater_than_or_equals
+				}
 			}
 			
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = XOR_tt_explore_east
+			custom_effect_tooltip = XOR_tt_explore_west
 		}
 		ai_will_do = { 
 			factor = 100
@@ -150,7 +153,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = XOR_tt_explore_east
+			custom_effect_tooltip = XOR_tt_explore_south
 		}
 		ai_will_do = { 
 			factor = 100
@@ -171,9 +174,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		available = {
-			hidden_trigger = {
-				has_country_flag = XOR_has_created_OID
-			}
 			custom_trigger_tooltip = {
 				tooltip = XOR_tt_explore_east_trigger
 				has_country_flag = XOR_has_created_OID
@@ -209,9 +209,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		available = {
-			hidden_trigger = {
-				has_country_flag = XOR_has_created_OID
-			}
 			custom_trigger_tooltip = {
 				tooltip = XOR_tt_explore_east_trigger
 				has_country_flag = XOR_has_created_OID
@@ -261,11 +258,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		available = {
-			hidden_trigger = {
-				has_country_flag = XOR_has_created_OID
-			}
 			custom_trigger_tooltip = {
 				tooltip = XOR_tt_explore_east_trigger
+				has_country_flag = XOR_has_created_OID
 			}
 		}
 

@@ -62,7 +62,7 @@ XOR_oregon_investigation_decisions = {
 		}
 	}
 
-	#Investigate Bend
+	#Investigate "Bend" (Redmond)
 	XOR_OID_bend = {
 
 		icon = GFX_decision_generic_operation
@@ -102,6 +102,47 @@ XOR_oregon_investigation_decisions = {
 		}
 	}
 
+	#Investigate Bend for real this time
+	XOR_OID_bend_2 = {
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 0
+			modifier = {
+				has_country_flag = XOR_has_completed_bend_pt1
+				factor = 10000
+			}
+		}
+	
+		allowed = {
+			tag = XOR
+		}
+		
+		visible = {
+			has_completed_focus = XOR_explore_east
+			has_country_flag = XOR_has_completed_bend_pt1
+		}
+		available = {
+			has_completed_focus = XOR_explore_east
+			NOT = {
+				has_idea = XOR_running_investigation
+			}
+		}
+
+		cost = 20
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			hidden_effect = {
+				country_event = XOR_events.6
+			}
+			custom_effect_tooltip = XOR_tt_OID_bend
+			set_country_flag = XOR_has_started_bend_pt2
+			add_ideas = XOR_running_investigation
+		}
+	}
+
 	#Investigate Burns
 	XOR_OID_high_desert = {
 
@@ -109,7 +150,7 @@ XOR_oregon_investigation_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				has_country_flag = XOR_has_completed_bend
+				has_country_flag = XOR_has_completed_bend_pt2
 				factor = 1000
 			}
 		}
@@ -148,6 +189,50 @@ XOR_oregon_investigation_decisions = {
 			custom_effect_tooltip = XOR_tt_OID_highdesert
 			set_country_flag = XOR_has_started_highdesert
 			add_ideas = XOR_running_investigation
+		}
+	}
+
+	#Cement O.I.D. Control in the East
+	XOR_OID_finished_east = {
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 1000
+		}
+	
+		allowed = {
+			tag = XOR
+		}
+		
+		visible = {
+			has_completed_focus = XOR_explore_east
+			
+		}
+		available = {
+			has_completed_focus = XOR_explore_east
+			NOT = {
+				has_idea = XOR_running_investigation
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_has_completed_east_investigation
+				has_country_flag = XOR_has_completed_highdesert
+				has_country_flag = XOR_has_completed_bend_pt1
+				has_country_flag = XOR_has_completed_bend_pt2
+				has_country_flag = XOR_has_completed_pendleton
+				country_exists = XOR
+			}
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			hidden_effect = {
+				country_event = XOR_events.5
+			}
 		}
 	}
 }
