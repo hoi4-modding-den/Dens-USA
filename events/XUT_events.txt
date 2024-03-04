@@ -255,3 +255,93 @@ country_event = { #March on the Capital
 		name = XUT.13.a
 	}
 }
+country_event = { #Annex or War
+	id = XUT.14
+	title = XUT.14.t
+	desc = XUT.14.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Annex
+		name = XUT.14.a
+		XUT = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+	}
+	option = { #War
+		name = XUT.14.b
+		XUT = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
+}
+country_event = { #Split Nevada
+	id = XUT.15
+	title = XUT.15.t
+	desc = XUT.15.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Sure
+		name = XUT.15.a
+		XNV = {
+			country_event = XUT.16
+		}
+	}
+	option = { #Nah
+		name = XUT.15.b
+		XUT = {
+			create_wargoal = {
+				type = annex_everything
+				target = XNV
+				expire = 90
+			}
+		}
+	}
+}
+country_event = { #Split Nevada
+	id = XUT.16
+	title = XUT.16.t
+	desc = XUT.16.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Annex
+		name = XUT.16.a
+		XID = {
+			set_state_owner = 959
+			set_state_controller = 959
+		}
+		XUT = {
+			annex_country = {
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+	}
+	option = { #War
+		name = XUT.16.b
+		XUT = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+		XID = {
+			declare_war_on = {
+				type = take_state_focus
+				target = ROOT
+				generator = { 959 }
+			}
+		}
+	}
+}
