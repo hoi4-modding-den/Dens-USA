@@ -4,6 +4,8 @@ XAL_al_abama_influence_decisions = {
 		original_tag = XAL
 	}
 	
+	picture = GFX_XAL_decision_cat_influence_politics
+	
 	priority = 100
 	visible = {
 		has_completed_focus = XAL_sweet_home_al_abama
