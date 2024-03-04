@@ -211,7 +211,7 @@ add_popularity = {
 
            
 
-            recruit_character = XTN_union_of_egoists
+           #recruit_character = XTN_union_of_egoists
             retire_character = XTN_benjamin_tucker
             set_cosmetic_tag = XTN_Egoist
             remove_ideas = {XTN_inteligensia_influence XTN_immigration}
@@ -767,7 +767,7 @@ add_ideas = { XTN_inteligensia_manifesto }
         popularity = -0.3
             }
 
-    recruit_character = XTN_union_of_egoists
+    #recruit_character = XTN_union_of_egoists
     retire_character = XTN_benjamin_tucker
     add_stability = -0.1
     remove_ideas = {XTN_inteligensia_influence}
@@ -2398,6 +2398,20 @@ add_ideas = { XTN_inteligensia_manifesto }
 
     completion_reward = {
 
+    add_country_leader_role = {
+    character = XTN_mikhail_tukhachevsky
+    promote_leader = yes
+    country_leader = {
+        ideology = socialism
+        expire = "1965.1.1.1"
+        traits = { XTN_marshal_president }
+                }
+            }
+
+
+
+
+
     add_popularity = {
         ideology = democratic
         popularity = 0.3
@@ -2443,6 +2457,15 @@ add_ideas = { XTN_inteligensia_manifesto }
         retire_character = XTN_lev_trotsky
         retire_character = XTN_maurice_thorez
         remove_ideas = {XTN_cult_of_trotsky_idea}
+            add_country_leader_role = {
+            character = XTN_ivan_smirnov
+            promote_leader = yes
+            country_leader = {
+        ideology = leninism
+        expire = "1965.1.1.1"
+        traits = { the_siberian_lenin }
+                }
+            }
 
         set_party_name = {
         ideology = communism
@@ -2516,6 +2539,15 @@ add_ideas = { XTN_inteligensia_manifesto }
         retire_character = XTN_ivan_smirnov
         retire_character = XTN_nikolay_bukharin
         remove_ideas = {XTN_cult_of_trotsky_idea}
+            add_country_leader_role = {
+            character = XTN_maurice_thorez
+            promote_leader = yes
+            country_leader = {
+        ideology = stalinism
+        expire = "1965.1.1.1"
+        traits = {  }
+                }
+            }
 
         set_party_name = {
         ideology = communism
@@ -2533,23 +2565,32 @@ add_ideas = { XTN_inteligensia_manifesto }
     icon = GFX_focus_SOV_the_supreme_soviet
 
     prerequisite = { focus = XTN_claim_usa }
-    available = {XTN = { has_completed_focus = XTN_invite_exiled_french  as_completed_focus = XTN_invite_exiled_trotskists  as_completed_focus = XTN_invite_tukhachevsky }}
+    available = {XTN = { has_completed_focus = XTN_invite_exiled_french  has_completed_focus = XTN_invite_exiled_trotskists  has_completed_focus = XTN_invite_tukhachevsky }}
     mutually_exclusive = {focus = XTN_french_stalinism focus = XTN_ivan_smirnov_rule focus = XTN_democratic_socialism focus = XTN_maintain_trotsky}
 
     cost = 2
     
 
     completion_reward = {
-        recruit_character = XTN_supreme_soviet
-        retire_character = XTN_lev_trotsky
-        retire_character = XTN_ivan_smirnov
-        retire_character = XTN_nikolay_bukharin
-        retire_character = XTN_maurice_thorez
+        #recruit_character = XTN_supreme_soviet
+        #retire_character = XTN_lev_trotsky
+        #retire_character = XTN_ivan_smirnov
+        #retire_character = XTN_nikolay_bukharin
+        #retire_character = XTN_maurice_thorez
 
-        recruit_character = XTN_lev_trotsky
-        recruit_character = XTN_ivan_smirnov
-        recruit_character = XTN_nikolay_bukharin
-        recruit_character = XTN_maurice_thorez
+        #recruit_character = XTN_lev_trotsky
+        #recruit_character = XTN_ivan_smirnov
+        #recruit_character = XTN_nikolay_bukharin
+        #recruit_character = XTN_maurice_thorez
+            add_country_leader_role = {
+            character = XTN_supreme_soviet
+            promote_leader = yes
+            country_leader = {
+        ideology = marxism
+        expire = "1965.1.1.1"
+        traits = {  }
+                }
+            }
         
         
         remove_ideas = {XTN_cult_of_trotsky_idea}
@@ -2607,9 +2648,9 @@ add_ideas = { XTN_inteligensia_manifesto }
     completion_reward = {
 
 custom_effect_tooltip = XTN_trotskists
-recruit_character = XTN_ivan_smirnov
-recruit_character = XTN_karl_radek
-recruit_character = XTN_nikolay_bukharin
+#recruit_character = XTN_ivan_smirnov
+#recruit_character = XTN_karl_radek
+#recruit_character = XTN_nikolay_bukharin
 
 
         }
@@ -2633,7 +2674,7 @@ recruit_character = XTN_nikolay_bukharin
 
 
 custom_effect_tooltip = XTN_germans
-recruit_character = XTN_ernst_thalmann
+#recruit_character = XTN_ernst_thalmann
 
 
         }
@@ -2657,7 +2698,7 @@ recruit_character = XTN_ernst_thalmann
 
 
 custom_effect_tooltip = XTN_french
-recruit_character = XTN_maurice_thorez
+#recruit_character = XTN_maurice_thorez
 
 
         }
@@ -2763,7 +2804,24 @@ add_offsite_building = { type = arms_factory level = 3 }
 
     completion_reward = {
         
-        recruit_character = XTN_mikhail_tukhachevsky
+        #recruit_character = XTN_mikhail_tukhachevsky
+
+        XTN_mikhail_tukhachevsky = {
+            
+		add_field_marshal_role = {
+			traits = { brilliant_strategist career_officer trait_reckless infantry_officer offensive_doctrine }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2
+
+
+                }
+
+
+
+        }
 
 
         }
