@@ -19,6 +19,11 @@ spriteTypes = {
 		name = "GFX_portrait_XWY_royal_council"
 		texturefile = "gfx/leaders/XWY/XWY_royal_council.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_portrait_XWY_washington_1"
+		texturefile = "gfx/leaders/XWY/XWY_paul_washington.dds"
+	}
 
 	
 }

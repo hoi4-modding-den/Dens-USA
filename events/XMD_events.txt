@@ -708,3 +708,36 @@ country_event = { #defensive war, conservatives like us more
 		}
 	}
 }
+
+country_event = { #a civil war is brewing
+	id = XMD_political_events.18
+	title = XMD_political_events.18.t
+	desc = XMD_political_events.18.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	trigger = {
+		#So it doesnt keep spamming you
+		if = {
+			limit = {
+				has_country_flag = XMD_civil_war_warning
+			}
+			has_country_flag = {
+				flag = my_flag
+				days > 80
+			}
+		}
+	}
+
+	immediate = {
+		set_country_flag = XMD_civil_war_warning
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Time is running out
+		name = XMD_political_events.16.a
+		add_stability = -0.05
+	}
+}

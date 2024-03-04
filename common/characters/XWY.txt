@@ -101,4 +101,19 @@ characters = {
 			id = -1
 		}
 	}
+	
+	XWY_paul_washington = {
+		name = "Washington I"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_XWY_washington_1"
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
 }

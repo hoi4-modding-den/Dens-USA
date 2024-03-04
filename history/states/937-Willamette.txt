@@ -7,8 +7,8 @@ state={
 		add_core_of = XOR
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
-			air_base = 6
+			#industrial_complex = 3 <- Will have
+			#air_base = 6	    <- Will have
 			12211 = {
 				naval_base = 3
 

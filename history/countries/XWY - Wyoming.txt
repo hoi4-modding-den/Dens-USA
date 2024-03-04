@@ -1,4 +1,4 @@
-capital = 381
+capital = 960
 
 oob="XWY"
 

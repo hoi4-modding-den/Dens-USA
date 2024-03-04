@@ -18,3 +18,13 @@ XAL_INF_02 = {
 		1 = { "%d. Royal Guard" } 
 	}
 }
+XAL_INF_03 = {
+	name = "Infantry Divisions3" 
+	for_countries = { XAL } 
+	can_use = { always = yes } 
+	division_types = { "infantry" } 
+	fallback_name = "%d. Mujahideen"
+	ordered = {
+		1 = { "%d. Mujahideen" } 
+	}
+}

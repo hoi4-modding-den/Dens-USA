@@ -53,6 +53,12 @@ country_event = { #Entering Umatilla
 		}
 		385 = {
 			add_manpower = 3500
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
 		}
 		custom_effect_tooltip = XOR_tt_core_situation
 		
@@ -60,7 +66,7 @@ country_event = { #Entering Umatilla
 	}
 }
 
-country_event = { #Pendleton
+country_event = { #Pendleton - Oregon EastINV
 	id = XOR_events.2
 	title = XOR_events.2.t
 	desc = XOR_events.2.desc
@@ -85,10 +91,11 @@ country_event = { #Pendleton
 		custom_effect_tooltip = XOR_tt_inf_add_points_5
 		remove_ideas = XOR_running_investigation
 		
+		
 	}
 }
 
-country_event = { #Bend
+country_event = { #"Bend" (Redmond) - Oregon East
 	id = XOR_events.3
 	title = XOR_events.3.t
 	desc = XOR_events.3.desc
@@ -100,22 +107,72 @@ country_event = { #Bend
 	}
 
 	mean_time_to_happen = {
-		days = 20
+		days = 12
 	}
 
 	fire_only_once = yes
 
 	option = { 
 		name = XOR_events.3.a
-		set_country_flag = XOR_has_completed_bend
-		add_to_variable = { XOR_inv_points = 35 }
+		set_country_flag = XOR_has_completed_bend_pt1
+		add_to_variable = { XOR_inv_points = 10 }
 		add_to_variable = { XOR_num_inv = 1 }
-		custom_effect_tooltip = XOR_tt_inf_add_points_35
+		custom_effect_tooltip = XOR_tt_inf_add_points_10
 		remove_ideas = XOR_running_investigation
+		385 = {
+			add_manpower = 2033	
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		
 	}
 }
 
-country_event = { #High Desert
+country_event = { #Bend for real this time - Oregon East
+	id = XOR_events.6
+	title = XOR_events.6.t
+	desc = XOR_events.6.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	trigger = {
+		has_country_flag = XOR_has_started_bend_pt2
+		country_exists = XOR
+	}
+
+	mean_time_to_happen = {
+		days = 20
+	}
+
+	fire_only_once = yes
+
+	option = { 
+		name = XOR_events.6.a
+		set_country_flag = XOR_has_completed_bend_pt2
+		add_to_variable = { XOR_inv_points = 30 }
+		add_to_variable = { XOR_num_inv = 1 }
+		custom_effect_tooltip = XOR_tt_inf_add_points_30
+		remove_ideas = XOR_running_investigation
+		#custom_effect_tooltip = XOR_tt_inf_do_more_bend
+		385 = {
+			add_extra_state_shared_building_slots = 1
+			add_manpower = 38221
+			add_building_construction = {
+				
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}	
+		}
+		
+	}
+}
+
+
+country_event = { #High Desert - Oregon East
 	id = XOR_events.4
 	title = XOR_events.4.t
 	desc = XOR_events.4.desc
@@ -133,19 +190,51 @@ country_event = { #High Desert
 	fire_only_once = yes
 
 	option = { 
-		name = XOR_events.2.a
+		name = XOR_events.4.a #This will lead to generic Oregon
 		set_country_flag = XOR_has_completed_highdesert
-		add_to_variable = { XOR_inv_points = 25 }
+		add_to_variable = { XOR_inv_points = 15 }
 		add_to_variable = { XOR_num_inv = 1 }
-		custom_effect_tooltip = XOR_tt_inf_add_points_25
+		custom_effect_tooltip = XOR_tt_inf_add_points_15
 		remove_ideas = XOR_running_investigation
+		ai_chance = {
+			base = 1 #Equal Chance
+		}
 	}
 
 	option = { 
-		name = XOR_events.4.b
+		name = XOR_events.4.b #This will lead to WTO
+		add_political_power = -50
 		set_country_flag = XOR_has_completed_highdesert
+		set_country_flag = XOR_WELCOME_TO_OREGON_START #WILL TURN INTO WTO
 		remove_ideas = XOR_running_investigation
+		add_to_variable = { XOR_inv_points = 15 }
 		add_to_variable = { XOR_num_inv = 1 }
+		custom_effect_tooltip = XOR_tt_inf_add_points_15
+		custom_effect_tooltip = XOR_tt_will_lead_question
+		ai_chance = {
+			base = 1 #Equal Chance
+		}
 	}
 }
 
+country_event = { #Cement O.I.D. Control in the East
+	id = XOR_events.5
+	title = XOR_events.5.t
+	desc = XOR_events.5.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { 
+		name = XOR_events.5.a
+		set_country_flag = XOR_unlock_political_focus_tree
+		add_stability = 0.15
+		add_political_power = 100
+		custom_effect_tooltip = XOR_tt_unlock_political_focus_tree
+		385 = {
+			add_manpower = 93738	
+		}
+	}
+}

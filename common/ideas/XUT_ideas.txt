@@ -286,6 +286,24 @@ ideas = {
 				production_speed_buildings_factor = 0.25 		
 			}
 		}
+		XUT_dreams_of_deseret = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.25
+				annex_cost_factor = -0.1
+			}
+		}
 		
 	}
 }

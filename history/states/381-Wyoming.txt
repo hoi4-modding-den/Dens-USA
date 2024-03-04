@@ -9,9 +9,6 @@ state={
 		owner = XWY
 		add_core_of = XWY
 		victory_points = {
-			4723 20
-		}
-		victory_points = {
 			12651 10
 		}
 		victory_points = {
@@ -34,7 +31,7 @@ state={
 	}
 
 	provinces={
-		1815 4610 4723 4794 4820 7688 7814 7888 10640 10711 12561 12633 12651 
+		1815 4610 4794 4820 7688 7814 7888 10640 10711 12561 12633 12651 
 	}
 	
 

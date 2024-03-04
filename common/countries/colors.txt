@@ -935,10 +935,6 @@ XMD = {
 	color = rgb { 30 84 183 }
 	color_ui = rgb { 30 84 183 }
 }
-XMI = {
-	color = rgb { 142 102 169 }
-	color_ui = rgb { 142 102 169 }
-}
 XMN = {
 	color = rgb { 45 194 179 }
 	color_ui = rgb { 45 194 179 }
