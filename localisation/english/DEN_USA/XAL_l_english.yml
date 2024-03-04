@@ -49,6 +49,7 @@
  XAL_crush_the_salafists:0 "Crush The Salafists"
  XAL_decision_unlock_tt:0 "§GUnlocks Decisions To Influence The Future Of The Country§!"
  XAL_al_abama_influence_decisions:0 "The Question Of Leadership"
+ XAL_al_abama_influence_decisions_desc:0 "ei ole pyyhöylä"
  XAL_boost_salafist:0 "Increase §7Salafist§! Influence In The Military"
  XAL_boost_loyalist:0 "Increase §LLoyalist§! Influence In The Military"
  XAL_boost_salafist_civilian:0 "Increase Popular Support For §7Salafism§!"
@@ -66,4 +67,10 @@
  XAL_increase_foreign_mujahid_support:0 "Lure In More Mujahid Fighters"
  XAL_north_american_jihad:0 "North American Jihad"
  XAL_jihad:0 "Jihad"
+ XAL_new_mujahideen_troops_tt:0 "§GSpawns In Three New Mujahideen Divisions§!"
+ XAL_makeshift_army:0 "Serve or Perish"
+ XAL_rushed_production:0 "Quantity Over Quality"
+ XAL_serve_or_perish:0 "Serve or Perish"
+ XAL_no_gun_is_wrong_gun:0 "No Gun Is Wrong Gun"
+ XAL_feed_the_war_machine:0 "Feed The War Machine"
  

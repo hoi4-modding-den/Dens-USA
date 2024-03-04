@@ -71,6 +71,38 @@ ideas = {
 				tag = XAL
 			}
 		}
+		XAL_rushed_production = {
+			picture = XAL_shite_guns
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.2 instant = yes
+					reliability = -0.2
+				}
+
+			}
+
+			allowed = {
+				tag = XAL
+			}
+		}
+		XAL_makeshift_army = {
+			picture = XAL_makeshift_army
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				conscription_factor = 0.15
+				army_org_factor = -0.05
+			}
+			allowed = {
+				tag = XAL
+			}
+		}
 		XAL_public_sector_investments = {
 			picture = tur_varlik_vergisi
 			allowed_civil_war = {

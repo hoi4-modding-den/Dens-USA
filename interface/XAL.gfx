@@ -1,4 +1,10 @@
 spriteTypes = {
+	
+	#random stuff
+	spriteType = {
+		name = "GFX_XAL_decision_cat_influence_politics"
+		texturefile = "gfx/XAL_stuff/XAL_decision_cat_influence_politics.dds"
+	}
 
 	#national spirits
 	spriteType = {
@@ -20,6 +26,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_XAL_jihad"
 		texturefile = "gfx/XAL_stuff/XAL_jihad.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAL_makeshift_army"
+		texturefile = "gfx/XAL_stuff/XAL_serve_or_perish.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_XAL_shite_guns"
+		texturefile = "gfx/XAL_stuff/XAL_shite_guns.dds"
 	}
 	
 	#focus icons
@@ -86,6 +100,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_XAL_north_american_jihad"
 		texturefile = "gfx/XAL_stuff/XAL_north_american_jihad.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_feed_the_war_machine"
+		texturefile = "gfx/XAL_stuff/XAL_feed_the_war_machine.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_serve_or_perish_focus"
+		texturefile = "gfx/XAL_stuff/XAL_goal_serve_or_perish.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XAL_new_guns"
+		texturefile = "gfx/XAL_stuff/XAL_new_guns.dds"
 	}
 	
 	#events

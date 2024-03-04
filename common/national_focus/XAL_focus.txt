@@ -388,6 +388,37 @@ focus_tree = {
 					XAL_mujahideen 
 				}
 			}
+			custom_effect_tooltip = XAL_new_mujahideen_troops_tt
+			hidden_effect = {
+				division_template = {
+					name = "Mujahideen"
+					division_names_group = XAL_INF_03
+					priority = 0
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+  
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"Mujahideen\" division_template = \"Mujahideen\" start_experience_factor = 0.2"
+						owner = XAL
+					}
+					create_unit = {
+						division = "name = \"Mujahideen\" division_template = \"Mujahideen\" start_experience_factor = 0.2"
+						owner = XAL
+					}
+					create_unit = {
+						division = "name = \"Mujahideen\" division_template = \"Mujahideen\" start_experience_factor = 0.2"
+						owner = XAL
+					}
+				}	
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -421,7 +452,76 @@ focus_tree = {
 		}
 	}
 	
+	#salafist war machine sub tree
+	focus = {
+		id = XAL_feed_the_war_machine
+		icon = GFX_goal_XAL_feed_the_war_machine
+		x = 2
+		y = 1
+		relative_position_id = XAL_militarize_society
+		prerequisite = { focus = XAL_militarize_society }
+		cost = 5
 	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XAL_no_gun_is_wrong_gun
+		icon = GFX_goal_XAL_new_guns
+		x = 1
+		y = 1
+		relative_position_id = XAL_feed_the_war_machine
+		prerequisite = { focus = XAL_feed_the_war_machine }
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = XAL
+			}
+			add_ideas = {
+				XAL_rushed_production
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = XAL_serve_or_perish
+		icon = GFX_goal_XAL_serve_or_perish_focus
+		x = -1
+		y = 1
+		relative_position_id = XAL_feed_the_war_machine
+		prerequisite = { focus = XAL_feed_the_war_machine }
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				XAL_makeshift_army
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	#loyalist tree proper
 	focus = {
