@@ -1195,6 +1195,11 @@ country_event = XWY.2
 		completion_reward = {
 				
 kill_country_leader = yes
+
+promote_character = {
+    character = XWY_edward_VIII
+    ideology = despotism
+}
 		}
 	}
 	
@@ -1228,7 +1233,12 @@ kill_country_leader = yes
 
 
 		completion_reward = {
-	
+	kill_country_leader = yes
+
+promote_character = {
+    character = XWY_paul_washington
+    ideology = despotism
+}
 		}
 	}
 	
@@ -1262,7 +1272,7 @@ kill_country_leader = yes
 
 
 		completion_reward = {
-	
+	add_manpower = 15000
 		}
 	}
 	
@@ -1296,7 +1306,7 @@ kill_country_leader = yes
 
 
 		completion_reward = {
-	
+	set_cosmetic_tag = XWY_kingdom_1
 		}
 	}
 	
