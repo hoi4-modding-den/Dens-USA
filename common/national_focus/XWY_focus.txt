@@ -1004,8 +1004,118 @@ focus = {
 
 
 		completion_reward = {
+			news_event = {
+    id = XWY.3
+    days = 1
+    random_hours = 6
+    random_days = 3
+}
+}
+	}
 	
+	focus = {
+		id = XWY_the_groundwork_army
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = XWY_intervene_in_montana}
+		#prerequisite = { focus = XWY_look_outwards}
+		#mutually_exclusive = { focus = XWY_the_southeren_problem}
+		x = 12
+		y = 12
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
 		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+}
+	}
+	
+	focus = {
+		id = XWY_stage_a_incident
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = XWY_intervene_in_montana}
+		#prerequisite = { focus = XWY_look_outwards}
+		#mutually_exclusive = { focus = XWY_the_southeren_problem}
+		x = 16
+		y = 12
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+}
+	}
+	
+	focus = {
+		id = XWY_protector_of_montana
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = XWY_stage_a_incident}
+		prerequisite = { focus = XWY_the_groundwork_army}
+		#mutually_exclusive = { focus = XWY_the_southeren_problem}
+		x = 14
+		y = 14
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+}
 	}
 	
 		focus = {
@@ -1040,6 +1150,76 @@ focus = {
 
 		completion_reward = {
 			add_political_power = 15
+		}
+	}
+	
+	focus = {
+		id = XWY_strike_salt_lake
+		icon = GFX_focus_SOV_military_purge
+		prerequisite = { focus = XWY_the_southeren_problem}
+		#prerequisite = { focus = XWY_look_outwards}
+		#mutually_exclusive = { focus = XWY_intervene_in_montana}
+		x = 30
+		y = 12
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = XWY_the_cheyenne_accords
+		icon = GFX_focus_SOV_military_purge
+		prerequisite = { focus = XWY_the_southeren_problem}
+		#prerequisite = { focus = XWY_look_outwards}
+		#mutually_exclusive = { focus = XWY_intervene_in_montana}
+		x = 24
+		y = 12
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
 		}
 	}
 	

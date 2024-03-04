@@ -39,3 +39,16 @@ country_event = { #
 		complete_national_focus = XWY_our_own_king
 	}
 }
+
+country_event = { #
+	id = XWY.3
+	title = "Wyoming Declares Intrest in Montana!"
+	desc = "placeholder"
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #
+		name = "Wyoming!?!??!?!"
+	}
+}
