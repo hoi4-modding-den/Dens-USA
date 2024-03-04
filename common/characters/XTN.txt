@@ -360,6 +360,50 @@ logistics_skill = 4
 		#}
 	}
 
+	XTN_jozef_haller = {
+		name = "Józef Haller"
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_jozef_haller"
+				small="GFX_idea_POL_jozef_haller"
+			}
+		}
+		advisor={
+			available = {XTN = {has_completed_focus = XTN_invite_polish_generals}}
+			slot = political_advisor
+			idea_token = POL_jozef_haller
+			allowed = {
+				original_tag = XTN
+			}
+			traits = {
+				war_industrialist 
+			}
+		}
+	}
+
+	XTN_kazimierz_sosnkowski = {
+		name = "Kazimierz Sosnkowski"
+		portraits = {
+			army = {
+				small="GFX_idea_POL_kazimierz_sosnkowski"
+				large="GFX_portrait_POL_kazimierz_sosnkowski"
+			}
+		}
+		advisor = {
+			available = {XTN = {has_completed_focus = XTN_invite_polish_generals}}
+			slot = army_chief
+			idea_token = POL_kazimierz_sosnkowski
+			allowed = {
+					original_tag = XTN
+				}
+				traits = {
+					army_chief_defensive_2
+				}
+				cost = 100
+
+		}
+	}
+
 
 
 

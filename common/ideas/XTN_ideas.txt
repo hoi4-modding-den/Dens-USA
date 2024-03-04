@@ -287,4 +287,67 @@ ideas = {
 
     }
 
+   XTN_csa_claim = {
+           removal_cost = -1
+            picture = SOV_soviet_hegemony
+            modifier = {
+            
+            
+            stability_factor = 0.15
+            war_support_factor = 0.20
+            forced_surrender_limit = 0.25
+            enemy_justify_war_goal_time = 0.25
+
+
+
+
+       
+            }
+
+
+        }
+
+   XTN_mobilization_smirnov = {
+           removal_cost = -1
+            picture = chi_army_corruption3
+            modifier = {
+            war_support_factor = 0.05
+            training_time_factor = -0.6
+            minimum_training_level = -1
+            }
+
+
+        }
+
+   XTN_italian_workers = {
+           removal_cost = -1
+            picture = generic_production_bonus
+            modifier = {
+            production_factory_max_efficiency_factor = 0.1
+            production_speed_buildings_factor = 0.25
+            }
+
+
+        }
+   XTN_bulgarian_workers = {
+           removal_cost = -1
+            picture = bul_national_industry
+            modifier = {
+            consumer_goods_factor = -0.1
+            }
+
+
+        }
+   XTN_economical_strain = {
+           removal_cost = -1
+            picture = chi_hyper_inflation5
+            modifier = {
+            consumer_goods_factor = 0.35
+            production_speed_buildings_factor = -0.5 
+
+            }
+
+
+        }
+
 }

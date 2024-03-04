@@ -1,7 +1,5 @@
 
-############## TODO Naprawić te jebane character file ##################################
-############## Path do SocDema Francuzów i Supreme Sovieta #############################
-############## Agrarian Path i Fascist path ############################################
+
 
 
 
@@ -214,6 +212,15 @@ add_popularity = {
            #recruit_character = XTN_union_of_egoists
             retire_character = XTN_benjamin_tucker
             set_cosmetic_tag = XTN_Egoist
+            add_country_leader_role = {
+            character = XTN_union_of_egoists
+            promote_leader = yes
+            country_leader = {
+        ideology = anarchism
+        expire = "1965.1.1.1"
+        traits = { XTN_union_of_egoists_trait }
+                }
+            }
             remove_ideas = {XTN_inteligensia_influence XTN_immigration}
             add_ideas = {XTN_spirit_of_stirner}
 
@@ -2497,6 +2504,287 @@ add_ideas = { XTN_inteligensia_manifesto }
     }
 
   focus = {
+    id = XTN_mobilization_campaign
+    x = 21
+    y = 18
+    icon = GFX_focus_ITA_corpo_volontari_della_liberta
+
+    prerequisite = { focus = XTN_ivan_smirnov_rule }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        army_experience = 25
+        add_timed_idea = {
+        idea = XTN_mobilization_smirnov
+        days = 180
+            }
+
+    }
+
+    }
+
+  focus = {
+    id = XTN_support_alcohol_industry
+    x = 17
+    y = 18
+    icon = GFX_focus_FIN_oy_alkoholiliike
+
+    prerequisite = { focus = XTN_ivan_smirnov_rule }
+    available = {362 = {is_owned_by = XTN}}
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+           362 = {
+            add_building_construction = {
+            type = industrial_complex
+            level = 3
+            instant_build = yes
+                    }
+            }
+
+
+    }
+
+    }
+
+  focus = {
+    id = XTN_invite_italians
+    x = 15
+    y = 19
+    icon = GFX_focus_ETH_invite_italian_settlers
+
+    prerequisite = { focus = XTN_support_alcohol_industry }
+
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_manpower = 10000
+        add_ideas = {XTN_italian_workers}
+
+
+
+    }
+
+    }
+
+  focus = {
+    id = XTN_la_oil
+    x = 18
+    y = 19
+    icon = GFX_goal_generic_oil_refinery
+
+    prerequisite = { focus = XTN_support_alcohol_industry }
+    available = {371 = {is_owned_by = XTN}}
+
+
+
+    cost = 10
+    
+
+    completion_reward = {
+        add_resource = {
+        type = oil
+        amount = 15
+        state = 371
+            }
+
+    }
+
+    }
+
+  focus = {
+    id = XTN_expand_farmlands
+    x = 17
+    y = 20
+    icon = GFX_focus_generic_farmland
+
+    prerequisite = { focus = XTN_support_alcohol_industry }
+
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_offsite_building = { type = industrial_complex level = 3 }
+
+
+    }
+
+    }
+  focus = {
+    id = XTN_invite_bulgarians
+    x = 15
+    y = 21
+    icon = GFX_focus_BUL_promote_bulgarian_nationalism
+
+    prerequisite = { focus = XTN_invite_italians }
+    prerequisite = { focus = XTN_expand_farmlands }
+
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_offsite_building = { type = industrial_complex level = 1 }
+        add_ideas = {XTN_bulgarian_workers}
+
+    }
+
+    }
+  focus = {
+    id = XTN_arm_workers
+    x = 19
+    y = 21
+    icon = GFX_focus_generic_workers_and_farmers_rise
+
+    prerequisite = { focus = XTN_expand_farmlands }
+
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+set_division_template_lock = {
+    division_template = "Militia"
+    is_locked = no
+}
+
+
+    }
+
+    }
+
+  focus = {
+    id = XTN_bukharin_reforms
+    x = 17
+    y = 22
+    icon = GFX_focus_SOV_bukharinists
+
+    prerequisite = { focus = XTN_arm_workers }
+    prerequisite = { focus = XTN_invite_bulgarians }
+
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_political_power = 150
+        add_ideas = {XTN_economical_strain}
+
+
+    }
+
+    }
+
+ focus = {
+    id = XTN_support_coffee_farms
+    x = 15
+    y = 23
+    icon = GFX_focus_generic_coffee
+
+    prerequisite = { focus = XTN_bukharin_reforms }
+
+
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+    add_offsite_building = { type = industrial_complex level = 1 }
+
+    }
+ }
+  focus = {
+    id = XTN_support_tank_industry
+    x = 17
+    y = 23
+    icon = GFX_focus_generic_tank_production
+
+    prerequisite = { focus = XTN_bukharin_reforms }
+
+
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+add_tech_bonus = {
+    bonus = 0.5
+    uses = 1
+    category = armor
+}
+
+    }
+
+    }
+
+  focus = {
+    id = XTN_invite_polish_generals
+    x = 19
+    y = 23
+    icon = GFX_focus_generic_polish_deal
+
+    prerequisite = { focus = XTN_bukharin_reforms }
+
+
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        XTN_jozef_haller = {
+            add_corps_commander_role = {
+            skill = 4
+            attack_skill = 4
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+                }
+        }
+        XTN_kazimierz_sosnkowski = {
+            add_corps_commander_role = {
+            skill = 3
+            attack_skill = 3
+            defense_skill = 5
+            planning_skill = 3
+            logistics_skill = 5
+                }
+
+
+        }
+    }
+
+    }
+
+
+
+  focus = {
     id = XTN_unite_carolina
     x = 23
     y = 19
@@ -2514,6 +2802,217 @@ add_ideas = { XTN_inteligensia_manifesto }
             target = XSC
             type = annex_everything
                 }
+
+    }
+
+    }
+
+  focus = {
+    id = XTN_strike_georgia
+    x = 23
+    y = 20
+    icon = GFX_focus_SOV_builder_of_the_red_army
+
+    prerequisite = { focus = XTN_unite_carolina }
+
+
+    cost = 2
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XGA
+            type = annex_everything
+                }
+
+    }
+
+    }
+
+  focus = {
+    id = XTN_strike_fl
+    x = 23
+    y = 21
+    icon = GFX_focus_spa_the_war_of_vengeance
+
+    prerequisite = { focus = XTN_strike_georgia }
+
+
+    cost = 2
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XFL
+            type = annex_everything
+                }
+
+    }
+
+    }
+
+  focus = {
+    id = XTN_swamp_road
+    x = 23
+    y = 22
+    icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+
+    prerequisite = { focus = XTN_strike_fl }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XAL
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XMS
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XLA
+            type = annex_everything
+                }
+
+    }
+
+    }
+
+  focus = {
+    id = XTN_strike_tx
+    x = 24
+    y = 23
+    icon = GFX_focus_generic_join_comintern
+
+    prerequisite = { focus = XTN_swamp_road }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XTX
+            type = annex_everything
+                }
+
+
+
+    }
+
+    }
+
+  focus = {
+    id = XTN_strike_ok
+    x = 22
+    y = 23
+    icon = GFX_focus_generic_join_comintern
+
+    prerequisite = { focus = XTN_swamp_road }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XOK
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XAR
+            type = annex_everything
+                }
+
+
+
+    }
+
+    }
+
+  focus = {
+    id = XTN_honor_the_confederacy
+    x = 23
+    y = 24
+    icon = GFX_focus_usa_honor_the_confederacy
+
+    prerequisite = { focus = XTN_strike_ok }
+    prerequisite = { focus = XTN_strike_tx }
+    available = {362 = {is_owned_by = XTN} 367 = {is_owned_by = XTN} 375 = {is_owned_by = XTN} 371 = {is_owned_by = XTN} }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        set_cosmetic_tag = XTN_CSA
+
+        set_capital = {
+        state = 362
+        remember_old_capital = no
+            }
+
+        364 = {
+
+            add_core_of = XTN
+
+        }
+        365 = {
+
+            add_core_of = XTN
+
+        }
+        366 = {
+
+            add_core_of = XTN
+
+        }
+        367 = {
+
+            add_core_of = XTN
+
+        }
+        370 = {
+
+            add_core_of = XTN
+
+        }
+        371 = {
+
+            add_core_of = XTN
+
+        }
+        375 = {
+
+            add_core_of = XTN
+
+        }
+        372 = {
+
+            add_core_of = XTN
+
+        }
+        374 = {
+
+            add_core_of = XTN
+
+        }
+        swap_ideas = {
+           remove_idea = XTN_usa_claim
+           add_idea = XTN_csa_claim 
+            }
+
 
     }
 
@@ -2651,6 +3150,14 @@ custom_effect_tooltip = XTN_trotskists
 #recruit_character = XTN_ivan_smirnov
 #recruit_character = XTN_karl_radek
 #recruit_character = XTN_nikolay_bukharin
+	add_corps_commander_role = {
+    character = XTN_ivan_smirnov
+    skill = 3
+    attack_skill = 3
+    defense_skill = 5
+    planning_skill = 2
+    logistics_skill = 5
+	}
 
 
         }

@@ -7,3 +7,7 @@ XTN_USA = {
     color = rgb { 255 26 26 }
     color_ui = rgb { 255 255 155 }
 }
+XTN_CSA = {
+    color = rgb {214 214 194}
+    color_ui = rgb { 255 255 155 }
+}

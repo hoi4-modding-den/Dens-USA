@@ -9,6 +9,9 @@ XTN_USA_communism:0 "United Socialist States of America"
 XTN_USA_democratic:0 "United States"
 XTN_USA:0 "United States"
 
+XTN_CSA_communism:0 "Communist Confederate States of America"
+XTN_CSA:0 "Confederate States of America"
+
 VICTORY_POINTS_7797:0 "Memphis"
 VICTORY_POINTS_1758:0 "Knoxville"
 VICTORY_POINTS_7791:0 "Pigeon Forge"
@@ -115,6 +118,21 @@ XTN_new_democracy_desc:0 "We have reinstated elections and became a protector of
 
 XTN_state_atheism_idea:0 "State Atheism"
 XTN_state_atheism_idea_desc:0 "Religion is opium for the masses - Karl Marx"
+
+XTN_csa_claim:0 "Head of CSA"
+XTN_csa_claim_desc:0 "We are content with us not being central government of USA and that's okay."
+
+XTN_mobilization_smirnov:0 "Rapid Mobilization"
+XTN_mobilization_smirnov_desc:0 "We need every man in entire USA to protect socialism in america."
+
+XTN_italian_workers:0 "Italian Workers"
+XTN_italian_workers_desc:0 "Italian workers are escaping Italy to protect themselfs from fascist oppressors. Great cheap labour."
+
+XTN_bulgarian_workers:0 "Bulgarian Farmers"
+XTN_bulgarian_workers_desc:0 "Bulgarians are great farmers and we are more than welcome to them."
+
+XTN_economical_strain:0 "Economical Strain"
+XTN_economical_strain_desc:0 "Bukharin reforms will put our country into a new era ,but they cause a giant strain on our economy."
 
 
  
@@ -411,3 +429,54 @@ XTN_southern_campaign_desc:0 "Smirnov's idea is to unite the south to liberate f
 
 XTN_unite_carolina:0 "Unite Carolina"
 XTN_unite_carolina_desc:0 " "
+
+XTN_strike_georgia:0 "Strike Georgia"
+XTN_strike_georgia_desc:0 " "
+
+XTN_strike_fl:0 "Strike Florida"
+XTN_strike_fl_desc:0 " "
+
+XTN_swamp_road:0 "Swamp Offensive"
+XTN_swamp_road_desc:0 "Our plan is to reach Mississippi and capture New Orleans."
+
+XTN_strike_tx:0 "Strike Texas"
+XTN_strike_tx_desc:0 "Our final plan of our offensive is to reach mexican border."
+
+XTN_strike_ok:0 "Oklahoma Road"
+XTN_strike_ok_desc:0 "First stop Little Rock! Then we will liberate workers of Oklahoma"
+
+XTN_honor_the_confederacy:0 "Honor the confederacy"
+XTN_honor_the_confederacy_desc:0 "We are content with the state of the nation. Our territories in deep south remind us of Confederacy and we will continue it's legacy."
+
+XTN_mobilization_campaign:0 "Mobilization Campaign"
+XTN_mobilization_campaign_desc:0 "WE need EVERY man and woman to join in fight against capitalism."
+
+XTN_support_alcohol_industry:0 "Support Alcohol Industry"
+XTN_support_alcohol_industry_desc:0 "We will bring best russian tradition to USA. Alcoholism!"
+
+XTN_invite_italians:0 "Invite Italians"
+XTN_invite_italians_desc:0 "A lot of Italians are escaping fascist imperialists. They will help improve our economy as they are source of free labour."
+
+XTN_la_oil:0 "Louisiana Oil"
+XTN_la_oil_desc:0 "Our commune is running out of fuel for our army. We will expand Louisiana oil fields."
+
+XTN_expand_farmlands:0 "Expand Farmlands"
+XTN_expand_farmlands_desc:0 "Farmlands are our future we must invest in agriculture."
+
+XTN_invite_bulgarians:0 "Invite Bulgarians"
+XTN_invite_bulgarians_desc:0 "Bulgarians mostly come from rual regions. We can invite them to work for us."
+
+XTN_arm_workers:0 "Arm the Workers"
+XTN_arm_workers_desc:0 "Militia divisions were backbone of tennesse even though it was long time we can still used armed workers."
+
+XTN_bukharin_reforms:0 "Bukharin Reforms"
+XTN_bukharin_reforms_desc:0 "Commrade bukharin has prepared a complicated economical plan that will put us in a new century. Downsides? Economical Strain."
+
+XTN_support_coffee_farms:0 "Support Coffee Farms"
+XTN_support_coffee_farms_desc:0 "A popular drug. We will expand it's production."
+
+XTN_support_tank_industry:0 "Support Tank Industry"
+XTN_support_tank_industry_desc:0 "Modern army cannot just run around without armor support."
+
+XTN_invite_polish_generals:0 "Invite Polish Generals"
+XTN_invite_polish_generals_desc:0 "Poles have been oppressed by soviet and german governments. We will help them find new life in america."
