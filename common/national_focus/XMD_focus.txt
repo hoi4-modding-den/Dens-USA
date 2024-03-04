@@ -52,7 +52,7 @@
 	
 	focus = {
 		id = XMD_fix_the_present_problems
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_goal_generic_production
 		prerequisite = { focus = XMD_the_president_from_the_future }
 		x = 0
 		y = 1
@@ -88,7 +88,7 @@
 	
 	focus = {
 		id = XMD_recover_the_economy
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_DEN_no_regulations
 		prerequisite = { focus = XMD_fix_the_present_problems }
 		x = -2
 		y = 1
@@ -120,7 +120,7 @@
 	
 	focus = {
 		id = XMD_mend_the_political_divide
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = XMD_fix_the_present_problems }
 		x = 2
 		y = 1
@@ -153,7 +153,7 @@
 	
 	focus = {
 		id = XMD_build_back_better_act
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = XMD_mend_the_political_divide }
 		prerequisite = { focus = XMD_recover_the_economy }
 		mutually_exclusive = { focus = XMD_end_the_experiment }
@@ -245,7 +245,7 @@
 	
 	focus = {
 		id = XMD_win_the_hearts_of_the_people
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
 		prerequisite = { focus = XMD_build_back_better_act }
 		x = -7
 		y = 1
@@ -280,13 +280,13 @@
 	
 	focus = {
 		id = XMD_the_new_deal
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_generic_american_investments
 		prerequisite = { focus = XMD_win_the_hearts_of_the_people }
 		x = 0
 		y = 1
 		relative_position_id = XMD_win_the_hearts_of_the_people
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 1
@@ -329,10 +329,10 @@
 	
 	focus = {
 		id = XMD_further_the_progressive_reforms
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = XMD_the_new_deal}
 		mutually_exclusive = { focus = XMD_walk_the_fine_line}
-		x = -7
+		x = -6
 		y = 1
 		relative_position_id = XMD_the_new_deal
 
@@ -380,13 +380,13 @@
 	
 	focus = {
 		id = XMD_establish_a_great_society
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_generic_family
 		prerequisite = { focus = XMD_further_the_progressive_reforms}
 		x = 0
 		y = 1
 		relative_position_id = XMD_further_the_progressive_reforms
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 1
@@ -451,7 +451,7 @@
 	
 	focus = {
 		id = XMD_war_on_poverty
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_generic_concessions
 		prerequisite = { focus = XMD_establish_a_great_society}
 		x = -4
 		y = 1
@@ -500,7 +500,7 @@
 	
 	focus = {
 		id = XMD_higher_education_act
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_generic_university_2
 		prerequisite = { focus = XMD_war_on_poverty}
 		x = -2
 		y = 1
@@ -544,7 +544,7 @@
 	
 	focus = {
 		id = XMD_social_security_act
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_generic_field_hostpital
 		prerequisite = { focus = XMD_war_on_poverty}
 		x = 0
 		y = 1
@@ -598,7 +598,7 @@
 	
 	focus = {
 		id = XMD_champion_civil_rights
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = XMD_establish_a_great_society}
 		x = 4
 		y = 1
@@ -685,7 +685,7 @@
 	
 	focus = {
 		id = XMD_bolster_progressive_militias
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_generic_workers
 		prerequisite = { focus = XMD_meet_with_civil_rights_leaders}
 		x = 0
 		y = 1
@@ -723,7 +723,7 @@
 	
 	focus = {
 		id = XMD_break_down_jim_crow
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_renounce_the_treaty_of_trianon
 		prerequisite = { focus = XMD_champion_civil_rights}
 		x = -4
 		y = 1
@@ -774,7 +774,7 @@
 	
 	focus = {
 		id = XMD_desegregate_the_government
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_generic_desegregation
 		prerequisite = { focus = XMD_break_down_jim_crow focus = XMD_regional_development_act}
 		x = -1
 		y = 1
@@ -820,7 +820,7 @@
 	
 	focus = {
 		id = XMD_ensure_a_majority_in_congress
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_SWI_dissolve_the_federal_council
 		prerequisite = { focus = XMD_champion_civil_rights}
 		x = -2
 		y = 1
@@ -867,7 +867,7 @@
 	
 	focus = {
 		id = XMD_incentives_for_support
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_mex_privatisation
 		prerequisite = { focus = XMD_ensure_a_majority_in_congress}
 		x = 1
 		y = 1
@@ -903,7 +903,7 @@
 	
 	focus = {
 		id = XMD_put_pressure_on_the_opposition
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = XMD_ensure_a_majority_in_congress}
 		x = -1
 		y = 1
@@ -939,7 +939,7 @@
 	
 	focus = {
 		id = XMD_the_black_scare
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_ITA_liberation_or_death
 		prerequisite = { focus = XMD_put_pressure_on_the_opposition}
 		x = 0
 		y = 1
@@ -974,7 +974,7 @@
 	
 	focus = {
 		id = XMD_the_civil_rights_act_of_year
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = XMD_champion_civil_rights}
 		x = 0
 		y = 4
@@ -1016,63 +1016,44 @@
 			if = {
 
 				limit = {
-
 					#100
 
 					check_variable = { XMD_cra_success_rate > 100}
-
 				}
-
 				custom_effect_tooltip = XMD_will_pass
-
 			}
 
 			else_if = {
 
 				limit = {
-
 					#60 - 99
 
 					check_variable = { XMD_cra_success_rate > 59 }
-
 					check_variable = { XMD_cra_success_rate < 100 }
-
 				}
-
 				custom_effect_tooltip = XMD_likely_to_pass
-
 			}
 
 			else_if = {
 
 				limit = {
-
 					#40 - 59
 
 					check_variable = { XMD_cra_success_rate > 39 }
-
 					check_variable = { XMD_cra_success_rate < 60 }
-
 				}
-
 				custom_effect_tooltip = XMD_might_pass
-
 			}
 
 			else_if = {
 
 				limit = {
-
 					#1 - 39
 
 					check_variable = { XMD_cra_success_rate > 0 }
-
 					check_variable = { XMD_cra_success_rate < 40 }
-
 				}
-
 				custom_effect_tooltip = XMD_unlikely_to_pass
-
 			}
 
 			else = {
@@ -1107,7 +1088,7 @@
 	
 	focus = {
 		id = XMD_regional_development_act
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_SWE_urbanization
 		prerequisite = { focus = XMD_champion_civil_rights}
 		prerequisite = { focus = XMD_war_on_poverty}
 		x = 2
@@ -1187,7 +1168,7 @@
 	
 	focus = {
 		id = XMD_equal_opportunites_act
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		prerequisite = { focus = XMD_regional_development_act}
 		prerequisite = { focus = XMD_social_security_act}
 		prerequisite = { focus = XMD_higher_education_act}
@@ -1195,7 +1176,7 @@
 		y = 2
 		relative_position_id = XMD_war_on_poverty
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 1
@@ -1310,7 +1291,7 @@
 	
 	focus = {
 		id = XMD_ground_transportation_act
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_generic_railroads
 		prerequisite = { focus = XMD_equal_opportunites_act}
 		x = 1
 		y = 1
@@ -1437,7 +1418,7 @@
 	
 	focus = {
 		id = XMD_endowment_for_arts_and_humanities_act
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = XMD_equal_opportunites_act}
 		x = -1
 		y = 1
@@ -1486,14 +1467,14 @@
 	
 	focus = {
 		id = XMD_fair_labor_standards_act
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_generic_labourist
 		prerequisite = { focus = XMD_endowment_for_arts_and_humanities_act}
 		prerequisite = { focus = XMD_ground_transportation_act}
 		x = 1
 		y = 1
 		relative_position_id = XMD_endowment_for_arts_and_humanities_act
 
-		cost = 10
+		cost = 8
 
 		ai_will_do = {
 			factor = 1
@@ -1630,15 +1611,74 @@
 	}
 	
 	focus = {
-		id = XMD_the_giant_wakes
-		icon = GFX_focus_spa_eliminate_the_carlists
+		id = XMD_the_american_dream
+		icon = GFX_focus_usa_guarantee_the_american_dream
 		prerequisite = { focus = XMD_the_civil_rights_act_of_year}
 		prerequisite = { focus = XMD_fair_labor_standards_act}
 		x = 4
 		y = 1
 		relative_position_id = XMD_fair_labor_standards_act
 
-		cost = 10
+		cost = 8
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			custom_effect_tooltip = XMD_gs_modify_header_tt
+			add_to_variable = {
+				var = XMD_great_society_stability_factor
+				value = 0.1
+				tooltip = XMD_great_society_stability_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_monthly_population
+				value = 0.2
+				tooltip = XMD_great_society_monthly_population_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_production_factory_efficiency_gain_factor
+				value = 0.05
+				tooltip = XMD_great_society_production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				var = XMD_great_society_consumer_goods_factor
+				value = 0.05
+				tooltip = XMD_great_society_consumer_goods_factor_tt
+			}
+			set_variable = {
+				var = XMD_conservative_contentness_decrease
+				value = -0.5
+				tooltip = XMD_great_society_conservative_contentness_tt
+			}
+			add_political_power = 200
+		}
+	}
+	
+	focus = {
+		id = XMD_the_giant_wakes
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = XMD_the_american_dream}
+		x = 7
+		y = 2
+		relative_position_id = XMD_the_american_dream
+
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1756,7 +1796,7 @@
 	
 	focus = {
 		id = XMD_walk_the_fine_line
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_SWI_neutrality_on_the_move
 		prerequisite = { focus = XMD_the_new_deal}
 		mutually_exclusive = { focus = XMD_further_the_progressive_reforms}
 		x = 6
@@ -1807,7 +1847,7 @@
 	
 	focus = {
 		id = XMD_end_the_experiment
-		icon = GFX_focus_spa_eliminate_the_carlists
+		icon = GFX_focus_generic_total_war
 		prerequisite = { focus = XMD_mend_the_political_divide }
 		prerequisite = { focus = XMD_recover_the_economy }
 		mutually_exclusive = { focus = XMD_build_back_better_act }

@@ -6,6 +6,42 @@ spriteTypes = {
 		texturefile = "gfx/leaders/XMD/XMD_joe.dds"
 	}
 
+	#focus icons
+	
+	spriteType = {
+		name = "GFX_focus_generic_labourist"
+		texturefile = "gfx/XMD_gfx/Focus_Generic_Labourist.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_generic_liberty"
+		texturefile = "gfx/XMD_gfx/Generic_Blue_Democracy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_generic_family"
+		texturefile = "gfx/XMD_gfx/Generic_Family.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_generic_manifest_destiny"
+		texturefile = "gfx/XMD_gfx/Generic_Manifest_Destiny.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_generic_railroads"
+		texturefile = "gfx/XMD_gfx/Generic_Railroads.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_generic_workers_democracy"
+		texturefile = "gfx/XMD_gfx/Generic_Workers_Democracy.png"
+	}
+	
+	spriteType = {
+		name = "GFX_focus_generic_desegregation"
+		texturefile = "gfx/XMD_gfx/XMD_desegregation.dds"
+	}
 	
 }
  

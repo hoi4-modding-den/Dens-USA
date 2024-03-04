@@ -12,6 +12,18 @@ XMD_cc_change = {
         }
         XMD_cc_civil_war = yes
     }
+    else_if = {
+        limit = {
+            has_variable = XMD_conservative_contentness
+            check_variable = { XMD_conservative_contentness < 6}
+            check_variable = { XMD_conservative_contentness > 0}
+			has_country_flag = XMD_conservative_backlash_start_flag
+        }
+        country_event = {
+            id = XMD_political_events.18
+            hours = 12
+        }
+    }
 }
 
 XMD_cc_civil_war = {

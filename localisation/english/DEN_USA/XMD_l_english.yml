@@ -5,7 +5,7 @@
 
  XMD_joe_biden: "Joe Biden"
  XMD_the_president_from_the_future: "The President From the Future"
- XMD_the_president_from_the_future_1: "$XMD_the_president_from_the_future$"
+ XMD_the_president_from_the_future_1: "Hearts of Iron (IV)"
  XMD_george_santos: "George Santos"
  XMD_gay: "Light-Hearted and Carefree"
 
@@ -18,6 +18,9 @@
  XMD_fascism_party_long: "Make America Great Again Party"
 
  #Event
+
+ XMD_political_events.18.t: "Reports of Clashes in the Street"
+
  XMD_the_south_will_join_the_conservatives_in_the_civil_war_tt: "§YThe South and the North will flip allegience in a potential civil war.§!"
  XMD_will_pass: "§GIt will certainly pass.§!"
  XMD_likely_to_pass: "§7It is likely to pass.§!"
@@ -30,6 +33,38 @@
  XMD_the_people_wait: "Minorities wait, with bated breath, to know whether or not they are humans..."
 
  #Focus 
+ XMD_the_president_from_the_future: "The President From The Future"
+ XMD_fix_the_present_problems: "Fix The Problems Of The Past"
+ XMD_recover_the_economy: "American Rescue Plan"
+ XMD_mend_the_political_divide: "Reach Across The Aisle"
+ XMD_build_back_better_act: "Build Back Better Act"
+ XMD_win_the_hearts_of_the_people: "Win The Peoples' Hearts"
+ XMD_the_new_deal: "Continue The New Deal"
+ XMD_further_the_progressive_reforms: "Further The Progressive Reforms"
+ XMD_establish_a_great_society: "Establish A Great Society"
+ XMD_war_on_poverty: "War On Poverty"
+ XMD_higher_education_act: "Higher Education Act"
+ XMD_social_security_act: "Social Security Act"
+ XMD_champion_civil_rights: "Champion Civil Rights"
+ XMD_meet_with_civil_rights_leaders: "Meet With Civil Rights Leaders"
+ XMD_bolster_progressive_militias: "Fund Progressive Militias"
+ XMD_break_down_jim_crow: "Break Jim Crow"
+ XMD_desegregate_the_government: "Desegregate The Government"
+ XMD_ensure_a_majority_in_congress: "Ensure A Majority In Congress"
+ XMD_incentives_for_support: "Sweeten The Deal"
+ XMD_put_pressure_on_the_opposition: "Put Pressure On The Opposition"
+ XMD_the_black_scare: "The Black Scare"
+ XMD_the_civil_rights_act_of_year: "The Civil Rights Act of [GetYear]"
+ XMD_regional_development_act: "Regional Development Act"
+ XMD_equal_opportunites_act: "Equal Opportunities Act"
+ XMD_ground_transportation_act: "Ground Transportation Act"
+ XMD_endowment_for_arts_and_humanities_act: "Endowment For Arts and Humanities Act"
+ XMD_fair_labor_standards_act: "Fair Labor Standards Act"
+ XMD_the_american_dream: "The American Dream"
+ XMD_the_giant_wakes: "The Giant Wakes"
+ XMD_walk_the_fine_line: "Walk The Fine Line"
+ XMD_end_the_experiment: "End The American Experiment"
+ 
  XMD_cra_tt: "Civil Rights Act Success Rate"
  XMD_cc_tt: "Conservative Contentness"
  XMD_cra_success_rate_var_tt: "$XMD_cra_tt$: $RIGHT|+=%%0$"
@@ -47,6 +82,11 @@
  XMD_militia_based_army: "Militia-Based Army"
  XMD_deadlocked_politics: "Deadlocked Politics"
  XMD_the_two_party_system: "The Two Party Sytem"
+ XMD_enforced_majority: "Enforced Majority"
+ XMD_the_black_scare_idea: "The Black Scare"
+ XMD_bidens_reign: "Biden's Reign"
+ XMD_rise_of_the_klan: "Rise of the Klan"
+ XMD_the_shadow_organisation: "The Shadow Organisation"
 
  #Dynamic modifiers
  XMD_the_great_society_idea: "The Great Society"
