@@ -478,6 +478,7 @@ add_to_variable = {
 
 		completion_reward = {
 			add_ideas = XWY_communism
+			 custom_effect_tooltip = XWY_communist_tt
 		}
 	}
 	
@@ -656,7 +657,8 @@ focus = {
 
 
 		completion_reward = {
-	
+			custom_effect_tooltip = XWY_social_tt
+			add_ideas = XWY_radicalism
 		}
 	}
 	
@@ -691,7 +693,8 @@ focus = {
 
 
 		completion_reward = {
-	
+			add_stability = 0.05
+			add_manpower = 5000
 		}
 	}
 	
@@ -726,7 +729,7 @@ focus = {
 
 
 		completion_reward = {
-	
+			add_ideas = XWY_rallied_military
 		}
 	}
 	
@@ -761,7 +764,19 @@ focus = {
 
 
 		completion_reward = {
-	
+			start_civil_war = {
+    ruling_party = fascism
+    # Original country's ideology changes to communism
+    ideology = ROOT
+    # Breakaway gets old ideology of ROOT
+    size = 0.8
+    capital = 960
+    states = {
+        960
+    }
+    keep_political_leader = yes
+    keep_political_party_members = yes
+}
 		}
 	}
 	
@@ -783,6 +798,7 @@ focus = {
 		}
 
 		available = {
+			has_civil_war = no
 
 		}
 		
@@ -796,7 +812,7 @@ focus = {
 
 
 		completion_reward = {
-	
+			set_cosmetic_tag = XWY_fascist_1
 		}
 	}
 	
@@ -831,7 +847,13 @@ focus = {
 
 
 		completion_reward = {
-	
+			960 = {
+					add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+}
+			}
 		}
 	}
 	
@@ -868,7 +890,13 @@ focus = {
 
 
 		completion_reward = {
-	
+			add_manpower = 20000
+			army_experience = 20
+			add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 9500
+    producer = XWY
+}
 		}
 	}
 	
@@ -903,7 +931,10 @@ focus = {
 
 
 		completion_reward = {
-	
+			add_popularity = {
+    ideology = ROOT
+    popularity = 0.45
+}
 		}
 	}
 	
@@ -938,7 +969,7 @@ focus = {
 
 
 		completion_reward = {
-	
+			add_political_power = 150
 		}
 	}
 	
@@ -988,7 +1019,7 @@ focus = {
 		#relative_position_id = 
 
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
@@ -1008,7 +1039,7 @@ focus = {
 
 
 		completion_reward = {
-	
+			add_political_power = 15
 		}
 	}
 	
@@ -1043,7 +1074,7 @@ focus = {
 
 
 		completion_reward = {
-	
+			add_stability = 0.01
 		}
 	}
 	
@@ -1065,8 +1096,8 @@ focus = {
 		}
 
 		available = {
-			check_variable = { cattle_baron_power > 3 }
-			check_variable = { small_ranches_power > 7 }
+			check_variable = { cattle_baron_power > 5 }
+			check_variable = { small_ranches_power > 5 }
 		}
 		
 		bypass = {
@@ -1080,6 +1111,7 @@ focus = {
 
 		completion_reward = {
 			add_ideas = XWY_royalist_sentiment
+			custom_effect_tooltip =  XWY_royal_tt
 		}
 	}
 	

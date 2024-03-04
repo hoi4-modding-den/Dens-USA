@@ -64,3 +64,7 @@
  XWY_COM_2:0 "Unified Peoples Republics"
  XWY_COM_3:0 "The Peoples Republic of America"
  XWY_kingdom_1:0 "The Kingdom of Wyoming"
+ XWY_fascist_1:0 "The National Reublic Wyoming"
+ XWY_social_tt:0 "Needs More Than 5 Small Ranch Power And Less than 5 Cattle Baron"
+ XWY_communist_tt:0 "Needs less than five on all Mana"
+ XWY_royal_tt:0 "Needs more than five on all Mana"

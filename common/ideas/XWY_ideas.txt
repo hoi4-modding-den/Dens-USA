@@ -115,5 +115,42 @@ ideas = {
 				neutrality_drift = 0.03
 			}
 		}
+		
+		XWY_radicalism= {
+			picture = LIT_invested_in_farms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.07
+			}
+		}
+		
+		XWY_rallied_military= {
+			picture = LIT_invested_in_farms
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_speed_factor = 0.05
+			}
+		}
 	}
 }

@@ -23,6 +23,24 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
+	
+	division = { 
+		name =  "Jackson Police"
+		location = 12651 # Copenhagen
+		division_template = "Police Force"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
+	
+	division = { 
+		name =  "Wyoming National Guard"
+		location = 12633 # Copenhagen
+		division_template = "Police Force"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+
+	}
 }
 
 ### Starting Production ###
