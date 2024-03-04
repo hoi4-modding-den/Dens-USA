@@ -53,6 +53,7 @@ country_event = { #Entering Umatilla
 		}
 		385 = {
 			add_manpower = 3500
+			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
 				level = 2
@@ -65,7 +66,7 @@ country_event = { #Entering Umatilla
 	}
 }
 
-country_event = { #Pendleton - Oregon East
+country_event = { #Pendleton - Oregon EastINV
 	id = XOR_events.2
 	title = XOR_events.2.t
 	desc = XOR_events.2.desc
@@ -120,6 +121,7 @@ country_event = { #"Bend" (Redmond) - Oregon East
 		remove_ideas = XOR_running_investigation
 		385 = {
 			add_manpower = 2033	
+			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
 				level = 1
@@ -152,12 +154,14 @@ country_event = { #Bend for real this time - Oregon East
 		set_country_flag = XOR_has_completed_bend_pt2
 		add_to_variable = { XOR_inv_points = 30 }
 		add_to_variable = { XOR_num_inv = 1 }
-		custom_effect_tooltip = XOR_tt_inf_add_points_35
+		custom_effect_tooltip = XOR_tt_inf_add_points_30
 		remove_ideas = XOR_running_investigation
 		#custom_effect_tooltip = XOR_tt_inf_do_more_bend
 		385 = {
+			add_extra_state_shared_building_slots = 1
 			add_manpower = 38221
 			add_building_construction = {
+				
 				type = arms_factory
 				level = 1
 				instant_build = yes

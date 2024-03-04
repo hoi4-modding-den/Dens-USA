@@ -287,6 +287,239 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = XOR_shift_more_funding_to_OID
+		icon = GFX_goal_continuous_naval_production
+		x = 0
+		y = 2
+        		cost = 5
+
+		relative_position_id = XOR_expand_the_OID
+		prerequisite = { focus = XOR_build_up_OID_base focus = XOR_infrastructure_project }
+		mutually_exclusive = { focus = XOR_exert_federal_control }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_explore_east_trigger
+				has_country_flag = XOR_has_created_OID
+			}
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_has_controlled_east
+				has_country_flag = XOR_unlock_political_focus_tree
+			}
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = XOR_establish_new_govt
+		icon = GFX_goal_continuous_naval_production
+		x = 16
+		y = 2
+        		cost = 5
+
+		relative_position_id = XOR_oregon_investigation_dept
+		prerequisite = { focus = XOR_oregon_investigation_dept }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_has_controlled_east
+				has_country_flag = XOR_unlock_political_focus_tree
+			}
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = XOR_exert_federal_control
+		icon = GFX_goal_continuous_naval_production
+		x = 0
+		y = 1
+        		cost = 5
+
+		relative_position_id = XOR_establish_new_govt
+		prerequisite = { focus = XOR_establish_new_govt }
+		mutually_exclusive = { focus = XOR_shift_more_funding_to_OID }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL}
+
+		available = {
+			country_exists = XOR
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = XOR_move_capital
+		icon = GFX_goal_continuous_naval_production
+		x = 2
+		y = 1
+        		cost = 2
+
+		relative_position_id = XOR_establish_new_govt
+		prerequisite = { focus = XOR_establish_new_govt }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL}
+
+		available = {
+			country_exists = XOR
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = XOR_ensure_legitimacy
+		icon = GFX_goal_continuous_naval_production
+		x = -5
+		y = 1
+        		cost = 5
+
+		relative_position_id = XOR_exert_federal_control
+		prerequisite = { focus = XOR_exert_federal_control focus = XOR_shift_more_funding_to_OID }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL}
+
+		available = {
+			country_exists = XOR
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	#Legitmacy - Reach out to Cali
+	focus = {
+		id = XOR_reach_out_cali
+		icon = GFX_goal_continuous_naval_production
+		x = -2
+		y = 1
+        		cost = 3
+
+		relative_position_id = XOR_ensure_legitimacy
+		prerequisite = { focus = XOR_ensure_legitimacy }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL}
+
+		available = {
+			country_exists = XOR
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	#Legitmacy - Reach out to Washington
+	focus = {
+		id = XOR_reach_out_wash
+		icon = GFX_goal_continuous_naval_production
+		x = 0
+		y = 1
+        		cost = 3
+
+		relative_position_id = XOR_ensure_legitimacy
+		prerequisite = { focus = XOR_ensure_legitimacy }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL}
+
+		available = {
+			country_exists = XOR
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	#Legitmacy - Reach out to Nevada
+	focus = {
+		id = XOR_reach_out_nev
+		icon = GFX_goal_continuous_naval_production
+		x = 2
+		y = 1
+        		cost = 3
+
+		relative_position_id = XOR_ensure_legitimacy
+		prerequisite = { focus = XOR_ensure_legitimacy }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL}
+
+		available = {
+			country_exists = XOR
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	#Legitmacy - Intervene in Civil Wars
+	focus = {
+		id = XOR_look_east
+		icon = GFX_goal_continuous_naval_production
+		x = 0
+		y = 2
+        		cost = 10
+
+		relative_position_id = XOR_ensure_legitimacy
+		prerequisite = { focus = XOR_reach_out_nev focus = XOR_reach_out_cali focus = XOR_reach_out_wash }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL}
+
+		available = {
+			country_exists = XOR
+			has_stability > 0.5
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
 
 
 }

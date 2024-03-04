@@ -230,9 +230,7 @@ XOR_oregon_investigation_decisions = {
 		fire_only_once = yes
 		
 		complete_effect = {
-			hidden_effect = {
-				country_event = XOR_events.5
-			}
+			country_event = XOR_events.5
 		}
 	}
 }
