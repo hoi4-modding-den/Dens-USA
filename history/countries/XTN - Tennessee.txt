@@ -5,6 +5,16 @@ recruit_character = XTN_tennessee_council
 recruit_character = XTN_lev_trotsky
 recruit_character = XTN_benjamin_tucker
 
+##### additionals
+
+recruit_character = XTN_supreme_soviet
+recruit_character = XTN_ivan_smirnov
+recruit_character = XTN_nikolay_bukharin
+recruit_character = XTN_maurice_thorez
+recruit_character = XTN_union_of_egoists
+recruit_character = XTN_mikhail_tukhachevsky
+recruit_character = XTN_ernst_thalmann
+
 add_ideas = {
 
 XTN_immigration

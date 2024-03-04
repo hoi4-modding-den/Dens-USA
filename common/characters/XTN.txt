@@ -129,12 +129,12 @@ logistics_skill = 4
 				large = "operative_unknown"
 			}
 		}
-		country_leader = {
-			ideology = anarchism
-			traits = { XTN_union_of_egoists_trait }
-			expire = "1948.9.9.9"
-			id = -1
-		}
+	########country_leader = {
+	#		ideology = anarchism
+	#		traits = { XTN_union_of_egoists_trait }
+	#		expire = "1948.9.9.9"
+	#		id = -1
+	#	}
 	}
 
 
@@ -150,23 +150,25 @@ logistics_skill = 4
 			}
 		}
 
-			
-		country_leader={
-			ideology = leninism
-			expire="1965.1.1.1"
-			id=-1
-			traits = { the_siberian_lenin }
-		}
 
-	corps_commander = {
-    skill = 1
-    attack_skill = 1
-    defense_skill = 2
-    planning_skill = 4
-    logistics_skill = 2
-	}
+			
+		#country_leader={
+		#	ideology = leninism
+		#	expire="1965.1.1.1"
+		#	id=-1
+		#	traits = { the_siberian_lenin }
+		#}
+
+	#corps_commander = {
+    #skill = 1
+    #attack_skill = 1
+    #defense_skill = 2
+    #planning_skill = 4
+    #logistics_skill = 2
+	#}
 
 		advisor = {
+			available = {XTN = {has_completed_focus = XTN_invite_exiled_trotskists}}
 			slot = political_advisor
 			idea_token = SOV_ivan_smirnov
 			allowed = {
@@ -196,6 +198,7 @@ logistics_skill = 4
 
 
 		advisor = {
+			available = {XTN = {has_completed_focus = XTN_invite_exiled_trotskists}}
 			slot = political_advisor
 			idea_token = SOV_karl_radek
 			allowed = {
@@ -223,6 +226,7 @@ logistics_skill = 4
 
 
 		advisor = {
+			available = {XTN = {has_completed_focus = XTN_invite_exiled_trotskists}}
 			slot = political_advisor
 			idea_token = SOV_nikolay_bukharin
 			allowed = {
@@ -246,6 +250,7 @@ logistics_skill = 4
 
 
 		advisor={
+			available = {XTN = {has_completed_focus = XTN_invite_exiled_germans}}
 			slot = political_advisor
 			idea_token = ernst_thalmann
 			allowed = {
@@ -271,6 +276,7 @@ logistics_skill = 4
 			}
 		}
 		advisor={
+			available = {XTN = {has_completed_focus = XTN_invite_exiled_french}}
 			slot = political_advisor
 			idea_token = maurice_thorez
 			allowed  = {
@@ -282,19 +288,19 @@ logistics_skill = 4
 			}
 
 		}
-	corps_commander = {
-    skill = 1
-    attack_skill = 1
-    defense_skill = 3
-    planning_skill = 1
-    logistics_skill = 1
-	}
+	#corps_commander = {
+    #skill = 1
+    #attack_skill = 1
+    #defense_skill = 3
+    #planning_skill = 1
+    #logistics_skill = 1
+	#}
 		
-		country_leader={
-			ideology = stalinism
-			expire="1965.1.1.1"
-			id=-1
-		}
+		#country_leader={
+		#	ideology = stalinism
+		#	expire="1965.1.1.1"
+		#	id=-1
+		#}
 	}
 
 	XTN_mikhail_tukhachevsky = {
@@ -306,6 +312,7 @@ logistics_skill = 4
 			}
 		}
 		advisor = {
+			available = {XTN = {has_completed_focus = XTN_invite_tukhachevsky}}
 			cost = 150
 			slot = theorist
 			idea_token = mikhail_tukhachevsky
@@ -319,22 +326,22 @@ logistics_skill = 4
 			}
 		}
 
-		field_marshal = {
-			traits = { brilliant_strategist career_officer trait_reckless infantry_officer offensive_doctrine }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 2
+		#field_marshal = {
+		#	traits = { brilliant_strategist career_officer trait_reckless infantry_officer offensive_doctrine }
+		#	skill = 4
+		#	attack_skill = 3
+		#	defense_skill = 4
+		#	planning_skill = 4
+		#	logistics_skill = 2
 
 
-		}
-		country_leader={
-			ideology = socialism
-			expire="1965.1.1.1"
-			id=-1
-			traits = {XTN_marshal_president}
-		}
+#		}
+		#country_leader={
+		#	ideology = socialism
+		#	expire="1965.1.1.1"
+		#	id=-1
+		#	traits = {XTN_marshal_president}
+		#}
 	}
 
 	XTN_supreme_soviet = { 
@@ -345,12 +352,12 @@ logistics_skill = 4
 				large = GFX_portrait_SOV_supreme_soviet
 			}
 		}
-			country_leader={
-			ideology = marxism
-			expire="1965.1.1.1"
-			id=-1
-			traits = { }
-		}
+			#country_leader={
+			#ideology = marxism
+			#expire="1965.1.1.1"
+			#id=-1
+			#traits = { }
+		#}
 	}
 
 
