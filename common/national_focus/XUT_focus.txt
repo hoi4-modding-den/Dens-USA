@@ -2047,6 +2047,10 @@
 
 
 		completion_reward = {
+			country_event = XUT.13
+			set_politics = {
+				ruling_party = neutrality
+			}
 		}
 	}
 	focus = {
@@ -2077,6 +2081,136 @@
 
 
 		completion_reward = {
+			hidden_effect = {
+				complete_national_focus = XUT_fourth_great_awakening
+			}
+			custom_effect_tooltip = fga_tooltip
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = XUT_restoring_the_pieces
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_religious_decree }
+		x = 0
+		y = 1
+		relative_position_id = XUT_religious_decree
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XUT_des_colorado
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_restoring_the_pieces }
+		x = 1
+		y = 1
+		relative_position_id = XUT_restoring_the_pieces
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XUT_des_arizona
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_restoring_the_pieces }
+		x = -1
+		y = 1
+		relative_position_id = XUT_restoring_the_pieces
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = XUT_des_colorado
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_des_arizona }
+		prerequisite = { focus = XUT_des_colorado }
+		x = 1
+		y = 1
+		relative_position_id = XUT_des_arizona
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
 		}
 	}
 	### GREAT AWAKENING ###

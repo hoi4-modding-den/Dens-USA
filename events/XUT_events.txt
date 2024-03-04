@@ -243,3 +243,15 @@ country_event = { #Communist Convention Part 2
 		complete_national_focus = XUT_red_america
 	}
 }
+country_event = { #March on the Capital
+	id = XUT.13
+	title = XUT.13.t
+	desc = XUT.13.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = {
+		name = XUT.13.a
+	}
+}

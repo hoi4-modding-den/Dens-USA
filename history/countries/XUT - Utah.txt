@@ -31,3 +31,18 @@ set_popularities = {
 	communism = 2
 	fascism = 0
 }
+set_party_name = { 
+    ideology = neutrality 
+    long_name = "The Church of Jesus Christ of Latter-day Saints"
+    name = "Mormon Church"
+}
+set_party_name = { 
+    ideology = democratic 
+    long_name = "Utah Democratic Party"
+    name = "Democrat Party"
+}
+set_party_name = { 
+    ideology = communism 
+    long_name = "Utah Socialist Party"
+    name = "Socialist Party"
+}
