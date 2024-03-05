@@ -1,5 +1,9 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_idea_XNV_afocideaphoto"
+		texturefile = "gfx/XNV_gfx/XNV_afocideaphoto.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_XNV_AFOC"
 		texturefile = "gfx/XNV_focuses/XNV_AFOC.dds"
 	}
@@ -19,4 +23,5 @@ spriteTypes = {
 		name = "GFX_goal_XNV_CivilWar"
 		texturefile = "gfx/XNV_focuses/XNV_CivilWar.dds"
 	}
+
 }

@@ -253,6 +253,10 @@ country_event = { #March on the Capital
 
 	option = {
 		name = XUT.13.a
+		swap_ideas = {
+			remove_idea = XUT_influential_church
+			add_idea = XUT_dominant_church
+		}
 	}
 }
 country_event = { #Annex or War

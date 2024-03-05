@@ -13,6 +13,9 @@ state={
 		victory_points = {
 			12684 10 
 		}
+		victory_points = {
+			10642 0
+		}
 	}
 	manpower=53193
 	state_category=rural

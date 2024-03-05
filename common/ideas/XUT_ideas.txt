@@ -126,6 +126,26 @@ ideas = {
 				war_support_factor = 0.1
 			}
 		}
+		XUT_dominant_church = {
+			picture = MEX_church_power_5
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.1
+				consumer_goods_factor = 0.2
+				stability_factor = 0.4
+				war_support_factor = 0.25
+			}
+		}
 		XUT_pacified_church = {
 			picture = MEX_church_power_5
 			
@@ -180,6 +200,26 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.1
 				stability_factor = 0.1
+			}
+		}
+		XUT_church_of_scientology = {
+			picture = MEX_church_power_5
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.5
+				consumer_goods_factor = -0.1
+				stability_factor = 0.1
+				war_support_factor = 0.2
 			}
 		}
 		XUT_new_constitution = {
@@ -304,6 +344,59 @@ ideas = {
 				annex_cost_factor = -0.1
 			}
 		}
-		
+		XUT_civilian_focus_idea = {
+			picture = generic_captain_of_industry_western_european_2d
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+		XUT_military_focus_idea = {
+			picture = generic_captain_of_industry_western_european_2d
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.25
+				production_speed_bunker_factor = 0.2
+			}
+		}
+		XUT_holy_wars = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.5
+				annex_cost_factor = -0.25
+			}
+		}
 	}
 }
