@@ -1,0 +1,63 @@
+﻿division_template = {
+	name = "National Guard"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+	}
+}
+units = {
+	division = { 
+		name =  "State Guard"
+		location = 4865
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	
+	division = { 
+		name =  "State Guard"
+		location = 10582
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+	
+	division = { 
+		name =  "State Guard"
+		location = 12699
+		division_template = "National Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+
+	}
+}
+
+division_template = {
+	name = "Infantery Division"
+	division_names_group = USA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+
+}

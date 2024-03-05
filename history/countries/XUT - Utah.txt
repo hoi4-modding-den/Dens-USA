@@ -1,6 +1,6 @@
 capital = 380
 
-#oob="XUT"
+oob="XUT"
 
 #leaders
 recruit_character = XUT_henry_blood
