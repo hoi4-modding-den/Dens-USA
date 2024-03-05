@@ -2051,6 +2051,10 @@
 			set_politics = {
 				ruling_party = neutrality
 			}
+			swap_ideas = {
+				remove_idea = XUT_influential_church
+				add_idea = XUT_dominant_church
+			}
 		}
 	}
 	focus = {
@@ -5240,8 +5244,7 @@
 		id = XUT_holy_fleet
 		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = XUT_convert_texas }
-		prerequisite = { focus = XUT_convert_plains }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = XUT_convert_texas
 
@@ -5287,10 +5290,11 @@
 	focus = {
 		id = XUT_holy_land
 		icon = GFX_focus_generic_population_growth
-		prerequisite = { focus = XUT_holy_fleet }
-		x = 0
+		prerequisite = { focus = XUT_convert_texas }
+		prerequisite = { focus = XUT_convert_plains }
+		x = 1
 		y = 1
-		relative_position_id = XUT_holy_fleet
+		relative_position_id = XUT_convert_texas
 
 		cost = 5
 
