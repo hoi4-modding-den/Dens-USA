@@ -349,3 +349,124 @@ country_event = { #Split Nevada
 		}
 	}
 }
+country_event = { #Coerce Nevada
+	id = XUT.17
+	title = XUT.17.t
+	desc = XUT.17.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Fold
+		name = XUT.17.a
+		XUT = {
+			puppet = XNV
+		}
+		XNV = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+				long_name = "Church of Scientology - Nevada Branch"
+				name = "Church of Scientology"
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 1.0
+			}
+			set_province_name = {
+				id = 4607
+				name = "Area 51"
+			}
+			set_province_name = {
+				id = 4799
+				name = "Spacetown"
+			}
+			add_ideas = XUT_church_of_scientology
+		}
+	}
+	option = { #War
+		name = XUT.17.b
+		XUT = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
+}
+country_event = { #Coerce California
+	id = XUT.18
+	title = XUT.18.t
+	desc = XUT.18.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Fold
+		name = XUT.18.a
+		XUT = {
+			puppet = XCA
+		}
+		XCA = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+				long_name = "Church of Scientology - California Branch"
+				name = "Church of Scientology"
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 1.0
+			}
+			set_province_name = {
+				id = 9814
+				name = "Hollywood"
+			}
+			set_province_name = {
+				id = 1562
+				name = "New Syracuse"
+			}
+			set_province_name = {
+				id = 9671
+				name = "Seatown"
+			}
+			set_province_name = {
+				id = 9713
+				name = "Thomasville"
+			}
+			add_ideas = XUT_church_of_scientology
+		}
+	}
+	option = { #War
+		name = XUT.18.b
+		XUT = {
+			declare_war_on = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
+}
+country_event = { #Rebuild Clearwater
+	id = XUT.19
+	title = XUT.19.t
+	desc = XUT.19.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Fold
+		name = XUT.19.a
+		366 = {
+			add_manpower = 120000
+			add_extra_state_shared_building_slots = 2
+		}
+		set_victory_points = {
+			province = 1584
+			value = 25
+		}
+		add_state_core = 366
+		add_political_power = 100
+		add_stability = 0.25
+	}
+}

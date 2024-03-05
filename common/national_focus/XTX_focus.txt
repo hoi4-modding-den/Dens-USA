@@ -1,23 +1,25 @@
 focus_tree = {
 	id = XTX_focus
 	country = {
+		factor = 0 #added this. without it, all default focus tress will be this.
 		modifier = {
 			add = 100
 			tag = XTX
 		}
-	 }
-	 default = no
-	 
-	 continuous_focus_position = { x = 0 y = 1600 }
-	 default = no
-	 focus = {
+	}
+	# fixed indentation. makes it easier to organize. also, no need for a 2nd "default = no" btw.
+	
+	continuous_focus_position = { x = 0 y = 1600 }
+	default = no
+	focus = {
 		id = XTX_start
 		icon = GFX_portrait_XWY_lester_hunt
 		cost = 10
 		x = 10
 		y = 1
 		completion_reward = {
-			add_stability = 0.05 add_political_power = 50
-		 }
-	 }
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
 }
