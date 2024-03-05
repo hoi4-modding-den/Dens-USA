@@ -226,7 +226,7 @@ logistics_skill = 4
 
 
 		advisor = {
-			available = {XTN = {has_completed_focus = XTN_invite_exiled_trotskists}}
+			available = {XTN = {has_completed_focus = XTN_invite_exiled_trotskists NOT = {has_completed_focus = XTN_appoint_bukharin} }}
 			slot = political_advisor
 			idea_token = SOV_nikolay_bukharin
 			allowed = {

@@ -134,6 +134,31 @@ XTN_bulgarian_workers_desc:0 "Bulgarians are great farmers and we are more than 
 XTN_economical_strain:0 "Economical Strain"
 XTN_economical_strain_desc:0 "Bukharin reforms will put our country into a new era ,but they cause a giant strain on our economy."
 
+XTN_nep:0 "New Economic Policy"
+XTN_nep_desc:0 "Idea formed by Bukharin back in 1921 in which Small bussiness and agriculture works in capitalist style while heavy industry is left to government."
+
+XTN_csa_constitution:0 "Confederate Constitution"
+XTN_csa_constitution_desc:0 "Our people have been granted basic freedoms and protection against oppression."
+
+XTN_usa_constitution:0 "USA Constitution"
+XTN_usa_constitution_desc:0 "Freedom to everyone!"
+
+XTN_gold:0 "Gold Standard"
+XTN_gold_desc:0 "Our currency is doing better than ever!"
+
+XTN_state_capitalism_idea:0 "State Capitalism"
+XTN_state_capitalism_idea_desc:0 "Economy supported by both people and government is the best one."
+
+
+
+
+
+
+
+
+
+
+
 
  
  XTN_abolish_council:0 "Abolish Council"
@@ -480,3 +505,33 @@ XTN_support_tank_industry_desc:0 "Modern army cannot just run around without arm
 
 XTN_invite_polish_generals:0 "Invite Polish Generals"
 XTN_invite_polish_generals_desc:0 "Poles have been oppressed by soviet and german governments. We will help them find new life in america."
+
+XTN_nep_focus:0 "N.E.P."
+XTN_nep_focus_desc:0 "New Economic Policy is an idea formed by bukharin in 1921."
+
+XTN_appoint_bukharin:0 "Appoint Bukharin"
+XTN_appoint_bukharin_desc:0 "N.E.P. reforms seem to be sucessful maybe Bukharin should lead the new Confederacy?"
+
+XTN_confederate_constitution:0 "Confederate Constitution"
+XTN_confederate_constitution_desc:0 "To finallize our pernament rule over dixie, we will write up a liberal yet socialist constitution."
+
+XTN_usa_constitution:0 "USA Constitution"
+XTN_usa_constitution_desc:0 "The most important thing in democratic rule is personal freedom of it's citizens."
+
+XTN_reestablish_gold_standard:0 "Reestablish Gold Standard"
+XTN_reestablish_gold_standard_desc:0 "Gold standard is the best option to support our currency."
+
+XTN_usa_army:0 "US Armed Forces"
+XTN_usa_army_desc:0 "Red militas are way too politicized and unorganized. We must standardize our army."
+
+XTN_state_capitalism:0 "State Capitalism"
+XTN_state_capitalism_desc:0 "The only way we can support our economy is by government intervention."
+
+XTN_support_arms_industry:0 "Support arms Industry"
+XTN_support_arms_industry_desc:0 "To speed up our war effort we need shit ton of guns."
+
+XTN_steel_mills:0 "Steel Mills"
+XTN_steel_mills_desc:0 "To build more guns we need more steel."
+
+XTN_sell_land:0 "Sell Lands"
+XTN_sell_land_desc:0 "We can sell some land to private investors for some economical boost."
