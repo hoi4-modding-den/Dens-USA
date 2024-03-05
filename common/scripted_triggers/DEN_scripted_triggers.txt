@@ -1,0 +1,74 @@
+
+# is_diplomatic_action_valid_TOKEN can be used for diplo action validity checks. if not valid it won't appear
+# scope is target country
+# from is action initatior country
+
+# in some cases this trigger is checked for only initatior country, in that case both from & this is same
+
+DEN_is_american_tag = {
+	OR = {
+		original_tag = XAL
+		original_tag = XAR
+		original_tag = XAZ
+		original_tag = XCA
+		original_tag = XCO
+		original_tag = XFL
+		original_tag = XGA
+		original_tag = XIA
+		original_tag = XID
+		original_tag = XIL
+		original_tag = XIN
+		original_tag = XKS
+		original_tag = XKY
+		original_tag = XLA
+		original_tag = XMD
+		original_tag = XMN
+		original_tag = XMO
+		original_tag = XMS
+		original_tag = XMT
+		original_tag = XNC
+		original_tag = XND
+		original_tag = XNE
+		original_tag = XNK
+		original_tag = XNM
+		original_tag = XNN
+		original_tag = XNV
+		original_tag = XNY
+		original_tag = XOH
+		original_tag = XOK
+		original_tag = XOR
+		original_tag = XPA
+		original_tag = XSC
+		original_tag = XSD
+		original_tag = XTN
+		original_tag = XTX
+		original_tag = XUT
+		original_tag = XWA
+		original_tag = XWI
+		original_tag = XWV
+		original_tag = XWY
+		original_tag = MFS
+		original_tag = PWS
+		original_tag = SMS
+		original_tag = WS1
+		original_tag = WS2
+		original_tag = WS3
+		original_tag = WS4
+		original_tag = WS5
+	}
+}
+
+DEN_state_is_in_america = {
+	OR = {
+		region = 117
+		region = 118
+		region = 119
+		region = 120
+		region = 197
+		region = 198
+		region = 199
+		region = 211
+		region = 214
+		region = 219
+	}
+}
