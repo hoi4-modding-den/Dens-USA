@@ -2482,6 +2482,62 @@ add_ideas = { XTN_inteligensia_manifesto }
   }
 
  focus = {
+    id = XTN_abolish_ideas_of_4th_internationale
+    x = 38
+    y = 19
+    icon = GFX_goal_support_fourth_int
+
+    prerequisite = { focus = XTN_usa_constitution }
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        remove_ideas = {XTN_fourth_internationale_idea}
+        add_ideas = {XTN_democratic_idealism}
+
+    }
+  }
+
+ focus = {
+    id = XTN_freedom_of_religion
+    x = 33
+    y = 20
+    icon = GFX_focus_por_concordat
+
+    prerequisite = { focus = XTN_usa_constitution }
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_stability = 0.05
+        367 = {add_core_of = XTN}
+
+    }
+  }
+
+ focus = {
+    id = XTN_desegregation
+    x = 35
+    y = 20
+    icon = GFX_focus_spr_torchbearers_of_tomorrow
+
+    prerequisite = { focus = XTN_usa_constitution }
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_desegregation_idea}
+
+    }
+  }
+
+ focus = {
     id = XTN_usa_army
     x = 36
     y = 21
@@ -2503,7 +2559,705 @@ add_ideas = { XTN_inteligensia_manifesto }
 
     }
   }
+ focus = {
+    id = XTN_southern_push
+    x = 37
+    y = 22
+    icon = GFX_goal_generic_major_war
 
+    prerequisite = { focus = XTN_usa_army }
+
+    cost = 10
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XMS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XLA
+            type = annex_everything
+                }
+
+
+    }
+  }
+##############################################################TOTAL WAR ###########################################################
+ focus = {
+    id = XTN_total_war
+    x = 35
+    y = 22
+    icon = GFX_focus_SWE_neither_death_nor_dishonor
+
+    prerequisite = { focus = XTN_usa_army }
+
+    cost = 25
+    
+
+    completion_reward = {
+
+        army_experience = 25
+        add_ideas = {XTN_total_war}
+        remove_ideas = {XTN_immigration XTN_immigration_2}
+        remove_ideas = {XTN_democratic_idealism}
+        373 = {
+
+            add_core_of = XTN
+
+        }
+        392 = {
+
+            add_core_of = XTN
+
+        }
+        383 = {
+
+            add_core_of = XTN
+
+        }
+        391 = {
+
+            add_core_of = XTN
+
+        }
+        377 = {
+
+            add_core_of = XTN
+
+        }
+        957 = {
+
+            add_core_of = XTN
+
+        }
+        956 = {
+
+            add_core_of = XTN
+
+        }
+        382 = {
+
+            add_core_of = XTN
+
+        }
+        939 = {
+
+            add_core_of = XTN
+
+        }
+        940 = {
+
+            add_core_of = XTN
+
+        }
+        380 = {
+
+            add_core_of = XTN
+
+        }
+        381 = {
+
+            add_core_of = XTN
+
+        }
+        386 = {
+
+            add_core_of = XTN
+
+        }
+        387 = {
+
+            add_core_of = XTN
+
+        }
+        947 = {
+
+            add_core_of = XTN
+
+        }
+        942 = {
+
+            add_core_of = XTN
+
+        }
+        390 = {
+
+            add_core_of = XTN
+
+        }
+        946 = {
+
+            add_core_of = XTN
+
+        }
+        941 = {
+
+            add_core_of = XTN
+
+        }
+        944 = {
+
+            add_core_of = XTN
+
+        }
+        389 = {
+
+            add_core_of = XTN
+
+        }
+        945 = {
+
+            add_core_of = XTN
+
+        }
+        943 = {
+
+            add_core_of = XTN
+
+        }
+        951 = {
+
+            add_core_of = XTN
+
+        }
+        950 = {
+
+            add_core_of = XTN
+
+        }
+        949 = {
+
+            add_core_of = XTN
+
+        }
+        952 = {
+
+            add_core_of = XTN
+
+        }
+        388 = {
+
+            add_core_of = XTN
+
+        }
+        948 = {
+
+            add_core_of = XTN
+
+        }
+       364 = {
+
+            add_core_of = XTN
+
+        }
+        365 = {
+
+            add_core_of = XTN
+
+        }
+        366 = {
+
+            add_core_of = XTN
+
+        }
+        367 = {
+
+            add_core_of = XTN
+
+        }
+        370 = {
+
+            add_core_of = XTN
+
+        }
+        371 = {
+
+            add_core_of = XTN
+
+        }
+        375 = {
+
+            add_core_of = XTN
+
+        }
+        372 = {
+
+            add_core_of = XTN
+
+        }
+        374 = {
+
+            add_core_of = XTN
+
+        }
+        378 = {
+
+            add_core_of = XTN
+
+        }
+        376 = {
+
+            add_core_of = XTN
+
+        }
+        954 = {
+
+            add_core_of = XTN
+
+        }
+        955 = {
+
+            add_core_of = XTN
+
+        }
+        377 = {
+
+            add_core_of = XTN
+
+        }
+        953 = {
+
+            add_core_of = XTN
+
+        }
+        938 = {
+
+            add_core_of = XTN
+
+        }
+        379 = {
+
+            add_core_of = XTN
+
+        }
+        959 = {
+
+            add_core_of = XTN
+
+        }
+        985 = {
+
+            add_core_of = XTN
+
+        }
+        937 = {
+
+            add_core_of = XTN
+
+        }
+        936 = {
+
+            add_core_of = XTN
+
+        }
+        371 = {
+
+            add_core_of = XTN
+
+        }
+        372 = {
+
+            add_core_of = XTN
+
+        }
+        374 = {
+
+            add_core_of = XTN
+
+        }
+        375 = {
+
+            add_core_of = XTN
+
+        }
+        395 = {
+
+            add_core_of = XTN
+
+        }
+        394 = {
+
+            add_core_of = XTN
+
+        }
+        360 = {
+
+            add_core_of = XTN
+
+        }
+        359 = {
+
+            add_core_of = XTN
+
+        }
+        358 = {
+
+            add_core_of = XTN
+
+        }
+        261 = {
+
+            add_core_of = XTN
+
+        }
+        357 = {
+
+            add_core_of = XTN
+
+        }
+
+        396 = {
+
+            add_core_of = XTN
+
+        }
+        393 = {
+
+            add_core_of = XTN
+
+        }
+
+    }
+  }
+ focus = {
+    id = XTN_crush_north
+    x = 36
+    y = 23
+    icon = GFX_goal_generic_political_pressure
+
+    prerequisite = { focus = XTN_total_war }
+
+    cost = 10
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XOH
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XNY
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XNJ
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XPA
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XNN
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XIN
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XIL
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XWI
+            type = annex_everything
+                }
+
+    }
+  }
+
+ focus = {
+    id = XTN_crush_south
+    x = 34
+    y = 23
+    icon = GFX_focus_generic_annex_country
+
+    prerequisite = { focus = XTN_total_war }
+
+    cost = 10
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XSC
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XGA
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XAL
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XFL
+            type = annex_everything
+                }
+
+
+    }
+  }
+focus = {
+    id = XTN_abandon_freedoms
+    x = 32
+    y = 23
+    icon = GFX_focus_usa_voter_registration_act
+
+    prerequisite = { focus = XTN_total_war }
+    available = {XTN = {has_war = yes}}
+
+    cost = 10
+    
+
+    completion_reward = {
+        add_stability = -0.3
+
+        remove_ideas = {XTN_usa_constitution}
+    add_country_leader_role = {
+    character = XTN_mikhail_tukhachevsky
+    promote_leader = yes
+    country_leader = {
+        ideology = stalinism
+        expire = "1965.1.1.1"
+        traits = { XTN_marshal_president veteran_communist dictator }
+                }
+            }
+
+
+
+
+
+    add_popularity = {
+        ideology = communism
+        popularity = 0.6
+            }
+
+        set_politics = {
+            ruling_party = communism
+            elections_allowed = no
+            last_election = "1936.1.1"
+            election_frequency = 48
+            long_name = "War Council"
+            name = "War Council"
+
+            }
+
+
+    }
+  }
+
+ focus = {
+    id = XTN_unite_the_USA_democratic
+    x = 35
+    y = 24
+    icon = GFX_focus_generic_befriend_usa
+
+    prerequisite = { focus = XTN_crush_south }
+    prerequisite = { focus = XTN_crush_north }
+
+    cost = 15
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XTX
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XAR
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XOK
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XNM
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XAZ
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XCA
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XNV
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XMN
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XIA
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XMO
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XNE
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XKS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XCO
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XUT
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XWY
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = PWS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS3
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XSD
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XUT
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XND
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS4
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = SMS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XID
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS2
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS1
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = MFS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XMT
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS5
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XOR
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XWA
+            type = annex_everything
+                }
+
+
+
+
+
+    }
+  }
+
+focus = {
+    id = XTN_return_liberties
+    x = 33
+    y = 25
+    icon = GFX_focus_ICE_embrace_the_workers_revolution
+
+    prerequisite = { focus = XTN_abandon_freedoms }
+    prerequisite = { focus = XTN_unite_the_USA_democratic }
+        available = {XTN = {has_war = no}}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+
+    add_country_leader_role = {
+    character = XTN_mikhail_tukhachevsky
+    promote_leader = yes
+    country_leader = {
+        ideology = socialism
+        expire = "1965.1.1.1"
+        traits = { XTN_marshal_president veteran_communist}
+                }
+            }
+
+
+
+
+
+    add_popularity = {
+        ideology = democratic
+        popularity = 0.6
+            }
+
+        set_politics = {
+            ruling_party = democratic
+            elections_allowed = yes
+            last_election = "1936.1.1"
+            election_frequency = 48
+            long_name = "United Socialist Party"
+            name = "USP"
+
+            }
+    add_ideas = {XTN_usa_constitution}
+    add_ideas = {XTN_democratic_idealism}
+    remove_ideas = {XTN_total_war}
+    add_ideas = {XTN_post_total_war}
+
+    }
+  }
+#######################################################################################################################################
  focus = {
     id = XTN_state_capitalism
     x = 40
@@ -2579,8 +3333,228 @@ add_ideas = { XTN_inteligensia_manifesto }
     }
   }
 
+ focus = {
+    id = XTN_fortify_tennessee
+    x = 39
+    y = 21
+    icon = GFX_goal_generic_fortify_city
 
-  
+    prerequisite = { focus = XTN_support_arms_industry }
+    prerequisite = { focus = XTN_steel_mills }
+    available = { 368 = {is_owned_by = XTN} 369 = {is_owned_by = XTN} }
+
+    cost = 10
+    
+
+    completion_reward = {
+           368 = {
+            add_building_construction = {
+            type = bunker
+            level = 10
+            instant_build = yes
+            province = 12501
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 10
+            instant_build = yes
+            province = 7797
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 10
+            instant_build = yes
+            province = 7615
+                    }
+           }
+        
+           369 = {
+            add_building_construction = {
+            type = bunker
+            level = 10
+            instant_build = yes
+            province = 10586
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 10
+            instant_build = yes
+            province = 4402
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 10
+            instant_build = yes
+            province = 10727
+                    }
+           }
+    
+    }
+  }
+
+ focus = {
+    id = XTN_extend_line
+    x = 39
+    y = 23
+    icon = GFX_goal_generic_fortify_city
+
+    prerequisite = { focus = XTN_fortify_tennessee }
+    prerequisite = { focus = XTN_southern_push }
+
+    available = { 370 = {is_owned_by = XTN} 371 = {is_owned_by = XTN} }
+
+    cost = 10
+    
+
+    completion_reward = {
+           370 = {
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 7464
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 4510
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 10410
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 10
+            instant_build = yes
+            province = 10449
+                    }
+           }
+        
+           371 = {
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 1453
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 10
+            instant_build = yes
+            province = 7552
+                    }
+
+           }
+            370 = {add_core_of = XTN}
+            371 = {add_core_of = XTN}
+    
+    }
+  }
+
+ focus = {
+    id = XTN_protect_river
+    x = 37
+    y = 24
+    icon = GFX_goal_generic_fortify_city
+
+    prerequisite = { focus = XTN_extend_line }
+    prerequisite = { focus = XTN_crush_north }
+
+    available = { 395 = {is_owned_by = XTN} 394 = {is_owned_by = XTN} }
+
+    cost = 15
+    
+
+    completion_reward = {
+           395 = {
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 7831
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 12305
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 10457
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 5
+            instant_build = yes
+            province = 12365
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 4590
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 10393
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 3
+            instant_build = yes
+            province = 11589
+                    }
+           }
+        
+           394 = {
+            add_building_construction = {
+            type = bunker
+            level = 3
+            instant_build = yes
+            province = 1560
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 3
+            instant_build = yes
+            province = 10341
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 3
+            instant_build = yes
+            province = 10526
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 3
+            instant_build = yes
+            province = 3699
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 2
+            instant_build = yes
+            province = 7776
+                    }
+
+           }
+
+    
+    }
+  }
+
+
+
 ################################################ Smirnov ##############################################################################################
   focus = {
     id = XTN_ivan_smirnov_rule
@@ -3290,9 +4264,109 @@ add_tech_bonus = {
         long_name = "Vanguard Union Party"
         name = "VUP"
                 }
+        add_ideas = {XTN_french_chaos}
 
     }
   }
+
+  focus = {
+    id = XTN_adopt_franc
+    x = 44
+    y = 18
+    icon = GFX_focus_fra_devalue_the_franc
+
+    prerequisite = { focus = XTN_french_stalinism }
+
+    cost = 5
+    
+
+    completion_reward = {
+
+    add_timed_idea = {
+    idea = XTN_franc_adopted 
+    days = 360
+            } 
+
+    }
+  }
+
+  focus = {
+    id = XTN_look_east
+    x = 44
+    y = 20
+    icon = GFX_focus_fra_loyalty_stalin
+
+    prerequisite = { focus = XTN_adopt_franc }
+
+    cost = 10
+    
+
+    completion_reward = {
+        add_political_power = 50
+        add_ideas = {XTN_french_iron_fist}
+
+    }
+  }
+
+  focus = {
+    id = XTN_recognize_zsrr
+    x = 45
+    y = 19
+    icon = GFX_focus_SOV_socialism_in_one_country
+
+    prerequisite = { focus = XTN_adopt_franc }
+
+    cost = 10
+    
+
+    completion_reward = {
+        
+        custom_effect_tooltip = XTN_USSR
+
+    }
+  }
+
+  focus = {
+    id = XTN_state_atheism_french
+    x = 43
+    y = 21
+    icon = GFX_focus_mex_triumph_over_the_cristeros
+
+    prerequisite = { focus = XTN_look_east }
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_state_atheism_idea}
+
+    }
+  }
+
+  focus = {
+    id = XTN_party_army
+    x = 46
+    y = 21
+    icon = GFX_focus_SOV_organization_centralization_discipline
+
+    prerequisite = { focus = XTN_look_east }
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_french_party_army}
+
+    }
+  }
+
+
 ############################################## Supreme Soviet #####################################################################
   focus = {
     id = XTN_supreme_soviet
