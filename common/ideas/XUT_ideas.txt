@@ -433,5 +433,24 @@ ideas = {
 				political_power_gain = 0.1
 			}
 		}
+		XUT_new_thinking = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				offence = 0.2
+				defence = 0.15
+				experience_gain_army_unit_factor = 0.5
+			}
+		}
 	}
 }

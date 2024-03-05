@@ -5360,4 +5360,211 @@
 			country_event = XUT.19
 		}
 	}
+	### Military Reforms (State of Emergency and Mormons) ###
+	focus = {
+		id = XUT_establish_military_school
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_state_of_emergency focus = XUT_dreams_of_deseret }
+		x = 7
+		y = 1
+		relative_position_id = XUT_state_of_emergency
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = XUT_new_guns
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_establish_military_school }
+		x = -2
+		y = 1
+		relative_position_id = XUT_establish_military_school
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = XUT_new_tanks
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_establish_military_school }
+		x = 0
+		y = 1
+		relative_position_id = XUT_establish_military_school
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = XUT_new_artillery
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_establish_military_school }
+		x = 2
+		y = 1
+		relative_position_id = XUT_establish_military_school
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = XUT_new_military_thought
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_new_guns }
+		prerequisite = { focus = XUT_new_tanks }
+		prerequisite = { focus = XUT_new_artillery }
+		x = -1
+		y = 1
+		relative_position_id = XUT_new_artillery
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = XUT_new_thinking
+		}
+	}
+	focus = {
+		id = XUT_lessons_from_the_past
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_new_guns }
+		prerequisite = { focus = XUT_new_tanks }
+		prerequisite = { focus = XUT_new_artillery }
+		x = 1
+		y = 1
+		relative_position_id = XUT_new_guns
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
 }

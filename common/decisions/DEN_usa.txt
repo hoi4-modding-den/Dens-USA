@@ -1,0 +1,115 @@
+
+restore_USA_decisions = {
+	
+	DEN_usa_restore = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+		
+		ai_will_do = {
+			base = 1
+		}
+	
+		allowed = {
+			
+		}
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = den_usa_restoration_tt
+				owns_state = 386
+				owns_state = 936
+				owns_state = 937
+				owns_state = 385
+				owns_state = 378
+				owns_state = 938
+				owns_state = 379
+				owns_state = 959
+				owns_state = 387
+				owns_state = 388
+				owns_state = 948
+				owns_state = 949
+				owns_state = 950
+				owns_state = 951
+				owns_state = 952
+				owns_state = 381
+				owns_state = 960
+				owns_state = 380
+				owns_state = 940
+				owns_state = 939
+				owns_state = 377
+				owns_state = 953
+				owns_state = 956
+				owns_state = 382
+				owns_state = 957
+				owns_state = 955
+				owns_state = 376
+				owns_state = 954
+				owns_state = 375
+				owns_state = 374
+				owns_state = 383
+				owns_state = 384
+				owns_state = 942
+				owns_state = 947
+				owns_state = 390
+				owns_state = 946
+				owns_state = 941
+				owns_state = 389
+				owns_state = 943
+				owns_state = 945
+				owns_state = 944
+				owns_state = 391
+				owns_state = 392
+				owns_state = 373
+				owns_state = 372
+				owns_state = 371
+				owns_state = 370
+				owns_state = 369
+				owns_state = 368
+				owns_state = 367
+				owns_state = 366
+				owns_state = 365
+				owns_state = 364
+				owns_state = 363
+				owns_state = 362
+				owns_state = 816
+				owns_state = 395
+				owns_state = 394
+				owns_state = 393
+				owns_state = 261
+				owns_state = 361
+				owns_state = 958
+				owns_state = 935
+				owns_state = 360
+				owns_state = 359
+				owns_state = 358
+				owns_state = 357
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						region = 117
+						region = 118
+						region = 119
+						region = 120
+						region = 197
+						region = 198
+						region = 199
+						region = 211
+						region = 214
+						region = 218
+						region = 219
+					}
+				}
+				add_core_of = ROOT 
+			}
+			set_cosmetic_tag = DEN_USA
+		}
+	}
+}
