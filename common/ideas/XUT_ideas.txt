@@ -398,5 +398,40 @@ ideas = {
 				annex_cost_factor = -0.25
 			}
 		}
+		XUT_expanded_recruitment = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				recruitable_population_factor = 0.05
+			}
+		}
+		XUT_grifters = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				political_power_gain = 0.1
+			}
+		}
 	}
 }

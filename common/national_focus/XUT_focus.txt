@@ -3976,6 +3976,22 @@
 				long_name = "The Holy Throne of the Church of Scientology"
 				name = "Church of Scientology"
 			}
+			set_province_name = {
+				id = 4865
+				name = "Hubbardsville"
+			}
+			set_province_name = {
+				id = 10582
+				name = "Cruisetown"
+			}
+			set_province_name = {
+				id = 12699
+				name = "Guardian"
+			}
+			set_province_name = {
+				id = 1756
+				name = "David"
+			}
 		}
 	}
 	focus = {
@@ -4077,7 +4093,7 @@
 
 
 		completion_reward = {
-			
+			add_ideas = XUT_expanded_recruitment
 		}
 	}
 	focus = {
@@ -4108,11 +4124,11 @@
 
 
 		completion_reward = {
-			
+			army_experience = 25
 		}
 	}
 	focus = {
-		id = XUT_attract_griftors
+		id = XUT_attract_grifters
 		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = XUT_the_purge }
 		x = 8
@@ -4139,16 +4155,16 @@
 
 
 		completion_reward = {
-			
+			add_ideas = XUT_grifters
 		}
 	}
 	focus = {
 		id = XUT_alternative_medicine
 		icon = GFX_focus_generic_population_growth
-		prerequisite = { focus = XUT_attract_griftors }
+		prerequisite = { focus = XUT_attract_grifters }
 		x = -2
 		y = 1
-		relative_position_id = XUT_attract_griftors
+		relative_position_id = XUT_attract_grifters
 
 		cost = 5
 
@@ -4176,10 +4192,10 @@
 	focus = {
 		id = XUT_cryptocurrency
 		icon = GFX_focus_generic_population_growth
-		prerequisite = { focus = XUT_attract_griftors }
+		prerequisite = { focus = XUT_attract_grifters }
 		x = 0
 		y = 1
-		relative_position_id = XUT_attract_griftors
+		relative_position_id = XUT_attract_grifters
 
 		cost = 5
 
@@ -4207,10 +4223,10 @@
 	focus = {
 		id = XUT_cosmetics
 		icon = GFX_focus_generic_population_growth
-		prerequisite = { focus = XUT_attract_griftors }
+		prerequisite = { focus = XUT_attract_grifters }
 		x = 2
 		y = 1
-		relative_position_id = XUT_attract_griftors
+		relative_position_id = XUT_attract_grifters
 
 		cost = 5
 
@@ -4425,4 +4441,919 @@
 			add_ideas = XUT_holy_wars
 		}
 	}
-}	
+	focus = {
+		id = XUT_strike_colorado
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_prepare_holy_wars }
+		prerequisite = { focus = XUT_expand_recruitment focus = XUT_lessons_from_the_future }
+		prerequisite = { focus = XUT_alternative_medicine focus = XUT_cryptocurrency focus = XUT_cosmetics }
+		prerequisite = { focus = XUT_top_gun focus = XUT_mission_impossible focus = XUT_minority_report }
+		x = 0
+		y = 1
+		relative_position_id = XUT_prepare_holy_wars
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			declare_war_on = {
+                target = XCO
+                type = annex_everything
+            }
+		}
+	}
+	focus = {
+		id = XUT_strike_arizona
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_prepare_holy_wars }
+		prerequisite = { focus = XUT_expand_recruitment focus = XUT_lessons_from_the_future }
+		prerequisite = { focus = XUT_alternative_medicine focus = XUT_cryptocurrency focus = XUT_cosmetics }
+		prerequisite = { focus = XUT_top_gun focus = XUT_mission_impossible focus = XUT_minority_report }
+		x = 2
+		y = 1
+		relative_position_id = XUT_prepare_holy_wars
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			declare_war_on = {
+                target = XAZ
+                type = annex_everything
+            }
+		}
+	}
+	focus = {
+		id = XUT_strike_new_mexico
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_strike_arizona }
+		prerequisite = { focus = XUT_strike_colorado }
+		x = 1
+		y = 1
+		relative_position_id = XUT_strike_colorado
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			declare_war_on = {
+                target = XNM
+                type = annex_everything
+            }
+		}
+	}
+	focus = {
+		id = XUT_convert_colorado
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_strike_new_mexico }
+		x = -2
+		y = 1
+		relative_position_id = XUT_strike_new_mexico
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			controls_state = 956
+			controls_state = 382
+			controls_state = 957
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_state_core = 956
+			add_state_core = 382
+			add_state_core = 957
+			set_province_name = {
+				id = 1827
+				name = "Techtown"
+			}
+			set_province_name = {
+				id = 10588
+				name = "Terrestrial Springs"
+			}
+			set_province_name = {
+				id = 12627
+				name = "Miscavige"
+			}
+			set_province_name = {
+				id = 9792
+				name = "Ronville"
+			}
+			set_province_name = {
+				id = 6887
+				name = "Earthly Gate"
+			}
+			set_province_name = {
+				id = 7780
+				name = "Fort Hubbard"
+			}
+		}		
+	}
+	focus = {
+		id = XUT_convert_arizona
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_strike_new_mexico }
+		x = 0
+		y = 1
+		relative_position_id = XUT_strike_new_mexico
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			controls_state = 377
+			controls_state = 953
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_state_core = 377
+			add_state_core = 953
+			set_province_name = {
+				id = 12765
+				name = "Dianeticdale"
+			}
+			set_province_name = {
+				id = 853
+				name = "New Clearwater"
+			}
+			set_province_name = {
+				id = 3834
+				name = "Lafayette"
+			}
+		}		
+	}
+	focus = {
+		id = XUT_convert_new_mexico
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_strike_new_mexico }
+		x = 2
+		y = 1
+		relative_position_id = XUT_strike_new_mexico
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			controls_state = 955
+			controls_state = 376
+			controls_state = 954
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_state_core = 955
+			add_state_core = 376
+			add_state_core = 954
+			set_province_name = {
+				id = 4975
+				name = "New Roswell"
+			}
+			set_province_name = {
+				id = 12684
+				name = "Xenu"
+			}
+			set_province_name = {
+				id = 12791
+				name = "Scientia"
+			}
+			set_province_name = {
+				id = 10914
+				name = "Heaven's Gate"
+			}
+		}		
+	}
+	focus = {
+		id = XUT_coerce_nevada
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_convert_colorado }
+		prerequisite = { focus = XUT_convert_arizona }
+		prerequisite = { focus = XUT_convert_new_mexico }
+		x = -1
+		y = 1
+		relative_position_id = XUT_convert_arizona
+		mutually_exclusive = { focus = XUT_strike_nevada }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XNV = {
+				country_event = XUT.17
+			}
+		}		
+	}
+	focus = {
+		id = XUT_strike_nevada
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_convert_colorado }
+		prerequisite = { focus = XUT_convert_arizona }
+		prerequisite = { focus = XUT_convert_new_mexico }
+		x = 1
+		y = 1
+		relative_position_id = XUT_convert_arizona
+		mutually_exclusive = { focus = XUT_coerce_nevada }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			declare_war_on = {
+				target = XNV
+				type = annex_everything
+			}
+			add_war_support = 0.1
+			add_political_power = 100
+		}		
+	}
+	focus = {
+		id = XUT_puppet_integration_NV
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_coerce_nevada focus = XUT_strike_nevada }
+		x = -2
+		y = 1
+		relative_position_id = XUT_coerce_nevada
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			XNV = {
+				is_puppet_of = XUT
+				NOT = {
+					has_idea = XUT_church_of_scientology
+				}
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XNV = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+					long_name = "Church of Scientology - Nevada Branch"
+					name = "Church of Scientology"
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 1.0
+				}
+				set_province_name = {
+					id = 4607
+					name = "Area 51"
+				}
+				set_province_name = {
+					id = 4799
+					name = "Spacetown"
+				}
+				add_ideas = XUT_church_of_scientology
+			}
+		}		
+	}
+	focus = {
+		id = XUT_nevada_integration
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_coerce_nevada focus = XUT_strike_nevada }
+		x = 2
+		y = 1
+		relative_position_id = XUT_strike_nevada
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 379
+			owns_state = 938
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			set_province_name = {
+				id = 4607
+				name = "Area 51"
+			}
+			set_province_name = {
+				id = 4799
+				name = "Spacetown"
+			}
+			add_state_core = 379
+			add_state_core = 938
+		}		
+	}
+	focus = {
+		id = XUT_coerce_california
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_coerce_nevada focus = XUT_strike_nevada }
+		x = 0
+		y = 1
+		relative_position_id = XUT_coerce_nevada
+		mutually_exclusive = { focus = XUT_strike_california }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XCA = {
+				country_event = XUT.18
+			}
+		}		
+	}
+	focus = {
+		id = XUT_strike_california
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_coerce_nevada focus = XUT_strike_nevada }
+		x = 0
+		y = 1
+		relative_position_id = XUT_strike_nevada
+		mutually_exclusive = { focus = XUT_coerce_california }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_war = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			declare_war_on = {
+				target = XCA
+				type = annex_everything
+			}
+			add_war_support = 0.1
+			add_political_power = 100
+		}		
+	}
+	focus = {
+		id = XUT_puppet_integration_CA
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_coerce_california focus = XUT_strike_california }
+		x = -1
+		y = 1
+		relative_position_id = XUT_coerce_california
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			XCA = {
+				is_puppet_of = XUT
+				NOT = {
+					has_idea = XUT_church_of_scientology
+				}
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XCA = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+					long_name = "Church of Scientology - California Branch"
+					name = "Church of Scientology"
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 1.0
+				}
+				set_province_name = {
+					id = 9814
+					name = "Hollywood"
+				}
+				set_province_name = {
+					id = 1562
+					name = "New Syracuse"
+				}
+				set_province_name = {
+					id = 9671
+					name = "Seatown"
+				}
+				set_province_name = {
+					id = 9713
+					name = "Thomasville"
+				}
+				add_ideas = XUT_church_of_scientology
+			}
+		}		
+	}
+	focus = {
+		id = XUT_california_integration
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_coerce_california focus = XUT_strike_california }
+		x = 3
+		y = 1
+		relative_position_id = XUT_strike_california
+		mutually_exclusive = { focus = XUT_reward_loyalty }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 378
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			set_province_name = {
+				id = 9814
+				name = "Hollywood"
+			}
+			set_province_name = {
+				id = 1562
+				name = "New Syracuse"
+			}
+			set_province_name = {
+				id = 9671
+				name = "Seatown"
+			}
+			set_province_name = {
+				id = 9713
+				name = "Thomasville"
+			}
+			add_state_core = 378
+		}		
+	}
+	focus = {
+		id = XUT_reward_loyalty
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_coerce_california focus = XUT_strike_california }
+		x = 1
+		y = 1
+		relative_position_id = XUT_strike_california
+		mutually_exclusive = { focus = XUT_california_integration }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 378
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XNV = {
+				set_province_name = {
+					id = 9814
+					name = "Hollywood"
+				}
+				set_province_name = {
+					id = 1562
+					name = "New Syracuse"
+				}
+				set_province_name = {
+					id = 9671
+					name = "Seatown"
+				}
+				set_province_name = {
+					id = 9713
+					name = "Thomasville"
+				}
+				set_state_owner = 378
+				set_state_controller = 378
+				add_state_core = 378
+			}
+			add_stability = 0.1
+			add_political_power = 50
+		}		
+	}
+	focus = {
+		id = XUT_strike_east
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_coerce_california focus = XUT_strike_california }
+		x = -1
+		y = 1
+		relative_position_id = XUT_strike_california
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 378
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XTX
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XOK
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XKS
+			}
+		}
+	}
+	focus = {
+		id = XUT_convert_texas
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_strike_east }
+		x = -1
+		y = 1
+		relative_position_id = XUT_strike_east
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 375
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			set_province_name = {
+				id = 3960
+				name = "Mapother"
+			}
+			set_province_name = {
+				id = 10337
+				name = "Meston"
+			}
+			add_state_core = 375
+		}
+	}
+	focus = {
+		id = XUT_convert_plains
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_strike_east }
+		x = 1
+		y = 1
+		relative_position_id = XUT_strike_east
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 374
+			owns_state = 383
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			set_province_name = {
+				id = 1806
+				name = "Theta"
+			}
+			set_province_name = {
+				id = 4740
+				name = "Freewind"
+			}
+			add_state_core = 374
+			add_state_core = 383
+		}
+	}
+	focus = {
+		id = XUT_holy_fleet
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_convert_texas }
+		prerequisite = { focus = XUT_convert_plains }
+		x = 1
+		y = 1
+		relative_position_id = XUT_convert_texas
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			375 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = naval_equipment
+			}
+			set_technology = {
+				transport = 1
+			}
+			navy_experience = 20
+		}
+	}
+	focus = {
+		id = XUT_holy_land
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_holy_fleet }
+		x = 0
+		y = 1
+		relative_position_id = XUT_holy_fleet
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			366 = { # the state
+				owner = { # change scope to the state owner
+					XUT = { # the country that will declare war
+						create_wargoal = {
+							type = take_state_focus
+							target = PREV
+							generator = { 366 }
+						}	
+					}
+				}
+			}	
+		}
+	}
+	focus = {
+		id = XUT_rebuild_holy_land
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_holy_land }
+		x = 0
+		y = 1
+		relative_position_id = XUT_holy_land
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			country_event = XUT.19
+		}
+	}
+}
