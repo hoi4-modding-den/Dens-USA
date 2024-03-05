@@ -84,7 +84,7 @@ bookmarks = {
 			history = "Lowest starting population besides Oregon! Wonder what happened there."
 			ideology = democratic
 			ideas = {
-
+				XNV_GreatDepression
 			}
 			focuses = {
 				XNVAFOC
