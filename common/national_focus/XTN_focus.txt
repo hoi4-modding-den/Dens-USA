@@ -1358,7 +1358,7 @@ add_ideas = { XTN_inteligensia_manifesto }
     icon = GFX_focus_SOV_the_supreme_soviet
 
     prerequisite = { focus = XTN_cross_potomak }
-    available = {361 = {is_owned_by = XTN} XMD = {exists = no}}
+    available = {361 = {is_owned_by = XTN} XMD = {exists = no} XTN={has_completed_focus = XTN_crush_individualism} }
 
 
     cost = 2
@@ -2411,7 +2411,7 @@ add_ideas = { XTN_inteligensia_manifesto }
     country_leader = {
         ideology = socialism
         expire = "1965.1.1.1"
-        traits = { XTN_marshal_president }
+        traits = { XTN_marshal_president veteran_communist  }
                 }
             }
 
@@ -2444,6 +2444,143 @@ add_ideas = { XTN_inteligensia_manifesto }
 
     }
   }
+
+  focus = {
+    id = XTN_usa_constitution
+    x = 36
+    y = 18
+    icon = GFX_focus_renounce_the_treaty_of_trianon
+
+    prerequisite = { focus = XTN_democratic_socialism }
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_usa_constitution}
+
+    }
+  }
+
+ focus = {
+    id = XTN_reestablish_gold_standard
+    x = 34
+    y = 19
+    icon = GFX_focus_usa_reestablish_the_gold_standard
+
+    prerequisite = { focus = XTN_usa_constitution }
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_gold}
+
+    }
+  }
+
+ focus = {
+    id = XTN_usa_army
+    x = 36
+    y = 21
+    icon = GFX_focus_usa_recruit_the_free_corps
+
+    prerequisite = { focus = XTN_usa_constitution }
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        army_experience = 25
+        add_tech_bonus = {
+        bonus = 0.5
+        uses = 2
+        category = armor
+            }
+
+    }
+  }
+
+ focus = {
+    id = XTN_state_capitalism
+    x = 40
+    y = 19
+    icon = GFX_goal_generic_construct_civ_factory
+
+    prerequisite = { focus = XTN_usa_constitution }
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_state_capitalism_idea}
+
+    }
+  }
+
+ focus = {
+    id = XTN_support_arms_industry
+    x = 38
+    y = 20
+    icon = GFX_goal_generic_construct_mil_factory
+
+    prerequisite = { focus = XTN_state_capitalism }
+
+    cost = 10
+    
+
+    completion_reward = {
+
+                add_offsite_building = { type = arms_factory level = 3 }
+    }
+  }
+
+ focus = {
+    id = XTN_steel_mills
+    x = 40
+    y = 20
+    icon = GFX_focus_generic_steel
+
+    prerequisite = { focus = XTN_state_capitalism }
+
+    cost = 10
+    
+
+    completion_reward = {
+        add_resource = {
+        type = steel
+        amount = 25
+        state = 368
+            }
+
+    }
+  }
+
+ focus = {
+    id = XTN_sell_land
+    x = 42
+    y = 20
+    icon = GFX_focus_generic_farmland
+
+    prerequisite = { focus = XTN_state_capitalism }
+
+    cost = 10
+    
+
+    completion_reward = {
+        add_political_power = -50
+        add_stability = -0.05
+        add_offsite_building = { type = industrial_complex level = 3 }
+
+    }
+  }
+
+
+  
 ################################################ Smirnov ##############################################################################################
   focus = {
     id = XTN_ivan_smirnov_rule
@@ -2782,6 +2919,106 @@ add_tech_bonus = {
 
     }
 
+  focus = {
+    id = XTN_nep_focus
+    x = 17
+    y = 24
+    icon = GFX_focus_DEN_limited_regulations
+
+    prerequisite = { focus = XTN_support_tank_industry }
+    prerequisite = { focus = XTN_invite_polish_generals }
+    prerequisite = { focus = XTN_support_coffee_farms }
+
+
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+    remove_ideas = {XTN_economical_strain}
+    add_ideas = {XTN_nep}
+
+    }
+
+    }
+
+
+  focus = {
+    id = XTN_appoint_bukharin
+    x = 20
+    y = 25
+    icon = GFX_focus_SOV_ally_bukharinists
+
+    prerequisite = { focus = XTN_nep_focus }
+    prerequisite = { focus = XTN_honor_the_confederacy }
+
+
+
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_country_leader_role = {
+    character = XTN_nikolay_bukharin
+    promote_leader = yes
+    country_leader = {
+        ideology = leninism
+        expire = "1965.1.1.1"
+        traits = { economy_reformer }
+    }
+}
+    XTN_nikolay_bukharin = {
+        add_corps_commander_role = {
+    skill = 3
+    attack_skill = 2
+    defense_skill = 5
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+    }
+
+        set_party_name = {
+        ideology = communism
+        long_name = "Vanguard Socialist Party of Confederate States of America"
+        name = "VSPCSA"
+                }
+
+
+
+
+    }
+
+    }
+
+  focus = {
+    id = XTN_confederate_constitution
+    x = 20
+    y = 26
+    icon = GFX_focus_renounce_the_treaty_of_trianon
+
+    prerequisite = { focus = XTN_appoint_bukharin }
+
+
+
+
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+     add_ideas = {XTN_csa_constitution}
+
+    }
+  }
+
 
 
   focus = {
@@ -3096,7 +3333,7 @@ add_tech_bonus = {
 
         set_party_name = {
         ideology = communism
-        long_name = "I-L/SB/VUP/SPA"
+        long_name = "SPFWA/SB/VUP/SPA"
         name = "Supreme Soviet"
                 }
 
