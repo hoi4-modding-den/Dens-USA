@@ -452,6 +452,53 @@ ideas = {
             }
 
         }
+    XTN_franc_adopted = {
+           removal_cost = -1
+            picture = chi_hyper_inflation
+            modifier = {
+               
+               consumer_goods_factor = 0.1
+
+            }
+
+        }
+    XTN_french_chaos = {
+           removal_cost = -1
+            picture = fra_political_violence
+            modifier = {
+               
+               forced_surrender_limit = -0.5
+
+            }
+
+        }
+    XTN_french_iron_fist = {
+           removal_cost = -1
+            picture = fra_political_violence
+            modifier = {
+               
+            stability_factor = -0.2
+            drift_defence_factor = 1
+            army_core_defence_factor = 0.15
+
+
+            }
+
+        }
+
+    XTN_french_party_army = {
+           removal_cost = -1
+            picture = fra_political_violence
+            modifier = {
+               
+            army_morale_factor = -0.1
+            army_org = -10
+
+
+
+            }
+
+        }
 
     }
 }

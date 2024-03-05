@@ -3020,6 +3020,7 @@ focus = {
     icon = GFX_focus_usa_voter_registration_act
 
     prerequisite = { focus = XTN_total_war }
+    available = {XTN = {has_war = yes}}
 
     cost = 10
     
@@ -3213,6 +3214,7 @@ focus = {
 
     prerequisite = { focus = XTN_abandon_freedoms }
     prerequisite = { focus = XTN_unite_the_USA_democratic }
+        available = {XTN = {has_war = no}}
 
     cost = 5
     
@@ -4262,9 +4264,109 @@ add_tech_bonus = {
         long_name = "Vanguard Union Party"
         name = "VUP"
                 }
+        add_ideas = {XTN_french_chaos}
 
     }
   }
+
+  focus = {
+    id = XTN_adopt_franc
+    x = 44
+    y = 18
+    icon = GFX_focus_fra_devalue_the_franc
+
+    prerequisite = { focus = XTN_french_stalinism }
+
+    cost = 5
+    
+
+    completion_reward = {
+
+    add_timed_idea = {
+    idea = XTN_franc_adopted 
+    days = 360
+            } 
+
+    }
+  }
+
+  focus = {
+    id = XTN_look_east
+    x = 44
+    y = 20
+    icon = GFX_focus_fra_loyalty_stalin
+
+    prerequisite = { focus = XTN_adopt_franc }
+
+    cost = 10
+    
+
+    completion_reward = {
+        add_political_power = 50
+        add_ideas = {XTN_french_iron_fist}
+
+    }
+  }
+
+  focus = {
+    id = XTN_recognize_zsrr
+    x = 45
+    y = 19
+    icon = GFX_focus_SOV_socialism_in_one_country
+
+    prerequisite = { focus = XTN_adopt_franc }
+
+    cost = 10
+    
+
+    completion_reward = {
+        
+        custom_effect_tooltip = XTN_USSR
+
+    }
+  }
+
+  focus = {
+    id = XTN_state_atheism_french
+    x = 43
+    y = 21
+    icon = GFX_focus_mex_triumph_over_the_cristeros
+
+    prerequisite = { focus = XTN_look_east }
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_state_atheism_idea}
+
+    }
+  }
+
+  focus = {
+    id = XTN_party_army
+    x = 46
+    y = 21
+    icon = GFX_focus_SOV_organization_centralization_discipline
+
+    prerequisite = { focus = XTN_look_east }
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_french_party_army}
+
+    }
+  }
+
+
 ############################################## Supreme Soviet #####################################################################
   focus = {
     id = XTN_supreme_soviet

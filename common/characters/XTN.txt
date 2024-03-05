@@ -404,6 +404,34 @@ logistics_skill = 4
 		}
 	}
 
+	XTN_vyacheslav_molotov = {
+		name = "Vyacheslav Molotov"
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_vyacheslav_molotov"
+			}
+		}
+
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SOV_vyacheslav_molotov
+			allowed = {
+				original_tag = XTN
+			}
+			visible = {
+				has_completed_focus = XTN_recognize_zsrr
+
+			}
+			available = {
+				has_completed_focus = XTN_recognize_zsrr
+			}
+			traits = {
+				XTN_soviet_diplomat 
+			}
+		}
+	}
+
 
 
 

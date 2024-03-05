@@ -26,10 +26,13 @@ VICTORY_POINTS_8014:0 "Trotskygrad"
  XTN_reform:0 "Standing Army"
  XTN_marshal_president:0 "Marshal President"
 
+ XTN_soviet_diplomat:0 "Soviet Diplomat"
+
 
 XTN_trotskists:0 "Trotskists will be invited"
 XTN_germans:0 "Germans will be invited"
 XTN_french:0 "French will be invited"
+XTN_USSR:0 "USSR will send a diplomat to help us defend against imperialism."
 
 
 
@@ -161,6 +164,17 @@ XTN_post_total_war_desc:0 "USA has turned into wasteland. Was it really worth it
 XTN_democratic_idealism:0 "Democratic Idealism"
 XTN_democratic_idealism_desc:0 "Democracy is perfect!"
 
+XTN_franc_adopted:0 "Franc Adopted"
+XTN_franc_adopted_desc:0 "This caused some chaos in our monetary system."
+
+XTN_french_chaos:0 "French Chaos"
+XTN_french_chaos_desc:0 "Russians and americans were cooperating buildng beautiful america. Same thing cannot be said about the french."
+
+XTN_french_iron_fist:0 "Rule of Iron Fist"
+XTN_french_iron_fist_desc:0 "We have adapted harsh rules that are present in Soviet Union."
+
+XTN_french_party_army:0 "Army of the Party"
+XTN_french_party_army_desc:0 "Our millitary is now part of the party and is forced to be active in political life of the nation."
 
 
 
@@ -586,3 +600,18 @@ XTN_abolish_ideas_of_4th_internationale_desc:0 "We have drifted away from commun
 
 XTN_crush_south:0 "Crush South"
 XTN_crush_south_desc:0 "We must crush these tiny rebels before final offensive."
+
+XTN_adopt_franc:0 "Adopt the Franc"
+XTN_adopt_franc_desc:0 "We must bring some french flavour to our nation by adopting a new currency."
+
+XTN_look_east:0 "Look East"
+XTN_look_east_desc:0 "Soviet Union is a lovely place, we should strive to be like them."
+
+XTN_recognize_zsrr:0 "Recognize USSR"
+XTN_recognize_zsrr_desc:0 "We need to establish diplomatical relations with our greatest ally!"
+
+XTN_state_atheism_french:0 "State Atheism"
+XTN_state_atheism_french_desc:0 "Religion is opium for the masses - Karl Marx"
+
+XTN_party_army:0 "Army of The Party"
+XTN_party_army_desc:0 "Disloyal millitary is the worst thing that can happen to a country. We will force every soldier to join the party and partake in political life of the nation."

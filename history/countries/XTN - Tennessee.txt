@@ -16,6 +16,7 @@ recruit_character = XTN_mikhail_tukhachevsky
 recruit_character = XTN_ernst_thalmann
 recruit_character = XTN_jozef_haller
 recruit_character = XTN_kazimierz_sosnkowski
+recruit_character = XTN_vyacheslav_molotov
 
 add_ideas = {
 
