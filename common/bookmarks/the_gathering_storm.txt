@@ -38,7 +38,7 @@ bookmarks = {
 			history = ""
 			ideology = democratic
 			focuses = {
-				XTN_inteligensia_right
+				XTN_total_war
 				XTN_inteligensia_left
 				XTN_american_revolution
 			}

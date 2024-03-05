@@ -149,6 +149,18 @@ XTN_gold_desc:0 "Our currency is doing better than ever!"
 XTN_state_capitalism_idea:0 "State Capitalism"
 XTN_state_capitalism_idea_desc:0 "Economy supported by both people and government is the best one."
 
+XTN_desegregation_idea:0 "Desegregation"
+XTN_desegregation_idea_desc:0 ""
+
+XTN_total_war:0 "TOTAL WAR!"
+XTN_total_war_desc:0 "KILL KILL KILL PUSH PUSH PUSH"
+
+XTN_post_total_war:0 "Post Total War"
+XTN_post_total_war_desc:0 "USA has turned into wasteland. Was it really worth it?"
+
+XTN_democratic_idealism:0 "Democratic Idealism"
+XTN_democratic_idealism_desc:0 "Democracy is perfect!"
+
 
 
 
@@ -535,3 +547,42 @@ XTN_steel_mills_desc:0 "To build more guns we need more steel."
 
 XTN_sell_land:0 "Sell Lands"
 XTN_sell_land_desc:0 "We can sell some land to private investors for some economical boost."
+
+XTN_freedom_of_religion:0 "Freedom of Religion"
+XTN_freedom_of_religion_desc:0 "Everybody has a right to belive in whichever god they want. Also this will bring us support of southern fundamentalists."
+
+XTN_desegregation:0 "Desegregation"
+XTN_desegregation_desc:0 "There is no reason to oppress people based on their skin colour. They are rightful workers of the republic."
+
+XTN_fortify_tennessee:0 "Tukhachevsky Line"
+XTN_fortify_tennessee_desc:0 "We will fortify our homeland to prepare us for enemy offensive."
+
+XTN_extend_line:0 "Extend Line"
+XTN_extend_line_desc:0 "After capturing Louisiana we need to extend Tukhachevsky line and fortify New Orleans."
+
+XTN_southern_push:0 "Southern Push"
+XTN_southern_push_desc:0 "We will start our great capaign by securing river."
+
+XTN_total_war:0 "Total War!"
+XTN_total_war_desc:0 "Our brave marshal calls us for one grand offensive to take all over america. No slowing down."
+
+XTN_crush_north:0 "Crush North"
+XTN_crush_north_desc:0 "KILL KILL KILL KILL"
+
+XTN_protect_river:0 "Protect the river"
+XTN_protect_river_desc:0 "Expanding our fortifications all over Mississippi river will help us defend the home land while we are picking on the rest of rebels."
+
+XTN_abandon_freedoms:0 "Abandon Freedom"
+XTN_abandon_freedoms_desc:0 "It's war time and we cannot take any chances with democratic unstability. We will scrap the constitution and push forward."
+
+XTN_unite_the_USA_democratic:0 "Unite the USA"
+XTN_unite_the_USA_democratic_desc:0 "It is time! Final offensive! Total defeat or Ultimate Victory!"
+
+XTN_return_liberties:0 "Return Liberties"
+XTN_return_liberties_desc:0 "We have restricted basic liberties and human rights durning the war. It's time to return them, but are we still a democracy?"
+
+XTN_abolish_ideas_of_4th_internationale:0 "Abolish ideas of 4th Internationale"
+XTN_abolish_ideas_of_4th_internationale_desc:0 "We have drifted away from communist ideas."
+
+XTN_crush_south:0 "Crush South"
+XTN_crush_south_desc:0 "We must crush these tiny rebels before final offensive."
