@@ -1,0 +1,74 @@
+defined_text = { #Unit 1
+    name = XOR_tt_unit_1_status
+    text = {
+        trigger = {
+            check_variable = { XOR_var_unit1 = 0 } # 0 = unit has not been created yet
+        }
+        localization_key = XOR_tt_unit_status_inactive
+    }
+    text = {
+        trigger = {
+            check_variable = { XOR_var_unit1 = 1 } # 1 = unit is activated and not in use
+        }
+        localization_key = XOR_tt_unit_status_active
+    }
+    text = {
+        trigger = {
+            NOT = {
+                check_variable = { XOR_var_unit1 = 0 } # >1 = unit is activated and is in use
+                check_variable = { XOR_var_unit1 = 1 }
+            }
+        }
+        localization_key = XOR_tt_unit_status_inuse
+    }
+}
+
+defined_text = { #Unit 2
+    name = XOR_tt_unit_2_status
+    text = {
+        trigger = {
+            check_variable = { XOR_var_unit2 = 0 } # 0 = unit has not been created yet
+        }
+        localization_key = XOR_tt_unit_status_inactive
+    }
+    text = {
+        trigger = {
+            check_variable = { XOR_var_unit2 = 1 } # 1 = unit is activated and not in use
+        }
+        localization_key = XOR_tt_unit_status_active
+    }
+    text = {
+        trigger = {
+            NOT = {
+                check_variable = { XOR_var_unit2 = 0 } # >1 = unit is activated and is in use
+                check_variable = { XOR_var_unit2 = 1 }
+            }
+        }
+        localization_key = XOR_tt_unit_status_inuse
+    }
+}
+
+defined_text = { #Unit 3
+    name = XOR_tt_unit_3_status
+    text = {
+        trigger = {
+            check_variable = { XOR_var_unit3 = 0 } # 0 = unit has not been created yet
+        }
+        localization_key = XOR_tt_unit_status_inactive
+    }
+    text = {
+        trigger = {
+            check_variable = { XOR_var_unit3 = 1 } # 1 = unit is activated and not in use
+        }
+        localization_key = XOR_tt_unit_status_active
+    }
+    text = {
+        trigger = {
+            NOT = {
+                check_variable = { XOR_var_unit3 = 0 } # >1 = unit is activated and is in use
+                check_variable = { XOR_var_unit3 = 1 }
+            }
+        }
+        localization_key = XOR_tt_unit_status_inuse
+    }
+}

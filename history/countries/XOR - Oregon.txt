@@ -28,6 +28,28 @@ set_variable = { #Number of Investigations
 	value = 0
 }
 
+set_variable = { #Investigative team 1
+	var = XOR_var_unit1
+	value = 0
+}
+set_variable = { #Investigative team 2
+	var = XOR_var_unit2
+	value = 0
+}
+set_variable = { #Investigative team 3
+	var = XOR_var_unit3
+	value = 0
+}
+set_variable = { #Index code to connect team to event
+	var = XOR_index
+	value = 0
+}
+
+set_variable = { #Amount of PP for investigations
+	var = XOR_unit_cost_pp
+	value = 0
+}
+
 
 recruit_character = XOR_leader_missingstate
 recruit_character = XOR_charlesmcnary

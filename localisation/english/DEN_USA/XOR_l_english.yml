@@ -22,8 +22,12 @@
  XOR_oregon_investigation_dept:0 "Open the O.I.D."
  XOR_oregon_investigation_dept_desc:0 ""
  XOR_explore_east:0 "Explore the East"
+ XOR_explore_east_desc:0 ""
+ XOR_tt_add_unit:0 "Unlocks §Y1§! Investigative Unit."
  XOR_explore_south:0 "Explore the South"
+ XOR_explore_south_desc:0 ""
  XOR_explore_west:0 "Explore the West"
+ XOR_explore_west_desc:0 ""
  XOR_tt_explore_east_trigger:0 "Has formed the §YO.I.D.§!"
  XOR_tt_explore_east:0 "Unlocks §YInvestigative Decisions§! for the §YOregon East§!."
  XOR_tt_explore_west:0 "Unlocks §YInvestigative Decisions§! for the §YOregon West§!."
@@ -72,7 +76,19 @@
 
  #Decisions
  XOR_oregon_investigation_decisions:0 "The Oregon Investigation Department"
- XOR_oregon_investigation_decisions_desc:0 "The O.I.D. has only one goal: Investigate the supernatural and unusual reports found in the state of Oregon, and restore order whenever possible.\n\nThe O.I.D. has run [?XOR_num_inv|Y] Investigations.\n\nThe O.I.D. has amassed [?XOR_inv_points|Y] Investigation Experience."
+ XOR_oregon_investigation_decisions_desc:0 "The O.I.D. has only one goal: Investigate the supernatural and unusual reports found in the state of Oregon, and restore order whenever possible.\n\n--------------------------------------------------------------------------------------\nInvestigative Unit 1 Status:  [XOR_tt_unit_1_status]\n\nInvestigative Unit 2 Status:  [XOR_tt_unit_2_status]\n\nInvestigative Unit 3 Status:  [XOR_tt_unit_3_status]\n--------------------------------------------------------------------------------------\n\nThe O.I.D. has run [?XOR_num_inv|Y] Investigations.\n\nThe O.I.D. has amassed [?XOR_inv_points|Y] Investigation Experience."
+
+ XOR_tt_unit_status_inactive:0 "§RNot Created§!"
+ XOR_tt_unit_status_active:0 "§YAvailable§!"
+ XOR_tt_unit_status_inuse:0 "§4In Use§!"
+ XOR_tt_has_unit_open:0 "Has at least §Y1§! Investigative Unit available."
+ XOR_tt_has_unit_created:0 "Has at least §Y1§! Investigative Unit Created"
+
+ XOR_OID_generic_east:0 "§OInvestigate the Oregon East§!"
+ XOR_OID_generic_east_desc:0 "This decision can be repeated multiple times"
+ XOR_tt_generic_east_cooldown:0 "Has not sent a Investigation for the last §Y5§! days"
+ XOR_tt_OID_generic_east:0 "We will send a team to investigate general regions of the §YOregon East§!, who will relay back with results in a few weeks."
+
  XOR_enter_oregon:0 "Enter Oregon"
  XOR_enter_oregon_desc:0 "There is a first step for everything, right?"
  XOR_tt_enter_oregon:0 "We will attempt to set a base of operations in Umatilla, Oregon."
@@ -85,9 +101,9 @@
  XOR_OID_pendleton_desc:0 ""
  XOR_OID_high_desert:0 "Investigate the High Desert"
  XOR_OID_high_desert_desc:0 ""
- XOR_tt_OID_bend:0 "We will send a team to §YBend§!, which will relay back with results in a few days.\n"
- XOR_tt_OID_pendleton:0 "We will send a team to §YPendleton§!, which will relay back with results in a few weeks.\n"
- XOR_tt_OID_highdesert:0 "We will send a team to explore the §YHigh Desert§!, which will relay back with results in a few weeks.\n"
+ XOR_tt_OID_bend:0 "We will send a team to §YBend§!, who will relay back with results in a few days.\n"
+ XOR_tt_OID_pendleton:0 "We will send a team to §YPendleton§!, who will relay back with results in a few weeks.\n"
+ XOR_tt_OID_highdesert:0 "We will send a team to explore the §YHigh Desert§!, who will relay back with results in a few weeks.\n"
  XOR_tt_has_completed_east_investigation:0 "Has completed §Yall§! Investigations in the §YOregon East§!."
  XOR_OID_finished_east:0 "Cement O.I.D. Control in the East"
 

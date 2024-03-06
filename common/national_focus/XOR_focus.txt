@@ -34,7 +34,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = XOR_events.0
-			add_political_power = 5
+			#add_political_power = 5
 		}
 		ai_will_do = { 
 			factor = 10
@@ -82,6 +82,10 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = XOR_tt_explore_east
+			custom_effect_tooltip = XOR_tt_add_unit
+			set_variable = {
+				XOR_var_unit1 = 1 #Activates Unit 1
+			}
 		}
 		ai_will_do = { 
 			factor = 100
@@ -154,6 +158,10 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = XOR_tt_explore_south
+			custom_effect_tooltip = XOR_tt_add_unit
+			set_variable = {
+				XOR_var_unit1 = 1 #Activates Unit 1
+			}
 		}
 		ai_will_do = { 
 			factor = 100
@@ -177,6 +185,20 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = XOR_tt_explore_east_trigger
 				has_country_flag = XOR_has_created_OID
+			}
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_has_unit_created
+				OR = {
+					NOT = {
+						check_variable = { XOR_var_unit1 = 0 }
+					}
+					NOT = {
+						check_variable = { XOR_var_unit2 = 0 }
+					}
+					NOT = {
+						check_variable = { XOR_var_unit3 = 0 }
+					}
+				}	
 			}
 		}
 

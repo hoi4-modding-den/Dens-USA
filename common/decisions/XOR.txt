@@ -26,6 +26,76 @@ XOR_oregon_investigation_decisions = {
 		}
 	}
 
+	XOR_OID_generic_east = { #GENERIC INVESTIGATE OREGON EAST
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 0
+			modifier = {
+				has_country_flag = XOR_has_completed_pendleton
+				factor = 100
+			}
+		}
+	
+		allowed = {
+			tag = XOR
+		}
+		
+		visible = {
+			has_completed_focus = XOR_explore_east
+		}
+		available = {
+			has_completed_focus = XOR_explore_east
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_generic_east_cooldown
+				NOT = {
+					has_country_flag = XOR_generic_east_cooldown #5 day cooldown
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_has_unit_open
+				NOT = {
+					AND = {
+						OR = {
+							NOT = { check_variable = { XOR_var_unit1 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit2 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit3 = 1 } }
+						}
+					}
+				}	
+			}
+			
+		}
+
+		cost = 15
+		
+		complete_effect = {
+			hidden_effect = {
+				set_variable = { XOR_index = 1001 } #1001-1003 = generic mission EAST
+				XOR_send_investigation_generic = yes
+				random_list = {
+					50 = {
+						country_event = XOR_events.7
+						set_country_flag = XOR_generic_7
+					}
+					50 = {
+						country_event = XOR_events.8
+						set_country_flag = XOR_generic_8
+					}
+				}
+			}
+			custom_effect_tooltip = XOR_tt_OID_generic_east
+			set_country_flag = {
+				flag = XOR_generic_east_cooldown
+				days = 7
+			}
+		}
+	}
+
 	#Investigate Pendleton
 	XOR_OID_pendleton = {
 
@@ -43,8 +113,22 @@ XOR_oregon_investigation_decisions = {
 		}
 		available = {
 			has_completed_focus = XOR_explore_east
-			NOT = {
-				has_idea = XOR_running_investigation
+			
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_has_unit_open
+				NOT = {
+					AND = {
+						OR = {
+							NOT = { check_variable = { XOR_var_unit1 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit2 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit3 = 1 } }
+						}
+					}
+				}	
 			}
 		}
 
@@ -55,10 +139,11 @@ XOR_oregon_investigation_decisions = {
 		complete_effect = {
 			hidden_effect = {
 				country_event = XOR_events.2
+				set_variable = { XOR_index = 2 }
+				XOR_send_investigation = yes
 			}
 			custom_effect_tooltip = XOR_tt_OID_pendleton
 			set_country_flag = XOR_has_started_pendleton
-			add_ideas = XOR_running_investigation
 		}
 	}
 
@@ -83,9 +168,23 @@ XOR_oregon_investigation_decisions = {
 		}
 		available = {
 			has_completed_focus = XOR_explore_east
-			NOT = {
-				has_idea = XOR_running_investigation
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_has_unit_open
+				NOT = {
+					AND = {
+						OR = {
+							NOT = { check_variable = { XOR_var_unit1 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit2 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit3 = 1 } }
+						}
+					}
+				}	
 			}
+			
 		}
 
 		cost = 50
@@ -95,10 +194,11 @@ XOR_oregon_investigation_decisions = {
 		complete_effect = {
 			hidden_effect = {
 				country_event = XOR_events.3
+				set_variable = { XOR_index = 3 }
+				XOR_send_investigation = yes
 			}
 			custom_effect_tooltip = XOR_tt_OID_bend
 			set_country_flag = XOR_has_started_bend
-			add_ideas = XOR_running_investigation
 		}
 	}
 
@@ -124,8 +224,21 @@ XOR_oregon_investigation_decisions = {
 		}
 		available = {
 			has_completed_focus = XOR_explore_east
-			NOT = {
-				has_idea = XOR_running_investigation
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_has_unit_open
+				NOT = {
+					AND = {
+						OR = {
+							NOT = { check_variable = { XOR_var_unit1 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit2 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit3 = 1 } }
+						}
+					}
+				}	
 			}
 		}
 
@@ -136,10 +249,11 @@ XOR_oregon_investigation_decisions = {
 		complete_effect = {
 			hidden_effect = {
 				country_event = XOR_events.6
+				set_variable = { XOR_index = 6 }
+				XOR_send_investigation = yes
 			}
 			custom_effect_tooltip = XOR_tt_OID_bend
 			set_country_flag = XOR_has_started_bend_pt2
-			add_ideas = XOR_running_investigation
 		}
 	}
 
@@ -164,8 +278,21 @@ XOR_oregon_investigation_decisions = {
 		}
 		available = {
 			has_completed_focus = XOR_explore_east
-			NOT = {
-				has_idea = XOR_running_investigation
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_has_unit_open
+				NOT = {
+					AND = {
+						OR = {
+							NOT = { check_variable = { XOR_var_unit1 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit2 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit3 = 1 } }
+						}
+					}
+				}	
 			}
 			custom_trigger_tooltip = {
 				tooltip = XOR_tt_inv_point_req_30
@@ -185,10 +312,11 @@ XOR_oregon_investigation_decisions = {
 		complete_effect = {
 			hidden_effect = {
 				country_event = XOR_events.4
+				set_variable = { XOR_index = 4 }
+				XOR_send_investigation = yes
 			}
 			custom_effect_tooltip = XOR_tt_OID_highdesert
 			set_country_flag = XOR_has_started_highdesert
-			add_ideas = XOR_running_investigation
 		}
 	}
 
@@ -210,10 +338,6 @@ XOR_oregon_investigation_decisions = {
 		}
 		available = {
 			has_completed_focus = XOR_explore_east
-			NOT = {
-				has_idea = XOR_running_investigation
-			}
-			
 			custom_trigger_tooltip = {
 				tooltip = XOR_tt_has_completed_east_investigation
 				has_country_flag = XOR_has_completed_highdesert

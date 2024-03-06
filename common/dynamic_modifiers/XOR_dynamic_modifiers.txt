@@ -1,0 +1,8 @@
+XOR_running_investigation = {
+	icon = GFX_idea_SWE_folkhemmet
+	enable = { always = yes }
+
+	political_power_gain = XOR_unit_cost_pp
+}
+
+
