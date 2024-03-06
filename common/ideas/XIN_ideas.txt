@@ -9,10 +9,25 @@ ideas = {
 				
 			}
 		}
-		XIN_kickstarting_economy = {
+		XIN_rearanging_economy = {
 			picture = usa_great_depression
 			modifier = {
-				consumer_goods_factor = -0.25
+				consumer_goods_factor = 0.125
+				stability_factor = -0.05
+				political_power_cost = 0.75
+			}
+		}
+		XIN_kickstarting_industry = {
+			picture = usa_great_depression
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		XIN_regaining_economic_trust = {
+			picture = GFX_focus_usa_voter_registration_act
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_weekly = 0.015
 			}
 		}
 	}

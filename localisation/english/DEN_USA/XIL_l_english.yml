@@ -3,3 +3,19 @@
  XIL_DEF: "Illinois"
  XIL_ADJ: "Illinois"
  
+
+GLE_F: "Great Lake Empire"
+GLE_F_DEN: "The Empire of the Great Lakes"
+GLE_F_ADJ: "Imperial"
+
+GLE_N: "Great Lake Empire"
+GLE_N_DEN: "The Empire of the Great Lakes"
+GLE_N_ADJ: "Imperial"
+
+GLE_C: "Great Lake Union"
+GLE_C_DEN: "The Union of the Great Lakes"
+GLE_C_ADJ: "Union"
+
+GLE_D: "United Great Lake States"
+GLE_C_DEN: "The Union of the Great Lake States"
+GLE_C_ADJ: "United"

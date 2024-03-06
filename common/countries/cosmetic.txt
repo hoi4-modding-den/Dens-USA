@@ -15,3 +15,7 @@ DEN_USA = {
     color = rgb { 97 165 255 }
     color_ui = rgb { 97 165 255 }
 }
+XIN_GRL = {
+    color = rgb { 122 107 117 }
+    color_ui = rgb { 142 127 137 }
+}

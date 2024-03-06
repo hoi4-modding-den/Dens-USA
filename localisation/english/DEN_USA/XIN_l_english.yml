@@ -2,5 +2,22 @@
  XIN: "Indiana"
  XIN_DEF: "Indiana"
  XIN_ADJ: "Indiana"
-XIN_boost_democratic_support: "Increase Democratic Support | Currently at: [?election_dem_leaning|B0.]"
-XIN_boost_republican_support: "Increase Republican Support | Currently at: [?election_rep_leaning|R0.]"
+XIN_boost_democratic_support: "Increase Democratic Support | Currently at: [?XIN_election_dem_leaning|B0.]"
+XIN_boost_republican_support: "Increase Republican Support | Currently at: [?XIN_election_rep_leaning|R0.]"
+form_greater_indiana.tt:0 "Form The Great Lake Empire"
+
+XIN_GRL_fascism: "Great Lake Empire"
+XIN_GRL_fascism_DEN: "The Empire of the Great Lakes"
+XIN_GRL_fascism_ADJ: "Imperial"
+
+XIN_GRL: "Great Lake Empire"
+XIN_GRL_DEN: "The Empire of the Great Lakes"
+XIN_GRL_ADJ: "Imperial"
+
+XIN_GRL_communism: "Great Lake Union"
+XIN_GRL_communism_DEN: "The Union of the Great Lakes"
+XIN_GRL_communism_ADJ: "Union"
+
+XIN_GRL_democratic: "United Great Lake States"
+XIN_GRL_democratic_DEN: "The Union of the Great Lake States"
+XIN_GRL_democratic_ADJ: "United""

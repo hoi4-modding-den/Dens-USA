@@ -16,7 +16,7 @@ XIN_election_decisions = {
 			country_event = XIN.1
 		}
 	}
-	boost_democratic_support = {
+	XIN_boost_democratic_support = {
 		
 		cost = 50
 		visible = {
@@ -31,7 +31,7 @@ XIN_election_decisions = {
 		}
 		available = {
 			NOT = {
-				has_decision = boost_republican_support
+				has_decision = XIN_boost_republican_support
 			}
 			has_political_power > 50
 		}
@@ -43,7 +43,7 @@ XIN_election_decisions = {
 			}
 		}
 	}
-	boost_republican_support = {
+	XIN_boost_republican_support = {
 		cost = 50
 		visible = {
 			has_completed_focus = XIN_first_election
@@ -57,7 +57,7 @@ XIN_election_decisions = {
 		}
 		available = {
 			NOT = {
-				has_decision = boost_democratic_support
+				has_decision = XIN_boost_democratic_support
 			}
 			has_political_power > 50
 		}
@@ -78,7 +78,7 @@ XIN_election_decisions = {
 			has_completed_focus = XIN_first_election
 		}
 
-		days_mission_timeout = 70
+		days_mission_timeout = 140
 		available = {
 			always = no
 		}
@@ -97,6 +97,43 @@ XIN_election_decisions = {
 			else = {
 				complete_national_focus = XIN_coalition
 			}
+		}
 	}
-}
+	greater_indiana = {
+
+		ai_will_do = {
+			base = 1
+		}
+
+		allowed = {
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = form_greater_indiana.tt
+				owns_state = 393
+				owns_state = 394
+				owns_state = 395
+				owns_state = 396
+				owns_state = 261
+				owns_state = 393
+			}
+		}
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						region = 198
+					}
+				}
+				add_core_of = ROOT
+			}
+				set_cosmetic_tag = XIN_GRL
+			
+		}
+	}
 }
