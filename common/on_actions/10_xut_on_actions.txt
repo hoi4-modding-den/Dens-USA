@@ -9,4 +9,40 @@ on_actions = {
 			}
 		}
 	}
+	on_peaceconference_ended = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						ROOT = XUT
+						FROM = XNV
+						959 = {
+							is_owned_by = XUT
+						}
+					}
+				}
+				country_event = XUT.20
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						NOT = {
+							XUT = {
+								has_war_with = XNV
+							}
+						}
+						959 = {
+							is_owned_by = XUT
+						}
+					}
+				}
+				country_event = XUT.20
+			}
+		}
+	}
+	
 }

@@ -470,3 +470,111 @@ country_event = { #Rebuild Clearwater
 		add_stability = 0.25
 	}
 }
+
+country_event = { #On Action Lower Idaho
+	id = XUT.20
+	title = XUT.20.t
+	desc = XUT.20.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Keep
+		name = XUT.20.a
+		add_political_power = -100
+		add_stability = -0.05
+	}
+	option = { #Give
+		name = XUT.20.b
+		XID = {
+			set_state_owner = 959
+			set_state_controller = 959
+		}
+	}
+}
+
+country_event = { #Oregon Communist Cascadia
+	id = XUT.21
+	title = XUT.21.t
+	desc = XUT.21.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Become Commie
+		name = XUT.21.a
+		XOR = {
+			annex_country = {
+				target = XID
+				transfer_troops = yes
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.5
+			}
+		}
+	}
+	option = { #War
+		name = XUT.21.b
+		XID = {
+			declare_war_on = {
+				target = XOR
+				type = annex_everything
+			}
+		}
+	}
+}
+country_event = { #Wyoming Communist
+	id = XUT.22
+	title = XUT.22.t
+	desc = XUT.22.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Become Commie
+		name = XUT.22.a
+		XWY = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.5
+			}
+			XUT = { add_to_faction = XWY }
+		}
+	}
+	option = { #War
+		name = XUT.22.b
+		XUT = {
+			declare_war_on = {
+				target = XWY
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+country_event = { #Commie Friend
+	id = XUT.23
+	title = XUT.23.t
+	desc = XUT.23.d
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #Join
+		name = XUT.23.a
+		ROOT = {
+			XUT = { add_to_faction = ROOT }
+		}
+	}
+	option = { #Nah
+		name = XUT.23.b
+	}
+}

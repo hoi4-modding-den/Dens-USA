@@ -452,5 +452,65 @@ ideas = {
 				experience_gain_army_unit_factor = 0.5
 			}
 		}
+		XUT_red_america_idea = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 2.0
+				stability_weekly = 0.05
+				war_support_factor = -0.2
+				consumer_goods_factor = -0.25
+			}
+		}
+		XUT_diplomat_program = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				improve_relations_maintain_cost_factor = -0.5
+				opinion_gain_monthly_factor = 0.25
+			}
+		}
+		XUT_red_beacon_idea = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 2.5
+				stability_weekly = 0.05
+				war_support_factor = 0.2
+				consumer_goods_factor = -0.3
+				army_defence_factor = 0.25
+				army_strength_factor = 0.1
+			}
+		}
 	}
 }

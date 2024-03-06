@@ -1987,6 +1987,1325 @@
 		}
 	}
 	focus = {
+		id = XUT_liberate_nevada
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_regional_communism focus = XUT_red_america }
+		
+		x = 2
+		y = 1
+		relative_position_id = XUT_regional_communism
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XNV = {
+				country_event = XUT.14
+			}
+		}
+	}
+	focus = {
+		id = XUT_liberate_cali
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_liberate_nevada }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_liberate_nevada
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			379 = {
+				is_owned_by = XUT
+				is_controlled_by = XUT
+			}
+			938 = {
+				is_owned_by = XUT
+				is_controlled_by = XUT
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XCA = {
+				country_event = XUT.14
+			}
+		}
+	}
+	focus = {
+		id = XUT_set_the_stage_cascadia
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_regional_communism }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_regional_communism
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XWA = {
+				add_ideas = XUT_communist_influence
+			}
+			XOR = {
+				add_ideas = XUT_communist_influence
+			}
+			XID = {
+				add_ideas = XUT_communist_influence
+			}
+		}
+	}
+	focus = {
+		id = XUT_launch_uprising_idaho
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_set_the_stage_cascadia }
+		prerequisite = { focus = XUT_liberate_nevada }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_set_the_stage_cascadia
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			XID = {
+				owns_state = 387
+				owns_state = 959
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			start_civil_war = {
+				ideology = communism
+				size = 0.5
+				army_ratio = 0.75
+				navy_ratio = 0
+				air_ratio = 0.5
+				keep_all_characters = yes
+				capital = 959
+				states = {
+					959
+				}
+			}
+		}
+	}
+	focus = {
+		id = XUT_pressure_washington
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_launch_uprising_idaho }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_launch_uprising_idaho
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			XID = {
+				has_government = communism
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					XWA = {
+						communism > 0.5
+					}
+				}
+				XID = {
+					annex_country = {
+						target = XWA
+						transfer_troops = yes
+					}
+				}
+			}
+			else = {
+				XID = {
+					declare_war_on = {
+						target = XWA
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = XUT_pressure_oregon
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_pressure_washington }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_pressure_washington
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XOR = {
+				country_event = XUT.21
+			}
+		}
+	}
+	focus = {
+		id = XUT_form_cascadia
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_pressure_oregon }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_pressure_oregon
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = XOR
+					XOR = {
+						has_government = communism
+					}
+				}
+				XOR = {
+					add_state_core = 386
+					add_state_core = 387
+					add_state_core = 959
+				}
+			}
+			else = {
+				XID = {
+					add_state_core = 386
+					add_state_core = 385
+					add_state_core = 936
+					add_state_core = 937
+				}
+			}
+		}
+	}
+	focus = {
+		id = XUT_invite_cascadia_red
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_invite_wyoming focus = XUT_pressure_wyoming }
+		prerequisite = { focus = XUT_form_cascadia }
+		
+		x = -1
+		y = 1
+		relative_position_id = XUT_form_cascadia
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					XOR = {
+						controls_state = 387
+					}
+				}
+				XOR = {
+					country_event = XUT.23
+				}
+			}
+			else = {
+				XID = {
+					country_event = XUT.23
+				}
+			}
+		}
+	}
+	focus = {
+		id = XUT_american_internationale
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_regional_communism }
+		
+		x = -2
+		y = 1
+		relative_position_id = XUT_regional_communism
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_faction = "American Internationale"
+		}
+	}
+	focus = {
+		id = XUT_diplomat_program
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_american_internationale }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_american_internationale
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = XUT_diplomat_program
+		}
+	}
+	focus = {
+		id = XUT_invite_wyoming
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_diplomat_program }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_diplomat_program
+		mutually_exclusive = { focus = XUT_pressure_wyoming }
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			XWY = {
+				has_government = communism
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			country_event = XUT.23
+		}
+	}
+	focus = {
+		id = XUT_pressure_wyoming
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_diplomat_program }
+		
+		x = -2
+		y = 1
+		relative_position_id = XUT_diplomat_program
+		mutually_exclusive = { focus = XUT_invite_wyoming }
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				XWY = {
+					has_government = communism
+				}
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			country_event = XUT.22
+		}
+	}
+	focus = {
+		id = XUT_core_west
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_liberate_cali }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_liberate_cali
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 379
+			owns_state = 938
+			owns_state = 378
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_state_core = 379
+			add_state_core = 938
+			add_state_core = 378
+		}
+	}
+	focus = {
+		id = XUT_in_our_backyard
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_red_america }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_red_america
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XWY
+			}
+		}
+	}
+	focus = {
+		id = XUT_montana_excursion
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_in_our_backyard }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_in_our_backyard
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MFS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = WS1
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = WS2
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = WS5
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PWS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XMT
+			}
+		}
+	}
+	focus = {
+		id = XUT_dakota_excursion
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_in_our_backyard }
+		
+		x = 2
+		y = 1
+		relative_position_id = XUT_in_our_backyard
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SMS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = WS4
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XSD
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XND
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = WS3
+			}
+		}
+	}
+	focus = {
+		id = XUT_core_north
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_montana_excursion }
+		prerequisite = { focus = XUT_dakota_excursion }
+		
+		x = 1
+		y = 1
+		relative_position_id = XUT_montana_excursion
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 388
+			owns_state = 948
+			owns_state = 949
+			owns_state = 950
+			owns_state = 951
+			owns_state = 952
+			owns_state = 389
+			owns_state = 390
+			owns_state = 941
+			owns_state = 942
+			owns_state = 943
+			owns_state = 944
+			owns_state = 945
+			owns_state = 946
+			owns_state = 947
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_state_core = 388
+			add_state_core = 948
+			add_state_core = 949
+			add_state_core = 950
+			add_state_core = 951
+			add_state_core = 952
+			add_state_core = 389
+			add_state_core = 390
+			add_state_core = 941
+			add_state_core = 942
+			add_state_core = 943
+			add_state_core = 944
+			add_state_core = 945
+			add_state_core = 946
+			add_state_core = 947
+		}
+	}
+	focus = {
+		id = XUT_midwest_excursion
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_red_america }
+		
+		x = 4
+		y = 1
+		relative_position_id = XUT_red_america
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XTX
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XOK
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XKS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XNE
+			}
+		}
+	}
+	focus = {
+		id = XUT_core_midwest
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_midwest_excursion }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_midwest_excursion
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 374
+			owns_state = 383
+			owns_state = 384
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_state_core = 374
+			add_state_core = 383
+			add_state_core = 384
+		}
+	}
+	focus = {
+		id = XUT_core_texas
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_core_midwest }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_core_midwest
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 375
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_state_core = 375
+		}
+	}
+	focus = {
+		id = XUT_push_to_mississippi
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_core_west }
+		prerequisite = { focus = XUT_core_north }
+		prerequisite = { focus = XUT_core_texas }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_core_north
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XMN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XIA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XMO
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XAR
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XLA
+			}
+		}
+	}
+	focus = {
+		id = XUT_core_mn
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_push_to_mississippi }
+		
+		x = -2
+		y = 1
+		relative_position_id = XUT_push_to_mississippi
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 391
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_state_core = 391
+		}
+	}
+	focus = {
+		id = XUT_core_gateway
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_push_to_mississippi }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_push_to_mississippi
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 392
+			owns_state = 373
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_state_core = 392
+			add_state_core = 373
+		}
+	}
+	focus = {
+		id = XUT_core_lower_ms
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_push_to_mississippi }
+		
+		x = 2
+		y = 1
+		relative_position_id = XUT_push_to_mississippi
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 372
+			owns_state = 371
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_state_core = 372
+			add_state_core = 371
+		}
+	}
+	focus = {
+		id = XUT_great_lakes
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_core_mn }
+		prerequisite = { focus = XUT_core_gateway }
+		prerequisite = { focus = XUT_core_lower_ms }
+		
+		x = -1
+		y = 1
+		relative_position_id = XUT_core_gateway
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XWI
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XIL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XIN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XOH
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XKY
+			}
+		}
+	}
+	focus = {
+		id = XUT_core_great_lakes
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_great_lakes }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_great_lakes
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 394
+			owns_state = 395
+			owns_state = 396
+			owns_state = 369
+			owns_state = 261
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_state_core = 394
+			add_state_core = 395
+			add_state_core = 396
+			add_state_core = 369
+			add_state_core = 261
+		}
+	}
+	focus = {
+		id = XUT_south
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_core_mn }
+		prerequisite = { focus = XUT_core_gateway }
+		prerequisite = { focus = XUT_core_lower_ms }
+		
+		x = 1
+		y = 1
+		relative_position_id = XUT_core_gateway
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XTN
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XMS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XAL
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XGA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XFL
+			}
+		}
+	}
+	focus = {
+		id = XUT_core_south
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_south }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_south
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 368
+			owns_state = 370
+			owns_state = 367
+			owns_state = 365
+			owns_state = 366
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_state_core = 368
+			add_state_core = 370
+			add_state_core = 367
+			add_state_core = 365
+			add_state_core = 366
+		}
+	}
+	focus = {
+		id = XUT_east_coast
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_core_great_lakes }
+		prerequisite = { focus = XUT_core_south }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_core_great_lakes
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XSC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XNC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XVA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XWV
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XMD
+			}
+		}
+	}
+	focus = {
+		id = XUT_northeast
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_core_great_lakes }
+		prerequisite = { focus = XUT_core_south }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_core_south
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = XPA
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XNJ
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XNY
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XNN
+			}
+		}
+	}
+	focus = {
+		id = XUT_red_victory
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_east_coast }
+		prerequisite = { focus = XUT_northeast }
+		
+		x = 1
+		y = 1
+		relative_position_id = XUT_east_coast
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			owns_state = 364
+			owns_state = 363
+			owns_state = 362
+			owns_state = 816
+			owns_state = 361
+			owns_state = 958
+			owns_state = 935
+			owns_state = 360
+			owns_state = 359
+			owns_state = 358
+			owns_state = 357
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = XUT_red_america_idea
+		}
+	}
+	focus = {
 		id = XUT_red_america
 		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = XUT_first_communist_convention }
@@ -2016,6 +3335,145 @@
 
 
 		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = XUT_midwest
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_invite_cascadia_red }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_invite_cascadia_red
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XNE = {
+				add_ideas = XUT_communist_influence
+			}
+			XKS = {
+				add_ideas = XUT_communist_influence
+			}
+			XOK = {
+				add_ideas = XUT_communist_influence
+			}
+			XTX = {
+				add_ideas = XUT_communist_influence
+			}
+		}
+	}
+	focus = {
+		id = XUT_midwest_invite
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_midwest }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_midwest
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					XNE = {
+						has_government = communism
+					}
+				}
+				country_event = XUT.23
+			}
+			if = {
+				limit = {
+					XKS = {
+						has_government = communism
+					}
+				}
+				country_event = XUT.23
+			}
+			if = {
+				limit = {
+					XOK = {
+						has_government = communism
+					}
+				}
+				country_event = XUT.23
+			}
+			if = {
+				limit = {
+					XTX = {
+						has_government = communism
+					}
+				}
+				country_event = XUT.23
+			}
+		}
+	}
+	focus = {
+		id = XUT_red_beacon
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_midwest }
+		
+		x = 0
+		y = 1
+		relative_position_id = XUT_midwest
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = XUT_red_beacon_idea
 		}
 	}
 	### DESERET PATH ###
@@ -5081,6 +6539,9 @@
 
 		available = {
 			owns_state = 378
+			XNV = {
+				is_puppet_of = XUT
+			}
 		}
 		
 		bypass = {
@@ -5236,6 +6697,10 @@
 				id = 4740
 				name = "Freewind"
 			}
+			set_province_name = {
+				id = 7834
+				name = "New Tilden"
+			}
 			add_state_core = 374
 			add_state_core = 383
 		}
@@ -5344,7 +6809,7 @@
 		}
 
 		available = {
-			
+			owns_state = 366
 		}
 		
 		bypass = {
