@@ -1955,6 +1955,38 @@
 		}
 	}
 	focus = {
+		id = XUT_red_america
+		icon = GFX_focus_generic_population_growth
+		prerequisite = { focus = XUT_first_communist_convention }
+		mutually_exclusive = { focus = XUT_regional_communism }
+		
+		x = 2
+		y = 1
+		relative_position_id = XUT_first_communist_convention
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			always = no
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+	}
+	focus = {
 		id = XUT_regional_communism
 		icon = GFX_focus_generic_population_growth
 		prerequisite = { focus = XUT_first_communist_convention }
@@ -3303,38 +3335,6 @@
 
 		completion_reward = {
 			add_ideas = XUT_red_america_idea
-		}
-	}
-	focus = {
-		id = XUT_red_america
-		icon = GFX_focus_generic_population_growth
-		prerequisite = { focus = XUT_first_communist_convention }
-		mutually_exclusive = { focus = XUT_regional_communism }
-		
-		x = 2
-		y = 1
-		relative_position_id = XUT_first_communist_convention
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			always = no
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
 		}
 	}
 	

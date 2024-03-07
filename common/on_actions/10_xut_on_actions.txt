@@ -5,7 +5,9 @@ on_actions = {
 				limit = {
 					original_tag = XUT
 				}
-				country_event = XUT.4
+				XUT = {
+					country_event = XUT.4
+				}
 			}
 		}
 	}
@@ -14,14 +16,20 @@ on_actions = {
 			if = {
 				limit = {
 					AND = {
-						ROOT = XUT
-						FROM = XNV
+						ROOT = {
+							tag = XUT
+						}
+						FROM = {
+							tag = XNV
+						}
 						959 = {
 							is_owned_by = XUT
 						}
 					}
 				}
-				country_event = XUT.20
+				XUT = {
+					country_event = XUT.20
+				}
 			}
 		}
 	}
@@ -40,7 +48,9 @@ on_actions = {
 						}
 					}
 				}
-				country_event = XUT.20
+				XUT = {
+					country_event = XUT.20
+				}
 			}
 		}
 	}
