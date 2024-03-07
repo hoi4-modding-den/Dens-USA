@@ -3,4 +3,5 @@ tags={
 	"Alternative History"
 }
 name="Den's United States"
-supported_version="1.13.7"
+replace_path="history/states"
+supported_version="1.14.*"
