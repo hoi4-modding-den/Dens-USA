@@ -1,7 +1,10 @@
 ﻿l_english:
- XMD: "United States"
+ XMD: "Reclamation Committee"
  XMD_DEF: "the United States of America Reclamation Committee"
  XMD_ADJ: "Bidenian"
+ XMD_USA: "United States of America"
+ XMD_USA_DEF: "the United States of America"
+ XMD_USA_ADJ: "American"
 
  XMD_joe_biden: "Joe Biden"
  XMD_the_president_from_the_future: "The President From the Future"
@@ -30,7 +33,7 @@
 
  XMD_if_pass: "If it does pass:"
 
- XMD_the_people_wait: "Minorities wait, with bated breath, to know whether or not they are humans..."
+ XMD_the_people_wait: "Minorities wait, with bated breath, to know whether or not they are humans in the eye of the law..."
 
  #Focus 
  XMD_the_president_from_the_future: "The President From The Future"
@@ -40,6 +43,7 @@
  XMD_build_back_better_act: "Build Back Better Act"
  XMD_win_the_hearts_of_the_people: "Win The Peoples' Hearts"
  XMD_the_new_deal: "Continue The New Deal"
+
  XMD_further_the_progressive_reforms: "Further The Progressive Reforms"
  XMD_establish_a_great_society: "Establish A Great Society"
  XMD_war_on_poverty: "War On Poverty"
@@ -57,12 +61,27 @@
  XMD_the_civil_rights_act_of_year: "The Civil Rights Act of [GetYear]"
  XMD_regional_development_act: "Regional Development Act"
  XMD_equal_opportunites_act: "Equal Opportunities Act"
- XMD_ground_transportation_act: "Ground Transportation Act"
+ XMD_ground_transportation_act: "Ground Transportation Act" 
  XMD_endowment_for_arts_and_humanities_act: "Endowment For Arts and Humanities Act"
  XMD_fair_labor_standards_act: "Fair Labor Standards Act"
  XMD_the_american_dream: "The American Dream"
- XMD_the_giant_wakes: "The Giant Wakes"
+
  XMD_walk_the_fine_line: "Walk The Fine Line"
+ XMD_a_bipartisan_reform_bill: "Cement Our Role Within The Party"
+ XMD_a_more_perfect_union: "A More Perfect Union"
+ XMD_develop_underdeveloped_areas: "Develop Underdeveloped Areas"
+ XMD_clearing_the_slums: "Clearing The Slums"
+ XMD_build_up_our_domestic_industry: "Build Up Our Domestic Industry"
+ XMD_cut_down_on_debt: "Cut Down On Debt"
+ XMD_build_up_the_military: "Build Up The Military"
+ XMD_crank_up_the_war_machine: "Crank Up The War Machine"
+ XMD_invest_in_military_research: "Invest In Military Research"
+ XMD_the_military_industrial_complex: "The Military Industrial Complex"
+ XMD_sweet_land_of_liberty: "Sweet Land Of Liberty"
+
+ XMD_the_giant_wakes: "The Giant Wakes"
+ XMD_our_claim_on_america: "Raise The Star Spangled Banner"
+
  XMD_end_the_experiment: "End The American Experiment"
  
  XMD_cra_tt: "Civil Rights Act Success Rate"
@@ -144,6 +163,9 @@
 
  XMD_random_owned_state_tt: "(§YRandom Owned State§!):"
 
+ XMD_kill_the_american_tags: "Unify America"
+ XMD_get_wargoal_on_FROM: "Prepare the Invasion of [FROM.GetName]"
+ XMD_core_state: "Reconstruct [FROM.GetName]"
 
  #Others
  STATE_935: "Northampton"

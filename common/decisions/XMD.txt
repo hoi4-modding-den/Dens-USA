@@ -306,7 +306,7 @@ XMD_building_a_great_society = {
 			factor = 0
 		}
 
-		cost = 50
+		cost = 100
 
 		complete_effect = {
 			XMD_cc_decrease_very_5 = yes
@@ -332,7 +332,7 @@ XMD_building_a_great_society = {
 		days_remove = 90
 
 		modifier = {
-			political_power_cost = 0.3
+			political_power_cost = 0.25
 			communism_drift = -0.02
 			fascism_drift = -0.02
 		}
@@ -341,7 +341,7 @@ XMD_building_a_great_society = {
 			factor = 0
 		}
 
-		cost = 50
+		cost = 100
 
 		complete_effect = {
 			XMD_cc_increase_10 = yes
@@ -370,7 +370,7 @@ XMD_building_a_great_society = {
 			factor = 0
 		}
 
-		cost = 25
+		cost = 100
 
 		complete_effect = {
 			XMD_cc_increase_10 = yes
@@ -393,7 +393,7 @@ XMD_building_a_great_society = {
 			factor = 0
 		}
 
-		cost = 0 
+		cost = 25
 
 		remove_effect = {
 			clr_country_flag = XMD_cannot_sign_any_new_legislation
@@ -1010,4 +1010,107 @@ XMD_building_a_great_society = {
 			
 		}
 	}
+}
+
+XMD_kill_the_american_tags = {
+
+	XMD_get_wargoal_on_FROM = {
+
+		icon = generic_welfare
+
+		available = {
+			
+		}
+
+		target_trigger = {
+			FROM = {
+				DEN_is_american_tag = yes
+				exists = yes
+			}
+			any_neighbor_country = {
+				tag = FROM
+			}
+			NOT = {
+				has_war_with = FROM
+				has_war_with_wargoal_against = {
+					target = FROM
+				}
+			}
+		}
+
+		visible = {
+		}
+
+		ai_will_do = {
+			factor = 201
+			modifier = {
+				factor = 0
+				surrender_progress > 0.01
+			}
+		}
+
+		days_remove = 30
+
+		cost = 50
+
+		war_with_target_on_remove = yes
+
+		remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+
+	XMD_core_state = {
+
+		icon = generic_welfare
+
+		available = {
+			
+		}
+
+		state_target = yes
+		
+		on_map_mode = map_only
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = FROM
+			}
+			highlight_color_while_active = 3
+		}
+
+		target_trigger = {
+			FROM = {
+				DEN_state_is_in_america = yes
+				is_claimed_by = ROOT
+				is_fully_controlled_by = ROOT
+				is_owned_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		visible = {
+		}
+
+		ai_will_do = {
+			factor = 201
+		}
+
+		days_remove = 50
+
+		cost = 50
+
+		war_with_target_on_remove = yes
+
+		remove_effect = {
+			remove_state_claim = FROM
+			add_state_core  = FROM
+		}
+	}
+
 }

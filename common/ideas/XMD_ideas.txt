@@ -162,6 +162,101 @@ ideas = {
 				always = no
 			}
 		}
+		XMD_the_new_deal_idea_2 = {
+			name = XMD_the_new_deal_idea
+
+			picture = new_deal
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.3
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = 0.05
+				stability_factor = 0.05
+			}
+			allowed = {
+				always = no
+			}
+		}
+		XMD_the_new_deal_idea_3 = {
+			name = XMD_the_new_deal_idea
+
+			picture = new_deal
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.3
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+				stability_factor = 0.1
+				political_power_factor = 0.1
+			}
+			allowed = {
+				always = no
+			}
+		}
+		XMD_military_investment_r = {
+
+			picture = new_deal
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.1
+			}
+			allowed = {
+				always = no
+			}
+		}
+		XMD_military_investment_output = {
+			name = XMD_military_investment_r
+
+			picture = new_deal
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+			allowed = {
+				always = no
+			}
+		}
+		XMD_military_investment_1 = {
+			name = XMD_military_investment_r
+
+			picture = new_deal
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.1
+				research_speed_factor = 0.1
+			}
+			allowed = {
+				always = no
+			}
+		}
+		XMD_military_investment_2 = {
+			name = XMD_military_investment_r
+
+			picture = new_deal
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = 0.15
+				research_speed_factor = 0.15
+				production_speed_arms_factory_factor = 0.1
+			}
+			allowed = {
+				always = no
+			}
+		}
 		XMD_a_great_society_tooltip = {
 
 			picture = SWE_folkhemmet	
@@ -221,6 +316,64 @@ ideas = {
 				stability_factor = -0.05
 				political_power_factor = -0.15
 				democratic_drift = 0.04
+			}
+			allowed = {
+				always = no
+			}
+		}
+		XMD_the_two_party_system_reform = {
+			name = XMD_the_two_party_system
+			picture = XAL_alabama_division
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+				democratic_drift = 0.04
+				party_popularity_stability_factor = 0.1
+			}
+			allowed = {
+				always = no
+			}
+		}
+		XMD_the_two_party_system_reform_1 = {
+			name = XMD_the_two_party_system
+			picture = XAL_alabama_division
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = 0.1
+				democratic_drift = 0.04
+				party_popularity_stability_factor = 0.5
+			}
+			allowed = {
+				always = no
+			}
+		}
+		XMD_reformed_politics = {
+			picture = XAL_alabama_division
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.1
+				party_popularity_stability_factor = 0.1
+			}
+			allowed = {
+				always = no
+			}
+		}
+		XMD_reformed_politics_1 = {
+			picture = XAL_alabama_division
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.25
+				party_popularity_stability_factor = 0.5
 			}
 			allowed = {
 				always = no

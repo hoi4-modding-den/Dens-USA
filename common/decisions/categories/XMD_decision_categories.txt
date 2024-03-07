@@ -23,3 +23,17 @@ XMD_building_a_great_society = {
 		has_country_flag = XMD_conservative_backlash_start_flag
 	}
 }
+
+XMD_kill_the_american_tags = {
+	icon = GFX_decision_category_usa_congress
+	allowed = {
+		original_tag = XMD
+	}
+
+	visible_when_empty = yes
+	
+	priority = 100
+	visible = {
+		has_country_flag = XMD_retake_america
+	}
+}

@@ -109,7 +109,22 @@ restore_USA_decisions = {
 				}
 				add_core_of = ROOT 
 			}
-			set_cosmetic_tag = DEN_USA
+			if = {
+				limit = {
+					original_tag = XMD
+				}
+				set_cosmetic_tag = XMD_USA
+			}
+			else_if = {
+				limit = {
+					#add your own tags here
+					always = false
+				}
+				set_cosmetic_tag = DEN_USA
+			}
+			else = {
+				set_cosmetic_tag = DEN_USA
+			}
 		}
 	}
 }

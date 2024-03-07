@@ -16,7 +16,7 @@
 
 	focus = {
 		id = XMD_the_president_from_the_future
-		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+		icon = GFX_focus_usa_recruit_the_free_corps
 		#prerequisite = { focus = }
 		x = 20
 		y = 0
@@ -625,24 +625,11 @@
 
 
 		completion_reward = {
-			set_country_flag = XMD_civil_rights_debate
-			custom_effect_tooltip = XMD_gs_modify_header_tt
-			add_to_variable = {
-				var = XMD_great_society_political_power_factor
-				value = 0.05
-				tooltip = XMD_great_society_political_power_factor_tt
-			}
-			XMD_cc_decrease_10 = yes
-			set_variable = {
-				var = XMD_cra_success_rate
-				value = 5
-				tooltip = XMD_cra_success_rate_var_tt
-			}
-
+			country_event = XMD_political_events.20
 			hidden_effect = {
 				country_event = {
 					id = XMD_political_events.13
-					days = 7
+					days = 14
 				}
 			}
 		}
@@ -718,6 +705,10 @@
 			custom_effect_tooltip = XMD_militias_will_gain_power_tt
 			set_country_flag = XMD_bolstered_militias_flag
 			unlock_decision_tooltip = XMD_fund_militias
+			add_popularity = {
+				ideology = democratic 
+				popularity = -0.05
+			}
 		}
 	}
 	
@@ -768,6 +759,10 @@
 				var = XMD_great_society_research_speed_factor
 				value = 0.05
 				tooltip = XMD_great_society_research_speed_factor_tt
+			}
+			add_popularity = {
+				ideology = democratic 
+				popularity = -0.05
 			}
 		}
 	}
@@ -898,6 +893,10 @@
 			add_political_power = -100
 			XMD_cc_increase_10 = yes
 			XMD_cra_success_rate_increase_10 = yes
+			add_popularity = {
+				ideology = neutrality 
+				popularity = 0.05
+			}
 		}
 	}
 	
@@ -1666,131 +1665,7 @@
 				value = -0.5
 				tooltip = XMD_great_society_conservative_contentness_tt
 			}
-			add_political_power = 200
-		}
-	}
-	
-	focus = {
-		id = XMD_the_giant_wakes
-		icon = GFX_focus_generic_the_giant_wakes
-		prerequisite = { focus = XMD_the_american_dream}
-		x = 7
-		y = 2
-		relative_position_id = XMD_the_american_dream
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			NOT = {
-				has_country_flag = XMD_cannot_sign_any_new_legislation
-			}
-		}
-		
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			custom_effect_tooltip = XMD_gs_modify_header_tt
-			add_to_variable = {
-				var = XMD_great_society_industrial_capacity_factory
-				value = 0.25
-				tooltip = XMD_great_society_industrial_capacity_factory_tt
-			}
-			set_variable = {
-				var = XMD_conservative_contentness_decrease
-				value = -0.5
-				tooltip = XMD_great_society_conservative_contentness_tt
-			}
-			if = {
-				limit = {
-					any_owned_state = {
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = no
-						}
-					}
-				}
-				random_owned_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = no
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					any_owned_state = {
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = no
-						}
-					}
-				}
-				random_owned_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = no
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					any_owned_state = {
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = no
-						}
-					}
-				}
-				random_owned_state = {
-					limit = {
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = no
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = arms_factory
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
+			country_event = XMD_political_events.19
 		}
 	}
 	
@@ -1821,10 +1696,201 @@
 
 
 		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = XMD_a_bipartisan_reform_bill
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = XMD_walk_the_fine_line}
+		x = 0
+		y = 1
+		relative_position_id = XMD_walk_the_fine_line
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = XMD_the_two_party_system
+				}
+				swap_ideas = {
+					remove_idea = XMD_the_two_party_system
+					add_idea = XMD_the_two_party_system_reform
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = XMD_deadlocked_politics
+				}
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = XMD_the_two_party_system
+						add_idea = XMD_the_two_party_system_reform
+					}
+				}
+				hidden_effect = {
+					remove_ideas = XMD_deadlocked_politics
+					add_ideas = XMD_the_two_party_system_reform
+				}
+			}
+			else = {
+				add_ideas = XMD_reformed_politics
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_a_more_perfect_union
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = XMD_a_bipartisan_reform_bill}
+		x = 0
+		y = 3
+		relative_position_id = XMD_a_bipartisan_reform_bill
+
+		cost = 8
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = XMD_the_two_party_system
+				}
+				swap_ideas = {
+					remove_idea = XMD_the_two_party_system_reform
+					add_idea = XMD_the_two_party_system_reform_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = XMD_reformed_politics
+				}
+				swap_ideas = {
+					remove_idea = XMD_reformed_politics
+					add_idea = XMD_reformed_politics_1
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = XMD_the_two_party_system_reform
+						add_idea = XMD_the_two_party_system_reform_1
+					}
+				}
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_develop_underdeveloped_areas
+		icon = GFX_focus_SWE_beneath_sticks_and_stone
+		prerequisite = { focus = XMD_a_bipartisan_reform_bill}
+		x = -3
+		y = 1
+		relative_position_id = XMD_a_bipartisan_reform_bill
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = XMD_under_developed_state_delaware
+					}
+					
+				}
+				remove_dynamic_modifier = {
+					modifier = XMD_under_developed_state_delaware
+				}
+				if = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				if = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = XMD_the_new_deal_idea
-					add_idea = XMD_the_new_deal_idea_1
+					add_idea = XMD_the_new_deal_idea_2
 				}
 			}
 			hidden_effect = {
@@ -1834,14 +1900,677 @@
 					}
 					swap_ideas = {
 						remove_idea = XMD_the_new_deal_idea
-						add_idea = XMD_the_new_deal_idea_1
+						add_idea = XMD_the_new_deal_idea_2
 					}
 				}
 				else = {
-					add_ideas = XMD_the_new_deal_idea_1
+					add_ideas = XMD_the_new_deal_idea_2
 				}
 			}
+		}
+	}
+	
+	focus = {
+		id = XMD_clearing_the_slums
+		icon = GFX_focus_generic_land_reclamation
+		prerequisite = { focus = XMD_develop_underdeveloped_areas}
+		x = 1
+		y = 1
+		relative_position_id = XMD_develop_underdeveloped_areas
 
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_political_power = 50
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_build_up_our_domestic_industry
+		icon = GFX_focus_generic_modernize_industry
+		prerequisite = { focus = XMD_develop_underdeveloped_areas}
+		x = -1
+		y = 1
+		relative_position_id = XMD_develop_underdeveloped_areas
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_political_power = 50
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_cut_down_on_debt
+		icon = GFX_focus_ITA_devaluate_the_lire
+		prerequisite = { focus = XMD_build_up_our_domestic_industry}
+		prerequisite = { focus = XMD_clearing_the_slums}
+		x = 1
+		y = 1
+		relative_position_id = XMD_build_up_our_domestic_industry
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_political_power = 50
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = XMD_the_new_deal_idea_2
+					add_idea = XMD_the_new_deal_idea_3
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = XMD_the_new_deal_idea_2
+					}
+					swap_ideas = {
+						remove_idea = XMD_the_new_deal_idea_2
+						add_idea = XMD_the_new_deal_idea_3
+					}
+				}
+				else = {
+					add_ideas = XMD_the_new_deal_idea_3
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_build_up_the_military
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = XMD_a_bipartisan_reform_bill}
+		x = 3
+		y = 1
+		relative_position_id = XMD_a_bipartisan_reform_bill
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_crank_up_the_war_machine
+		icon = GFX_focus_generic_reorient_production
+		prerequisite = { focus = XMD_build_up_the_military}
+		x = -1
+		y = 1
+		relative_position_id = XMD_build_up_the_military
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = XMD_military_investment_r
+				}
+				swap_ideas = {
+					remove_idea = XMD_military_investment_r
+					add_idea = XMD_military_investment_1
+				}
+			}
+			else = {
+				add_ideas = XMD_military_investment_output
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_invest_in_military_research
+		icon = GFX_focus_research2
+		prerequisite = { focus = XMD_build_up_the_military}
+		x = 1
+		y = 1
+		relative_position_id = XMD_build_up_the_military
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = XMD_military_investment_output
+				}
+				swap_ideas = {
+					remove_idea = XMD_military_investment_output
+					add_idea = XMD_military_investment_1
+				}
+			}
+			else = {
+				add_ideas = XMD_military_investment_r
+			}
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_the_military_industrial_complex
+		icon = GFX_focus_generic_industry_3
+		prerequisite = { focus = XMD_crank_up_the_war_machine}
+		prerequisite = { focus = XMD_invest_in_military_research}
+		x = 1
+		y = 1
+		relative_position_id = XMD_crank_up_the_war_machine
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = XMD_military_investment_1
+					add_idea = XMD_military_investment_2
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = XMD_military_investment_1
+					}
+					swap_ideas = {
+						remove_idea = XMD_military_investment_1
+						add_idea = XMD_military_investment_2
+					}
+				}
+				else = {
+					add_ideas = XMD_military_investment_1
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_sweet_land_of_liberty
+		icon = GFX_focus_generic_liberty
+		prerequisite = { focus = XMD_a_more_perfect_union}
+		prerequisite = { focus = XMD_cut_down_on_debt}
+		prerequisite = { focus = XMD_the_military_industrial_complex }
+		x = 0
+		y = 3
+		relative_position_id = XMD_a_more_perfect_union
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_stability = 0.1
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = XMD_the_giant_wakes
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = XMD_the_american_dream focus = XMD_sweet_land_of_liberty}
+		x = 6
+		y = 2
+		relative_position_id = XMD_the_american_dream
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = XMD_cannot_sign_any_new_legislation
+			}
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = XMD_the_great_society_idea
+					}
+				}
+				custom_effect_tooltip = XMD_gs_modify_header_tt
+				add_to_variable = {
+					var = XMD_great_society_industrial_capacity_factory
+					value = 0.25
+					tooltip = XMD_great_society_industrial_capacity_factory_tt
+				}
+				set_variable = {
+					var = XMD_conservative_contentness_decrease
+					value = -0.5
+					tooltip = XMD_great_society_conservative_contentness_tt
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_our_claim_on_america
+		icon = GFX_focus_spa_the_war_of_vengeance
+		prerequisite = { focus = XMD_the_giant_wakes}
+		x = 0
+		y = 1
+		relative_position_id = XMD_the_giant_wakes
+
+		cost = 8
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					DEN_state_is_in_america = yes
+					NOT = {
+						is_claimed_by = ROOT
+						is_core_of = ROOT
+					}
+				}
+				add_claim_by = ROOT
+			}
+			add_war_support = 0.15
+			set_country_flag = XMD_retake_america
+			unlock_decision_category_tooltip = XMD_kill_the_american_tags
 		}
 	}
 	
