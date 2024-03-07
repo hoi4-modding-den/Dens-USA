@@ -3,6 +3,9 @@ restore_usa_decisions = {
 	allowed = {
 		NOT = {
 			original_tag = LIB
+			OR = {
+				original_tag = XAL
+			}
 		}
 	}
 	

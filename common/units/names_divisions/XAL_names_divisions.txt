@@ -9,7 +9,7 @@
 	}
 }
 XAL_INF_02 = {
-	name = "Infantry Divisions2" 
+	name = "Royal Guard" 
 	for_countries = { XAL } 
 	can_use = { always = yes } 
 	division_types = { "infantry" } 
@@ -19,12 +19,22 @@ XAL_INF_02 = {
 	}
 }
 XAL_INF_03 = {
-	name = "Infantry Divisions3" 
+	name = "Mujahideen Divisions" 
 	for_countries = { XAL } 
 	can_use = { always = yes } 
 	division_types = { "infantry" } 
 	fallback_name = "%d. Mujahideen"
 	ordered = {
 		1 = { "%d. Mujahideen" } 
+	}
+}
+XAL_PEN_01 = {
+	name = "Penal Divisions" 
+	for_countries = { XAL } 
+	can_use = { has_country_flag = XAL_penal_enabled } 
+	division_types = { "infantry" } 
+	fallback_name = "%d. Penal Division"
+	ordered = {
+		1 = { "%d. Penal Division" } 
 	}
 }

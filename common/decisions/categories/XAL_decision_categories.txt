@@ -17,3 +17,18 @@ XAL_al_abama_influence_decisions = {
 		}
 	}
 }
+
+XAL_al_abama_war_machine_decisions = {
+	icon = GFX_decision_category_infiltration
+	allowed = {
+		original_tag = XAL
+	}
+	
+	picture = GFX_XAL_decision_cat_influence_politics
+	
+	priority = 100
+	visible = {
+		has_completed_focus = XAL_feed_the_war_machine
+	}
+}
+

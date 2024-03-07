@@ -406,16 +406,9 @@ focus_tree = {
 				}
 				capital_scope = {
 					create_unit = {
-						division = "name = \"Mujahideen\" division_template = \"Mujahideen\" start_experience_factor = 0.2"
+						division = "name = \"Mujahideen\" division_template = \"Mujahideen\" start_experience_factor = 0.0"
 						owner = XAL
-					}
-					create_unit = {
-						division = "name = \"Mujahideen\" division_template = \"Mujahideen\" start_experience_factor = 0.2"
-						owner = XAL
-					}
-					create_unit = {
-						division = "name = \"Mujahideen\" division_template = \"Mujahideen\" start_experience_factor = 0.2"
-						owner = XAL
+						count = 3
 					}
 				}	
 			}
@@ -467,7 +460,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			custom_effect_tooltip = XAL_unlock_war_machine_decisions_tt
 		}
 		ai_will_do = {
 			factor = 1
@@ -489,7 +482,7 @@ focus_tree = {
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 1000
+				amount = 350
 				producer = XAL
 			}
 			add_ideas = {
