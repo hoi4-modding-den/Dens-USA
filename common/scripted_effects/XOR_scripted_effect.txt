@@ -26,7 +26,7 @@ XOR_send_investigation = { #Check to see which unit is available
 			}
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			NOT = { check_variable = { XOR_var_unit1 = 1 } }
 			check_variable = { XOR_var_unit2 = 1 }
@@ -54,7 +54,7 @@ XOR_send_investigation = { #Check to see which unit is available
 			}
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			NOT = { check_variable = { XOR_var_unit1 = 1 } }
 			NOT = { check_variable = { XOR_var_unit1 = 2 } }
@@ -114,7 +114,7 @@ XOR_send_investigation_generic = { #Check to see which unit is available FOR GEN
 			}
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			NOT = { check_variable = { XOR_var_unit1 = 1 } }
 			check_variable = { XOR_var_unit2 = 1 }
@@ -147,10 +147,10 @@ XOR_send_investigation_generic = { #Check to see which unit is available FOR GEN
 			}
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			NOT = { check_variable = { XOR_var_unit1 = 1 } }
-			NOT = { check_variable = { XOR_var_unit1 = 2 } }
+			NOT = { check_variable = { XOR_var_unit1 = 1 } }
 			check_variable = { XOR_var_unit3 = 1 }
 		}
 		add_to_variable = {
@@ -186,6 +186,7 @@ XOR_send_investigation_generic = { #Check to see which unit is available FOR GEN
 
 XOR_finished_investigation = { #Remove PP cost when finishing investigation
 
+
 	#REMOVE PP COST FOR INVESTIGATION
 	if = {
 		limit = {
@@ -218,6 +219,7 @@ XOR_finished_investigation = { #Remove PP cost when finishing investigation
 			}
 		}
 		set_variable = { XOR_var_unit1 = 1 }
+		clr_country_flag = XOR_unit1_on_generic_investigation #CLEAR GENERIC FLAG
 	}
 	else_if = { #Return unit 2
 		limit = {
@@ -227,6 +229,7 @@ XOR_finished_investigation = { #Remove PP cost when finishing investigation
 			}
 		}
 		set_variable = { XOR_var_unit2 = 1 }
+		clr_country_flag = XOR_unit2_on_generic_investigation #CLEAR GENERIC FLAG
 	}
 	else_if = { #Return unit 3
 		limit = {
@@ -236,6 +239,7 @@ XOR_finished_investigation = { #Remove PP cost when finishing investigation
 			}
 		}
 		set_variable = { XOR_var_unit3 = 1 }
+		clr_country_flag = XOR_unit3_on_generic_investigation #CLEAR GENERIC FLAG
 	}
 	set_variable = { XOR_index = 0 } #Reset XOR_index
 }
