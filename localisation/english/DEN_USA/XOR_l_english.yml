@@ -9,6 +9,9 @@
  XOR_OIDCOSMETIC_neutrality_DEF:0 "The O.I.D. Mandate"
  XOR_OIDCOSMETIC_neutrality_ADJ:0 "Oregonian"
 
+ XOR_investigative_dept_ideology:0 "Investigative Authority"
+ XOR_investigative_dept_ideology_desc:0 "This region is under control of a Investigative Authority Unit, which exists only to investigate and eliminate foriegn and supernatural forces. Its absolute authority exists only to pursue this goal, and once completed the Authority should dissapate to allow free elections."
+
  STATE_936: "Portland"
  STATE_937: "Willamette"
  VICTORY_POINTS_12689: "Portland"
