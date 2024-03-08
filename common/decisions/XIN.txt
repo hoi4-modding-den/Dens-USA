@@ -139,4 +139,46 @@ XIN_formable_decisions = {
 			
 		}
 	}
+
+	esoterreich = {
+		ai_will_do = {
+			base = 0
+		}
+		visible = {
+			has_government = fascism
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = form_esoterreich.tt
+				owns_state = 393
+				owns_state = 394
+				owns_state = 395
+				owns_state = 396
+				owns_state = 261
+				owns_state = 393
+				owns_state = 276
+				owns_state = 682
+				owns_state = 391
+			}
+		}
+		cost = 0
+
+		fire_only_once = yes
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						region = 198
+						state = 276
+						state = 682
+						state = 391
+					}
+				}
+				add_core_of = ROOT
+			}
+			set_cosmetic_tag = XIN_ESO
+		}
+	}
 }
