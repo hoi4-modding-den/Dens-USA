@@ -15,6 +15,10 @@ spriteTypes = {
 		name = "GFX_decision_oregon_map"
 		texturefile = "gfx/interface/decisions/decision_oregon_map.dds"
 	}
+	spriteType = {
+		name = "GFX_ideology_XOR_investigative_dept_ideology"
+		texturefile = gfx/interface/ideologies/XOR_investigative_dept_ideology.dds
+	}
 
 	
 }
