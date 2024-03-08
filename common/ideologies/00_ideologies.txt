@@ -10,6 +10,14 @@ ideologies = {
 			liberalism = {
 			}
 
+			BKH_conservative = {
+				color = { 170 80 80 }
+			}
+
+			BKH_democrat = {
+				color = { 65 135 245 }
+			}
+
 			socialism = {
 			}
 

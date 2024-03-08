@@ -7,7 +7,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = liberalism
+			ideology = BKH_democrat
 			traits = {  }
 			expire = "2050.3.1.1"
 			id = -1
@@ -21,7 +21,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = liberalism
+			ideology = BKH_democrat
 			traits = {  }
 			expire = "2050.3.1.1"
 			id = -1
@@ -35,7 +35,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = conservatism
+			ideology = BKH_conservative
 			traits = {  }
 			expire = "2050.3.1.1"
 			id = -1
@@ -49,7 +49,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = conservatism
+			ideology = BKH_conservative
 			traits = {  }
 			expire = "2050.3.1.1"
 			id = -1
@@ -77,7 +77,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = conservatism
+			ideology = BKH_conservative
 			traits = {  }
 			expire = "2050.3.1.1"
 			id = -1
