@@ -21,16 +21,29 @@ country_event = { # 1st Election Results
 	is_triggered_only = yes
 
 
-	option = { # Democratic
+	option = { # Communism
 		name = XIN.2.a
-		complete_national_focus = XIN_democratic_support
+		complete_national_focus = XIN_invite_leftist_policies
 	}
-	option = { # Coalition
+	option = { # Democracy
 		name = XIN.2.b
 		complete_national_focus = XIN_coalition
 	}
-	option = { # Republican
+	option = { # Fascism
 		name = XIN.2.c
 		complete_national_focus = XIN_republican_support
+	}
+}
+
+country_event = { # Esoterreich
+	id = XIN.eso
+	title = XIN.eso.t
+	desc = XIN.eso.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = XIN.eso.a
+		set_cosmetic_tag = XIN_ESO
 	}
 }

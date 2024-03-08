@@ -15,3 +15,11 @@ XIN_election_decisions = {
 	}
 	visible_when_empty = yes
 }
+
+XIN_formable_decisions = {
+	icon = eng_move_to_secure_the_dominions
+	allowed = {
+		original_tag = XIN
+	}
+	priority = 0
+}

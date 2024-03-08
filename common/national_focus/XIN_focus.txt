@@ -33,11 +33,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 75
-			
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.015
-			}
+			add_stability = -0.125
 		}
 	}
 
@@ -49,7 +45,7 @@ focus_tree = {
 			focus = XIN_first_election 
 		}
 		mutually_exclusive = {
-			focus = XIN_democratic_support 
+			focus = XIN_invite_leftist_policies
 			focus = XIN_coalition
 		}
 		x = 4
@@ -165,7 +161,7 @@ focus_tree = {
 
 	# Election Democratic Branch
 	focus = {
-		id = XIN_democratic_support
+		id = XIN_invite_leftist_policies
 		icon = GFX_focus_generic_treaty
 		prerequisite = { 
 			focus = XIN_first_election
@@ -190,10 +186,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 60
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.125
-			}
+			add_stability = -0.025
+			add_ideas = XIN_left_leaning_ideals
 		}
 	}
 
@@ -202,11 +196,11 @@ focus_tree = {
 		id = XIN_democrat_socialist_coalition
 		icon = GFX_focus_prc_agrarian_socialism
 		prerequisite = { 
-			focus = XIN_democratic_support
+			focus = XIN_invite_leftist_policies
 		}
 		x = 0
 		y = 2
-		relative_position_id = XIN_democratic_support
+		relative_position_id = XIN_invite_leftist_policies
 
 		cost = 5
 
@@ -224,7 +218,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = XIN_invite_indian_socialist_politicians
+		id = XIN_radicalise_the_socialists
 		icon = GFX_focus_RAJ_seek_help_from_soviet
 		prerequisite = { 
 			focus = XIN_democrat_socialist_coalition
@@ -279,7 +273,7 @@ focus_tree = {
 		id = XIN_communist_revolution1
 		icon = GFX_focus_RAJ_seek_help_from_soviet
 		prerequisite = { 
-			focus = XIN_invite_indian_socialist_politicians
+			focus = XIN_radicalise_the_socialists
 		}
 		prerequisite = {
 			focus = XIN_fund_public_sector
@@ -290,7 +284,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 2
-		relative_position_id = XIN_invite_indian_socialist_politicians
+		relative_position_id = XIN_radicalise_the_socialists
 
 		cost = 5
 
@@ -317,7 +311,7 @@ focus_tree = {
 			focus = XIN_first_election
 		}
 		mutually_exclusive = {
-			focus = XIN_democratic_support 
+			focus = XIN_invite_leftist_policies
 			focus = XIN_republican_support
 		} 
 
@@ -466,13 +460,24 @@ focus_tree = {
 			}
 		}	
 	}
+	focus = {
+		id = XIN_united_but_seperate
+		icon = GFX_portrait_XWY_washington_1
+		x = 0
+		y = 2
+		relative_position_id = XIN_unify_the_parties
+		prerequisite = {
+			focus = XIN_unify_the_parties
+		}
+		completion_reward = { }
+	}
 	#Industry Branch
 	focus = {
 		id = XIN_rearange_economy
 		icon = GFX_focus_ger_bulwark_against_bolshevism
 		cost = 5
-		x = 25
-		y = 0
+		x = 22
+		y = 2
 		completion_reward = {
 			add_timed_idea = {
 				idea = XIN_rearanging_economy

@@ -30,5 +30,10 @@ ideas = {
 				stability_weekly = 0.015
 			}
 		}
+		XIN_left_leaning_ideals = {
+			modifier = {
+				communism_drift = 0.05
+			}
+		}
 	}
 }
