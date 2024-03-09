@@ -176,6 +176,18 @@ XTN_french_iron_fist_desc:0 "We have adapted harsh rules that are present in Sov
 XTN_french_party_army:0 "Army of the Party"
 XTN_french_party_army_desc:0 "Our millitary is now part of the party and is forced to be active in political life of the nation."
 
+XTN_organize_french:0 "Organize the Government"
+XTN_organize_french_desc:0 "French governemnt is a mess and we are in dire need of reforms"
+
+XTN_obligatory_millitary_service:0 "Obligatory Millitary Service"
+XTN_obligatory_millitary_service_desc:0 "We need a strong army to defend our one and only socialist country."
+
+XTN_army_reform:0 "Army Reform"
+XTN_army_reform_desc:0 "We need to train our new wave of conscripts."
+
+XTN_millitary_state:0 "Millitary State"
+XTN_millitary_state_desc:0 "Everybody male or female, kid or not must serve in the army."
+
 
 
 
@@ -271,7 +283,7 @@ XTN_french_party_army_desc:0 "Our millitary is now part of the party and is forc
  XTN_push_on_richmond_desc:0 "Richmond is gate on a road to Washington. We will take it!"
 
  XTN_fortify_corridor:0 "Fortify Corridor"
- XTN_fortify_corridor_desc:0 "Potomak river is the only stop between us and Washington we will fortify it to prepare for potencial invasion of oppressors"
+ XTN_fortify_corridor_desc:0 "Potomac river is the only stop between us and Washington we will fortify it to prepare for potencial invasion of oppressors"
 
  XTN_unite_virginia:0 "Unite Virginia"
  XTN_unite_virginia_desc:0 "Why waste people fighting trough small corridor if we can go around it?"
@@ -353,8 +365,8 @@ XTN_french_party_army_desc:0 "Our millitary is now part of the party and is forc
  XTN_grant_statehood_richmond:0 "Grant statehood to Richmond"
  XTN_grant_statehood_richmond_desc:0 "We will integrate new states in order to ensure stability of Union."
 
- XTN_cross_potomak:0 "Cross Potomak"
- XTN_cross_potomak_desc:0 "It's time. We will pass potomak river and install Trotsky as first commissar of USA."
+ XTN_cross_potomak:0 "Cross Potomac"
+ XTN_cross_potomak_desc:0 "It's time. We will pass potomac river and install Trotsky as first commissar of USA."
 
 XTN_claim_usa:0 "Claim USA"
 XTN_claim_usa_desc:0 "After Capturing Washington we hold the head of US government and we are planning to use it."
@@ -615,3 +627,45 @@ XTN_state_atheism_french_desc:0 "Religion is opium for the masses - Karl Marx"
 
 XTN_party_army:0 "Army of The Party"
 XTN_party_army_desc:0 "Disloyal millitary is the worst thing that can happen to a country. We will force every soldier to join the party and partake in political life of the nation."
+
+XTN_states_serves_the_millitary:0 "State serves the Millitary"
+XTN_states_serves_the_millitary_desc:0 "Everybody no matter of gender or age. Profession or disability, individual must march in the army."
+
+XTN_organize_french_economy:0 "Organize the Economy"
+XTN_organize_french_economy_desc:0 "Before millitarizing the state we must first build equipment for it's people."
+
+
+XTN_millitary_economy:0 "Millitary Economy"
+XTN_millitary_economy_desc:0 "Before millitarizing we need to build arms for the people."
+
+XTN_soviet_funding:0 "Soviet Funding"
+XTN_soviet_funding_desc:0 "Our friends in the soviet union want to support our fight against oppressive capitalism."
+
+XTN_build_mils:0 "Build millitary Factories"
+XTN_build_mils_desc:0 "To army our army we need a lotta guns."
+
+XTN_baku_oil_fields:0 "Baku oil fields"
+XTN_baku_oil_fields_desc:0 "Soviet union has offered us some of the oil that is based in baku."
+
+XTN_soviet_scientists:0 "Soviet Scientists"
+XTN_soviet_scientists_desc:0 "Soviets have offered us to share their scientific discoveries to us."
+
+XTN_army_of_scavengers:0 "Army of Scavengers"
+XTN_army_of_scavengers_desc:0 "Since nobody works at the factories we will use equipment enemy has left for us."
+XTN_army_of_scavengers_idea:0 "Army of Scavengers"
+XTN_army_of_scavengers_idea_desc:0 "We will take what is possible no matter it's condition."
+
+XTN_north_plan:0 "Plan North"
+XTN_north_plan_desc:0 "It's time to unite the northern more economically developed states."
+
+XTN_NJ_NY_war:0 "Crush the center of American Capitalism"
+XTN_NJ_NY_war_desc:0 "New York is the center of american capitalism. We will free the workers of the north and kill all of the dirty bourgeoisie."
+
+XTN_carolina_push:0 "Carolina Push"
+XTN_carolina_push_desc:0 "We control north of Carolina. Now it is time to unite them both."
+
+XTN_push_trough_river:0 "Push Trough River"
+XTN_push_trough_river_desc:0 "What will the northern revolution be without north?"
+
+XTN_finalize_northern_offensive:0 "Finalize Northern Offensive"
+XTN_finalize_northern_offensive_desc:0 "We must clear out the north by liberating New England."

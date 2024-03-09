@@ -4366,6 +4366,412 @@ add_tech_bonus = {
     }
   }
 
+  focus = {
+    id = XTN_organize_french
+    x = 41
+    y = 22
+    icon = GFX_goal_support_communism
+
+    prerequisite = { focus = XTN_state_atheism_french }
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        remove_ideas = {XTN_french_chaos}
+
+    }
+  }
+  focus = {
+    id = XTN_obligatory_millitary_service
+    x = 45
+    y = 22
+    icon = GFX_focus_generic_manpower
+
+    prerequisite = { focus = XTN_state_atheism_french }
+    prerequisite = { focus = XTN_party_army }
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+    add_ideas = {all_adults_serve}
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_army_reform
+    x = 46
+    y = 23
+    icon = GFX_goal_generic_axis_build_infantry
+
+
+    prerequisite = { focus = XTN_party_army }
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        army_experience = 25
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_states_serves_the_millitary
+    x = 45
+    y = 24
+    icon = GFX_focus_YUG_pan_slavic_congress
+
+    prerequisite = { focus = XTN_obligatory_millitary_service }
+    prerequisite = { focus = XTN_army_reform }
+
+    
+
+    cost = 10
+    
+
+    completion_reward = {
+
+    add_ideas = {XTN_millitary_state}
+    remove_ideas = {XTN_french_party_army}
+    remove_ideas = {XTN_millitary_economy}
+
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_organize_french_economy
+    x = 43
+    y = 22
+    icon = GFX_goal_generic_construct_civ_factory
+
+    prerequisite = { focus = XTN_state_atheism_french }
+    available = {NOT = {has_completed_focus = XTN_states_serves_the_millitary}}
+
+    
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_millitary_economy}
+
+    }
+  }
+
+  focus = {
+    id = XTN_build_mils
+    x = 42
+    y = 23
+    icon = GFX_goal_generic_construct_mil_factory
+
+    prerequisite = { focus = XTN_organize_french_economy }
+    available = {NOT = {has_completed_focus = XTN_states_serves_the_millitary} XTN = {controls_state = 361}}
+
+    
+
+    cost = 10
+    
+
+    completion_reward = {
+
+
+
+  361 = { 
+                add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+                    }
+            }
+
+    }
+  }
+
+  focus = {
+    id = XTN_soviet_funding
+    x = 43
+    y = 24
+    icon = GFX_focus_SOV_socialism_in_one_country
+
+    prerequisite = { focus = XTN_organize_french_economy }
+    available = {NOT = {has_completed_focus = XTN_states_serves_the_millitary}}
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_offsite_building = { type = arms_factory level = 3 }
+        add_offsite_building = { type = industrial_complex level = 3 }
+
+    }
+  }
+
+  focus = {
+    id = XTN_baku_oil_fields
+    x = 43
+    y = 25
+    icon = GFX_goal_generic_oil_refinery
+
+    prerequisite = { focus = XTN_soviet_funding }
+    available = {NOT = {has_completed_focus = XTN_states_serves_the_millitary}}
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+LIB = {
+
+give_resource_rights = {
+    receiver = XTN
+    state = 229
+    resources = { oil }
+}
+
+
+
+}
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_soviet_scientists
+    x = 43
+    y = 26
+    icon = GFX_focus_generic_university_2
+
+    prerequisite = { focus = XTN_baku_oil_fields }
+    available = {NOT = {has_completed_focus = XTN_states_serves_the_millitary}}
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_research_slot = 1
+        add_tech_bonus = {
+        bonus = 0.25
+        uses = 1
+        category = nuclear
+            }
+        add_tech_bonus = {
+        bonus = 0.25
+        uses = 1
+        category = industry
+            }
+        add_tech_bonus = {
+        bonus = 0.25
+        uses = 1
+        category = land_doctrine
+            }
+
+
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_army_of_scavengers
+    x = 46
+    y = 25
+    icon = GFX_focus_generic_total_war
+
+    prerequisite = { focus = XTN_states_serves_the_millitary }
+
+
+    
+
+    cost = 10
+    
+
+    completion_reward = {
+
+    add_ideas = {XTN_army_of_scavengers_idea}
+
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_north_plan
+    x = 45
+    y = 26
+    icon = GFX_focus_generic_provoke_border_clashes
+
+    prerequisite = { focus = XTN_states_serves_the_millitary }
+
+
+    
+
+    cost = 10
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XPA
+            type = annex_everything
+                }
+        army_experience = 25
+
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_NJ_NY_war
+    x = 43
+    y = 27
+    icon = GFX_focus_eng_crush_the_dream
+
+    prerequisite = { focus = XTN_north_plan }
+
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XNJ
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XNY
+            type = annex_everything
+                }
+
+
+
+    }
+  }
+  focus = {
+    id = XTN_carolina_push
+    x = 45
+    y = 27
+    icon = GFX_focus_generic_attack_usa
+
+    prerequisite = { focus = XTN_north_plan }
+
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XSC
+            type = annex_everything
+                }
+        364 = {
+            add_core_of = XTN
+
+        }
+
+
+
+    }
+  }
+  focus = {
+    id = XTN_push_trough_river
+    x = 47
+    y = 27
+    icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+
+    prerequisite = { focus = XTN_north_plan }
+
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XOH
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XIN
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XIL
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XWI
+            type = annex_everything
+                }
+
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_finalize_northern_offensive
+    x = 45
+    y = 28
+    icon = GFX_focus_CHL_union_of_hispanic_republics
+
+    prerequisite = { focus = XTN_NJ_NY_war }
+    prerequisite = { focus = XTN_push_trough_river }
+    prerequisite = { focus = XTN_carolina_push }
+
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XNN
+            type = annex_everything
+                }
+
+    }
+  }
+
+
 
 ############################################## Supreme Soviet #####################################################################
   focus = {
@@ -4423,7 +4829,7 @@ add_tech_bonus = {
     id = XTN_immigation_focus
     x = 22
     y = 10
-    icon = GFX_focus_ETH_callout_to_the_world
+    icon = GFX_focus_ARG_immigration_wave
 
     prerequisite = { focus = XTN_cult_of_trotsky }
     available = { XTN = {has_idea = XTN_immigration }}
