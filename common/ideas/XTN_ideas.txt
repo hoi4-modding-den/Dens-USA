@@ -464,7 +464,7 @@ ideas = {
         }
     XTN_french_chaos = {
            removal_cost = -1
-            picture = fra_political_violence
+            picture = FRA_political_violence
             modifier = {
                
                forced_surrender_limit = -0.5
@@ -474,7 +474,7 @@ ideas = {
         }
     XTN_french_iron_fist = {
            removal_cost = -1
-            picture = fra_political_violence
+            picture = SOV_soviet_railways
             modifier = {
                
             stability_factor = -0.2
@@ -488,7 +488,7 @@ ideas = {
 
     XTN_french_party_army = {
            removal_cost = -1
-            picture = fra_political_violence
+            picture = MEX_revolutionary_army
             modifier = {
                
             army_morale_factor = -0.1
@@ -538,6 +538,17 @@ ideas = {
             picture = jap_the_unthinkable_option
             modifier = {
                 equipment_capture_factor = 1
+
+            }
+        }
+
+   XTN_unionism = {
+           removal_cost = -1
+            picture = SOV_system_decentralization
+            modifier = {
+                autonomy_gain = -0.5
+                communism_drift = 0.1
+
 
             }
         }

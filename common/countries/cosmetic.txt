@@ -11,6 +11,22 @@ XTN_CSA = {
     color = rgb {214 214 194}
     color_ui = rgb { 255 255 155 }
 }
+XTN_North = {
+    color = rgb { 255 26 26 }
+    color_ui = rgb { 255 255 155 }
+}
+XTN_XIL = {
+    color = rgb { 255 26 26 }
+    color_ui = rgb { 255 255 155 }
+}
+XTN_XNC = {
+    color = rgb { 255 26 26 }
+    color_ui = rgb { 255 255 155 }
+}
+XTN_XPA = {
+    color = rgb { 255 26 26 }
+    color_ui = rgb { 255 255 155 }
+}
 DEN_USA = {
     color = rgb { 97 165 255 }
     color_ui = rgb { 97 165 255 }

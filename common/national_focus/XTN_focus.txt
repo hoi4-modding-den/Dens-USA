@@ -192,7 +192,7 @@ add_popularity = {
     id = XTN_egoist_revolution
     x = 12
     y = 5
-    icon = GFX_focus_spr_torchbearers_of_tomorrow
+    icon = GFX_focus_ARG_no_gods_no_masters
 
     prerequisite = { focus =  XTN_arm_people }
     prerequisite = { focus =  XTN_drug_trade_focus }
@@ -4767,6 +4767,273 @@ give_resource_rights = {
             target = XNN
             type = annex_everything
                 }
+
+    }
+  }
+
+  focus = {
+    id = XTN_adopt_new_states
+    x = 45
+    y = 29
+    icon = GFX_focus_generic_soviet_politics
+
+    prerequisite = { focus = XTN_finalize_northern_offensive }
+
+available = {
+
+XTN = {
+    
+    
+controls_state = 360
+controls_state = 359
+controls_state = 358
+controls_state = 357
+controls_state = 261
+controls_state = 396
+controls_state = 393
+controls_state = 395
+controls_state = 394
+
+
+
+
+
+}
+
+
+
+
+}
+
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        360 = {
+
+            add_core_of = XTN
+
+        }
+        359 = {
+
+            add_core_of = XTN
+
+        }
+        358 = {
+
+            add_core_of = XTN
+
+        }
+        357 = {
+
+            add_core_of = XTN
+
+        }
+        261 = {
+
+            add_core_of = XTN
+
+        }
+        396 = {
+
+            add_core_of = XTN
+
+        }
+        393 = {
+
+            add_core_of = XTN
+
+        }
+        395 = {
+
+            add_core_of = XTN
+
+        }
+        394 = {
+
+            add_core_of = XTN
+
+        }
+
+
+    }
+  }
+
+  focus = {
+    id = XTN_northern_confederacy
+    x = 43
+    y = 30
+    icon = GFX_focus_SOV_stalins_cult_of_personality
+
+    prerequisite = { focus = XTN_adopt_new_states }
+    mutually_exclusive = {focus = XTN_northern_union}
+
+available = {
+
+XTN = {
+    
+    
+controls_state = 360
+controls_state = 359
+controls_state = 358
+controls_state = 357
+controls_state = 261
+controls_state = 396
+controls_state = 393
+controls_state = 395
+controls_state = 394
+controls_state = 362
+controls_state = 816
+controls_state = 369
+controls_state = 363
+controls_state = 368
+controls_state = 364
+
+
+}
+
+
+
+
+}
+
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        set_cosmetic_tag = XTN_North
+        remove_ideas = {XTN_usa_claim}
+
+    }
+  }
+
+  focus = {
+    id = XTN_northern_union
+    x = 47
+    y = 30
+    icon = GFX_focus_SOV_the_supreme_soviet
+
+    prerequisite = { focus = XTN_adopt_new_states }
+    mutually_exclusive = {focus = XTN_northern_confederacy}
+
+available = {
+
+XTN = {
+    
+    
+controls_state = 360
+controls_state = 359
+controls_state = 358
+controls_state = 357
+controls_state = 261
+controls_state = 396
+controls_state = 393
+controls_state = 395
+controls_state = 394
+controls_state = 362
+controls_state = 816
+controls_state = 369
+controls_state = 363
+controls_state = 368
+controls_state = 364
+
+
+}
+
+
+
+
+}
+
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        set_cosmetic_tag = XTN_North
+
+        XNC = {
+
+            set_state_controller = 363
+            set_state_controller = 364
+            set_state_controller = 368
+            set_cosmetic_tag = XTN_XNC
+        363 = {
+            add_core_of = XNC
+        }
+        364 = {
+            add_core_of = XNC
+        }
+        368 = {
+            add_core_of = XNC
+        }
+        add_ideas = {XTN_unionism}
+
+        }
+        puppet = XNC
+        XIL = {
+            add_ideas = {XTN_unionism}
+            set_state_controller = 395
+            set_state_controller = 394
+            set_state_controller = 396
+            set_state_controller = 393
+            set_state_controller = 261
+            set_cosmetic_tag = XTN_XIL
+
+        395 = {
+            add_core_of = XIL
+        }
+        394 = {
+            add_core_of = XIL
+        }
+        396 = {
+            add_core_of = XIL
+        }
+        393 = {
+            add_core_of = XIL
+        }
+        261 = {
+            add_core_of = XIL
+        }
+
+        }
+        puppet = XIL
+        XPA = {
+            add_ideas = {XTN_unionism}
+            set_state_controller = 360
+            set_state_controller = 359
+            set_state_controller = 358
+            set_state_controller = 357
+            set_cosmetic_tag = XTN_XPA
+        360 = {
+            add_core_of = XPA
+        }
+        359 = {
+            add_core_of = XPA
+        }
+        358 = {
+            add_core_of = XPA
+        }
+        357 = {
+            add_core_of = XPA
+        }
+
+            }
+            puppet = XPA
+        remove_ideas = {XTN_usa_claim}
+
+
 
     }
   }

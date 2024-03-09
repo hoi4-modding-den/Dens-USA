@@ -12,6 +12,12 @@ XTN_USA:0 "United States"
 XTN_CSA_communism:0 "Communist Confederate States of America"
 XTN_CSA:0 "Confederate States of America"
 
+XTN_North:0 "Northern Confederacy"
+XTN_North_communism:0 "Northern Confederacy of Socialist States."
+XTN_XNC:0 "Carolina"
+XTN_XIL:0 "Great Lakes"
+XTN_XPA:0 "Philadelphia"
+
 VICTORY_POINTS_7797:0 "Memphis"
 VICTORY_POINTS_1758:0 "Knoxville"
 VICTORY_POINTS_7791:0 "Pigeon Forge"
@@ -669,3 +675,15 @@ XTN_push_trough_river_desc:0 "What will the northern revolution be without north
 
 XTN_finalize_northern_offensive:0 "Finalize Northern Offensive"
 XTN_finalize_northern_offensive_desc:0 "We must clear out the north by liberating New England."
+
+XTN_adopt_new_states:0 "Adopt New States"
+XTN_adopt_new_states_desc:0 "After our conquest of the north it's time to draw state borders."
+
+XTN_northern_confederacy:0 "Northern Confederacy"
+XTN_northern_confederacy_desc:0 "We have united northern states in the name of Stalin. We will proclaim our new great socialist state."
+
+XTN_northern_union:0 "Northern Union"
+XTN_northern_union_desc:0 "We have conquered north. It is time to give more autonomy to our states to form a great northern confederacy."
+
+XTN_unionism:0 "Unionism"
+XTN_unionism_desc:0 "We are the part of the great union!"
