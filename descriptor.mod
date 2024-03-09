@@ -4,4 +4,5 @@ tags={
 }
 name="Den's United States"
 replace_path="history/states"
+replace_path="map/strategicregions"
 supported_version="1.14.*"
