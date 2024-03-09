@@ -374,6 +374,123 @@ add_to_variable = {
 	}
 	
 	focus = {
+		id = XWY_on_track
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = XWY_corporatism}
+		# mutually_exclusive = { focus = XNN_outlaw_burning_heart }
+		x = 9
+		y = 3
+		#relative_position_id = 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		custom_effect_tooltip = current_status_wyoming_tt
+		custom_effect_tooltip = current_status_small_wyoming_tt
+
+
+add_to_variable = {
+    var = cattle_baron_power
+    value = 1
+    tooltip = set_var_to_100_tt
+}
+		}
+	}
+	
+	focus = {
+		id = XWY_antidepressants
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = XWY_corporatism}
+		# mutually_exclusive = { focus = XNN_outlaw_burning_heart }
+		x = 7
+		y = 3
+		#relative_position_id = 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		custom_effect_tooltip = current_status_wyoming_tt
+		custom_effect_tooltip = current_status_small_wyoming_tt
+
+
+add_to_variable = {
+    var = cattle_baron_power
+    value = 1
+    tooltip = set_var_to_100_tt
+}
+		}
+	}
+	
+	focus = {
+		id = XWY_the_failures_of_industry
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = XWY_reintroduce_buffalo}
+		prerequisite = { focus = XWY_antidepressants}
+		prerequisite = { focus = XWY_on_track}
+		# mutually_exclusive = { focus = XNN_outlaw_burning_heart }
+		x = 10
+		y = 5
+		#relative_position_id = 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		remove_ideas = XWY_great_depression
+		}
+	}
+	
+	focus = {
 		id = XWY_the_wyoming_political_scene
 		icon = GFX_focus_generic_farmland
 		# prerequisite = { focus = XWY_aid_big_cattle}
@@ -1079,7 +1196,26 @@ focus = {
 
 
 		completion_reward = {
-
+			start_border_war = {
+    change_state_after_war = no
+    attacker = {
+        state = 381
+        num_provinces = 4
+        on_win = XWY.6
+        on_lose = XWY.4
+        on_cancel = XWY.4
+        modifier = 0.1
+        dig_in_factor = 0
+        terrain_factor = 0
+    }	
+    defender = {
+        state = 951
+        num_provinces = 3
+        on_win = XWY.5
+        on_lose = XWY.4
+        on_cancel = XWY.4
+    }
+}
 }
 	}
 	
