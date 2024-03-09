@@ -687,3 +687,18 @@ XTN_northern_union_desc:0 "We have conquered north. It is time to give more auto
 
 XTN_unionism:0 "Unionism"
 XTN_unionism_desc:0 "We are the part of the great union!"
+
+XTN_socialism_in_one_state:0 "Socialism in one State"
+XTN_socialism_in_one_state_desc:0 "We will live by stalin's idea of communism in one state. We will also abandon millitary rule."
+
+XTN_post_war_recovery:0 "Post War Recovery"
+XTN_post_war_recovery_desc:0 "War and full mobilization have put a strain on our economy. We will rebuild it for defensive purposes."
+
+XTN_fortify_mountains:0 "Fortify Mountains"
+XTN_fortify_mountains_desc:0 "We must never let a war destroy our beautiful state."
+
+XTN_expand_carolina:0 "Expand carolina"
+XTN_expand_carolina_desc:0 "We must expand state of carolina to cover all of the south."
+
+XTN_disarm:0 "Disarm"
+XTN_disarm_desc:0 "Wars are over, our Union will fear no more."

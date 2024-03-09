@@ -75,6 +75,9 @@ logistics_skill = 1
 			civilian = {
 				large = "GFX_portrait_Thorvald_Stauning"
 			}
+			army = {
+				small = "GFX_idea_DEN_thorvald_stauning"
+			}
 		}
 		country_leader = {
 			ideology = anarchism
@@ -146,7 +149,7 @@ logistics_skill = 4
 				large = "GFX_portrait_SOV_ivan_smirnov"
 			}
 			army = {
-				small = "GFX_idea_SOV_ivan_smirnov_imprisoned"
+				small = "GFX_idea_SOV_ivan_smirnov"
 			}
 		}
 

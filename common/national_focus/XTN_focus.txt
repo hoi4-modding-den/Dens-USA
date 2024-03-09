@@ -4916,6 +4916,171 @@ controls_state = 364
   }
 
   focus = {
+    id = XTN_socialism_in_one_state
+    x = 43
+    y = 31
+    icon = GFX_goal_support_communism
+
+    prerequisite = { focus = XTN_northern_confederacy }
+
+
+
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_stability = 0.1
+        remove_ideas = {XTN_millitary_state}
+
+    }
+  }
+  focus = {
+    id = XTN_post_war_recovery
+    x = 43
+    y = 32
+    icon = GFX_goal_generic_construct_mil_factory
+
+    prerequisite = { focus = XTN_socialism_in_one_state }
+
+
+
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+
+
+        add_timed_idea = {
+            idea = XTN_millitary_economy
+            days = 180
+        }
+
+    }
+  }
+
+  focus = {
+    id = XTN_fortify_mountains
+    x = 45
+    y = 33
+    icon = GFX_goal_generic_fortify_city
+
+    prerequisite = { focus = XTN_post_war_recovery  focus = XTN_disarm}
+
+available = {
+OR = {
+XTN = {
+
+controls_state = 362
+controls_state = 368
+controls_state = 363
+
+
+}
+
+
+
+XNC = {
+is_puppet_of = XTN
+controls_state = 368
+controls_state = 363
+XTN = {
+
+controls_state = 362
+
+
+
+}
+
+}
+
+
+
+
+}
+
+}
+
+
+
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+           362 = {
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 7558
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 1506
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 10343
+                }
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 11873
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 951
+                    }
+
+           }
+        368 = {
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 8014
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 7791
+                    }
+        }
+        363 = {
+            add_building_construction = {
+            type = bunker
+            level = 4
+            instant_build = yes
+            province = 9967
+                    }
+        }
+
+
+    }
+  }
+
+
+
+  focus = {
     id = XTN_northern_union
     x = 47
     y = 30
@@ -5034,6 +5199,100 @@ controls_state = 364
         remove_ideas = {XTN_usa_claim}
 
 
+
+    }
+  }
+
+  focus = {
+    id = XTN_expand_carolina
+    x = 47
+    y = 31
+    icon = GFX_goal_generic_forceful_treaty
+
+    prerequisite = { focus = XTN_northern_union }
+
+available = {XNC = {is_puppet_of = XTN}}
+
+
+
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        365 = {
+            add_core_of = XNC
+        }
+        366 = {
+            add_core_of = XNC
+        }
+        367 = {
+            add_core_of = XNC
+        }
+        370 = {
+            add_core_of = XNC
+        }
+
+            declare_war_on = {
+            target = XGA
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XFL
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XAL
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XMS
+            type = annex_everything
+                }
+
+    }
+  }
+
+  focus = {
+    id = XTN_disarm
+    x = 47
+    y = 32
+    icon = GFX_focus_generic_manpower
+
+    prerequisite = { focus = XTN_expand_carolina }
+
+available = {XNC = {
+is_puppet_of = XTN
+controls_state = 365
+controls_state = 366
+controls_state = 367
+controls_state = 370
+
+
+}
+
+
+
+}
+
+
+
+
+    
+
+    cost = 5
+    
+
+    completion_reward = {
+
+    remove_ideas = {XTN_millitary_state}
+    swap_ideas = {
+        add_idea = disarmed_nation
+        remove_idea = all_adults_serve
+    }
 
     }
   }
