@@ -745,3 +745,15 @@ XTN_gerrymandering_desc:0 "Playing around with pencil on voters map may be benef
 
 XTN_political_violence:0 "Political Violence"
 XTN_political_violence_desc:0 "Street fights and silent assasinations will give us more support."
+
+XTN_fund_housing:0 "Fund Housing"
+XTN_fund_housing_desc:0 "To gain support form the workers we will grant them houses."
+
+XTN_invite_soviet_support:0 "Invite Soviet Support"
+XTN_invite_soviet_support_desc:0 "Soviet veterans of political struggles will help us fight the Left."
+
+XTN_spfwa_sb:0 "SPFWA/SB"
+XTN_spfwa_sb_desc:0 "SPFWA/SB side of reforms."
+
+XTN_spa_vup:0 "SPA/VUP"
+XTN_spa_vup_desc:0 "SPA/VUP side of reforms."

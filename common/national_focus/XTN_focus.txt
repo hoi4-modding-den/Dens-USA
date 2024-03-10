@@ -5477,7 +5477,7 @@ add_stability = 0.05
         add_power_balance_value = {
         id = XTN_balance
         value = -0.05
-        tooltip_side = XTN_right_side
+        tooltip_side = XTN_left_side
                 }
         add_political_power = -50
 
@@ -5504,7 +5504,7 @@ add_stability = 0.05
         add_power_balance_value = {
         id = XTN_balance
         value = -0.25
-        tooltip_side = XTN_right_side
+        tooltip_side = XTN_left_side
                 }
         add_stability = -0.25
 
@@ -5535,6 +5535,124 @@ add_stability = 0.05
                 }
         add_stability = -0.25
 
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_fund_housing
+    x = 51
+    y = 23
+    icon = GFX_focus_usa_guarantee_the_american_dream
+
+    prerequisite = { focus = XTN_political_violence focus = XTN_gerrymandering }
+    mutually_exclusive = {focus = XTN_invite_soviet_support }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_power_balance_value = {
+        id = XTN_balance
+        value = -0.25
+        tooltip_side = XTN_left_side
+                }
+        add_stability = 0.05
+        add_political_power = -100
+
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_invite_soviet_support
+    x = 53
+    y = 23
+    icon = GFX_focus_SOV_socialism_in_one_country
+
+    prerequisite = { focus = XTN_political_violence focus = XTN_gerrymandering }
+    mutually_exclusive = {focus = XTN_fund_housing }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+        custom_effect_tooltip = XTN_USSR
+
+        add_power_balance_value = {
+        id = XTN_balance
+        value = 0.25
+        tooltip_side = XTN_right_side
+                }
+        
+
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_spfwa_sb
+    x = 48
+    y = 19
+    icon = GFX_focus_SOV_the_path_of_marxism_leninism
+
+    prerequisite = { focus = XTN_new_age }
+    available = {
+
+is_power_balance_in_range = {
+    id = XTN_balance
+    range < XTN_right_side_range
+}
+
+
+    }
+
+    cost = 2
+    
+
+    completion_reward = {
+        add_power_balance_value = {
+        id = XTN_balance
+        value = -0.05
+        tooltip_side = XTN_left_side
+                }
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_spa_vup
+    x = 56
+    y = 19
+    icon = GFX_focus_SOV_stalins_cult_of_personality
+
+    prerequisite = { focus = XTN_new_age }
+    available = {
+
+is_power_balance_in_range = {
+    id = XTN_balance
+    range > XTN_left_side_range
+}
+
+
+    }
+
+    cost = 2
+    
+
+    completion_reward = {
+        add_power_balance_value = {
+        id = XTN_balance
+        value = 0.05
+        tooltip_side = XTN_right_side
+                }
 
     }
     

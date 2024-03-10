@@ -423,11 +423,20 @@ logistics_skill = 4
 				original_tag = XTN
 			}
 			visible = {
+				OR = {
 				has_completed_focus = XTN_recognize_zsrr
+				has_completed_focus = XTN_invite_soviet_support
+
+				}
+				
 
 			}
 			available = {
+				OR = {
 				has_completed_focus = XTN_recognize_zsrr
+				has_completed_focus = XTN_invite_soviet_support
+
+				}
 			}
 			traits = {
 				XTN_soviet_diplomat 
