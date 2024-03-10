@@ -5314,16 +5314,6 @@ controls_state = 370
     
 
     completion_reward = {
-        #recruit_character = XTN_supreme_soviet
-        #retire_character = XTN_lev_trotsky
-        #retire_character = XTN_ivan_smirnov
-        #retire_character = XTN_nikolay_bukharin
-        #retire_character = XTN_maurice_thorez
-
-        #recruit_character = XTN_lev_trotsky
-        #recruit_character = XTN_ivan_smirnov
-        #recruit_character = XTN_nikolay_bukharin
-        #recruit_character = XTN_maurice_thorez
             add_country_leader_role = {
             character = XTN_supreme_soviet
             promote_leader = yes
@@ -5342,6 +5332,209 @@ controls_state = 370
         long_name = "SPFWA/SB/VUP/SPA"
         name = "Supreme Soviet"
                 }
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_new_age
+    x = 52
+    y = 18
+    icon = GFX_focus_ARG_defense_and_democracy
+
+    prerequisite = { focus = XTN_supreme_soviet }
+
+    cost = 2
+    
+
+    completion_reward = {
+
+        add_stability = 0.15
+        add_political_power = 150
+        set_power_balance = {
+            id = XTN_balance
+                }
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_inner_politics
+    x = 52
+    y = 19
+    icon = GFX_focus_SOV_the_supreme_soviet
+
+    prerequisite = { focus = XTN_new_age }
+
+    cost = 2
+    
+
+    completion_reward = {
+
+add_stability = 0.05
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_thalmann_left
+    x = 51
+    y = 20
+    icon = GFX_goal_support_fourth_int
+
+    prerequisite = { focus = XTN_inner_politics }
+    mutually_exclusive = {focus = XTN_thalmann_right}
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_power_balance_value = {
+        id = XTN_balance
+        value = -0.1
+        tooltip_side = XTN_left_side
+                }
+
+
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_thalmann_right
+    x = 53
+    y = 20
+    icon = GFX_focus_YUG_pan_slavic_congress
+
+    prerequisite = { focus = XTN_inner_politics }
+    mutually_exclusive = {focus = XTN_thalmann_left}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_power_balance_value = {
+        id = XTN_balance
+        value = 0.1
+        tooltip_side = XTN_right_side
+                }
+
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_sway_old_anarchists
+    x = 53
+    y = 21
+    icon = GFX_focus_ARG_no_gods_no_masters
+
+    prerequisite = { focus = XTN_thalmann_right focus = XTN_thalmann_left }
+    mutually_exclusive = {focus = XTN_reach_out_to_farmers }
+    available = { NOT = {has_completed_focus = XTN_kill_benjamin}}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_power_balance_value = {
+        id = XTN_balance
+        value = 0.05
+        tooltip_side = XTN_right_side
+                }
+        add_popularity = {
+        ideology = neutrality
+        popularity = 0.3
+                }
+    
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_reach_out_to_farmers
+    x = 51
+    y = 21
+    icon = GFX_focus_generic_farmland
+
+    prerequisite = { focus = XTN_thalmann_right focus = XTN_thalmann_left }
+    mutually_exclusive = {focus = XTN_sway_old_anarchists }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_power_balance_value = {
+        id = XTN_balance
+        value = -0.05
+        tooltip_side = XTN_right_side
+                }
+        add_political_power = -50
+
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_political_violence
+    x = 51
+    y = 22
+    icon = GFX_goal_generic_attack_allies
+
+    prerequisite = { focus = XTN_reach_out_to_farmers focus = XTN_sway_old_anarchists }
+    mutually_exclusive = {focus = XTN_gerrymandering }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_power_balance_value = {
+        id = XTN_balance
+        value = -0.25
+        tooltip_side = XTN_right_side
+                }
+        add_stability = -0.25
+
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_gerrymandering
+    x = 53
+    y = 22
+    icon = GFX_focus_usa_voter_registration_act
+
+    prerequisite = { focus = XTN_reach_out_to_farmers focus = XTN_sway_old_anarchists }
+    mutually_exclusive = {focus = XTN_political_violence }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_power_balance_value = {
+        id = XTN_balance
+        value = 0.25
+        tooltip_side = XTN_right_side
+                }
+        add_stability = -0.25
+
 
     }
     

@@ -702,3 +702,46 @@ XTN_expand_carolina_desc:0 "We must expand state of carolina to cover all of the
 
 XTN_disarm:0 "Disarm"
 XTN_disarm_desc:0 "Wars are over, our Union will fear no more."
+
+XTN_new_age:0 "New Age"
+XTN_new_age_desc:0 "We have created government that was never seen before. It is a new age for the people of america."
+
+XTN_left_side:0 "SPFWA/SB - Left Wing"
+XTN_left_side_desc:0 "SPFWA/SB is a coalition of Trotsky's and Smirnov's party. They are focused on development of industry and national spirit."
+XTN_right_side:0 "VUP/SPA - Right Wing"
+XTN_right_side_desc:0 "VUP/SPA is a coalition of Stalinists and Social Democrats. They are focused on war and rapid unification of USA."
+
+XTN_right_side_range:0 "Rule of the Right"
+XTN_left_side_range:0 "Rule of the Left"
+
+XTN_mid_range:0 "Shared power"
+
+XTN_left_mid_range:0 "Left aligned politics"
+XTN_right_mid_range:0 "Right aligned Politics"
+
+XTN_left_dom_range:0 "Left Domination"
+XTN_right_dom_range:0 "Right Domination"
+
+XTN_balance:0 "Supreme Soviet Seat Distribution"
+
+
+XTN_thalmann_right:0 "Sway Thalmann to Right"
+XTN_thalmann_right_desc:0 "A german migrant can be useful to support our war effort"
+
+XTN_thalmann_left:0 "Sway Thalmann to Left"
+XTN_thalmann_left_desc:0 "A german migrant can be useful to support our economic policy."
+
+XTN_inner_politics:0  "Inner Politics"
+XTN_inner_politics_desc:0 "We will focus on balance of seats in the Supreme Soviet."
+
+XTN_sway_old_anarchists:0 "Sway old Anarchists"
+XTN_sway_old_anarchists_desc:0 "Even tho trotsky fought against anarchists, he didn't kill them all. Benjamin is still alive and could be a useful asset for us."
+
+XTN_reach_out_to_farmers:0 "Reach out to Farmers"
+XTN_reach_out_to_farmers_desc:0 "Minor bonds for farmers will surely make them support us."
+
+XTN_gerrymandering:0 "Gerrymandering"
+XTN_gerrymandering_desc:0 "Playing around with pencil on voters map may be beneficial for the right."
+
+XTN_political_violence:0 "Political Violence"
+XTN_political_violence_desc:0 "Street fights and silent assasinations will give us more support."

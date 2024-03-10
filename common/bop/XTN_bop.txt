@@ -1,0 +1,78 @@
+XTN_balance = {
+    initial_value = 0.0
+    left_side = XTN_left_side
+    right_side = XTN_right_side
+    range = {
+        id = XTN_mid_range
+        min = -0.15
+        max = 0.15
+        modifier = {
+
+        }
+
+    }
+
+    range = {
+        id = XTN_left_mid_range
+        min = -0.40
+        max = -0.16
+        modifier = {
+
+        }
+
+    }
+    range = {
+        id = XTN_right_mid_range
+        min = 0.16
+        max = 0.40
+        modifier = {
+
+        }
+
+    }
+    range = {
+        id = XTN_right_dom_range
+        min = 0.41
+        max = 0.75
+        modifier = {
+
+        }
+
+    }
+    range = {
+        id = XTN_left_dom_range
+        min = -0.75
+        max = -0.41
+        modifier = {
+
+        }
+
+    }
+
+    side = {
+        id = XTN_left_side
+        icon = GFX_idea_fourth_international
+        range = {
+            id = XTN_left_side_range
+            min = -1
+            max = -0.76
+            modifier = {
+
+            }
+
+
+        }
+    }
+    side = {
+        id = XTN_right_side
+        icon = GFX_idea_socialist_science_focus
+        range = {
+            id = XTN_right_side_range
+            min = 0.76
+            max = 1
+            modifier = {
+
+            }
+        }
+    }
+}
