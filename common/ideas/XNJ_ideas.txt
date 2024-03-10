@@ -1,0 +1,56 @@
+ideas = {
+	country = {
+		XNJ_hate_hoffman = {
+
+			allowed = {
+				tag = XNJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = FRA_matignon_agreements
+
+			modifier = {
+				political_power_factor = -0.15
+				stability_weekly = -0.01
+			}
+
+		}
+		XNJ_gravel_state = {
+
+			allowed = {
+				tag = XNJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = idea_ast_all_in
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+
+		}
+		XNJ_raritan_putsch = {
+
+			allowed = {
+				tag = XNJ
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = idea_generic_oppression
+
+			modifier = {
+				
+			}
+
+		}
+	}
+}

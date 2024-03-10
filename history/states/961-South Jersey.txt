@@ -1,0 +1,28 @@
+
+state={
+	id=961
+	name="South Jersey"
+	manpower = 1520100
+	
+	state_category = rural
+
+
+	history={
+		owner = XNJ
+		add_core_of = XNJ
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+		}
+    		victory_points = {
+			11900 7
+		}
+	}
+
+	provinces={
+        9801 9864 11740 11900
+	}
+
+	local_supplies=0.0 
+}

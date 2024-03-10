@@ -105,8 +105,17 @@ bookmarks = {
 				XAL_our_religion
 			}
 		}		
-		"---"={
-			history = ":O"
+		"XNJ"={
+			history = XNJ_description
+			ideology = democratic
+			ideas = {
+				XNJ_hate_hoffman
+				XNJ_gravel_state
+				XNJ_raritan_putsch
+			}
+			focuses = {
+
+			}
 		}
 
 		"XMD"={

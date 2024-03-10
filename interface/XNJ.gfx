@@ -1,0 +1,15 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_idea_XNJ_hate_hoffman"
+		texturefile = "gfx/interface/ideas/FRA_matignon_agreements.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_XNJ_gravel_state"
+		texturefile = "gfx/interface/ideas/idea_ast_all_in.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_XNJ_raritan_putsch"
+		texturefile = "gfx/interface/ideas/idea_generic_oppression.dds"
+	}
+}

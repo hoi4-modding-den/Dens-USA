@@ -1,0 +1,14 @@
+characters={
+	NWJ_harold_hoffman={
+		name="Harold Hoffman"
+		portraits={
+			civilian={
+				large= GFX_portrait_nj_harold_hoffman
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1954.1.1.1"
+		}
+	}
+}

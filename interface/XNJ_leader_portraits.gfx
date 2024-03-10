@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = GFX_portrait_nj_harold_hoffman
+		texturefile = "gfx/leaders/XNJ/portrait_nj_harold_hoffman.dds"
+	}
+}
