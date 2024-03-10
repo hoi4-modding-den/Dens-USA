@@ -757,3 +757,30 @@ XTN_spfwa_sb_desc:0 "SPFWA/SB side of reforms."
 
 XTN_spa_vup:0 "SPA/VUP"
 XTN_spa_vup_desc:0 "SPA/VUP side of reforms."
+
+XTN_bukharin_reforms_spfwa_sb:0 "Bukharin Reforms"
+XTN_bukharin_reforms_spfwa_sb_desc:0 "Bukharins reforms were planned in soviet union in 1921 and we will try to modernize them to our american setting."
+
+XTN_italian_workers_left:0 "Italian Workers"
+XTN_italian_workers_left_desc:0 "We must invite italian immigrants escaping fascist imperialists from europe."
+
+XTN_expand_farmlands_left:0 "Expand Farmlands"
+XTN_expand_farmlands_left_desc:0 "Bukharin wants to fund our great farmers."
+
+XTN_invite_foreign_capital:0 "Invite Foreign Capital"
+XTN_invite_foreign_capital_desc:0 "We must allow foreign arms manufacturers to support our army."
+
+XTN_finallize_reforms_nep:0 "N.E.P"
+XTN_finallize_reforms_nep_desc:0 "New Economic Policy will be finalized and implemented."
+
+XTN_spa_army:0 "SPA Army reform"
+XTN_spa_army_desc:0 "Marshall Tukhachewsky wants to enlist peoples millitias to support the war cause."
+
+XTN_northern_offensive_right:0 "Northern Offensive"
+XTN_northern_offensive_right_desc:0 "Our great marshall suggests a push north."
+
+XTN_states_serves_the_millitary_right:0 "State serves the Millitary"
+XTN_states_serves_the_millitary_right_desc:0 "Our french friends are suggesting to mobilize everybody into army."
+
+XTN_total_war_right:0 "TOTAL WAR (even more Total)"
+XTN_total_war_right_desc:0 "Kill them all against all odds."

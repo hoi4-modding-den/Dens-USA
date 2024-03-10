@@ -2612,6 +2612,16 @@ add_ideas = { XTN_inteligensia_manifesto }
             add_core_of = XTN
 
         }
+        961= {
+
+            add_core_of = XTN
+
+        }
+        960 = {
+
+            add_core_of = XTN
+
+        }
         383 = {
 
             add_core_of = XTN
@@ -2687,6 +2697,22 @@ add_ideas = { XTN_inteligensia_manifesto }
             add_core_of = XTN
 
         }
+        384 = {
+
+            add_core_of = XTN
+
+        }
+        385 = {
+
+            add_core_of = XTN
+
+        }
+        961= {
+
+            add_core_of = XTN
+
+        }
+
         946 = {
 
             add_core_of = XTN
@@ -5154,6 +5180,7 @@ controls_state = 364
             set_state_controller = 396
             set_state_controller = 393
             set_state_controller = 261
+
             set_cosmetic_tag = XTN_XIL
 
         395 = {
@@ -5177,6 +5204,7 @@ controls_state = 364
         XPA = {
             add_ideas = {XTN_unionism}
             set_state_controller = 360
+            set_state_controller = 961
             set_state_controller = 359
             set_state_controller = 358
             set_state_controller = 357
@@ -5191,6 +5219,9 @@ controls_state = 364
             add_core_of = XPA
         }
         357 = {
+            add_core_of = XPA
+        }
+        961 = {
             add_core_of = XPA
         }
 
@@ -5628,6 +5659,175 @@ is_power_balance_in_range = {
     }
 
   focus = {
+    id = XTN_bukharin_reforms_spfwa_sb
+    x = 48
+    y = 20
+    icon = GFX_focus_SOV_bukharinists
+
+    prerequisite = { focus = XTN_spfwa_sb }
+    available = {
+
+is_power_balance_in_range = {
+    id = XTN_balance
+    range < XTN_right_side_range
+}
+
+
+    }
+
+    cost = 5
+    
+
+    completion_reward = {
+        add_power_balance_value = {
+        id = XTN_balance
+        value = -0.05
+        tooltip_side = XTN_left_side
+                }
+        add_ideas = {XTN_economical_strain}
+
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_italian_workers_left
+    x = 48
+    y = 21
+    icon = GFX_focus_ETH_invite_italian_settlers
+
+    prerequisite = { focus = XTN_bukharin_reforms_spfwa_sb }
+    available = {
+
+is_power_balance_in_range = {
+    id = XTN_balance
+    range < XTN_right_side_range
+}
+
+
+    }
+
+    cost = 5
+    
+
+    completion_reward = {
+        add_power_balance_value = {
+        id = XTN_balance
+        value = -0.20
+        tooltip_side = XTN_left_side
+                }
+        add_manpower = 10000
+        add_ideas = {XTN_italian_workers}
+
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_expand_farmlands_left
+    x = 47
+    y = 22
+    icon = GFX_focus_generic_farmland
+
+    prerequisite = { focus = XTN_italian_workers_left }
+    available = {
+
+is_power_balance_in_range = {
+    id = XTN_balance
+    range < XTN_right_side_range
+}
+
+
+    }
+
+    cost = 5
+    
+
+    completion_reward = {
+        add_power_balance_value = {
+        id = XTN_balance
+        value = -0.10
+        tooltip_side = XTN_left_side
+                }
+add_offsite_building = { type = industrial_complex level = 3 }
+
+
+    }
+    
+    }
+  focus = {
+    id = XTN_invite_foreign_capital
+    x = 49
+    y = 22
+    icon = GFX_goal_generic_construct_mil_factory
+
+    prerequisite = { focus = XTN_italian_workers_left }
+    available = {
+
+is_power_balance_in_range = {
+    id = XTN_balance
+    range < XTN_right_side_range
+}
+
+
+    }
+
+    cost = 5
+    
+
+    completion_reward = {
+        add_power_balance_value = {
+        id = XTN_balance
+        value = -0.10
+        tooltip_side = XTN_left_side
+                }
+add_offsite_building = { type = arms_factory level = 3 }
+
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_finallize_reforms_nep
+    x = 48
+    y = 23
+    icon = GFX_focus_SOV_bukharinists
+
+    prerequisite = { focus = XTN_invite_foreign_capital }
+    prerequisite = {focus = XTN_expand_farmlands_left}
+    available = {
+
+is_power_balance_in_range = {
+    id = XTN_balance
+    range < XTN_right_side_range
+}
+
+
+    }
+
+    cost = 10
+    
+
+    completion_reward = {
+        add_power_balance_value = {
+        id = XTN_balance
+        value = -0.3
+        tooltip_side = XTN_left_side
+                }
+    remove_ideas = {XTN_economical_strain}
+    add_ideas = {XTN_nep}
+
+
+    }
+    
+    }
+
+
+
+  focus = {
     id = XTN_spa_vup
     x = 56
     y = 19
@@ -5644,7 +5844,7 @@ is_power_balance_in_range = {
 
     }
 
-    cost = 2
+    cost = 5
     
 
     completion_reward = {
@@ -5657,6 +5857,686 @@ is_power_balance_in_range = {
     }
     
     }
+
+  focus = {
+    id = XTN_spa_army
+    x = 56
+    y = 20
+    icon = GFX_goal_generic_axis_build_infantry
+
+    prerequisite = { focus = XTN_spa_vup }
+    available = {
+
+is_power_balance_in_range = {
+    id = XTN_balance
+    range > XTN_left_side_range
+}
+
+
+    }
+
+    cost = 5
+    
+
+    completion_reward = {
+        add_power_balance_value = {
+        id = XTN_balance
+        value = 0.05
+        tooltip_side = XTN_right_side
+                }
+        army_experience = 25
+        set_division_template_lock = {
+        division_template = "Militia"
+        is_locked = no
+        }
+
+    }
+    
+    }
+
+  focus = {
+    id = XTN_northern_offensive_right
+    x = 56
+    y = 21
+    icon = GFX_focus_ITA_peasants_rise
+
+    prerequisite = { focus = XTN_spa_army }
+    available = {
+
+is_power_balance_in_range = {
+    id = XTN_balance
+    range > XTN_left_side_range
+}
+
+
+    }
+
+    cost = 5
+    
+
+    completion_reward = {
+        add_power_balance_value = {
+        id = XTN_balance
+        value = 0.25
+        tooltip_side = XTN_right_side
+                }
+        360 = {
+            add_core_of = XNC
+        }
+        359 = {
+            add_core_of = XNC
+        }
+        961 = {
+            add_core_of = XNC
+        }
+        358 = {
+            add_core_of = XNC
+        }
+        357 = {
+            add_core_of = XNC
+        }
+            declare_war_on = {
+            target = XPA
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XNJ
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XNY
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XNN
+            type = annex_everything
+                }
+    }
+    
+    }
+
+  focus = {
+    id = XTN_states_serves_the_millitary_right
+    x = 56
+    y = 22
+    icon = GFX_focus_YUG_pan_slavic_congress
+
+    prerequisite = { focus = XTN_northern_offensive_right }
+
+
+    
+
+    cost = 10
+    
+
+    completion_reward = {
+
+    add_ideas = {XTN_millitary_state}
+        add_power_balance_value = {
+        id = XTN_balance
+        value = 0.05
+        tooltip_side = XTN_right_side
+                }
+
+
+
+    }
+  }
+
+ focus = {
+    id = XTN_total_war_right
+    x = 56
+    y = 23
+    icon = GFX_focus_SWE_neither_death_nor_dishonor
+
+    prerequisite = { focus = XTN_states_serves_the_millitary_right }
+
+    cost = 25
+    
+
+    completion_reward = {
+        add_power_balance_value = {
+        id = XTN_balance
+        value = 1
+        tooltip_side = XTN_right_side
+                }
+
+        army_experience = 25
+        add_ideas = {XTN_total_war}
+        add_ideas = {XTN_army_of_scavengers_idea}
+        remove_ideas = {XTN_immigration XTN_immigration_2}
+        373 = {
+
+            add_core_of = XTN
+
+        }
+        392 = {
+
+            add_core_of = XTN
+
+        }
+        384 = {
+
+            add_core_of = XTN
+
+        }
+        385 = {
+
+            add_core_of = XTN
+
+        }
+        383 = {
+
+            add_core_of = XTN
+
+        }
+        391 = {
+
+            add_core_of = XTN
+
+        }
+        377 = {
+
+            add_core_of = XTN
+
+        }
+        957 = {
+
+            add_core_of = XTN
+
+        }
+        956 = {
+
+            add_core_of = XTN
+
+        }
+        382 = {
+
+            add_core_of = XTN
+
+        }
+        939 = {
+
+            add_core_of = XTN
+
+        }
+        940 = {
+
+            add_core_of = XTN
+
+        }
+        380 = {
+
+            add_core_of = XTN
+
+        }
+        381 = {
+
+            add_core_of = XTN
+
+        }
+        386 = {
+
+            add_core_of = XTN
+
+        }
+        387 = {
+
+            add_core_of = XTN
+
+        }
+        947 = {
+
+            add_core_of = XTN
+
+        }
+        942 = {
+
+            add_core_of = XTN
+
+        }
+        390 = {
+
+            add_core_of = XTN
+
+        }
+        946 = {
+
+            add_core_of = XTN
+
+        }
+        941 = {
+
+            add_core_of = XTN
+
+        }
+        944 = {
+
+            add_core_of = XTN
+
+        }
+        389 = {
+
+            add_core_of = XTN
+
+        }
+        945 = {
+
+            add_core_of = XTN
+
+        }
+        943 = {
+
+            add_core_of = XTN
+
+        }
+        951 = {
+
+            add_core_of = XTN
+
+        }
+        950 = {
+
+            add_core_of = XTN
+
+        }
+        949 = {
+
+            add_core_of = XTN
+
+        }
+        952 = {
+
+            add_core_of = XTN
+
+        }
+        388 = {
+
+            add_core_of = XTN
+
+        }
+        948 = {
+
+            add_core_of = XTN
+
+        }
+       364 = {
+
+            add_core_of = XTN
+
+        }
+        365 = {
+
+            add_core_of = XTN
+
+        }
+        366 = {
+
+            add_core_of = XTN
+
+        }
+        367 = {
+
+            add_core_of = XTN
+
+        }
+        370 = {
+
+            add_core_of = XTN
+
+        }
+        371 = {
+
+            add_core_of = XTN
+
+        }
+        375 = {
+
+            add_core_of = XTN
+
+        }
+        372 = {
+
+            add_core_of = XTN
+
+        }
+        374 = {
+
+            add_core_of = XTN
+
+        }
+        378 = {
+
+            add_core_of = XTN
+
+        }
+        376 = {
+
+            add_core_of = XTN
+
+        }
+        954 = {
+
+            add_core_of = XTN
+
+        }
+        955 = {
+
+            add_core_of = XTN
+
+        }
+        377 = {
+
+            add_core_of = XTN
+
+        }
+        953 = {
+
+            add_core_of = XTN
+
+        }
+        938 = {
+
+            add_core_of = XTN
+
+        }
+        379 = {
+
+            add_core_of = XTN
+
+        }
+        959 = {
+
+            add_core_of = XTN
+
+        }
+        985 = {
+
+            add_core_of = XTN
+
+        }
+        937 = {
+
+            add_core_of = XTN
+
+        }
+        936 = {
+
+            add_core_of = XTN
+
+        }
+        371 = {
+
+            add_core_of = XTN
+
+        }
+        372 = {
+
+            add_core_of = XTN
+
+        }
+        374 = {
+
+            add_core_of = XTN
+
+        }
+        375 = {
+
+            add_core_of = XTN
+
+        }
+        395 = {
+
+            add_core_of = XTN
+
+        }
+        394 = {
+
+            add_core_of = XTN
+
+        }
+        360 = {
+
+            add_core_of = XTN
+
+        }
+        359 = {
+
+            add_core_of = XTN
+
+        }
+        358 = {
+
+            add_core_of = XTN
+
+        }
+        261 = {
+
+            add_core_of = XTN
+
+        }
+        357 = {
+
+            add_core_of = XTN
+
+        }
+
+        396 = {
+
+            add_core_of = XTN
+
+        }
+        393 = {
+
+            add_core_of = XTN
+
+        }
+        961= {
+
+            add_core_of = XTN
+
+        }
+        960 = {
+
+            add_core_of = XTN
+
+        }
+
+            declare_war_on = {
+            target = XOH
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XNY
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XNJ
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XPA
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XNN
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XIN
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XIL
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XWI
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XSC
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XGA
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XAL
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XFL
+            type = annex_everything
+                }
+          declare_war_on = {
+            target = XTX
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XAR
+            type = annex_everything
+                }
+
+            declare_war_on = {
+            target = XOK
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XNM
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XAZ
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XCA
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XNV
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XMN
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XIA
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XMO
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XNE
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XKS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XCO
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XUT
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XWY
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = PWS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS3
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XSD
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XUT
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XND
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS4
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = SMS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XID
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS2
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS1
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = MFS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XMT
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = WS5
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XOR
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XWA
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XMS
+            type = annex_everything
+                }
+            declare_war_on = {
+            target = XLA
+            type = annex_everything
+                }
+        367 = {add_core_of = XTN}
+
+
+
+
+    }
+  }
     
   
 
