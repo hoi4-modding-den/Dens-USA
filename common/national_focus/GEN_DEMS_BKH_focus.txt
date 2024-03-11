@@ -1,0 +1,439 @@
+focus_tree = {
+	id = bkh_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			OR = {
+				tag = XND
+				tag = XSD
+				tag = XMT
+				tag = MFS
+			}
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+
+	focus = {
+		id = BKH_political_sphere
+		icon = GFX_focus_generic_support_the_left_right
+		x = 2 
+		y = 0
+		cost = 10
+		available = {  }
+		bypass = { }
+		#prerequisite = { focus = BKH_ }
+		#mutually_exclusive = { focus = BKH_ }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_guided_by_democracy
+		relative_position_id = BKH_political_sphere
+		icon = GFX_goal_support_democracy
+		x = -4
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_political_sphere }
+		mutually_exclusive = { focus = BKH_change_in_course }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_change_in_course
+		relative_position_id = BKH_political_sphere
+		icon = GFX_goal_demand_sudetenland
+		x = 4
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_political_sphere }
+		mutually_exclusive = { focus = BKH_guided_by_democracy }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_stand_alone
+		relative_position_id = BKH_guided_by_democracy
+		icon = GFX_goal_generic_political_pressure
+		x = -1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_guided_by_democracy }
+		mutually_exclusive = { focus = BKH_unite_democracies }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_unite_democracies
+		relative_position_id = BKH_guided_by_democracy
+		icon = GFX_goal_tripartite_pact
+		x = 2
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_guided_by_democracy }
+		mutually_exclusive = { focus = BKH_stand_alone }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_focus_interior
+		relative_position_id = BKH_guided_by_democracy
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = -1
+		y = 2
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_stand_alone focus = BKH_unite_democracies }
+		mutually_exclusive = { focus = BKH_united_front }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_united_front
+		relative_position_id = BKH_unite_democracies
+		icon = GFX_goal_generic_national_unity
+		x = 1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_unite_democracies }
+		mutually_exclusive = { focus = BKH_focus_interior }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_prepare_defences
+		relative_position_id = BKH_focus_interior
+		icon = GFX_goal_generic_defence
+		x = -1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_focus_interior }
+		mutually_exclusive = { focus = BKH_offensive_stance }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_offensive_stance
+		relative_position_id = BKH_focus_interior
+		icon = GFX_goal_generic_small_arms
+		x = 1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_focus_interior }
+		mutually_exclusive = { focus = BKH_prepare_defences }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_proclaim_true_state
+		relative_position_id = BKH_offensive_stance
+		icon = GFX_goal_generic_demand_territory
+		x = -1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_offensive_stance focus = BKH_prepare_defences }
+		#mutually_exclusive = { focus = BKH_ }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_sep_but_united
+		relative_position_id = BKH_united_front
+		icon = GFX_focus_usa_voter_registration_act
+		x = -1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_united_front }
+		mutually_exclusive = { focus = BKH_new_usa }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_new_usa
+		relative_position_id = BKH_united_front
+		icon = GFX_focus_usa_voter_registration_act
+		x = 1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_united_front }
+		mutually_exclusive = { focus = BKH_sep_but_united }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_snap_elections
+		relative_position_id = BKH_change_in_course
+		icon = GFX_focus_usa_voter_registration_act
+		x = 0
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_change_in_course }
+		#mutually_exclusive = { focus = BKH_ }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_nationalist_win
+		relative_position_id = BKH_snap_elections
+		icon = GFX_goal_support_fascism
+		x = -1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_snap_elections }
+		#mutually_exclusive = { focus = BKH_ }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_socialist_win
+		relative_position_id = BKH_snap_elections
+		icon = GFX_goal_support_communism
+		x = 1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_snap_elections }
+		#mutually_exclusive = { focus = BKH_ }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_embrace_extreme
+		relative_position_id = BKH_snap_elections
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 0
+		y = 2
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_nationalist_win focus = BKH_socialist_win }
+		#mutually_exclusive = { focus = BKH_ }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_march_on_capitol
+		relative_position_id = BKH_embrace_extreme
+		icon = GFX_focus_generic_military_dictatorship
+		x = 0
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_embrace_extreme }
+		#mutually_exclusive = { focus = BKH_ }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_military_youth
+		relative_position_id = BKH_nationalist_win
+		icon = GFX_focus_generic_military_academy
+		x = -1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_nationalist_win }
+		#mutually_exclusive = { focus = BKH_ }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_socialist_education
+		relative_position_id = BKH_socialist_win
+		icon = GFX_focus_generic_socialist_science
+		x = 1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_socialist_win }
+		#mutually_exclusive = { focus = BKH_ }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_conquering_state
+		relative_position_id = BKH_military_youth
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 0
+		y = 2
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_military_youth }
+		prerequisite = { focus = BKH_march_on_capitol }
+		#mutually_exclusive = { focus = BKH_ }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_bring_revolution_state
+		relative_position_id = BKH_socialist_education
+		icon = GFX_goal_generic_war_with_comintern
+		x = 0
+		y = 2
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_socialist_education }
+		prerequisite = { focus = BKH_march_on_capitol }
+		#mutually_exclusive = { focus = BKH_ }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_midwest_marxists
+		relative_position_id = BKH_bring_revolution_state
+		icon = GFX_goal_generic_national_unity
+		x = -1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_bring_revolution_state }
+		mutually_exclusive = { focus = BKH_midwest_union }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_midwest_union
+		relative_position_id = BKH_bring_revolution_state
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		x = 1
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_bring_revolution_state }
+		mutually_exclusive = { focus = BKH_midwest_marxists }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_integrate_claims
+		relative_position_id = BKH_conquering_state
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 0
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_conquering_state }
+		#mutually_exclusive = { focus = BKH_ }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_moving_weast
+		relative_position_id = BKH_integrate_claims
+		icon = GFX_goal_generic_territory_or_war
+		x = 0
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_integrate_claims }
+		#mutually_exclusive = { focus = BKH_ }
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = BKH_midwest_empire
+		relative_position_id = BKH_moving_weast
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+		cost = 10
+		available = {  }
+		bypass = { }
+		prerequisite = { focus = BKH_moving_weast }
+		#mutually_exclusive = { focus = BKH_ }
+		completion_reward = {
+
+		}
+	}
+}
