@@ -22,6 +22,7 @@ VICTORY_POINTS_7797:0 "Memphis"
 VICTORY_POINTS_1758:0 "Knoxville"
 VICTORY_POINTS_7791:0 "Pigeon Forge"
 VICTORY_POINTS_8014:0 "Trotskygrad"
+VICTORY_POINTS_10824:0 "Pulaski"
 
  XTN_council: "Council"
  XTN_anarchist: "Anarcho-Individualist"
@@ -45,6 +46,9 @@ XTN_USSR:0 "USSR will send a diplomat to help us defend against imperialism."
 
  XTN_communism_party:0 "I-L"
  XTN_communism_party_long:0 "Intelligentsia - Left"
+
+ XTN_fascism_party:0 "KKK"
+ XTN_fascism_party_long:0 "Ku Klux Klan"
 
  XTN_neutrality_party:0 "I-R"
  XTN_neutrality_party_long:0 "Intelligentsia - Right"
@@ -784,3 +788,27 @@ XTN_states_serves_the_millitary_right_desc:0 "Our french friends are suggesting 
 
 XTN_total_war_right:0 "TOTAL WAR (even more Total)"
 XTN_total_war_right_desc:0 "Kill them all against all odds."
+
+XTN_create_agrarian_party:0 "Create Agrarian Party"
+XTN_create_agrarian_party_desc:0 "Extremes of Intelligentsia are riddiciulous we should establish a strong democracy rather than chaotic anarchy or oppressive communism."
+
+XTN_mobilization_of_farmers:0 "Mobilization of Farmers"
+XTN_mobilization_of_farmers_desc:0 "To arms our beautiful workers. We will stand against injustice of the world."
+
+XTN_fortify_tennessee_agrarian:0 "Fortify Tennessee"
+XTN_fortify_tennessee_agrarian_desc:0 "Our main cities will be fortified"
+
+XTN_fortify_mountains_agrarian:0 "Fortify Mountains"
+XTN_fortify_mountains_agrarian_desc:0 "Our mountains are our main line of defense against east. We can make it stronger."
+
+XTN_fortify_south_agrarian:0 "Fortify South"
+XTN_fortify_south_agrarian_desc:0 "We must defend our south against invaders. Looking at how our south is literaly farmlands we will build some forts along the border to protect them."
+
+XTN_home_defense_idea:0 "Home Defense"
+XTN_home_defense_idea_desc:0 "We shall stop every enemy before they even see Nashville."
+
+XTN_hard_defensive:0 "Hard Defensive"
+XTN_hard_defensive_desc:0 "We will stop them and we will take all of their supplies from them."
+
+XTN_moblize_agrarian:0 "Mobilization"
+XTN_moblize_agrarian_desc:0 "We need some new people for our forts."

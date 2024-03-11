@@ -446,5 +446,41 @@ logistics_skill = 4
 
 
 
+	XTN_jim_morrison = {
+		name = "Jim Morrison"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Luis_Rastrollo"
+			}
+			army = {
+				small = "GFX_idea_europe_generic_land_19"
+			}
+		}
+	advisor = {
+			slot = political_advisor
+			idea_token = ENG_random_communist_minister_14
+			allowed = {
+				original_tag = XTN
+			}
+			traits = {
+				democratic_reformer
+			}
+		}
+		corps_commander = {
+
+
+		traits = { politically_connected brilliant_strategist skilled_staffer }
+		skill = 2
+		attack_skill = 1
+		defense_skill = 5
+		planning_skill = 2
+		logistics_skill = 5
+
+
+				}		
+	}
+
+
+
 
 }

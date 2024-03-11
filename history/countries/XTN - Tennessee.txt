@@ -4,6 +4,7 @@ oob="XTN"
 recruit_character = XTN_tennessee_council
 recruit_character = XTN_lev_trotsky
 recruit_character = XTN_benjamin_tucker
+recruit_character = XTN_jim_morrison
 
 ##### additionals
 
