@@ -581,7 +581,11 @@ add_to_variable = {
 		}
 
 		available = {
-			check_variable = { cattle_baron_power < 5 }
+			OR = {
+				check_variable = { cattle_baron_power < 5 }
+				is_ai = yes
+			}
+			
 		}
 		
 		bypass = {
@@ -760,8 +764,13 @@ focus = {
 		}
 
 		available = {
-			check_variable = { cattle_baron_power < 5 }
-			check_variable = { small_ranches_power > 5 }
+			OR = {
+			is_ai = yes
+				AND = {
+				check_variable = { cattle_baron_power < 5 }
+				check_variable = { small_ranches_power > 5 }
+				}
+			}
 		}
 		
 		bypass = {
@@ -882,10 +891,15 @@ focus = {
 
 		completion_reward = {
 			start_civil_war = {
+			
+			army_ratio = 0.5
     ruling_party = fascism
     # Original country's ideology changes to communism
     ideology = ROOT
     # Breakaway gets old ideology of ROOT
+	PREV = {
+	remove_ideas = XWY_rallied_military
+}
     size = 0.8
     capital = 960
     states = {
@@ -894,6 +908,8 @@ focus = {
     keep_political_leader = yes
     keep_political_party_members = yes
 }
+
+
 		}
 	}
 	
@@ -1196,28 +1212,15 @@ focus = {
 
 
 		completion_reward = {
-			start_border_war = {
-    change_state_after_war = no
-    attacker = {
-        state = 381
-        num_provinces = 4
-        on_win = XWY.6
-        on_lose = XWY.4
-        on_cancel = XWY.4
-        modifier = 0.1
-        dig_in_factor = 0
-        terrain_factor = 0
-    }	
-    defender = {
-        state = 951
-        num_provinces = 3
-        on_win = XWY.5
-        on_lose = XWY.4
-        on_cancel = XWY.4
-    }
+declare_war_on = {
+    target = MFS
+    type = annex_everything
+} 
 }
+
+
+
 }
-	}
 	
 	focus = {
 		id = XWY_protector_of_montana
@@ -1412,8 +1415,13 @@ focus = {
 		}
 
 		available = {
-			check_variable = { cattle_baron_power > 5 }
+			OR = {
+			is_ai = yes
+				AND = {
+					check_variable = { cattle_baron_power > 5 }
 			check_variable = { small_ranches_power > 5 }
+				}
+			}
 		}
 		
 		bypass = {
