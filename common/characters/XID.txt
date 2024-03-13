@@ -1,0 +1,17 @@
+characters = {
+    XID_Len_Jordan = {
+        name = "Len Jordam"
+        portraits = {
+            civilian = {
+                large = gfx/leaders/XID/XID_LenJordan.dds
+            }
+        }
+        country_leader = {
+            ideology = centrism
+            traits = {}
+            expire = "2050.3.1.1"
+            id = -1
+        }
+    }
+    
+}

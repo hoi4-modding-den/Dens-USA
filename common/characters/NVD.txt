@@ -1,0 +1,35 @@
+characters = {
+    NVD_Brazilla = {
+        name = "Barzilla W. Clark"
+        portraits = {
+            civilian = {
+                large = gfx/leaders/NVD/NVD_Barzilla.dds
+            }
+        }
+        country_leader = {
+            ideology = liberalism
+            traits = {}
+            expire = "2050.3.1.1"
+            id = -1
+        }
+        country_leader = {
+            ideology = gen_nazism
+            traits = {}
+            expire = "2050.3.1.1"
+            id = -1
+        }
+        country_leader = {
+            ideology = anti_revisionism
+            traits = {}
+            expire = "2050.3.1.1"
+            id = -1
+        }
+        country_leader = {
+            ideology = moderatism
+            traits = {}
+            expire = "2050.3.1.1"
+            id = -1
+        }
+    }
+
+}

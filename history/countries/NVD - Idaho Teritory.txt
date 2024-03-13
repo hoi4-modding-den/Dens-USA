@@ -11,6 +11,7 @@ set_technology = {
 	gw_artillery = 1
 }
 
+recruit_character = NVD_Brazilla
 
 set_politics = {
 	ruling_party = democratic

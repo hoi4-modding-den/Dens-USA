@@ -8,7 +8,7 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-
+recruit_character = XID_Len_Jordan
 set_popularities = {
 	neutrality = 80
 	democratic = 10
