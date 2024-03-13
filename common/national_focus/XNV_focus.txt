@@ -168,12 +168,57 @@ focus_tree = {
 
 		x = 6
 		y = 7
-		cost = 0
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+    			ideology = fascism
+    			popularity = 0.1
+			}
+		}
+     }
+	 focus = {
+		id = XNVReformDiscussions #MorleyGriswoldFascistPath
+
+		prerequisite = { focus = XNVFarRightRallies }
+		mutually_exclusive = {}
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+			if = {
+				fascism > 0.6
+			}
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 7
+		y = 8
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+			}
+		hidden_effect = {
+				add_country_leader_role = {
+				character = XNV_Morley_Griswold  # Must be recruited
+				promote_leader = yes
+				country_leader = {
+					ideology = gen_nazism
+					traits = { }
+				}
+    		}
+		}
 		}
      }
 	#CivilWarPath
