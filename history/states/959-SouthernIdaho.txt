@@ -2,7 +2,7 @@
 state={
 	id=959
 	name="STATE_959"
-	manpower = 89006
+	manpower = 149006
 	
 	state_category = rural
 	
@@ -12,14 +12,16 @@ state={
 	}
 
 	history={
-		owner = XNV
+		owner = NVD
 		add_core_of = XNV
+		add_core_of = NVD
 		add_core_of = XID
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
 		}
-    #victory_points = { 4799 5 }
+    victory_points = { 12535 7 }
+    victory_points = { 12607 5 }
 	}
 
 	provinces={

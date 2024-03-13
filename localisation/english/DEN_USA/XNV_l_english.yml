@@ -3,8 +3,15 @@
  XNV_DEF: "Nevada"
  XNV_ADJ: "Nevada"
  
+ NVD: "Nevadan Idaho"
+ NVD_DEF: "Nevada Idaho Teritory"
+ NVD_ADJ: "Nevada"
+
  STATE_938: "Lower Nevada"
  STATE_959: "Lower Idaho"
+
+ VICTORY_POINTS_12535:0 "Idaho Falls"
+ VICTORY_POINTS_12607:0 "Nampa"
 
  VICTORY_POINTS_4607:0 "Carson City"
  VICTORY_POINTS_4799:0 "Las Vegas"
@@ -17,6 +24,6 @@
  XNVElection:0 "Begin Election"
 
  XNV_AFOCIdea:0 "§YAll for Our Country§"
- XNV_AFOCIdea_desc:0 ""
+ XNV_AFOCIdea_desc:0 "The Nevadan spirit aims to overcome the nation's difficulties in these trying times."
  XNV_GreatDepression:0 "Great Depression"
  XNV_GreatDepression_desc:0 "§RThe failure of several major institutions has left the Nevada economy in shambles. The main industry of our economy, mineral extraction, has plummeted in value leading many to question how silver the Silver State really is."

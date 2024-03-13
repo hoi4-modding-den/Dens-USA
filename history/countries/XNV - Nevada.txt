@@ -29,4 +29,10 @@ set_popularities = {
 	fascism = 2
 }
 
+XNV = {
+	puppet = NVD
+}
+
 add_ideas = XNV_GreatDepression
+create_faction = "United States of Nevada"
+add_to_faction = NVD

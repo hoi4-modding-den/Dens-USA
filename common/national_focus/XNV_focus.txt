@@ -126,7 +126,56 @@ focus_tree = {
 		completion_reward = {
 		}
      }
+	 focus = {
+		id = XNVAltDemocratic #MorleyGriswoldDemPath
 
+		prerequisite = { focus = XNVElectionRep }
+		mutually_exclusive = {focus = XNVFarRightRallies }
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 4
+		y = 7
+		cost = 0
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 focus = {
+		id = XNVFarRightRallies #MorleyGriswoldFascistPath
+
+		prerequisite = { focus = XNVElectionRep }
+		mutually_exclusive = { focus = XNVAltDemocratic }
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 6
+		y = 7
+		cost = 0
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
 	#CivilWarPath
 	 focus = {
 		id = XNVCivilWar #AllForOurCountry
