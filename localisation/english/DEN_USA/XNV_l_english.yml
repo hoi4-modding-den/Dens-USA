@@ -20,6 +20,9 @@
  XNV_democratic_party_long:0 "Democratic Party"
  XNV_democratic_party_desc:0 "Two-Party System"
 
+ XNV_fascism_party:0 "NNSP"
+ XNV_fascism_party_long:0 "Nevada Nationalist Silver Party"
+
  XNVAFOC:0 "§YAll for Our Country§"
  XNVElection:0 "Begin Election"
 

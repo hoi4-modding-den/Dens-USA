@@ -23,5 +23,8 @@ spriteTypes = {
 		name = "GFX_goal_XNV_CivilWar"
 		texturefile = "gfx/XNV_focuses/XNV_CivilWar.dds"
 	}
-
+	spriteType = {
+		name = "GFX_goal_XNV_NNSP"
+		texturefile = "gfx/XNV_focuses/XNV_NNSP.dds"
+	}
 }
