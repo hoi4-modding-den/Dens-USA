@@ -1,0 +1,219 @@
+focus_tree = {
+	id = XID_focus
+
+	country = {
+
+        factor = 0
+		modifier = {
+			add = 100
+            OR = {
+			tag = XID
+            tag = NVD
+
+            }
+		}
+
+	 }
+	 default = no
+	 continuous_focus_position = { x = 100 y = 3000 }
+
+    #FreeIdaho
+	 focus = {
+		id = XID_Idependent
+
+		prerequisite = {}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+            tag = XID
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 5
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 focus = {
+		id = XID_BringBackThrone
+
+		prerequisite = { focus = XID_Idependent }
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+            tag = XID
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 3
+		y = 4
+		cost = 1
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+            	set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					long_name = "House of Jordan"
+					name = "Monarchist"
+				}
+		}
+     }
+    #NevadaIdaho
+	 focus = {
+		id = XID_Puppet
+
+		prerequisite = {}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+            tag = NVD
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 10
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 focus = {
+		id = XID_RemainLoyal
+
+		prerequisite = {focus = XID_Puppet }
+		mutually_exclusive = { focus = XID_SeekIndependence }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+            tag = NVD
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 8.5
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 focus = {
+		id = XID_SeekIndependence
+
+		prerequisite = {focus = XID_Puppet }
+		mutually_exclusive = {focus = XID_RemainLoyal }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+            tag = NVD
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 11.5
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+	 focus = {
+		id = XID_WarPreperation
+
+		prerequisite = {focus = XID_RemainLoyal focus = XID_SeekIndependence }
+		mutually_exclusive = { }
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+            tag = NVD
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 10
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+    #Shared
+     focus = {
+		id = XID_ReclaimLand
+
+		prerequisite = {focus = XID_Idependent focus = XID_WarPreperation }
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+            always = no
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 7.5
+		y = 9
+		cost = 1
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+                if = {
+                 limit = {tag = XID} 
+                 declare_war_on = {
+                    target = NVD
+                    type = annex_everything
+                 }
+                }
+                else_if = {
+                 limit = {tag = NVD} 
+                 declare_war_on = {
+                    target = XID
+                    type = annex_everything
+                 }
+                }
+
+		}
+     }
+} #endbracketlol
