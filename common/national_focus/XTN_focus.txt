@@ -263,6 +263,190 @@ set_division_template_lock = {
     }
 
 
+    focus = {
+    id = XTN_cult_morrison
+    x = 52
+    y = 4
+    icon = GFX_focus_rom_coup
+
+    prerequisite = {focus = XTN_create_agrarian_party}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_cult_of_morrison}
+
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XTN_expand_farmlands_agrarian
+    x = 58
+    y = 1
+    icon = GFX_goal_generic_construct_infrastructure
+
+    prerequisite = {focus = XTN_create_agrarian_party}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+           368 = {
+            add_building_construction = {
+            type = industrial_complex
+            level = 1
+            instant_build = yes
+                    }
+            }
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_isolationism
+    x = 57
+    y = 2
+    icon = GFX_goal_generic_trade
+
+    prerequisite = {focus = XTN_expand_farmlands_agrarian}
+    mutually_exclusive = {focus = XTN_free_market}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_ideas = {undisturbed_isolation }
+        add_ideas = {XTN_isolationism_idea}
+        remove_ideas = {XTN_minor_depression}
+
+
+        }
+        
+
+    }
+    focus = {
+    id = XTN_free_market
+    x = 59
+    y = 2
+    icon = GFX_goal_generic_positive_trade_relations
+
+    prerequisite = {focus = XTN_expand_farmlands_agrarian}
+    mutually_exclusive = {focus = XTN_isolationism}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_ideas = {free_trade}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_millitary_expansion_industry
+    x = 58
+    y = 3
+    icon = GFX_goal_generic_construct_mil_factory
+
+    prerequisite = {focus = XTN_free_market  focus = XTN_isolationism}
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+           368 = {
+            add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+                    }
+            }
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_airforce_research
+    x = 56
+    y = 3
+    icon = GFX_goal_generic_air_fighter2
+
+    prerequisite = {focus = XTN_free_market  focus = XTN_isolationism}
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_tech_bonus = {
+        bonus = 0.5
+        uses = 1
+        category = light_air
+            }
+
+
+        }
+        
+
+    }
+
+
+    focus = {
+    id = XTN_defense_tech
+    x = 60
+    y = 3
+    icon = GFX_goal_generic_build_tank
+
+    prerequisite = {focus = XTN_free_market  focus = XTN_isolationism}
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_tech_bonus = {
+        bonus = 0.5
+        uses = 1
+        category = artillery
+            }
+        add_tech_bonus = {
+        bonus = 0.25
+        uses = 1
+        category = infantry_weapons
+            }
+        add_tech_bonus = {
+        bonus = 0.5
+        uses = 1
+        category = cat_anti_air
+            }
+
+
+        }
+        
+
+    }
+
+
 
 
 

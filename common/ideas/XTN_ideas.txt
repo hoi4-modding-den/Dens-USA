@@ -571,6 +571,22 @@ ideas = {
                 equipment_capture_factor = 0.5
             }
         }
+   XTN_cult_of_morrison = {
+           removal_cost = -1
+            picture = ROM_figurehead_king_michael
+            modifier = {
+                stability_factor = 0.15
+                political_power_gain = 0.25
+            }
+        }
+   XTN_isolationism_idea = {
+           removal_cost = -1
+            picture = eng_imperial_conscription
+            modifier = {
+                stability_factor = 0.35
+                army_core_defence_factor = 0.35
+            }
+        }
 
     }
 }
