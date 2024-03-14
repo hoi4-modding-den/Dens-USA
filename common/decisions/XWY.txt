@@ -1,7 +1,7 @@
 
 XWY_the_great_west = {
 	
-	XWY_stop_wars = {
+	XWY_subjugate_montana = {
 
 		icon = GFX_decision_generic_operation
 		ai_will_do = {
@@ -13,10 +13,10 @@ XWY_the_great_west = {
 		}
 		
 		available = {
-			has_completed_focus = XWY_the_great_west
+			has_completed_focus = XWY_protector_of_montana
 		}
 
-		cost = 0
+		cost = 250
 
 		fire_only_once = yes
 
@@ -25,11 +25,162 @@ XWY_the_great_west = {
 		} 
 		
 		visible = {
-			has_completed_focus = XWY_the_great_west
+			has_completed_focus = XWY_protector_of_montana
 		}
 		
 		complete_effect = {
-			
+			puppet = WS1
+		}
+	}
+	
+	XWY_subjugate_rep_mon = {
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {
+			tag = XWY
+		}
+		
+		available = {
+			has_completed_focus = XWY_protector_of_montana
+		}
+
+		cost = 250
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 10
+		} 
+		
+		visible = {
+			has_completed_focus = XWY_protector_of_montana
+		}
+		
+		complete_effect = {
+			puppet = XMT
+		}
+	}
+	
+	XWY_subjugate_mil_jun = {
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {
+			tag = XWY
+		}
+		
+		available = {
+			has_completed_focus = XWY_protector_of_montana
+		}
+
+		cost = 250
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 10
+		} 
+		
+		visible = {
+			has_completed_focus = XWY_protector_of_montana
+		}
+		
+		complete_effect = {
+			puppet = WS2
+		}
+	}
+	
+	XWY_subjugate_PWS = {
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {
+			tag = XWY
+		}
+		
+		available = {
+			has_completed_focus = XWY_protector_of_montana
+		}
+
+		cost = 250
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 10
+		} 
+		
+		visible = {
+			has_completed_focus = XWY_protector_of_montana
+		}
+		
+		complete_effect = {
+			puppet = PWS
+		}
+	}
+	
+	XWY_reunify_montana = {
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 500
+		}
+	
+		allowed = {
+			tag = XWY
+		}
+		
+		available = {
+			XMT = {
+				is_puppet = yes
+			}
+			WS1 = {
+				is_puppet = yes
+			}
+			WS2 = {
+				is_puppet = yes
+			}
+			is_puppet = no
+			has_completed_focus = XWY_protector_of_montana
+		}
+
+		cost = 250
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 10
+		} 
+		
+		visible = {
+			has_completed_focus = XWY_protector_of_montana
+		}
+		
+		complete_effect = {
+			WS1 = {
+				annex_country = {
+    target = XMT
+    transfer_troops = yes
+}
+annex_country = {
+    target = WS2
+    transfer_troops = yes
+}
+annex_country = {
+    target = PWS
+    transfer_troops = yes
+}
+			}
 		}
 	}
 }

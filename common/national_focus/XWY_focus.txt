@@ -1177,7 +1177,7 @@ focus = {
 
 
 		completion_reward = {
-
+		add_ideas = XWY_refounded_army_idea
 }
 	}
 	
@@ -1253,7 +1253,10 @@ declare_war_on = {
 
 
 		completion_reward = {
-
+		give_guarantee = WS1
+		give_guarantee = XMT
+		give_guarantee = WS2
+		give_guarantee = PWS
 }
 	}
 	
