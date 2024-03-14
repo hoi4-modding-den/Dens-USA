@@ -283,6 +283,232 @@ set_division_template_lock = {
 
     }
 
+    focus = {
+    id = XTN_agrarian_constitution
+    x = 52
+    y = 6
+    icon = GFX_focus_POL_complete_april_constitution
+
+    prerequisite = {focus = XTN_cult_morrison}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_constitution}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_combat_minor_depression
+    x = 52
+    y = 7
+    icon = GFX_focus_mex_privatisation
+
+    prerequisite = {focus = XTN_agrarian_constitution}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        remove_ideas = {XTN_minor_depression}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_uni_knoxville
+    x = 55
+    y = 8
+    icon = GFX_focus_research2
+
+    prerequisite = {focus = XTN_combat_minor_depression}
+    prerequisite = {focus = XTN_nashville_millitary_academy}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_research_slot = 1
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_patron_of_arts
+    x = 56
+    y = 5
+    icon = GFX_focus_renounce_the_treaty_of_trianon
+
+    prerequisite = {focus = XTN_cult_morrison}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_political_power = 150
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_sponsor_tanks
+    x = 55
+    y = 6
+    icon = GFX_goal_generic_army_tanks
+
+    prerequisite = {focus = XTN_patron_of_arts}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_tech_bonus = {
+        bonus = 0.5
+        uses = 1
+        category = armor
+            }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_sponsor_support
+    x = 57
+    y = 6
+    icon = GFX_focus_secret_rearmament
+
+    prerequisite = {focus = XTN_patron_of_arts}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_tech_bonus = {
+        bonus = 0.5
+        uses = 1
+        category = maintenance_company_tech
+            }
+        add_tech_bonus = {
+        bonus = 0.5
+        uses = 1
+        category = hospital_tech
+            }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_nashville_millitary_academy
+    x = 56
+    y = 7
+    icon = GFX_focus_generic_military_academy
+
+    prerequisite = {focus = XTN_sponsor_support}
+    prerequisite = {focus = XTN_sponsor_tanks}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_tech_bonus = {
+        bonus = 1
+        uses = 3
+        category = land_doctrine
+            }
+
+        add_ideas = {XTN_NMA}
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_support_cattle_industry
+    x = 48
+    y = 5
+    icon = GFX_focus_ARG_capitalize_the_beef_industry
+
+    prerequisite = {focus = XTN_cult_morrison}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_offsite_building = { type = industrial_complex level = 3 }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_living_off_land
+    x = 47
+    y = 6
+    icon = GFX_focus_ETH_freedom_at_gunpoint
+
+    prerequisite = {focus = XTN_support_cattle_industry}
+
+    prerequisite = {focus = XTN_moblize_agrarian}
+
+    cost = 10
+    
+
+    completion_reward = {
+        swap_ideas = {
+        add_idea = XTN_living_off_the_land
+        remove_idea = XTN_hard_defensive
+        }
+    }
+    }
+
+    focus = {
+    id = XTN_crush_intelligentsia
+    x = 50
+    y = 5
+    icon = GFX_focus_rom_parties_end
+
+    prerequisite = {focus = XTN_cult_morrison}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_popularity = {
+        ideology = democratic
+        popularity = 1
+            }
+
+        }
+        
+
+    }
+
 
     focus = {
     id = XTN_expand_farmlands_agrarian
@@ -327,7 +553,6 @@ set_division_template_lock = {
 
         add_ideas = {undisturbed_isolation }
         add_ideas = {XTN_isolationism_idea}
-        remove_ideas = {XTN_minor_depression}
 
 
         }

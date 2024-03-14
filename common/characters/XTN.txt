@@ -481,6 +481,36 @@ logistics_skill = 4
 	}
 
 
+	XTN_WJS = {
+		name = "William Joseph Simmons"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_USA_mr_hilt"
+			}
+			army = {
+				small = "GFX_idea_ENG_palme_dutt"
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = { nazi_sympathizer XTN_grand_wizard }
+			expire = "1965.9.9.9"
+			id = -1
+		}
+	advisor = {
+			slot = political_advisor
+			idea_token = ENG_random_communist_minister_14
+			allowed = {
+				original_tag = XTN
+			}
+			traits = {
+				fascist_demagogue
+			}
+		}
+	
+	}
+
+
 
 
 }

@@ -72,6 +72,16 @@ leader_traits = {
 
 	}
 
+		XTN_grand_wizard = {
+		random = no
+		
+		fascism_drift = 0.1
+		justify_war_goal_time = -0.25
+		political_power_cost = 0.3
+
+
+	}
+
 
 
 }
