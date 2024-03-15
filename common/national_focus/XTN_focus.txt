@@ -324,6 +324,195 @@ set_division_template_lock = {
     }
 
     focus = {
+    id = XTN_open_up_diplomacy
+    x = 51
+    y = 8
+    icon = GFX_goal_generic_alliance
+
+    prerequisite = {focus = XTN_combat_minor_depression}
+    available = {NOT = {has_idea = undisturbed_isolation}}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_political_power = 100
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_balkan_diplomacy
+    x = 51
+    y = 9
+    icon = GFX_focus_generic_balkan_diplomacy
+
+    prerequisite = {focus = XTN_open_up_diplomacy}
+
+    cost = 1
+    
+
+    completion_reward = {
+
+                custom_effect_tooltip = XTN_diplo
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_deal_with_romania
+    x = 51
+    y = 10
+    icon = GFX_goal_generic_oil_refinery
+
+    prerequisite = {focus = XTN_balkan_diplomacy}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+    add_ideas = {XTN_romanian_trade}  
+
+LIB = {
+
+give_resource_rights = {
+    receiver = XTN
+    state = 46
+    resources = { oil }
+}
+
+
+
+}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_deal_with_turkey
+    x = 49
+    y = 10
+    icon = GFX_focus_TUR_misak_i_milli
+
+    prerequisite = {focus = XTN_balkan_diplomacy}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+    add_ideas = {XTN_turkish_trade}  
+
+LIB = {
+
+give_resource_rights = {
+    receiver = XTN
+    state = 339
+    resources = { chromium }
+}
+give_resource_rights = {
+    receiver = XTN
+    state = 340
+    resources = { chromium }
+}
+
+
+
+}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_deal_with_greece
+    x = 53
+    y = 10
+    icon = GFX_focus_generic_befriend_greece
+
+    prerequisite = {focus = XTN_balkan_diplomacy}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+    add_ideas = {XTN_greece_trade}  
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_secure_ports
+    x = 47
+    y = 10
+    icon = GFX_goal_generic_construct_naval_dockyard
+
+    prerequisite = {focus = XTN_balkan_diplomacy}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+     
+            declare_war_on = {
+            target = XNC
+            type = annex_everything
+                }
+            363 = {
+
+                add_core_of = XTN
+            }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_build_docks
+    x = 47
+    y = 11
+    icon = GFX_goal_generic_navy_submarine
+
+    prerequisite = {focus = XTN_secure_ports}
+    available = {controls_state = 363}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+     
+            
+           363 = {
+            add_building_construction = {
+            type = dockyard
+            level = 3
+            instant_build = yes
+                    }
+            }
+
+        }
+        
+
+    }
+
+
+    focus = {
     id = XTN_uni_knoxville
     x = 55
     y = 8
@@ -338,6 +527,52 @@ set_division_template_lock = {
     completion_reward = {
 
         add_research_slot = 1
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_alcohol_industry_agrarian
+    x = 53
+    y = 8
+    icon = GFX_focus_FIN_oy_alkoholiliike
+
+    prerequisite = {focus = XTN_combat_minor_depression}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_offsite_building = { type = industrial_complex level = 3 }
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_support_chemical_uni
+    x = 54
+    y = 9
+    icon = GFX_focus_generic_university_3
+
+    prerequisite = {focus = XTN_alcohol_industry_agrarian}
+    prerequisite = {focus = XTN_uni_knoxville}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_tech_bonus = {
+        bonus = 0.5
+        uses = 1
+        category = synth_resources
+            }
 
         }
         
@@ -7181,7 +7416,31 @@ is_power_balance_in_range = {
 
     }
   }
+
+  focus = {
+    id = XTN_post_total_war_right
+    x = 56
+    y = 24
+    icon = GFX_focus_DEN_civilian_preparations
+
+    prerequisite = { focus = XTN_total_war_right }
+    available = {XTN = {has_war = no}}
+
+
     
+
+    cost = 1
+    
+
+    completion_reward = {
+
+    remove_ideas = {XTN_total_war}
+    remove_ideas = {XTN_millitary_state}
+    add_ideas = {XTN_post_total_war}
+
+
+    }
+  }    
   
 
 #################################### Migration Policy #######################################

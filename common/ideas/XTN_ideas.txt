@@ -619,6 +619,35 @@ ideas = {
 
             }
         }
+   XTN_romanian_trade = {
+           removal_cost = -1
+            picture = generic_stockpile_fuel
+            modifier = {
+            consumer_goods_factor = 0.1
+
+
+            }
+        }
+   XTN_turkish_trade = {
+           removal_cost = -1
+            picture = tur_funkplan
+            modifier = {
+            consumer_goods_factor = 0.25
+
+
+            }
+        }
+
+   XTN_greece_trade = {
+           removal_cost = -1
+            picture = bul_tobacco_exports
+            modifier = {
+            consumer_goods_factor = 0.25
+            defence = 0.05
+            attack = 0.05
+            forced_surrender_limit = 0.15
+            }
+        }
 
     }
 }

@@ -41,6 +41,8 @@ XTN_germans:0 "Germans will be invited"
 XTN_french:0 "French will be invited"
 XTN_USSR:0 "USSR will send a diplomat to help us defend against imperialism."
 
+XTN_diplo:0 "This will open up our diplomacy tree for balkan countries."
+
 
 
 
@@ -884,3 +886,42 @@ XTN_combat_minor_depression_desc:0 "Series of reforms will help us combat effect
 
 XTN_uni_knoxville:0 "University of Knoxville"
 XTN_uni_knoxville_desc:0 "We shall open a great university to expand knowledge of our people."
+
+XTN_post_total_war_right:0 "Post Total War Recovery"
+XTN_post_total_war_right_desc:0 "Our enemies are dead...so are we."
+
+XTN_alcohol_industry_agrarian:0 "Create Alcohol Industry"
+XTN_alcohol_industry_agrarian_desc:0 "We have a lot of wheat and potatos laying over we could use it to start a new industry sector."
+
+XTN_support_chemical_uni:0 "Create Chemistry Wing"
+XTN_support_chemical_uni_desc:0 "University of Knoxville will recive government funding to open new chemistry wing to support our resources industry."
+
+XTN_open_up_diplomacy:0 "Open up for diplomacy"
+XTN_open_up_diplomacy_desc:0 "We must open up to the outside world ,because we are in dire need of resources."
+
+XTN_balkan_diplomacy:0 "Balkan Diplomacy"
+XTN_balkan_diplomacy_desc:0 "We must open negotiations with balkan countries."
+
+XTN_romanian_trade:0 "Trade deal with Romania"
+XTN_romanian_trade_desc:0 "We are selling our produce to Romania for oil."
+
+XTN_deal_with_romania:0 "Deal with Romania"
+XTN_deal_with_romania_desc:0 "Romania is rich in natural resources and we will start trade with them."
+
+XTN_turkish_trade:0 "Turkish Trade"
+XTN_turkish_trade_desc:0 "We are selling our produce to Turkey for Chromium."
+
+XTN_deal_with_turkey:0 "Deal with Turkey"
+XTN_deal_with_turkey_desc:0 "We need some chromium for our air and armor, and turkey has a lot."
+
+XTN_greece_trade:0 "Greek Tobacco"
+XTN_greece_trade_desc:0 "A luxary resource that we will provide for our army and our people."
+
+XTN_deal_with_greece:0 "Deal with Greece"
+XTN_deal_with_greece_desc:0 "Greece is main exporter of tobacco in the balkans. Tobacco is a luxary product that will support our morale of common people and soldiers."
+
+XTN_secure_ports:0 "Secure Ports"
+XTN_secure_ports_desc:0 "Even tho we want to stay in our lands, we need to invade NC for access to port, so we can start international trade."
+
+XTN_build_docks:0 "Build Docks"
+XTN_build_docks_desc:0 "After securing some ports we need to build convoys to transfer our resources from europe."
