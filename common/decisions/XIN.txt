@@ -1,105 +1,109 @@
 XIN_election_decisions = {
-	election_begins = {
-		priority = 10
-		is_good = yes
-		selectable_mission = no
-		fire_only_once = yes
+	# Election Decisions
+			election_begins = {
+				priority = 10
+				is_good = yes
+				selectable_mission = no
+				fire_only_once = yes
 
-		days_mission_timeout = 70
-		available = { always = no }
-		activation = {
-			NOT = {
+				days_mission_timeout = 1
+				available = { always = no }
+				activation = {
+					NOT = {
+						has_completed_focus = XIN_first_election
+					}
+				}
+				timeout_effect = {
+					country_event = XIN.1
+				}
+			}
+		# Leftist Decisions
+			XIN_boost_left_wing_support = {
+				
+				cost = 50
+				visible = {
+					has_completed_focus = XIN_first_election
+					NOT = {
+						OR = {
+							has_completed_focus = XIN_coalition_deadlock
+							has_completed_focus = XIN_democrat_majority
+							has_completed_focus = XIN_republican_majority
+						}
+					}
+				}
+				available = {
+					NOT = {
+						has_decision = XIN_boost_right_wing_support
+					}
+					has_political_power > 50
+				}
+				days_remove = 15
+				remove_effect = {
+					add_to_variable = {
+						var = XIN_election_dem_leaning
+						value = 1
+					}
+				}
+			}
+		# Rightist Decisions
+			XIN_boost_right_wing_support = {
+				cost = 50
+				visible = {
+					has_completed_focus = XIN_first_election
+					NOT = {
+						OR = {
+							has_completed_focus = XIN_coalition_deadlock
+							has_completed_focus = XIN_democrat_majority
+							has_completed_focus = XIN_republican_majority
+						}
+					}
+				}
+				available = {
+					NOT = {
+						has_decision = XIN_boost_left_wing_support
+					}
+					has_political_power > 50
+				}
+				days_remove = 15
+				remove_effect = {
+					add_to_variable = {
+						var = XIN_election_rep_leaning
+						value = 1
+					}
+				}
+			}
+
+		election_ends = {
+			priority = 10
+			is_good = yes
+			selectable_mission = no
+			fire_only_once = yes
+			visible = {
 				has_completed_focus = XIN_first_election
 			}
-		}
-		timeout_effect = {
-			country_event = XIN.1
-		}
-	}
-	XIN_boost_left_wing_support = {
-		
-		cost = 50
-		visible = {
-			has_completed_focus = XIN_first_election
-			NOT = {
-				OR = {
-					has_completed_focus = XIN_coalition
-					has_completed_focus = XIN_invite_leftist_policies
-					has_completed_focus = XIN_republican_support
-				}
-			}
-		}
-		available = {
-			NOT = {
-				has_decision = XIN_boost_right_wing_support
-			}
-			has_political_power > 50
-		}
-		days_remove = 15
-		remove_effect = {
-			add_to_variable = {
-				var = XIN_election_dem_leaning
-				value = 1
-			}
-		}
-	}
-	XIN_boost_right_wing_support = {
-		cost = 50
-		visible = {
-			has_completed_focus = XIN_first_election
-			NOT = {
-				OR = {
-					has_completed_focus = XIN_coalition
-					has_completed_focus = XIN_invite_leftist_policies
-					has_completed_focus = XIN_republican_support
-				}
-			}
-		}
-		available = {
-			NOT = {
-				has_decision = XIN_boost_left_wing_support
-			}
-			has_political_power > 50
-		}
-		days_remove = 15
-		remove_effect = {
-			add_to_variable = {
-				var = XIN_election_rep_leaning
-				value = 1
-			}
-		}
-	}
-	election_ends = {
-		priority = 10
-		is_good = yes
-		selectable_mission = no
-		fire_only_once = yes
-		visible = {
-			has_completed_focus = XIN_first_election
-		}
 
-		days_mission_timeout = 140
-		available = {
-			always = no
-		}
-		activation = {
-			has_completed_focus = XIN_first_election
-		}
-		timeout_effect = {
-			if = {
-				limit = { check_variable = { var:XIN_election_rep_leaning < var:XIN_election_dem_leaning } }
-				complete_national_focus = XIN_invite_leftist_policies
+			days_mission_timeout = 30
+			available = {
+				always = no
 			}
-			else_if = {
-				limit = { check_variable = { var:XIN_election_rep_leaning > var:XIN_election_dem_leaning  } }
-				complete_national_focus = XIN_republican_support
-					}
+			activation = {
+				has_completed_focus = XIN_first_election
+			}
+			timeout_effect = {
+				if = {
+					limit = { check_variable = { var:XIN_election_rep_leaning < var:XIN_election_dem_leaning } }
+					complete_national_focus = XIN_democrat_majority
+				}
+				else_if = {
+					limit = { check_variable = { var:XIN_election_rep_leaning > var:XIN_election_dem_leaning  } }
+					complete_national_focus = XIN_republican_majority
+						}
+				
+				else = { complete_national_focus = XIN_coalition_deadlock }
+			}
+
 			
-			else = { complete_national_focus = XIN_coalition}
-		}
-
-	
-	}
+			}
 }
 XIN_formable_decisions = {
 	greater_indiana = {
@@ -139,46 +143,37 @@ XIN_formable_decisions = {
 			
 		}
 	}
+}
 
-	esoterreich = {
-		ai_will_do = {
-			base = 0
-		}
-		visible = {
-			has_government = fascism
-		}
+XIN_civilwar_decisions = {
+	communist_revolution = {
 
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = form_esoterreich.tt
-				owns_state = 393
-				owns_state = 394
-				owns_state = 395
-				owns_state = 396
-				owns_state = 261
-				owns_state = 393
-				owns_state = 276
-				owns_state = 682
-				owns_state = 391
-			}
-		}
-		cost = 0
-
+		priority = 10
+		is_good = no
+		selectable_mission = no
 		fire_only_once = yes
 
-		complete_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						region = 198
-						state = 276
-						state = 682
-						state = 391
-					}
-				}
-				add_core_of = ROOT
+		days_mission_timeout = 10
+		available = {
+			always = no
+		}
+		activation = {
+			has_completed_focus = XIN_michigan_workers_union
+			NOT = {
+				has_government = communism
 			}
-			set_cosmetic_tag = XIN_ESO
+		}
+
+		
+
+		timeout_effect = {
+			start_civil_war = {
+				ruling_party = communism
+				ideology = ROOT
+				size = 0.85
+				states = {396}
+
+			}
 		}
 	}
 }

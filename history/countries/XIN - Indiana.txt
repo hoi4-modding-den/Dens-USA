@@ -4,14 +4,20 @@ capital = 396
 
 set_politics = {
 	ruling_party = democratic
-	last_election = "1936.1.1"
+	last_election = "1932.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	neutrality = 8.8
-	democratic = 88
-	communism = 3
-	fascism = 0.2
+	neutrality = 12
+	democratic = 86
+	communism = 2
+	fascism = 0
+}
+
+create_country_leader = {
+	name = "Leonardo Da Vinci"
+	picture = fortnite
+	ideology = centrism
 }
