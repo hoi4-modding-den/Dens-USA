@@ -925,3 +925,22 @@ XTN_secure_ports_desc:0 "Even tho we want to stay in our lands, we need to invad
 
 XTN_build_docks:0 "Build Docks"
 XTN_build_docks_desc:0 "After securing some ports we need to build convoys to transfer our resources from europe."
+
+XTN_diplo_car:0 "We will start trade in caribbean region."
+XTN_carribean_trade:0 "Caribbean Trade"
+XTN_carribean_trade_desc:0 "Sugar is a profitable bussiness and the weather is nice. We will start our diplomatic efforts in caribbean region."
+
+XTN_jamaica_trade_port:0 "Jamaica Trade Port"
+XTN_jamaica_trade_port_desc:0 "We will purchase jamaica from the british to encourage and simplify trade in the area."
+
+XTN_british_debt:0 "In Debt to Britain"
+XTN_british_debt_desc:0 "After purchase of jamaica we are obliged to pay to the british."
+
+XTN_venezuela_oil:0 "Venezuelian Oil"
+XTN_venezuela_oil_desc:0 "Venezuela is overflowing with oil and they are willing to give us some of it for millitary training."
+
+XTN_fort_tennesse:0 "FORT TENNESSEE"
+XTN_fort_tennesse_desc:0 "YOU SHALL NOT PASS!"
+
+XTN_fort_tennesse_idea:0 "Fort Tennesse"
+XTN_fort_tennesse_idea_desc:0 "Nobody will pass trough our defences."

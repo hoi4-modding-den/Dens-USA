@@ -644,8 +644,24 @@ ideas = {
             modifier = {
             consumer_goods_factor = 0.25
             defence = 0.05
-            attack = 0.05
             forced_surrender_limit = 0.15
+            }
+        }
+
+   XTN_british_debt = {
+           removal_cost = -1
+            picture = hol_caved_to_the_british
+            modifier = {
+            consumer_goods_factor = 0.05
+            }
+        }
+   XTN_fort_tennesse_idea = {
+           removal_cost = -1
+            picture = tur_coordinated_balkan_armed_forces
+            modifier = {
+            defence = 1
+            offence = -0.5
+
             }
         }
 

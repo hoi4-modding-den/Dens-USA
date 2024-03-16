@@ -324,6 +324,27 @@ set_division_template_lock = {
     }
 
     focus = {
+    id = XTN_fort_tennesse
+    x = 45
+    y = 8
+    icon = GFX_goal_generic_fortify_city
+
+    prerequisite = {focus = XTN_combat_minor_depression}
+    prerequisite = {focus = XTN_living_off_land}
+
+    cost = 20
+    
+
+    completion_reward = {
+
+    add_ideas = {XTN_fort_tennesse_idea}
+
+        }
+        
+
+    }
+
+    focus = {
     id = XTN_open_up_diplomacy
     x = 51
     y = 8
@@ -455,12 +476,98 @@ give_resource_rights = {
     }
 
     focus = {
+    id = XTN_carribean_trade
+    x = 47
+    y = 12
+    icon = GFX_focus_ETH_jah
+
+    prerequisite = {focus = XTN_build_docks}
+    available = {controls_state = 363}
+
+    cost = 1
+    
+
+    completion_reward = {
+
+        custom_effect_tooltip = XTN_diplo_car
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_jamaica_trade_port
+    x = 48
+    y = 13
+    icon = GFX_goal_generic_construct_naval_dockyard
+
+    prerequisite = {focus = XTN_carribean_trade}
+    available = {controls_state = 363}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+           689 = { transfer_state_to = XTN set_demilitarized_zone = yes} 
+        add_timed_idea = {
+        idea = XTN_british_debt
+        days = 180
+            }
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_venezuela_oil
+    x = 46
+    y = 13
+    icon = GFX_goal_generic_oil_refinery
+
+    prerequisite = {focus = XTN_carribean_trade}
+    available = {controls_state = 363 has_army_experience > 15}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        army_experience = -15
+
+LIB = {
+
+give_resource_rights = {
+    receiver = XTN
+    state = 489
+    resources = { oil }
+}
+give_resource_rights = {
+    receiver = XTN
+    state = 695
+    resources = { oil }
+}
+
+
+
+}    
+
+
+        }
+        
+
+    }
+
+    focus = {
     id = XTN_secure_ports
     x = 47
     y = 10
     icon = GFX_goal_generic_construct_naval_dockyard
 
-    prerequisite = {focus = XTN_balkan_diplomacy}
+    prerequisite = {focus = XTN_open_up_diplomacy}
 
     cost = 10
     
