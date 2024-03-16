@@ -1,27 +1,49 @@
 ﻿l_english:
- XIN: "Indiana"
- XIN_DEF: "Indiana"
- XIN_ADJ: "Indiana"
-XIN_boost_left_wing_support: "Increase Left Wing Support | Currently at: [?XIN_election_dem_leaning|B0.]"
-XIN_boost_right_wing_support: "Increase Right Wing Support Support | Currently at: [?XIN_election_rep_leaning|R0.]"
-form_greater_indiana.tt:0 "Form The Great Lake Empire"
+# Country Names
+  # Indiana
+    XIN: "Indiana"
+    XIN_DEF: "Indiana"
+    XIN_ADJ: "Indiana"
 
-XIN_GRL_fascism: "Great Lake Empire"
-XIN_GRL_fascism_DEN: "The Empire of the Great Lakes"
-XIN_GRL_fascism_ADJ: "Imperial"
+    XIN_communism:0 "Revolutionary Indiana"
+    XIN_communism_DEF:0 "The Free Socialist Republic of Indiana"
 
-XIN_GRL: "Great Lake Empire"
-XIN_GRL_DEN: "The Empire of the Great Lakes"
-XIN_GRL_ADJ: "Imperial"
+    XIN_fascism:0 "Indiana Free State"
+    XIN_fascism_DEF:0 "The Free Republic of Indiana"
+  # Great Lake Empire
+    XIN_GRL_fascism: "Great Lake Empire"
+    XIN_GRL_fascism_DEN: "The Empire of the Great Lakes"
+    XIN_GRL_fascism_ADJ: "Imperial"
 
-XIN_GRL_communism: "Great Lake Union"
-XIN_GRL_communism_DEN: "The Union of the Great Lakes"
-XIN_GRL_communism_ADJ: "Union"
+    XIN_GRL: "Great Lake Empire"
+    XIN_GRL_DEN: "The Empire of the Great Lakes"
+    XIN_GRL_ADJ: "Imperial"
 
-XIN_GRL_democratic: "United Great Lake States"
-XIN_GRL_democratic_DEN: "The Union of the Great Lake States"
-XIN_GRL_democratic_ADJ: "United"
+    XIN_GRL_communism: "Great Lake Union"
+    XIN_GRL_communism_DEN: "The Union of the Great Lakes"
+    XIN_GRL_communism_ADJ: "Union"
 
-XIN_ESO: "Esoterreich"
-XIN_ESO_DEN: "The First Esoteric Empire"
-XIN_ESO_ADJ: "Esoteric"
+    XIN_GRL_democratic: "United Great Lake States"
+    XIN_GRL_democratic_DEN: "The Union of the Great Lake States"
+    XIN_GRL_democratic_ADJ: "United"
+
+# Decisions
+  XIN_boost_left_wing_support: "Increase Democractic Coalition Power | Currently at: [?XIN_election_dem_leaning|B0.]"
+  XIN_boost_right_wing_support: "Increase Republican Coalition Power | Currently at: [?XIN_election_rep_leaning|R0.]"
+  form_greater_indiana.tt:0 "Form The Great Lake Empire"
+
+
+# Election Focuses
+  XIN_first_election: "The 1936 Election"
+  XIN_first_election_desc: "The coalition between the Democrats and Republicans has been trying to maintain stability in Indiana ever since the Great Secession, however the 1936 election is the first being held since they took power, and foreign ideologies have only strengthened their resolve since the coalition took charge. This election could be a turning point in the state's history and may determine the very fate of Indiana."
+  # Communism
+    
+  # Fascism
+    XIN_lansing_act: "The Lansing Act" 
+    XIN_lansing_act_desc: "The 1936 Lansing Act gave more equal representation to the Michigan region by realocating many seats in government to Michigan. In reality, the act made it so undesirable members of the coalition government could be moved up north, effectively weakening the power of democracy in the South."
+  # Neutrality
+
+#Ideas
+  XIN_undermining_democrats:0 "Undermining Democracy"
+  XIN_undermining_republicans:0 "Undermining Democracy"
+  XIN_undermining_democracy:0 "Undermining Democracy"

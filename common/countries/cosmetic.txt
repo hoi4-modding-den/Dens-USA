@@ -38,7 +38,3 @@ XIN_GRL = {
     color = rgb { 122 107 117 }
     color_ui = rgb { 142 127 137 }
 }
-XIN_ESO = {
-    color = rgb { 38 38 77 }
-    color_ui = rgb { 38 38 77 }
-}

@@ -1,49 +1,37 @@
 add_namespace = XIN
 
-country_event = { # 1st Election Starts
-	id = XIN.1
-	title = XIN.1.t
-	desc = XIN.1.desc
+# Election Events
+	country_event = { # 1st Election Starts
+		id = XIN.1
+		title = XIN.1.t
+		desc = XIN.1.desc
 
-	is_triggered_only = yes
+		is_triggered_only = yes
 
-	option = { # election starts
-	name = XIN.1.a
-		complete_national_focus = XIN_first_election
+		option = { # election starts
+		name = XIN.1.a
+			complete_national_focus = XIN_first_election
+		}
 	}
-}
 
-country_event = { # 1st Election Results
-	id = XIN.2
-	title = XIN.2.t
-	desc = XIN.2.desc
+	country_event = { # 1st Election Results
+		id = XIN.2
+		title = XIN.2.t
+		desc = XIN.2.desc
 
-	is_triggered_only = yes
+		is_triggered_only = yes
 
 
-	option = { # Communism
-		name = XIN.2.a
-		complete_national_focus = XIN_invite_leftist_policies
+		option = { # Communism
+			name = XIN.2.a
+			complete_national_focus = XIN_democrat_majority
+		}
+		option = { # Fascism
+			name = XIN.2.b
+			complete_national_focus = XIN_coalition_deadlock
+		}
+		option = { # Neutrality
+			name = XIN.2.c
+			complete_national_focus = XIN_republican_majority
+		}
 	}
-	option = { # Democracy
-		name = XIN.2.b
-		complete_national_focus = XIN_coalition
-	}
-	option = { # Fascism
-		name = XIN.2.c
-		complete_national_focus = XIN_republican_support
-	}
-}
-
-country_event = { # Esoterreich
-	id = XIN.eso
-	title = XIN.eso.t
-	desc = XIN.eso.desc
-
-	is_triggered_only = yes
-
-	option = {
-		name = XIN.eso.a
-		set_cosmetic_tag = XIN_ESO
-	}
-}

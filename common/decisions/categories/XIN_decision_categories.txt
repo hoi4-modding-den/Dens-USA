@@ -8,8 +8,9 @@ XIN_election_decisions = {
 	visible = {
 		NOT = {
 			Or = {
-				has_completed_focus = XIN_communist_revolution1
-				has_completed_focus = XIN_unify_the_parties
+				has_completed_focus = XIN_democrat_majority
+				has_completed_focus = XIN_coalition_deadlock
+				has_completed_focus = XIN_republican_majority
 			}
 		}
 	}
@@ -22,4 +23,11 @@ XIN_formable_decisions = {
 		original_tag = XIN
 	}
 	priority = 0
+}
+
+XIN_civilwar_decisions = {
+	icon = ng_move_to_secure_the_dominions
+	allowed = {
+		original_tag = XIN
+	}
 }

@@ -1,39 +1,59 @@
 ideas = {
 	country = {
-		XIN_purging_the_fringe = {
-			picture = usa_great_depression
-			modifier = {
-				political_power_cost = +1.25
-				communism_drift = -0.02
-				fascism_drift = -0.02
-				
+		# election
+			XIN_undermining_democrats = {
+				picture = usa_great_depression
+				modifier = {
+					political_power_cost = +0.25
+					democratic_drift = -0.05
+					stability_weekly = -0.005
+					
+				}
 			}
-		}
-		XIN_rearanging_economy = {
-			picture = usa_great_depression
-			modifier = {
-				consumer_goods_factor = 0.125
-				stability_factor = -0.05
-				political_power_cost = 0.75
+			XIN_undermining_republicans = {
+				picture = usa_great_depression
+				modifier = {
+					political_power_cost = +0.25
+					democratic_drift = -0.05
+					stability_weekly = -0.005
+				}
 			}
-		}
-		XIN_kickstarting_industry = {
-			picture = usa_great_depression
-			modifier = {
-				consumer_goods_factor = -0.05
+
+			XIN_undermining_democracy = {
+				picture = usa_great_depression
+				modifier = {
+					political_power_cost = +0.5
+					democratic_drift = -0.1
+					stability_weekly = -0.01
+				}
 			}
-		}
-		XIN_regaining_economic_trust = {
-			picture = GFX_focus_usa_voter_registration_act
-			modifier = {
-				consumer_goods_factor = 0.15
-				stability_weekly = 0.015
+
+			XIN_leftist_majority = {
+				modifier = {
+					communism_drift = 0.05
+				}
 			}
-		}
-		XIN_left_leaning_ideals = {
-			modifier = {
-				communism_drift = 0.05
+		# industry
+			XIN_rearanging_economy = {
+				picture = usa_great_depression
+				modifier = {
+					consumer_goods_factor = 0.125
+					stability_factor = -0.05
+					political_power_cost = 0.75
+				}
 			}
-		}
+			XIN_kickstarting_industry = {
+				picture = usa_great_depression
+				modifier = {
+					consumer_goods_factor = -0.05
+				}
+			}
+			XIN_regaining_economic_trust = {
+				picture = GFX_focus_usa_voter_registration_act
+				modifier = {
+					consumer_goods_factor = 0.15
+					stability_weekly = 0.015
+				}
+			}
 	}
 }

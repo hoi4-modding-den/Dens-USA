@@ -14,524 +14,495 @@ focus_tree = {
 	
 	continuous_focus_position = { x = 50 y = 6000 }
 
-	# 1st Election Branch
-	focus = {
-		id = XIN_first_election
-		icon = GFX_focus_usa_voter_registration_act
-		x = 10 
-		y = 0
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			always = no
-		}
+	# Election Focuses
 		
-		completion_reward = {
-			add_political_power = 75
-			add_stability = -0.125
-		}
-	}
+		focus = {
+			id = XIN_first_election
+			icon = GFX_focus_usa_voter_registration_act
+			x = 10 
+			y = 0
 
-	# Election Republican Branch
-	focus = {
-		id = XIN_republican_support
-		icon = GFX_focus_TUR_ratify_the_six_arrows
-		prerequisite = { 
-			focus = XIN_first_election 
-		}
-		mutually_exclusive = {
-			focus = XIN_invite_leftist_policies
-			focus = XIN_coalition
-		}
-		x = 4
-		y = 2
-		relative_position_id = XIN_first_election
+			cost = 5
 
-		cost = 5
+			ai_will_do = {
+				factor = 1
+			}
 
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			always = no
-		}
-
-		completion_reward = {
-			add_political_power = 60
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.125
+			available = {
+				always = no
+			}
+			
+			completion_reward = {
+				add_political_power = 70
+				add_stability = 0.075
 			}
 		}
-	}
 
-	focus = {
-		id = XIN_protect_the_businesses
-		icon = GFX_focus_generic_treaty
-		prerequisite = { 
-			focus = XIN_republican_support 
-		}
-		x = -1
-		y = 2
-		relative_position_id = XIN_republican_support
+		# Neutral Branch
+			focus = { # Republican Support
+				id = XIN_republican_majority
+				icon = GFX_focus_TUR_ratify_the_six_arrows
+				prerequisite = { 
+					focus = XIN_first_election 
+				}
+				mutually_exclusive = {
+					focus = XIN_democrat_majority
+					focus = XIN_coalition_deadlock
+				}
+				x = 4
+				y = 2
+				relative_position_id = XIN_first_election
 
-		cost = 5
+				cost = 4
 
-		ai_will_do = {
-			factor = 1
-		}
+				ai_will_do = {
+					factor = 1
+				}
 
-		completion_reward = {
-			#
-		}
-	}
-	focus = {
-		id = XIN_safeguard_against_unions
-		icon = GFX_focus_generic_treaty
-		prerequisite = { 
-			focus = XIN_republican_support 
-		}
-		x = 1
-		y = 2
-		relative_position_id = XIN_republican_support
+				available = {
+					always = no
+				}
 
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			#
-		}
-	}
-	focus = {
-		id = XIN_privatise_the_state
-		icon = GFX_focus_generic_treaty
-		prerequisite = { 
-			focus = XIN_protect_the_businesses
-		}
-		prerequisite = {
-			focus = XIN_safeguard_against_unions
-		}
-		x = 1
-		y = 2
-		relative_position_id = XIN_protect_the_businesses
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			#
-		}
-	}
-	focus = {
-		id = XIN_corporate_takeover
-		icon = GFX_focus_generic_treaty
-		prerequisite = {
-			focus = XIN_privatise_the_state
-		}
-		x = 0
-		y = 2
-		relative_position_id = XIN_privatise_the_state
-		mutually_exclusive = {
-			focus = XIN_unify_the_parties
-			focus = XIN_communist_revolution1
-		}
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			#
-		}
-	}
-
-	# Election Democratic Branch
-	focus = {
-		id = XIN_invite_leftist_policies
-		icon = GFX_focus_generic_treaty
-		prerequisite = { 
-			focus = XIN_first_election
-		}
-		mutually_exclusive = {
-			focus = XIN_coalition 
-			focus = XIN_republican_support
-		}
-		x = -4
-		y = 2
-		relative_position_id = XIN_first_election
-
-		cost = 5
-
-		ai_will_do =  {
-			factor = 0
-		}
-		
-		available = {
-			always = no
-		}
-
-		completion_reward = {
-			add_political_power = 60
-			add_stability = -0.025
-			add_ideas = XIN_left_leaning_ideals
-		}
-	}
-
-	# Democratic Socialist Branch
-	focus = {
-		id = XIN_democrat_socialist_coalition
-		icon = GFX_focus_prc_agrarian_socialism
-		prerequisite = { 
-			focus = XIN_invite_leftist_policies
-		}
-		x = 0
-		y = 2
-		relative_position_id = XIN_invite_leftist_policies
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.125
+				completion_reward = {
+					add_political_power = 60
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.125
+					}
+				}
 			}
-			add_war_support = -0.05
-		}
-	}
 
-	focus = {
-		id = XIN_radicalise_the_socialists
-		icon = GFX_focus_RAJ_seek_help_from_soviet
-		prerequisite = { 
-			focus = XIN_democrat_socialist_coalition
-		}
-		x = -1
-		y = 2
-		relative_position_id = XIN_democrat_socialist_coalition
+			focus = { # Protect The Businesses
+				id = XIN_protect_the_businesses
+				icon = GFX_focus_generic_treaty
+				prerequisite = { 
+					focus = XIN_republican_majority 
+				}
+				x = -1
+				y = 2
+				relative_position_id = XIN_republican_majority
 
-		cost = 5
+				cost = 4
 
-		ai_will_do = {
-			factor = 0
-		}
+				ai_will_do = {
+					factor = 1
+				}
 
-		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.125
+				completion_reward = {
+					# put smth here pls :pray:
+				}
 			}
-			add_political_power = 85
-		}
-	}
-	
-	focus = {
-		id = XIN_fund_public_sector
-		icon = GFX_focus_RAJ_seek_help_from_soviet
-		prerequisite = { 
-			focus = XIN_democrat_socialist_coalition
-		}
-		x = 1
-		y = 2
-		relative_position_id = XIN_democrat_socialist_coalition
+			focus = { # Safeguard Against Unions
+				id = XIN_safeguard_against_unions
+				icon = GFX_focus_generic_treaty
+				prerequisite = { 
+					focus = XIN_republican_majority 
+				}
+				x = 1
+				y = 2
+				relative_position_id = XIN_republican_majority
 
-		cost = 5
+				cost = 4
 
-		ai_will_do = {
-			factor = 0
-		}
-		
-		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.125
+				ai_will_do = {
+					factor = 1
+				}
+
+				completion_reward = {
+					#
+				}
 			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
+
+			focus = { # Privitise The State
+				id = XIN_privatise_the_state
+				icon = GFX_focus_generic_treaty
+				prerequisite = { 
+					focus = XIN_protect_the_businesses
+				}
+				prerequisite = {
+					focus = XIN_safeguard_against_unions
+				}
+				x = 1
+				y = 2
+				relative_position_id = XIN_protect_the_businesses
+
+				cost = 4
+
+				ai_will_do = {
+					factor = 1
+				}
+
+				completion_reward = {
+					# put smth here pls :pray:
+				}
 			}
-		}
-	}
-	focus = {
-		id = XIN_communist_revolution1
-		icon = GFX_focus_RAJ_seek_help_from_soviet
-		prerequisite = { 
-			focus = XIN_radicalise_the_socialists
-		}
-		prerequisite = {
-			focus = XIN_fund_public_sector
-		}
-		mutually_exclusive = {
-			focus = XIN_unify_the_parties
-			focus = XIN_corporate_takeover
-		}
-		x = 1
-		y = 2
-		relative_position_id = XIN_radicalise_the_socialists
+			focus = { # Dissolve The Coalition
+				id = XIN_dissolve_the_coalition
+				icon = GFX_focus_generic_treaty
+				prerequisite = {
+					focus = XIN_privatise_the_state
+				}
+				x = 0
+				y = 2
+				relative_position_id = XIN_privatise_the_state
+				mutually_exclusive = {
+					focus = XIN_michigan_workers_union
+				}
 
-		cost = 5
+				cost = 4
 
-		ai_will_do = {
-			factor = 0
-		}
+				ai_will_do = {
+					factor = 1
+				}
 
-		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.125
+				completion_reward = {
+					# put smth here pls :pray:
+				}
 			}
-			add_political_power = 85
-		}
-	}
-	#Election Coalition Branch
-	focus = {
-		id = XIN_coalition
-		icon = GFX_focus_TUR_ratify_the_six_arrows
-		x = 0
-		y = 2
-		relative_position_id = XIN_first_election
-		prerequisite = {
-			focus = XIN_first_election
-		}
-		mutually_exclusive = {
-			focus = XIN_invite_leftist_policies
-			focus = XIN_republican_support
-		} 
 
-		cost = 5
 
-		ai_will_do = {
-			factor = 1
-		}
+		# Communist Branch
+			focus = {
+				id = XIN_democrat_majority
+				icon = GFX_focus_generic_treaty
+				prerequisite = { 
+					focus = XIN_first_election
+				}
+				mutually_exclusive = {
+					focus = XIN_coalition_deadlock 
+					focus = XIN_republican_majority
+				}
+				x = -4
+				y = 2
+				relative_position_id = XIN_first_election
 
-		available = {
-			always = no
-		}
-		
-		completion_reward = {
-			add_political_power = 120
-		}
-	}
+				cost = 4
 
-	focus = {
-		id = XIN_purge_the_fringe
-		icon = GFX_focus_TUR_ratify_the_six_arrows
-		x = -1
-		y = 2
-		relative_position_id = XIN_coalition
-		prerequisite = {
-			focus = XIN_coalition
-		}
+				ai_will_do =  {
+					factor = 0
+				}
+				
+				available = {
+					always = no
+				}
 
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			add_stability = 0.075
-			add_timed_idea = {
-				idea = XIN_purging_the_fringe
-				days = 120
+				completion_reward = {
+					add_political_power = 60
+					add_stability = -0.025
+					add_ideas = XIN_leftist_majority
+				}
 			}
-		}	
-	}
-	focus = {
-		id = XIN_eliminate_the_radicals
-		icon = GFX_focus_TUR_ratify_the_six_arrows
-		x = 1
-		y = 2
-		relative_position_id = XIN_coalition
-		prerequisite = {
-			focus = XIN_coalition
-		}
+			focus = {
+				id = XIN_democrat_socialist_coalition
+				icon = GFX_focus_prc_agrarian_socialism
+				prerequisite = { 
+					focus = XIN_democrat_majority
+				}
+				x = 0
+				y = 2
+				relative_position_id = XIN_democrat_majority
 
-		cost = 5
+				cost = 4
 
-		ai_will_do = {
-			factor = 1
-		}
+				ai_will_do = {
+					factor = 0
+				}
 
-		completion_reward = {
-			add_stability = 0.075
-			add_popularity = {
-				ideology = communism
-				popularity = -0.05
+				completion_reward = {
+					add_popularity = {
+						ideology = communism
+						popularity = 0.125
+					}
+					add_war_support = -0.05
+				}
 			}
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.05
-			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = -0.05
-			}
-		}	
-	}
-	focus = {
-		id = XIN_absorb_the_opposition
-		icon = GFX_focus_TUR_ratify_the_six_arrows
-		x = 1
-		y = 2
-		relative_position_id = XIN_purge_the_fringe
-		prerequisite = {
-			focus = XIN_purge_the_fringe
-		}
-		prerequisite = {
-			focus = XIN_eliminate_the_radicals
-		}
 
-		cost = 5
+			focus = {
+				id = XIN_far_left_political_relevance
+				icon = GFX_focus_RAJ_seek_help_from_soviet
+				prerequisite = { 
+					focus = XIN_democrat_socialist_coalition
+				}
+				x = -1
+				y = 2
+				relative_position_id = XIN_democrat_socialist_coalition
 
-		ai_will_do = {
-			factor = 1
-		}
+				cost = 4
 
-		completion_reward = {
-			add_stability = 0.075
-			add_popularity = {
-				ideology = communism
-				popularity = -0.05
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.05
-			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = -0.05
-			}
-		}	
-	}
-	focus = {
-		id = XIN_unify_the_parties
-		icon = GFX_focus_TUR_ratify_the_six_arrows
-		x = 0
-		y = 2
-		relative_position_id = XIN_absorb_the_opposition
-		prerequisite = {
-			focus = XIN_purge_the_fringe
-		}
-		prerequisite = {
-			focus = XIN_absorb_the_opposition
-		}
-		mutually_exclusive = {
-			focus = XIN_communist_revolution1
-			focus = XIN_corporate_takeover
-		}
+				ai_will_do = {
+					factor = 0
+				}
 
-		cost = 5
+				completion_reward = {
+					add_popularity = {
+						ideology = communism
+						popularity = 0.125
+					}
+					add_political_power = 85
+				}
+			}
+			
+			focus = {
+				id = XIN_public_land_act
+				icon = GFX_focus_RAJ_seek_help_from_soviet
+				prerequisite = { 
+					focus = XIN_democrat_socialist_coalition
+				}
+				x = 1
+				y = 2
+				relative_position_id = XIN_democrat_socialist_coalition
 
-		ai_will_do = {
-			factor = 1
-		}
+				cost = 4
 
-		completion_reward = {
-			add_stability = 0.075
-			add_popularity = {
-				ideology = communism
-				popularity = -0.05
+				ai_will_do = {
+					factor = 0
+				}
+				
+				completion_reward = {
+					add_popularity = {
+						ideology = communism
+						popularity = 0.125
+					}
+					add_offsite_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
 			}
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.05
+			focus = {
+				id = XIN_michigan_workers_union
+				icon = GFX_focus_RAJ_seek_help_from_soviet
+				prerequisite = { 
+					focus = XIN_far_left_political_relevance
+				}
+				prerequisite = {
+					focus = XIN_public_land_act
+				}
+				mutually_exclusive = {
+					focus = XIN_dissolve_the_coalition
+				}
+				x = 1
+				y = 2
+				relative_position_id = XIN_far_left_political_relevance
+
+				cost = 4
+
+				ai_will_do = {
+					factor = 0
+				}
+
+				completion_reward = {
+					add_popularity = {
+						ideology = communism
+						popularity = 0.125
+					}
+					add_political_power = 85
+				}
 			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = -0.05
+		# Fascist Branch
+			focus = {
+				id = XIN_coalition_deadlock
+				icon = GFX_focus_TUR_ratify_the_six_arrows
+				x = 0
+				y = 2
+				relative_position_id = XIN_first_election
+				prerequisite = {
+					focus = XIN_first_election
+				}
+				mutually_exclusive = {
+					focus = XIN_democrat_majority
+					focus = XIN_republican_majority
+				} 
+
+				cost = 4
+
+				ai_will_do = {
+					factor = 1
+				}
+
+				available = {
+					always = no
+				}
+				
+				completion_reward = {
+					add_political_power = 70
+					add_popularity = {
+						ideology = democratic
+						popularity = -0.125
+					}
+				}
 			}
-		}	
-	}
-	focus = {
-		id = XIN_united_but_seperate
-		icon = GFX_portrait_XWY_washington_1
-		x = 0
-		y = 2
-		relative_position_id = XIN_unify_the_parties
-		prerequisite = {
-			focus = XIN_unify_the_parties
-		}
-		completion_reward = { }
-	}
+
+			focus = {
+				id = XIN_destabilise_democrats
+				icon = GFX_focus_TUR_ratify_the_six_arrows
+				x = -1
+				y = 2
+				relative_position_id = XIN_coalition_deadlock
+				prerequisite = {
+					focus = XIN_coalition_deadlock
+				}
+
+				cost = 4
+
+				ai_will_do = {
+					factor = 1
+				}
+
+				completion_reward = {
+					add_stability = -0.075
+					if = {
+						limit = {has_completed_focus = XIN_destabilise_republicans}
+					
+						swap_ideas = {
+							remove_idea = XIN_undermining_republicans
+							add_idea = XIN_undermining_democracy
+						}
+					}
+					else = {
+						add_ideas = XIN_undermining_democrats
+					}
+				}
+			}
+			focus = {
+				id = XIN_destabilise_republicans
+				icon = GFX_focus_TUR_ratify_the_six_arrows
+				x = 1
+				y = 2
+				relative_position_id = XIN_coalition_deadlock
+				prerequisite = {
+					focus = XIN_coalition_deadlock
+				}
+
+				cost = 4
+
+				ai_will_do = {
+					factor = 1
+				}
+
+				completion_reward = {
+					add_stability = -0.075
+					if = {
+						limit = {has_completed_focus = XIN_destabilise_democrats}
+					
+						swap_ideas = {
+							remove_idea = XIN_undermining_democrats
+							add_idea = XIN_undermining_democracy
+						}
+					}
+					else = {
+						add_ideas = XIN_undermining_republicans
+					}
+				}	
+			}
+			focus = {
+				id = XIN_lansing_act
+				icon = GFX_focus_TUR_ratify_the_six_arrows
+				x = 1
+				y = 2
+				relative_position_id = XIN_destabilise_democrats
+				prerequisite = {
+					focus = XIN_destabilise_democrats
+				}
+				prerequisite = {
+					focus = XIN_destabilise_republicans
+				}
+
+				cost = 4
+
+				ai_will_do = {
+					factor = 1
+				}
+
+				completion_reward = {
+					add_stability = -0.05
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.05
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.025
+					}
+				}	
+			}
+			focus = {
+				id = XIN_undemocratic_dealings
+				icon = GFX_focus_TUR_ratify_the_six_arrows
+				cost = 4
+				prerequisite = {
+					focus = XIN_lansing_act
+				}
+				relative_position_id = XIN_lansing_act
+				x = 1.5
+				y = 2
+				completion_reward = {
+					add_political_power = 70
+				}
+			}
+
 	#Industry Branch
-	focus = {
-		id = XIN_rearange_economy
-		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 5
-		x = 22
-		y = 2
-		completion_reward = {
-			add_timed_idea = {
-				idea = XIN_rearanging_economy
-				days = 70
+			focus = {
+				id = XIN_path_to_industry
+				icon = GFX_focus_generic_modernize_industry
+				cost = 4
+				x = 22
+				y = 2
+				completion_reward = {
+					add_timed_idea = {
+						idea = XIN_rearanging_economy
+						days = 70
+					}
+				}
 			}
-		}
-	}
-	focus = {
-		id = XIN_kickstart_industry
-		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 5
-		x = 2
-		y = 2
-		relative_position_id = XIN_rearange_economy
-		prerequisite = {
-			focus = XIN_rearange_economy
-		}
-		available = {
-			NOT = {
-				has_idea = XIN_rearanging_economy
+		
+			focus = {
+			id = XIN_kickstart_industry
+			icon = GFX_focus_ger_bulwark_against_bolshevism
+			cost = 4
+			x = 2
+			y = 2
+			relative_position_id = XIN_path_to_industry
+			prerequisite = {
+				focus = XIN_path_to_industry
 			}
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = XIN_kickstarting_industry
-				days = 70
+			available = {
+				NOT = {
+					has_idea = XIN_rearanging_economy
+				}
 			}
-			random_owned_controlled_state = {
-				add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
+			completion_reward = {
+				add_timed_idea = {
+					idea = XIN_kickstarting_industry
+					days = 70
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			} 
 			}
-		} 
-		}
-	}
-	focus = {
-		id = XIN_regain_economic_trust
-		icon = GFX_focus_ger_bulwark_against_bolshevism
-		cost = 5
-		x = -2
-		y = 2
-		prerequisite = {
-			focus = XIN_rearange_economy
-		}
-		relative_position_id = XIN_rearange_economy
-		completion_reward = {
-			add_political_power = 75
-			add_stability = 0.05
-			add_timed_idea = {
-				idea = XIN_regaining_economic_trust
-				days = 70
 			}
-		}
-	}
+			focus = {
+				id = XIN_regain_economic_trust
+				icon = GFX_focus_ger_bulwark_against_bolshevism
+				cost = 4
+				x = -2
+				y = 2
+				prerequisite = {
+					focus = XIN_path_to_industry
+				}
+				relative_position_id = XIN_path_to_industry
+				completion_reward = {
+					add_political_power = 75
+					add_stability = 0.05
+					add_timed_idea = {
+						idea = XIN_regaining_economic_trust
+						days = 70
+					}
+				}
+			}
 }
