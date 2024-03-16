@@ -18,6 +18,9 @@ XTN_XNC:0 "Carolina"
 XTN_XIL:0 "Great Lakes"
 XTN_XPA:0 "Philadelphia"
 
+XTN_jamaica:0 "Jamaica"
+
+
 VICTORY_POINTS_7797:0 "Memphis"
 VICTORY_POINTS_1758:0 "Knoxville"
 VICTORY_POINTS_7791:0 "Pigeon Forge"
@@ -944,3 +947,24 @@ XTN_fort_tennesse_desc:0 "YOU SHALL NOT PASS!"
 
 XTN_fort_tennesse_idea:0 "Fort Tennesse"
 XTN_fort_tennesse_idea_desc:0 "Nobody will pass trough our defences."
+
+XTN_chill_in_jamaica:0 "Chill in Jamaica"
+XTN_chill_in_jamaica_desc:0 "American mainland is filled with war and sin. We shall escape to Jamaica to calm down and settle."
+
+XTN_new_place_in_world:0 "New Place in the World"
+XTN_new_place_in_world_desc:0 "We have started migration to Jamaica and our population will be finally free from fear of war."
+
+XTN_build_docks_jamaica:0 "Build docks"
+XTN_build_docks_jamaica_desc:0 "We need to start transportation of our people to jamaica, for that we need to build some docks."
+
+XTN_build_factories:0 "Build Factories"
+XTN_build_factories_desc:0 "We need to start producing weapons for defence and commercial goods for our people."
+
+XTN_reform_government:0 "Reform government"
+XTN_reform_government_desc:0 "After migration our politics are in total chaos. We must start reformation of the government."
+
+XTN_maintain_morrison:0 "Maintain Morrison"
+XTN_maintain_morrison_desc:0 "Morrison is a great leader and people will follow him!"
+
+XTN_embrace_rastafarianism:0 "Embrace Rastafari"
+XTN_embrace_rastafarianism_desc:0 "We are in Jamaica now. Locals don't like to be ruled by americans. We should embrace local religion and hold local elections. This could radicalize Mr. Morrison though."

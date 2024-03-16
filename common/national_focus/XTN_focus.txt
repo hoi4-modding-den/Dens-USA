@@ -79,7 +79,7 @@ country = {
     x = 46
     y = 1
     icon = GFX_focus_generic_workers_and_farmers_rise
-
+    available = {controls_state = 368 }
     prerequisite = {focus = XTN_create_agrarian_party}
 
     cost = 5
@@ -106,7 +106,7 @@ set_division_template_lock = {
     icon = GFX_goal_generic_fortify_city
 
     prerequisite = {focus = XTN_mobilization_of_farmers}
-
+    available = {controls_state = 368 }
     cost = 10
     
 
@@ -139,7 +139,7 @@ set_division_template_lock = {
     icon = GFX_goal_generic_fortify_city
 
     prerequisite = {focus = XTN_mobilization_of_farmers}
-
+    available = {controls_state = 368 }
     cost = 10
     
 
@@ -184,6 +184,7 @@ set_division_template_lock = {
     icon = GFX_goal_generic_fortify_city
 
     prerequisite = {focus = XTN_mobilization_of_farmers}
+    available = {controls_state = 368 }
 
     cost = 10
     
@@ -331,6 +332,7 @@ set_division_template_lock = {
 
     prerequisite = {focus = XTN_combat_minor_depression}
     prerequisite = {focus = XTN_living_off_land}
+    available = {controls_state = 368 }
 
     cost = 20
     
@@ -522,6 +524,192 @@ give_resource_rights = {
 
     }
 
+
+    focus = {
+    id = XTN_chill_in_jamaica
+    x = 48
+    y = 14
+    icon = GFX_focus_ETH_jah
+
+    prerequisite = {focus = XTN_jamaica_trade_port}
+    available = {controls_state = 689}
+
+    cost = 10
+    
+
+    completion_reward = {
+          
+           689 = { add_core_of = XTN set_demilitarized_zone = no} 
+           363 = {transfer_state_to = XNC}
+           368 = {transfer_state_to = XNC}
+           set_cosmetic_tag = XTN_jamaica
+
+
+        }
+        
+
+    }
+
+############################################ JAMAICA ###########################################
+    focus = {
+    id = XTN_new_place_in_world
+    x = 56
+    y = 27
+    icon = GFX_focus_ETH_jah
+
+    available = {controls_state = 689 has_completed_focus = XTN_chill_in_jamaica}
+
+    cost = 1
+    
+
+    completion_reward = {
+
+
+           
+        add_political_power = 150
+
+
+        }
+        
+
+    }
+    focus = {
+    id = XTN_build_docks_jamaica
+    x = 56
+    y = 28
+    icon = GFX_goal_generic_construct_naval_dockyard
+    prerequisite = {focus = XTN_new_place_in_world}
+    available = {controls_state = 689 has_completed_focus = XTN_chill_in_jamaica}
+
+    cost = 5
+    
+
+    completion_reward = {
+           689 = {
+            add_building_construction = {
+            type = dockyard
+            level = 1
+            instant_build = yes
+                    }
+            }
+        }
+        
+
+    }
+    focus = {
+    id = XTN_build_factories
+    x = 56
+    y = 29
+    icon = GFX_goal_generic_construct_mil_factory
+    prerequisite = {focus = XTN_build_docks_jamaica}
+    available = {controls_state = 689 }
+
+    cost = 5
+    
+
+    completion_reward = {
+           689 = {
+            add_building_construction = {
+            type = industrial_complex
+            level = 1
+            instant_build = yes
+                    }
+            add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+                    }
+            }
+        }
+        
+
+    }
+    focus = {
+    id = XTN_reform_government
+    x = 56
+    y = 30
+    icon = GFX_focus_generic_improve_the_administration
+    prerequisite = {focus = XTN_build_factories}
+    available = {controls_state = 689 }
+
+    cost = 1
+    
+
+    completion_reward = {
+
+        retire_character = XTN_WJS
+        set_party_name = {
+        ideology = democratic
+        long_name = "Jamaican Freedom Party"
+        name = "JFP"
+                }
+        set_party_name = {
+        ideology = fascism
+        long_name = "Return Party"
+        name = "Return Party"
+                }
+        set_party_name = {
+        ideology = communism
+        long_name = "Socialist Party of Jamaica"
+        name = "SPJ"
+                }
+        set_party_name = {
+        ideology = neutrality
+        long_name = "Artist Union of Anarchists"
+        name = "AUA"
+                }
+        set_capital = {
+        state = 689
+        remember_old_capital = no
+            }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_maintain_morrison
+    x = 55
+    y = 31
+    icon = GFX_focus_rom_coup
+    prerequisite = {focus = XTN_reform_government}
+    available = {controls_state = 689 }
+    mutually_exclusive = {focus = XTN_embrace_rastafarianism}
+
+    cost = 1
+    
+
+    completion_reward = {
+
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_embrace_rastafarianism
+    x = 57
+    y = 31
+    icon = GFX_focus_ETH_lord_of_lords
+    prerequisite = {focus = XTN_reform_government}
+    available = {controls_state = 689 }
+    mutually_exclusive = {focus = XTN_maintain_morrison}
+
+    cost = 1
+    
+
+    completion_reward = {
+
+
+
+        }
+        
+
+    }
+#################################################################################################
     focus = {
     id = XTN_venezuela_oil
     x = 46
@@ -627,6 +815,7 @@ give_resource_rights = {
 
     prerequisite = {focus = XTN_combat_minor_depression}
     prerequisite = {focus = XTN_nashville_millitary_academy}
+    available = {controls_state = 368 }
 
     cost = 10
     
@@ -669,6 +858,7 @@ give_resource_rights = {
 
     prerequisite = {focus = XTN_alcohol_industry_agrarian}
     prerequisite = {focus = XTN_uni_knoxville}
+    available = {controls_state = 368 }
 
     cost = 10
     
@@ -767,6 +957,7 @@ give_resource_rights = {
 
     prerequisite = {focus = XTN_sponsor_support}
     prerequisite = {focus = XTN_sponsor_tanks}
+    available = {controls_state = 368 }
 
     cost = 10
     
@@ -794,6 +985,7 @@ give_resource_rights = {
     icon = GFX_focus_ARG_capitalize_the_beef_industry
 
     prerequisite = {focus = XTN_cult_morrison}
+    available = {controls_state = 368 }
 
     cost = 10
     
@@ -835,7 +1027,7 @@ give_resource_rights = {
     icon = GFX_focus_rom_parties_end
 
     prerequisite = {focus = XTN_cult_morrison}
-
+    available = {controls_state = 368 NOT = {has_completed_focus = XTN_chill_in_jamaica}}
     cost = 5
     
 
@@ -859,6 +1051,7 @@ give_resource_rights = {
     icon = GFX_goal_generic_construct_infrastructure
 
     prerequisite = {focus = XTN_create_agrarian_party}
+    available = {controls_state = 368 }
 
     cost = 10
     
@@ -929,7 +1122,7 @@ give_resource_rights = {
     icon = GFX_goal_generic_construct_mil_factory
 
     prerequisite = {focus = XTN_free_market  focus = XTN_isolationism}
-
+    available = {controls_state = 368 }
 
     cost = 10
     
@@ -1897,6 +2090,7 @@ add_ideas = { XTN_inteligensia_manifesto }
 
     prerequisite = { focus = XTN_socialist_education_2 }
     mutually_exclusive = { focus = XTN_army_academy_kx }
+    available = {controls_state = 368 }
  
 
 

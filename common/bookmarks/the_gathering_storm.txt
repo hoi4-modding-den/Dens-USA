@@ -39,7 +39,7 @@ bookmarks = {
 			ideology = democratic
 			focuses = {
 				XTN_total_war
-				XTN_inteligensia_left
+				XTN_chill_in_jamaica
 				XTN_american_revolution
 			}
 			ideas = {
