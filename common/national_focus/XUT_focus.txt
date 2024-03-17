@@ -16,7 +16,7 @@
 
 	focus = {
 		id = XUT_general_conference
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_general_conference
 		#prerequisite = { focus = }
 		# mutually_exclusive = { focus =  }
 		x = 26
@@ -50,7 +50,7 @@
 	}
 	focus = {
 		id = XUT_state_of_emergency
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_soe
 		prerequisite = { focus = XUT_general_conference }
 		mutually_exclusive = { focus = XUT_dreams_of_deseret }
 		mutually_exclusive = { focus = XUT_evil_in_chaos }
@@ -82,7 +82,7 @@
 	}
 	focus = {
 		id = XUT_dreams_of_deseret
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_desdream
 		prerequisite = { focus = XUT_general_conference }
 		mutually_exclusive = { focus = XUT_state_of_emergency }
 		mutually_exclusive = { focus = XUT_evil_in_chaos }
@@ -114,7 +114,7 @@
 	}
 	focus = {
 		id = XUT_evil_in_chaos
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_evil
 		prerequisite = { focus = XUT_general_conference }
 		mutually_exclusive = { focus = XUT_dreams_of_deseret }
 		mutually_exclusive = { focus = XUT_state_of_emergency }

@@ -1,0 +1,19 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_goal_general_conference"
+		texturefile = "gfx/XUT_gfx/XUT_focus_general_conference.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_soe"
+		texturefile = "gfx/XUT_gfx/XUT_focus_soe.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_desdream"
+		texturefile = "gfx/XUT_gfx/XUT_focus_desdream.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_evil"
+		texturefile = "gfx/XUT_gfx/XUT_focus_evil.dds"
+	}
+}

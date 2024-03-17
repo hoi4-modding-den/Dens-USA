@@ -12,10 +12,12 @@ ideologies = {
 
 			BKH_conservative = {
 				color = { 170 80 80 }
+				can_be_randomly_selected = no # didn't seem intentional. added so random country leaders won't spawn with this subideology with this line.
 			}
 
 			BKH_democrat = {
 				color = { 65 135 245 }
+				can_be_randomly_selected = no
 			}
 
 			socialism = {
@@ -153,6 +155,11 @@ ideologies = {
 			}
 
 			rexism = {
+			}
+			
+			scientologist = {
+				color = { 25 25 25 }
+				can_be_randomly_selected = no
 			}
 		}
 
