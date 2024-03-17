@@ -46,6 +46,8 @@ XTN_USSR:0 "USSR will send a diplomat to help us defend against imperialism."
 
 XTN_diplo:0 "This will open up our diplomacy tree for balkan countries."
 
+XTN_messiah:0 "We will invite messiah to our court."
+
 
 
 
@@ -995,3 +997,56 @@ XTN_peace_at_last_desc:0 "Nobody can hurt us. We are self sufficient. It's over 
 
 XTN_nuclear_reactors:0 "Nuclear Reactors"
 XTN_nuclear_reactors_desc:0 "We will create a new power source and a source of most destructive weapon known to man. We will never be invaded again."
+
+XTN_ban_tobacco:0 "Ban Tobacco"
+XTN_ban_tobacco_desc:0 "Tobacco is a sin that kills our people from inside. We must prohibit possesion and distribution of tobacco products."
+
+XTN_ban_alcohol:0 "Ban Alcohol"
+XTN_ban_alcohol_desc:0 "Alcohol numbs us and breaks our connection with god. We shall ban all alcoholic beverages."
+
+XTN_legal_cannabis:0 "Legal Cannabis"
+XTN_legal_cannabis_desc:0 "A sacred plant brings us closer to god."
+
+XTN_legalize_cannabis:0 "Legalize Cannabis"
+XTN_legalize_cannabis_desc:0 "A plant that brings us closer to the god needs to be legalized."
+
+XTN_cannabis_trade:0 "Cannabis Trade"
+XTN_cannabis_trade_desc:0 "We shall bring people closer to the god and make some money on it."
+
+XTN_peace_idea:0 "Peace and Love"
+XTN_peace_idea_desc:0 "We must live and strive to maintain peace and love in our society."
+
+XTN_peaceful_society:0 "Peaceful Society"
+XTN_peaceful_society_desc:0 "No more war and death!"
+
+XTN_immigration_africa:0 "African Immigration"
+XTN_immigration_africa_desc:0 "Our brothers are comming to our shores!"
+
+XTN_call_to_africa:0 "Call to Africa"
+XTN_call_to_africa_desc:0 "We will call to our brothers in africa to arrive in our beautiful Jamaica!"
+
+XTN_rastafari_religion:0 "Rastafarianism"
+XTN_rastafari_religion_desc:0 "Rastafari, sometimes called Rastafarianism, is an Abrahamic religion that developed in Jamaica during the 1930s. It is classified as both a new religious movement and a social movement by scholars of religion. There is no central authority in control of the movement and much diversity exists among practitioners, who are known as Rastafari, Rastafarians, or Rastas.Rastafari beliefs are based on a specific interpretation of the Bible. Central to the religion is a monotheistic belief in a single God, referred to as Jah, who is deemed to partially reside within each individual. Rastas accord key importance to Haile Selassie I, emperor of Ethiopia between 1930 and 1974; many regard him as the Second Coming of Jesus and Jah incarnate, while others see him as a human prophet who fully recognised Jah's presence in every individual. Rastafari is Afrocentric and focuses attention on the African diaspora, which it believes is oppressed within Western society, or "Babylon". Many Rastas call for this diaspora's resettlement in Africa, a continent they consider the Promised Land, or "Zion". Some practitioners extend these views into black supremacism. Rastas refer to their practices as "livity". Communal meetings are known as "groundations", and are typified by music, chanting, discussions, and the smoking of cannabis, the latter regarded as a sacrament with beneficial properties. Rastas emphasise what they regard as living "naturally", adhering to ital dietary requirements, wearing their hair in dreadlocks, and following patriarchal gender roles."
+
+XTN_rastafari_conversions:0 "Convert population to Rastafari"
+XTN_rastafari_conversions_desc:0 "We shall stand united in peace."
+
+XTN_invite_messiah:0 "Invite Messiah"
+XTN_invite_messiah_desc:0 "Our nation is ready to give home to son of god, King of kings, a great Haile Selassie."
+XTN_king_of_jamaica:0 "Emperor of Jamaica"
+XTN_king_of_jamaica_desc:0 "We must crown the messiah!"
+
+XTN_build_infrastructure:0 "Build Infrastructure"
+XTN_build_infrastructure_desc:0 "We must build roads to impress our emperor!"
+
+XTN_center_of_trade:0 "Center of Trade"
+XTN_center_of_trade_desc:0 "We are center of caribbean trade!"
+
+XTN_trade_center_of_caribbeans:0 "Trade Center of Caribbean"
+XTN_trade_center_of_caribbeans_desc:0 "Our geographical position is very optimal for oversees trading."
+
+XTN_center_of_caribbean_culture:0 "Center of Caribbean Culture"
+XTN_center_of_caribbean_culture_desc:0 "We must build national identity trough culture!"
+
+XTN_reggae:0 "Reggae"
+XTN_reggae_desc:0 "A beautiful music made by our citizens will motivate us to work."

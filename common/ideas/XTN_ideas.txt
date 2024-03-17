@@ -673,5 +673,70 @@ ideas = {
             }
         }
 
+   XTN_legal_cannabis = {
+           removal_cost = -1
+            picture = bul_tobacco_exports
+            modifier = {
+            consumer_goods_factor = -0.10
+            forced_surrender_limit = 0.15
+            research_speed_factor = 0.1
+
+            }
+        }
+   XTN_peaceful_society = {
+           removal_cost = -1
+            picture = generic_army_problems
+            modifier = {
+            enemy_justify_war_goal_time = 1
+            justify_war_goal_time = 999
+            lend_lease_tension = -1
+            annex_cost_factor = 1
+
+
+            }
+        }
+
+        XTN_immigration_africa = {
+           removal_cost = -1
+            picture = ETH_military_communism
+            modifier = {
+               monthly_population = 0.25
+            }
+
+        }
+        XTN_rastafari_religion = {
+           removal_cost = -1
+            picture = SOV_new_old_church
+            modifier = {
+               offensive_war_stability_factor = -1
+               defensive_war_stability_factor = 1
+               stability_weekly = 0.02
+
+            }
+
+        }
+        XTN_center_of_trade = {
+           removal_cost = -1
+            picture = tur_balkan_central_bank_wealthy_greece
+            modifier = {
+            consumer_goods_factor = -0.25            
+            stability_weekly = 0.02
+
+            }
+
+        }
+
+        XTN_reggae = {
+           removal_cost = -1
+            picture = SPR_torchbearers_of_tomorrow
+            modifier = {
+         
+            stability_weekly = 0.02
+            war_support_weekly = 0.1
+
+
+            }
+
+        }
     }
 }

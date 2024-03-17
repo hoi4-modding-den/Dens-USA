@@ -524,6 +524,38 @@ logistics_skill = 4
 	
 	}
 
+	XTN_haile_selassie = {
+		name = "Haile Selassie"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ETH_haile_selassie"
+			}
+			army = {
+				small = "GFX_idea_ETH_haile_selassie"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = ETH_haile_selassie
+			allowed = {
+				original_tag = XTN
+			}
+			visible = {
+				
+				has_completed_focus = XTN_embrace_rastafarianism
+
+			}
+			available = {
+				has_completed_focus = XTN_invite_messiah
+			}
+			traits = {
+				modernizer_and_diplomat 
+			}
+		}
+	
+	}
+
 
 
 

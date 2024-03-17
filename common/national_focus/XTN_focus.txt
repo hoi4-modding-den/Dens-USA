@@ -463,6 +463,7 @@ give_resource_rights = {
     icon = GFX_focus_generic_befriend_greece
 
     prerequisite = {focus = XTN_balkan_diplomacy}
+    available = {NOT = {has_completed_focus = XTN_ban_tobacco}}
 
     cost = 10
     
@@ -994,6 +995,297 @@ add_advisor_role = {
         
 
     }
+
+    focus = {
+    id = XTN_ban_tobacco
+    x = 57
+    y = 32
+    icon = GFX_focus_generic_treaty
+    prerequisite = {focus = XTN_embrace_rastafarianism}
+    available = {controls_state = 689 }
+
+
+    cost = 2
+    
+
+    completion_reward = {
+
+        remove_ideas = {XTN_greece_trade}
+
+
+        }
+        
+
+    }
+
+   focus = {
+    id = XTN_ban_alcohol
+    x = 57
+    y = 33
+    icon = GFX_focus_FIN_oy_alkoholiliike
+    prerequisite = {focus = XTN_ban_tobacco}
+    available = {controls_state = 689 NOT = {has_completed_focus = XTN_alcohol_industry_agrarian}}
+
+
+    cost = 2
+    
+
+    completion_reward = {
+
+        add_stability = 0.05
+
+
+        }
+        
+
+    }
+
+   focus = {
+    id = XTN_legalize_cannabis
+    x = 57
+    y = 34
+    icon = GFX_focus_generic_treaty
+    prerequisite = {focus = XTN_ban_alcohol}
+    available = {controls_state = 689}
+
+
+    cost = 2
+    
+
+    completion_reward = {
+
+        add_stability = 0.05
+        add_ideas = {XTN_legal_cannabis}
+
+        }
+        
+
+    }
+
+   focus = {
+    id = XTN_cannabis_trade
+    x = 57
+    y = 35
+    icon = GFX_goal_generic_positive_trade_relations
+    prerequisite = {focus = XTN_legalize_cannabis}
+    available = {controls_state = 689}
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_stability = 0.05
+        add_ideas = {XTN_drug_trade}
+
+        }
+        
+
+    }
+
+
+
+    focus = {
+    id = XTN_peace_idea
+    x = 61
+    y = 32
+    icon = GFX_goal_generic_national_unity
+    prerequisite = {focus = XTN_embrace_rastafarianism}
+    available = {controls_state = 689 }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+        add_ideas = {XTN_peaceful_society}
+        }
+        
+
+    }
+    focus = {
+    id = XTN_build_infrastructure
+    x = 62
+    y = 33
+    icon = GFX_goal_generic_construct_infrastructure
+    prerequisite = {focus = XTN_peace_idea}
+    available = {controls_state = 689 }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+          689 = { set_building_level = {
+            type = infrastructure
+            level = 5
+            instant_build = yes
+            }
+            add_building_construction = {
+            type = supply_node
+            level = 1
+            instant_build = yes
+            province = 12304
+                    }
+
+
+            }
+
+        }
+        
+
+    }
+    focus = {
+    id = XTN_trade_center_of_caribbeans
+    x = 62
+    y = 34
+    icon = GFX_focus_usa_reestablish_the_gold_standard
+    prerequisite = {focus = XTN_build_infrastructure}
+    available = {controls_state = 689 }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+        
+        add_ideas = {XTN_center_of_trade}
+
+        }
+        
+
+    }
+    focus = {
+    id = XTN_center_of_caribbean_culture
+    x = 62
+    y = 35
+    icon = GFX_focus_usa_guarantee_the_american_dream
+    prerequisite = {focus = XTN_trade_center_of_caribbeans}
+    available = {controls_state = 689 }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+        
+        add_ideas = {XTN_reggae}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_call_to_africa
+    x = 60
+    y = 33
+    icon = GFX_focus_ETH_the_african_union
+    prerequisite = {focus = XTN_peace_idea}
+    available = {controls_state = 689 }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+        add_ideas = {XTN_immigration_africa}
+        remove_ideas = {XTN_immigration}
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_rastafari_conversions
+    x = 60
+    y = 34
+    icon = GFX_focus_ETH_lord_of_lords
+    prerequisite = {focus = XTN_call_to_africa}
+    available = {controls_state = 689 }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+        add_ideas = {XTN_rastafari_religion}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_invite_messiah
+    x = 60
+    y = 35
+    icon = GFX_focus_ETH_the_heir_of_solomon
+    prerequisite = {focus = XTN_rastafari_conversions}
+    available = {controls_state = 689 }
+
+
+    cost = 2
+    
+
+    completion_reward = {
+        
+        custom_effect_tooltip = XTN_messiah
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_king_of_jamaica
+    x = 61
+    y = 36
+    icon = GFX_focus_ETH_rally_around_the_emperor
+    prerequisite = {focus = XTN_invite_messiah }     prerequisite = {focus = XTN_center_of_caribbean_culture }
+    available = {controls_state = 689 }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+        
+
+            add_country_leader_role = {
+            character = XTN_haile_selassie
+            promote_leader = yes
+            country_leader = {
+        ideology = conservatism
+        expire = "1978.1.1.1"
+        traits = {king_of_kings_4  god_of_the_rastafari }
+                }
+            }
+        XTN_haile_selassie = {
+
+            add_corps_commander_role = {
+            skill = 6
+            attack_skill = 5
+            defense_skill = 7
+            planning_skill = 5
+            logistics_skill = 5
+                }
+
+
+        } 
+        set_party_name = {
+        ideology = democratic
+        long_name = "Rastafari Party"
+        name = "Rastafari Party"
+                }  
+            
+
+        }
+        
+
+    }
+
 #################################################################################################
     focus = {
     id = XTN_venezuela_oil
@@ -1121,6 +1413,7 @@ give_resource_rights = {
     icon = GFX_focus_FIN_oy_alkoholiliike
 
     prerequisite = {focus = XTN_combat_minor_depression}
+    available = {NOT = {has_completed_focus = XTN_ban_alcohol}}
 
     cost = 10
     
