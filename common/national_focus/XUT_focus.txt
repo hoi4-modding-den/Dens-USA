@@ -147,7 +147,7 @@
 	### STATE OF EMERGENCY ###
 	focus = {
 		id = XUT_state_atheism
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
 		prerequisite = { focus = XUT_state_of_emergency }
 		mutually_exclusive = { focus = XUT_pacify_mormons }
 		x = -3
@@ -186,7 +186,7 @@
 	}
 	focus = {
 		id = XUT_pacify_mormons
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = XUT_state_of_emergency }
 		mutually_exclusive = { focus = XUT_state_atheism }
 		x = 3
@@ -221,7 +221,7 @@
 	}
 	focus = {
 		id = XUT_constitution_convention
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_cc
 		prerequisite = { focus = XUT_state_atheism focus = XUT_pacify_mormons}
 		x = -3
 		y = 1
@@ -252,7 +252,7 @@
 	}
 	focus = {
 		id = XUT_new_constitution
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = XUT_constitution_convention }
 		x = 0
 		y = 1
@@ -287,7 +287,7 @@
 	}
 	focus = {
 		id = XUT_guaruntee_rights
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_religious_rights
 		prerequisite = { focus = XUT_pacify_mormons }
 		x = 0
 		y = 1
@@ -319,7 +319,7 @@
 	}
 	focus = {
 		id = XUT_gender_equality
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_women_in_military
 		prerequisite = { focus = XUT_guaruntee_rights }
 		x = 0
 		y = 1
@@ -350,7 +350,7 @@
 	}
 	focus = {
 		id = XUT_western_alliance
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_alliance
 		prerequisite = { focus = XUT_gender_equality }
 		prerequisite = { focus = XUT_new_constitution }
 		mutually_exclusive = { focus = XUT_picking_up_the_pieces }
@@ -724,7 +724,7 @@
 	}
 	focus = {
 		id = XUT_integrated_alliance
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_support_democracy
 		prerequisite = { focus = XUT_invite_cascadia }
 		prerequisite = { focus = XUT_invite_west }
 		x = 1
@@ -764,7 +764,7 @@
 	}
 	focus = {
 		id = XUT_picking_up_the_pieces
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_befriend_usa
 		prerequisite = { focus = XUT_gender_equality }
 		prerequisite = { focus = XUT_new_constitution }
 		mutually_exclusive = { focus = XUT_western_alliance }
@@ -958,7 +958,7 @@
 	}
 	focus = {
 		id = XUT_ban_parties
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_ban_parties
 		prerequisite = { focus = XUT_state_atheism }
 		x = 0
 		y = 1
@@ -1001,7 +1001,7 @@
 	}
 	focus = {
 		id = XUT_purge_religious_leaders
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_SOV_the_last_purge
 		prerequisite = { focus = XUT_ban_parties }
 		x = 0
 		y = 1
@@ -1046,7 +1046,7 @@
 	}
 	focus = {
 		id = XUT_red_state_in_the_west
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_ger_great_red_menace
 		prerequisite = { focus = XUT_purge_religious_leaders }
 		prerequisite = { focus = XUT_new_constitution }
 		x = 2
@@ -1078,7 +1078,7 @@
 	}
 	focus = {
 		id = XUT_propaganda_across_borders
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = XUT_red_state_in_the_west }
 		x = -1
 		y = 1
@@ -1117,7 +1117,7 @@
 	}
 	focus = {
 		id = XUT_local_contacts
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_local_contacts
 		prerequisite = { focus = XUT_red_state_in_the_west }
 		x = 1
 		y = 1
@@ -1165,7 +1165,7 @@
 	}
 	focus = {
 		id = XUT_launch_uprisings
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_focus_fra_revolution_utmost
 		prerequisite = { focus = XUT_propaganda_across_borders }
 		prerequisite = { focus = XUT_local_contacts }
 		
@@ -1216,7 +1216,7 @@
 	}
 	focus = {
 		id = XUT_integrate_union
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = XUT_launch_uprisings }
 		
 		x = 0
@@ -1288,7 +1288,7 @@
 	}
 	focus = {
 		id = XUT_sweep_the_rest
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = XUT_launch_uprisings }
 		
 		x = 2
@@ -1366,7 +1366,7 @@
 	}
 	focus = {
 		id = XUT_mobilize_the_loyalists
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_SOV_mobilization_plan
 		prerequisite = { focus = XUT_purge_religious_leaders }
 		
 		x = -2
@@ -1398,7 +1398,7 @@
 	}
 	focus = {
 		id = XUT_raid_old_stockpiles
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_ETH_freedom_at_gunpoint
 		prerequisite = { focus = XUT_mobilize_the_loyalists }
 		
 		x = -1
@@ -1433,7 +1433,7 @@
 	}
 	focus = {
 		id = XUT_dig_trenches
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = XUT_mobilize_the_loyalists }
 		
 		x = 1
@@ -1478,7 +1478,7 @@
 	}
 	focus = {
 		id = XUT_sniff_out_traitors
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_infiltration
 		prerequisite = { focus = XUT_dig_trenches }
 		prerequisite = { focus = XUT_raid_old_stockpiles }
 		
@@ -1513,7 +1513,7 @@
 	}
 	focus = {
 		id = XUT_open_up_abandoned_factories
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = XUT_dig_trenches }
 		prerequisite = { focus = XUT_raid_old_stockpiles }
 		
@@ -1553,7 +1553,7 @@
 	}
 	focus = {
 		id = XUT_civil_war_victory
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_cwv
 		prerequisite = { focus = XUT_open_up_abandoned_factories }
 		
 		x = 0
@@ -4892,7 +4892,7 @@
 	### FOUR YEAR PLAN ###
 	focus = {
 		id = XUT_four_year_plan
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_modernize_industry
 		#prerequisite = { focus = XUT_march_on_capital }
 		x = 3
 		y = 4
@@ -4922,7 +4922,7 @@
 	}
 	focus = {
 		id = XUT_infrastructure_act
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = XUT_four_year_plan }
 		x = -2
 		y = 1
@@ -4994,7 +4994,7 @@
 	}
 	focus = {
 		id = XUT_national_highways
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_road_investment
 		prerequisite = { focus = XUT_infrastructure_act }
 		x = -1
 		y = 1
@@ -5066,7 +5066,7 @@
 	}
 	focus = {
 		id = XUT_fix_old_roads
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_improve_roads
 		prerequisite = { focus = XUT_infrastructure_act }
 		x = 1
 		y = 1
@@ -5138,7 +5138,7 @@
 	}
 	focus = {
 		id = XUT_develop_new_industry
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_industry_2
 		prerequisite = { focus = XUT_national_highways }
 		prerequisite = { focus = XUT_fix_old_roads }
 		x = 0
@@ -5211,7 +5211,7 @@
 	}
 	focus = {
 		id = XUT_arms_development
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = XUT_fix_old_roads }
 		prerequisite = { focus = XUT_national_highways }
 		x = 0
@@ -5284,7 +5284,7 @@
 	}
 	focus = {
 		id = XUT_a_new_generation
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_full_social_mobilization
 		prerequisite = { focus = XUT_four_year_plan }
 		x = 2
 		y = 1
@@ -5314,7 +5314,7 @@
 	}
 	focus = {
 		id = XUT_change_curriculum
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_university_1
 		prerequisite = { focus = XUT_a_new_generation }
 		x = -1
 		y = 1
@@ -5344,7 +5344,7 @@
 	}
 	focus = {
 		id = XUT_fund_new_schools
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_improve_the_administration
 		prerequisite = { focus = XUT_a_new_generation }
 		x = 1
 		y = 1
@@ -5374,7 +5374,7 @@
 	}
 	focus = {
 		id = XUT_gather_scientists
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_university_3
 		prerequisite = { focus = XUT_change_curriculum }
 		prerequisite = { focus = XUT_fund_new_schools }
 		x = 1
@@ -6828,7 +6828,7 @@
 	### Military Reforms (State of Emergency and Mormons) ###
 	focus = {
 		id = XUT_establish_military_school
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = XUT_state_of_emergency focus = XUT_dreams_of_deseret }
 		x = 7
 		y = 1
@@ -6859,7 +6859,7 @@
 	}
 	focus = {
 		id = XUT_new_guns
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = XUT_establish_military_school }
 		x = -2
 		y = 1
@@ -6894,7 +6894,7 @@
 	}
 	focus = {
 		id = XUT_new_tanks
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_tank_production
 		prerequisite = { focus = XUT_establish_military_school }
 		x = 0
 		y = 1
@@ -6929,7 +6929,7 @@
 	}
 	focus = {
 		id = XUT_new_artillery
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = XUT_establish_military_school }
 		x = 2
 		y = 1
@@ -6964,7 +6964,7 @@
 	}
 	focus = {
 		id = XUT_new_military_thought
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_NORDIC_com_capstone_research
 		prerequisite = { focus = XUT_new_guns }
 		prerequisite = { focus = XUT_new_tanks }
 		prerequisite = { focus = XUT_new_artillery }
@@ -6997,7 +6997,7 @@
 	}
 	focus = {
 		id = XUT_lessons_from_the_past
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = XUT_new_guns }
 		prerequisite = { focus = XUT_new_tanks }
 		prerequisite = { focus = XUT_new_artillery }

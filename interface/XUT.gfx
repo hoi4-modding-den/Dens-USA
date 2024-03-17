@@ -16,4 +16,24 @@ spriteTypes = {
 		name = "GFX_goal_evil"
 		texturefile = "gfx/XUT_gfx/XUT_focus_evil.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_cc"
+		texturefile = "gfx/XUT_gfx/XUT_focus_cc.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_ban_parties"
+		texturefile = "gfx/XUT_gfx/XUT_focus_ban_parties.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_religious_rights"
+		texturefile = "gfx/XUT_gfx/XUT_focus_religious_rights.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_local_contacts"
+		texturefile = "gfx/XUT_gfx/XUT_focus_local_contacts.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_cwv"
+		texturefile = "gfx/XUT_gfx/XUT_focus_cwv.dds"
+	}
 }
