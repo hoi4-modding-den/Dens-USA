@@ -760,10 +760,16 @@ ideas = {
             war_support_weekly = 0.25
             offensive_war_stability_factor = 0.5
             justify_war_goal_time = -1
-            generate_wargoal_tension = 0.0
+            generate_wargoal_tension = -1
 
 
             }
+            rule = {
+				can_declare_war_on_same_ideology = yes
+                can_not_declare_war = no
+                can_only_justify_war_on_threat_country = no
+                can_use_kamikaze_pilots = yes
+			}
 
         }
     }

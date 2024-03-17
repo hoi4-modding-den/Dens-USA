@@ -20,12 +20,87 @@ country = {
     x = 20
     y = 0
     icon = GFX_focus_generic_improve_the_administration
-    mutually_exclusive = {focus = XTN_create_agrarian_party}
+    mutually_exclusive = {focus = XTN_create_agrarian_party focus = XTN_rise_of_KKK}
     cost = 1
     
 
     completion_reward = {
         add_political_power = 150
+
+        }
+        
+
+    }
+
+############################################ Ku Klux Klan #######################################################
+    focus = {
+    id = XTN_rise_of_KKK
+    x = 70
+    y = 0
+    icon = GFX_focus_generic_fascist_troops
+
+    mutually_exclusive = {focus = XTN_abolish_council focus = XTN_create_agrarian_party}
+
+    cost = 1
+    
+
+    completion_reward = {
+
+        remove_ideas = {XTN_inteligensia_influence}
+        remove_ideas = {XTN_immigration}
+
+        set_politics = {
+    ruling_party = fascism
+    elections_allowed = no
+    last_election = "1936.1.1"
+    election_frequency = 48
+
+}
+
+add_popularity = {
+    ideology = fascism
+    popularity = 0.3
+}
+            
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_purge
+    x = 70
+    y = 1
+    icon = GFX_goal_generic_attack_allies
+
+    prerequisite = {focus = XTN_rise_of_KKK}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        retire_character = XTN_lev_trotsky
+        retire_character = XTN_benjamin_tucker
+        set_party_name = {
+        ideology = communism
+        long_name = "Communists"
+        name = "Communists"
+                }
+        set_party_name = {
+        ideology = neutrality
+        long_name = "Anarchists"
+        name = "Anarchists"
+                }
+
+add_popularity = {
+    ideology = fascism
+    popularity = 1
+}
+            
+
 
         }
         
@@ -43,7 +118,7 @@ country = {
     y = 0
     icon = GFX_focus_generic_farmland
 
-    mutually_exclusive = {focus = XTN_abolish_council}
+    mutually_exclusive = {focus = XTN_abolish_council focus = XTN_rise_of_KKK}
 
     cost = 1
     
