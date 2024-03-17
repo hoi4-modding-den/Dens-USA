@@ -47,6 +47,10 @@ XTN_USSR:0 "USSR will send a diplomat to help us defend against imperialism."
 XTN_diplo:0 "This will open up our diplomacy tree for balkan countries."
 
 XTN_messiah:0 "We will invite messiah to our court."
+XTN_jah_state:0 "Kingdom of God"
+XTN_jah_state_communism:0 "Socialist Union of Caribbean"
+XTN_jah_state_fascism:0 "Supreme State of Caribbean"
+XTN_jah_state_neutrality:0 "Anarchist Union of Caribbean."
 
 
 
@@ -1050,3 +1054,27 @@ XTN_center_of_caribbean_culture_desc:0 "We must build national identity trough c
 
 XTN_reggae:0 "Reggae"
 XTN_reggae_desc:0 "A beautiful music made by our citizens will motivate us to work."
+
+XTN_jah:0 "New Kingdom of God"
+XTN_jah_desc:0 "We shall create a country worth the time of heavenly attention."
+
+XTN_warriors_of_god_idea:0 "Rastafari Warriors of God"
+XTN_warriors_of_god_idea_desc:0 "We shall fight to create a heavenly empire on earth!"
+
+XTN_warriors_of_god:0 "Warriors of God"
+XTN_warriors_of_god_desc:0 "We shall fight to create a heavenly empire on earth!"
+
+XTN_develop_cuba:0 "Develop Cuba"
+XTN_develop_cuba_desc:0 "Cuba is the biggest island in our Empire. We shall modernize it!"
+
+XTN_develop_hispaniola:0 "Develop Hispaniola"
+XTN_develop_hispaniola_desc:0 "Island of Hispaniola is filled with free land. We need to build some industry there."
+
+XTN_invade_fl:0 "Invade Florida"
+XTN_invade_fl_desc:0 "We need to conquer Florida to start our expansion of Empire. In the name of Jah!"
+
+XTN_north_american_kingdom_of_god:0 "North American Kingdom of God"
+XTN_north_american_kingdom_of_god_desc:0 "The time is now! We shall invade america in the name of God!"
+
+XTN_empire_of_god_idea:0 "Empire of God"
+XTN_empire_of_god_idea_desc:0 "North America is rightfully ours and God will support us!"

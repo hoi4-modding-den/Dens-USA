@@ -1286,6 +1286,188 @@ add_advisor_role = {
 
     }
 
+    focus = {
+    id = XTN_jah
+    x = 61
+    y = 37
+    icon = GFX_focus_ETH_jah
+    prerequisite = {focus = XTN_king_of_jamaica } 
+    available = {controls_state = 689 XTN_haile_selassie = {is_country_leader = yes}}
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        set_cosmetic_tag = XTN_jah_state
+        315 = {add_core_of = XTN}
+        315 = { transfer_state_to = XTN }
+        690 = {add_core_of = XTN}
+        690 = { transfer_state_to = XTN }          
+        693 = {add_core_of = XTN}
+        693 = { transfer_state_to = XTN }  
+        695 = {add_core_of = XTN}
+        695 = { transfer_state_to = XTN }  
+        318 = {add_core_of = XTN}
+        318 = { transfer_state_to = XTN } 
+        319 = {add_core_of = XTN}
+        319 = { transfer_state_to = XTN }   
+        }
+        
+
+    }
+    focus = {
+    id = XTN_warriors_of_god
+    x = 61
+    y = 38
+    icon = GFX_focus_ETH_keep_the_chitet
+    prerequisite = {focus = XTN_jah } 
+    available = {controls_state = 689 XTN_haile_selassie = {is_country_leader = yes}}
+
+
+    cost = 1
+    
+
+    completion_reward = {
+        
+    remove_ideas = {XTN_peaceful_society}
+    add_ideas = {XTN_warriors_of_god_idea}
+        
+
+        }
+    }
+
+    focus = {
+    id = XTN_develop_cuba
+    x = 63
+    y = 38
+    icon = GFX_focus_ETH_jah
+    prerequisite = {focus = XTN_jah } 
+    available = {controls_state = 689 controls_state = 315 XTN_haile_selassie = {is_country_leader = yes}}
+
+
+    cost = 10
+    
+
+    completion_reward = {
+        
+          315 = { 
+            add_building_construction = {
+            type = arms_factory
+            level = 3
+            instant_build = yes
+                    }
+            add_building_construction = {
+            type = industrial_complex
+            level = 2
+            instant_build = yes
+                    }
+
+            }
+
+        }
+    }
+    focus = {
+    id = XTN_develop_hispaniola
+    x = 59
+    y = 38
+    icon = GFX_focus_ETH_jah
+    prerequisite = {focus = XTN_jah } 
+    available = {controls_state = 689 controls_state = 318 controls_state = 319 XTN_haile_selassie = {is_country_leader = yes}}
+
+
+    cost = 10
+    
+
+    completion_reward = {
+        
+          318 = { 
+            add_building_construction = {
+            type = arms_factory
+            level = 1
+            instant_build = yes
+                    }
+            add_building_construction = {
+            type = industrial_complex
+            level = 3
+            instant_build = yes
+                    }
+
+            }
+          319 = { 
+            add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+                    }
+            add_building_construction = {
+            type = industrial_complex
+            level = 2
+            instant_build = yes
+                    }
+
+            }
+
+        }
+    }
+
+    focus = {
+    id = XTN_invade_fl
+    x = 61
+    y = 39
+    icon = GFX_focus_ETH_freedom_at_gunpoint
+    prerequisite = {focus = XTN_warriors_of_god } 
+    available = {controls_state = 689 XTN_haile_selassie = {is_country_leader = yes}}
+
+
+    cost = 5
+    
+
+    completion_reward = {
+    
+            declare_war_on = {
+            target = XFL
+            type = annex_everything
+                }            
+
+        }
+    }
+
+
+    focus = {
+    id = XTN_north_american_kingdom_of_god
+    x = 61
+    y = 40
+    icon = GFX_focus_ETH_the-italo_ethiopian_empire
+    prerequisite = {focus = XTN_invade_fl } 
+    available = {controls_state = 689 controls_state = 366 XTN_haile_selassie = {is_country_leader = yes}}
+
+
+    cost = 10
+    
+
+    completion_reward = {
+    
+			every_state = {         #### Borrowed it from Maryland ##### 
+				limit = {
+					DEN_state_is_in_america = yes
+					NOT = {
+						is_claimed_by = ROOT
+						is_core_of = ROOT
+					}
+				}
+				add_core_of = ROOT  
+			} 
+            swap_ideas = {
+        add_idea = XTN_empire_of_god_idea
+        remove_idea = XTN_warriors_of_god_idea
+
+            }         
+
+        }
+    }
+
 #################################################################################################
     focus = {
     id = XTN_venezuela_oil
