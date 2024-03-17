@@ -1449,7 +1449,7 @@ add_advisor_role = {
 
     completion_reward = {
     
-			every_state = {         #### Borrowed it from Maryland ##### 
+			every_state = {
 				limit = {
 					DEN_state_is_in_america = yes
 					NOT = {
@@ -1457,8 +1457,8 @@ add_advisor_role = {
 						is_core_of = ROOT
 					}
 				}
-				add_core_of = ROOT  
-			} 
+				add_claim_by = ROOT
+			}
             swap_ideas = {
         add_idea = XTN_empire_of_god_idea
         remove_idea = XTN_warriors_of_god_idea
