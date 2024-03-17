@@ -511,6 +511,20 @@ logistics_skill = 4
 	}
 
 
+	XTN_addis_molla = {
+		name = "Addis Molla"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_Jonas_Lote"
+			}
+			army = {
+				small = "GFX_idea_africa_generic_2"
+			}
+		}
+	
+	}
+
+
 
 
 }

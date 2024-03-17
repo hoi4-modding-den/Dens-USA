@@ -1,7 +1,7 @@
 division_template = {
 	is_locked = yes
 	name = "Militia"	# represents first part of enlarged divisions
-	division_names_group = DEN_INF_01
+	division_names_group = USA_INF_01
 
 	regiments = {
 		militia = { x = 0 y = 0 }
@@ -14,7 +14,7 @@ division_template = {
 division_template = {
 
 	name = "Infantry Division"	# represents first part of enlarged divisions
-	division_names_group = DEN_INF_01
+	division_names_group = USA_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }

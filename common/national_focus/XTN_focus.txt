@@ -532,7 +532,7 @@ give_resource_rights = {
     icon = GFX_focus_ETH_jah
 
     prerequisite = {focus = XTN_jamaica_trade_port}
-    available = {controls_state = 689}
+    available = {controls_state = 689 NOT = {has_completed_focus = XTN_fort_tennesse}}
 
     cost = 10
     
@@ -567,6 +567,8 @@ give_resource_rights = {
 
            
         add_political_power = 150
+        368 = {remove_core_of = XTN}
+        363 = {remove_core_of = XTN}
 
 
         }
@@ -662,6 +664,19 @@ give_resource_rights = {
         state = 689
         remember_old_capital = no
             }
+            XTN_addis_molla = {
+add_advisor_role = {
+
+    activate = no
+    advisor = {
+        slot = political_advisor
+        cost = 100
+        idea_token = GER_character_token_air_chief
+        traits = {
+            minister_of_finance_deressa
+        }
+    }
+}}
 
         }
         
@@ -682,11 +697,233 @@ give_resource_rights = {
 
     completion_reward = {
 
+        add_stability = 0.25
+        #add_ideas = {undisturbed_isolation}
+        swap_ideas = {
+        add_idea = XTN_god_morrison
+        remove_idea = XTN_cult_of_morrison
+        }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_isolationism_jamaica
+    x = 55
+    y = 32
+    icon = GFX_goal_generic_trade
+    prerequisite = {focus = XTN_maintain_morrison}
+    available = {controls_state = 689 }
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_war_support = -1
+        add_ideas = {undisturbed_isolation}
 
 
         }
         
 
+    }
+
+    focus = {
+    id = XTN_fort_jamaica
+    x = 53
+    y = 33
+    icon = GFX_goal_generic_fortify_city
+    prerequisite = {focus = XTN_isolationism_jamaica}
+    available = {controls_state = 689 }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+           689 = {
+            add_building_construction = {
+            type = bunker
+            level = 10
+            instant_build = yes
+            province = 12477
+                    }
+            add_building_construction = {
+            type = bunker
+            level = 10
+            instant_build = yes
+            province = 12304
+                    }
+           }
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_strengthen_domestic_infrastructure
+    x = 55
+    y = 33
+    icon = GFX_goal_generic_construct_civilian
+    prerequisite = {focus = XTN_isolationism_jamaica}
+    available = {controls_state = 689 }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+          689 = { set_building_level = {
+            type = infrastructure
+            level = 5
+            instant_build = yes
+            }
+            add_building_construction = {
+            type = supply_node
+            level = 1
+            instant_build = yes
+            province = 12304
+                    }
+
+
+        }
+        
+
+    }
+    }
+    focus = {
+    id = XTN_air_defence
+    x = 54
+    y = 34
+    icon = GFX_goal_generic_build_airforce
+    prerequisite = {focus = XTN_strengthen_domestic_infrastructure}
+    prerequisite = {focus = XTN_fort_jamaica}
+    available = {controls_state = 689 }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+          689 = { 
+            add_building_construction = {
+            type = air_base
+            level = 5
+            instant_build = yes
+            province = 12304
+                    }
+            add_building_construction = {
+            type = anti_air_building
+            level = 5
+            instant_build = yes
+                    }
+
+
+        }
+        
+
+    }
+    }
+
+    focus = {
+    id = XTN_nationalize_foreign_investments
+    x = 54
+    y = 35
+    icon = GFX_focus_generic_communist_industry
+    prerequisite = {focus = XTN_air_defence}
+    available = {controls_state = 689 }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        remove_ideas = {XTN_british_debt}   
+        add_offsite_building = { type = industrial_complex level = 5 }
+        add_offsite_building = { type = arms_factory level = 3 }
+        add_popularity = {
+        ideology = communism
+        popularity = 0.15
+            }
+
+        }
+    }
+
+    focus = {
+    id = XTN_nuclear_research
+    x = 54
+    y = 36
+    icon = GFX_focus_wonderweapons
+    prerequisite = {focus = XTN_nationalize_foreign_investments}
+    #available = {controls_state = 689 }
+
+
+    cost = 10
+    
+
+    completion_reward = {
+        add_tech_bonus = {
+        bonus = 1
+        uses = 3
+        category = nuclear
+            }
+        
+        }
+    }
+
+    focus = {
+    id = XTN_nuclear_reactors
+    x = 54
+    y = 37
+    icon = GFX_focus_wonderweapons
+    prerequisite = {focus = XTN_nuclear_research}
+    available = {controls_state = 689 has_tech = nuclear_reactor}
+
+
+    cost = 10
+    
+
+    completion_reward = {
+        
+        689 = {
+            add_building_construction = {
+            type = nuclear_reactor
+            level = 1
+            instant_build = yes
+                    }
+        }
+        
+        }
+    }
+
+    focus = {
+    id = XTN_peace_at_last
+    x = 54
+    y = 38
+    icon = GFX_focus_ETH_jah
+    prerequisite = {focus = XTN_nuclear_reactors}
+    available = {controls_state = 689 has_war = no}
+
+
+    cost = 1
+    
+
+    completion_reward = {
+        
+        add_stability = 1
+
+        
+        }
     }
 
     focus = {
@@ -703,7 +940,55 @@ give_resource_rights = {
 
     completion_reward = {
 
+        remove_ideas = {XTN_cult_of_morrison}
+        add_country_leader_role = {
+        character = XTN_addis_molla
+        promote_leader = yes
+        country_leader = {
+        ideology = liberalism
+        expire = "1965.1.1.1"
+        traits = { constitutional_philosopher }
+    }
+}
+        add_country_leader_role = {
+        character = XTN_jim_morrison
+        promote_leader = yes
+        country_leader = {
+        ideology = nazism
+        expire = "1965.1.1.1"
+        traits = { leader_of_the_agrarian_union  }
+    }
+}
 
+XTN_jim_morrison = {
+
+remove_trait = {
+    slot = political_advisor
+    trait = democratic_reformer
+}
+
+add_advisor_role = {
+
+    activate = no
+    advisor = {
+        slot = political_advisor
+        cost = 75
+        idea_token = GER_character_token_air_chief
+        traits = {
+            fascist_demagogue
+        }
+    }
+}
+}
+        add_popularity = {
+        ideology = fascism
+        popularity = 0.45
+            }
+        add_popularity = {
+        ideology = democratic
+        popularity = 0.05
+            }
+        add_stability = -0.25
 
         }
         

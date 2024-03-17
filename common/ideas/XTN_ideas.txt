@@ -664,6 +664,14 @@ ideas = {
 
             }
         }
+   XTN_god_morrison = {
+           removal_cost = -1
+            picture = ROM_figurehead_king_michael
+            modifier = {
+                stability_factor = 0.25
+                political_power_gain = 0.5
+            }
+        }
 
     }
 }

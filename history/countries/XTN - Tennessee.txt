@@ -9,6 +9,7 @@ recruit_character = XTN_WJS
 
 ##### additionals
 
+recruit_character = XTN_addis_molla
 recruit_character = XTN_supreme_soviet
 recruit_character = XTN_ivan_smirnov
 recruit_character = XTN_nikolay_bukharin
