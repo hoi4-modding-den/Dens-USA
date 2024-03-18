@@ -1,0 +1,12 @@
+ideas = {
+	country = {
+		anarchy_idea = {
+            picture = undisturbed_isolation 
+            modifier = {
+                political_power_cost = 0.01
+				conscription = 0.01
+				training_time_factor = -1.0
+			}
+		}
+	}
+}
