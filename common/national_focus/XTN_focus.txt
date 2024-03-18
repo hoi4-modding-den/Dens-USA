@@ -107,7 +107,1006 @@ add_popularity = {
 
     }
 
+    focus = {
+    id = XTN_knights_of_kkk
+    x = 68
+    y = 2
+    icon = GFX_focus_generic_full_social_mobilization
 
+    prerequisite = {focus = XTN_purge}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        swap_ideas = {
+            remove_idea = XTN_no_army
+            add_idea = XTN_KKK_knights
+        }
+        
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_racial_purity
+    x = 72
+    y = 2
+    icon = GFX_focus_ger_reichskommisariats
+
+    prerequisite = {focus = XTN_purge}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_racial_theories}
+        
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_bring_back_slavery
+    x = 73
+    y = 3
+    icon = GFX_focus_SOV_penal_battalions
+
+    prerequisite = {focus = XTN_racial_purity}
+    mutually_exclusive = {focus = XTN_2_purge}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        remove_ideas = {XTN_minor_depression}
+        add_ideas = {XTN_slavery}
+        
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_2_purge
+    x = 71
+    y = 3
+    icon = GFX_goal_generic_attack_allies
+
+    prerequisite = {focus = XTN_racial_purity}
+    mutually_exclusive = {focus = XTN_bring_back_slavery}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        remove_ideas = {XTN_minor_depression}
+        add_manpower = -20000
+        
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_mobilization_kkk
+    x = 68
+    y = 3
+    icon = GFX_focus_generic_limited_social_mobilization
+
+    prerequisite = {focus = XTN_knights_of_kkk}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        swap_ideas = {
+            add_idea = extensive_conscription
+            remove_idea = disarmed_nation
+        }
+        
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_millitary_expansion
+    x = 70
+    y = 4
+    icon = GFX_goal_generic_construct_mil_factory
+
+    prerequisite = {focus = XTN_mobilization_kkk}
+    prerequisite = {focus = XTN_2_purge focus = XTN_bring_back_slavery}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+
+        368 = {
+            add_building_construction = {
+            type = arms_factory
+            level = 3
+            instant_build = yes
+                    }
+        }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_reclaim_csa
+    x = 70
+    y = 5
+    icon = GFX_focus_usa_honor_the_confederacy
+
+    prerequisite = {focus = XTN_millitary_expansion}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        363 = {
+        add_claim_by = XTN
+        }
+        362 = {
+        add_claim_by = XTN
+        }
+        364 = {
+        add_claim_by = XTN
+        }
+        365 = {
+        add_claim_by = XTN
+        }
+        366 = {
+        add_claim_by = XTN
+        }
+        367 = {
+        add_claim_by = XTN
+        }
+        370 = {
+        add_claim_by = XTN
+        }
+        371 = {
+        add_claim_by = XTN
+        }
+        372 = {
+        add_claim_by = XTN
+        }
+        375 = {
+        add_claim_by = XTN
+        }
+        374 = {
+        add_claim_by = XTN
+        }
+
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_war_with_carolina
+    x = 66
+    y = 6
+    icon = GFX_goal_generic_major_war
+
+    prerequisite = {focus = XTN_reclaim_csa}
+
+    cost = 3
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XNC
+            type = annex_everything
+                } 
+            declare_war_on = {
+            target = XSC
+            type = annex_everything
+                } 
+
+
+        }
+        
+
+    }
+    focus = {
+    id = XTN_war_with_virginia
+    x = 68
+    y = 6
+    icon = GFX_goal_generic_major_war
+
+    prerequisite = {focus = XTN_reclaim_csa}
+
+    cost = 3
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XVA
+            type = annex_everything
+                } 
+
+
+        }
+        
+
+    }
+
+
+
+    focus = {
+    id = XTN_war_with_south
+    x = 70
+    y = 6
+    icon = GFX_goal_generic_major_war
+
+    prerequisite = {focus = XTN_reclaim_csa}
+
+    cost = 3
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XGA
+            type = annex_everything
+                } 
+            declare_war_on = {
+            target = XAL
+            type = annex_everything
+                } 
+            declare_war_on = {
+            target = XFL
+            type = annex_everything
+                } 
+            declare_war_on = {
+            target = XMS
+            type = annex_everything
+                } 
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_war_with_lousiana
+    x = 72
+    y = 6
+    icon = GFX_goal_generic_major_war
+
+    prerequisite = {focus = XTN_reclaim_csa}
+
+    cost = 3
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XLA
+            type = annex_everything
+                } 
+            declare_war_on = {
+            target = XAR
+            type = annex_everything
+                } 
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_war_with_tx
+    x = 74
+    y = 6
+    icon = GFX_goal_generic_major_war
+
+    prerequisite = {focus = XTN_reclaim_csa}
+
+    cost = 3
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XTX
+            type = annex_everything
+                } 
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_south_united
+    x = 70
+    y = 7
+    icon = GFX_focus_usa_honor_the_confederacy
+
+    prerequisite = {focus = XTN_war_with_tx}
+    prerequisite = {focus = XTN_war_with_lousiana}
+    prerequisite = {focus = XTN_war_with_virginia}
+    prerequisite = {focus = XTN_war_with_carolina}
+    prerequisite = {focus = XTN_war_with_south}
+    available = {
+        controls_state = 368    
+        controls_state = 362                
+        controls_state = 363
+        controls_state = 364     
+        controls_state = 365
+        controls_state = 367
+        controls_state = 366
+        controls_state = 370
+        controls_state = 371
+        controls_state = 372
+        controls_state = 375       
+        }
+
+    cost = 1
+    
+
+    completion_reward = {
+
+        set_cosmetic_tag = XTN_CSA
+
+        set_capital = {
+        state = 362
+        remember_old_capital = no
+            }
+
+        364 = {
+
+            add_core_of = XTN
+
+        }
+        365 = {
+
+            add_core_of = XTN
+
+        }
+        366 = {
+
+            add_core_of = XTN
+
+        }
+        367 = {
+
+            add_core_of = XTN
+
+        }
+        370 = {
+
+            add_core_of = XTN
+
+        }
+        371 = {
+
+            add_core_of = XTN
+
+        }
+        375 = {
+
+            add_core_of = XTN
+
+        }
+        372 = {
+
+            add_core_of = XTN
+
+        }
+        374 = {
+
+            add_core_of = XTN
+
+        }
+        363 = {
+
+            add_core_of = XTN
+
+        }
+        362 = {
+
+            add_core_of = XTN
+
+        }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_rebel_yell
+    x = 72
+    y = 8
+    icon = GFX_focus_usa_honor_the_confederacy
+
+    prerequisite = {focus = XTN_south_united}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_rebel_yell_idea}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_war_with_oklahoma
+    x = 68
+    y = 8
+    icon = GFX_goal_tfv_saf_support_ossebrandwag
+
+    prerequisite = {focus = XTN_south_united}
+
+    cost = 2
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XOK
+            type = annex_everything
+                } 
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_develop_mississippi
+    x = 70
+    y = 8
+    icon = GFX_goal_generic_construct_mil_factory
+
+    prerequisite = {focus = XTN_south_united}
+    available = {controls_state = 370}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+           370 = {
+            add_building_construction = {
+            type = arms_factory
+            level = 4
+            instant_build = yes
+                    }
+            }
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_develop_carolina
+    x = 69
+    y = 9
+    icon = GFX_goal_generic_construct_civ_factory
+
+    prerequisite = {focus = XTN_develop_mississippi}
+    available = {controls_state = 364 controls_state = 363}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+           364 = {
+            add_building_construction = {
+            type = industrial_complex
+            level = 1
+            instant_build = yes
+                    }
+            add_building_construction = {
+            type = arms_factory
+            level = 3
+            instant_build = yes
+                    }
+            }
+           363 = {
+            add_building_construction = {
+            type = industrial_complex
+            level = 1
+            instant_build = yes
+                    }
+            add_building_construction = {
+            type = arms_factory
+            level = 2
+            instant_build = yes
+                    }
+            }
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_develop_louisiana
+    x = 71
+    y = 9
+    icon = GFX_goal_generic_construct_civ_factory
+
+    prerequisite = {focus = XTN_develop_mississippi}
+    available = {controls_state = 371}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+           371 = {
+            add_building_construction = {
+            type = industrial_complex
+            level = 4
+            instant_build = yes
+                    }
+            }
+
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_war_with_new_mexico
+    x = 68
+    y = 10
+    icon = GFX_goal_generic_territory_or_war
+
+    prerequisite = {focus = XTN_war_with_oklahoma}
+
+    cost = 2
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XNM
+            type = annex_everything
+                } 
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_modern_cavalery
+    x = 72
+    y = 10
+    icon = GFX_goal_generic_cavalry
+
+    prerequisite = {focus = XTN_rebel_yell}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_modern_cavalery_idea}
+        add_tech_bonus = {
+        bonus = 1
+        uses = 1
+        category = armor
+            }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_revenge_for_civil_war
+    x = 70
+    y = 11
+    icon = GFX_focus_generic_strike_at_democracy3
+
+    prerequisite = {focus = XTN_modern_cavalery}
+    prerequisite = {focus = XTN_war_with_new_mexico}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XMD
+            type = annex_everything
+                } 
+            declare_war_on = {
+            target = XKY
+            type = annex_everything
+                } 
+            declare_war_on = {
+            target = XWV
+            type = annex_everything
+                } 
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_burn_lincolns_house
+    x = 71
+    y = 12
+    icon = GFX_goal_support_fascism
+
+    prerequisite = {focus = XTN_revenge_for_civil_war}
+    available = {controls_state = 369}
+
+    cost = 2
+    
+
+    completion_reward = {
+
+        add_war_support = 0.05
+        add_political_power = 50
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_revenge_on_yankee
+    x = 70
+    y = 13
+    icon = GFX_focus_spa_the_war_of_vengeance
+
+    prerequisite = {focus = XTN_revenge_for_civil_war}
+    available = {controls_state = 361}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_political_power = 150
+			every_state = {
+				limit = {
+					DEN_state_is_in_america = yes
+					NOT = {
+						is_claimed_by = ROOT
+						is_core_of = ROOT
+					}
+				}
+				add_claim_by = ROOT
+			}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_spirit_of_dixie
+    x = 72
+    y = 14
+    icon = GFX_focus_generic_spread_fascism
+
+    prerequisite = {focus = XTN_revenge_on_yankee}
+    available = {controls_state = 361}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        
+
+        swap_ideas = {
+            add_idea = XTN_dixie_land
+            remove_idea = XTN_rebel_yell_idea
+        }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_cotton_trade
+    x = 68
+    y = 14
+    icon = GFX_goal_generic_positive_trade_relations
+
+    prerequisite = {focus = XTN_revenge_on_yankee}
+    available = {controls_state = 361}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_offsite_building = { type = industrial_complex level = 3 }
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_knights_of_golden_circle
+    x = 70
+    y = 14
+    icon = GFX_focus_spa_no_compromise_on_carlist_ideals
+
+    prerequisite = {focus = XTN_revenge_on_yankee}
+    available = {controls_state = 361}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_golden_circle}
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_claims_on_mexico
+    x = 71
+    y = 15
+    icon = GFX_focus_attack_mexico
+
+    prerequisite = {focus = XTN_knights_of_golden_circle}
+    prerequisite = {focus = XTN_spirit_of_dixie}
+    available = {controls_state = 361}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        479 = {
+        add_claim_by = XTN
+        }
+        480 = {
+        add_claim_by = XTN
+        }
+        482 = {
+        add_claim_by = XTN
+        }
+        483 = {
+        add_claim_by = XTN
+        }
+        484 = {
+        add_claim_by = XTN
+        }
+        481 = {
+        add_claim_by = XTN
+        }
+        478 = {
+        add_claim_by = XTN
+        }
+        277 = {
+        add_claim_by = XTN
+        }
+        485 = {
+        add_claim_by = XTN
+        }
+        477 = {
+        add_claim_by = XTN
+        }
+        476 = {
+        add_claim_by = XTN
+        }
+        475 = {
+        add_claim_by = XTN
+        }
+        474 = {
+        add_claim_by = XTN
+        }
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_arizona_war
+    x = 69
+    y = 15
+    icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+
+    prerequisite = {focus = XTN_knights_of_golden_circle}
+    prerequisite = {focus = XTN_spirit_of_dixie}
+    available = {controls_state = 361}
+    bypass = {XAZ ={NOT={controls_state = 953 controls_state = 377}}}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XAZ
+            type = annex_everything
+                } 
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_legitimize_CSA_gov
+    x = 73
+    y = 15
+    icon = GFX_focus_generic_improve_the_administration
+
+    prerequisite = {focus = XTN_spirit_of_dixie}
+    available = {controls_state = 362}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_political_power = 150
+        set_party_name = {
+        ideology = fascism
+        long_name = "Southern Democrats"
+        name = "Democrats"
+                }
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_conquer_deseret
+    x = 71
+    y = 16
+    icon = GFX_focus_eng_move_to_secure_the_dominions
+
+    prerequisite = {focus = XTN_legitimize_CSA_gov}
+    prerequisite = {focus = XTN_arizona_war}
+    available = {controls_state = 377}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XUT
+            type = annex_everything
+                } 
+            declare_war_on = {
+            target = XNV
+            type = annex_everything
+                }         
+            declare_war_on = {
+            target = XCA
+            type = annex_everything
+                } 
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_kansas_missouri
+    x = 71
+    y = 17
+    icon = GFX_focus_generic_fascist_troops
+
+    prerequisite = {focus = XTN_conquer_deseret}
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XMO
+            type = annex_everything
+                } 
+            declare_war_on = {
+            target = XKS
+            type = annex_everything
+                }         
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_colorado_war
+    x = 71
+    y = 18
+    icon = GFX_focus_generic_limited_social_mobilization
+
+    prerequisite = {focus = XTN_kansas_missouri}
+
+
+    cost = 2
+    
+
+    completion_reward = {
+
+            declare_war_on = {
+            target = XCO
+            type = annex_everything
+                } 
+      
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_american_dream_CSA
+    x = 71
+    y = 19
+    icon = GFX_focus_usa_guarantee_the_american_dream
+
+    prerequisite = {focus = XTN_colorado_war}
+
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_war_support = 1 
+      
+
+        }
+        
+
+    }
 
 ######################################################## AGRARIAN ############################################################
 

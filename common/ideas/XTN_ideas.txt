@@ -772,5 +772,66 @@ ideas = {
 			}
 
         }
+
+    XTN_KKK_knights = {
+           removal_cost = -1
+            picture = generic_fascism_drift_2
+            modifier = {
+               training_time_factor = -0.25
+               weekly_manpower = 100
+            }
+
+        }
+
+    XTN_racial_theories = {
+           removal_cost = -1
+            picture = hol_the_foundations_of_defense
+            modifier = {
+            fascism_drift = 0.02
+            }
+        }
+
+    XTN_slavery = {
+           removal_cost = -1
+            picture = generic_oppression
+            modifier = {
+            consumer_goods_factor = -0.1
+            }
+        }
+
+    XTN_rebel_yell_idea = {
+           removal_cost = -1
+            picture = hol_liberation
+            modifier = {
+            offence = 0.25
+            forced_surrender_limit = 0.25
+            army_morale = 5
+            }
+        }
+    XTN_modern_cavalery_idea = {
+           removal_cost = -1
+            picture = generic_motorized_equipment_manufacturer_2
+            modifier = {
+            cavalry_attack_factor = 0.35
+            }
+        }
+    XTN_dixie_land = {
+           removal_cost = -1
+            picture = POL_the_peasants_strike
+            modifier = {
+            offence = 0.40
+            forced_surrender_limit = 0.5
+            army_morale = 10
+            justify_war_goal_time = -0.35
+            }
+        }
+
+    XTN_golden_circle = {
+           removal_cost = -1
+            picture = SPA_carlism
+            modifier = {
+            political_power_gain = 0.25
+            }
+        }
     }
 }
