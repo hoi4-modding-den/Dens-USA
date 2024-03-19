@@ -25,6 +25,22 @@ ideas = {
 			}
 		}
 
+		XOR_limited_control_0 = {
+			picture = idea_cze_planning_bonus
+			name = XOR_limited_control
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = -0.1
+				consumer_goods_factor = 0.05
+				war_support_factor = -0.3
+			}
+			allowed = {
+				tag = XOR
+			}
+		}
+
 		XOR_OID_idea_0 = {
 			picture = idea_cze_planning_bonus
 			name = XOR_OID_idea
@@ -32,8 +48,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				stability_factor = 0.25
 				weekly_manpower = 750
+				neutrality_drift = 0.15
 			}
 			allowed = {
 				tag = XOR
@@ -46,8 +62,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				stability_factor = 0.25
-				political_power_factor = 0.1
+				stability_factor = 0.10
+				neutrality_drift = 0.15
 				weekly_manpower = 1100
 			}
 			allowed = {
@@ -61,6 +77,20 @@ ideas = {
 			}
 			modifier = {
 				production_speed_buildings_factor = 0.075
+				consumer_goods_factor = -0.05
+			}
+			allowed = {
+				tag = XOR
+			}
+		}
+
+		XOR_grantspass_tech = {
+			picture = idea_cze_planning_bonus
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.1
 				consumer_goods_factor = -0.05
 			}
 			allowed = {

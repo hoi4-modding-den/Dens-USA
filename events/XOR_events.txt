@@ -25,6 +25,7 @@ country_event = { #Entering Umatilla
 	option = { #Set Up base
 		name = XOR_events.1.a
 		add_ideas = XOR_OID_idea_0
+		add_ideas = XOR_limited_control_0
 		set_cosmetic_tag = XOR_OIDCOSMETIC
 		set_country_flag = XOR_has_created_OID #Check to see if player has created OID
 		hidden_effect = {
@@ -64,7 +65,7 @@ country_event = { #Entering Umatilla
 				type = industrial_complex
 				level = 2
 				instant_build = yes
-			}
+			}	
 		}
 		custom_effect_tooltip = XOR_tt_core_situation
 		
@@ -72,9 +73,9 @@ country_event = { #Entering Umatilla
 	}
 }
 
-####################################################
-#### GENERIC INVESTIGATION EVENTS - OREGON EAST ####
-####################################################
+###############################################
+#### GENERIC INVESTIGATION EVENTS - OREGON ####
+###############################################
 
 country_event = { #Nothing Happens
 	id = XOR_events.7
@@ -257,6 +258,10 @@ country_event = { #Large Success
 		clr_country_flag = XOR_generic_10
 	}
 }
+
+##########################################################
+#### GENERIC INVESTIGATION EVENTS - CUSTOM / SCRIPTED ####
+##########################################################
 
 country_event = { #WTF Success - Leads to Burns (WTO)
 	id = XOR_events.11
@@ -452,7 +457,6 @@ country_event = { #Bend for real this time - Oregon East
 			add_extra_state_shared_building_slots = 1
 			add_manpower = 38221
 			add_building_construction = {
-				
 				type = arms_factory
 				level = 1
 				instant_build = yes
@@ -481,5 +485,98 @@ country_event = { #Cement O.I.D. Control in the East
 		385 = {
 			add_manpower = 93738	
 		}
+	}
+}
+
+####################################################
+#### UNIQUE INVESTIGATION EVENTS - OREGON SOUTH ####
+####################################################
+
+country_event = { #Klamath Falls lol
+	id = XOR_events.12
+	title = XOR_events.12.t
+	desc = XOR_events.12.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	trigger = {
+		has_country_flag = XOR_has_started_klamathfalls
+		country_exists = XOR
+	}
+
+	mean_time_to_happen = {
+		days = 21
+	}
+
+	fire_only_once = yes
+
+	option = { 
+		name = XOR_events.12.a
+		set_country_flag = XOR_has_completed_klamathfalls
+		add_to_variable = { XOR_inv_points = 15 }
+		add_to_variable = { XOR_num_inv = 1 }
+		custom_effect_tooltip = XOR_tt_inf_add_points_15
+		
+		set_variable = { XOR_index = 12 } #Set to id # of event
+		XOR_finished_investigation = yes
+	}
+}
+
+country_event = { #Grants Pass
+	id = XOR_events.13
+	title = XOR_events.13.t
+	desc = XOR_events.13.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	trigger = {
+		has_country_flag = XOR_has_started_grantspass
+		country_exists = XOR
+	}
+
+	mean_time_to_happen = {
+		days = 21
+	}
+
+	fire_only_once = yes
+
+	option = { 
+		name = XOR_events.13.a
+		set_country_flag = XOR_has_completed_grantspass
+		add_to_variable = { XOR_inv_points = 20 }
+		add_to_variable = { XOR_num_inv = 1 }
+		custom_effect_tooltip = XOR_tt_inf_add_points_20
+		
+		set_variable = { XOR_index = 13 } #Set to id # of event
+		XOR_finished_investigation = yes
+
+		add_ideas = XOR_grantspass_tech #Something about Grant Pass Industry or smth
+	}
+}
+
+country_event = { #Coos Bay
+	id = XOR_events.14
+	title = XOR_events.14.t
+	desc = XOR_events.14.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	trigger = {
+		has_country_flag = XOR_has_started_coosbay
+		country_exists = XOR
+	}
+
+	mean_time_to_happen = {
+		days = 35
+	}
+
+	fire_only_once = yes
+
+	option = { 
+		name = XOR_events.14.a
+		set_country_flag = XOR_has_completed_coosbay
+		add_to_variable = { XOR_inv_points = 30 }
+		add_to_variable = { XOR_num_inv = 1 }
+		custom_effect_tooltip = XOR_tt_inf_add_points_30
+		
+		set_variable = { XOR_index = 14 } #Set to id # of event
+		XOR_finished_investigation = yes
 	}
 }

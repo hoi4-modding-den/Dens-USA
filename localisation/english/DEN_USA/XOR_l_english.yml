@@ -31,6 +31,8 @@
  XOR_explore_south_desc:0 ""
  XOR_explore_west:0 "Explore the West"
  XOR_explore_west_desc:0 ""
+ XOR_city_of_roses:0 "Enter the City of Roses"
+ XOR_city_of_roses_desc:0 ""
  XOR_tt_explore_east_trigger:0 "Has formed the §YO.I.D.§!"
  XOR_tt_explore_east:0 "Unlocks §YInvestigative Decisions§! for the §YOregon East§!."
  XOR_tt_explore_west:0 "Unlocks §YInvestigative Decisions§! for the §YOregon West§!."
@@ -110,6 +112,10 @@
  XOR_tt_has_completed_east_investigation:0 "Has completed §Yall§! Investigations in the §YOregon East§!."
  XOR_OID_finished_east:0 "Cement O.I.D. Control in the East"
 
+ XOR_tt_OID_klamathfalls:0 "We will send a team to §YKlamath Falls§!, who will relay back with results in approx. 3 weeks.\n"
+ XOR_tt_OID_grantspass:0 "We will send a team to §YGrants Pass§!, who will relay back with results in approx. 3 weeks.\n"
+ XOR_tt_OID_coosbay:0 "We will send a team to §YCoos Bay§!, who will relay back with results in approx. 5 weeks.\n"
+
  #Events
  XOR_events.0.t:0 "The Oregonian Silence"
  XOR_events.0.desc:0 "The last letter came on December 19th, 1935. In it contained a report stating the dissolution of the Oregon Government, and the assumption of power by the armed forces. The paper assured us that democracy would return, one day. After order had been restored. I remember reading that letter, shaking my head, and throwing it away. There hasn't been any more letters after that.\n\nBeing a part of the now defunct Oregon Government, I never returned home in fear of arrest at the arms of the Junta. I mearly prayed for my fellow men, and hoped for the best. But things have changed, and the longer I wait the more concerned I am for the safety of my state. Even though the letters have stopped, that doesn't mean I have to give up. I must know what is going on.\n\n     -Senator Charles McNary"
@@ -146,23 +152,23 @@
  ## GENERIC EAST ##
  XOR_events.7.t:0 "Investigative Team returns Inconclusively"
  XOR_events.7_desc:0 ""
- XOR_events.7.a:0 ""
+ XOR_events.7.a:0 "Shame."
 
  XOR_events.8.t:0 "Investigative Team returns with Minor Information"
  XOR_events.8_desc:0 ""
- XOR_events.8.a:0 ""
+ XOR_events.8.a:0 "At least this will be a short report."
 
  XOR_events.9.t:0 "Investigative Team returns with Moderate Information"
  XOR_events.9_desc:0 ""
- XOR_events.9.a:0 ""
+ XOR_events.9.a:0 "Interesting."
 
  XOR_events.10.t:0 "Investigative Team returns with Major Information"
  XOR_events.10_desc:0 ""
- XOR_events.10.a:0 ""
+ XOR_events.10.a:0 "A great success."
 
  XOR_events.11.t:0 "Investigative Team returns?..."
  XOR_events.11_desc:0 ""
- XOR_events.11.a:0 ""
+ XOR_events.11.a:0 "Peculiar, send another team immediately!"
 
 
 
@@ -176,6 +182,9 @@
  
  XOR_tt_inv_point_req_30:0 "Has §Y30§! Investigative Experience"
  XOR_tt_inv_point_req_40:0 "Has §Y40§! Investigative Experience"
+ XOR_tt_inv_point_req_50:0 "Has §Y50§! Investigative Experience"
  XOR_tt_inv_point_req_75:0 "Has §Y75§! Investigative Experience"
+ XOR_tt_inv_point_req_90:0 "Has §Y90§! Investigative Experience"
  XOR_tt_inv_point_req_125:0 "Has §Y125§! Investigative Experience"
+ XOR_tt_inv_point_req_200:0 "Has §Y200§! Investigative Experience"
 

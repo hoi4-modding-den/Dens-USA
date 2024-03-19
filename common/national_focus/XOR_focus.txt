@@ -146,10 +146,10 @@ focus_tree = {
 				has_country_flag = XOR_has_created_OID
 			}
 			custom_trigger_tooltip = {
-				tooltip = XOR_tt_inv_point_req_75
+				tooltip = XOR_tt_inv_point_req_50
 				check_variable = {
 					var = XOR_inv_points
-					value = 75
+					value = 50
 					compare = greater_than_or_equals
 				}
 			}
@@ -168,6 +168,51 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = XOR_city_of_roses
+		icon = GFX_goal_continuous_naval_production
+		x = 0
+		y = 2
+        		cost = 5
+
+		relative_position_id = XOR_oregon_investigation_dept
+		prerequisite = { focus = XOR_explore_south }
+		prerequisite = { focus = XOR_explore_west }
+		prerequisite = { focus = XOR_explore_east }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_explore_east_trigger
+				has_country_flag = XOR_has_created_OID
+			}
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_inv_point_req_200
+				check_variable = {
+					var = XOR_inv_points
+					value = 200
+					compare = greater_than_or_equals
+				}
+			}
+			
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = XOR_tt_explore_south
+			custom_effect_tooltip = XOR_tt_add_unit
+			set_variable = {
+				XOR_var_unit1 = 1 #Activates Unit 1
+			}
+		}
+		ai_will_do = { 
+			factor = 100
+		}
+	}
+
+	#########################
+	#### POLITICAL STUFF ####
+	#########################
 
 	focus = {
 		id = XOR_expand_the_OID
@@ -310,41 +355,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = XOR_shift_more_funding_to_OID
-		icon = GFX_goal_continuous_naval_production
-		x = 0
-		y = 2
-        		cost = 5
-
-		relative_position_id = XOR_expand_the_OID
-		prerequisite = { focus = XOR_build_up_OID_base focus = XOR_infrastructure_project }
-		mutually_exclusive = { focus = XOR_exert_federal_control }
-	
-		search_filters = { FOCUS_FILTER_POLITICAL}
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = XOR_tt_explore_east_trigger
-				has_country_flag = XOR_has_created_OID
-			}
-			custom_trigger_tooltip = {
-				tooltip = XOR_tt_has_controlled_east
-				has_country_flag = XOR_unlock_political_focus_tree
-			}
-		}
-
-		completion_reward = {
-		}
-
-		ai_will_do = { 
-			factor = 1
-		}
-	}
-
-	focus = {
 		id = XOR_establish_new_govt
 		icon = GFX_goal_continuous_naval_production
-		x = 16
+		x = 11
 		y = 2
         		cost = 5
 
@@ -369,9 +382,42 @@ focus_tree = {
 	}
 
 	focus = {
-		id = XOR_exert_federal_control
+		id = XOR_shift_more_funding_to_OID
 		icon = GFX_goal_continuous_naval_production
 		x = 0
+		y = 2
+        		cost = 5
+
+		relative_position_id = XOR_expand_the_OID
+		prerequisite = { focus = XOR_build_up_OID_base focus = XOR_infrastructure_project }
+		prerequisite = { focus = XOR_establish_new_govt }
+		mutually_exclusive = { focus = XOR_exert_federal_control }
+	
+		search_filters = { FOCUS_FILTER_POLITICAL}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_explore_east_trigger
+				has_country_flag = XOR_has_created_OID
+			}
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_has_controlled_east
+				has_country_flag = XOR_unlock_political_focus_tree
+			}
+		}
+
+		completion_reward = {
+		}
+
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = XOR_exert_federal_control
+		icon = GFX_goal_continuous_naval_production
+		x = 5
 		y = 1
         		cost = 5
 
@@ -396,7 +442,7 @@ focus_tree = {
 	focus = {
 		id = XOR_move_capital
 		icon = GFX_goal_continuous_naval_production
-		x = 2
+		x = 7
 		y = 1
         		cost = 2
 

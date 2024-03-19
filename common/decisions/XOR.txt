@@ -26,6 +26,16 @@ XOR_oregon_investigation_decisions = {
 		}
 	}
 
+	####################################################
+	####    ####    ####    ####    ####    ####    ####
+	####################################################
+	#					 #
+	#		OREGON EAST		 #
+	#					 #
+	####################################################
+	####    ####    ####    ####    ####    ####    ####
+	####################################################
+
 	XOR_OID_generic_east = { #GENERIC INVESTIGATE OREGON EAST
 
 		icon = GFX_decision_generic_operation
@@ -43,6 +53,9 @@ XOR_oregon_investigation_decisions = {
 		
 		visible = {
 			has_completed_focus = XOR_explore_east
+			NOT = {
+				has_country_flag = XOR_unlock_political_focus_tree #Will be removed once east is secured
+			}
 		}
 		available = {
 			has_completed_focus = XOR_explore_east
@@ -364,7 +377,6 @@ XOR_oregon_investigation_decisions = {
 			has_completed_focus = XOR_explore_east
 			custom_trigger_tooltip = {
 				tooltip = XOR_tt_has_completed_east_investigation
-				has_country_flag = XOR_has_completed_highdesert
 				has_country_flag = XOR_has_completed_bend_pt1
 				has_country_flag = XOR_has_completed_bend_pt2
 				has_country_flag = XOR_has_completed_pendleton
@@ -379,6 +391,262 @@ XOR_oregon_investigation_decisions = {
 		
 		complete_effect = {
 			country_event = XOR_events.5
+		}
+	}
+
+	####################################################
+	####    ####    ####    ####    ####    ####    ####
+	####################################################
+	#					 #
+	#		OREGON SOUTH		 #
+	#					 #
+	####################################################
+	####    ####    ####    ####    ####    ####    ####
+	####################################################
+
+	XOR_OID_generic_south = { #GENERIC INVESTIGATE OREGON SOUTH
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 100
+		}
+	
+		allowed = {
+			tag = XOR
+		}
+		
+		visible = {
+			has_completed_focus = XOR_explore_south
+		}
+		available = {
+			has_completed_focus = XOR_explore_south
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_generic_east_cooldown
+				NOT = {
+					has_country_flag = XOR_generic_east_cooldown #5 day cooldown
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_has_unit_open
+				NOT = {
+					AND = {
+						OR = {
+							NOT = { check_variable = { XOR_var_unit1 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit2 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit3 = 1 } }
+						}
+					}
+				}	
+			}
+			
+		}
+
+		cost = 15
+		
+		complete_effect = {
+			hidden_effect = {
+				set_variable = { XOR_index = 1001 } #1001-1003 = generic mission
+				XOR_send_investigation_generic = yes
+				random_list = {
+					30 = { #Nothing Happens
+						country_event = XOR_events.7
+						set_country_flag = XOR_generic_7
+					}
+					50 = { #Minor
+						country_event = XOR_events.8
+						set_country_flag = XOR_generic_8
+					}
+					70 = { #Medium
+						country_event = XOR_events.9
+						set_country_flag = XOR_generic_9
+					}
+					30 = { #Large
+						country_event = XOR_events.10
+						set_country_flag = XOR_generic_10
+					}
+					
+				}
+			}
+			custom_effect_tooltip = XOR_tt_OID_generic_east
+			set_country_flag = {
+				flag = XOR_generic_east_cooldown
+				days = 7
+			}
+		}
+	}
+
+	#Investigate Klamath Falls
+	XOR_OID_klamathfalls = {
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 1000
+		}
+	
+		allowed = {
+			tag = XOR
+		}
+		
+		visible = {
+			has_completed_focus = XOR_explore_south
+		}
+		available = {
+			has_completed_focus = XOR_explore_south
+			
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_has_unit_open
+				NOT = {
+					AND = {
+						OR = {
+							NOT = { check_variable = { XOR_var_unit1 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit2 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit3 = 1 } }
+						}
+					}
+				}	
+			}
+		}
+
+		cost = 40
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			hidden_effect = {
+				country_event = XOR_events.12
+				set_variable = { XOR_index = 12 }
+				XOR_send_investigation = yes
+			}
+			custom_effect_tooltip = XOR_tt_OID_klamathfalls
+			set_country_flag = XOR_has_started_klamathfalls
+		}
+	}
+
+	#Investigate Grants Pass
+	XOR_OID_grantspass = {
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 200
+		}
+	
+		allowed = {
+			tag = XOR
+		}
+		
+		visible = {
+			has_completed_focus = XOR_explore_south
+		}
+		available = {
+			has_completed_focus = XOR_explore_south
+			
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_has_unit_open
+				NOT = {
+					AND = {
+						OR = {
+							NOT = { check_variable = { XOR_var_unit1 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit2 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit3 = 1 } }
+						}
+					}
+				}	
+			}
+
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_inv_point_req_90
+				check_variable = {
+					var = XOR_inv_points
+					value = 90
+					compare = greater_than_or_equals
+				}
+			}
+		}
+
+		cost = 40
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			hidden_effect = {
+				country_event = XOR_events.13
+				set_variable = { XOR_index = 13 }
+				XOR_send_investigation = yes
+			}
+			custom_effect_tooltip = XOR_tt_OID_grantspass
+			set_country_flag = XOR_has_started_grantspass
+		}
+	}
+
+	#Investigate Coos Bay
+	XOR_OID_coosbay = {
+
+		icon = GFX_decision_generic_operation
+		ai_will_do = {
+			base = 200
+		}
+	
+		allowed = {
+			tag = XOR
+		}
+		
+		visible = {
+			has_completed_focus = XOR_explore_south
+		}
+		available = {
+			has_completed_focus = XOR_explore_south
+			
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_has_unit_open
+				NOT = {
+					AND = {
+						OR = {
+							NOT = { check_variable = { XOR_var_unit1 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit2 = 1 } }
+						}
+						OR = {
+							NOT = { check_variable = { XOR_var_unit3 = 1 } }
+						}
+					}
+				}	
+			}
+
+			custom_trigger_tooltip = {
+				tooltip = XOR_tt_inv_point_req_75
+				check_variable = {
+					var = XOR_inv_points
+					value = 75
+					compare = greater_than_or_equals
+				}
+			}
+		}
+
+		cost = 65
+
+		fire_only_once = yes
+		
+		complete_effect = {
+			hidden_effect = {
+				country_event = XOR_events.14
+				set_variable = { XOR_index = 14 }
+				XOR_send_investigation = yes
+			}
+			custom_effect_tooltip = XOR_tt_OID_coosbay
+			set_country_flag = XOR_has_started_coosbay
 		}
 	}
 }
