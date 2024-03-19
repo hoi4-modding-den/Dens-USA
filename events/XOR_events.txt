@@ -29,12 +29,15 @@ country_event = { #Entering Umatilla
 		set_country_flag = XOR_has_created_OID #Check to see if player has created OID
 		hidden_effect = {
 			retire_country_leader = yes	
-			XOR = {
-				remove_state_core = 936
-				remove_state_core = 937
+			936 = {
+				add_dynamic_modifier = {
+					modifier = XOR_unexplored_modifier
+				}
 			}
-			385 = {
-				add_core_of = XOR
+			937 = {
+				add_dynamic_modifier = {
+					modifier = XOR_unexplored_modifier
+				}
 			}
 		}
 		add_country_leader_role = { #Charles McNary becomes Leader
@@ -73,7 +76,7 @@ country_event = { #Entering Umatilla
 #### GENERIC INVESTIGATION EVENTS - OREGON EAST ####
 ####################################################
 
-country_event = { #FILLER ATM
+country_event = { #Nothing Happens
 	id = XOR_events.7
 	title = XOR_events.7.t
 	desc = XOR_events.7.desc
@@ -90,9 +93,7 @@ country_event = { #FILLER ATM
 
 	option = { 
 		name = XOR_events.7.a
-		add_to_variable = { XOR_inv_points = 500 }
 		add_to_variable = { XOR_num_inv = 1 }
-		custom_effect_tooltip = XOR_tt_inf_add_points_5
 
 		if = {
 			limit = {
@@ -119,7 +120,7 @@ country_event = { #FILLER ATM
 	}
 }
 
-country_event = { #FILLER ATM
+country_event = { #Small Success
 	id = XOR_events.8
 	title = XOR_events.8.t
 	desc = XOR_events.8.desc
@@ -136,7 +137,145 @@ country_event = { #FILLER ATM
 
 	option = { 
 		name = XOR_events.8.a
-		add_to_variable = { XOR_inv_points = 500 }
+		add_to_variable = { XOR_inv_points = 10 }
+		add_to_variable = { XOR_num_inv = 1 }
+		custom_effect_tooltip = XOR_tt_inf_add_points_10
+
+		if = {
+			limit = {
+				has_country_flag = XOR_unit1_on_generic_investigation
+			}
+			set_variable = { XOR_index = 1001 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = XOR_unit2_on_generic_investigation
+			}
+			set_variable = { XOR_index = 1002 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = XOR_unit3_on_generic_investigation
+			}
+			set_variable = { XOR_index = 1003 }
+		}
+		
+		XOR_finished_investigation = yes
+		
+		clr_country_flag = XOR_generic_8
+	}
+}
+
+country_event = { #Medium Success
+	id = XOR_events.9
+	title = XOR_events.9.t
+	desc = XOR_events.9.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	trigger = {
+		has_country_flag = XOR_generic_9
+		country_exists = XOR
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = { 
+		name = XOR_events.9.a
+		add_to_variable = { XOR_inv_points = 15 }
+		add_to_variable = { XOR_num_inv = 1 }
+		custom_effect_tooltip = XOR_tt_inf_add_points_15
+
+		if = {
+			limit = {
+				has_country_flag = XOR_unit1_on_generic_investigation
+			}
+			set_variable = { XOR_index = 1001 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = XOR_unit2_on_generic_investigation
+			}
+			set_variable = { XOR_index = 1002 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = XOR_unit3_on_generic_investigation
+			}
+			set_variable = { XOR_index = 1003 }
+		}
+		
+		XOR_finished_investigation = yes
+		
+		clr_country_flag = XOR_generic_9
+	}
+}
+
+country_event = { #Large Success
+	id = XOR_events.10
+	title = XOR_events.10.t
+	desc = XOR_events.10.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	trigger = {
+		has_country_flag = XOR_generic_10
+		country_exists = XOR
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = { 
+		name = XOR_events.10.a
+		add_to_variable = { XOR_inv_points = 20 }
+		add_to_variable = { XOR_num_inv = 1 }
+		custom_effect_tooltip = XOR_tt_inf_add_points_20
+
+		if = {
+			limit = {
+				has_country_flag = XOR_unit1_on_generic_investigation
+			}
+			set_variable = { XOR_index = 1001 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = XOR_unit2_on_generic_investigation
+			}
+			set_variable = { XOR_index = 1002 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = XOR_unit3_on_generic_investigation
+			}
+			set_variable = { XOR_index = 1003 }
+		}
+		
+		XOR_finished_investigation = yes
+		
+		clr_country_flag = XOR_generic_10
+	}
+}
+
+country_event = { #WTF Success - Leads to Burns (WTO)
+	id = XOR_events.11
+	title = XOR_events.11.t
+	desc = XOR_events.11.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	trigger = {
+		has_country_flag = XOR_generic_11
+		country_exists = XOR
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	option = { 
+		name = XOR_events.11.a
+		add_to_variable = { XOR_inv_points = 5 }
 		add_to_variable = { XOR_num_inv = 1 }
 		custom_effect_tooltip = XOR_tt_inf_add_points_5
 
@@ -161,7 +300,56 @@ country_event = { #FILLER ATM
 		
 		XOR_finished_investigation = yes
 		
-		clr_country_flag = XOR_generic_8
+		clr_country_flag = XOR_generic_11
+
+		set_country_flag = XOR_do_burns
+	}
+}
+
+country_event = { #High Desert WTO event =))
+	id = XOR_events.4
+	title = XOR_events.4.t
+	desc = XOR_events.4.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	trigger = {
+		has_country_flag = XOR_has_started_highdesert
+		country_exists = XOR
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	fire_only_once = yes
+
+	option = { 
+		name = XOR_events.4.a #This will lead to generic Oregon
+		set_country_flag = XOR_has_completed_highdesert
+		add_to_variable = { XOR_inv_points = 15 }
+		add_to_variable = { XOR_num_inv = 1 }
+		custom_effect_tooltip = XOR_tt_inf_add_points_15
+		set_variable = { XOR_index = 4 }
+		XOR_finished_investigation = yes
+		ai_chance = {
+			base = 1 #Equal Chance
+		}
+	}
+
+	option = { 
+		name = XOR_events.4.b #This will lead to WTO
+		add_political_power = -50
+		set_country_flag = XOR_has_completed_highdesert
+		set_country_flag = XOR_WELCOME_TO_OREGON_START #WILL TURN INTO WTO
+		add_to_variable = { XOR_inv_points = 15 }
+		add_to_variable = { XOR_num_inv = 1 }
+		custom_effect_tooltip = XOR_tt_inf_add_points_15
+		custom_effect_tooltip = XOR_tt_will_lead_question
+		set_variable = { XOR_index = 4 }
+		XOR_finished_investigation = yes
+		ai_chance = {
+			base = 1 #Equal Chance
+		}
 	}
 }
 
@@ -271,54 +459,6 @@ country_event = { #Bend for real this time - Oregon East
 			}	
 		}
 		
-	}
-}
-
-
-country_event = { #High Desert - Oregon East
-	id = XOR_events.4
-	title = XOR_events.4.t
-	desc = XOR_events.4.desc
-	picture = GFX_report_event_DEN_danish_politics
-
-	trigger = {
-		has_country_flag = XOR_has_started_highdesert
-		country_exists = XOR
-	}
-
-	mean_time_to_happen = {
-		days = 30
-	}
-
-	fire_only_once = yes
-
-	option = { 
-		name = XOR_events.4.a #This will lead to generic Oregon
-		set_country_flag = XOR_has_completed_highdesert
-		add_to_variable = { XOR_inv_points = 15 }
-		add_to_variable = { XOR_num_inv = 1 }
-		custom_effect_tooltip = XOR_tt_inf_add_points_15
-		set_variable = { XOR_index = 4 }
-		XOR_finished_investigation = yes
-		ai_chance = {
-			base = 1 #Equal Chance
-		}
-	}
-
-	option = { 
-		name = XOR_events.4.b #This will lead to WTO
-		add_political_power = -50
-		set_country_flag = XOR_has_completed_highdesert
-		set_country_flag = XOR_WELCOME_TO_OREGON_START #WILL TURN INTO WTO
-		add_to_variable = { XOR_inv_points = 15 }
-		add_to_variable = { XOR_num_inv = 1 }
-		custom_effect_tooltip = XOR_tt_inf_add_points_15
-		custom_effect_tooltip = XOR_tt_will_lead_question
-		set_variable = { XOR_index = 4 }
-		XOR_finished_investigation = yes
-		ai_chance = {
-			base = 1 #Equal Chance
-		}
 	}
 }
 

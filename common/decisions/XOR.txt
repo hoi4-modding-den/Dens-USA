@@ -78,13 +78,36 @@ XOR_oregon_investigation_decisions = {
 				set_variable = { XOR_index = 1001 } #1001-1003 = generic mission EAST
 				XOR_send_investigation_generic = yes
 				random_list = {
-					50 = {
+					30 = { #Nothing Happens
 						country_event = XOR_events.7
 						set_country_flag = XOR_generic_7
 					}
-					50 = {
+					50 = { #Minor
 						country_event = XOR_events.8
 						set_country_flag = XOR_generic_8
+					}
+					70 = { #Medium
+						country_event = XOR_events.9
+						set_country_flag = XOR_generic_9
+					}
+					30 = { #Large
+						country_event = XOR_events.10
+						set_country_flag = XOR_generic_10
+					}
+					50 = { #WTO
+						modifier = {
+							has_country_flag = XOR_do_burns
+							factor = 0
+						}
+						modifier = {
+							NOT = {
+								has_country_flag = XOR_do_burns
+							}
+							is_ai = yes
+							factor = 1000
+						}
+						country_event = XOR_events.11
+						set_country_flag = XOR_generic_11
 					}
 				}
 			}
@@ -257,14 +280,14 @@ XOR_oregon_investigation_decisions = {
 		}
 	}
 
-	#Investigate Burns
+	#Investigate Burns - REQUIRES A GENERIC DECISION
 	XOR_OID_high_desert = {
 
 		icon = GFX_decision_generic_operation
 		ai_will_do = {
 			base = 0
 			modifier = {
-				has_country_flag = XOR_has_completed_bend_pt2
+				has_country_flag = XOR_do_burns
 				factor = 1000
 			}
 		}
@@ -275,6 +298,7 @@ XOR_oregon_investigation_decisions = {
 		
 		visible = {
 			has_completed_focus = XOR_explore_east
+			has_country_flag = XOR_do_burns
 		}
 		available = {
 			has_completed_focus = XOR_explore_east
@@ -305,7 +329,7 @@ XOR_oregon_investigation_decisions = {
 			
 		}
 
-		cost = 75
+		cost = 25
 
 		fire_only_once = yes
 		
