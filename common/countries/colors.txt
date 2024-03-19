@@ -960,8 +960,8 @@ XNV = {
 	color_ui = rgb { 240 210 121 }
 }
 NVD = {
-	color = rgb { 240 210 121 }
-	color_ui = rgb { 240 210 121 }
+	color = rgb { 33 45 96 }
+	color_ui = rgb { 33 45 96 }
 }
 XNJ = {
 	color = rgb { 89 127 197 }

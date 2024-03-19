@@ -1,6 +1,6 @@
 characters = {
     XID_Len_Jordan = {
-        name = "Len Jordam"
+        name = "Len Jordan"
         portraits = {
             civilian = {
                 large = gfx/leaders/XID/XID_LenJordan.dds
