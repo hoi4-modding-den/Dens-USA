@@ -36,5 +36,53 @@ units = {
 		start_equipment_factor = 1
 
 	}
+	division = { 
+		name =  "Intelligentsia Militia"
+		location = 12501
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name =  "Intelligentsia Militia"
+		location = 12501
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name =  "Ku Klux Klan Militia"
+		location = 10824
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name =  "Ku Klux Klan Militia"
+		location = 7797
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name =  "Agrarian Militia"
+		location = 1758
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division = { 
+		name =  "Agrarian Militia"
+		location = 7791
+		division_template = "Militia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
 }
 

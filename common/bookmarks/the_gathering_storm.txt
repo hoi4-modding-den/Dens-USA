@@ -35,12 +35,12 @@ bookmarks = {
 
 		"XTN" ={
 
-			history = ""
+			history = "XTN_book_descr"
 			ideology = democratic
 			focuses = {
-				XTN_total_war
-				XTN_chill_in_jamaica
-				XTN_american_revolution
+				XTN_spirit_of_dixie
+				XTN_create_agrarian_party
+				XTN_egoist_revolution
 			}
 			ideas = {
 				XTN_inteligensia_influence
