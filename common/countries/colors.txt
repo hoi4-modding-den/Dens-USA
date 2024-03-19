@@ -1080,3 +1080,38 @@ WS5 = {
 	color = rgb { 115 95 105 }
 	color_ui = rgb { 95 95 95 }
 }
+
+ZBJ = {
+	color = rgb { 20 6 19 }
+	color_ui = rgb { 20 6 19 }
+}
+
+ZMX = {
+	color = rgb { 3 14 20 }
+	color_ui = rgb { 3 14 20 }
+}
+
+ZLL = {
+	color = rgb { 17 7 11 }
+	color_ui = rgb { 17 7 11 }
+}
+
+ZFR = {
+	color = rgb { 13 14 20 }
+	color_ui = rgb { 13 14 20 }
+}
+
+ZON = {
+	color = rgb { 20 18 11 }
+	color_ui = rgb { 20 18 11 }
+}
+
+ZPR = {
+	color = rgb { 3 11 16 }
+	color_ui = rgb { 3 11 16 }
+}
+
+ZBC = {
+	color = rgb { 15 9 10 }
+	color_ui = rgb { 15 9 10 }
+}

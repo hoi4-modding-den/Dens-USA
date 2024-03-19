@@ -11,7 +11,7 @@ state={
 	}
 	
 	history={
-		owner = LIB # MEX
+		owner = ZLL # MEX
 		#add_core_of = MEX
 		victory_points = {
 			1965 25

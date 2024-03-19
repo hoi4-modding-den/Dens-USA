@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = LIB # CAN
+		owner = ZON # CAN
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1

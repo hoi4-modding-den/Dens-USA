@@ -5,7 +5,7 @@ state={
 		983 1341 1764 3911 7435 7875 10249 10700 11682 11902 12205 12276 
 	}
 	history = {
-		owner = LIB # CAN
+		owner = ZFR # CAN
 		#add_core_of = CAN
 	}
 	manpower=80000
