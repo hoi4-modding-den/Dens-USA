@@ -5,4 +5,11 @@ XOR_running_investigation = {
 	political_power_gain = XOR_unit_cost_pp
 }
 
-
+XOR_unexplored_modifier = {
+	icon = GFX_modifiers_XOR_unexplored
+	enable = { always = yes }
+	local_factories = -2
+	local_building_slots = 0
+	local_resources = 0
+	recruitable_population = 0
+}

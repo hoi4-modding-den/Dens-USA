@@ -143,12 +143,39 @@
  XOR_events.5.a:0 "A Victory for Oregon!"
  XOR_tt_unlock_political_focus_tree:0 "Unlocks §YPolitical§! Focus Tree Branch."
 
+ ## GENERIC EAST ##
+ XOR_events.7.t:0 "Investigative Team returns Inconclusively"
+ XOR_events.7_desc:0 ""
+ XOR_events.7.a:0 ""
+
+ XOR_events.8.t:0 "Investigative Team returns with Minor Information"
+ XOR_events.8_desc:0 ""
+ XOR_events.8.a:0 ""
+
+ XOR_events.9.t:0 "Investigative Team returns with Moderate Information"
+ XOR_events.9_desc:0 ""
+ XOR_events.9.a:0 ""
+
+ XOR_events.10.t:0 "Investigative Team returns with Major Information"
+ XOR_events.10_desc:0 ""
+ XOR_events.10.a:0 ""
+
+ XOR_events.11.t:0 "Investigative Team returns?..."
+ XOR_events.11_desc:0 ""
+ XOR_events.11.a:0 ""
+
+
+
+
  #Investigation Requirements custom tooltips
  XOR_tt_inf_add_points_5:0 "Adds §Y5§! Investigative Experience"
  XOR_tt_inf_add_points_10:0 "Adds §Y10§! Investigative Experience"
  XOR_tt_inf_add_points_15:0 "Adds §Y15§! Investigative Experience"
+ XOR_tt_inf_add_points_20:0 "Adds §Y20§! Investigative Experience"
  XOR_tt_inf_add_points_30:0 "Adds §Y30§! Investigative Experience"
  
  XOR_tt_inv_point_req_30:0 "Has §Y30§! Investigative Experience"
  XOR_tt_inv_point_req_40:0 "Has §Y40§! Investigative Experience"
+ XOR_tt_inv_point_req_75:0 "Has §Y75§! Investigative Experience"
  XOR_tt_inv_point_req_125:0 "Has §Y125§! Investigative Experience"
+

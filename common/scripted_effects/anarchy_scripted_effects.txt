@@ -1,0 +1,19 @@
+anarchy_tag_setup = {
+	set_country_flag = anarchy_tag
+	add_ideas = anarchy_idea
+	set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+	create_country_leader = {
+		name = "Anarchy"
+		picture = "GFX_portrait_anarchy"
+		ideology = anarchism
+	}
+	every_owned_state = {
+		add_core_of = PREV
+	}
+}

@@ -7,7 +7,7 @@ state={
 	state_category = rural
 	
 	resources={
-		steel=16 #18 # was: 32
+		steel=13 #18 # was: 32
 		chromium=1 #1 was: 2
 		tungsten=15 #18 # was: 34
 	}
@@ -15,8 +15,11 @@ state={
 	history={
 		owner = XID
 		add_core_of = XID
+		add_core_of = NVD
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
 		}
 		#add_core_of = USA
 		victory_points = {

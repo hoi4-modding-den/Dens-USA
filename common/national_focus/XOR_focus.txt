@@ -146,10 +146,10 @@ focus_tree = {
 				has_country_flag = XOR_has_created_OID
 			}
 			custom_trigger_tooltip = {
-				tooltip = XOR_tt_inv_point_req_40
+				tooltip = XOR_tt_inv_point_req_75
 				check_variable = {
 					var = XOR_inv_points
-					value = 40
+					value = 75
 					compare = greater_than_or_equals
 				}
 			}

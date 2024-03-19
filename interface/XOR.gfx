@@ -19,6 +19,10 @@ spriteTypes = {
 		name = "GFX_ideology_XOR_investigative_dept_ideology"
 		texturefile = gfx/interface/ideologies/XOR_investigative_dept_ideology.dds
 	}
+	spriteType = {
+		name = "GFX_modifiers_XOR_unexplored"
+		texturefile = gfx/interface/state_modifiers/modifiers_XOR_unexplored.dds
+	}
 
 	
 }

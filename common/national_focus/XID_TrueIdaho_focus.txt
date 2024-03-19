@@ -1,0 +1,37 @@
+focus_tree = {
+	id = XID_TrueIdaho_focus
+
+	country = {
+
+        factor = 0
+
+	 }
+	 default = no
+	 continuous_focus_position = { x = 100 y = 3000 }
+
+	 focus = {
+		id = XID_Winner
+
+		prerequisite = {}
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 5
+		y = 3
+		cost = 1
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		}
+     }
+
+} #endbracketlol

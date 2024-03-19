@@ -133,6 +133,29 @@ bookmarks = {
 			}
 		}
 
+		"NVD"={
+			minor = yes
+			history = "NVD_Bookmark_desc"
+			ideology = democratic
+			ideas = {
+				XNV_GreatDepression
+			}
+			focuses = {
+				XID_SeekIndependence
+				XID_ReclaimLand
+			}
+		}		
+		"XID"={
+			minor = yes
+			history = "XID_Bookmark_desc"
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+				XID_BringBackThrone
+				XID_ReclaimLand
+			}
+		}	
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

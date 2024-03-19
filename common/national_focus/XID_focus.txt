@@ -216,4 +216,30 @@ focus_tree = {
 
 		}
      }
+	 focus = {
+		id = XID_JointFin
+
+		prerequisite = {focus = XID_ReclaimLand }
+		mutually_exclusive = {}
+		
+		icon = GFX_focus_CHL_protect_the_easter_island
+		available = {
+            always = no
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 7.5
+		y = 10
+		cost = 1
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+	 		load_focus_tree = XID_TrueIdaho_focus
+		}
+     }
 } #endbracketlol

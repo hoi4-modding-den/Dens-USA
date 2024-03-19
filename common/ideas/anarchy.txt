@@ -1,0 +1,55 @@
+ideas = {
+	country = {
+		anarchy_idea = {
+            picture = undisturbed_isolation 
+            modifier = {
+                political_power_cost = 0.01
+				conscription = 0.01
+				training_time_factor = -1.0
+			}
+		}
+
+		anarchy_idea_max = {
+			name = anarchy_idea
+			picture = undisturbed_isolation
+			modifier = {
+				disabled_ideas = 1
+				drift_defence_factor = 1
+				enemy_justify_war_goal_time = 1
+				guarantee_cost = 1
+				justify_war_goal_time = 1
+				production_factory_max_efficiency_factor = -1
+				production_speed_buildings_factor = -1
+			}
+		}
+	}
+
+	mobilization_laws = {
+		anarchy_no_manpower = {
+			picture = disarmed_nation
+			cost = 150
+			removal_cost = -1
+			level = 7
+
+			allowed = {
+				always = no
+			}
+
+			allowed_to_remove = {
+				always = no
+			}
+
+			modifier = {
+				ai_desired_divisions_factor = -1
+				ai_focus_military_equipment_factor = -1
+				ai_focus_naval_air_factor = -1
+				ai_focus_naval_factor = -1
+				ai_focus_aviation_factor = -1
+				conscription = -1
+				training_time_factor = 1	
+			}
+
+			cancel_if_invalid = no
+		}
+	}
+}

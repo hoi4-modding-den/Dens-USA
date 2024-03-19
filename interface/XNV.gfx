@@ -27,4 +27,9 @@ spriteTypes = {
 		name = "GFX_goal_XNV_NNSP"
 		texturefile = "gfx/XNV_focuses/XNV_NNSP.dds"
 	}
+	#IdahoPuppetState
+    spriteType = {
+        name = "GFX_NevadaIdahoPuppet_State_icon"
+        textureFile = "gfx/XNV_Autonomy/NevadaIdahoPuppet_icon.dds"
+    }
 }

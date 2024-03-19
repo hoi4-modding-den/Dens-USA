@@ -8,7 +8,7 @@ state={
 		add_core_of = XOR
 		buildings = {
 			infrastructure = 2
-			#industrial_complex = 2 <- Will have
+			industrial_complex = 1 # <- Will have 3
 		}
 		victory_points = {
 			4274 1 

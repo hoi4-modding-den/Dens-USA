@@ -30,7 +30,18 @@ set_popularities = {
 }
 
 XNV = {
-	puppet = NVD
+	if = {
+		limit = {
+			has_dlc = "Together for Victory"
+		}
+		set_autonomy = {
+			target = NVD
+			autonomy_state = NevadaIdahoPuppet_State
+		}
+	}
+	else = {
+		puppet = NVD
+	}
 }
 
 add_ideas = XNV_GreatDepression
