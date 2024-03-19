@@ -556,6 +556,35 @@ logistics_skill = 4
 	
 	}
 
+	XTN_ernst_hell = {
+		name = "Ernst-Eberhard Hell"
+		portraits = {
+			army = {
+				small = "GFX_idea_GER_ernst-eberhard_hell"
+			}
+		}
+
+		advisor = {
+			slot = theorist
+			idea_token = ETH_haile_selassie
+			allowed = {
+				original_tag = XTN
+			}
+			visible = {
+				
+				has_completed_focus = XTN_invite_ger
+
+			}
+			available = {
+				has_completed_focus = XTN_invite_ger
+			}
+			traits = {
+				blitzkrieg_theorist 
+			}
+		}
+	
+	}
+
 
 
 

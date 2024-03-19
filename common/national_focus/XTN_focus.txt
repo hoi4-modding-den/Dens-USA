@@ -1002,6 +1002,54 @@ add_popularity = {
     }
 
     focus = {
+    id = XTN_invite_ger
+    x = 74
+    y = 16
+    icon = GFX_focus_ger_revive_kaiserreich
+
+    prerequisite = {focus = XTN_legitimize_CSA_gov}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_political_power = 150
+
+
+
+        }
+        
+
+    }
+
+    focus = {
+    id = XTN_german_tech_support
+    x = 74
+    y = 17
+    icon = GFX_focus_ARG_fascist_researchers
+
+    prerequisite = {focus = XTN_invite_ger}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_tech_bonus = {
+        bonus = 1
+        uses = 1
+        category = armor
+            }        
+
+
+
+        }
+        
+
+    }
+
+    focus = {
     id = XTN_conquer_deseret
     x = 71
     y = 16

@@ -9,6 +9,7 @@ recruit_character = XTN_WJS
 
 ##### additionals
 
+recruit_character = XTN_ernst_hell
 recruit_character = XTN_addis_molla
 recruit_character = XTN_haile_selassie
 recruit_character = XTN_supreme_soviet

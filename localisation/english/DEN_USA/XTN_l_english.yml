@@ -1204,3 +1204,9 @@ XTN_colorado_war_desc:0 ""
 
 XTN_american_dream_CSA:0 "Confederate Dream"
 XTN_american_dream_CSA_desc:0 "We have fully united the South, but it's not yet time to rest."
+
+XTN_invite_ger:0 "Invite German Advisors"
+XTN_invite_ger_desc:0 "Nazi Germany is our most important ally. We shall ask for their support."
+
+XTN_german_tech_support:0 "German Tech Support"
+XTN_german_tech_support_desc:0 "Our millitary is lacking in tanks. We shall ask our beautiful friends to give us some guide to modernization of mechanized cavalery."
