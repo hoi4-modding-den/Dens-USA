@@ -7,6 +7,20 @@ recruit_character = XTN_benjamin_tucker
 recruit_character = XTN_jim_morrison
 recruit_character = XTN_WJS
 
+recruit_character = XTN_jacob_austin
+recruit_character = XTN_konstantin_rodzaevsky
+recruit_character = XTN_rule_of_citizens
+recruit_character = XTN_rule_of_citizens_3
+recruit_character = XTN_rule_of_citizens_2
+recruit_character = XTN_holly_collins
+recruit_character = XTN_kate_cox
+recruit_character = XTN_jake_poole
+recruit_character = XTN_joel_reynolds
+recruit_character = XTN_freddie_knight
+recruit_character = XTN_ashton_johnson
+recruit_character = XTN_tyson_moody
+recruit_character = XTN_spencer_macdonald
+
 ##### additionals
 
 recruit_character = XTN_ernst_hell

@@ -566,7 +566,7 @@ logistics_skill = 4
 
 		advisor = {
 			slot = theorist
-			idea_token = ETH_haile_selassie
+			idea_token = XTN_ernst_hell_idea
 			allowed = {
 				original_tag = XTN
 			}
@@ -580,6 +580,315 @@ logistics_skill = 4
 			}
 			traits = {
 				blitzkrieg_theorist 
+			}
+		}
+	
+	}
+
+	XTN_jacob_austin = {
+		name = "Jacob Austin"
+		portraits = {
+			army = {
+				small = "GFX_portrait_Finland_Generic_land_3_small"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XTN_ernst_hell_idea
+			allowed = {
+				original_tag = XTN
+			}
+			traits = {
+				prince_of_terror 
+			}
+		}
+	
+	}
+
+	XTN_konstantin_rodzaevsky = {
+		name = "Konstantin Rodzaevsky"
+		portraits = {
+			army = {
+				small = "GFX_idea_SOV_konstantin_rodzaevsky"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XTN_konstantin_rodzaevsky_idea
+			allowed = {
+				original_tag = XTN
+			}
+			available = {has_government = fascism}
+			traits = {
+				SWI_fascist_propagandist 
+			}
+		}
+	
+	}
+
+	XTN_rule_of_citizens = {
+		name = "Rule of Citizens"
+		portraits = {
+			army = {
+				small = "GFX_idea_prc_low_popular_support3"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XTN_rule_of_citizens_idea
+			allowed = {
+				original_tag = XTN
+			}
+			available = {has_government = neutrality}
+			traits = {
+				anarchist_zeal 
+			}
+		}
+	
+	}
+	XTN_rule_of_citizens_2 = {
+		name = "Rule of Citizens"
+		portraits = {
+			army = {
+				small = "GFX_idea_prc_low_popular_support3"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XTN_rule_of_citizens_2_idea
+			allowed = {
+				original_tag = XTN
+			}
+			available = {has_government = neutrality}
+			traits = {
+				international_anarchist 
+			}
+		}
+	
+	}
+	XTN_rule_of_citizens_3 = {
+		name = "Rule of Citizens"
+		portraits = {
+			army = {
+				small = "GFX_idea_prc_low_popular_support3"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XTN_rule_of_citizens_3_idea
+			allowed = {
+				original_tag = XTN
+			}
+			available = {has_government = neutrality}
+			traits = {
+				transnational_anarchist 
+			}
+		}
+	
+	}
+
+	XTN_holly_collins = {
+		name = "Holly Collins"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_political_advisor_female_europe"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XTN_holly_collins_idea
+			allowed = {
+				original_tag = XTN
+			}
+			traits = {
+				liberal_professor 
+			}
+		}
+	
+	}
+
+	XTN_kate_cox = {
+		name = "Kate Cox"
+		portraits = {
+			army = {
+				small = "GFX_idea_asia_generic_female_1"
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = XTN_kate_cox_idea
+			allowed = {
+				original_tag = XTN
+			}
+			traits = {
+				army_artillery_1 
+			}
+		}
+	
+	}
+
+	XTN_jake_poole = {
+		name = "Jake Poole"
+		portraits = {
+			army = {
+				small = "GFX_idea_USA_generic_land_1"
+				large="GFX_Portrait_USA_Generic_land_6"
+			}
+		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = XTN_jake_poole_idea
+			allowed = {
+				original_tag = XTN
+			}
+			traits = {
+				army_infantry_1 
+			}
+		}
+	corps_commander = {
+    skill = 2
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 1
+    logistics_skill = 3
+	}
+	
+	}
+
+	XTN_joel_reynolds = {
+		name = "Joel Reynolds"
+		portraits = {
+			army = {
+				small = "GFX_idea_USA_generic_land_5"
+				large="GFX_Portrait_USA_Generic_land_5"
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = XTN_joel_reynolds_idea
+			ledger = army
+			allowed = {
+				original_tag = XTN
+			}
+			traits = {
+				army_concealment_1 
+			}
+		}
+	corps_commander = {
+    skill = 3
+    attack_skill = 4
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
+	}
+	
+	}
+
+	XTN_freddie_knight = {
+		name = "Freddie Knight"
+		portraits = {
+			army = {
+				small = "GFX_idea_USA_william_dudley_pelley"
+				large="GFX_portrait_William_Dudley_Pelley"
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = XTN_freddie_knight_idea
+			ledger = army
+			allowed = {
+				original_tag = XTN
+			}
+			available = {has_government = fascism}
+			traits = {
+				army_cavalry_3 
+			}
+		}
+	corps_commander = {
+    skill = 2
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 1
+    logistics_skill = 1
+	}
+	
+	}
+
+	XTN_ashton_johnson = {
+		name = "Ashton Johnson"
+		portraits = {
+			army = {
+				small = "GFX_idea_ITA_alberto_da_zara"
+				large="GFX_Portrait_Italy_Generic_land_5"
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = XTN_ashton_johnson_idea
+			ledger = army
+			allowed = {
+				original_tag = XTN
+			}
+
+			traits = {
+				army_armored_2 
+			}
+		}
+	
+	}
+
+	XTN_tyson_moody = {
+		name = "Tyson Moody"
+		portraits = {
+			army = {
+				small = "GFX_idea_LAT_vilis_lacis"
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = XTN_tyson_moody_idea
+			ledger = army
+			allowed = {
+				original_tag = XTN
+			}
+
+			traits = {
+				army_entrenchment_1 
+			}
+		}
+	
+	}
+
+	XTN_spencer_macdonald = {
+		name = "Spencer Macdonald"
+		portraits = {
+			army = {
+				small = "GFX_idea_GER_generic_land_5"
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = XTN_spencer_macdonald_idea
+			ledger = army
+			allowed = {
+				original_tag = XTN
+			}
+
+			traits = {
+				army_chief_morale_2 
 			}
 		}
 	
