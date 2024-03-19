@@ -73,3 +73,20 @@ DEN_state_is_in_america = {
 		region = 219
 	}
 }
+
+## Prevents the player from declaring war on the distant anarchy, and vice versa.
+is_diplomatic_action_valid_generate_wargoal = {
+	NOT = {
+		original_tag = LIB
+		FROM = { original_tag = LIB }
+	}
+}
+
+is_diplomatic_action_valid_declare_war = {
+	NOT = {
+		OR = {
+			original_tag = LIB
+			FROM = { original_tag = LIB }
+		}
+	}
+}
