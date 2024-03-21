@@ -19,6 +19,17 @@ bookmarks = {
 			}
 		}
 		
+		"XNJ"={
+			history = XNJ_description
+			ideology = democratic
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
 		"XNN"={
 			history = XNN_description
 			ideology = democratic
@@ -105,18 +116,6 @@ bookmarks = {
 				XAL_our_religion
 			}
 		}		
-		"XNJ"={
-			history = XNJ_description
-			ideology = democratic
-			ideas = {
-				XNJ_hate_hoffman
-				XNJ_gravel_state
-				XNJ_raritan_putsch
-			}
-			focuses = {
-
-			}
-		}
 
 		"XMD"={
 			minor = yes

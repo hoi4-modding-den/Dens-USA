@@ -1,0 +1,142 @@
+focus_tree = {
+	id = xnj_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = XNJ
+		}
+	}
+	
+	default = no
+	reset_on_civilwar = no
+	
+	continuous_focus_position = { x = 50 y = 1500 }
+	
+	focus = {
+		id = XNJ_the_first_trumpet
+		icon = GFX_goal_generic_consumer_goods
+		x = 12
+		y = 1
+        cost = 3
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	focus = {
+		id = XNJ_a_plan
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+        cost = 3
+
+		relative_position_id = XNJ_the_first_trumpet
+		prerequisite = { focus = XNJ_the_first_trumpet }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	focus = {
+		id = XNJ_not_quite_enough_time
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+        cost = 3
+
+		relative_position_id = XNJ_a_plan
+		prerequisite = { focus = XNJ_a_plan }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	focus = {
+		id = XNJ_artists_of_the_world
+		icon = GFX_goal_generic_consumer_goods
+		x = -1
+		y = 1
+        cost = 3
+
+		relative_position_id = XNJ_the_first_trumpet
+		prerequisite = { focus = XNJ_the_first_trumpet }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	focus = {
+		id = XNJ_statues_of_critics
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+        cost = 3
+
+		relative_position_id = XNJ_artists_of_the_world
+		prerequisite = { focus = XNJ_artists_of_the_world }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+	focus = {
+		id = XNJ_the_second_trumpet
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 1
+        cost = 3
+
+		relative_position_id = XNJ_statues_of_critics
+		prerequisite = { focus = XNJ_statues_of_critics }
+		prerequisite = { focus = XNJ_not_quite_enough_time }
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+		ai_will_do = { 
+			factor = 1
+		}
+	}
+}

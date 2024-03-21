@@ -1,11 +1,8 @@
 ﻿l_english:
- XNJ: "New Jersey"
- XNJ_DEF: "New Jersey"
- XNJ_ADJ: "New Jersey"
+ XNJ: "ISCAP"
+ XNJ_DEF: "ISCAP"
+ XNJ_ADJ: "ISCAP"
  VICTORY_POINTS_11782:0 "Trenton"
  VICTORY_POINTS_11900:0 "Salem"
- XNJ_description:0 "After the collapse of the union, governor Harold Hoffman has managed to stay in power as the fledgling nation's first president. With popular support for the government nearly at rock bottom, and shady groups popping up wherever they please, the future of the republic is uncertain."
- XNJ_hate_hoffman:0 "We Hate Hoffman!"
- XNJ_gravel_state:0 "Capital of America(n Gravel Services)"
- XNJ_raritan_putsch:0 "Raritan Hall Putsch"
+ XNJ_description:0 "After the collapse of the union, New Jersey was split into many factions, each controlling only a few towns or cities. Rising to the top was ISCAP, the International Society of Composers and Producers. Now a safehaven of creation, performence, and expression in (almost) all forms, the land controlled by the Society must learn how to defend itself, or fall to the other growing factions in the former states."
  
