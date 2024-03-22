@@ -9,6 +9,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+recruit_character = XFL_David_Sholtz
+
 set_popularities = {
 	neutrality = 25
 	democratic = 25

@@ -9,6 +9,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+recruit_character = XKS_Alf_Landon
+
 set_popularities = {
 	neutrality = 25
 	democratic = 25

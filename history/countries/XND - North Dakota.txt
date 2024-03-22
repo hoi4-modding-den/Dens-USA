@@ -11,6 +11,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+recruit_character = XND_Walter_Welford
+
 set_popularities = {
 	democratic = 100
 }

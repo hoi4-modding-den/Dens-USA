@@ -9,6 +9,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+recruit_character = XWA_Clarence_Martin
+
 set_popularities = {
 	neutrality = 25
 	democratic = 25

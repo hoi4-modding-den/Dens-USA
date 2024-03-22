@@ -9,6 +9,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+recruit_character = XNC_John_Ehringhaus
+
 set_popularities = {
 	neutrality = 25
 	democratic = 25

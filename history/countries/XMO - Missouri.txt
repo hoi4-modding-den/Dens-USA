@@ -9,6 +9,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+recruit_character = XMO_Guy_Park
+
 set_popularities = {
 	neutrality = 25
 	democratic = 25

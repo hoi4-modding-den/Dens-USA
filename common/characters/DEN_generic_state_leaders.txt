@@ -1,0 +1,438 @@
+# IF YOUR STATE HAS A LEADER, REMOVE THE CHARACTER FOR YOUR STATE FROM THIS FILE!
+
+characters = {
+	XWV_Herman_Kump = {
+		name = "Herman G. Kump"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XWI_Philip_Follette = {
+		name = "Philip La Follette"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			}
+		}
+		country_leader = {
+			ideology = populism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XWA_Clarence_Martin = {
+		name = "Clarence D. Martin"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XTX_James_Allred = {
+		name = "James Burr V Allred"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/portrait_europe_generic_land_19.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XSD_Tom_Berry = {
+		name = "Tom Berry"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XSC_Olin_Johnston = {
+		name = "Olin D. Johnston"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XPA_George_Earle = {
+		name = "George Howard Earle III"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XOK_EW_Marland = {
+		name = "E. W. Marland"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XOH_Martin_Davey = {
+		name = "Martin L. Davey"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XNY_Herbert_Lehman = {
+		name = "Herbert Lehman"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XNM_Clyde_Tingley = {
+		name = "Clyde Tingley"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XNE_Robert_Cochran = {
+		name = "Robert Leroy Cochran"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XND_Walter_Welford = {
+		name = "Walter Welford"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XNC_John_Ehringhaus = {
+		name = "John C. B. Ehringhaus"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XMT_Elmer_Holt = {
+		name = "Elmer Holt"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+	
+	XMS_Hugh_White = {
+		name = "Hugh L. White"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XMO_Guy_Park = {
+		name = "Guy Brasfield Park"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XMN_Floyd_Olson = {
+		name = "Floyd B. Olson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XLA_James_Noe = {
+		name = "James A. Noe"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XKY_Happy_Chandler = {
+		name = "Happy Chandler"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XKS_Alf_Landon = {
+		name = "Alf Landon"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/portrait_USA_alf_landon.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XIL_Henry_Horner = {
+		name = "Henry Horner"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XIA_Clyde_Herring = {
+		name = "Clyde Herring"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/portrait_europe_generic_5.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XGA_Eugene_Talmadge = {
+		name = "Eugene Talmadge"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/portrait_europe_generic_land_19.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XFL_David_Sholtz = {
+		name = "David Sholtz"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/portrait_europe_generic_6.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XCO_Edwin_Johnson = {
+		name = "Edwin C. Johnson"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/portrait_europe_generic_land_13.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XCA_Frank_Merriam = {
+		name = "Frank Merriam"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XAZ_Benjamin_Moeur = {
+		name = "Benjamin Baker Moeur"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/portrait_europe_generic_4.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+
+	XAR_Junius_Futrell = {
+		name = "Junius Mario Futrell"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Europe/portrait_europe_generic_6.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {  }
+			expire = "2050.3.1.1"
+			id = -1
+		}
+	}
+}

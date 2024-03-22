@@ -17,3 +17,4 @@ set_popularities = {
 }
 
 recruit_character = XOH_lajos_kossuth
+recruit_character = XOH_Martin_Davey

@@ -9,6 +9,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+recruit_character = XIA_Clyde_Herring
+
 set_popularities = {
 	neutrality = 25
 	democratic = 25

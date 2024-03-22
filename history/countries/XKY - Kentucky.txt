@@ -9,6 +9,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+recruit_character = XKY_Happy_Chandler
+
 set_popularities = {
 	neutrality = 25
 	democratic = 25

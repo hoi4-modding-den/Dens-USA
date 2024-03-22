@@ -9,6 +9,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+recruit_character = XCO_Edwin_Johnson
+
 set_popularities = {
 	neutrality = 25
 	democratic = 25

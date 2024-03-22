@@ -9,6 +9,8 @@ set_politics = {
 	elections_allowed = no
 }
 
+recruit_character = XOK_EW_Marland
+
 set_popularities = {
 	neutrality = 25
 	democratic = 25

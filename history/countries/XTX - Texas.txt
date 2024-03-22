@@ -8,6 +8,9 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
+recruit_character = XTX_James_Allred
+
 set_popularities = {
 	neutrality = 83
 	democratic = 9
