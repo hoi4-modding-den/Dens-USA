@@ -11,11 +11,9 @@ set_politics = {
 	elections_allowed = no
 }
 
-recruit_character = XMT_Elmer_Holt
-
 set_popularities = {
-	neutrality = 25
-	democratic = 25
-	communism = 25
-	fascism = 25
+	neutrality = 5
+	democratic = 80
+	communism = 3
+	fascism = 12
 }
