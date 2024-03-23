@@ -82,6 +82,17 @@ leader_traits = {
 
 	}
 
+		XTN_militias_trait = {
+		random = no
+		
+		army_core_defence_factor = 0.15
+		non_core_manpower = 0.05
+
+
+
+
+	}
+
 
 
 }

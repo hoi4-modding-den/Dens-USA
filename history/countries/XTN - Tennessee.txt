@@ -20,6 +20,12 @@ recruit_character = XTN_freddie_knight
 recruit_character = XTN_ashton_johnson
 recruit_character = XTN_tyson_moody
 recruit_character = XTN_spencer_macdonald
+recruit_character = XTN_oscar_morris
+recruit_character = XTN_militia_groups
+recruit_character = XTN_louis_thomas
+recruit_character = XTN_lionel_zimmerman
+recruit_character = XTN_leenane_mac_uistein
+recruit_character = XTN_ion_o_maoilriain
 
 ##### additionals
 

@@ -833,5 +833,14 @@ ideas = {
             political_power_gain = 0.25
             }
         }
+    XTN_protestant_state = {
+           removal_cost = -1
+            picture = CHL_conservative_party_in_power
+            modifier = {
+            political_power_gain = 0.25
+            fascism_drift = 0.05
+            stability_factor = -0.05
+            }
+        }
     }
 }
