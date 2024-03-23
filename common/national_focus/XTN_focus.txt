@@ -2418,17 +2418,15 @@ add_advisor_role = {
 
         set_cosmetic_tag = XTN_jah_state
         315 = {add_core_of = XTN}
-        315 = { transfer_state_to = XTN }
-        690 = {add_core_of = XTN}
-        690 = { transfer_state_to = XTN }          
+        690 = {add_core_of = XTN}      
         693 = {add_core_of = XTN}
-        693 = { transfer_state_to = XTN }  
         695 = {add_core_of = XTN}
-        695 = { transfer_state_to = XTN }  
         318 = {add_core_of = XTN}
-        318 = { transfer_state_to = XTN } 
         319 = {add_core_of = XTN}
-        319 = { transfer_state_to = XTN }   
+            declare_war_on = {
+            target = ZCR
+            type = annex_everything
+                }  
         }
         
 
@@ -3685,7 +3683,7 @@ add_popularity = {
     icon = GFX_focus_generic_annex_country_2
 
     prerequisite = { focus = XTN_american_revolution }
-    available = {LIB = {controls_state = 690 controls_state = 693}}
+ 
     bypass = { NOT = {LIB = {controls_state = 690 controls_state = 693}}}
 
     cost = 10
@@ -3693,8 +3691,12 @@ add_popularity = {
 
         completion_reward = {
 
-           690 = { transfer_state_to = XTN }
-           693 = { transfer_state_to = XTN }
+            declare_war_on = {
+            target = ZBA
+            type = annex_everything
+                }
+
+        
            XTN = {add_state_core = 690 add_state_core = 693}
 
 
