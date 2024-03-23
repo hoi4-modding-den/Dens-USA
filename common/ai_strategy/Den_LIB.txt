@@ -1,6 +1,17 @@
 DEN_LIB_dont_interact = {
 	enable = {
-		original_tag = LIB
+		OR = {
+			original_tag = LIB
+			original_tag = ZBC
+			original_tag = ZBJ
+			original_tag = ZFR
+			original_tag = ZLL
+			original_tag = ZMX
+			original_tag = ZON
+			original_tag = ZPR
+			original_tag = ZCR
+			original_tag = ZBA
+		}
 	}
 	abort = {
 		always = no

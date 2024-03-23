@@ -10,7 +10,7 @@ state= {
 	state_category = town
 
 	history= {
-		owner = LIB # CUB
+		owner = ZCR # CUB
 		#add_core_of = CUB
 		victory_points = {
 			7622 5 

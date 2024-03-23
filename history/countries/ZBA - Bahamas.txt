@@ -1,0 +1,2 @@
+capital = 690
+anarchy_tag_setup = yes

@@ -7,7 +7,7 @@ state={
 
 	history={
 		#add_core_of = JAM
-		owner = LIB # ENG
+		owner = ZCR # ENG
 		victory_points = {
 			12304 1 
 		}

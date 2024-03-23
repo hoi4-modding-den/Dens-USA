@@ -1115,3 +1115,13 @@ ZBC = {
 	color = rgb { 15 9 10 }
 	color_ui = rgb { 15 9 10 }
 }
+
+ZBA = {
+	color = rgb { 30 10 10 }
+	color_ui = rgb { 30 10 10 }
+}
+
+ZCR = {
+	color = rgb { 12 27 5 }
+	color_ui = rgb { 12 27 5 }
+}
