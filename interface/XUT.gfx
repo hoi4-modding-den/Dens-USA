@@ -36,4 +36,20 @@ spriteTypes = {
 		name = "GFX_goal_cwv"
 		texturefile = "gfx/XUT_gfx/XUT_focus_cwv.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_dem_influence"
+		texturefile = "gfx/XUT_gfx/XUT_focus_democratic_inf.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XUT_inv_n"
+		texturefile = "gfx/XUT_gfx/XUT_focus_inv_n.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XUT_inv_no"
+		texturefile = "gfx/XUT_gfx/XUT_focus_inv_no.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XUT_inv_w"
+		texturefile = "gfx/XUT_gfx/XUT_focus_inv_w.dds"
+	}
 }

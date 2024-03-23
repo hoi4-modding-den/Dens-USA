@@ -383,7 +383,7 @@
 	}
 	focus = {
 		id = XUT_ensure_neighbor_stability
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_dem_influence
 		prerequisite = { focus = XUT_western_alliance }
 		x = 0
 		y = 1
@@ -422,7 +422,7 @@
 	}
 	focus = {
 		id = XUT_invite_neighbors
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_XUT_inv_n
 		prerequisite = { focus = XUT_ensure_neighbor_stability }
 		x = 0
 		y = 1
@@ -476,7 +476,7 @@
 	}
 	focus = {
 		id = XUT_north_influence
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_dem_influence
 		prerequisite = { focus = XUT_western_alliance }
 		x = 2
 		y = 1
@@ -512,7 +512,7 @@
 	}
 	focus = {
 		id = XUT_invite_north
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_XUT_inv_no
 		prerequisite = { focus = XUT_north_influence }
 		x = 0
 		y = 1
@@ -558,7 +558,7 @@
 	}
 	focus = {
 		id = XUT_western_influence
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_dem_influence
 		prerequisite = { focus = XUT_invite_neighbors }
 		prerequisite = { focus = XUT_western_alliance }
 		x = 0
@@ -641,7 +641,7 @@
 	}
 	focus = {
 		id = XUT_cascadia_influence
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_dem_influence
 		prerequisite = { focus = XUT_invite_neighbors }
 		prerequisite = { focus = XUT_western_alliance }
 		x = 2

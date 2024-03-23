@@ -81,6 +81,8 @@
  XUT_invite_neighbors_desc:0 "Now that the future of our states is secure, we can finally start strengthening our relations."
  XUT_north_influence:0 "Influence the Great North"
  XUT_north_influence_desc:0 "Our capital is right up against our northern border. The best way to ensure our defense is to align our northern neighbors to our cause."
+ XUT_invite_north:0 "Invite Friends in the North"
+ XUT_invite_north_desc:0 "The north aligns with our values and would provide significant strategic geography. It is time to formalize relations."
  XUT_western_influence:0 "Influence the West"
  XUT_western_influence_desc:0 "The west represents a major political and population center. These people must be free and peaceful."
  XUT_invite_west:0 "Invite the West"
