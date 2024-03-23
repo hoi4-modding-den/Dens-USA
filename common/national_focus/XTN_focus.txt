@@ -199,6 +199,27 @@ add_popularity = {
     }
 
     focus = {
+    id = XTN_protestant_primacy
+    x = 72
+    y = 4
+    icon = GFX_focus_mex_triumph_over_the_cristeros
+
+    prerequisite = {focus = XTN_2_purge focus = XTN_bring_back_slavery}
+
+    cost = 5
+    
+
+    completion_reward = {
+
+        add_ideas = {XTN_protestant_state}
+        
+
+        }
+        
+
+    }
+
+    focus = {
     id = XTN_mobilization_kkk
     x = 68
     y = 3
@@ -894,7 +915,7 @@ add_popularity = {
 
     prerequisite = {focus = XTN_knights_of_golden_circle}
     prerequisite = {focus = XTN_spirit_of_dixie}
-    available = {controls_state = 361}
+    available = {controls_state = 375}
 
     cost = 10
     
