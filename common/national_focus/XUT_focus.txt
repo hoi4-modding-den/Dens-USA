@@ -1603,7 +1603,7 @@
 	}
 	focus = {
 		id = XUT_looking_inward
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = XUT_civil_war_victory }
 		prerequisite = { focus = XUT_integrate_union }
 		
@@ -1646,7 +1646,7 @@
 	}
 	focus = {
 		id = XUT_war_hero_statues
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = XUT_looking_inward }
 		
 		x = -2
@@ -1710,7 +1710,7 @@
 	}
 	focus = {
 		id = XUT_parades_down_main_street
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_limited_social_mobilization
 		prerequisite = { focus = XUT_war_hero_statues }
 		
 		x = 1
@@ -1742,7 +1742,7 @@
 	}
 	focus = {
 		id = XUT_new_identity
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_workers_and_farmers_rise
 		prerequisite = { focus = XUT_parades_down_main_street }
 		prerequisite = { focus = XUT_deface_mormon_churches }
 		
@@ -1775,7 +1775,7 @@
 	}
 	focus = {
 		id = XUT_root_out_dissent
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = XUT_looking_inward }
 		
 		x = 0
@@ -1807,7 +1807,7 @@
 	}
 	focus = {
 		id = XUT_workers_camps
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_mining_industry
 		prerequisite = { focus = XUT_root_out_dissent }
 		
 		x = 0
@@ -4966,6 +4966,7 @@
 
 
 		completion_reward = {
+			add_ideas = XUT_infrastructure_idea
 			if = {
 				limit = {
 					has_idea = XUT_great_depression
@@ -5038,6 +5039,22 @@
 
 
 		completion_reward = {
+			build_railway = {
+				level = 3
+				build_only_on_allied = yes
+				fallback = yes
+				path = { 4865 10662 4742 1756 }
+				start_province = 4865
+				target_province = 1756
+			}
+			build_railway = {
+				level = 3
+				build_only_on_allied = yes
+				fallback = yes
+				path = { 10582 4865 10651 12573 12699 }
+				start_province = 10582
+				target_province = 12699
+			}
 			if = {
 				limit = {
 					has_idea = XUT_great_depression
@@ -5110,6 +5127,18 @@
 
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+				}
+			}
 			if = {
 				limit = {
 					has_idea = XUT_great_depression
@@ -5183,6 +5212,14 @@
 
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 			if = {
 				limit = {
 					has_idea = XUT_great_depression
@@ -5256,6 +5293,14 @@
 
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 			if = {
 				limit = {
 					has_idea = XUT_great_depression
@@ -5328,6 +5373,7 @@
 
 
 		completion_reward = {
+			add_ideas = XUT_new_gen
 		}
 	}
 	focus = {
@@ -5358,6 +5404,7 @@
 
 
 		completion_reward = {
+			add_ideas = XUT_new_cir
 		}
 	}
 	focus = {
@@ -5388,6 +5435,7 @@
 
 
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -5419,6 +5467,7 @@
 
 
 		completion_reward = {
+			add_ideas = XUT_foreign_scientists
 		}
 	}
 	### TOM CRUISE IS LOVE TOM CRUISE IS LIFE ###
