@@ -382,6 +382,45 @@
 		}
 	}
 	focus = {
+		id = XUT_north_influence
+		icon = GFX_goal_dem_influence
+		prerequisite = { focus = XUT_western_alliance }
+		x = 2
+		y = 1
+		relative_position_id = XUT_western_alliance
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XWY = {
+				add_ideas = XUT_democratic_influence
+			}
+			XID = {
+				add_ideas = XUT_democratic_influence
+			}
+			NVD = {
+				add_ideas = XUT_democratic_influence
+			}
+		}
+	}
+	focus = {
 		id = XUT_ensure_neighbor_stability
 		icon = GFX_goal_dem_influence
 		prerequisite = { focus = XUT_western_alliance }
@@ -475,42 +514,6 @@
 		}
 	}
 	focus = {
-		id = XUT_north_influence
-		icon = GFX_goal_dem_influence
-		prerequisite = { focus = XUT_western_alliance }
-		x = 2
-		y = 1
-		relative_position_id = XUT_western_alliance
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			XWY = {
-				add_ideas = XUT_democratic_influence
-			}
-			XID = {
-				add_ideas = XUT_democratic_influence
-			}
-		}
-	}
-	focus = {
 		id = XUT_invite_north
 		icon = GFX_goal_XUT_inv_no
 		prerequisite = { focus = XUT_north_influence }
@@ -554,6 +557,21 @@
 					country_event = XUT.8
 				}
 			}
+			XNV = {
+				NVD = {
+					if = {
+						limit = {
+							has_government = democratic
+						}
+						if = {
+							limit = {
+								is_free_or_subject_of_root = yes
+							}
+							country_event = XUT.8
+						}
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -595,7 +613,7 @@
 	}
 	focus = {
 		id = XUT_invite_west
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_XUT_inv_w
 		prerequisite = { focus = XUT_western_influence }
 		x = 0
 		y = 1
@@ -678,7 +696,7 @@
 	}
 	focus = {
 		id = XUT_invite_cascadia
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_XUT_inv_c
 		prerequisite = { focus = XUT_cascadia_influence }
 		x = 0
 		y = 1

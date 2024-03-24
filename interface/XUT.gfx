@@ -52,4 +52,8 @@ spriteTypes = {
 		name = "GFX_goal_XUT_inv_w"
 		texturefile = "gfx/XUT_gfx/XUT_focus_inv_w.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_XUT_inv_c"
+		texturefile = "gfx/XUT_gfx/XUT_focus_inv_c.dds"
+	}
 }
