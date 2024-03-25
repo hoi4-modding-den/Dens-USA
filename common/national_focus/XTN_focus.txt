@@ -968,6 +968,53 @@ add_popularity = {
 
     }
 
+
+    focus = {
+    id = XTN_conquer_caribbean
+    x = 67
+    y = 15
+    icon = GFX_focus_eng_move_to_secure_the_dominions
+
+    prerequisite = {focus = XTN_knights_of_golden_circle}
+
+    cost = 10
+    
+
+    completion_reward = {
+
+        690 = {
+        add_claim_by = XTN
+        }
+        693 = {
+        add_claim_by = XTN
+        }
+        315 = {
+        add_claim_by = XTN
+        }
+        689 = {
+        add_claim_by = XTN
+        }
+        318 = {
+        add_claim_by = XTN
+        }
+        319 = {
+        add_claim_by = XTN
+        }
+            declare_war_on = {
+            target = ZCR
+            type = annex_everything
+                } 
+            declare_war_on = {
+            target = ZBA
+            type = annex_everything
+                } 
+
+
+        }
+        
+
+    }
+
     focus = {
     id = XTN_arizona_war
     x = 69
