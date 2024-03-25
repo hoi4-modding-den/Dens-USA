@@ -1603,7 +1603,7 @@
 	}
 	focus = {
 		id = XUT_looking_inward
-		icon = GFX_focus_generic_soviet_politics
+		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = XUT_civil_war_victory }
 		prerequisite = { focus = XUT_integrate_union }
 		
@@ -1678,7 +1678,7 @@
 	}
 	focus = {
 		id = XUT_deface_mormon_churches
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = XUT_war_hero_statues }
 		
 		x = -1
@@ -1839,7 +1839,7 @@
 	}
 	focus = {
 		id = XUT_core_co
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = XUT_looking_inward }
 		
 		x = 2
@@ -1873,7 +1873,7 @@
 	}
 	focus = {
 		id = XUT_core_az
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = XUT_core_co }
 		
 		x = 0
@@ -1906,7 +1906,7 @@
 	}
 	focus = {
 		id = XUT_core_nm
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = XUT_core_az }
 		
 		x = 0
@@ -1940,7 +1940,7 @@
 	}	
 	focus = {
 		id = XUT_first_communist_convention
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = XUT_new_identity }
 		prerequisite = { focus = XUT_workers_camps }
 		prerequisite = { focus = XUT_core_nm }
@@ -1974,7 +1974,7 @@
 	}
 	focus = {
 		id = XUT_red_america
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_join_comintern
 		prerequisite = { focus = XUT_first_communist_convention }
 		mutually_exclusive = { focus = XUT_regional_communism }
 		
@@ -2006,7 +2006,7 @@
 	}
 	focus = {
 		id = XUT_regional_communism
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = XUT_first_communist_convention }
 		mutually_exclusive = { focus = XUT_red_america }
 		
@@ -2072,7 +2072,7 @@
 	}
 	focus = {
 		id = XUT_liberate_cali
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_XUT_inv_w
 		prerequisite = { focus = XUT_liberate_nevada }
 		
 		x = 0
@@ -2113,7 +2113,7 @@
 	}
 	focus = {
 		id = XUT_set_the_stage_cascadia
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_XUT_inv_c
 		prerequisite = { focus = XUT_regional_communism }
 		
 		x = 0
@@ -2288,7 +2288,7 @@
 	}
 	focus = {
 		id = XUT_form_cascadia
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_XUT_inv_c
 		prerequisite = { focus = XUT_pressure_oregon }
 		
 		x = 0
@@ -2387,7 +2387,7 @@
 	}
 	focus = {
 		id = XUT_american_internationale
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_SOV_international_union_of_soviet_republics
 		prerequisite = { focus = XUT_regional_communism }
 		
 		x = -2
@@ -2419,7 +2419,7 @@
 	}
 	focus = {
 		id = XUT_diplomat_program
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = XUT_american_internationale }
 		
 		x = 0
