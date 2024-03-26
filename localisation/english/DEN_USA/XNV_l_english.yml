@@ -16,6 +16,11 @@
  NVD_XNV_NevadaIdahoPuppet_State: "Nevadan Idhao"
  NVD_XNV_NevadaIdahoPuppet_State_DEF: "Nevada Idaho Territory"
  NVD_XNV_NevadaIdahoPuppet_State_ADJ: "Nevadan"
+ 
+ NVD_XCA_NevadaIdahoPuppet_State: "Nevadan State of California"
+ NVD_XCA_NevadaIdahoPuppet_State_DEF: "California"
+ NVD_XCA_NevadaIdahoPuppet_State_ADJ: "Californian"
+
 
  STATE_938: "Lower Nevada"
  STATE_959: "Lower Idaho"
@@ -32,6 +37,9 @@
 
  XNV_fascism_party:0 "NNSP"
  XNV_fascism_party_long:0 "Nevada Nationalist Silver Party"
+
+
+ XNV.1.d:0 "The results are in, the Democratic party has won the citizens' votes."
 
  XNVAFOC:0 "§YAll for Our Country§"
  XNVElection:0 "Begin Election"
