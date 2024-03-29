@@ -61,20 +61,20 @@ characters = {
 		}
 	}
 
-	XSD_Tom_Berry = {
-		name = "Tom Berry"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-			}
-		}
-		country_leader = {
-			ideology = liberalism
-			traits = {  }
-			expire = "2050.3.1.1"
-			id = -1
-		}
-	}
+	#XSD_Tom_Berry = {
+	#	name = "Tom Berry"
+	#	portraits = {
+	#		civilian = {
+	#			large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	#		}
+	#	}
+	#	country_leader = {
+	#		ideology = liberalism
+	#		traits = {  }
+	#		expire = "2050.3.1.1"
+	#		id = -1
+	#	}
+	#}
 
 	XSC_Olin_Johnston = {
 		name = "Olin D. Johnston"
@@ -181,20 +181,20 @@ characters = {
 		}
 	}
 
-	XND_Walter_Welford = {
-		name = "Walter Welford"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-			}
-		}
-		country_leader = {
-			ideology = conservatism
-			traits = {  }
-			expire = "2050.3.1.1"
-			id = -1
-		}
-	}
+	#XND_Walter_Welford = {
+	#	name = "Walter Welford"
+	#	portraits = {
+	#		civilian = {
+	#			large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	#		}
+	#	}
+	#	country_leader = {
+	#		ideology = conservatism
+	#		traits = {  }
+	#		expire = "2050.3.1.1"
+	#		id = -1
+	#	}
+	#}
 
 	XNC_John_Ehringhaus = {
 		name = "John C. B. Ehringhaus"
@@ -211,20 +211,20 @@ characters = {
 		}
 	}
 
-	XMT_Elmer_Holt = {
-		name = "Elmer Holt"
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-			}
-		}
-		country_leader = {
-			ideology = liberalism
-			traits = {  }
-			expire = "2050.3.1.1"
-			id = -1
-		}
-	}
+	#XMT_Elmer_Holt = {
+	#	name = "Elmer Holt"
+	#	portraits = {
+	#		civilian = {
+	#			large = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	#		}
+	#	}
+	#	country_leader = {
+	#		ideology = liberalism
+	#		traits = {  }
+	#		expire = "2050.3.1.1"
+	#		id = -1
+	#	}
+	#}
 	
 	XMS_Hugh_White = {
 		name = "Hugh L. White"

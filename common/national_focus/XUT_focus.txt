@@ -382,8 +382,47 @@
 		}
 	}
 	focus = {
+		id = XUT_north_influence
+		icon = GFX_goal_dem_influence
+		prerequisite = { focus = XUT_western_alliance }
+		x = 2
+		y = 1
+		relative_position_id = XUT_western_alliance
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			XWY = {
+				add_ideas = XUT_democratic_influence
+			}
+			XID = {
+				add_ideas = XUT_democratic_influence
+			}
+			NVD = {
+				add_ideas = XUT_democratic_influence
+			}
+		}
+	}
+	focus = {
 		id = XUT_ensure_neighbor_stability
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_dem_influence
 		prerequisite = { focus = XUT_western_alliance }
 		x = 0
 		y = 1
@@ -422,7 +461,7 @@
 	}
 	focus = {
 		id = XUT_invite_neighbors
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_XUT_inv_n
 		prerequisite = { focus = XUT_ensure_neighbor_stability }
 		x = 0
 		y = 1
@@ -475,44 +514,8 @@
 		}
 	}
 	focus = {
-		id = XUT_north_influence
-		icon = GFX_focus_generic_population_growth
-		prerequisite = { focus = XUT_western_alliance }
-		x = 2
-		y = 1
-		relative_position_id = XUT_western_alliance
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			XWY = {
-				add_ideas = XUT_democratic_influence
-			}
-			XID = {
-				add_ideas = XUT_democratic_influence
-			}
-		}
-	}
-	focus = {
 		id = XUT_invite_north
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_XUT_inv_no
 		prerequisite = { focus = XUT_north_influence }
 		x = 0
 		y = 1
@@ -554,11 +557,26 @@
 					country_event = XUT.8
 				}
 			}
+			XNV = {
+				NVD = {
+					if = {
+						limit = {
+							has_government = democratic
+						}
+						if = {
+							limit = {
+								is_free_or_subject_of_root = yes
+							}
+							country_event = XUT.8
+						}
+					}
+				}
+			}
 		}
 	}
 	focus = {
 		id = XUT_western_influence
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_dem_influence
 		prerequisite = { focus = XUT_invite_neighbors }
 		prerequisite = { focus = XUT_western_alliance }
 		x = 0
@@ -595,7 +613,7 @@
 	}
 	focus = {
 		id = XUT_invite_west
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_XUT_inv_w
 		prerequisite = { focus = XUT_western_influence }
 		x = 0
 		y = 1
@@ -641,7 +659,7 @@
 	}
 	focus = {
 		id = XUT_cascadia_influence
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_dem_influence
 		prerequisite = { focus = XUT_invite_neighbors }
 		prerequisite = { focus = XUT_western_alliance }
 		x = 2
@@ -678,7 +696,7 @@
 	}
 	focus = {
 		id = XUT_invite_cascadia
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_XUT_inv_c
 		prerequisite = { focus = XUT_cascadia_influence }
 		x = 0
 		y = 1
@@ -1585,7 +1603,7 @@
 	}
 	focus = {
 		id = XUT_looking_inward
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_self_management
 		prerequisite = { focus = XUT_civil_war_victory }
 		prerequisite = { focus = XUT_integrate_union }
 		
@@ -1628,7 +1646,7 @@
 	}
 	focus = {
 		id = XUT_war_hero_statues
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = XUT_looking_inward }
 		
 		x = -2
@@ -1660,7 +1678,7 @@
 	}
 	focus = {
 		id = XUT_deface_mormon_churches
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = XUT_war_hero_statues }
 		
 		x = -1
@@ -1692,7 +1710,7 @@
 	}
 	focus = {
 		id = XUT_parades_down_main_street
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_limited_social_mobilization
 		prerequisite = { focus = XUT_war_hero_statues }
 		
 		x = 1
@@ -1724,7 +1742,7 @@
 	}
 	focus = {
 		id = XUT_new_identity
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_workers_and_farmers_rise
 		prerequisite = { focus = XUT_parades_down_main_street }
 		prerequisite = { focus = XUT_deface_mormon_churches }
 		
@@ -1757,7 +1775,7 @@
 	}
 	focus = {
 		id = XUT_root_out_dissent
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = XUT_looking_inward }
 		
 		x = 0
@@ -1789,7 +1807,7 @@
 	}
 	focus = {
 		id = XUT_workers_camps
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_mining_industry
 		prerequisite = { focus = XUT_root_out_dissent }
 		
 		x = 0
@@ -1821,7 +1839,7 @@
 	}
 	focus = {
 		id = XUT_core_co
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = XUT_looking_inward }
 		
 		x = 2
@@ -1855,7 +1873,7 @@
 	}
 	focus = {
 		id = XUT_core_az
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = XUT_core_co }
 		
 		x = 0
@@ -1888,7 +1906,7 @@
 	}
 	focus = {
 		id = XUT_core_nm
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = XUT_core_az }
 		
 		x = 0
@@ -1922,7 +1940,7 @@
 	}	
 	focus = {
 		id = XUT_first_communist_convention
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { focus = XUT_new_identity }
 		prerequisite = { focus = XUT_workers_camps }
 		prerequisite = { focus = XUT_core_nm }
@@ -1956,7 +1974,7 @@
 	}
 	focus = {
 		id = XUT_red_america
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_generic_join_comintern
 		prerequisite = { focus = XUT_first_communist_convention }
 		mutually_exclusive = { focus = XUT_regional_communism }
 		
@@ -1988,7 +2006,7 @@
 	}
 	focus = {
 		id = XUT_regional_communism
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = XUT_first_communist_convention }
 		mutually_exclusive = { focus = XUT_red_america }
 		
@@ -2054,7 +2072,7 @@
 	}
 	focus = {
 		id = XUT_liberate_cali
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_XUT_inv_w
 		prerequisite = { focus = XUT_liberate_nevada }
 		
 		x = 0
@@ -2095,7 +2113,7 @@
 	}
 	focus = {
 		id = XUT_set_the_stage_cascadia
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_XUT_inv_c
 		prerequisite = { focus = XUT_regional_communism }
 		
 		x = 0
@@ -2270,7 +2288,7 @@
 	}
 	focus = {
 		id = XUT_form_cascadia
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_XUT_inv_c
 		prerequisite = { focus = XUT_pressure_oregon }
 		
 		x = 0
@@ -2369,7 +2387,7 @@
 	}
 	focus = {
 		id = XUT_american_internationale
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_focus_SOV_international_union_of_soviet_republics
 		prerequisite = { focus = XUT_regional_communism }
 		
 		x = -2
@@ -2401,7 +2419,7 @@
 	}
 	focus = {
 		id = XUT_diplomat_program
-		icon = GFX_focus_generic_population_growth
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = XUT_american_internationale }
 		
 		x = 0
@@ -4948,6 +4966,7 @@
 
 
 		completion_reward = {
+			add_ideas = XUT_infrastructure_idea
 			if = {
 				limit = {
 					has_idea = XUT_great_depression
@@ -5020,6 +5039,22 @@
 
 
 		completion_reward = {
+			build_railway = {
+				level = 3
+				build_only_on_allied = yes
+				fallback = yes
+				path = { 4865 10662 4742 1756 }
+				start_province = 4865
+				target_province = 1756
+			}
+			build_railway = {
+				level = 3
+				build_only_on_allied = yes
+				fallback = yes
+				path = { 10582 4865 10651 12573 12699 }
+				start_province = 10582
+				target_province = 12699
+			}
 			if = {
 				limit = {
 					has_idea = XUT_great_depression
@@ -5092,6 +5127,18 @@
 
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					instant_build = yes
+				}
+			}
 			if = {
 				limit = {
 					has_idea = XUT_great_depression
@@ -5165,6 +5212,14 @@
 
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 			if = {
 				limit = {
 					has_idea = XUT_great_depression
@@ -5238,6 +5293,14 @@
 
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 			if = {
 				limit = {
 					has_idea = XUT_great_depression
@@ -5310,6 +5373,7 @@
 
 
 		completion_reward = {
+			add_ideas = XUT_new_gen
 		}
 	}
 	focus = {
@@ -5340,6 +5404,7 @@
 
 
 		completion_reward = {
+			add_ideas = XUT_new_cir
 		}
 	}
 	focus = {
@@ -5370,6 +5435,7 @@
 
 
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -5401,6 +5467,7 @@
 
 
 		completion_reward = {
+			add_ideas = XUT_foreign_scientists
 		}
 	}
 	### TOM CRUISE IS LOVE TOM CRUISE IS LIFE ###

@@ -15,6 +15,9 @@ set_technology = {
 recruit_character = XNV_Richard_Kirman_SR
 recruit_character = XNV_Morley_Griswold
 
+#Advisors/Army
+recruit_character = XNV_Maurice_Sullivan
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.1.7"
@@ -43,6 +46,43 @@ XNV = {
 		puppet = NVD
 	}
 }
+
+XNV = {
+	generate_character = {
+		token_base = generic_air_close_air_sup # token will be TAG_token_base
+		advisor = {
+			slot = air_chief
+			traits = { air_close_air_support_2 }
+			cost = 100
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_air_close_air_sup }
+		}
+	}
+	generate_character = {
+		token_base = generic_fascist_demagogue # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { fascist_demagogue }
+			available = {
+				if = {
+					limit = { 
+						original_tag = XNV
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = XNVFarRightRallies
+				}				
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_fascist_demagogue }
+		}
+	}
+}
+
 
 add_ideas = XNV_GreatDepression
 create_faction = "United States of Nevada"

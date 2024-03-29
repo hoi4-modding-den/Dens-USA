@@ -512,5 +512,77 @@ ideas = {
 				army_strength_factor = 0.1
 			}
 		}
+		XUT_infrastructure_idea = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+				production_speed_supply_node_factor = 0.25
+				industry_repair_factor = 0.3
+			}
+		}
+		XUT_new_gen = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.05
+				army_morale_factor = 0.25
+			}
+		}
+		XUT_new_cir = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.25
+				party_popularity_stability_factor = 0.3
+			}
+		}
+		XUT_foreign_scientists = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
 	}
 }

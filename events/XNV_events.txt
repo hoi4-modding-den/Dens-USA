@@ -9,7 +9,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Democratic Party Victory"
+		name = "Agree with the popular vote."
 		ai_chance = { factor = 5 }
 		add_stability = 0.1
         hidden_effect = {
@@ -17,12 +17,11 @@ country_event = {
         }
 	}
 	option = {
-		name = "Republican Party Victory"
-		ai_chance = { factor = 5 }
+		name = "Oppose the popular vote."
+		ai_chance = { factor = 10 }
 		add_stability = -0.1 #will be variable for the actual support
 
         hidden_effect = {
-
             complete_national_focus = XNVElectionRep     
         }
         

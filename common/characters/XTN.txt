@@ -570,11 +570,6 @@ logistics_skill = 4
 			allowed = {
 				original_tag = XTN
 			}
-			visible = {
-				
-				has_completed_focus = XTN_invite_ger
-
-			}
 			available = {
 				has_completed_focus = XTN_invite_ger
 			}
@@ -759,6 +754,7 @@ logistics_skill = 4
     defense_skill = 2
     planning_skill = 1
     logistics_skill = 3
+	traits = {trait_cautious inflexible_strategist}
 	}
 	
 	}
@@ -820,6 +816,7 @@ logistics_skill = 4
     defense_skill = 3
     planning_skill = 1
     logistics_skill = 1
+	traits = {cavalry_officer harsh_leader trait_reckless cavalry_expert}
 	}
 	
 	}
@@ -889,6 +886,145 @@ logistics_skill = 4
 
 			traits = {
 				army_chief_morale_2 
+			}
+		}
+	
+	}
+
+	XTN_oscar_morris = {
+		name = "Oscar Morris"
+		portraits = {
+			army = {
+				small = "GFX_idea_GER_generic_land_5"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XTN_oscar_morris_idea
+			allowed = {
+				original_tag = XTN
+			}
+
+			traits = {
+				political_chameleon 
+			}
+		}
+	
+	}
+
+
+	XTN_militia_groups = {
+		name = "Militia Groups"
+		portraits = {
+			army = {
+				small = "GFX_idea_eng_imperial_conscription"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XTN_militia_groups_idea
+			allowed = {
+				original_tag = XTN
+			}
+			available = {
+				OR = {
+				num_of_controlled_states < 10
+				has_government = neutrality
+				}
+				}
+
+			traits = {
+				XTN_militias_trait 
+			}
+		}
+	
+	}
+
+	XTN_louis_thomas = {
+		name = "Louis Thomas"
+		portraits = {
+			army = {
+				small = "GFX_idea_EST_august_rei"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XTN_louis_thomas_idea
+			allowed = {
+				original_tag = XTN
+			}
+
+			traits = {
+				old_figurehead 
+			}
+		}
+	
+	}
+
+	XTN_lionel_zimmerman = {
+		name = "Lionel Zimmerman"
+		portraits = {
+			army = {
+				small = "GFX_idea_ITA_generic_1"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XTN_lionel_zimmerman_idea
+			allowed = {
+				original_tag = XTN
+			}
+
+			traits = {
+				socialist_novelist 
+			}
+		}
+	
+	}
+
+	XTN_leenane_mac_uistein = {
+		name = "Leenane Mac Uistein"
+		portraits = {
+			army = {
+				small = "GFX_idea_FRA_generic_land_5"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XTN_leenane_mac_uistein_idea
+			allowed = {
+				original_tag = XTN
+			}
+			available = {NOT = {has_government = fascism}}
+			traits = {
+				adventurous_daredevil 
+			}
+		}
+	
+	}
+
+	XTN_ion_o_maoilriain = {
+		name = "Íon Ó Maoilriáin"
+		portraits = {
+			army = {
+				small = "GFX_idea_IRE_eamon_de_valera"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = XTN_ion_o_maoilriain_idea
+			allowed = {
+				original_tag = XTN
+			}
+			available = {NOT = {has_government = fascism}}
+			traits = {
+				lieutenant_of_industry 
 			}
 		}
 	
