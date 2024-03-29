@@ -40,7 +40,7 @@ country_event = { #
 	}
 }
 
-country_event = { #
+news_event = { #
 	id = XWY.3
 	title = "Wyoming Declares Intrest in Montana!"
 	desc = "placeholder"
@@ -50,5 +50,83 @@ country_event = { #
 
 	option = { #
 		name = "Wyoming!?!??!?!"
+	}
+}
+
+country_event = { #
+	id = XWY.4
+	title = "The Rocky Confrence"
+	desc = "placeholder"
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #
+		name = "Go Through with it"
+			country_event = {
+    id = XWY.5
+    days = 2
+    random_hours = 4
+    random_days = 2
+}
+	}
+	option = { #
+		name = "End it Prematurely"
+	}
+}
+
+country_event = { #
+	id = XWY.5
+	title = "The Rocky Confrence: Industry"
+	desc = "placeholder"
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #
+		name = "Each State Should have their own Industry"
+			country_event = {
+    id = XWY.6
+    days = 2
+    random_hours = 4
+    random_days = 2
+}
+	}
+	option = { #
+		name = "A Centralised Industrial Commitee"
+					country_event = {
+    id = XWY.6
+    days = 2
+    random_hours = 4
+    random_days = 2
+}
+	}
+}
+
+country_event = { #
+	id = XWY.6
+	title = "The Rocky Confrence: Politics"
+	desc = "placeholder"
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	option = { #
+		name = "Each State Should have their own Local Elections and Leaders"
+			country_event = {
+    id = XWY.7
+    days = 2
+    random_hours = 4
+    random_days = 2
+}
+	}
+	option = { #
+		name = "One State that Serves all the People"
+					country_event = {
+    id = XWY.7
+    days = 2
+    random_hours = 4
+    random_days = 2
+}
 	}
 }
