@@ -625,6 +625,7 @@
 
 
 		completion_reward = {
+			set_country_flag = XMD_civil_rights_debate
 			country_event = XMD_political_events.20
 			hidden_effect = {
 				country_event = {
@@ -1013,52 +1014,38 @@
 			custom_effect_tooltip = XMD_current_cra_success_rate_tt
 	
 			if = {
-
 				limit = {
 					#100
-
 					check_variable = { XMD_cra_success_rate > 100}
 				}
 				custom_effect_tooltip = XMD_will_pass
 			}
-
 			else_if = {
-
 				limit = {
 					#60 - 99
-
 					check_variable = { XMD_cra_success_rate > 59 }
 					check_variable = { XMD_cra_success_rate < 100 }
 				}
 				custom_effect_tooltip = XMD_likely_to_pass
 			}
-
 			else_if = {
-
 				limit = {
 					#40 - 59
-
 					check_variable = { XMD_cra_success_rate > 39 }
 					check_variable = { XMD_cra_success_rate < 60 }
 				}
 				custom_effect_tooltip = XMD_might_pass
 			}
-
 			else_if = {
-
 				limit = {
 					#1 - 39
-
 					check_variable = { XMD_cra_success_rate > 0 }
 					check_variable = { XMD_cra_success_rate < 40 }
 				}
 				custom_effect_tooltip = XMD_unlikely_to_pass
 			}
-
 			else = {
-
 				custom_effect_tooltip = XMD_wont_pass
-
 			}
 
 			custom_effect_tooltip = XMD_if_pass
@@ -1417,7 +1404,7 @@
 	
 	focus = {
 		id = XMD_endowment_for_arts_and_humanities_act
-		icon = GFX_focus_generic_self_management
+		icon = GFX_focus_generic_public_works
 		prerequisite = { focus = XMD_equal_opportunites_act}
 		x = -1
 		y = 1
@@ -1912,7 +1899,7 @@
 	
 	focus = {
 		id = XMD_clearing_the_slums
-		icon = GFX_focus_generic_land_reclamation
+		icon = GFX_focus_generic_low_cost_housing
 		prerequisite = { focus = XMD_develop_underdeveloped_areas}
 		x = 1
 		y = 1
@@ -2533,6 +2520,734 @@
 	}
 	
 	focus = {
+		id = XMD_end_the_experiment
+		icon = GFX_focus_generic_total_war
+		prerequisite = { focus = XMD_mend_the_political_divide }
+		prerequisite = { focus = XMD_recover_the_economy }
+		mutually_exclusive = { focus = XMD_build_back_better_act }
+		x = -1
+		y = 1
+		relative_position_id = XMD_mend_the_political_divide
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_country_flag = XMD_pol_vote_failed 
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			country_event = {
+				id = XMD_political_events.5
+				days = 5
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_bolster_our_forces
+		icon = GFX_focus_generic_manpower
+		x = 35
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = disarmed_nation
+				}
+				add_ideas = volunteer_only
+			}
+			else_if = {
+				limit = {
+					has_idea = volunteer_only
+				}
+				add_ideas = limited_conscription
+			}
+			else_if = {
+				limit = {
+					has_idea = limited_conscription
+				}
+				add_ideas = extensive_conscription
+			}
+			else_if = {
+				limit = {
+					has_idea = extensive_conscription
+				}
+				add_ideas = service_by_requirement
+			}
+			else_if = {
+				limit = {
+					has_idea = service_by_requirement
+				}
+				add_ideas = all_adults_serve
+			}
+			else_if = {
+				limit = {
+					has_idea = all_adults_serve
+				}
+				add_ideas = scraping_the_barrel
+			}
+			else = {
+				add_manpower = 150000
+			}
+			add_war_support = 0.1
+			set_division_force_allow_recruiting = {
+				division_template = "People's Militia"
+				force_allow_recruiting = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_reform_the_army
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = XMD_bolster_our_forces}
+		mutually_exclusive = { focus = XMD_rely_on_militias  }
+		x = -3
+		y = 1
+		relative_position_id = XMD_bolster_our_forces
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = XMD_militia_based_army
+				}
+				swap_ideas = {
+					remove_idea = XMD_militia_based_army
+					add_idea = XMD_militia_based_army_1
+				}
+			}
+			else = {
+				add_ideas = XMD_militia_based_army_1
+			}
+			set_division_template_lock = {
+				division_template = "Infantry Division"
+				is_locked = no
+			}
+			army_experience = 50
+		}
+	}
+	
+	focus = {
+		id = XMD_establish_the_department_of_defense
+		icon = GFX_focus_usa_build_the_pentagon
+		prerequisite = { focus = XMD_reform_the_army focus = XMD_rely_on_militias}
+		x = 3
+		y = 1
+		relative_position_id = XMD_reform_the_army
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = XMD_department_of_defense
+			country_event = XMD_political_events.21
+			event_option_tooltip = XMD_political_events.21.a
+		}
+	}
+	
+	focus = {
+		id = XMD_ensuring_discipline
+		icon = GFX_focus_ITA_banda_carita
+		prerequisite = { focus = XMD_reform_the_army}
+		x = 1
+		y = 1
+		relative_position_id = XMD_reform_the_army
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = XMD_militia_based_army_1
+				}
+				swap_ideas = {
+					remove_idea = XMD_militia_based_army_1
+					add_idea = XMD_professional_army
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = XMD_militia_based_army_1
+						add_idea = XMD_professional_army
+					}
+				}
+				hidden_effect = {
+					add_ideas = XMD_professional_army
+				}
+			}
+			if = {
+				limit = {
+					has_template = "People's Militia"
+				}
+				delete_unit_template_and_units = {
+					division_template = "People's Militia"
+					disband = yes #will refund equipment and manpower
+				}
+			}
+			army_experience = 50
+		}
+	}
+	
+	focus = {
+		id = XMD_death_from_above
+		icon = GFX_focus_generic_armored_air_support
+		prerequisite = { focus = XMD_reform_the_army}
+		x = -1
+		y = 1
+		relative_position_id = XMD_reform_the_army
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_effort
+				uses = 1
+				bonus = 1.0
+				category = cas_bomber
+			}
+			add_ideas = XMD_air_support
+			air_experience = 50
+		}
+	}
+	
+	focus = {
+		id = XMD_first_special_service_force
+		icon = GFX_focus_eng_special_air_service
+		prerequisite = { focus = XMD_reform_the_army}
+		x = -3
+		y = 1
+		relative_position_id = XMD_reform_the_army
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				add_potential_special_forces_tree = yes
+				add_doctrine_cost_reduction = {
+					name = XMD_first_special_service_force
+					cost_reduction = 0.25
+					uses = 2
+					category = special_forces_doctrine
+				}
+			}
+			add_ideas = XMD_special_forces
+			country_event = XMD_political_events.23
+		}
+	}
+	
+	focus = {
+		id = XMD_shock_and_awe
+		icon = GFX_focus_SWE_let_fly_all_guns
+		prerequisite = { focus = XMD_death_from_above}
+		prerequisite = { focus = XMD_ensuring_discipline}
+		x = 1
+		y = 1
+		relative_position_id = XMD_death_from_above
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = XMD_professional_army
+				}
+				swap_ideas = {
+					remove_idea = XMD_professional_army
+					add_idea = XMD_professional_army_1
+				}
+			}
+			else = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = XMD_professional_army
+						add_idea = XMD_professional_army_1
+					}
+				}
+				hidden_effect = {
+					add_ideas = XMD_professional_army_1
+				}
+			}
+			army_experience = 50
+		}
+	}
+	
+	focus = {
+		id = XMD_unleash_hellfire
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = XMD_shock_and_awe}
+		x = 0
+		y = 1
+		relative_position_id = XMD_shock_and_awe
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = XMD_unleash_hellfire
+				bonus = 1.5
+				uses = 3
+				category = nuclear
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_rely_on_militias
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		prerequisite = { focus = XMD_bolster_our_forces}
+		mutually_exclusive = { focus = XMD_reform_the_army }
+		x = 2
+		y = 1
+		relative_position_id = XMD_bolster_our_forces
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = XMD_militia_based_army
+				}
+				swap_ideas = {
+					remove_idea = XMD_militia_based_army
+					add_idea = XMD_militia_based_army_2
+				}
+			}
+			else = {
+				add_ideas = XMD_militia_based_army_2
+			}
+			set_division_template_lock = {
+				division_template = "People's Militia"
+				is_locked = no
+			}
+			army_experience = 50
+		}
+	}
+	
+	focus = {
+		id = XMD_the_peoples_war
+		icon = GFX_focus_focus_fra_maquis
+		prerequisite = { focus = XMD_rely_on_militias}
+		x = 0
+		y = 1
+		relative_position_id = XMD_rely_on_militias
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = XMD_militia_based_army_2
+				}
+				swap_ideas = {
+					remove_idea = XMD_militia_based_army_2
+					add_idea = XMD_militia_based_army_3
+				}
+			}
+			else = {
+				add_ideas = XMD_militia_based_army_3
+			}
+			army_experience = 50
+		}
+	}
+	
+	focus = {
+		id = XMD_strengthen_the_second_amendment
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = XMD_the_peoples_war}
+		x = 0
+		y = 1
+		relative_position_id = XMD_the_peoples_war
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = XMD_militia_based_army_3
+				}
+				swap_ideas = {
+					remove_idea = XMD_militia_based_army_3
+					add_idea = XMD_militia_based_army_4
+				}
+			}
+			else = {
+				add_ideas = XMD_militia_based_army_4
+			}
+			army_experience = 50
+		}
+	}
+	
+	focus = {
+		id = XMD_efficient_fighters
+		icon = GFX_focus_generic_air_bases
+		prerequisite = { focus = XMD_rely_on_militias}
+		x = 2
+		y = 1
+		relative_position_id = XMD_rely_on_militias
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = XMD_efficient_fighters_idea
+			air_experience = 50
+		}
+	}
+	
+	focus = {
+		id = XMD_develop_doctrines
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = XMD_establish_the_department_of_defense}
+		x = 0
+		y = 1
+		relative_position_id = XMD_establish_the_department_of_defense
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			army_experience = 25
+			swap_ideas = {
+				remove_idea = XMD_department_of_defense
+				add_idea = XMD_department_of_defense_1
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_the_office_of_strategic_services
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = XMD_develop_doctrines}
+		x = -1
+		y = 1
+		relative_position_id = XMD_develop_doctrines
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		allow_branch = {
+			has_dlc = "La Resistance"
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = XMD_department_of_defense_2
+				}
+				swap_ideas = {
+					remove_idea = XMD_department_of_defense_2
+					add_idea = XMD_department_of_defense_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = XMD_department_of_defense_1
+					add_idea = XMD_department_of_defense_3
+				}
+			}
+			if = {
+				limit = {
+					has_intelligence_agency = no
+				}
+				create_intelligence_agency = {
+					name = "Office of Strategic Services" 
+					icon = GFX_intelligence_agency_logo_usa
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = XMD_pentagon_research_funds
+		icon = GFX_focus_research2
+		prerequisite = { focus = XMD_develop_doctrines}
+		x = 0
+		y = 1
+		relative_position_id = XMD_develop_doctrines
+
+		offset = {
+			x = 1
+			y = 0
+			trigger = {
+				has_dlc = "La Resistance"
+			}
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = XMD_department_of_defense_3
+				}
+				swap_ideas = {
+					remove_idea = XMD_department_of_defense_3
+					add_idea = XMD_department_of_defense_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = XMD_department_of_defense_1
+					add_idea = XMD_department_of_defense_2
+				}
+			}
+			if = {
+				limit = {
+					amount_research_slots < 5
+				}
+				add_research_slot = 1
+			}
+		}
+	}
+	
+	focus = {
 		id = XMD_our_claim_on_america
 		icon = GFX_focus_spa_the_war_of_vengeance
 		prerequisite = { focus = XMD_the_giant_wakes}
@@ -2571,43 +3286,6 @@
 			add_war_support = 0.15
 			set_country_flag = XMD_retake_america
 			unlock_decision_category_tooltip = XMD_kill_the_american_tags
-		}
-	}
-	
-	focus = {
-		id = XMD_end_the_experiment
-		icon = GFX_focus_generic_total_war
-		prerequisite = { focus = XMD_mend_the_political_divide }
-		prerequisite = { focus = XMD_recover_the_economy }
-		mutually_exclusive = { focus = XMD_build_back_better_act }
-		x = -1
-		y = 1
-		relative_position_id = XMD_mend_the_political_divide
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_country_flag = XMD_pol_vote_failed 
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			country_event = {
-				id = XMD_political_events.5
-				days = 5
-			}
 		}
 	}
 

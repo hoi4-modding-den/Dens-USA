@@ -22,8 +22,6 @@ set_politics = {
 
 set_stability = 0.1
 
-
-
 set_popularities = {
 	neutrality = 20
 	democratic = 40
