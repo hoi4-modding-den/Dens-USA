@@ -27,6 +27,18 @@ spriteTypes = {
 		name = "GFX_goal_XNV_NNSP"
 		texturefile = "gfx/XNV_focuses/XNV_NNSP.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_XNV_Finance"
+		texturefile = "gfx/XNV_focuses/XNV_Finance.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XNV_Gun"
+		texturefile = "gfx/XNV_focuses/XNV_Gun.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XNV_Factory"
+		texturefile = "gfx/XNV_focuses/XNV_Factory.dds"
+	}
 	#IdahoPuppetState
     spriteType = {
         name = "GFX_NevadaIdahoPuppet_State_icon"

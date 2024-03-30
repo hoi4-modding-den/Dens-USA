@@ -1,0 +1,52 @@
+XNV_DepressionDecisions = {
+    XNV_SupportFarmers = {
+        icon = GFX_decision_generic_consumer_goods
+
+        available = {
+            tag = XNV
+        }
+
+        visible = {
+            has_completed_focus = XNVDevelopment
+        }
+
+        ai_will_do = {
+            base = 3
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.5
+        }
+        
+        days_remove = 30
+        cost = 25
+
+        remove_effect = {
+        }
+    }
+    XNV_SupportMines = {
+        icon = GFX_decision_aluminium
+
+        available = {
+            tag = XNV
+        }
+
+        visible = {
+            has_completed_focus = XNVDevelopment
+        }
+        
+        ai_will_do = {
+            base = 3
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.4
+        }
+        
+        days_remove = 50
+        cost = 25
+
+        remove_effect = {
+        }
+    }
+}

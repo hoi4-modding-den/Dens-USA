@@ -1,0 +1,10 @@
+XNV_DepressionDecisions = {
+    icon = GFX_decision_category_generic_industry
+	allowed = {
+		tag = XNV
+	}
+	priority = 50
+	visible = {
+		has_completed_focus = XNVDevelopment
+	}
+}

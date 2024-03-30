@@ -43,13 +43,19 @@
 
  XNVAFOC:0 "§YAll for Our Country§"
  XNVElection:0 "Begin Election"
+ XNVDevelopment:0 "Rebuild Our Industry"
+ XNVDevelopment_desc:0 "The great depression has heavily impacted our nation's farming and mineral extraction industries. If we are going to succeed, we will need to rebuild these industries."
 
  XNV_AFOCIdea:0 "§YAll for Our Country§"
  XNV_AFOCIdea_desc:0 "The Nevadan spirit aims to overcome the nation's difficulties in these trying times."
+ XNV_AFOCIdea2:0 "§YAll for Our Country§"
+ XNV_AFOCIdea2_desc:0 "The Nevadan spirit aims to overcome the nation's difficulties in these trying times."
  XNV_GreatDepression:0 "Great Depression"
  XNV_GreatDepression_desc:0 "§RThe failure of several major institutions has left the Nevada economy in shambles. The main industry of our economy, mineral extraction, has plummeted in value leading many to question how silver the Silver State really is."
 
 
+ XNV_DepressionDecisions:0 "Nevadan Great Depression"
+ XNV_SupportFarmers:0 "Provide Aid to Farmers"
 
  XID_Bookmark_desc:0 "The Nevadan-Idaho War of 1930 ended with a considerable Nevada victory. In the Boise Peace Treaty, Nevada took over Idaho as a provisional government. While the former Idaho government was left weak, they continued normal operations in parts of the Northern region of Idaho as an illegitimate state. Eventually, in 1932, they declared independence from the Nevadan Idaho Territory with little pushback."
  NVD_Bookmark_desc:0 "The Nevadan-Idaho War of 1930 ended with a considerable Nevada victory. In the Boise Peace Treaty, Nevada took over Idaho as a provisional government. The governing officials have started to become bitter with the Nevadan government after a lack of support to prevent the succesion of Free Idaho and are considering leaving Nevada's reign as well."

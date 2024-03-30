@@ -102,6 +102,61 @@ focus_tree = {
 		}
      }
 	 focus = {
+		id = XNVPeace #RichardKirmanSR
+
+		prerequisite = { focus = XNVElectionDem }
+		mutually_exclusive = {focus = XNVUnity}
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 0
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = XNV_AFOCIdea
+			add_idea = XNV_AFOCIdea2
+			}
+		}
+     }
+	 focus = {
+		id = XNVUnity #RichardKirmanSR
+
+		prerequisite = { focus = XNVElectionDem }
+		mutually_exclusive = { focus = XNVPeace }
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 2
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
+		}
+     }
+	 focus = {
 		id = XNVElectionRep #MorleyGriswold
 
 		prerequisite = { focus = XNVElection }
@@ -297,7 +352,7 @@ focus_tree = {
 		prerequisite = { focus = XNVAFOC }
 		mutually_exclusive = { }
 		
-		icon = GFX_goal_XNV_Election
+		icon = GFX_goal_XNV_Finance
 		available = {
 		}
 		bypass = {
@@ -313,11 +368,12 @@ focus_tree = {
 		}	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			379 = {
-				add_extra_state_shared_building_slots = 2
+			random_owned_controlled_state = {
+				prioritize = { 379 }
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -326,6 +382,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		
 		}
      }
 	 focus = {
@@ -334,7 +391,7 @@ focus_tree = {
 		prerequisite = { focus = XNVDevelopment }
 		mutually_exclusive = { }
 		
-		icon = GFX_goal_XNV_Election
+		icon = GFX_goal_XNV_Gun
 		available = {
 		}
 		bypass = {
@@ -350,7 +407,8 @@ focus_tree = {
 		}	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			938 = {
+			random_owned_controlled_state = {
+				prioritize = { 938 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -366,7 +424,7 @@ focus_tree = {
 		prerequisite = { focus = XNVDevelopment }
 		mutually_exclusive = { }
 		
-		icon = GFX_goal_XNV_Election
+		icon = GFX_goal_XNV_Gun
 		available = {
 		}
 		bypass = {
@@ -382,7 +440,8 @@ focus_tree = {
 		}	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			379 = {
+			random_owned_controlled_state = {
+				prioritize = { 379 938 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -398,7 +457,7 @@ focus_tree = {
 		prerequisite = { focus = XNVGunProduction }
 		mutually_exclusive = { }
 		
-		icon = GFX_goal_XNV_Election
+		icon = GFX_goal_XNV_Factory
 		available = {
 		}
 		bypass = {
@@ -414,7 +473,8 @@ focus_tree = {
 		}	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			938 = {
+			random_owned_controlled_state = {
+				prioritize = { 938 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -430,7 +490,7 @@ focus_tree = {
 		prerequisite = { focus = XNVGunProduction2 }
 		mutually_exclusive = { }
 		
-		icon = GFX_goal_XNV_Election
+		icon = GFX_goal_XNV_Factory
 		available = {
 		}
 		bypass = {
@@ -446,7 +506,8 @@ focus_tree = {
 		}	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			938 = {
+			random_owned_controlled_state = {
+				prioritize = { 379 938 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -464,6 +525,7 @@ focus_tree = {
 		
 		icon = GFX_goal_XNV_Election
 		available = {
+			owns_state = 938
 		}
 		bypass = {
 		}
