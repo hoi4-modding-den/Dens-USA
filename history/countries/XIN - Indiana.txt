@@ -16,8 +16,4 @@ set_popularities = {
 	fascism = 0
 }
 
-create_country_leader = {
-	name = "Leonardo Da Vinci"
-	picture = fortnite
-	ideology = centrism
-}
+set_variable = { XIN_election_leaning = 50 }

@@ -6,7 +6,7 @@ XIN_election_decisions = {
 				selectable_mission = no
 				fire_only_once = yes
 
-				days_mission_timeout = 1
+				days_mission_timeout = 28
 				available = { always = no }
 				activation = {
 					NOT = {
@@ -35,13 +35,40 @@ XIN_election_decisions = {
 					NOT = {
 						has_decision = XIN_boost_right_wing_support
 					}
-					has_political_power > 50
+					has_political_power > 55
 				}
 				days_remove = 15
 				remove_effect = {
 					add_to_variable = {
-						var = XIN_election_dem_leaning
-						value = 1
+						var = XIN_election_leaning # 50 is 50% Rep/Dem, 100 is 100% Rep, 0 is 100% Dem
+						value = -15
+					}
+				}
+			}
+			XIN_appease_the_republicans = {
+
+				cost = 30
+				visible = {
+					has_completed_focus = XIN_first_election
+					NOT = {
+						OR = {
+							has_completed_focus = XIN_coalition_deadlock
+							has_completed_focus = XIN_democrat_majority
+							has_completed_focus = XIN_republican_majority
+						}
+					}
+				}
+				available = {
+					has_political_power > 29
+				}
+				modifier = {
+					political_power_gain = -0.025
+				}
+				days_remove = 15
+				remove_effect = {
+					add_to_variable = {
+						var = XIN_election_leaning
+						value = -5
 					}
 				}
 			}
@@ -67,8 +94,8 @@ XIN_election_decisions = {
 				days_remove = 15
 				remove_effect = {
 					add_to_variable = {
-						var = XIN_election_rep_leaning
-						value = 1
+						var = XIN_election_leaning
+						value = 15
 					}
 				}
 			}
@@ -78,31 +105,25 @@ XIN_election_decisions = {
 			is_good = yes
 			selectable_mission = no
 			fire_only_once = yes
-			visible = {
-				has_completed_focus = XIN_first_election
-			}
 
-			days_mission_timeout = 30
-			available = {
-				always = no
-			}
-			activation = {
-				has_completed_focus = XIN_first_election
-			}
+			days_mission_timeout = 140
+			available = { always = no }
+			activation = { has_completed_focus = XIN_first_election }
 			timeout_effect = {
 				if = {
-					limit = { check_variable = { var:XIN_election_rep_leaning < var:XIN_election_dem_leaning } }
-					complete_national_focus = XIN_democrat_majority
-				}
-				else_if = {
-					limit = { check_variable = { var:XIN_election_rep_leaning > var:XIN_election_dem_leaning  } }
-					complete_national_focus = XIN_republican_majority
+					limit = { check_variable = { XIN_election_leaning < 60 }}
+					if = {
+						limit = { check_variable = { XIN_election_leaning > 40 }}	
+						complete_national_focus = XIN_coalition_deadlock
 						}
-				
-				else = { complete_national_focus = XIN_coalition_deadlock }
+					else = {
+					complete_national_focus = XIN_democrat_majority
+					}
+				else = {
+					complete_national_focus = XIN_republican_majority
+				}
 			}
-
-			
+		}
 			}
 }
 XIN_formable_decisions = {
@@ -153,7 +174,7 @@ XIN_civilwar_decisions = {
 		selectable_mission = no
 		fire_only_once = yes
 
-		days_mission_timeout = 10
+		days_mission_timeout = 70
 		available = {
 			always = no
 		}

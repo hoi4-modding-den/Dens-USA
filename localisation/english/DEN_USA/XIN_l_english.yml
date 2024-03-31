@@ -28,9 +28,15 @@
     XIN_GRL_democratic_ADJ: "United"
 
 # Decisions
-  XIN_boost_left_wing_support: "Increase Democractic Coalition Power | Currently at: [?XIN_election_dem_leaning|B0.]"
-  XIN_boost_right_wing_support: "Increase Republican Coalition Power | Currently at: [?XIN_election_rep_leaning|R0.]"
-  form_greater_indiana.tt:0 "Form The Great Lake Empire"
+  # Categories
+    XIN_election_decisions:0 "1936 Coalition Elections"
+    XIN_election_decisions_desc: "The upcoming elections will determine how much power the Democrats and Republicans will have in the coalition, this could be a great way to secure our interests within the party, and to change the political landscape of Indiana \n\nCurrent Democratic Power: [?XIN_election_leaning|%%] \nCurrent Republican Power: "
+  # Decisions
+
+    XIN_boost_left_wing_support:0 "Increase Democractic Coalition Power"
+    XIN_boost_right_wing_support:0 "Increase Republican Coalition Power"
+  # Formables
+    form_greater_indiana.tt:0 "Form The Great Lake Empire"
 
 
 # Election Focuses
