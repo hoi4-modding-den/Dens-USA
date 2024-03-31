@@ -31,7 +31,10 @@ DEN_USA = {
     color = rgb { 97 165 255 }
     color_ui = rgb { 97 165 255 }
 }
-
+XNV_SWS = {
+    color = rgb { 244 148 41 }
+    color_ui = rgb { 244 148 41 }   
+}
 
 # Indiana
 XIN_GRL = {

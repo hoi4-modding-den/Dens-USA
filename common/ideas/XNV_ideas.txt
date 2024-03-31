@@ -28,6 +28,50 @@ ideas = {
             
             allowed = { tag = XNV }
         }
+        XNV_GreatDepression2 = {
+            picture = usa_great_depression
+            allowed_civil_war ={
+                always = yes
+            }
+            modifier = {
+                political_power_cost = 1.25
+				production_speed_buildings_factor = -0.3
+                consumer_goods_factor = 0.3
+				production_factory_efficiency_gain_factor = -0.2
+				line_change_production_efficiency_factor = -0.2
+            }
+            
+            allowed = { tag = XNV }
+        }
+        XNV_GreatDepression3 = {
+            picture = usa_great_depression
+            allowed_civil_war ={
+                always = yes
+            }
+            modifier = {
+                political_power_cost = 1
+				production_speed_buildings_factor = -0.2
+                consumer_goods_factor = 0.2
+				production_factory_efficiency_gain_factor = -0.1
+				line_change_production_efficiency_factor = -0.1
+            }
+            
+            allowed = { tag = XNV }
+        }
+        XNV_GreatDepression4 = {
+            picture = usa_great_depression
+            allowed_civil_war ={
+                always = yes
+            }
+            modifier = {
+                political_power_cost = 0.5
+				production_speed_buildings_factor = -0.1
+                consumer_goods_factor = 0.1
+				line_change_production_efficiency_factor = -0.1
+            }
+            
+            allowed = { tag = XNV }
+        }
         XNV_AFOCIdea2 = {
             picture = XNV_afocideaphoto
             allowed_civil_war ={
@@ -39,7 +83,6 @@ ideas = {
                 surrender_limit = 0.2
                 enemy_justify_war_goal_time = 0.6
                 justify_war_goal_time = 0.9
-                opinion_gain_monthly_same_ideology = 5
             }
 
             allowed = { tag = XNV }

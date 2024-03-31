@@ -39,6 +39,38 @@ spriteTypes = {
 		name = "GFX_goal_XNV_Factory"
 		texturefile = "gfx/XNV_focuses/XNV_Factory.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_XNV_Vegas"
+		texturefile = "gfx/XNV_focuses/XNV_Vegas.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XNV_FRR"
+		texturefile = "gfx/XNV_focuses/XNV_FRR.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XNV_ElectionActual"
+		texturefile = "gfx/XNV_focuses/XNV_ElectionActual.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XNV_Regions"
+		texturefile = "gfx/XNV_focuses/XNV_Regions.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XNV_Utah"
+		texturefile = "gfx/XNV_focuses/XNV_Utah.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XNV_Arizona"
+		texturefile = "gfx/XNV_focuses/XNV_Arizona.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XNV_California"
+		texturefile = "gfx/XNV_focuses/XNV_California.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XNV_SWS"
+		texturefile = "gfx/XNV_focuses/XNV_SWS.dds"
+	}
 	#IdahoPuppetState
     spriteType = {
         name = "GFX_NevadaIdahoPuppet_State_icon"

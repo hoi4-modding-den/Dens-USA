@@ -1,10 +1,22 @@
 XNV_DepressionDecisions = {
     icon = GFX_decision_category_generic_industry
 	allowed = {
-		tag = XNV
-	}
+        OR = {
+            tag = XNV
+            tag = NVD
+        }
+    }
 	priority = 50
 	visible = {
-		has_completed_focus = XNVDevelopment
+        if = {
+            limit = {tag = XNV}
+                has_completed_focus = XNVDevelopment
+                OR = {
+                    has_idea = XNV_GreatDepression
+                    has_idea = XNV_GreatDepression2
+                    has_idea = XNV_GreatDepression3
+                    has_idea = XNV_GreatDepression4
+                }
+        }
 	}
 }
