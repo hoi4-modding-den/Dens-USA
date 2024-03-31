@@ -81,8 +81,57 @@ XNV = {
 			army = { small = GFX_idea_generic_fascist_demagogue }
 		}
 	}
+	generate_character = {
+		token_base = generic_democratic_reformer # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { democratic_reformer }
+			available = {	
+				if = {
+					limit = { 
+						original_tag = XNV
+						has_dlc = "Together for Victory"
+					}
+					always = no
+				}		
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_democratic_reformer }
+		}
+	}
+	generate_character = {
+		token_base = generic_communist_revolutionary # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { communist_revolutionary }
+			available = {	
+				if = {
+					limit = { 
+						original_tag = XNV
+						has_dlc = "Together for Victory"
+					}
+					always = no
+				}
+			}
+			ai_will_do = {
+				factor = 10
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_communist_revolutionary }
+		}
+	}
 }
 
+
+set_variable = {
+	var = XNVDepressionFixingVal
+	value = 0
+}
 
 add_ideas = XNV_GreatDepression
 create_faction = "United States of Nevada"

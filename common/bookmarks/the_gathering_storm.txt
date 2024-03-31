@@ -99,8 +99,8 @@ bookmarks = {
 			}
 			focuses = {
 				XNVAFOC
-				XNVElectionDem
-				XNVElectionRep
+				XNVStartProjectVegas
+				XNVElection
 			}
 		}	
 		"XAL"={

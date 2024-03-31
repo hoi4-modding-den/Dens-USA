@@ -30,7 +30,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 
-		x = 10
+		x = 12
 		y = 3
 		cost = 1
 		ai_will_do = {
@@ -49,7 +49,7 @@ focus_tree = {
 		prerequisite = { focus = XNVAFOC }
 		mutually_exclusive = {} #focus = XNVCivilWar 
 		
-		icon = GFX_goal_XNV_Election
+		icon = GFX_goal_XNV_ElectionActual
 		available = {
 			XNV = {
 				if = {
@@ -99,6 +99,61 @@ focus_tree = {
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+		}
+     }
+	 focus = {
+		id = XNVPeace #RichardKirmanSR
+
+		prerequisite = { focus = XNVElectionDem }
+		mutually_exclusive = {focus = XNVUnity}
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 0
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = XNV_AFOCIdea
+			add_idea = XNV_AFOCIdea2
+			}
+		}
+     }
+	 focus = {
+		id = XNVUnity #RichardKirmanSR
+
+		prerequisite = { focus = XNVElectionDem }
+		mutually_exclusive = { focus = XNVPeace }
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 2
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+
 		}
      }
 	 focus = {
@@ -192,7 +247,7 @@ focus_tree = {
 		prerequisite = { focus = XNVElectionRep }
 		mutually_exclusive = { focus = XNVAltDemocratic }
 		
-		icon = GFX_goal_XNV_Election
+		icon = GFX_goal_XNV_FRR
 		available = {
 			
 		}
@@ -217,6 +272,182 @@ focus_tree = {
 		}
      }
 	 focus = {
+		id = XNVWarPlans #WarPlanning
+
+		prerequisite = { focus = XNVFarRightRallies }
+		mutually_exclusive = { }
+		
+		icon = GFX_goal_XNV_Regions
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 5
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
+			army_experience = 50
+			add_war_support = .2
+			add_popularity = {
+    			ideology = fascism
+    			popularity = 0.1
+			}
+		}
+     }
+	 
+	 focus = {
+		id = XNVWarPlans2
+
+		prerequisite = { focus = XNVWarPlans }
+		mutually_exclusive = { }
+		
+		icon = GFX_goal_XNV_California
+		available = {
+			has_completed_focus = XNVReformDiscussions
+		}
+		bypass = {
+			NOT = {
+				XCA = {
+					OR = {
+						is_subject = no
+						NOT = {
+							owns_state = 378
+						}
+					}
+				
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+
+		x = 7.5
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = XCA }
+		}
+     }
+	 focus = {
+		id = XNVWarPlans3
+
+		prerequisite = { focus = XNVWarPlans }
+		mutually_exclusive = { }
+		
+		icon = GFX_goal_XNV_Utah
+		available = {
+			has_completed_focus = XNVReformDiscussions
+		}
+		bypass = {
+			NOT = {
+				XUT = {
+					OR = {
+						is_subject = no
+					}
+				
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+
+		x = 3.5
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = XUT }
+		}
+     }
+	 focus = {
+		id = XNVWarPlans4
+
+		prerequisite = { focus = XNVWarPlans2 }
+		prerequisite = { focus = XNVWarPlans3 }
+		mutually_exclusive = { }
+		
+		icon = GFX_goal_XNV_Arizona
+		available = {
+		}
+		bypass = {
+			NOT = {
+				XAZ = {
+					OR = {
+						is_subject = no
+					}
+				
+				}
+			}
+		}
+
+		cancel_if_invalid = yes
+
+		x = 5
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = XAZ }
+		}
+     }
+	 focus = {
+		id = XNVWarPlans5
+
+		prerequisite = { focus = XNVWarPlans4 }
+		mutually_exclusive = { }
+		
+		icon = GFX_goal_XNV_SWS
+		available = {
+			XUT = {is_subject = yes OVERLORD = {tag = XNV}}
+			XAZ = {is_subject = yes OVERLORD = {tag = XNV}}
+			XCA = {is_subject = yes OVERLORD = {tag = XNV}}
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 5
+		y = 11
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
+			annex_country = {
+				target = XUT
+    			transfer_troops = yes
+			}
+			annex_country = {
+				target = XAZ
+    			transfer_troops = yes
+			}
+			annex_country = {
+				target = XCA
+    			transfer_troops = yes
+			}
+		set_cosmetic_tag = XNV_SWS
+		}
+     }
+	 focus = {
 		id = XNVReformDiscussions #MorleyGriswoldFascistPath
 
 		prerequisite = { focus = XNVFarRightRallies }
@@ -233,11 +464,11 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 
-		x = 7
+		x = 8
 		y = 8
 		cost = 10
 		ai_will_do = {
-			factor = 2
+			factor = 20
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -279,7 +510,7 @@ focus_tree = {
 
 		cancel_if_invalid = no
 
-		x = 17
+		x = 21
 		y = 4
 		cost = 4
 		ai_will_do = {
@@ -297,7 +528,7 @@ focus_tree = {
 		prerequisite = { focus = XNVAFOC }
 		mutually_exclusive = { }
 		
-		icon = GFX_goal_XNV_Election
+		icon = GFX_goal_XNV_Finance
 		available = {
 		}
 		bypass = {
@@ -305,7 +536,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 
-		x = 10
+		x = 12
 		y = 5
 		cost = 7
 		ai_will_do = {
@@ -313,11 +544,12 @@ focus_tree = {
 		}	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			379 = {
-				add_extra_state_shared_building_slots = 2
+			random_owned_controlled_state = {
+				prioritize = { 379 }
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -326,6 +558,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			unlock_decision_category_tooltip = XNV_DepressionDecisions
 		}
      }
 	 focus = {
@@ -334,7 +567,7 @@ focus_tree = {
 		prerequisite = { focus = XNVDevelopment }
 		mutually_exclusive = { }
 		
-		icon = GFX_goal_XNV_Election
+		icon = GFX_goal_XNV_Gun
 		available = {
 		}
 		bypass = {
@@ -342,7 +575,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 
-		x = 8
+		x = 10
 		y = 6
 		cost = 5
 		ai_will_do = {
@@ -350,7 +583,8 @@ focus_tree = {
 		}	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			938 = {
+			random_owned_controlled_state = {
+				prioritize = { 938 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -366,7 +600,7 @@ focus_tree = {
 		prerequisite = { focus = XNVDevelopment }
 		mutually_exclusive = { }
 		
-		icon = GFX_goal_XNV_Election
+		icon = GFX_goal_XNV_Gun
 		available = {
 		}
 		bypass = {
@@ -374,7 +608,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 
-		x = 12
+		x = 14
 		y = 6
 		cost = 5
 		ai_will_do = {
@@ -382,7 +616,8 @@ focus_tree = {
 		}	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			379 = {
+			random_owned_controlled_state = {
+				prioritize = { 379 938 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -398,39 +633,7 @@ focus_tree = {
 		prerequisite = { focus = XNVGunProduction }
 		mutually_exclusive = { }
 		
-		icon = GFX_goal_XNV_Election
-		available = {
-		}
-		bypass = {
-		}
-
-		cancel_if_invalid = yes
-
-		x = 9
-		y = 7
-		cost = 10
-		ai_will_do = {
-			factor = 2
-		}	
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			938 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-     }
-	 focus = {
-		id = XNVPrepareFactories2 #prerequisitetovegas
-
-		prerequisite = { focus = XNVGunProduction2 }
-		mutually_exclusive = { }
-		
-		icon = GFX_goal_XNV_Election
+		icon = GFX_goal_XNV_Factory
 		available = {
 		}
 		bypass = {
@@ -446,7 +649,41 @@ focus_tree = {
 		}	
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			938 = {
+			random_owned_controlled_state = {
+				prioritize = { 938 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+     }
+	 focus = {
+		id = XNVPrepareFactories2 #prerequisitetovegas
+
+		prerequisite = { focus = XNVGunProduction2 }
+		mutually_exclusive = { }
+		
+		icon = GFX_goal_XNV_Factory
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 13
+		y = 7
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 379 938 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -462,15 +699,17 @@ focus_tree = {
 		prerequisite = { focus = XNVPrepareFactories focus = XNVPrepareFactories2 }
 		mutually_exclusive = { }
 		
-		icon = GFX_goal_XNV_Election
+		icon = GFX_goal_XNV_Vegas
 		available = {
+			owns_state = 938
+			
 		}
 		bypass = {
 		}
 
 		cancel_if_invalid = yes
 
-		x = 10
+		x = 12
 		y = 8
 		cost = 10
 		ai_will_do = {

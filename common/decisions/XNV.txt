@@ -1,0 +1,116 @@
+XNV_DepressionDecisions = {
+    XNV_SupportFarmers = {
+        icon = GFX_decision_generic_consumer_goods
+
+        available = {
+        }
+
+        visible = {
+            has_completed_focus = XNVDevelopment
+        }
+
+        ai_will_do = {
+            base = 3
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.5
+        }
+        
+        days_remove = 30
+        cost = 25
+
+        remove_effect = {
+            add_to_variable = { XNVDepressionFixingVal = 1 }
+			custom_effect_tooltip = XNV_Development_growth_1
+        }
+    }
+    XNV_SupportMines = {
+        icon = GFX_decision_aluminium
+
+        available = {
+        }
+
+        visible = {
+            has_completed_focus = XNVDevelopment
+        }
+        
+        ai_will_do = {
+            base = 3
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.6
+            local_resources_factor = 0.3
+        }
+        
+        days_remove = 50
+        cost = 25
+
+        remove_effect = {
+			add_to_variable = { XNVDepressionFixingVal = 1 }
+			custom_effect_tooltip = XNV_Development_growth_1
+        }
+    }
+    XNV_ReduceDepressionLevel = {
+        icon = GFX_decision_aluminium
+
+        available = {
+        }
+
+        visible = {
+            has_completed_focus = XNVDevelopment
+            check_variable = { XNVDepressionFixingVal > 1 }
+        }
+        
+        ai_will_do = {
+            base = 3
+        }
+
+        modifier = {
+            consumer_goods_factor = 0.2
+        }
+        
+        days_remove = 15
+        cost = 25
+
+        remove_effect = {
+			subtract_from_variable = { XNVDepressionFixingVal = 2 }
+			custom_effect_tooltip = XNV_Development_shrink_2
+            if = {
+                limit = {
+                  has_idea = XNV_GreatDepression     
+                }
+                swap_ideas = {
+                  remove_idea = XNV_GreatDepression
+                  add_idea = XNV_GreatDepression2
+			    }
+            }
+            else_if = {
+                limit = {
+                  has_idea = XNV_GreatDepression2     
+                }
+                swap_ideas = {
+                  remove_idea = XNV_GreatDepression2
+                  add_idea = XNV_GreatDepression3
+			    }
+            }
+            else_if = {
+                limit = {
+                  has_idea = XNV_GreatDepression3    
+                }
+                swap_ideas = {
+                  remove_idea = XNV_GreatDepression3
+                  add_idea = XNV_GreatDepression4
+			    }
+            }
+            else_if = {
+                limit = {
+                  has_idea = XNV_GreatDepression4   
+                }
+                  remove_ideas = XNV_GreatDepression4
+                  
+            }
+        }
+    }
+}

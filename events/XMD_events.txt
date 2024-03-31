@@ -157,7 +157,7 @@ country_event = { #Vote for previous law
 	}
 
 	option = { #Overhaul the political process - Pass
-		name = XMD_political_events.4.b
+		name = XMD_political_events.4.a
 
 		trigger = {
 			has_country_flag = XMD_overhaul_vote
@@ -183,7 +183,7 @@ country_event = { #Vote for previous law
 	}
 
 	option = { #Establish dictatorial control - Passs
-		name = XMD_political_events.4.c
+		name = XMD_political_events.4.a
 
 		trigger = {
 			has_country_flag = XMD_dictatorial_control_vote
@@ -204,7 +204,7 @@ country_event = { #Vote for previous law
 	}
 
 	option = { #fail
-		name = XMD_political_events.4.c
+		name = XMD_political_events.4.b
 		add_political_power = -100
 
 		trigger = {
@@ -461,7 +461,7 @@ country_event = { #Voting on the Civil Rights Act of Year
 	is_triggered_only = yes
 
 	option = { #Voting - Passed
-		name = XMD_political_events.9.a
+		name = XMD_political_events.4.a
 
 		add_political_power = 200
 
@@ -493,7 +493,7 @@ country_event = { #Voting on the Civil Rights Act of Year
 	}
 
 	option = { #Voting - Failed
-		name = XMD_political_events.9.b
+		name = XMD_political_events.4.b
 
 		add_stability = -0.1
 
@@ -624,7 +624,7 @@ country_event = { #kkk membership rises
 	immediate = {
 		country_event = {
 			id = XMD_political_events.16
-			days = 200
+			days = 100
 			random = 50
 		}
 	}
@@ -832,6 +832,93 @@ country_event = { #a new civil rights bill
 			var = XMD_cra_success_rate
 			value = 0
 			tooltip = XMD_cra_success_rate_var_tt
+		}
+	}
+}
+
+country_event = { #Overseeing the pentagon
+	id = XMD_political_events.21
+	title = XMD_political_events.21.t
+	desc = XMD_political_events.21.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #We will be ready for anything.
+		name = XMD_political_events.21.a
+		add_war_support = 0.05
+		add_political_power = 20
+		hidden_effect = {
+			country_event = {
+				id =  XMD_political_events.22
+				days = 730
+				random = 30
+			}
+		}
+	}
+}
+
+country_event = { #Pentagon built
+	id = XMD_political_events.22
+	title = XMD_political_events.22.t
+	desc = XMD_political_events.22.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #God Bless
+		name = XMD_political_events.22.a
+		361 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = { #Which branch should we focus on
+	id = XMD_political_events.23
+	title = XMD_political_events.23.t
+	desc = XMD_political_events.23.desc
+	picture = GFX_report_event_DEN_danish_politics
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = { #Marine funding
+		name = XMD_political_events.23.a
+		add_tech_bonus = {
+			name = USA_expand_the_USMC
+			bonus = 1.0
+			uses = 3
+			technology = marines2
+			technology = marines3
+			category = tp_tech 
+		}
+	}
+
+	option = { #Mountaineer funding
+		name = XMD_political_events.23.b
+		add_tech_bonus = {
+			name = USA_expand_the_USMC
+			bonus = 1.0
+			uses = 5
+			technology = tech_mountaineers
+			technology = tech_mountaineers2
+			technology = tech_engineers
+			technology = tech_engineers2
+			technology = tech_engineers3
+			technology = tech_recon
+			technology = tech_recon2
+			technology = tech_recon3
 		}
 	}
 }

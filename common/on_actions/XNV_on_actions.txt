@@ -1,0 +1,87 @@
+on_actions = {
+    on_peaceconference_ended = {
+        effect = {
+            if = {
+                limit = { 
+                    ROOT = {
+                        tag = XNV
+                    }
+                    FROM = {
+                        tag = XCA
+                    }
+                    XNV = {
+                        has_completed_focus = XNVWarPlans
+                    }
+                }
+                XNV = {
+                    set_autonomy = {
+                    target = XCA
+                    autonomy_state = NevadaIdahoPuppet_State
+                    }
+                }
+                378 = {
+                    add_core_of = XNV
+                    transfer_state_to = FROM
+                }
+            }
+            else_if = {
+                limit = { 
+                    ROOT = {
+                        tag = XNV
+                    }
+                    FROM = {
+                        tag = XUT
+                    }
+                    XNV = {
+                        has_completed_focus = XNVWarPlans
+                    }
+                }
+                XNV = {
+                    set_autonomy = {
+                    target = XUT
+                    autonomy_state = NevadaIdahoPuppet_State
+                    }
+                }
+                940 = {
+                    add_core_of = XNV
+                    transfer_state_to = FROM
+                }
+                380 = {
+                    add_core_of = XNV
+                    transfer_state_to = FROM
+                }
+                939 = {
+                    add_core_of = XNV
+                    transfer_state_to = FROM
+                }
+            }
+            else_if = {
+                limit = { 
+                    ROOT = {
+                        tag = XNV
+                    }
+                    FROM = {
+                        tag = XAZ
+                    }
+                    XNV = {
+                        has_completed_focus = XNVWarPlans
+                    }
+                }
+                XNV = {
+                    set_autonomy = {
+                    target = XAZ
+                    autonomy_state = NevadaIdahoPuppet_State
+                    }
+                }
+                377 = {
+                    add_core_of = XNV
+                    transfer_state_to = FROM
+                }
+                953 = {
+                    add_core_of = XNV
+                    transfer_state_to = FROM
+                }
+            }
+    }
+    }
+}

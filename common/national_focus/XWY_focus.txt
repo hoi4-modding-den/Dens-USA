@@ -1326,7 +1326,12 @@ declare_war_on = {
 
 
 		completion_reward = {
-			
+			create_wargoal = {
+    type = take_state_focus
+    target = XUT
+    generator = { 380 }
+    expire = 90
+}
 		}
 	}
 	
@@ -1361,7 +1366,7 @@ declare_war_on = {
 
 
 		completion_reward = {
-			
+			create_faction = "Cheyenne Accords"
 		}
 	}
 	
@@ -1733,7 +1738,109 @@ promote_character = {
 
 
 		completion_reward = {
+			add_political_power = 25
+		}
+	}
 	
+	focus = {
+		id = XWY_rocky_confrence
+		icon = GFX_focus_usa_honor_the_confederacy
+		prerequisite = { focus = XWY_returning_to_the_past}
+		# mutually_exclusive = { focus = XWY_collective_ranches }
+		x = 34
+		y = 1
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = XWY_prepare_integration
+		icon = GFX_focus_usa_honor_the_confederacy
+		prerequisite = { focus = XWY_returning_to_the_past}
+		# mutually_exclusive = { focus = XWY_collective_ranches }
+		x = 36
+		y = 1
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = XWY_unified_central_command
+		icon = GFX_focus_usa_honor_the_confederacy
+		prerequisite = { focus = XWY_prepare_integration}
+		# mutually_exclusive = { focus = XWY_collective_ranches }
+		x = 37
+		y = 2
+		#relative_position_id = 
+
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_political_power = 25
 		}
 	}
 }		
