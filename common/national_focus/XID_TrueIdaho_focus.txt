@@ -31,6 +31,7 @@ focus_tree = {
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			set_cosmetic_tag = XID_TrueIdaho
 		}
      }
 

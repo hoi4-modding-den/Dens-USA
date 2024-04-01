@@ -35,7 +35,10 @@ XNV_SWS = {
     color = rgb { 244 148 41 }
     color_ui = rgb { 244 148 41 }   
 }
-
+XID_TrueIdaho = {
+    color = rgb { 155 223 138 }
+    color_ui = rgb { 155 223 138 }  
+}
 # Indiana
 XIN_GRL = {
     color = rgb { 122 107 117 }

@@ -18,9 +18,12 @@ country_event = {
 	}
 	option = {
 		name = "Oppose the popular vote."
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 25 }
 		add_stability = -0.1 #will be variable for the actual support
-
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
         hidden_effect = {
             complete_national_focus = XNVElectionRep     
         }

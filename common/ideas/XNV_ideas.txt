@@ -87,5 +87,31 @@ ideas = {
 
             allowed = { tag = XNV }
         }
+        XNV_AFOCIdea3 = {
+            picture = XNV_afocideaphoto
+            allowed_civil_war ={
+                always = no
+            } 
+            modifier = {
+                stability_factor = 0.2
+                army_core_attack_factor = 0.1
+                surrender_limit = 0.1
+                justify_war_goal_time = -0.1
+            }
+
+            allowed = { tag = XNV }
+        }
+        XNVRecruitingIdea = {
+            picture = XNV_RecruitingPhoto
+            allowed_civil_war ={
+                always = no
+            } 
+            modifier = {
+                recruitable_population_factor = 0.03
+                weekly_manpower = 500
+            }
+
+            allowed = { tag = XNV }
+        }
     }
 }

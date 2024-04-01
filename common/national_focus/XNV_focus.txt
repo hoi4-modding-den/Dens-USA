@@ -102,7 +102,7 @@ focus_tree = {
 		}
      }
 	 focus = {
-		id = XNVPeace #RichardKirmanSR
+		id = XNVPeace #BoringHistorical
 
 		prerequisite = { focus = XNVElectionDem }
 		mutually_exclusive = {focus = XNVUnity}
@@ -116,9 +116,9 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 
-		x = 0
+		x = 2
 		y = 7
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 2
 		}	
@@ -145,15 +145,106 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 
-		x = 2
+		x = 0
 		y = 7
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 2
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			swap_ideas = {
+			remove_idea = XNV_AFOCIdea
+			add_idea = XNV_AFOCIdea3
+			}
+		}
+     }
+	 focus = {
+		id = XNVUnity2 #RichardKirmanSR
 
+		prerequisite = { focus = XNVUnity }
+		mutually_exclusive = {}
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 0
+		y = 9
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}	
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
+			army_experience = 25
+			add_war_support = .1
+		}
+     }
+	 focus = {
+		id = XNVUnity3 #RichardKirmanSR
+
+		prerequisite = { focus = XNVUnity2 }
+		mutually_exclusive = { focus = XNVUnity4 }
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 1
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 20
+		}	
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
+			NVD = {
+				create_wargoal = { type = annex_everything target = XID }
+			}
+		}
+     }
+	 focus = {
+		id = XNVUnity4 #RichardKirmanSR
+
+		prerequisite = { focus = XNVUnity2 }
+		mutually_exclusive = { focus = XNVUnity3 }
+		
+		icon = GFX_goal_XNV_Election
+		available = {
+			NVD = {
+				OVERLORD = {tag = XNV}
+			}
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = -1
+		y = 10
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}	
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
+			XID = {
+				annex_country = {
+					target = NVD
+    				transfer_troops = yes
+				}
+			}	
 		}
      }
 	 focus = {
@@ -200,7 +291,7 @@ focus_tree = {
 		y = 7
 		cost = 5
 		ai_will_do = {
-			factor = 2
+			factor = 1
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -209,7 +300,7 @@ focus_tree = {
 	 focus = {
 		id = XNVFactionBuilding #MorleyGriswoldDemPath
 
-		prerequisite = { focus = XNVAltDemocratic }
+		prerequisite = { focus = XNVAltDemocratic focus = XNVPeace}
 		mutually_exclusive = {}
 		
 		icon = GFX_goal_XNV_Election
@@ -260,7 +351,7 @@ focus_tree = {
 		y = 7
 		cost = 5
 		ai_will_do = {
-			factor = 2
+			factor = 100
 		}	
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
@@ -289,7 +380,7 @@ focus_tree = {
 		y = 9
 		cost = 5
 		ai_will_do = {
-			factor = 2
+			factor = 10
 		}	
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 		completion_reward = {
@@ -298,6 +389,14 @@ focus_tree = {
 			add_popularity = {
     			ideology = fascism
     			popularity = 0.1
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					activate_advisor = XNV_generic_fascist_demagogue
+				}
 			}
 		}
      }
@@ -313,24 +412,13 @@ focus_tree = {
 			has_completed_focus = XNVReformDiscussions
 		}
 		bypass = {
-			NOT = {
-				XCA = {
-					OR = {
-						is_subject = no
-						NOT = {
-							owns_state = 378
-						}
-					}
-				
-				}
-			}
 		}
 
 		cancel_if_invalid = yes
 
-		x = 7.5
+		x = 7
 		y = 10
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}	
@@ -342,27 +430,20 @@ focus_tree = {
 	 focus = {
 		id = XNVWarPlans3
 
-		prerequisite = { focus = XNVWarPlans }
+		prerequisite = { focus = XNVWarPlans2 }
+		prerequisite = { focus = XNVWarPlans4 }
 		mutually_exclusive = { }
 		
 		icon = GFX_goal_XNV_Utah
 		available = {
-			has_completed_focus = XNVReformDiscussions
 		}
 		bypass = {
-			NOT = {
-				XUT = {
-					OR = {
-						is_subject = no
-					}
-				
-				}
-			}
+
 		}
 
 		cancel_if_invalid = yes
 
-		x = 3.5
+		x = 5
 		y = 10
 		cost = 10
 		ai_will_do = {
@@ -376,29 +457,22 @@ focus_tree = {
 	 focus = {
 		id = XNVWarPlans4
 
-		prerequisite = { focus = XNVWarPlans2 }
-		prerequisite = { focus = XNVWarPlans3 }
+		prerequisite = { focus = XNVWarPlans }
 		mutually_exclusive = { }
 		
 		icon = GFX_goal_XNV_Arizona
 		available = {
+		has_completed_focus = XNVReformDiscussions
 		}
 		bypass = {
-			NOT = {
-				XAZ = {
-					OR = {
-						is_subject = no
-					}
-				
-				}
-			}
 		}
 
 		cancel_if_invalid = yes
 
-		x = 5
+		x = 3
 		y = 10
-		cost = 10
+
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}	
@@ -410,7 +484,7 @@ focus_tree = {
 	 focus = {
 		id = XNVWarPlans5
 
-		prerequisite = { focus = XNVWarPlans4 }
+		prerequisite = { focus = XNVWarPlans3 }
 		mutually_exclusive = { }
 		
 		icon = GFX_goal_XNV_SWS
@@ -466,7 +540,7 @@ focus_tree = {
 
 		x = 8
 		y = 8
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 20
 		}	
@@ -485,6 +559,32 @@ focus_tree = {
 				}
     		}
 		}
+		}
+     }
+	 focus = {
+		id = XNVIncreasedRecruitment #MorleyGriswoldFascistPath
+
+		prerequisite = { focus = XNVReformDiscussions }
+		mutually_exclusive = {}
+		
+		icon = GFX_goal_XNV_Recruit
+		available = {
+		}
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+
+		x = 9
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 20
+		}	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_war_support = .1
+			add_ideas = XNVRecruitingIdea
 		}
      }
 	#CivilWarPath

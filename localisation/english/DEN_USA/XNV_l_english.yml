@@ -14,7 +14,13 @@
  XNV_SWS_fascism: "United Silver States"
  XNV_SWS_fascism: "United Silver States"
  XNV_fascism_ADJ: "Nevadan"
-
+ 
+ XID_TrueIdaho: "Unified Idaho"
+ XID_TrueIdaho_DEF: "Unified Idaho"
+ XID_TrueIdaho_ADJ: "Idaho"
+ XID_TrueIdaho_neutrality: "Potato Nation"
+ XID_TrueIdaho_neutrality_DEF: "Potato Nation"
+ XID_TrueIdaho_neutrality_ADJ: "Potato"
  NVD: "South Idaho"
  NVD_DEF: "Southern Idaho"
  NVD_ADJ: "South Idaho"
@@ -67,13 +73,17 @@
  XNVElectionDem:0 "§BDemocratic Party Victory§"
  XNVElectionRep_desc:0 "Morley Griswold of the Republican Party has won the election."
  XNVElectionDem_desc:0 "Richard Kirman Sr. of the Democratic Party has won the election."
- 
+ XNVRecruitingIdea:0 "Extensive Recruitment"
+ XNVRecruitingIdea_desc:0 "Patriotism is the greatest convincer to recruit a military."
+ XNVIncreasedRecruitment:0 "Military Propoganda"
+ XNVIncreasedRecruitment_desc:0 "We can convince the masses through propoganda to join our military."
 
  XNV_AFOCIdea:0 "§YAll for Our Country§"
  XNV_AFOCIdea_desc:0 "The Nevadan spirit aims to overcome the nation's difficulties in these trying times."
  XNV_AFOCIdea2:0 "§YAll for Our Country§"
  XNV_AFOCIdea2_desc:0 "The Nevadan spirit aims to overcome the nation's difficulties in these trying times."
- XNV_GreatDepression:0 "Great Depression"
+ XNV_AFOCIdea3:0 "§YAll for Our Country§"
+ XNV_AFOCIdea3_desc:0 "The Nevadan spirit aims to overcome the nation's difficulties in these trying times."
  XNV_GreatDepression_desc:0 "§RThe failure of several major institutions has left the Nevada economy in shambles. The main industry of our economy, mineral extraction, has plummeted in value leading many to question how silver the Silver State really is."
  XNV_GreatDepression2:0 "Great Depression"
  XNV_GreatDepression2_desc:0 "§RThe failure of several major institutions has left the Nevada economy in shambles. The main industry of our economy, mineral extraction, has plummeted in value leading many to question how silver the Silver State really is."
@@ -81,6 +91,8 @@
  XNV_GreatDepression3_desc:0 "§RThe failure of several major institutions has left the Nevada economy in shambles. The main industry of our economy, mineral extraction, has plummeted in value leading many to question how silver the Silver State really is."
  XNV_GreatDepression4:0 "Great Depression"
  XNV_GreatDepression4_desc:0 "§RThe failure of several major institutions has left the Nevada economy in shambles. The main industry of our economy, mineral extraction, has plummeted in value leading many to question how silver the Silver State really is."
+ 
+ 
  XNVGunProduction:0 "Military Construction"
  XNVGunProduction_desc:0 ""
  XNVGunProduction2:0 "Military Construction"
@@ -103,6 +115,9 @@
  XNVWarPlans4_desc:0 "We must use military force to integrate Arizona into the United States of Nevada."
  XNVWarPlans5:0 "Centralize Governance"
  XNVWarPlans5_desc:0 "Now that we have grown in size, we should consider limiting the state's rights and maintaining closer control over our lands."
+ XNVReformDiscussions:0 "Propose New Government"
+ XNVReformDiscussions_desc:0 "The Nevadan citizens desire a fascist government."
+
 
  XNV_DepressionDecisions:0 "Nevadan Great Depression"
  XNV_DepressionDecisions_desc:0 "By supporting our industries, we can increase our development and beat the Great Depression! §LCurrent Development Level [?XNVDepressionFixingVal]§"

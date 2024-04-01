@@ -4,6 +4,10 @@ spriteTypes = {
 		texturefile = "gfx/XNV_gfx/XNV_afocideaphoto.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_XNV_RecruitingPhoto"
+		texturefile = "gfx/XNV_gfx/XNV_RecruitingPhoto.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_XNV_AFOC"
 		texturefile = "gfx/XNV_focuses/XNV_AFOC.dds"
 	}
@@ -70,6 +74,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_goal_XNV_SWS"
 		texturefile = "gfx/XNV_focuses/XNV_SWS.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_XNV_Recruit"
+		texturefile = "gfx/XNV_focuses/XNV_Recruit.dds"
 	}
 	#IdahoPuppetState
     spriteType = {
