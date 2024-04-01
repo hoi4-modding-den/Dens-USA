@@ -433,6 +433,24 @@ ideas = {
 				political_power_gain = 0.1
 			}
 		}
+		XUT_new_film = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.15
+				defensive_war_stability_factor = 0.5
+			}
+		}
 		XUT_new_thinking = {
 			picture = generic_war_preparation
 			
@@ -582,6 +600,57 @@ ideas = {
 			
 			modifier = {
 				research_speed_factor = 0.1
+			}
+		}
+		XUT_family_credit = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.05
+			}
+		}
+		XUT_missionaries = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				boost_ideology_mission_factor = 0.5
+			}
+		}
+		XUT_relpro = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.1
 			}
 		}
 	}
